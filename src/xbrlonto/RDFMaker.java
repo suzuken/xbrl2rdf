@@ -45,6 +45,7 @@ public class RDFMaker extends Thread {
 	private String nsPrp;
 	private String nsFoaf;
 	private String tdbloc;
+	private String outputRDFPath;
 
 	public void setXBRLPARSER(XbrlParser parser){
 		XBRLPARSER=parser;
@@ -63,7 +64,7 @@ public class RDFMaker extends Thread {
 		nsmap.put("xbrlont_property", this.getNsPrp());
 		nsmap.put("foaf", this.getNsFoaf());
 
-		//それぞれRDFモデルを作成する。
+		// in the first time, you should create default model.
 		//Model model = ModelFactory.createDefaultModel();
 		/*
 		 * locationを指定.
@@ -162,10 +163,8 @@ public class RDFMaker extends Thread {
 		try {
 			connectDB(model);
 		} catch (ClassNotFoundException e) {
-			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
 	}
@@ -174,8 +173,7 @@ public class RDFMaker extends Thread {
 	 * @param inputFileName
 	 */
 	public void readModelTest(String inputFileName) {
-		//Model model = ModelFactory.createDefaultModel();
-		Model model=TDBFactory.createModel("C:\\workspace_suzuken\\xbrl2rdf\\tdb");
+		Model model=TDBFactory.createModel(this.getTdbloc());
 		InputStream in = FileManager.get().open(inputFileName);
 		if(in == null){
 			throw new IllegalArgumentException("File: " + inputFileName + " not found");
@@ -185,6 +183,28 @@ public class RDFMaker extends Thread {
 
 		// write it to standard out
 		model.write(System.out);
+	}
+	
+	/**
+	 * ローカルファイルにrdfを出力する関数。
+	 * @param model
+	 */
+	public void outputRDF(Model model) {
+		OutputStream out = null;
+
+		File outFile = new File(this.getOutputRDFPath());
+		try {
+			outFile.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try {
+			out = new FileOutputStream(outFile);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		model.write(out);
 	}
 
 	public void connectDB(Model model) throws ClassNotFoundException, SQLException{
@@ -238,28 +258,6 @@ public class RDFMaker extends Thread {
 		    System.out.println(" .");
 		}*/
 		model.write(System.out, "N-TRIPLE");
-
-
-		//ローカルフォルダへ書き出し。
-		OutputStream out = null;
-
-
-		File outFile = new File("./output/test.rdf");
-		try {
-			outFile.createNewFile();
-		} catch (IOException e) {
-			// TODO 自動生成された catch ブロック
-			e.printStackTrace();
-		}
-		try {
-			out = new FileOutputStream(outFile);
-		} catch (FileNotFoundException e) {
-			// TODO 自動生成された catch ブロック
-			e.printStackTrace();
-		}
-
-		model.write(out);
-
 	}
 
 
@@ -280,6 +278,7 @@ public class RDFMaker extends Thread {
 		maker.setNsPrp(prop.getProperty("nsProperty"));
 		maker.setNsFoaf(prop.getProperty("nsFoaf"));
 		maker.setTdbloc(prop.getProperty("tdbFactoryLoc"));
+		maker.setOutputRDFPath(prop.getProperty("outputRDFPath"));
 
 		maker.readModelTest(args[0]);
 	}
@@ -322,6 +321,14 @@ public class RDFMaker extends Thread {
 
 	public String getTdbloc() {
 		return tdbloc;
+	}
+
+	public void setOutputRDFPath(String outputRDFPath) {
+		this.outputRDFPath = outputRDFPath;
+	}
+
+	public String getOutputRDFPath() {
+		return outputRDFPath;
 	}
 	
 }
