@@ -44,9 +44,7 @@ public class RDFMaker extends Thread {
 	private String nsIns;
 	private String nsPrp;
 	private String nsFoaf;
-	
-
-	
+	private String tdbloc;
 
 	public void setXBRLPARSER(XbrlParser parser){
 		XBRLPARSER=parser;
@@ -56,20 +54,14 @@ public class RDFMaker extends Thread {
 		RDFbinding(XBRLPARSER);
 	}
 
-
 	//xbrlインスタンスから生成したデータを受け取る
 	public void RDFbinding(XbrlParser xbrlparser){
-		//山口研究室用名前空間
-		final String nsCls = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/class#";
-		final String nsIns = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#";
-		final String nsPrp = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/property/";
-		final String nsFoaf = "http://xmlns.com/foaf/0.1/";
-
+		
 		Map<String, String> nsmap = new HashMap<String, String>();
-		nsmap.put("xbrlont_class", nsCls);
-		nsmap.put("xbrlont_ins", nsIns);
-		nsmap.put("xbrlont_property", nsPrp);
-		nsmap.put("foaf", nsFoaf);
+		nsmap.put("xbrlont_class", this.getNsCls());
+		nsmap.put("xbrlont_ins", this.getNsIns());
+		nsmap.put("xbrlont_property", this.getNsPrp());
+		nsmap.put("foaf", this.getNsFoaf());
 
 		//それぞれRDFモデルを作成する。
 		//Model model = ModelFactory.createDefaultModel();
@@ -77,14 +69,11 @@ public class RDFMaker extends Thread {
 		 * locationを指定.
 		 * 公開するディレクトリに構築するのが良い
 		 */
-		Model model = TDBFactory.createModel("../xbrl_ontology/DB/xbrl_ontology_20100728");
-		//Model model = TDBFactory.createModel("DB/xbrlonto");
-
+		Model model = TDBFactory.createModel(this.getTdbloc());
 
 		/*
 		 * 以下、RDFモデルに関する記述
 		 */
-
 		//抽出してきた名前空間をここでも認識させる。
 		//ただし、valueの末尾に#をつける。
 		Set<String> keys = xbrlparser.getNamespaceMapping().keySet();
@@ -275,7 +264,7 @@ public class RDFMaker extends Thread {
 
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
-		String configFile = "prop.conf";
+		String configFile = "prop.conf";	//for default
 		Properties prop = new Properties();
 		try {
 		   prop.load(new FileInputStream(configFile));
@@ -290,6 +279,7 @@ public class RDFMaker extends Thread {
 		maker.setNsIns(prop.getProperty("nsInstance"));
 		maker.setNsPrp(prop.getProperty("nsProperty"));
 		maker.setNsFoaf(prop.getProperty("nsFoaf"));
+		maker.setTdbloc(prop.getProperty("tdbFactoryLoc"));
 
 		maker.readModelTest(args[0]);
 	}
@@ -324,6 +314,14 @@ public class RDFMaker extends Thread {
 
 	public void setNsFoaf(String nsFoaf) {
 		this.nsFoaf = nsFoaf;
+	}
+
+	public void setTdbloc(String tdbloc) {
+		this.tdbloc = tdbloc;
+	}
+
+	public String getTdbloc() {
+		return tdbloc;
 	}
 	
 }
