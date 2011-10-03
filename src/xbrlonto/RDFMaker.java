@@ -47,38 +47,6 @@ public class RDFMaker extends Thread {
 	private String tdbloc;
 	private String outputRDFPath;
 	private String jdbcUrl;
-	public String getJdbcUrl() {
-		return jdbcUrl;
-	}
-
-	public void setJdbcUrl(String jdbcUrl) {
-		this.jdbcUrl = jdbcUrl;
-	}
-
-	public String getDBUser() {
-		return DBUser;
-	}
-
-	public void setDBUser(String dBUser) {
-		DBUser = dBUser;
-	}
-
-	public String getDBPassword() {
-		return DBPassword;
-	}
-
-	public void setDBPassword(String dBPassword) {
-		DBPassword = dBPassword;
-	}
-
-	public String getDBType() {
-		return DBType;
-	}
-
-	public void setDBType(String dBType) {
-		DBType = dBType;
-	}
-
 	private String DBUser;
 	private String DBPassword;
 	private String DBType;
@@ -131,15 +99,15 @@ public class RDFMaker extends Thread {
 		model.setNsPrefixes(nsmap);
 
 		//まず、会社名のresource作成。foaf:Organizationにタイプ付け。
-		System.out.println(nsIns + xbrlparser.getDocumentInfoMapping().get("EntityNameJaEntityInformation").getValue());
-		Resource company = model.createResource(nsIns + xbrlparser.getDocumentInfoMapping().get("EntityNameJaEntityInformation").getValue());
-		Resource foafOrg = model.createResource(nsFoaf + "Organization");
+		System.out.println(this.getNsIns() + xbrlparser.getDocumentInfoMapping().get("EntityNameJaEntityInformation").getValue());
+		Resource company = model.createResource(this.getNsIns() + xbrlparser.getDocumentInfoMapping().get("EntityNameJaEntityInformation").getValue());
+		Resource foafOrg = model.createResource(this.getNsFoaf() + "Organization");
 		company.addProperty(RDF.type, foafOrg);
 
 		//次に、company hasEdicode [EDINETCODE]をつける。
-		System.out.println(nsIns + xbrlparser.getContextInfoMapping().get("DocumentInfo").getEdinetCode());
-		Resource edicode = model.createResource(nsIns + xbrlparser.getContextInfoMapping().get("DocumentInfo").getEdinetCode());
-		Property hasEdicode = model.createProperty(nsPrp, "hasEDINETCode");
+		System.out.println(this.getNsIns() + xbrlparser.getContextInfoMapping().get("DocumentInfo").getEdinetCode());
+		Resource edicode = model.createResource(this.getNsIns() + xbrlparser.getContextInfoMapping().get("DocumentInfo").getEdinetCode());
+		Property hasEdicode = model.createProperty(this.getNsPrp(), "hasEDINETCode");
 		company.addProperty(hasEdicode, edicode);
 
 		//jpfr-t-<?> hasAccountをつくる
@@ -155,12 +123,12 @@ public class RDFMaker extends Thread {
 			System.out.println("今の項目は→" + xbrlparser.getInstanceInfoMapping().get(Istr).getLocalName() + " 値は：" + xbrlparser.getInstanceInfoMapping().get(Istr).getValue());
 			//jpfr-t-cte:ローカル名的なのをリソースにする。ちょっと調整必要かも
 			accountElement = model.createResource(xbrlparser.getInstanceInfoMapping().get(Istr).getNamespaceURI() + "#" + xbrlparser.getInstanceInfoMapping().get(Istr).getLocalName());
-			Property hasAccount = model.createProperty(nsIns, "hasAccount");
+			Property hasAccount = model.createProperty(this.getNsIns(), "hasAccount");
 			edicode.addProperty(hasAccount, accountElement);
 
 			//accountElementにvalueをつける。hasAmountプロパティで。
 			Resource blankValue = model.createResource();
-			Property hasAmount = model.createProperty(nsIns, "hasAmount");
+			Property hasAmount = model.createProperty(this.getNsIns(), "hasAmount");
 			accountElement.addProperty(hasAmount, blankValue);
 
 			//空白ノードに金額情報をつける。数値はリテラルで、型はxsd:integer
@@ -174,7 +142,7 @@ public class RDFMaker extends Thread {
 
 			//金額情報の通貨単位をつける iso4217:JPYとか。 ちゃんとURI解決させる。
 			Resource unitOfAccount = model.createResource(xbrlparser.getNamespaceMapping().get(xbrlparser.getUnitInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getUnitRef()).getMeasurePrefix()) + xbrlparser.getUnitInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getUnitRef()).getMeasureLocalName());
-			Property hasUnit = model.createProperty(nsIns, "hasUnit");
+			Property hasUnit = model.createProperty(this.getNsIns(), "hasUnit");
 			blankValue.addProperty(hasUnit, unitOfAccount);
 
 			//日付情報を付属させる。そのエレメントが属するクラスによって変わってくる。
@@ -182,14 +150,14 @@ public class RDFMaker extends Thread {
 			//contextInfoのidによってクラスをInstantとDurationに分けてあるので、それぞれからとるようにする。
 			if(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()) instanceof xbrlparse.InstantDocumentInfo){
 				Literal Instant = model.createTypedLiteral(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()).getPeriodInstant(), XSDDateType.XSDdate);
-				Property hasInstant = model.createProperty(nsIns, "hasInstant");
+				Property hasInstant = model.createProperty(this.getNsIns(), "hasInstant");
 				accountElement.addLiteral(hasInstant, Instant);
 			}
 			else if(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()) instanceof xbrlparse.DurationDocumentInfo){
 				Literal startDate = model.createTypedLiteral(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()).getStartDate(), XSDDateType.XSDdate);
 				Literal endDate = model.createTypedLiteral(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()).getEndDate(),XSDDateType.XSDdate);
-				Property hasStartDate = model.createProperty(nsIns, "hasStartDate");
-				Property hasEndDate = model.createProperty(nsIns, "hasEndDate");
+				Property hasStartDate = model.createProperty(this.getNsIns(), "hasStartDate");
+				Property hasEndDate = model.createProperty(this.getNsIns(), "hasEndDate");
 				accountElement.addLiteral(hasStartDate, startDate);
 				accountElement.addLiteral(hasEndDate, endDate);
 			}
@@ -311,6 +279,38 @@ public class RDFMaker extends Thread {
 		maker.setOutputRDFPath(prop.getProperty("outputRDFPath"));
 
 		maker.readModelTest(args[0]);
+	}
+
+	public String getJdbcUrl() {
+		return jdbcUrl;
+	}
+
+	public void setJdbcUrl(String jdbcUrl) {
+		this.jdbcUrl = jdbcUrl;
+	}
+
+	public String getDBUser() {
+		return DBUser;
+	}
+
+	public void setDBUser(String dBUser) {
+		DBUser = dBUser;
+	}
+
+	public String getDBPassword() {
+		return DBPassword;
+	}
+
+	public void setDBPassword(String dBPassword) {
+		DBPassword = dBPassword;
+	}
+
+	public String getDBType() {
+		return DBType;
+	}
+
+	public void setDBType(String dBType) {
+		DBType = dBType;
 	}
 
 	public void setNsCls(String nsCls) {
