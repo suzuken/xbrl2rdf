@@ -11,12 +11,10 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
-
 import tecaSQLite.EdinetData;
 import xbrlparse.XbrlParser;
-
-
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -30,6 +28,8 @@ import com.hp.hpl.jena.vocabulary.RDFS;
 import com.hp.hpl.jena.vocabulary.XSD;
 import com.hp.hpl.jena.datatypes.xsd.impl.XSDDateType;
 import com.hp.hpl.jena.db.DBConnection;
+import java.io.FileInputStream;
+
 
 //xbrlインスタンスから得られたデータを受け取り、
 //rdfを生成し、rdfデータをデータベースに格納するために渡すクラス
@@ -42,6 +42,13 @@ public class RDFMaker extends Thread {
 
 	XbrlParser XBRLPARSER;
 	EdinetData EDINETDATA;
+	private String nsCls;
+	private String nsIns;
+	private String nsPrp;
+	private String nsFoaf;
+	
+
+	
 
 	public void setXBRLPARSER(XbrlParser parser){
 		XBRLPARSER=parser;
@@ -58,10 +65,11 @@ public class RDFMaker extends Thread {
 
 	public void RDFbinding_2010(XbrlParser xbrlparser, EdinetData edinetdata){
 		//山口研究室用名前空間
-		final String nsCls = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/class#";
-		final String nsIns = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#";
-		final String nsPrp = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/property/";
-		final String nsFoaf = "http://xmlns.com/foaf/0.1/";
+//		final String nsCls = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/class#";
+//		final String nsIns = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#";
+//		final String nsPrp = "http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/property/";
+//		final String nsFoaf = "http://xmlns.com/foaf/0.1/";
+		
 
 		Map<String, String> nsmap = new HashMap<String, String>();
 		nsmap.put("xbrlont_class", nsCls);
@@ -466,8 +474,56 @@ public class RDFMaker extends Thread {
 
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		String configFile = "prop.conf";
+		Properties prop = new Properties();
+		try {
+		   prop.load(new FileInputStream(configFile));
+		} catch (IOException e) {
+		   e.printStackTrace();
+		   return;
+		}
+		
 		RDFMaker maker = new RDFMaker();
+
+		maker.setNsCls(prop.getProperty("nsClass"));
+		maker.setNsIns(prop.getProperty("nsInstance"));
+		maker.setNsPrp(prop.getProperty("nsProperty"));
+		maker.setNsFoaf(prop.getProperty("nsFoaf"));
+
 		maker.readModelTest(args[0]);
 	}
+
+	public void setNsCls(String nsCls) {
+		this.nsCls = nsCls;
+	}
+
+	public String getNsCls() {
+		return nsCls;
+	}
+
+	public void setNsIns(String nsIns) {
+		this.nsIns = nsIns;
+	}
+
+	public String getNsIns() {
+		return nsIns;
+	}
+
+	public void setNsPrp(String nsPrp) {
+		this.nsPrp = nsPrp;
+	}
+
+	public String getNsPrp() {
+		return nsPrp;
+	}
+	
+	public String getNsFoaf() {
+		return nsFoaf;
+	}
+
+	public void setNsFoaf(String nsFoaf) {
+		this.nsFoaf = nsFoaf;
+	}
+	
 }
 

@@ -25,8 +25,13 @@ import org.w3c.dom.Node;
  *@author suzuken
  */
 public class XbrlParser extends Thread{
-	/*
-	 * for test
+
+	/**
+	 * 引数にXBRLファイルの相対パスを渡す
+	 * 
+	 * @param args　XBRLファイルへの相対パス
+	 * @throws URISyntaxException
+	 * @throws IOException
 	 */
 	public static void main(String[] args) throws URISyntaxException, IOException{
 		XbrlParser xp = new XbrlParser(args[0]);
@@ -508,12 +513,5 @@ public class XbrlParser extends Thread{
 			this.contextInfoMapping.put(id, ci);
 		}
 	}
-
-
-
-
-
-
-
 
 }
