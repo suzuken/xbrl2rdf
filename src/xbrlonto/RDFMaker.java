@@ -46,6 +46,42 @@ public class RDFMaker extends Thread {
 	private String nsFoaf;
 	private String tdbloc;
 	private String outputRDFPath;
+	private String jdbcUrl;
+	public String getJdbcUrl() {
+		return jdbcUrl;
+	}
+
+	public void setJdbcUrl(String jdbcUrl) {
+		this.jdbcUrl = jdbcUrl;
+	}
+
+	public String getDBUser() {
+		return DBUser;
+	}
+
+	public void setDBUser(String dBUser) {
+		DBUser = dBUser;
+	}
+
+	public String getDBPassword() {
+		return DBPassword;
+	}
+
+	public void setDBPassword(String dBPassword) {
+		DBPassword = dBPassword;
+	}
+
+	public String getDBType() {
+		return DBType;
+	}
+
+	public void setDBType(String dBType) {
+		DBType = dBType;
+	}
+
+	private String DBUser;
+	private String DBPassword;
+	private String DBType;
 
 	public void setXBRLPARSER(XbrlParser parser){
 		XBRLPARSER=parser;
@@ -212,24 +248,18 @@ public class RDFMaker extends Thread {
 
 		Class.forName("com.mysql.jdbc.Driver");
 
-		String URL = "jdbc:mysql://localhost/mydb";
-		String USER = "root";
-		String PASSWORD = "hoge";
-		String TYPE = "MySQL";
+		String URL = this.getJdbcUrl();
+		String USER = this.getDBUser();
+		String PASSWORD = this.getDBPassword();
+		String TYPE = this.getDBType();
 
 		DBConnection conn = new DBConnection(URL, USER, PASSWORD, TYPE);
-//		conn.getDriver().setDoCompressURI(true);
-
-
 
 		ModelMaker maker = ModelFactory.createModelRDBMaker(conn);
 
 		Model xbrlDBmodel = maker.createModel("xbrlInstance");
 
-		//モデルになんか加える。他のメソッドからもってくる。
 		xbrlDBmodel.add(model);
-
-		//ModelRDB rdbmodel=(ModelRDB)maker.openModel("test");
 
 		//outputの形式はN-TRIPLEでなければならない。RDF/XMLだとBadURIのエラーが出る。
 		xbrlDBmodel.write(System.out, "N-TRIPLE");
