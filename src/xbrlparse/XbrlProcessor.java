@@ -13,8 +13,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import tecaSQLite.EdinetData;
-import tecaSQLite.SQLiteConnector;
+import EdinetBase.EdinetData;
+import EdinetBase.SQLiteConnector;
 
 /**
  * XBRL解析の基点となるプロセッサ
@@ -63,7 +63,7 @@ public class XbrlProcessor {
 			Iterator<Integer> resultIte = resultKeys.iterator();
 			while(resultIte.hasNext()){
 				Integer i = resultIte.next();
-				EdinetData ed = sc.getResultmapping().get(i);
+				//EdinetData ed = sc.getResultmapping().get(i);
 				xbrlurl = sc.getResultmapping().get(i).getXbrlurl();
 
 
@@ -98,9 +98,7 @@ public class XbrlProcessor {
 				 */
 				xbrlonto.RDFMaker rdfmaker = new xbrlonto.RDFMaker();
 				rdfmaker.setXBRLPARSER((XbrlParser) xp);
-				rdfmaker.setEdinetData((EdinetData) ed);
 				rdfmaker.start();
-
 
 			}
 
