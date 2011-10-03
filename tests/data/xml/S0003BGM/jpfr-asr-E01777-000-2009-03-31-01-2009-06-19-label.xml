@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:jpfr-asr-E01777-000="http://info.edinet-fsa.go.jp/jp/fr/gaap/E01777-000/asr/2009-03-31/01/2009-06-19" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+<link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProvisionForRecyclingCostsOfPersonalComputers" xlink:label="jpfr-asr-E01777-000_Element7.1"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element7_label.1" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">パソコン回収再資源化引当金</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element7.1" xlink:to="label_jpfr-asr-E01777-000_Element7_label.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProvisionForRecyclingCostsOfPersonalComputers" xlink:label="jpfr-asr-E01777-000_Element7.2"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element7_verboseLabel.1" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="ja">パソコン回収再資源化引当金、固定負債、負債の部</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element7.2" xlink:to="label_jpfr-asr-E01777-000_Element7_verboseLabel.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProvisionForRecyclingCostsOfPersonalComputers" xlink:label="jpfr-asr-E01777-000_Element7.3"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element7_documentation.1" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">パソコン回収再資源化引当金、固定負債、負債の部</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element7.3" xlink:to="label_jpfr-asr-E01777-000_Element7_documentation.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_WarrantyExpensesSGA" xlink:label="jpfr-asr-E01777-000_Element10.1"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element10_label.1" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">アフターサービス費</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element10.1" xlink:to="label_jpfr-asr-E01777-000_Element10_label.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_WarrantyExpensesSGA" xlink:label="jpfr-asr-E01777-000_Element10.2"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element10_verboseLabel.1" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="ja">アフターサービス費、販売費および一般管理費</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element10.2" xlink:to="label_jpfr-asr-E01777-000_Element10_verboseLabel.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_WarrantyExpensesSGA" xlink:label="jpfr-asr-E01777-000_Element10.3"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element10_documentation.1" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">アフターサービス費、販売費および一般管理費</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element10.3" xlink:to="label_jpfr-asr-E01777-000_Element10_documentation.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProvisionForAllowanceForRecyclingCostsOfPersonalComputersSGA" xlink:label="jpfr-asr-E01777-000_Element11.1"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element11_label.1" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">パソコン回収再資源化引当金繰入額</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element11.1" xlink:to="label_jpfr-asr-E01777-000_Element11_label.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProvisionForAllowanceForRecyclingCostsOfPersonalComputersSGA" xlink:label="jpfr-asr-E01777-000_Element11.2"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element11_verboseLabel.1" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="ja">パソコン回収再資源化引当金繰入額、販売費および一般管理費</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element11.2" xlink:to="label_jpfr-asr-E01777-000_Element11_verboseLabel.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProvisionForAllowanceForRecyclingCostsOfPersonalComputersSGA" xlink:label="jpfr-asr-E01777-000_Element11.3"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element11_documentation.1" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">パソコン回収再資源化引当金繰入額、販売費および一般管理費</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element11.3" xlink:to="label_jpfr-asr-E01777-000_Element11_documentation.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProductCompensationExpensesNOE" xlink:label="jpfr-asr-E01777-000_Element15.1"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element15_label.1" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">製品補償費</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element15.1" xlink:to="label_jpfr-asr-E01777-000_Element15_label.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProductCompensationExpensesNOE" xlink:label="jpfr-asr-E01777-000_Element15.2"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element15_verboseLabel.1" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="ja">製品補償費、営業外費用</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element15.2" xlink:to="label_jpfr-asr-E01777-000_Element15_verboseLabel.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_ProductCompensationExpensesNOE" xlink:label="jpfr-asr-E01777-000_Element15.3"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element15_documentation.1" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">製品補償費、営業外費用</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element15.3" xlink:to="label_jpfr-asr-E01777-000_Element15_documentation.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_LossOnSupportToSubsidiariesAndSubsidiariesAndAffiliatesNOE" xlink:label="jpfr-asr-E01777-000_Element16.1"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element16_label.1" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">関係会社支援損</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element16.1" xlink:to="label_jpfr-asr-E01777-000_Element16_label.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_LossOnSupportToSubsidiariesAndSubsidiariesAndAffiliatesNOE" xlink:label="jpfr-asr-E01777-000_Element16.2"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element16_verboseLabel.1" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="ja">関係会社支援損、営業外費用</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element16.2" xlink:to="label_jpfr-asr-E01777-000_Element16_verboseLabel.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_LossOnSupportToSubsidiariesAndSubsidiariesAndAffiliatesNOE" xlink:label="jpfr-asr-E01777-000_Element16.3"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element16_documentation.1" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">関係会社支援損、営業外費用</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element16.3" xlink:to="label_jpfr-asr-E01777-000_Element16_documentation.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_GainFromTransferPricingAdjustmentEI" xlink:label="jpfr-asr-E01777-000_Element17.1"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element17_label.1" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">移転価格税制調整金</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element17.1" xlink:to="label_jpfr-asr-E01777-000_Element17_label.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_GainFromTransferPricingAdjustmentEI" xlink:label="jpfr-asr-E01777-000_Element17.2"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element17_verboseLabel.1" xlink:role="http://www.xbrl.org/2003/role/verboseLabel" xml:lang="ja">移転価格税制調整金、特別利益</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element17.2" xlink:to="label_jpfr-asr-E01777-000_Element17_verboseLabel.1"/>
+<link:loc xlink:type="locator" xlink:href="jpfr-asr-E01777-000-2009-03-31-01-2009-06-19.xsd#jpfr-asr-E01777-000_GainFromTransferPricingAdjustmentEI" xlink:label="jpfr-asr-E01777-000_Element17.3"/>
+<link:label xlink:type="resource" xlink:label="label_jpfr-asr-E01777-000_Element17_documentation.1" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">移転価格税制調整金、特別利益</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="jpfr-asr-E01777-000_Element17.3" xlink:to="label_jpfr-asr-E01777-000_Element17_documentation.1"/>
+</link:labelLink>
+</link:linkbase>

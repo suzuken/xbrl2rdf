@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinancialStatements>
+<InstanceCount>1</InstanceCount>
+<InstanceInformation>
+<InstanceFileName>jpfr-asr-E01777-000-2009-03-31-01-2009-06-19</InstanceFileName>
+
+
+
+
+<StatementInformation>
+<StatementID>NonconsolidatedPLNonconsolidatedFinancialStatements</StatementID>
+<FileName>0105320</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue/>
+<HeaderValue/>
+<HeaderValue>②【損益計算書】</HeaderValue>
+<HeaderValue/>
+</Header>
+<ColumnName>
+<ColumnValue>2007年度</ColumnValue>
+<ColumnValue>(自　2007年４月１日</ColumnValue>
+<ColumnValue>　至　2008年３月31日)</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>2008年度</ColumnValue>
+<ColumnValue>(自　2008年４月１日</ColumnValue>
+<ColumnValue>　至　2009年３月31日)</ColumnValue>
+</ColumnName>
+<DecimalScale>(単位：百万円)</DecimalScale>
+<SplitMaxSize>40</SplitMaxSize>
+<SplitMinSize>30</SplitMinSize>
+<SplitDepth>1</SplitDepth>
+</StatementInformation>
+<StatementInformation>
+<StatementID>NonconsolidatedBSNonconsolidatedFinancialStatements</StatementID>
+<FileName>0105310</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue>２【財務諸表等】</HeaderValue>
+<HeaderValue>（１）【財務諸表】</HeaderValue>
+<HeaderValue>①【貸借対照表】</HeaderValue>
+<HeaderValue/>
+</Header>
+<ColumnName>
+<ColumnValue>2007年度</ColumnValue>
+<ColumnValue>(2008年３月31日)</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>2008年度</ColumnValue>
+<ColumnValue>(2009年３月31日)</ColumnValue>
+</ColumnName>
+<DecimalScale>(単位：百万円)</DecimalScale>
+<SplitMaxSize>42</SplitMaxSize>
+<SplitMinSize>30</SplitMinSize>
+<SplitDepth>1</SplitDepth>
+</StatementInformation>
+<StatementInformation>
+<StatementID>NonconsolidatedSSNonconsolidatedFinancialStatements</StatementID>
+<FileName>0105330</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue/>
+<HeaderValue/>
+<HeaderValue>③【株主資本等変動計算書】</HeaderValue>
+<HeaderValue/>
+</Header>
+<ColumnName>
+<ColumnValue>2007年度</ColumnValue>
+<ColumnValue>(自　2007年４月１日</ColumnValue>
+<ColumnValue>　至　2008年３月31日)</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>2008年度</ColumnValue>
+<ColumnValue>(自　2008年４月１日</ColumnValue>
+<ColumnValue>　至　2009年３月31日)</ColumnValue>
+</ColumnName>
+<DecimalScale>(単位：百万円)</DecimalScale>
+<SplitMaxSize>43</SplitMaxSize>
+<SplitMinSize>30</SplitMinSize>
+<SplitDepth>4</SplitDepth>
+</StatementInformation>
+</InstanceInformation>
+</FinancialStatements>

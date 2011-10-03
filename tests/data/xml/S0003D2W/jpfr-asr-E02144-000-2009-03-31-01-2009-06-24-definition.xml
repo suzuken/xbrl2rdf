@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Edited with XiRUTE .NET Library 01-04 -->
+<link:linkbase xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase">
+  <link:roleRef xlink:type="simple" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/o/rt/2009-03-09/jpfr-rt-2009-03-09.xsd#RoleStatementsOfIncome" roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/StatementsOfIncome" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/StatementsOfIncome">
+    <link:loc xlink:type="locator" xlink:href="jpfr-asr-E02144-000-2009-03-31-01-2009-06-24.xsd#jpfr-asr-E02144-000_OptionPremiumNOE" xlink:label="jpfr-asr-E02144-000_OptionPremiumNOE" />
+    <link:loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09/jpfr-t-cte-2009-03-09.xsd#jpfr-t-cte_NonOperatingExpensesAbstract" xlink:label="jpfr-t-cte_NonOperatingExpensesAbstract" />
+    <link:definitionArc xlink:type="arc" xlink:from="jpfr-t-cte_NonOperatingExpensesAbstract" xlink:to="jpfr-asr-E02144-000_OptionPremiumNOE" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" order="0.5" />
+  </link:definitionLink>
+</link:linkbase>
