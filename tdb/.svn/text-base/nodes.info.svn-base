@@ -1,6 +1,0 @@
-#Metadata: Fileset: nodes
-#Tue Jul 20 16:19:04 JST 2010
-tdb.object.encoding=sse
-tdb.file.type=object
-tdb.file.impl.version=dat-v1
-tdb.file.impl=dat
