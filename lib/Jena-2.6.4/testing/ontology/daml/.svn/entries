@@ -1,0 +1,105 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/ontology/daml
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+Axioms
+dir
+
+
+
+add
+
+ClassExpression
+dir
+
+
+
+add
+
+Ontology
+dir
+
+
+
+add
+
+Property
+dir
+
+
+
+add
+
+daml_oil_2001_03
+dir
+
+
+
+add
+
+list-syntax
+dir
+
+
+
+add
+
+test-add-0.daml
+file
+
+
+
+add
+
+test-add-1.daml
+file
+
+
+
+add
+
+test-cases.daml
+file
+
+
+
+add
+
+test-instance-load-classes.daml
+file
+
+
+
+add
+
+test-instance-load.daml
+file
+
+
+
+add
+

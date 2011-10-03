@@ -1,0 +1,289 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>&lt;xsl:key&gt; / key() / IdKeyPattern</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xsl_key_design-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+ 
+  <A href="index.html" onMouseOut="rolloverOff('side-index');" onMouseOver="rolloverOn('side-index');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-index" onLoad="rolloverLoad('side-index','graphics/index-label-2.jpg','graphics/index-label-3.jpg');" src="graphics/index-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_compiler.html" onMouseOut="rolloverOff('side-xsltc_compiler');" onMouseOver="rolloverOn('side-xsltc_compiler');"><IMG alt="Compiler design" border="0" height="12" hspace="0" name="side-xsltc_compiler" onLoad="rolloverLoad('side-xsltc_compiler','graphics/xsltc_compiler-label-2.jpg','graphics/xsltc_compiler-label-3.jpg');" src="graphics/xsltc_compiler-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsl_whitespace_design.html" onMouseOut="rolloverOff('side-xsl_whitespace_design');" onMouseOver="rolloverOn('side-xsl_whitespace_design');"><IMG alt="Whitespace" border="0" height="12" hspace="0" name="side-xsl_whitespace_design" onLoad="rolloverLoad('side-xsl_whitespace_design','graphics/xsl_whitespace_design-label-2.jpg','graphics/xsl_whitespace_design-label-3.jpg');" src="graphics/xsl_whitespace_design-label-3.jpg" vspace="0" width="120"></A><BR>
+
+  <A href="xsl_sort_design.html" onMouseOut="rolloverOff('side-xsl_sort_design');" onMouseOver="rolloverOn('side-xsl_sort_design');"><IMG alt="xsl:sort" border="0" height="12" hspace="0" name="side-xsl_sort_design" onLoad="rolloverLoad('side-xsl_sort_design','graphics/xsl_sort_design-label-2.jpg','graphics/xsl_sort_design-label-3.jpg');" src="graphics/xsl_sort_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <IMG alt="Keys" border="0" height="12" hspace="0" src="graphics/xsl_key_design-label-1.jpg" vspace="0" width="120"><BR> 
+
+  <A href="xsl_comment_design.html" onMouseOut="rolloverOff('side-xsl_comment_design');" onMouseOver="rolloverOn('side-xsl_comment_design');"><IMG alt="Comment design" border="0" height="12" hspace="0" name="side-xsl_comment_design" onLoad="rolloverLoad('side-xsl_comment_design','graphics/xsl_comment_design-label-2.jpg','graphics/xsl_comment_design-label-3.jpg');" src="graphics/xsl_comment_design-label-3.jpg" vspace="0" width="120"></A><BR>
+ 
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsl_lang_design.html" onMouseOut="rolloverOff('side-xsl_lang_design');" onMouseOver="rolloverOn('side-xsl_lang_design');"><IMG alt="lang()" border="0" height="12" hspace="0" name="side-xsl_lang_design" onLoad="rolloverLoad('side-xsl_lang_design','graphics/xsl_lang_design-label-2.jpg','graphics/xsl_lang_design-label-3.jpg');" src="graphics/xsl_lang_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_unparsed_design.html" onMouseOut="rolloverOff('side-xsl_unparsed_design');" onMouseOver="rolloverOn('side-xsl_unparsed_design');"><IMG alt="Unparsed entities" border="0" height="12" hspace="0" name="side-xsl_unparsed_design" onLoad="rolloverLoad('side-xsl_unparsed_design','graphics/xsl_unparsed_design-label-2.jpg','graphics/xsl_unparsed_design-label-3.jpg');" src="graphics/xsl_unparsed_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="xsl_if_design.html" onMouseOut="rolloverOff('side-xsl_if_design');" onMouseOver="rolloverOn('side-xsl_if_design');"><IMG alt="If design" border="0" height="12" hspace="0" name="side-xsl_if_design" onLoad="rolloverLoad('side-xsl_if_design','graphics/xsl_if_design-label-2.jpg','graphics/xsl_if_design-label-3.jpg');" src="graphics/xsl_if_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_choose_design.html" onMouseOut="rolloverOff('side-xsl_choose_design');" onMouseOver="rolloverOn('side-xsl_choose_design');"><IMG alt="Choose|When|Otherwise design" border="0" height="12" hspace="0" name="side-xsl_choose_design" onLoad="rolloverLoad('side-xsl_choose_design','graphics/xsl_choose_design-label-2.jpg','graphics/xsl_choose_design-label-3.jpg');" src="graphics/xsl_choose_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_include_design.html" onMouseOut="rolloverOff('side-xsl_include_design');" onMouseOver="rolloverOn('side-xsl_include_design');"><IMG alt="Include|Import design" border="0" height="12" hspace="0" name="side-xsl_include_design" onLoad="rolloverLoad('side-xsl_include_design','graphics/xsl_include_design-label-2.jpg','graphics/xsl_include_design-label-3.jpg');" src="graphics/xsl_include_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_variable_design.html" onMouseOut="rolloverOff('side-xsl_variable_design');" onMouseOver="rolloverOn('side-xsl_variable_design');"><IMG alt="Variable|Param design" border="0" height="12" hspace="0" name="side-xsl_variable_design" onLoad="rolloverLoad('side-xsl_variable_design','graphics/xsl_variable_design-label-2.jpg','graphics/xsl_variable_design-label-3.jpg');" src="graphics/xsl_variable_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+   
+  <A href="xsltc_runtime.html" onMouseOut="rolloverOff('side-xsltc_runtime');" onMouseOver="rolloverOn('side-xsltc_runtime');"><IMG alt="Runtime" border="0" height="12" hspace="0" name="side-xsltc_runtime" onLoad="rolloverLoad('side-xsltc_runtime','graphics/xsltc_runtime-label-2.jpg','graphics/xsltc_runtime-label-3.jpg');" src="graphics/xsltc_runtime-label-3.jpg" vspace="0" width="120"></A><BR> 
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_dom.html" onMouseOut="rolloverOff('side-xsltc_dom');" onMouseOver="rolloverOn('side-xsltc_dom');"><IMG alt="Internal DOM" border="0" height="12" hspace="0" name="side-xsltc_dom" onLoad="rolloverLoad('side-xsltc_dom','graphics/xsltc_dom-label-2.jpg','graphics/xsltc_dom-label-3.jpg');" src="graphics/xsltc_dom-label-3.jpg" vspace="0" width="120"></A><BR>            
+            
+  <A href="xsltc_namespace.html" onMouseOut="rolloverOff('side-xsltc_namespace');" onMouseOver="rolloverOn('side-xsltc_namespace');"><IMG alt="Namespaces" border="0" height="12" hspace="0" name="side-xsltc_namespace" onLoad="rolloverLoad('side-xsltc_namespace','graphics/xsltc_namespace-label-2.jpg','graphics/xsltc_namespace-label-3.jpg');" src="graphics/xsltc_namespace-label-3.jpg" vspace="0" width="120"></A><BR>             
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsltc_trax.html" onMouseOut="rolloverOff('side-xsltc_trax');" onMouseOver="rolloverOn('side-xsltc_trax');"><IMG alt="Translet & TrAX" border="0" height="12" hspace="0" name="side-xsltc_trax" onLoad="rolloverLoad('side-xsltc_trax','graphics/xsltc_trax-label-2.jpg','graphics/xsltc_trax-label-3.jpg');" src="graphics/xsltc_trax-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_predicates.html" onMouseOut="rolloverOff('side-xsltc_predicates');" onMouseOver="rolloverOn('side-xsltc_predicates');"><IMG alt="XPath Predicates" border="0" height="12" hspace="0" name="side-xsltc_predicates" onLoad="rolloverLoad('side-xsltc_predicates','graphics/xsltc_predicates-label-2.jpg','graphics/xsltc_predicates-label-3.jpg');" src="graphics/xsltc_predicates-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_iterators.html" onMouseOut="rolloverOff('side-xsltc_iterators');" onMouseOver="rolloverOn('side-xsltc_iterators');"><IMG alt="Xsltc Iterators" border="0" height="12" hspace="0" name="side-xsltc_iterators" onLoad="rolloverLoad('side-xsltc_iterators','graphics/xsltc_iterators-label-2.jpg','graphics/xsltc_iterators-label-3.jpg');" src="graphics/xsltc_iterators-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_native_api.html" onMouseOut="rolloverOff('side-xsltc_native_api');" onMouseOver="rolloverOn('side-xsltc_native_api');"><IMG alt="Xsltc Native API" border="0" height="12" hspace="0" name="side-xsltc_native_api" onLoad="rolloverLoad('side-xsltc_native_api','graphics/xsltc_native_api-label-2.jpg','graphics/xsltc_native_api-label-3.jpg');" src="graphics/xsltc_native_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_trax_api.html" onMouseOut="rolloverOff('side-xsltc_trax_api');" onMouseOver="rolloverOn('side-xsltc_trax_api');"><IMG alt="Xsltc TrAX API" border="0" height="12" hspace="0" name="side-xsltc_trax_api" onLoad="rolloverLoad('side-xsltc_trax_api','graphics/xsltc_trax_api-label-2.jpg','graphics/xsltc_trax_api-label-3.jpg');" src="graphics/xsltc_trax_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_performance.html" onMouseOut="rolloverOff('side-xsltc_performance');" onMouseOver="rolloverOn('side-xsltc_performance');"><IMG alt="Performance Hints" border="0" height="12" hspace="0" name="side-xsltc_performance" onLoad="rolloverLoad('side-xsltc_performance','graphics/xsltc_performance-label-2.jpg','graphics/xsltc_performance-label-3.jpg');" src="graphics/xsltc_performance-label-3.jpg" vspace="0" width="120"></A><BR>            
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Contents</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <UL>
+    <LI><A href="#functionality">Functionality</A></LI>
+    <LI><A href="#implementation">Implementation</A></LI>    
+  </UL>
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="functionality"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Functionality</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>The <CODE><FONT face="courier, monospaced">&lt;xsl:key&gt;</FONT></CODE> element is a top-level element that can be
+  used to define a named index of nodes from the source XML tree(s). The
+  element has three attributes:</P>
+
+  <UL>
+    <LI>
+      <CODE><FONT face="courier, monospaced">name</FONT></CODE> - the name of the index
+    </LI>
+    <LI>
+      <CODE><FONT face="courier, monospaced">match</FONT></CODE> - a pattern that defines the nodeset we want
+      indexed
+    </LI>
+    <LI>
+      <CODE><FONT face="courier, monospaced">use</FONT></CODE> - an expression that defines the value to be used
+      as the index key value.
+    </LI>
+  </UL>
+
+  <P>A named index can be accessed using either the <CODE><FONT face="courier, monospaced">key()</FONT></CODE> function
+  or a KeyPattern. Both these methods address the index using its defined name
+  (the &quot;name&quot; attribute above) and a parameter defining one or more lookup
+  values for the index. The function or pattern returns a node set containing
+  all nodes in the index whose key value match the parameter's value(s):</P>
+
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:key name=&quot;book-author&quot; match=&quot;book&quot; use=&quot;author&quot;/&gt;
+        :
+        :
+    &lt;xsl:for-each select=&quot;key('book-author', 'Mikhail Bulgakov')&quot;&gt;
+      &lt;xsl:value-of select=&quot;author&quot;/&gt;
+      &lt;xsl:text&gt;: &lt;/xsl:text&gt;
+      &lt;xsl:value-of select=&quot;author&quot;/&gt;
+      &lt;xsl:text&gt;&amp;#xa;&lt;/xsl:text&gt;
+    &lt;/xsl:for-each&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>The KeyPattern can be used within an index definition to create unions
+  and intersections of node sets:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:key name=&quot;cultcies&quot; match=&quot;farmer | fisherman&quot; use=&quot;name&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>This could have been done using regular <CODE><FONT face="courier, monospaced">&lt;xsl:for-each&gt;</FONT></CODE>
+  and <CODE><FONT face="courier, monospaced">&lt;xsl:select&gt;</FONT></CODE> elements. However, if your stylesheet
+  accesses the same selection of nodes over and over again, the transformation
+  will be much more efficient using pre-indexed keys as shown above.</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="implementation"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Implementation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <A name="indexing"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Indexing</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The <CODE><FONT face="courier, monospaced">AbstractTranslet</FONT></CODE> class has a global hashtable that holds
+    an index for each named key in the stylesheet (hashing on the &quot;name&quot;
+    attribute of <CODE><FONT face="courier, monospaced">&lt;xsl:key&gt;</FONT></CODE>). <CODE><FONT face="courier, monospaced">AbstractTranslet</FONT></CODE>
+    has a couple of public methods for inserting and retrieving data from this
+    hashtable:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public void buildKeyIndex(String keyName, int nodeID, String value);
+    public KeyIndex KeyIndex getKeyIndex(String keyName);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>The <CODE><FONT face="courier, monospaced">Key</FONT></CODE> class compiles code that traverses the input DOM and
+    extracts nodes that match some given parameters (the <CODE><FONT face="courier, monospaced">&quot;match&quot;</FONT></CODE>
+    attribute of the <CODE><FONT face="courier, monospaced">&lt;xsl:key&gt;</FONT></CODE> element). A new element is
+    inserted into the named key's index. The nodes' DOM index and the value
+    translated from the <CODE><FONT face="courier, monospaced">&quot;use&quot;</FONT></CODE> attribute of the
+    <CODE><FONT face="courier, monospaced">&lt;xsl:key&gt;</FONT></CODE> element are stored in the new entry in the
+    index.</P>
+
+    <P>Something similar is done for indexing IDs. This index is generated from
+    the <CODE><FONT face="courier, monospaced">ID</FONT></CODE> and <CODE><FONT face="courier, monospaced">IDREF</FONT></CODE> fields in the input document's
+    DTD. This means that the code for generating this index cannot be generated
+    at compile-time, which again means that the code has to be generic enough
+    to handle all DTDs. The class that handles this is the
+    <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.dom.DTDMonitor</FONT></CODE> class. This class
+    implements the <CODE><FONT face="courier, monospaced">org.xml.sax.XMLReader</FONT></CODE> and
+    <CODE><FONT face="courier, monospaced">org.xml.sax.DTDHandler</FONT></CODE> interfaces. A client application using
+    the native API must instanciate a <CODE><FONT face="courier, monospaced">DTDMonitor</FONT></CODE> and pass it to the
+    translet code - if, and only if, it wants IDs indexed (one can improve
+    performance by omitting this step). This is descrived in the
+    <A href="xsltc_native_api.html">XSLTC Native API reference</A>. The
+    <CODE><FONT face="courier, monospaced">DTDMonitor</FONT></CODE> class will use the same indexing as the code
+    generated by the <CODE><FONT face="courier, monospaced">Key</FONT></CODE> class. The index for ID's is called
+    &quot;##id&quot;. We assume that no stylesheets will contain a key with this name.</P>
+
+    <P>The index itself is implemented in the
+    <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.dom.KeyIndex</FONT></CODE> class. The index has an
+    hashtable with all the values from the matching nodes (the part of the node
+    used to generate this value is the one specified in the <CODE><FONT face="courier, monospaced">&quot;use&quot;</FONT></CODE>
+    attribute). For every matching value there is a bit-array (implemented in
+    the <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.BitArray</FONT></CODE> class), holding a list of
+    all node indexes for which this value gives a match:</P>
+    <P><IMG align="right" alt="key_relations.gif" border="0" hspace="4" src="images/key_relations.gif" vspace="4"><BR clear="all"></P>
+    <P><I>Figure 1: Indexing tables</I></P>
+
+    <P>The <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> class implements the <CODE><FONT face="courier, monospaced">NodeIterator</FONT></CODE>
+    interface, so that it can be returned directly by the implementation of the
+    <CODE><FONT face="courier, monospaced">key()</FONT></CODE> function. This is how the index generated by
+    <CODE><FONT face="courier, monospaced">&lt;xsl:key&gt;</FONT></CODE> and the node-set returned by the
+    <CODE><FONT face="courier, monospaced">key()</FONT></CODE> and KeyPattern are tied together. You can see how this is
+    done in the <CODE><FONT face="courier, monospaced">translate()</FONT></CODE> method of the <CODE><FONT face="courier, monospaced">KeyCall</FONT></CODE>
+    class.</P>
+
+    <P>The <CODE><FONT face="courier, monospaced">key()</FONT></CODE> function can be called in two ways:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    key('key-name','value')
+    key('key-name','node-set')</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>The first parameter is always the name of the key. We use this value to
+    lookup our index from the _keyIndexes hashtable in AbstractTranslet:</P>
+    <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    il.append(classGen.aloadThis());
+    _name.translate(classGen, methodGen);
+    il.append(new INVOKEVIRTUAL(getKeyIndex));</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>This compiles into a call to
+    <CODE><FONT face="courier, monospaced">AbstractTranslet.getKeyIndex(String name)</FONT></CODE>, and it leaves a
+    <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> object on the stack. What we then need to do it to
+    initialise the <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> to give us nodes with the requested
+    value. This is done by leaving the <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> object on the stack
+    and pushing the <CODE><FONT face="courier, monospaced">&quot;value&quot;</FONT></CODE> parameter to <CODE><FONT face="courier, monospaced">key()</FONT></CODE>, before
+    calling <CODE><FONT face="courier, monospaced">lookup()</FONT></CODE> on the index:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    il.append(DUP);  // duplicate the KeyIndex obejct before return
+    _value.translate(classGen, methodGen);
+    il.append(new INVOKEVIRTUAL(lookup));</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>This compiles into a call to <CODE><FONT face="courier, monospaced">KeyIndex.lookup(String value)</FONT></CODE>.
+    This will initialise the <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> object to return nodes that
+    match the given value, so the <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> object can be left on
+    the stack when we return. This because the <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> object
+    implements the <CODE><FONT face="courier, monospaced">NodeIterator</FONT></CODE> interface.</P>
+
+    <P>This matter is a bit more complex when the second parameter of
+    <CODE><FONT face="courier, monospaced">key()</FONT></CODE> is a node-set. In this case we need to traverse the nodes
+    in the set and do a lookup for each node in the set. What I do is this:</P>
+
+    <UL>
+      <LI>
+        construct a <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> object that will hold the
+        return node-set
+      </LI>
+      <LI>
+        find the named <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> object from the hashtable in
+        AbstractTranslet
+      </LI>
+      <LI>
+        get an iterator for the node-set and do the folowing loop:</LI>
+        <UL>
+          <LI>get string value for current node</LI>
+          <LI>do lookup in KeyIndex object for the named index</LI>
+          <LI>merge the resulting node-set into the return node-set</LI>
+        </UL>
+      <LI>
+        leave the return node-set on stack when done
+      </LI>
+    </UL>
+
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="improvements"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Possible indexing improvements</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The indexing implementation can be very, very memeory exhaustive as there
+    is one <CODE><FONT face="courier, monospaced">BitArray</FONT></CODE> allocated for each value for every index. This
+    is particulary bad for the index used for IDs ('##id'), where a single value
+    should only map to one, single node. This means that a whole
+    <CODE><FONT face="courier, monospaced">BitArray</FONT></CODE> is used just to contain one node. The
+    <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> class should be updated to hold the first node for a
+    value in an <CODE><FONT face="courier, monospaced">Integer</FONT></CODE> object, and then replace that with a
+    <CODE><FONT face="courier, monospaced">BitArray</FONT></CODE> or a <CODE><FONT face="courier, monospaced">Vector</FONT></CODE> only is a second node is
+    added to the value. Here is an outline for <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE>:</P>
+    <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+
+    public void add(Object value, int node) {
+        Object container;
+	if ((container = (BitArray)_index.get(value)) == null) {
+            _index.put(value, new Integer(node));
+	}
+	else {
+            // Check if there is _one_ node for this value
+            if (container instanceof Integer) {
+                int first = ((Integer)container
+                _nodes = new BitArray(_arraySize);
+                _nodes.setMask(node &amp; 0xff000000);
+                _nodes.setBit(first &amp; 0x00ffffff);
+                _nodes.setBit(node &amp; 0x00ffffff);
+                _index.put(value, _nodes);
+            }
+            // Otherwise add node to axisting bit array
+            else {
+                _nodex = (BitArray)container;
+                _nodes.setBit(node &amp; 0x00ffffff);
+            }
+        }
+    }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>Other methods inside the <CODE><FONT face="courier, monospaced">KeyIndex</FONT></CODE> should be updated to
+    reflect this.</P>
+
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="patterns"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Id and Key patterns</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>As already mentioned, the challenge with the <CODE><FONT face="courier, monospaced">id()</FONT></CODE> and
+    <CODE><FONT face="courier, monospaced">key()</FONT></CODE> patterns is that they have no specific node type. 
+    Patterns are normally grouped based on their pattern's &quot;kernel&quot; node type.
+    This is done in the <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.compiler.Mode</FONT></CODE> class.
+    The <CODE><FONT face="courier, monospaced">Mode</FONT></CODE> class has a method, <CODE><FONT face="courier, monospaced">flatternAlaternative</FONT></CODE>,
+    that does this grouping, and all templates with a common kernel node type
+    will be inserted into a &quot;test sequence&quot;. A test sequence is a set templates
+    with the same kernel node type. The <CODE><FONT face="courier, monospaced">TestSeq</FONT></CODE> class generates
+    code that will figure out which pattern, amongst several patterns with the
+    same kernel node type, that matches a certain node. This is used by the
+    <CODE><FONT face="courier, monospaced">Mode</FONT></CODE> class when generating the <CODE><FONT face="courier, monospaced">applyTemplates</FONT></CODE>
+    method in the translet. A test sequence is also generated for all templates
+    whose pattern does not have a kernel node type. This is the case for all
+    Id and KeyPatterns. This test sequence, if necessary, is put before the
+    big <CODE><FONT face="courier, monospaced">switch()</FONT></CODE> in the <CODE><FONT face="courier, monospaced">applyTemplates()</FONT></CODE> mehtod. This
+    test has to be done for every single node that is traversed, causing the
+    transformation to slow down siginificantly. This is why we do <B>not</B>
+    recommend using this type of patterns with XSLTC.</P>
+
+    </FONT></TD></TR></TABLE><BR>
+
+  </FONT></TD></TR></TABLE><BR>
+
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2004 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

@@ -1,0 +1,105 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/ontology/bugs
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+koala.owl
+file
+
+
+
+add
+
+oldfood.owl
+file
+
+
+
+add
+
+oldwine.owl
+file
+
+
+
+add
+
+test_codebaker_01.owl
+file
+
+
+
+add
+
+test_dk_01.xml
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+test_hk_06
+dir
+
+
+
+add
+
+test_hk_07A.owl
+file
+
+
+
+add
+
+test_hk_07B.owl
+file
+
+
+
+add
+
+test_hk_import
+dir
+
+
+
+add
+
+test_oh_01.owl
+file
+
+
+
+add
+

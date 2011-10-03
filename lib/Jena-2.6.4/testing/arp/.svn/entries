@@ -1,0 +1,175 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/arp
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+Manifest.rdf
+file
+
+
+
+add
+
+comments
+dir
+
+
+
+add
+
+dom
+dir
+
+
+
+add
+
+error-msgs
+dir
+
+
+
+add
+
+gc
+dir
+
+
+
+add
+
+i18n
+dir
+
+
+
+add
+
+parsetype
+dir
+
+
+
+add
+
+qname-in-ID
+dir
+
+
+
+add
+
+rdf-nnn
+dir
+
+
+
+add
+
+relative-namespaces
+dir
+
+
+
+add
+
+rfc2396-issue
+dir
+
+
+
+add
+
+scope
+dir
+
+
+
+add
+
+state.txt
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+syntax-errors
+dir
+
+
+
+add
+
+tainting
+dir
+
+
+
+add
+
+unqualified
+dir
+
+
+
+add
+
+wineRenamed.rdf
+file
+
+
+
+add
+
+xml-literals
+dir
+
+
+
+add
+
+xmlbase
+dir
+
+
+
+add
+
+xmlns
+dir
+
+
+
+add
+

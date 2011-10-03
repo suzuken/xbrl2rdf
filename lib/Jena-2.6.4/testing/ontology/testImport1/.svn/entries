@@ -1,0 +1,42 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/ontology/testImport1
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+a.owl
+file
+
+
+
+add
+
+readme
+file
+
+
+
+add
+

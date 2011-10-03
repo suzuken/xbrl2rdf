@@ -1,0 +1,17 @@
+package xbrlonto;
+
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.RDFWriter;
+import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.vocabulary.DC;
+import com.hp.hpl.jena.vocabulary.VCARD;
+
+public class AccountClassMaker {
+
+	public static void main(String args[]){
+		Model model = ModelFactory.createDefaultModel();
+		
+	}
+	
+}

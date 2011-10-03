@@ -1,0 +1,1008 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/rdfms-rdf-names-use
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+error-001-bad.nt
+file
+
+
+
+add
+
+error-001-good.nt
+file
+
+
+
+add
+
+error-001.rdf
+file
+
+
+
+add
+
+error-002-bad.nt
+file
+
+
+
+add
+
+error-002-good.nt
+file
+
+
+
+add
+
+error-002.rdf
+file
+
+
+
+add
+
+error-003-bad.nt
+file
+
+
+
+add
+
+error-003-good.nt
+file
+
+
+
+add
+
+error-003.rdf
+file
+
+
+
+add
+
+error-004-bad.nt
+file
+
+
+
+add
+
+error-004-good.nt
+file
+
+
+
+add
+
+error-004.rdf
+file
+
+
+
+add
+
+error-005-bad.nt
+file
+
+
+
+add
+
+error-005-good.nt
+file
+
+
+
+add
+
+error-005.rdf
+file
+
+
+
+add
+
+error-006-bad.nt
+file
+
+
+
+add
+
+error-006-good.nt
+file
+
+
+
+add
+
+error-006.rdf
+file
+
+
+
+add
+
+error-007-bad.nt
+file
+
+
+
+add
+
+error-007-good.nt
+file
+
+
+
+add
+
+error-007.rdf
+file
+
+
+
+add
+
+error-008-bad.nt
+file
+
+
+
+add
+
+error-008-good.nt
+file
+
+
+
+add
+
+error-008.rdf
+file
+
+
+
+add
+
+error-009-bad.nt
+file
+
+
+
+add
+
+error-009-good.nt
+file
+
+
+
+add
+
+error-009.rdf
+file
+
+
+
+add
+
+error-010-bad.nt
+file
+
+
+
+add
+
+error-010-good.nt
+file
+
+
+
+add
+
+error-010.rdf
+file
+
+
+
+add
+
+error-011-bad.nt
+file
+
+
+
+add
+
+error-011-good.nt
+file
+
+
+
+add
+
+error-011.rdf
+file
+
+
+
+add
+
+error-012-bad.nt
+file
+
+
+
+add
+
+error-012-good.nt
+file
+
+
+
+add
+
+error-012.rdf
+file
+
+
+
+add
+
+error-013-bad.nt
+file
+
+
+
+add
+
+error-013-good.nt
+file
+
+
+
+add
+
+error-013.rdf
+file
+
+
+
+add
+
+error-014-bad.nt
+file
+
+
+
+add
+
+error-014-good.nt
+file
+
+
+
+add
+
+error-014.rdf
+file
+
+
+
+add
+
+error-015-bad.nt
+file
+
+
+
+add
+
+error-015-good.nt
+file
+
+
+
+add
+
+error-015.rdf
+file
+
+
+
+add
+
+error-016-bad.nt
+file
+
+
+
+add
+
+error-016-good.nt
+file
+
+
+
+add
+
+error-016.rdf
+file
+
+
+
+add
+
+error-017-bad.nt
+file
+
+
+
+add
+
+error-017-good.nt
+file
+
+
+
+add
+
+error-017.rdf
+file
+
+
+
+add
+
+error-018-bad.nt
+file
+
+
+
+add
+
+error-018-good.nt
+file
+
+
+
+add
+
+error-018.rdf
+file
+
+
+
+add
+
+error-019-bad.nt
+file
+
+
+
+add
+
+error-019-good.nt
+file
+
+
+
+add
+
+error-019.rdf
+file
+
+
+
+add
+
+error-020-bad.nt
+file
+
+
+
+add
+
+error-020-good.nt
+file
+
+
+
+add
+
+error-020.rdf
+file
+
+
+
+add
+
+test-001.nt
+file
+
+
+
+add
+
+test-001.rdf
+file
+
+
+
+add
+
+test-002.nt
+file
+
+
+
+add
+
+test-002.rdf
+file
+
+
+
+add
+
+test-003.nt
+file
+
+
+
+add
+
+test-003.rdf
+file
+
+
+
+add
+
+test-004.nt
+file
+
+
+
+add
+
+test-004.rdf
+file
+
+
+
+add
+
+test-005.nt
+file
+
+
+
+add
+
+test-005.rdf
+file
+
+
+
+add
+
+test-006.nt
+file
+
+
+
+add
+
+test-006.rdf
+file
+
+
+
+add
+
+test-007.nt
+file
+
+
+
+add
+
+test-007.rdf
+file
+
+
+
+add
+
+test-008.nt
+file
+
+
+
+add
+
+test-008.rdf
+file
+
+
+
+add
+
+test-009.nt
+file
+
+
+
+add
+
+test-009.rdf
+file
+
+
+
+add
+
+test-010.nt
+file
+
+
+
+add
+
+test-010.rdf
+file
+
+
+
+add
+
+test-011.nt
+file
+
+
+
+add
+
+test-011.rdf
+file
+
+
+
+add
+
+test-012.nt
+file
+
+
+
+add
+
+test-012.rdf
+file
+
+
+
+add
+
+test-013.nt
+file
+
+
+
+add
+
+test-013.rdf
+file
+
+
+
+add
+
+test-014.nt
+file
+
+
+
+add
+
+test-014.rdf
+file
+
+
+
+add
+
+test-015.nt
+file
+
+
+
+add
+
+test-015.rdf
+file
+
+
+
+add
+
+test-016.nt
+file
+
+
+
+add
+
+test-016.rdf
+file
+
+
+
+add
+
+test-017.nt
+file
+
+
+
+add
+
+test-017.rdf
+file
+
+
+
+add
+
+test-018.nt
+file
+
+
+
+add
+
+test-018.rdf
+file
+
+
+
+add
+
+test-019.nt
+file
+
+
+
+add
+
+test-019.rdf
+file
+
+
+
+add
+
+test-020.nt
+file
+
+
+
+add
+
+test-020.rdf
+file
+
+
+
+add
+
+test-021.nt
+file
+
+
+
+add
+
+test-021.rdf
+file
+
+
+
+add
+
+test-022.nt
+file
+
+
+
+add
+
+test-022.rdf
+file
+
+
+
+add
+
+test-023.nt
+file
+
+
+
+add
+
+test-023.rdf
+file
+
+
+
+add
+
+test-024.nt
+file
+
+
+
+add
+
+test-024.rdf
+file
+
+
+
+add
+
+test-025.nt
+file
+
+
+
+add
+
+test-025.rdf
+file
+
+
+
+add
+
+test-026.nt
+file
+
+
+
+add
+
+test-026.rdf
+file
+
+
+
+add
+
+test-027.nt
+file
+
+
+
+add
+
+test-027.rdf
+file
+
+
+
+add
+
+test-028.nt
+file
+
+
+
+add
+
+test-028.rdf
+file
+
+
+
+add
+
+test-029.nt
+file
+
+
+
+add
+
+test-029.rdf
+file
+
+
+
+add
+
+test-030.nt
+file
+
+
+
+add
+
+test-030.rdf
+file
+
+
+
+add
+
+test-031.nt
+file
+
+
+
+add
+
+test-031.rdf
+file
+
+
+
+add
+
+test-032.nt
+file
+
+
+
+add
+
+test-032.rdf
+file
+
+
+
+add
+
+test-033.nt
+file
+
+
+
+add
+
+test-033.rdf
+file
+
+
+
+add
+
+test-034.nt
+file
+
+
+
+add
+
+test-034.rdf
+file
+
+
+
+add
+
+test-035.nt
+file
+
+
+
+add
+
+test-035.rdf
+file
+
+
+
+add
+
+test-036.nt
+file
+
+
+
+add
+
+test-036.rdf
+file
+
+
+
+add
+
+test-037.nt
+file
+
+
+
+add
+
+test-037.rdf
+file
+
+
+
+add
+
+warn-001.nt
+file
+
+
+
+add
+
+warn-001.rdf
+file
+
+
+
+add
+
+warn-002.nt
+file
+
+
+
+add
+
+warn-002.rdf
+file
+
+
+
+add
+
+warn-003.nt
+file
+
+
+
+add
+
+warn-003.rdf
+file
+
+
+
+add
+

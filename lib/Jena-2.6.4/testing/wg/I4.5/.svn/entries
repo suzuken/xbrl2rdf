@@ -1,0 +1,63 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/I4.5
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+Manifest001.rdf
+file
+
+
+
+add
+
+Manifest002.rdf
+file
+
+
+
+add
+
+conclusions001.rdf
+file
+
+
+
+add
+
+inconsistent002.rdf
+file
+
+
+
+add
+
+premises001.rdf
+file
+
+
+
+add
+

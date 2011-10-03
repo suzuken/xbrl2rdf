@@ -1,0 +1,413 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/rdf-ns-prefix-confusion
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+error0001-bad.nt
+file
+
+
+
+add
+
+error0001-good.nt
+file
+
+
+
+add
+
+error0001.rdf
+file
+
+
+
+add
+
+error0002-bad.nt
+file
+
+
+
+add
+
+error0002-good.nt
+file
+
+
+
+add
+
+error0002.rdf
+file
+
+
+
+add
+
+error0003-bad.nt
+file
+
+
+
+add
+
+error0003-good.nt
+file
+
+
+
+add
+
+error0003.rdf
+file
+
+
+
+add
+
+error0004-bad.nt
+file
+
+
+
+add
+
+error0004-good.nt
+file
+
+
+
+add
+
+error0004.rdf
+file
+
+
+
+add
+
+error0005-bad.nt
+file
+
+
+
+add
+
+error0005-good.nt
+file
+
+
+
+add
+
+error0005.rdf
+file
+
+
+
+add
+
+error0006-bad.nt
+file
+
+
+
+add
+
+error0006-good.nt
+file
+
+
+
+add
+
+error0006.rdf
+file
+
+
+
+add
+
+error0007-bad.nt
+file
+
+
+
+add
+
+error0007-good.nt
+file
+
+
+
+add
+
+error0007.rdf
+file
+
+
+
+add
+
+error0008-bad.nt
+file
+
+
+
+add
+
+error0008-good.nt
+file
+
+
+
+add
+
+error0008.rdf
+file
+
+
+
+add
+
+error0009-bad.nt
+file
+
+
+
+add
+
+error0009-good.nt
+file
+
+
+
+add
+
+error0009.rdf
+file
+
+
+
+add
+
+test0001.nt
+file
+
+
+
+add
+
+test0001.rdf
+file
+
+
+
+add
+
+test0002.nt
+file
+
+
+
+add
+
+test0002.rdf
+file
+
+
+
+add
+
+test0003.nt
+file
+
+
+
+add
+
+test0003.rdf
+file
+
+
+
+add
+
+test0004.nt
+file
+
+
+
+add
+
+test0004.rdf
+file
+
+
+
+add
+
+test0005.nt
+file
+
+
+
+add
+
+test0005.rdf
+file
+
+
+
+add
+
+test0006.nt
+file
+
+
+
+add
+
+test0006.rdf
+file
+
+
+
+add
+
+test0007.nt
+file
+
+
+
+add
+
+test0007.rdf
+file
+
+
+
+add
+
+test0008.nt
+file
+
+
+
+add
+
+test0008.rdf
+file
+
+
+
+add
+
+test0009.nt
+file
+
+
+
+add
+
+test0009.rdf
+file
+
+
+
+add
+
+test0010.nt
+file
+
+
+
+add
+
+test0010.rdf
+file
+
+
+
+add
+
+test0011.nt
+file
+
+
+
+add
+
+test0011.rdf
+file
+
+
+
+add
+
+test0012.nt
+file
+
+
+
+add
+
+test0012.rdf
+file
+
+
+
+add
+
+test0013.nt
+file
+
+
+
+add
+
+test0013.rdf
+file
+
+
+
+add
+
+test0014.nt
+file
+
+
+
+add
+
+test0014.rdf
+file
+
+
+
+add
+

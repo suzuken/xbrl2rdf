@@ -1,0 +1,182 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/rdf-containers-syntax-vs-schema
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+error001-bad.nt
+file
+
+
+
+add
+
+error001-good.nt
+file
+
+
+
+add
+
+error001.rdf
+file
+
+
+
+add
+
+error002-bad.nt
+file
+
+
+
+add
+
+error002-good.nt
+file
+
+
+
+add
+
+error002.rdf
+file
+
+
+
+add
+
+test001.nt
+file
+
+
+
+add
+
+test001.rdf
+file
+
+
+
+add
+
+test002.nt
+file
+
+
+
+add
+
+test002.rdf
+file
+
+
+
+add
+
+test003.nt
+file
+
+
+
+add
+
+test003.rdf
+file
+
+
+
+add
+
+test004.nt
+file
+
+
+
+add
+
+test004.rdf
+file
+
+
+
+add
+
+test005.nt
+file
+
+
+
+add
+
+test005.rdf
+file
+
+
+
+add
+
+test006.nt
+file
+
+
+
+add
+
+test006.rdf
+file
+
+
+
+add
+
+test007.nt
+file
+
+
+
+add
+
+test007.rdf
+file
+
+
+
+add
+
+test008.nt
+file
+
+
+
+add
+
+test008.rdf
+file
+
+
+
+add
+

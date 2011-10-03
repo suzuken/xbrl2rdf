@@ -1,0 +1,707 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+AllDifferent
+dir
+
+
+
+add
+
+AnnotationProperty
+dir
+
+
+
+add
+
+Class
+dir
+
+
+
+add
+
+DatatypeProperty
+dir
+
+
+
+add
+
+FunctionalProperty
+dir
+
+
+
+add
+
+I3.2
+dir
+
+
+
+add
+
+I3.4
+dir
+
+
+
+add
+
+I4.1
+dir
+
+
+
+add
+
+I4.5
+dir
+
+
+
+add
+
+I4.6
+dir
+
+
+
+add
+
+I5.1
+dir
+
+
+
+add
+
+I5.2
+dir
+
+
+
+add
+
+I5.21
+dir
+
+
+
+add
+
+I5.24
+dir
+
+
+
+add
+
+I5.26
+dir
+
+
+
+add
+
+I5.3
+dir
+
+
+
+add
+
+I5.5
+dir
+
+
+
+add
+
+I5.8
+dir
+
+
+
+add
+
+I6.1
+dir
+
+
+
+add
+
+InverseFunctionalProperty
+dir
+
+
+
+add
+
+Manifest-extra.rdf
+file
+
+
+
+add
+
+Manifest-from-web.rdf
+file
+
+
+
+add
+
+Manifest-orig.rdf
+file
+
+
+
+add
+
+Manifest-wrong.rdf
+file
+
+
+
+add
+
+Manifest.rdf
+file
+
+
+
+add
+
+Nothing
+dir
+
+
+
+add
+
+OWLManifest.rdf
+file
+
+
+
+add
+
+Ontology
+dir
+
+
+
+add
+
+Restriction
+dir
+
+
+
+add
+
+SymmetricProperty
+dir
+
+
+
+add
+
+Thing
+dir
+
+
+
+add
+
+TransitiveProperty
+dir
+
+
+
+add
+
+allValuesFrom
+dir
+
+
+
+add
+
+amp-in-url
+dir
+
+
+
+add
+
+backwardCompatibleWith
+dir
+
+
+
+add
+
+cardinality
+dir
+
+
+
+add
+
+complementOf
+dir
+
+
+
+add
+
+datatypes
+dir
+
+
+
+add
+
+datatypes-intensional
+dir
+
+
+
+add
+
+description-logic
+dir
+
+
+
+add
+
+differentFrom
+dir
+
+
+
+add
+
+disjointWith
+dir
+
+
+
+add
+
+distinctMembers
+dir
+
+
+
+add
+
+empty.rdf
+file
+
+
+
+add
+
+equivalentClass
+dir
+
+
+
+add
+
+equivalentProperty
+dir
+
+
+
+add
+
+extra-credit
+dir
+
+
+
+add
+
+false.rdf
+file
+
+
+
+add
+
+horst-01
+dir
+
+
+
+add
+
+imports
+dir
+
+
+
+add
+
+intersectionOf
+dir
+
+
+
+add
+
+inverseOf
+dir
+
+
+
+add
+
+localtests
+dir
+
+
+
+add
+
+maxCardinality
+dir
+
+
+
+add
+
+miscellaneous
+dir
+
+
+
+add
+
+oneOf
+dir
+
+
+
+add
+
+pfps-10
+dir
+
+
+
+add
+
+rdf-charmod-literals
+dir
+
+
+
+add
+
+rdf-charmod-uris
+dir
+
+
+
+add
+
+rdf-containers-syntax-vs-schema
+dir
+
+
+
+add
+
+rdf-element-not-mandatory
+dir
+
+
+
+add
+
+rdf-ns-prefix-confusion
+dir
+
+
+
+add
+
+rdfms-abouteach
+dir
+
+
+
+add
+
+rdfms-difference-between-ID-and-about
+dir
+
+
+
+add
+
+rdfms-duplicate-member-props
+dir
+
+
+
+add
+
+rdfms-empty-property-elements
+dir
+
+
+
+add
+
+rdfms-identity-anon-resources
+dir
+
+
+
+add
+
+rdfms-literal-is-xml-structure
+dir
+
+
+
+add
+
+rdfms-nested-bagIDs
+dir
+
+
+
+add
+
+rdfms-not-id-and-resource-attr
+dir
+
+
+
+add
+
+rdfms-para196
+dir
+
+
+
+add
+
+rdfms-parseType
+dir
+
+
+
+add
+
+rdfms-rdf-id
+dir
+
+
+
+add
+
+rdfms-rdf-names-use
+dir
+
+
+
+add
+
+rdfms-reification-required
+dir
+
+
+
+add
+
+rdfms-seq-representation
+dir
+
+
+
+add
+
+rdfms-syntax-incomplete
+dir
+
+
+
+add
+
+rdfms-uri-substructure
+dir
+
+
+
+add
+
+rdfms-xml-literal-namespaces
+dir
+
+
+
+add
+
+rdfms-xmllang
+dir
+
+
+
+add
+
+rdfs-container-membership-superProperty
+dir
+
+
+
+add
+
+rdfs-domain-and-range
+dir
+
+
+
+add
+
+rdfs-entailment
+dir
+
+
+
+add
+
+rdfs-no-cycles-in-subClassOf
+dir
+
+
+
+add
+
+rdfs-no-cycles-in-subPropertyOf
+dir
+
+
+
+add
+
+rdfs-subClassOf-a-Property
+dir
+
+
+
+add
+
+rdfs-subPropertyOf-semantics
+dir
+
+
+
+add
+
+sameAs
+dir
+
+
+
+add
+
+someValuesFrom
+dir
+
+
+
+add
+
+statement-entailment
+dir
+
+
+
+add
+
+testOntology.rdf
+file
+
+
+
+add
+
+tex-01
+dir
+
+
+
+add
+
+unionOf
+dir
+
+
+
+add
+
+unrecognised-xml-attributes
+dir
+
+
+
+add
+
+xml-canon
+dir
+
+
+
+add
+
+xmlbase
+dir
+
+
+
+add
+
+xmlsch-02
+dir
+
+
+
+add
+

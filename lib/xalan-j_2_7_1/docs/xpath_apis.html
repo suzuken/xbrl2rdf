@@ -1,0 +1,440 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>Using the JAXP XPath APIs</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xpath_apis-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+  
+  <A href="whatsnew.html" onMouseOut="rolloverOff('side-whatsnew');" onMouseOver="rolloverOn('side-whatsnew');"><IMG alt="What's New" border="0" height="12" hspace="0" name="side-whatsnew" onLoad="rolloverLoad('side-whatsnew','graphics/whatsnew-label-2.jpg','graphics/whatsnew-label-3.jpg');" src="graphics/whatsnew-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="readme.html" onMouseOut="rolloverOff('side-readme');" onMouseOver="rolloverOn('side-readme');"><IMG alt="Release Notes" border="0" height="12" hspace="0" name="side-readme" onLoad="rolloverLoad('side-readme','graphics/readme-label-2.jpg','graphics/readme-label-3.jpg');" src="graphics/readme-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="overview.html" onMouseOut="rolloverOff('side-overview');" onMouseOver="rolloverOn('side-overview');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-overview" onLoad="rolloverLoad('side-overview','graphics/overview-label-2.jpg','graphics/overview-label-3.jpg');" src="graphics/overview-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="downloads.html" onMouseOut="rolloverOff('side-downloads');" onMouseOver="rolloverOn('side-downloads');"><IMG alt="Download/Build" border="0" height="12" hspace="0" name="side-downloads" onLoad="rolloverLoad('side-downloads','graphics/downloads-label-2.jpg','graphics/downloads-label-3.jpg');" src="graphics/downloads-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <A href="getstarted.html" onMouseOut="rolloverOff('side-getstarted');" onMouseOver="rolloverOn('side-getstarted');"><IMG alt="Getting Started" border="0" height="12" hspace="0" name="side-getstarted" onLoad="rolloverLoad('side-getstarted','graphics/getstarted-label-2.jpg','graphics/getstarted-label-3.jpg');" src="graphics/getstarted-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc_usage.html" onMouseOut="rolloverOff('side-xsltc_usage');" onMouseOver="rolloverOn('side-xsltc_usage');"><IMG alt="Using XSLTC" border="0" height="12" hspace="0" name="side-xsltc_usage" onLoad="rolloverLoad('side-xsltc_usage','graphics/xsltc_usage-label-2.jpg','graphics/xsltc_usage-label-3.jpg');" src="graphics/xsltc_usage-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="faq.html" onMouseOut="rolloverOff('side-faq');" onMouseOver="rolloverOn('side-faq');"><IMG alt="FAQs" border="0" height="12" hspace="0" name="side-faq" onLoad="rolloverLoad('side-faq','graphics/faq-label-2.jpg','graphics/faq-label-3.jpg');" src="graphics/faq-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="samples.html" onMouseOut="rolloverOff('side-samples');" onMouseOver="rolloverOn('side-samples');"><IMG alt="Sample Apps" border="0" height="12" hspace="0" name="side-samples" onLoad="rolloverLoad('side-samples','graphics/samples-label-2.jpg','graphics/samples-label-3.jpg');" src="graphics/samples-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="commandline.html" onMouseOut="rolloverOff('side-commandline');" onMouseOver="rolloverOn('side-commandline');"><IMG alt="Command Line" border="0" height="12" hspace="0" name="side-commandline" onLoad="rolloverLoad('side-commandline','graphics/commandline-label-2.jpg','graphics/commandline-label-3.jpg');" src="graphics/commandline-label-3.jpg" vspace="0" width="120"></A><BR>
+    
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="features.html" onMouseOut="rolloverOff('side-features');" onMouseOver="rolloverOn('side-features');"><IMG alt="Features" border="0" height="12" hspace="0" name="side-features" onLoad="rolloverLoad('side-features','graphics/features-label-2.jpg','graphics/features-label-3.jpg');" src="graphics/features-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="trax.html" onMouseOut="rolloverOff('side-trax');" onMouseOver="rolloverOn('side-trax');"><IMG alt="Transform API" border="0" height="12" hspace="0" name="side-trax" onLoad="rolloverLoad('side-trax','graphics/trax-label-2.jpg','graphics/trax-label-3.jpg');" src="graphics/trax-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="XPath API" border="0" height="12" hspace="0" src="graphics/xpath_apis-label-1.jpg" vspace="0" width="120"><BR>
+  <A href="usagepatterns.html" onMouseOut="rolloverOff('side-usagepatterns');" onMouseOver="rolloverOn('side-usagepatterns');"><IMG alt="Usage Patterns" border="0" height="12" hspace="0" name="side-usagepatterns" onLoad="rolloverLoad('side-usagepatterns','graphics/usagepatterns-label-2.jpg','graphics/usagepatterns-label-3.jpg');" src="graphics/usagepatterns-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="apidocs/index.html" onMouseOut="rolloverOff('side-ext-42');" onMouseOver="rolloverOn('side-ext-42');"><IMG alt="Xalan-J API" border="0" height="12" hspace="0" name="side-ext-42" onLoad="rolloverLoad('side-ext-42','graphics/ext-42-label-2.jpg','graphics/ext-42-label-3.jpg');" src="graphics/ext-42-label-3.jpg" vspace="0" width="120"></A><BR>    
+  <A href="public_apis.html" onMouseOut="rolloverOff('side-public_apis');" onMouseOver="rolloverOn('side-public_apis');"><IMG alt="Public APIs" border="0" height="12" hspace="0" name="side-public_apis" onLoad="rolloverLoad('side-public_apis','graphics/public_apis-label-2.jpg','graphics/public_apis-label-3.jpg');" src="graphics/public_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="dtm.html" onMouseOut="rolloverOff('side-dtm');" onMouseOver="rolloverOn('side-dtm');"><IMG alt="DTM" border="0" height="12" hspace="0" name="side-dtm" onLoad="rolloverLoad('side-dtm','graphics/dtm-label-2.jpg','graphics/dtm-label-3.jpg');" src="graphics/dtm-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="extensions.html" onMouseOut="rolloverOff('side-extensions');" onMouseOver="rolloverOn('side-extensions');"><IMG alt="Extensions" border="0" height="12" hspace="0" name="side-extensions" onLoad="rolloverLoad('side-extensions','graphics/extensions-label-2.jpg','graphics/extensions-label-3.jpg');" src="graphics/extensions-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensionslib.html" onMouseOut="rolloverOff('side-extensionslib');" onMouseOver="rolloverOn('side-extensionslib');"><IMG alt="Extensions Library" border="0" height="12" hspace="0" name="side-extensionslib" onLoad="rolloverLoad('side-extensionslib','graphics/extensionslib-label-2.jpg','graphics/extensionslib-label-3.jpg');" src="graphics/extensionslib-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensions_xsltc.html" onMouseOut="rolloverOff('side-extensions_xsltc');" onMouseOver="rolloverOn('side-extensions_xsltc');"><IMG alt="XSLTC Exts" border="0" height="12" hspace="0" name="side-extensions_xsltc" onLoad="rolloverLoad('side-extensions_xsltc','graphics/extensions_xsltc-label-2.jpg','graphics/extensions_xsltc-label-3.jpg');" src="graphics/extensions_xsltc-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="design/design2_0_0.html" onMouseOut="rolloverOff('side-ext-58');" onMouseOver="rolloverOn('side-ext-58');"><IMG alt="Xalan 2 Design" border="0" height="12" hspace="0" name="side-ext-58" onLoad="rolloverLoad('side-ext-58','graphics/ext-58-label-2.jpg','graphics/ext-58-label-3.jpg');" src="graphics/ext-58-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc/index.html" onMouseOut="rolloverOff('side-ext-60');" onMouseOver="rolloverOn('side-ext-60');"><IMG alt="XSLTC Design" border="0" height="12" hspace="0" name="side-ext-60" onLoad="rolloverLoad('side-ext-60','graphics/ext-60-label-2.jpg','graphics/ext-60-label-3.jpg');" src="graphics/ext-60-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="builds.html" onMouseOut="rolloverOff('side-builds');" onMouseOver="rolloverOn('side-builds');"><IMG alt="Building a release" border="0" height="12" hspace="0" name="side-builds" onLoad="rolloverLoad('side-builds','graphics/builds-label-2.jpg','graphics/builds-label-3.jpg');" src="graphics/builds-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="http://xml.apache.org/xalan-j/test/overview.html" onMouseOut="rolloverOff('side-ext-66');" onMouseOver="rolloverOn('side-ext-66');"><IMG alt="Testing" border="0" height="12" hspace="0" name="side-ext-66" onLoad="rolloverLoad('side-ext-66','graphics/ext-66-label-2.jpg','graphics/ext-66-label-3.jpg');" src="graphics/ext-66-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="bugreporting.html" onMouseOut="rolloverOff('side-bugreporting');" onMouseOver="rolloverOn('side-bugreporting');"><IMG alt="Bug Reporting" border="0" height="12" hspace="0" name="side-bugreporting" onLoad="rolloverLoad('side-bugreporting','graphics/bugreporting-label-2.jpg','graphics/bugreporting-label-3.jpg');" src="graphics/bugreporting-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="contact_us.html" onMouseOut="rolloverOff('side-contact_us');" onMouseOver="rolloverOn('side-contact_us');"><IMG alt="Contact us" border="0" height="12" hspace="0" name="side-contact_us" onLoad="rolloverLoad('side-contact_us','graphics/contact_us-label-2.jpg','graphics/contact_us-label-3.jpg');" src="graphics/contact_us-label-3.jpg" vspace="0" width="120"></A><BR>  
+  
+  
+  
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+  <UL>
+  <LI><A href="#basic">Basic steps</A></LI>
+  <LI><A href="#plugin">Plugging in the XPathFactory</A></LI>
+  <LI><A href="#namespacecontext">Using NamespaceContext</A></LI>
+  <LI><A href="#variableresolver">Using XPathVariableResolver</A></LI>
+  <LI><A href="#functionresolver">Using XPathFunctionResolver</A></LI>
+  <LI><A href="#sampleresolver">Using the sample XPathFunctionResolver</A></LI>
+  </UL>
+  
+  <A name="basic"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Basic steps</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <OL>
+    <LI><A href="#xpathfactory">Instantiate an XPathFactory</A></LI>
+    <LI><A href="#xpath">Create an XPath</A></LI>
+    <LI><A href="#xpathexpression">(optional) Create an XPathExpression</A></LI>
+    <LI><A href="#evaluation">Evaluate the XPath expression in a specified context</A></LI>
+    </OL>
+  <P>The following example illustrates the basic steps involved in evaluating an XPath expression.</P>
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>// 1. Instantiate an XPathFactory.
+  javax.xml.xpath.XPathFactory factory = 
+                    javax.xml.xpath.XPathFactory.newInstance();
+  
+  // 2. Use the XPathFactory to create a new XPath object
+  javax.xml.xpath.XPath xpath = factory.newXPath();
+  
+  // 3. Compile an XPath string into an XPathExpression
+  javax.xml.xpath.XPathExpression expression = xpath.compile(&quot;/doc/name&quot;);
+  
+  // 4. Evaluate the XPath expression on an input document
+ String result = expression.evaluate(new org.xml.sax.InputSource(&quot;foo.xml&quot;));
+  </PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="xpathfactory"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>1. Instantiate an XPathFactory</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">  
+  <P><A href="apidocs/javax/xml/xpath/XPathFactory.html">XPathFactory</A> is an abstract class with two static 
+  newInstance() methods (<A href="apidocs/javax/xml/xpath/XPathFactory.html#newInstance()">newInstance()</A> and
+  <A href="apidocs/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String)">newInstance(String uri)</A>)
+  that instantiate the concrete subclass designated as the javax.xml.xpath.XPathFactory service provider.
+  The optional parameter uri specifies the object model. The implementation in Xalan-Java 2 only supports the
+  W3C DOM object model, identified by the URI <A href="apidocs/javax/xml/xpath/XPathFactory.html#DEFAULT_OBJECT_MODEL_URI">
+  DEFAULT_OBJECT_MODEL_URI</A>.</P>
+
+  <P>The default service provider for the javax.xml.xpath.XPathFactory service is 
+  <A href="apidocs/org/apache/xpath/jaxp/XPathFactoryImpl.html">org.apache.xpath.jaxp.XPathFactoryImpl</A>.
+  </P>
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="xpath"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>2. Create an XPath</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  You can use the <A href="apidocs/javax/xml/xpath/XPathFactory.html#newXPath()">XPathFactory.newXPath()</A> 
+  method to create a new <A href="apidocs/javax/xml/xpath/XPath.html">XPath</A>.
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="xpathexpression"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>3. (optional) Create an XPathExpression</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  You can use the <A href="apidocs/javax/xml/xpath/XPath.html#compile(java.lang.String)">XPath.compile(String expression)</A>
+  method to compile an XPath string into an <A href="apidocs/javax/xml/xpath/XPathExpression.html">XPathExpression</A> object 
+  for later evaluation. This is an optional step.
+  You can evaluate an XPath expression without compiling it first. 
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="evaluation"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>4. Evaluate an XPath expression</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>If you compile an XPath String into an <A href="apidocs/javax/xml/xpath/XPathExpression.html">XPathExpression</A> 
+  in step 3, you can use one of the four evaluate() methods in
+  the XPathExpression interface to evaluate the XPath expression. If the evaluation context is a W3C Node in an 
+  existing Document, you can use the <A href="apidocs/javax/xml/xpath/XPathExpression.html#evaluate(java.lang.Object)">
+  evaluate(Object item)</A> or <A href="apidocs/javax/xml/xpath/XPathExpression.html#evaluate(java.lang.Object, javax.xml.namespace.QName)">
+  evaluate(Object item, QName returnType)</A> method by passing the context item as the first parameter.
+  The method with a returnType parameter allows you to specify the return type as one of the following supported 
+  return types:
+  <LI><A href="apidocs/javax/xml/xpath/XPathConstants.html#BOOLEAN">XPathConstants.BOOLEAN</A></LI>
+  <LI><A href="apidocs/javax/xml/xpath/XPathConstants.html#NUMBER">XPathConstants.NUMBER</A></LI>
+  <LI><A href="apidocs/javax/xml/xpath/XPathConstants.html#STRING">XPathConstants.STRING</A></LI>
+  <LI><A href="apidocs/javax/xml/xpath/XPathConstants.html#NODESET">XPathConstants.NODESET</A></LI>
+  <LI><A href="apidocs/javax/xml/xpath/XPathConstants.html#NODE">XPathConstants.NODE</A></LI>
+  </P>
+  <P>If the returnType parameter is not specified, the default is XPathConstants.STRING.</P>
+  <P>If the evaluation context is an input document, you can use one of the two evaluate() methods with an 
+  InputSource parameter (<A href="apidocs/javax/xml/xpath/XPathExpression.html#evaluate(org.xml.sax.InputSource)">evaluate(InputSource source)</A> 
+  or <A href="apidocs/javax/xml/xpath/XPathExpression.html#evaluate(org.xml.sax.InputSource, javax.xml.namespace.QName)">
+  evaluate(InputSource source, QName returnType)</A>) to evaluate the XPath expression.</P>
+  <P>The compiling step allows you to reuse an XPath expression for evaluation on multiple contexts. 
+  If an XPath expression is only used once, you can use one of the four evaluate() methods in the 
+  <A href="apidocs/javax/xml/xpath/XPath.html">XPath</A> interface 
+  to evaluate the XPath expression without compiling it first.</P>
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="plugin"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Plugging in the XPathFactory</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>The Java API for XML Processing interfaces enable you to plug in your own implementation of XPathFactory.
+  The abstract class XPathFactory has a static newInstance() method that instantiates a concrete Factory 
+  which wraps the underlying implementation. The newInstance() method uses system property settings to determine 
+  which implementation to instantiate.</P>
+  <P>Xalan-Java 2 is distributed with a pre-configured setting for the provider of the XPathFactory service. This setting is in 
+  xalan.jar in META-INF/services/javax.xml.xpath.XPathFactory, with a value of org.apache.xpath.jaxp.XPathFactoryImpl.</P>
+  <P>You can plug in a new XPathFactory as follows (in order of precedence):
+  <OL>
+  <LI>Set the system property &quot;javax.xml.xpath.XPathFactory&quot; + &quot;:uri&quot; from the command line when you 
+  launch Java or from within your application, where uri is the URI of the underlying object model. The URI of
+  the default W3C DOM object model is <CODE><FONT face="courier, monospaced">http://java.sun.com/jaxp/xpath/dom</FONT></CODE>.</LI>
+  <LI>Set the property in jaxp.properties in the JAVA_HOME/lib directory, where JAVA_HOME is the root of 
+  the JDK.</LI>
+  <LI>Revise the entry in src/META-INF/services/javax.xml.xpath.XPathFactory and rebuild xalan.jar. Each potential service 
+  provider entry in this file is required to implement the method <CODE><FONT face="courier, monospaced">isObjectModelSupported(String objectModel).</FONT></CODE>
+  The first service provider found in class loader order that supports the specified object model will be used.</LI>
+  </OL>
+  </P>
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="namespacecontext"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using NamespaceContext</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>If namespace prefixes are used in an XPath expression, the XPath processor needs to know what namespace URIs 
+  the prefixes are bound to. Logically a prefix can only be bound to a single Namespace URI in the current scope. However,
+  a Namespace URI can be bound to multiple prefixes in the current scope. The information about namespace 
+  prefix to URI mappings is provided by an object that implements the 
+  <A href="apidocs/javax/xml/namespace/NamespaceContext.html">javax.xml.namespace.NamespaceContext</A> interface.</P>
+  <P>Suppose you want to evaluate the XPath expression <CODE><FONT face="courier, monospaced">&quot;/foo:document/bar:element&quot;</FONT></CODE> on the following xml document:</P>
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+  &lt;?xml version='1.0'?&gt;
+  &lt;foo:document xmlns:foo=&quot;http://apache.org/foo&quot; xmlns:bar=&quot;http://apache.org/bar&quot;&gt;
+    &lt;bar:element&gt;MyBar&lt;/bar:element&gt;
+  &lt;/foo:document&gt;
+  </PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  
+  <P>You need to create your own implementation of <A href="apidocs/javax/xml/namespace/NamespaceContext.html">NamespaceContext</A>
+  to inform the XPath processor what namespace URIs
+  the prefixes are bound to. For the example above, you can create a NamespaceContext implementation as follows:</P>
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public class MyNamespaceContext implements NamespaceContext
+    {
+        public String getNamespaceURI(String prefix)
+        {
+            if (prefix.equals(&quot;foo&quot;))
+                return &quot;http://apache.org/foo&quot;;
+            else if (prefix.equals(&quot;bar&quot;))
+                return &quot;http://apache.org/bar&quot;;
+            else
+                return XMLConstants.NULL_NS_URI;
+        }
+        
+        public String getPrefix(String namespace)
+        {
+            if (namespace.equals(&quot;http://apache.org/foo&quot;))
+                return &quot;foo&quot;;
+            else if (namespace.equals(&quot;http://apache.org/bar&quot;))
+                return &quot;bar&quot;;
+            else
+                return null;
+        }
+
+        public Iterator getPrefixes(String namespace)
+        {
+            return null;
+        }
+    }  
+  </PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  
+  <P>Then you can use the <A href="apidocs/javax/xml/xpath/XPath.html#setNamespaceContext(javax.xml.namespace.NamespaceContext)">
+  XPath.setNamespaceContext(NamespaceContext nsContext)</A>
+  method to set the NamespaceContext on the XPath object you create using the <A href="#basic">basic steps</A>.</P>
+  <P>The XPath processor in Xalan-Java 2 only uses the <A href="apidocs/javax/xml/namespace/NamespaceContext.html#getNamespaceURI(java.lang.String)">
+  getNamespaceURI(String prefix)</A>
+  method on NamespaceContext. The other two methods 
+  <A href="apidocs/javax/xml/namespace/NamespaceContext.html#getPrefix(java.lang.String)">getPrefix(String namespace)</A>
+  and <A href="apidocs/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)">getPrefixes(String namespace)</A>
+  are not used. If the NamespaceContext object is only used by the XPath processor, you can let the unused methods 
+  return null for simplicity.</P>
+  
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="variableresolver"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using XPathVariableResolver</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P><A href="apidocs/javax/xml/xpath/XPathVariableResolver.html">XPathVariableResolver</A> provides access to the set of user 
+  defined XPath variables. If an XPath expression contains
+  a variable reference, we need to set a XPathVariableResolver on the XPath object using the 
+  <A href="apidocs/javax/xml/xpath/XPath.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)">
+  XPath.setXPathVariableResolver(XPathVariableResolver resolver)</A>
+  method. You can also set the XPathVariableResolver on the XPathFactory, using the 
+  <A href="apidocs/javax/xml/xpath/XPathFactory.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)">
+  XPathFactory.setXPathVariableResolver(XPathVariableResolver resolver)</A>
+  method. If the XPathVariableResolver is set on the XPathFacory, then all XPath objects constructed from this 
+  XPathFactory will use the specified XPathVariableResolver by default. The XPath processor uses the
+  XPathVariableResolver to retrieve the value of a user defined variable. In the course of evaluating any 
+  single XPath expression, a variable's value must be immutable. </P>
+  <P>Suppose that the XPath expression to be evaluated is <CODE><FONT face="courier, monospaced">&quot;$x + $y&quot;</FONT></CODE>, we need to provide a XPathVariableResolver
+  implementation from which the values of the variable x and y can be retrieved. For this example, the 
+  XPathVariableResolver implementation can be written as follows:</P>
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public class MyVariableResolver implements XPathVariableResolver
+    {
+        public Object resolveVariable(QName var)
+        {
+            if (var == null)
+                throw new NullPointerException(&quot;The variable name cannot be null&quot;);
+              
+            if (var.equals(new QName(&quot;x&quot;)))
+                return new Integer(2);
+            else if (var.equals(new QName(&quot;y&quot;)))
+                return new Integer(3);
+            else
+                return null;
+        }
+    }
+  </PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>  
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="functionresolver"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using XPathFunctionResolver</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P><A href="apidocs/javax/xml/xpath/XPathFunctionResolver.html">XPathFunctionResolver</A> provides access to the 
+  set of user defined XPathFunctions. If an XPath expression contains
+  an extension function, you can use the 
+  <A href="apidocs/javax/xml/xpath/XPath.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)">
+  XPath.setXPathFunctionResolver(XPathFunctionResolver resolver)</A>
+  method to set a XPathFunctionResolver on the XPath object. You can also use the
+  <A href="apidocs/javax/xml/xpath/XPathFactory.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)">
+  XPathFactory.setXPathFunctionResolver(XPathFunctionResolver resolver)</A>
+  method to set a XPathFunctionResolver on the XPathFactory, in which case all XPath objects constructed from this
+  XPathFactory will use the specified XPathVariableResolver by default.</P>
+  <P>The XPathFunctionResolver interface only has one method:</P>
+  <P><A href="apidocs/javax/xml/xpath/XPathFunctionResolver.html#resolveFunction(javax.xml.namespace.QName, int)">
+  <CODE><FONT face="courier, monospaced">public XPathFunction resolveFunction(QName functionName, int arity)</FONT></CODE></A></P>
+  <P>This method returns a XPathFunction object from the given function name and arity. XPath functions are resolved 
+  by name and arity. The parameter types have no impact here. XPathFunctionResolver is only used for functions with
+  an explicit prefix. It is not needed for XPath built-in functions and it cannot be used to override those functions.</P>
+  <P>The XPathFunction interface has only one method:</P>
+  <P><A href="apidocs/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)">
+  <CODE><FONT face="courier, monospaced">public java.lang.Object evaluate(java.util.List args) throws XPathFunctionException</FONT></CODE></A></P>
+  <P>The function parameters are passed in using the args parameter as a java.util.List. And the method returns the result 
+  of evaluating the XPath function as an Object.</P>
+  <P>To support the use of extension functions in an XPath expression, a user needs to provide implementations of
+  the XPathFunctionResolver and XPathFunction interfaces. The resolveFunction method of the XPathFunctionResolver
+  implementation should return an object of a class that implements the XPathFunction interface.</P>
+  <P>Suppose we want to evaluate the XPath expression <CODE><FONT face="courier, monospaced">&quot;ext:myAdditionFunction(2, 3)&quot;</FONT></CODE>, and the purpose
+  of the extension function is simply to return the sum of the two parameters. Because an extension function
+  always has an explicit prefix, we also need to implement the NamespaceContext interface to provide a namespace
+  prefix to URI mapping. For this example, we need to implement three interfaces: NamespaceContext, 
+  XPathFunctionResolver and XPathFunction. A sample implementation is as follows:</P>
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+      public class MyNamespaceContext implements NamespaceContext
+      {
+          public String getNamespaceURI(String prefix)
+          {
+              if (prefix == null)
+                throw new IllegalArgumentException(&quot;The prefix cannot be null.&quot;);
+              
+              if (prefix.equals(&quot;ext&quot;))
+                  return &quot;http://ext.com&quot;;
+              else
+                  return null;
+          }
+          
+          public String getPrefix(String namespace)
+          {
+              if (namespace == null)
+                throw new IllegalArgumentException(&quot;The namespace uri cannot be null.&quot;);
+              if (namespace.equals(&quot;http://ext.com&quot;))
+                return &quot;ext&quot;;
+              else
+                return null;
+          }
+  
+          public Iterator getPrefixes(String namespace)
+          {
+              return null;
+          }
+      }
+      
+      /**
+       * The XPathFunctionResolver implementation is used to evaluate
+       * the extension function &quot;ext:myAdditionFunction(2, 3)&quot;.
+       */
+      public class MyFunctionResolver implements XPathFunctionResolver
+      {
+      	/**
+      	 * This method returns a customized XPathFunction implementation
+      	 * for the extension function &quot;ext:myAdditionFunction(2, 3)&quot;.
+      	 */
+      	public XPathFunction resolveFunction(QName fname, int arity)
+      	{
+      	  if (fname == null)
+      	    throw new NullPointerException(&quot;The function name cannot be null.&quot;);
+      	  
+      	  // We only recognize one function, i.e. ex:addFunc().
+      	  if (fname.equals(new QName(&quot;http://ext.com&quot;, &quot;myAdditionFunction&quot;, &quot;ext&quot;)))
+      	    /** 
+      	     * Return a customized implementation of XPathFunction. We need
+      	     * to implement the evaluate(List) method.
+      	     */
+      	    return new XPathFunction() {
+      	      /**
+      	       * The actual implementation of the extension function.
+      	       * Just cast two arguments to Double and add them together.
+      	       */
+      	      public Object evaluate(java.util.List args) {
+      	        if (args.size() == 2) {
+      	          Double arg1 = (Double)args.get(0);
+      	          Double arg2 = (Double)args.get(1);
+      	          return new Double(arg1.doubleValue() + arg2.doubleValue());
+      	        }
+      	        else
+      	          return null;
+      	      }
+      	    };
+      	  else
+      	    return null;
+      	}
+      }
+  </PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  </FONT></TD></TR></TABLE><BR>
+  
+  <A name="sampleresolver"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using the sample XPathFunctionResolver</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>Normally you need to provide your own implementation of XPathFunctionResolver in order to use
+  extension functions in XPath expressions. In Xalan-Java 2, we provide a sample implementation 
+  of XPathFunctionResolver in the class org.apache.xalan.extensions.XPathFunctionResolverImpl, with supports
+  for Java and EXSLT extensions. If you set the XPathFunctionResolver to an object of this class, then
+  you can use Java and EXSLT extension functions in the XPath expression. You also need to use a
+  NamespaceContext along with the sample XPathFunctionResolver. Xalan-Java 2 also includes a sample 
+  implementation of NamespaceContext in org.apache.xalan.extensions.ExtensionNamespaceContext, which 
+  provides the following namespace prefix to URI mappings:</P>
+  
+  <TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+  <TR>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Prefix</B>&nbsp;
+      </FONT></TD>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>URI</B>&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">http://xml.apache.org/xalan/java&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">exslt&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">http://exslt.org/common&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">math&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">http://exslt.org/math&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">set&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">http://exslt.org/sets&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">str&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">http://exslt.org/strings&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">dyn&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">http://exslt.org/dynamic&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">datetime&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">http://exslt.org/dates-and-times&nbsp;
+      </FONT></TD>
+  </TR>
+  </TABLE>
+  
+  <P>Suppose you want to evaluate the XPath expression <CODE><FONT face="courier, monospaced">&quot;math:max(/doc/num)&quot;</FONT></CODE>, which contains
+  an EXSLT extension call. Here the prefix <CODE><FONT face="courier, monospaced">&quot;math&quot;</FONT></CODE> corresponds to the URI <CODE><FONT face="courier, monospaced">&quot;http://exslt.org/math&quot;</FONT></CODE>. 
+  The following code snippet demonstrates how to use the sample XPathFunctionResolver to evaluate the 
+  XPath expression above:</P>
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+        XPathFactory factory = XPathFactory.newInstance();
+        XPath xpath = factory.newXPath();
+        
+        // set the NamespaceContext to 
+        // org.apache.xalan.extensions.ExtensionNamespaceContext
+        xpath.setNamespaceContext(new org.apache.xalan.extensions.ExtensionNamespaceContext());
+        
+        // set the XPathFunctionResolver to 
+        // org.apache.xalan.extensions.XPathFunctionResolverImpl
+        xpath.setXPathFunctionResolver(new org.apache.xalan.extensions.XPathFunctionResolverImpl());
+        
+        // Evaluate the XPath expression &quot;math:max(/doc/num)&quot; against 
+        // the input document numlist.xml
+        Object result = xpath.evaluate(&quot;math:max(/doc/num)&quot;, new InputSource(&quot;numlist.xml&quot;), XPathConstants.NUMBER);  
+  </PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  </FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2006 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

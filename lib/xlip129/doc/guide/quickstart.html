@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>
+    Quick Start
+  </title>
+</head>
+<body>
+  <h1 align="center">Quick Start</h1>
+  This section provides simple examples of using XLiP.
+  <ul>
+    <li>
+      <a href="#step1">Step 1:  Preparing a Library</a>
+    <li>
+      <a href="#step2">Step 2:  Requirements for Source Description</a>
+    <li>
+      <a href="#step3">Step 3:  From Generating the XLink Processor to Obtaining an XLink Data Set</a>
+    <li>
+      <a href="#step4">Step 4:  Example on Referencing an XLink Data Model</a>
+  </ul>
+  <hr>
+<!-- step1 -->
+  <a name="step1"></a>
+  <h2>Step 1:  Preparing a Library</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      To use XLiP, <font color="red" size="+1">XML parser for JAXP1.1 is required</font>.<br>
+      For details on required libraries, see the <a href="spec.html">XLiP Standard Specification List</a>.
+    </dd>
+  </dl>
+
+<!-- step2 -->
+  <a name="step2"></a>
+  <h2>Step 2:  Requirement for Source Description</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      To use the XLink processor and XLink data model provided by XLiP, the following import statements are required.
+      <pre>
+    import com.fujitsu.xml.xlink.processor.*;
+    import com.fujitsu.xml.xlink.dataset.*;
+      </pre>
+    </dd>
+  </dl>
+
+<!-- step3 -->
+  <a name="step3"></a>
+  <h2>Step 3:  From Generating the XLink Processor to Obtaining an XLink Data Set</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+
+<!-- step3-1 -->
+      <h3>Generating the XLink processor</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          To construct an XLink data model, generate the XLink processor.
+          The following shows how to generate the XLink processor:
+          <pre>
+    XLinkProcessor xLinkProcessor = new XLinkProcessor();
+          </pre>
+        </dd>
+      </dl>
+
+<!-- step3-2 -->
+      <h3>Constructing an XLink data model</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          Construct an XLink data model using the generated XLink processor.
+          The XLink processor provides the following two types of methods of constructing an XLink data model.
+          <ul>
+            <li>
+              <dl>
+                <dt>
+                  createXLinkDataSet(String uri)
+                </dt>
+                <dd>
+                  This is a method for specifying only the URI of an XML document.
+                  The XLink processor references the specified URI to generate a DOM tree.
+                  In addition, a DOM tree differing from that of the specified URI can be generated, depending on the results of link base processing.
+                </dd>
+              </dl>
+            <li>
+              <dl>
+                <dt>
+                  createXLinkDataSet(Document doc, String uri)
+                </dt>
+                <dd>
+                  This is a method for specifying a DOM tree constructed from an XML document and URI.
+                  The XLink processor uses the specified DOM tree.  In addition, a DOM tree differing from that of the specified URI can be generated, depending on the results of link base processing.
+                </dd>
+              </dl>
+          </ul>
+        </dd>
+      </dl>
+
+<!-- step3-3 -->
+      <h3>Obtaining an XLink Data Set</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          From the XLink processor, obtain the XLink data set that is the starting position of a constructed XLink data model.
+          Obtain an XLink data set from the XLink processor as follows:
+          <pre>
+    XLinkDataSet xLinkDataSet = xLinkProcessor.getgetDataSet();
+          </pre>
+          At this time, users can extract different kinds of information items written in XLink.<br>
+          The following procedure provides an simple example of extracting information.
+        </dd>
+      </dl>
+
+<!-- step3-3 -->
+      <h3>Summary of steps 1 to 3</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <pre>
+    import com.fujitsu.xml.xlink.processor.*;
+    import com.fujitsu.xml.xlink.dataset.*;
+    ...
+      String uri; // URI of the XML document for which XLink analysis 
+		  //  is performed
+      ...
+      try {
+        // Generate the XLink processor.
+        XLinkProcessor xLinkProcessor = new XLinkProcessor();
+
+        // Construct an XLink data model.
+        //   The method of specifying only a URI is used.
+        xLinkProcessor.createXLinkDataSet(uri);
+
+        // Obtain an XLink data set.
+        XLinkDataSet xLinkDataSet = xLinkProcessor.getgetDataSet();
+      } catch (Exception e) {
+        // Any exceptional processing
+        System.out.println("Error Detected : " + e.getMessage());
+        return;
+      }
+          </pre>
+        </dd>
+      </dl>
+    </dd>
+  </dl>
+
+  <a name="step4"></a>
+  <h2>Step 4:  Example of Referencing an XLink Data Model</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      This section explains an example of referencing an XLink data set to perform traversal.<br>
+      In this example, the following operation is implemented.
+      <ol>
+        <li>
+          Determine whether any node included in a DOM in an XLink data model is a link start resource.
+        <li>
+          If the link start resource specified in a simple-type element of XLink is a node, obtain locator information of a link end resource.
+      </ol>
+      Using locator information obtained from these results, applications can implement any hyperlinks.<br>
+      An example is as follows.
+
+      <pre>
+    Node node;  // Node to be determined
+    XLinkDataSet xLinkDataSet;  // XLink data set
+    ...
+
+    // Locator information list that contains a link start resource
+    // Obtain a table.
+    LocatorHashtable table = xLinkDataSet.getResourceObjects();
+
+    // Obtain the locator information list.
+    LocatorList locatorList = table.get(node);
+
+    if (locatorList == null) {
+      // Node is not a link start resource.
+      return;
+    }
+
+    for (int i = 0; i &lt; locatorList.getLength(); ++i) {
+      // Obtain locator information.
+      Locator startingResource = locatorList.item(i);
+
+      // Obtain link declaration information to which the locator information belongs.
+      XLinkDeclaration xLinkDeclaration =
+        startingResource.getParent();
+
+      // Determine whether the link declaration information is a simple-type element.
+      if (xLinkDeclaration.getType() ==
+            XLinkDeclaration.ARC_TYPE_SIMPLE) {
+
+        // Search for locator information of a link end resource.
+        LocatorList endingResource =
+          xLinkDeclaration.getLocators();
+        for (int j = 0; j &lt; endingResource.getLenth(); ++j) {
+
+          // Obtain the locator information of a link end resource.
+          Locator to = endingResource.item(j);
+
+          // Determine whether the locator information of a link end resource 
+          // is that of a remote resource.
+          if (to.getType() == Locator.TYPE_LOCATOR) {
+
+            // Hyperlink processing
+
+            // Example 1  Obtaining the absolute URI to be linked
+            Address address = to.getHref();
+            String absoluteURI = address.getEncodedAbsoluteUri();
+
+            // Example 2  Obtaining the node to be linked
+            NodeSet nodeSet = to.getResources();
+            for (int k = 0; k &lt; nodeSet.getLength(); ++k) {
+              Node node = nodeSet.item(k);
+            }
+          }
+        }
+      }
+    }
+      </pre>
+    </dd>
+  </dl>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; FUJITSU LIMITED 2000,2001
+  </div>
+</body>
+</html>

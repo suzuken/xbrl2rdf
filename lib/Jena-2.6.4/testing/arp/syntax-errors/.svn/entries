@@ -1,0 +1,91 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/arp/syntax-errors
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+error001-bad.nt
+file
+
+
+
+add
+
+error001-good.nt
+file
+
+
+
+add
+
+error001.rdf
+file
+
+
+
+add
+
+error002-bad.nt
+file
+
+
+
+add
+
+error002-good.nt
+file
+
+
+
+add
+
+error002.rdf
+file
+
+
+
+add
+
+error003-bad.nt
+file
+
+
+
+add
+
+error003-good.nt
+file
+
+
+
+add
+
+error003.rdf
+file
+
+
+
+add
+

@@ -1,0 +1,126 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/reasoners/owl
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+consistentData.rdf
+file
+
+
+
+add
+
+emptyClass1.rdf
+file
+
+
+
+add
+
+emptyClass2.rdf
+file
+
+
+
+add
+
+emptyClass3.rdf
+file
+
+
+
+add
+
+inconsistent1.rdf
+file
+
+
+
+add
+
+inconsistent2.rdf
+file
+
+
+
+add
+
+inconsistent3.rdf
+file
+
+
+
+add
+
+inconsistent4.rdf
+file
+
+
+
+add
+
+inconsistent5.rdf
+file
+
+
+
+add
+
+inconsistent6.rdf
+file
+
+
+
+add
+
+inconsistent7.rdf
+file
+
+
+
+add
+
+nondetbug.rdf
+file
+
+
+
+add
+
+nondetbug.rules
+file
+
+
+
+add
+
+tbox.owl
+file
+
+
+
+add
+

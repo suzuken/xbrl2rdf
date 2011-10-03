@@ -1,0 +1,483 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>XSLTC Internal DOM</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xsltc_dom-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+ 
+  <A href="index.html" onMouseOut="rolloverOff('side-index');" onMouseOver="rolloverOn('side-index');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-index" onLoad="rolloverLoad('side-index','graphics/index-label-2.jpg','graphics/index-label-3.jpg');" src="graphics/index-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_compiler.html" onMouseOut="rolloverOff('side-xsltc_compiler');" onMouseOver="rolloverOn('side-xsltc_compiler');"><IMG alt="Compiler design" border="0" height="12" hspace="0" name="side-xsltc_compiler" onLoad="rolloverLoad('side-xsltc_compiler','graphics/xsltc_compiler-label-2.jpg','graphics/xsltc_compiler-label-3.jpg');" src="graphics/xsltc_compiler-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsl_whitespace_design.html" onMouseOut="rolloverOff('side-xsl_whitespace_design');" onMouseOver="rolloverOn('side-xsl_whitespace_design');"><IMG alt="Whitespace" border="0" height="12" hspace="0" name="side-xsl_whitespace_design" onLoad="rolloverLoad('side-xsl_whitespace_design','graphics/xsl_whitespace_design-label-2.jpg','graphics/xsl_whitespace_design-label-3.jpg');" src="graphics/xsl_whitespace_design-label-3.jpg" vspace="0" width="120"></A><BR>
+
+  <A href="xsl_sort_design.html" onMouseOut="rolloverOff('side-xsl_sort_design');" onMouseOver="rolloverOn('side-xsl_sort_design');"><IMG alt="xsl:sort" border="0" height="12" hspace="0" name="side-xsl_sort_design" onLoad="rolloverLoad('side-xsl_sort_design','graphics/xsl_sort_design-label-2.jpg','graphics/xsl_sort_design-label-3.jpg');" src="graphics/xsl_sort_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_key_design.html" onMouseOut="rolloverOff('side-xsl_key_design');" onMouseOver="rolloverOn('side-xsl_key_design');"><IMG alt="Keys" border="0" height="12" hspace="0" name="side-xsl_key_design" onLoad="rolloverLoad('side-xsl_key_design','graphics/xsl_key_design-label-2.jpg','graphics/xsl_key_design-label-3.jpg');" src="graphics/xsl_key_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_comment_design.html" onMouseOut="rolloverOff('side-xsl_comment_design');" onMouseOver="rolloverOn('side-xsl_comment_design');"><IMG alt="Comment design" border="0" height="12" hspace="0" name="side-xsl_comment_design" onLoad="rolloverLoad('side-xsl_comment_design','graphics/xsl_comment_design-label-2.jpg','graphics/xsl_comment_design-label-3.jpg');" src="graphics/xsl_comment_design-label-3.jpg" vspace="0" width="120"></A><BR>
+ 
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsl_lang_design.html" onMouseOut="rolloverOff('side-xsl_lang_design');" onMouseOver="rolloverOn('side-xsl_lang_design');"><IMG alt="lang()" border="0" height="12" hspace="0" name="side-xsl_lang_design" onLoad="rolloverLoad('side-xsl_lang_design','graphics/xsl_lang_design-label-2.jpg','graphics/xsl_lang_design-label-3.jpg');" src="graphics/xsl_lang_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_unparsed_design.html" onMouseOut="rolloverOff('side-xsl_unparsed_design');" onMouseOver="rolloverOn('side-xsl_unparsed_design');"><IMG alt="Unparsed entities" border="0" height="12" hspace="0" name="side-xsl_unparsed_design" onLoad="rolloverLoad('side-xsl_unparsed_design','graphics/xsl_unparsed_design-label-2.jpg','graphics/xsl_unparsed_design-label-3.jpg');" src="graphics/xsl_unparsed_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="xsl_if_design.html" onMouseOut="rolloverOff('side-xsl_if_design');" onMouseOver="rolloverOn('side-xsl_if_design');"><IMG alt="If design" border="0" height="12" hspace="0" name="side-xsl_if_design" onLoad="rolloverLoad('side-xsl_if_design','graphics/xsl_if_design-label-2.jpg','graphics/xsl_if_design-label-3.jpg');" src="graphics/xsl_if_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_choose_design.html" onMouseOut="rolloverOff('side-xsl_choose_design');" onMouseOver="rolloverOn('side-xsl_choose_design');"><IMG alt="Choose|When|Otherwise design" border="0" height="12" hspace="0" name="side-xsl_choose_design" onLoad="rolloverLoad('side-xsl_choose_design','graphics/xsl_choose_design-label-2.jpg','graphics/xsl_choose_design-label-3.jpg');" src="graphics/xsl_choose_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_include_design.html" onMouseOut="rolloverOff('side-xsl_include_design');" onMouseOver="rolloverOn('side-xsl_include_design');"><IMG alt="Include|Import design" border="0" height="12" hspace="0" name="side-xsl_include_design" onLoad="rolloverLoad('side-xsl_include_design','graphics/xsl_include_design-label-2.jpg','graphics/xsl_include_design-label-3.jpg');" src="graphics/xsl_include_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_variable_design.html" onMouseOut="rolloverOff('side-xsl_variable_design');" onMouseOver="rolloverOn('side-xsl_variable_design');"><IMG alt="Variable|Param design" border="0" height="12" hspace="0" name="side-xsl_variable_design" onLoad="rolloverLoad('side-xsl_variable_design','graphics/xsl_variable_design-label-2.jpg','graphics/xsl_variable_design-label-3.jpg');" src="graphics/xsl_variable_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+   
+  <A href="xsltc_runtime.html" onMouseOut="rolloverOff('side-xsltc_runtime');" onMouseOver="rolloverOn('side-xsltc_runtime');"><IMG alt="Runtime" border="0" height="12" hspace="0" name="side-xsltc_runtime" onLoad="rolloverLoad('side-xsltc_runtime','graphics/xsltc_runtime-label-2.jpg','graphics/xsltc_runtime-label-3.jpg');" src="graphics/xsltc_runtime-label-3.jpg" vspace="0" width="120"></A><BR> 
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <IMG alt="Internal DOM" border="0" height="12" hspace="0" src="graphics/xsltc_dom-label-1.jpg" vspace="0" width="120"><BR>            
+            
+  <A href="xsltc_namespace.html" onMouseOut="rolloverOff('side-xsltc_namespace');" onMouseOver="rolloverOn('side-xsltc_namespace');"><IMG alt="Namespaces" border="0" height="12" hspace="0" name="side-xsltc_namespace" onLoad="rolloverLoad('side-xsltc_namespace','graphics/xsltc_namespace-label-2.jpg','graphics/xsltc_namespace-label-3.jpg');" src="graphics/xsltc_namespace-label-3.jpg" vspace="0" width="120"></A><BR>             
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsltc_trax.html" onMouseOut="rolloverOff('side-xsltc_trax');" onMouseOver="rolloverOn('side-xsltc_trax');"><IMG alt="Translet & TrAX" border="0" height="12" hspace="0" name="side-xsltc_trax" onLoad="rolloverLoad('side-xsltc_trax','graphics/xsltc_trax-label-2.jpg','graphics/xsltc_trax-label-3.jpg');" src="graphics/xsltc_trax-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_predicates.html" onMouseOut="rolloverOff('side-xsltc_predicates');" onMouseOver="rolloverOn('side-xsltc_predicates');"><IMG alt="XPath Predicates" border="0" height="12" hspace="0" name="side-xsltc_predicates" onLoad="rolloverLoad('side-xsltc_predicates','graphics/xsltc_predicates-label-2.jpg','graphics/xsltc_predicates-label-3.jpg');" src="graphics/xsltc_predicates-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_iterators.html" onMouseOut="rolloverOff('side-xsltc_iterators');" onMouseOver="rolloverOn('side-xsltc_iterators');"><IMG alt="Xsltc Iterators" border="0" height="12" hspace="0" name="side-xsltc_iterators" onLoad="rolloverLoad('side-xsltc_iterators','graphics/xsltc_iterators-label-2.jpg','graphics/xsltc_iterators-label-3.jpg');" src="graphics/xsltc_iterators-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_native_api.html" onMouseOut="rolloverOff('side-xsltc_native_api');" onMouseOver="rolloverOn('side-xsltc_native_api');"><IMG alt="Xsltc Native API" border="0" height="12" hspace="0" name="side-xsltc_native_api" onLoad="rolloverLoad('side-xsltc_native_api','graphics/xsltc_native_api-label-2.jpg','graphics/xsltc_native_api-label-3.jpg');" src="graphics/xsltc_native_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_trax_api.html" onMouseOut="rolloverOff('side-xsltc_trax_api');" onMouseOver="rolloverOn('side-xsltc_trax_api');"><IMG alt="Xsltc TrAX API" border="0" height="12" hspace="0" name="side-xsltc_trax_api" onLoad="rolloverLoad('side-xsltc_trax_api','graphics/xsltc_trax_api-label-2.jpg','graphics/xsltc_trax_api-label-3.jpg');" src="graphics/xsltc_trax_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_performance.html" onMouseOut="rolloverOff('side-xsltc_performance');" onMouseOver="rolloverOn('side-xsltc_performance');"><IMG alt="Performance Hints" border="0" height="12" hspace="0" name="side-xsltc_performance" onLoad="rolloverLoad('side-xsltc_performance','graphics/xsltc_performance-label-2.jpg','graphics/xsltc_performance-label-3.jpg');" src="graphics/xsltc_performance-label-3.jpg" vspace="0" width="120"></A><BR>            
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+  <UL>
+    <LI><A href="#functionality">General functionlaity</A></LI>
+    <LI><A href="#components">Components of the internal DOM</A></LI>
+    <LI><A href="#structure">Internal structure</A></LI>
+    <LI><A href="#navigation">Tree navigation</A></LI>
+    <LI><A href="#namespaces">Namespaces</A></LI>
+    <LI><A href="#w3c">W3C DOM2 navigation support</A></LI>
+    <LI><A href="#adapter">The DOM adapter - DOMAdapter</A></LI>
+    <LI><A href="#multiplexer">The DOM multiplexer - MultiDOM</A></LI>
+    <LI><A href="#builder">The DOM builder - DOMImpl$DOMBuilder</A></LI>
+  </UL>
+
+  <A name="functionality"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>General functionality</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>The internal DOM gives the translet access to the XML document(s) it has
+  to transform. The interface to the internal DOM is specified in the DOM.java
+  class. This is the interface that the translet uses to access the DOM. 
+  There is also an interface specified for DOM caches -- DOMCache.java</P>
+
+  </FONT></TD></TR></TABLE><BR><A name="components"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Components of the internal DOM</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>This DOM interface is implemented by three classes:</P>
+  <UL>
+    <LI><B>org.apache.xalan.xsltc.dom.DOMImpl</B><BR><BR>
+      This is the main DOM class. An instance of this class contains the nodes
+      of a <B>single</B> XML document.<BR><BR>
+    </LI>
+    <LI><B>org.apache.xalan.xsltc.dom.MultiDOM</B><BR><BR>
+      This class is best described as a DOM multiplexer. XSLTC was initially
+      designed to operate on a single XML document, and the initial DOM and
+      the DOM interface were designed and implemented without the
+      <CODE><FONT face="courier, monospaced">document()</FONT></CODE> function in mind. This class will allow a translet
+      to access multiple DOMs through the original DOM interface.<BR><BR>
+    </LI>
+    <LI><B>org.apache.xalan.xsltc.dom.DOMAdapter</B><BR><BR>
+      The DOM adapter is a mediator between a DOMImpl or a MultiDOM object and
+      a single translet. A DOMAdapter object contains mappings and reverse
+      mappings between node  types in the DOM(s) and node types in the translet.
+      This mediator is needed to allow several translets access to a single DOM.
+      <BR><BR>
+    </LI>
+    <LI><B>org.apache.xalan.xsltc.dom.DocumentCache</B><BR><BR>
+      A sample DOM cache (implementing DOMCache) that is used with our sample
+      transformation applications.
+    </LI>
+  </UL>
+
+  <P><IMG align="right" alt="DOMInterface.gif" border="0" hspace="4" src="images/DOMInterface.gif" vspace="4"><BR clear="all"></P>
+  <P><I>Figure 1: Main components of the internal DOM</I></P>
+
+  <P>The figure above shows how several translets can access one or more
+  internal DOM from a shared pool of cached DOMs. A translet can also access a
+  DOM tree outside of a cache. The Stylesheet class that represents the XSL
+  stylesheet to compile contains a flag that indicates if the translet uses the
+  <CODE><FONT face="courier, monospaced">document()</FONT></CODE> function. The code compiled into the translet will act
+  accordingly and instanciate a MultiDOM object if needed (this code is compiled
+   in the compiler's <CODE><FONT face="courier, monospaced">Stylesheet.compileTransform()</FONT></CODE> method).</P>
+
+  </FONT></TD></TR></TABLE><BR><A name="structure"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Internal Structure</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <UL>
+    <LI><A href="#node-id">Node identification</A></LI>
+    <LI><A href="#element-nodes">Element nodes</A></LI>
+    <LI><A href="#attribute-nodes">Attribute nodes</A></LI>    
+    <LI><A href="#text-nodes">Text nodes</A></LI>
+    <LI><A href="#comment-nodes">Comment nodes</A></LI>    
+    <LI><A href="#pi"></A>Processing instructions</LI>
+  </UL>
+  <A name="node-id"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Node identifation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>Each node in the DOM is represented by an integer. This integer is an
+  index into a series of arrays that describes the node. Most important is
+  the <CODE><FONT face="courier, monospaced">_type[]</FONT></CODE> array, which holds the (DOM internal) node type. There
+  are some general node types that are described in the DOM.java interface:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public final static int ROOT                   = 0;
+    public final static int TEXT                   = 1;
+    public final static int UNUSED                 = 2;
+    public final static int ELEMENT                = 3;
+    public final static int ATTRIBUTE              = 4;
+    public final static int PROCESSING_INSTRUCTION = 5;
+    public final static int COMMENT                = 6;
+    public final static int NTYPES                 = 7;
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>Element and attribute nodes will be assigned types based on their expanded
+  QNames. The <CODE><FONT face="courier, monospaced">_type[]</FONT></CODE> array is used for this:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int    type      = _type[node];             // get node type
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>The node type can be used to look up the element/attribute name in the
+  element/attribute name array <CODE><FONT face="courier, monospaced">_namesArray[]</FONT></CODE>:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    String name      = _namesArray[type-NTYPES]; // get node element name
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>The resulting string contains the full, expanded QName of the element or
+  attribute. Retrieving the namespace URI of an element/attribute is done in a
+  very similar fashion:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int    nstype    = _namespace[type-NTYPES]; // get namespace type
+    String namespace = _nsNamesArray[nstype];   // get node namespace name
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  </FONT></TD></TR></TABLE><BR><A name="element-nodes"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Element nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>The contents of an element node (child nodes) can be identified using
+  the <CODE><FONT face="courier, monospaced">_offsetOrChild[]</FONT></CODE> and <CODE><FONT face="courier, monospaced">_nextSibling[]</FONT></CODE> arrays. The
+  <CODE><FONT face="courier, monospaced">_offsetOrChild[]</FONT></CODE> array will give you the first child of an element
+  node:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int    child     = _offsetOrChild[node];    // first child
+    child = _nextSibling[child];                // next child
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>The last child will have a &quot;<CODE><FONT face="courier, monospaced">_nextSibling[]</FONT></CODE>&quot; of 0 (zero).
+  This value is OK since the root node (the 0 node) will not be a child of
+  any element.</P>
+
+  </FONT></TD></TR></TABLE><BR><A name="attribute-nodes"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Attribute nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>The first attribute node of an element is found by a lookup in the
+  <CODE><FONT face="courier, monospaced">_lengthOrAttr[]</FONT></CODE> array using the node index:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int    attribute = _offsetOrChild[node];    // first attribute
+    attribute = _nextSibling[attribute];        // next attribute
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>The names of attributes are contained in the <CODE><FONT face="courier, monospaced">_namesArray[]</FONT></CODE> just
+  like the names of element nodes. The value of attributes are store the same
+  way as text nodes:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int    offset    = _offsetOrChild[attribute]; // offset into character array
+    int    length    = _lengthOrAttr[attribute];  // length of attribute value
+    String value     = new String(_text, offset, length);
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  </FONT></TD></TR></TABLE><BR><A name="text-nodes"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Text nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>Text nodes are stored identically to attribute values. See the previous
+  section on <A href="#attribute-nodes">attribute nodes</A>.</P>
+  </FONT></TD></TR></TABLE><BR><A name="comment-nodes"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Comment nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>The internal DOM does currently <B>not</B> contain comment nodes. Yes, I
+  am quite aware that the DOM has a type assigned to comment nodes, but comments
+  are still not inserted into the DOM.</P>
+  </FONT></TD></TR></TABLE><BR><A name="pi"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Processing instructions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>Processing instructions are handled as text nodes. These nodes are stored
+  identically to attribute values. See the previous section on
+  <A href="#attribute-nodes">attribute nodes</A>.</P>
+
+  </FONT></TD></TR></TABLE><BR></FONT></TD></TR></TABLE><BR><A name="navigation"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Tree navigation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>The DOM implementation contains a series of iterator that implement the
+  XPath axis. All these iterators implement the NodeIterator interface and
+  extend the NodeIteratorBase base class. These iterators do the job of
+  navigating the tree using the <CODE><FONT face="courier, monospaced">_offsetOrChild[]</FONT></CODE>, <CODE><FONT face="courier, monospaced">_nextSibling</FONT></CODE>
+  and <CODE><FONT face="courier, monospaced">_parent[]</FONT></CODE> arrays. All iterators that handles XPath axis are
+  implemented as a private inner class of DOMImpl. The translet uses a handful
+  of methods to instanciate these iterators:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public NodeIterator getIterator();
+    public NodeIterator getChildren(final int node);
+    public NodeIterator getTypedChildren(final int type);
+    public NodeIterator getAxisIterator(final int axis);
+    public NodeIterator getTypedAxisIterator(final int axis, final int type);
+    public NodeIterator getNthDescendant(int node, int n);
+    public NodeIterator getNamespaceAxisIterator(final int axis, final int ns);
+    public NodeIterator orderNodes(NodeIterator source, int node);
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>There are a few iterators in addition to these, such as sorting/ordering
+  iterators and filtering iterators. These iterators are implemented in
+  separate classes and can be instanciated directly by the translet.</P>
+
+  </FONT></TD></TR></TABLE><BR><A name="namespaces"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Namespaces</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>Namespace support was added to the internal DOM at a late stage, and the
+  design and implementation of the DOM bears a few scars because of this. 
+  There is a separate <A href="xsltc_namespace.html">design
+  document</A> that covers namespaces.</P>
+
+  </FONT></TD></TR></TABLE><BR><A name="w3c"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>W3C DOM2 navigation support</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>The DOM has a few methods that give basic W3C-type DOM navigation. These
+  methods are:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public Node makeNode(int index);
+    public Node makeNode(NodeIterator iter);
+    public NodeList makeNodeList(int index);
+    public NodeList makeNodeList(NodeIterator iter);
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>These methods return instances of inner classes of the DOM that implement
+  the W3C Node and NodeList interfaces.</P>
+
+  </FONT></TD></TR></TABLE><BR><A name="adapter"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>The DOM adapter - DOMAdapter</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <UL>
+    <LI><A href="#translet-dom">Translet/DOM type mapping</A></LI>
+    <LI><A href="#whitespace">Whitespace text-node stripping</A></LI>
+    <LI><A href="#method-mapping">Method mapping</A></LI>
+  </UL>
+  <A name="translet-dom"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Translet/DOM type mapping</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>The DOMAdapter class performs the mappings between DOM and translet node
+  types, and vice versa. These mappings are necessary in order for the translet
+  to correctly identify an element/attribute in the DOM and for the DOM to
+  correctly identify the element/attribute type of a typed iterator requested
+  by the translet. Note that the DOMAdapter also maps translet namespace types
+  to DOM namespace types, and vice versa.</P>
+
+  <P>The DOMAdapter class has four global tables that hold the translet/DOM
+  type and namespace-type mappings. If the DOM knows an element as type
+  19, the DOMAdapter will translate this to some other integer using the
+  <CODE><FONT face="courier, monospaced">_mapping[]</FONT></CODE> array:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int domType = _mapping[transletType];
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>This action will be performed when the DOM asks what type a specific node
+  is. The reverse is done then the translet wants an iterator for a specific
+  node type. The DOMAdapter must translate the translet-type to the type used
+  internally in the DOM by looking up the <CODE><FONT face="courier, monospaced">_reverse[]</FONT></CODE> array:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int transletType = _mapping[domType];
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>There are two additional mapping tables: <CODE><FONT face="courier, monospaced">_NSmapping[]</FONT></CODE> and
+  <CODE><FONT face="courier, monospaced">_NSreverse[]</FONT></CODE> that do the same for namespace types.</P>
+  </FONT></TD></TR></TABLE><BR><A name="whitespace"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Whitespace text-node stripping</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>The DOMAdapter class has the additional function of stripping whitespace
+  nodes in the DOM. This functionality had to be put in the DOMAdapter, as
+  different translets will have different preferences for node stripping.</P>
+  </FONT></TD></TR></TABLE><BR><A name="method-mapping"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Method mapping</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>The DOMAdapter class implements the same <CODE><FONT face="courier, monospaced">DOM</FONT></CODE> interface as the
+  DOMImpl class. A DOMAdapter object will look like a DOMImpl tree, but the
+  translet can access it directly without being concerned with type mapping
+  and whitespace stripping. The <CODE><FONT face="courier, monospaced">getTypedChildren()</FONT></CODE> demonstrates very
+  well how this is done:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public NodeIterator getTypedChildren(int type) {
+        // Get the DOM type for the requested typed iterator
+        final int domType = _reverse[type];
+        // Now get the typed child iterator from the DOMImpl object
+        NodeIterator iterator = _domImpl.getTypedChildren(domType);
+        // Wrap the iterator in a WS stripping iterator if child-nodes are text nodes
+	if ((domType == DOM.TEXT) &amp;&amp; (_filter != null))
+	    iterator = _domImpl.strippingIterator(iterator,_mapping,_filter);
+	return(iterator);
+    }
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  </FONT></TD></TR></TABLE><BR></FONT></TD></TR></TABLE><BR><A name="multiplexer"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>The DOM multiplexer - MultiDOM</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>The DOM multiplexer class is only used when the compiled stylesheet uses
+  the <CODE><FONT face="courier, monospaced">document()</FONT></CODE> function. An instance of the MultiDOM class also
+  implements the DOM interface, so that it can be accessed in the same way
+  as a DOMAdapter object.</P>
+
+  <P>A node in the DOM is identified by an integer. The first 8 bits of this
+  integer are used to identify the DOM in which the node belongs, while the
+  lower 24 bits are used to identify the node within the DOM:</P>
+    <TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+      <TR>
+        <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">31-24&nbsp;
+      </FONT></TD>
+        <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">23-16&nbsp;
+      </FONT></TD>
+        <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">16-8&nbsp;
+      </FONT></TD>
+        <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">7-0&nbsp;
+      </FONT></TD>
+      </TR>
+      <TR>
+        <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">DOM id&nbsp;
+      </FONT></TD>
+        <TD align="left" bgcolor="#a0ddf0" colspan="3" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">node id&nbsp;
+      </FONT></TD>
+      </TR>
+    </TABLE>
+
+  <P>The DOM multiplexer has an array of DOMAdapter objects. The topmost 8
+  bits of the identifier is used to find the correct DOM from the array. Then
+  the lower 24 bits are used in calls to methods in the DOMAdapter object:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public int getParent(int node) {
+	return _adapters[node&gt;&gt;&gt;24].getParent(node &amp; 0x00ffffff) | node &amp; 0xff000000;
+    }
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>Note that the node identifier returned by this method has the same upper 8
+  bits as the input node. This is why we <CODE><FONT face="courier, monospaced">OR</FONT></CODE> the result from
+  <CODE><FONT face="courier, monospaced">DOMAdapter.getParent()</FONT></CODE> with the top 8 bits of the input node.</P>
+
+  </FONT></TD></TR></TABLE><BR><A name="builder"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>The DOM builder - DOMImpl$DOMBuilder</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <UL>
+    <LI><A href="#startelement">startElement()</A></LI>
+    <LI><A href="#endelement">endElement()</A></LI>
+    <LI><A href="#startprefixmapping">startPrefixMapping()</A></LI>
+    <LI><A href="#endprefixmapping">endPrefixMapping()</A></LI>
+    <LI><A href="#characters">characters()</A></LI>
+    <LI><A href="#startdocument">startDocument()</A></LI>
+    <LI><A href="#enddocument">endDocument()</A></LI>
+  </UL>
+
+  <P>The DOM builder is an inner class of the DOM implementation. The builder
+  implements the SAX2 <CODE><FONT face="courier, monospaced">ContentHandler</FONT></CODE> interface and populates the DOM
+  by receiving SAX2 events from a SAX2 parser (presently xerces). An instance
+  of the DOM builder class can be retrieved from <CODE><FONT face="courier, monospaced">DOMImpl.getBuilder()</FONT></CODE>
+  method, and this handler can be set as an XMLReader's content handler:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    final SAXParserFactory factory = SAXParserFactory.newInstance();
+    final SAXParser parser = factory.newSAXParser();
+    final XMLReader reader = parser.getXMLReader();
+    final DOMImpl dom = new DOMImpl();
+    reader.setContentHandler(dom.getBuilder());
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>The DOM builder will start to populate the DOM once the XML parser starts
+  generating SAX2 events:</P>
+  <A name="startelement"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>startElement()</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>This method can be called in one of two ways; either with the expanded
+  QName (the element's separate uri and local name are supplied) or as a
+  normal QName (one String on the format prefix:local-name). The DOM stores
+  elements as expanded QNames so it needs to know the element's namespace URI.
+  Since the URI is not supplied with this call, we have to keep track of
+  namespace prefix/uri mappings while we're building the DOM. See 
+  <CODE><FONT face="courier, monospaced"><A href="#startprefixmapping">startPrefixMapping()</A></FONT></CODE> below for details on
+  namespace handling.</P>
+
+  <P>The <CODE><FONT face="courier, monospaced">startElement()</FONT></CODE> inserts the element as a child of the current
+  parent element, creates attribute nodes for all attributes in the supplied
+  &quot;<CODE><FONT face="courier, monospaced">Attributes</FONT></CODE>&quot; attribute list (by a series of calls to
+  <CODE><FONT face="courier, monospaced">makeAttributeNode()</FONT></CODE>), and finally creates the actual element node
+  (by calling <CODE><FONT face="courier, monospaced">internElement()</FONT></CODE>, which inserts a new entry in the
+  <CODE><FONT face="courier, monospaced">_type[]</FONT></CODE> array).</P>
+  </FONT></TD></TR></TABLE><BR><A name="endelement"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>endElement()</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>This method does some cleanup after the <CODE><FONT face="courier, monospaced">startElement()</FONT></CODE> method,
+  such as revering <CODE><FONT face="courier, monospaced">xml:space</FONT></CODE> settings and linking the element's
+  child nodes.</P>
+  </FONT></TD></TR></TABLE><BR><A name="startprefixmapping"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>startPrefixMapping()</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>This method is called for each namespace declaration in the source
+  document. The parser should call this method before the prefix is referenced
+  in a QName that is passed to the <CODE><FONT face="courier, monospaced">startElement()</FONT></CODE> call. Namespace
+  prefix/uri mappings are stored in a Hashtable structure. Namespace prefixes
+  are used as the keys in the Hashtable, and each key maps to a Stack that
+  contains the various URIs that the prefix maps to. The URI on top of the
+  stack is the URI that the prefix currently maps to.</P>
+
+  
+    <P><IMG align="right" alt="namespace_stack.gif" border="0" hspace="4" src="images/namespace_stack.gif" vspace="4"><BR clear="all"></P>
+    <P><I>Figure 2: Namespace handling in the DOM builder</I></P>
+
+
+  <P>Each call to <CODE><FONT face="courier, monospaced">startPrefixMapping()</FONT></CODE> results in a lookup in the
+  Hashtable (using the prefix), and a <CODE><FONT face="courier, monospaced">push()</FONT></CODE> of the URI onto the
+  Stack that the prefix maps to.</P>
+  </FONT></TD></TR></TABLE><BR><A name="endprefixmapping"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>endPrefixMapping()</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>A namespace prefix/uri mapping is closed by locating the Stack for the
+  prefix, and then <CODE><FONT face="courier, monospaced">pop()</FONT></CODE>'ing the topmost URI off this Stack.</P>
+  </FONT></TD></TR></TABLE><BR><A name="characters"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>characters()</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>Text nodes are stored as simple character sequences in the character array
+  <CODE><FONT face="courier, monospaced">_text[]</FONT></CODE>. The start and lenght of a node's text can be determined by
+  using the node index to look up <CODE><FONT face="courier, monospaced">_offsetOrChild[]</FONT></CODE> and
+  <CODE><FONT face="courier, monospaced">_lengthOrAttribute[]</FONT></CODE>.</P>
+
+  <P>We want to re-use character sequences if two or more text nodes have
+  identical content. This can be achieved by having two different text node
+  indexes map to the same character sequence. The <CODE><FONT face="courier, monospaced">maybeReuseText()</FONT></CODE>
+  method is always called before a new character string is stored in the
+  <CODE><FONT face="courier, monospaced">_text[]</FONT></CODE> array. This method will locate the offset of an existing
+  instance of a character sequence.</P>
+  </FONT></TD></TR></TABLE><BR><A name="startdocument"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>startDocument()</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>This method initialises a bunch of data structures that are used by the
+  builder. It also pushes the default namespace on the namespace stack (so that
+  the &quot;&quot; prefix maps to the <CODE><FONT face="courier, monospaced">null</FONT></CODE> namespace).</P>
+  </FONT></TD></TR></TABLE><BR><A name="enddocument"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>endDocument()</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>This method builds the <CODE><FONT face="courier, monospaced">_namesArray[]</FONT></CODE>, <CODE><FONT face="courier, monospaced">_namespace[]</FONT></CODE>
+  and <CODE><FONT face="courier, monospaced">_nsNamesArray[]</FONT></CODE> structures from temporary datastructures used
+  in the DOM builder.</P>
+
+   </FONT></TD></TR></TABLE><BR>
+ </FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2004 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

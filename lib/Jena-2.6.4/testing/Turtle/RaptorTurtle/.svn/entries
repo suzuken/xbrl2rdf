@@ -1,0 +1,434 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/Turtle/RaptorTurtle
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+README.txt
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+bad-00.ttl
+file
+
+
+
+add
+
+bad-01.ttl
+file
+
+
+
+add
+
+bad-02.ttl
+file
+
+
+
+add
+
+bad-03.ttl
+file
+
+
+
+add
+
+bad-04.ttl
+file
+
+
+
+add
+
+bad-05.ttl
+file
+
+
+
+add
+
+bad-06.ttl
+file
+
+
+
+add
+
+bad-07.ttl
+file
+
+
+
+add
+
+bad-08.ttl
+file
+
+
+
+add
+
+bad-09.ttl
+file
+
+
+
+add
+
+bad-10.ttl
+file
+
+
+
+add
+
+bad-11.ttl
+file
+
+
+
+add
+
+bad-12.ttl
+file
+
+
+
+add
+
+bad-13.ttl
+file
+
+
+
+add
+
+manifest-bad.ttl
+file
+
+
+
+add
+
+manifest-good.ttl
+file
+
+
+
+add
+
+rdf-schema.out
+file
+
+
+
+add
+
+rdf-schema.ttl
+file
+
+
+
+add
+
+rdfq-results.out
+file
+
+
+
+add
+
+rdfq-results.ttl
+file
+
+
+
+add
+
+rdfs-namespace.out
+file
+
+
+
+add
+
+rdfs-namespace.ttl
+file
+
+
+
+add
+
+test-00.out
+file
+
+
+
+add
+
+test-00.ttl
+file
+
+
+
+add
+
+test-01.out
+file
+
+
+
+add
+
+test-01.ttl
+file
+
+
+
+add
+
+test-02.out
+file
+
+
+
+add
+
+test-02.ttl
+file
+
+
+
+add
+
+test-03.out
+file
+
+
+
+add
+
+test-03.ttl
+file
+
+
+
+add
+
+test-04.out
+file
+
+
+
+add
+
+test-04.ttl
+file
+
+
+
+add
+
+test-05.out
+file
+
+
+
+add
+
+test-05.ttl
+file
+
+
+
+add
+
+test-06.out
+file
+
+
+
+add
+
+test-06.ttl
+file
+
+
+
+add
+
+test-07.out
+file
+
+
+
+add
+
+test-07.ttl
+file
+
+
+
+add
+
+test-08.out
+file
+
+
+
+add
+
+test-08.ttl
+file
+
+
+
+add
+
+test-09.out
+file
+
+
+
+add
+
+test-09.ttl
+file
+
+
+
+add
+
+test-10.out
+file
+
+
+
+add
+
+test-10.ttl
+file
+
+
+
+add
+
+test-11.out
+file
+
+
+
+add
+
+test-11.ttl
+file
+
+
+
+add
+
+test-12.out
+file
+
+
+
+add
+
+test-12.ttl
+file
+
+
+
+add
+
+test-13.out
+file
+
+
+
+add
+
+test-13.ttl
+file
+
+
+
+add
+
+test-14.out
+file
+
+
+
+add
+
+test-14.ttl
+file
+
+
+
+add
+
+test-15.out
+file
+
+
+
+add
+
+test-15.ttl
+file
+
+
+
+add
+
+test-16.out
+file
+
+
+
+add
+
+test-16.ttl
+file
+
+
+
+add
+

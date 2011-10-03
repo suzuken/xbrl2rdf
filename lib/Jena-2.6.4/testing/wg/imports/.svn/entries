@@ -1,0 +1,329 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/imports
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+Manifest001.rdf
+file
+
+
+
+add
+
+Manifest002.rdf
+file
+
+
+
+add
+
+Manifest003.rdf
+file
+
+
+
+add
+
+Manifest004.rdf
+file
+
+
+
+add
+
+Manifest005.rdf
+file
+
+
+
+add
+
+Manifest006.rdf
+file
+
+
+
+add
+
+Manifest007.rdf
+file
+
+
+
+add
+
+Manifest008.rdf
+file
+
+
+
+add
+
+Manifest010.rdf
+file
+
+
+
+add
+
+Manifest011.rdf
+file
+
+
+
+add
+
+Manifest012.rdf
+file
+
+
+
+add
+
+Manifest013.rdf
+file
+
+
+
+add
+
+Manifest014.rdf
+file
+
+
+
+add
+
+conclusions001.rdf
+file
+
+
+
+add
+
+conclusions002.rdf
+file
+
+
+
+add
+
+conclusions003.rdf
+file
+
+
+
+add
+
+conclusions010.rdf
+file
+
+
+
+add
+
+conclusions011.rdf
+file
+
+
+
+add
+
+consistent012.rdf
+file
+
+
+
+add
+
+imports004.rdf
+file
+
+
+
+add
+
+imports005.rdf
+file
+
+
+
+add
+
+imports006.rdf
+file
+
+
+
+add
+
+imports007.rdf
+file
+
+
+
+add
+
+imports008.rdf
+file
+
+
+
+add
+
+imports013.rdf
+file
+
+
+
+add
+
+imports014.rdf
+file
+
+
+
+add
+
+main004.rdf
+file
+
+
+
+add
+
+main005.rdf
+file
+
+
+
+add
+
+main006.rdf
+file
+
+
+
+add
+
+main007.rdf
+file
+
+
+
+add
+
+main008.rdf
+file
+
+
+
+add
+
+main013.rdf
+file
+
+
+
+add
+
+main014.rdf
+file
+
+
+
+add
+
+nonconclusions002.rdf
+file
+
+
+
+add
+
+premises001.rdf
+file
+
+
+
+add
+
+premises002.rdf
+file
+
+
+
+add
+
+premises003.rdf
+file
+
+
+
+add
+
+premises011.rdf
+file
+
+
+
+add
+
+support001-A.rdf
+file
+
+
+
+add
+
+support002-A.rdf
+file
+
+
+
+add
+
+support003-A.rdf
+file
+
+
+
+add
+
+support003-B.rdf
+file
+
+
+
+add
+
+support011-A.rdf
+file
+
+
+
+add
+

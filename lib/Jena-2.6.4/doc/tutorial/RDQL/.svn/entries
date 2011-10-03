@@ -1,0 +1,203 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/doc/tutorial/RDQL
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+do-all
+file
+
+
+
+add
+
+hierarchy.nt
+file
+
+
+
+add
+
+hierarchy.rdf
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+rdql_grammar.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+tutorial.css
+file
+
+
+
+add
+
+vc-ans-1
+file
+
+
+
+add
+
+vc-ans-2
+file
+
+
+
+add
+
+vc-db-1.rdf
+file
+
+
+
+add
+
+vc-db-2.rdf
+file
+
+
+
+add
+
+vc-db-3.rdf
+file
+
+
+
+add
+
+vc-db.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+vc-ex-1
+file
+
+
+
+add
+
+vc-ex-2
+file
+
+
+
+add
+
+vc-q1
+file
+
+
+
+add
+
+vc-q2
+file
+
+
+
+add
+
+vc-q3
+file
+
+
+
+add
+
+vc-q4
+file
+
+
+
+add
+
+vc-q5
+file
+
+
+
+add
+
+vc-q6
+file
+
+
+
+add
+
+vc-q7
+file
+
+
+
+add
+
+vc-q8
+file
+
+
+
+add
+

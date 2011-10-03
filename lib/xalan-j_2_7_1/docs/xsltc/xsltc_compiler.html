@@ -1,0 +1,374 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>XSLTC Compiler Design</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xsltc_compiler-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+ 
+  <A href="index.html" onMouseOut="rolloverOff('side-index');" onMouseOver="rolloverOn('side-index');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-index" onLoad="rolloverLoad('side-index','graphics/index-label-2.jpg','graphics/index-label-3.jpg');" src="graphics/index-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <IMG alt="Compiler design" border="0" height="12" hspace="0" src="graphics/xsltc_compiler-label-1.jpg" vspace="0" width="120"><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsl_whitespace_design.html" onMouseOut="rolloverOff('side-xsl_whitespace_design');" onMouseOver="rolloverOn('side-xsl_whitespace_design');"><IMG alt="Whitespace" border="0" height="12" hspace="0" name="side-xsl_whitespace_design" onLoad="rolloverLoad('side-xsl_whitespace_design','graphics/xsl_whitespace_design-label-2.jpg','graphics/xsl_whitespace_design-label-3.jpg');" src="graphics/xsl_whitespace_design-label-3.jpg" vspace="0" width="120"></A><BR>
+
+  <A href="xsl_sort_design.html" onMouseOut="rolloverOff('side-xsl_sort_design');" onMouseOver="rolloverOn('side-xsl_sort_design');"><IMG alt="xsl:sort" border="0" height="12" hspace="0" name="side-xsl_sort_design" onLoad="rolloverLoad('side-xsl_sort_design','graphics/xsl_sort_design-label-2.jpg','graphics/xsl_sort_design-label-3.jpg');" src="graphics/xsl_sort_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_key_design.html" onMouseOut="rolloverOff('side-xsl_key_design');" onMouseOver="rolloverOn('side-xsl_key_design');"><IMG alt="Keys" border="0" height="12" hspace="0" name="side-xsl_key_design" onLoad="rolloverLoad('side-xsl_key_design','graphics/xsl_key_design-label-2.jpg','graphics/xsl_key_design-label-3.jpg');" src="graphics/xsl_key_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_comment_design.html" onMouseOut="rolloverOff('side-xsl_comment_design');" onMouseOver="rolloverOn('side-xsl_comment_design');"><IMG alt="Comment design" border="0" height="12" hspace="0" name="side-xsl_comment_design" onLoad="rolloverLoad('side-xsl_comment_design','graphics/xsl_comment_design-label-2.jpg','graphics/xsl_comment_design-label-3.jpg');" src="graphics/xsl_comment_design-label-3.jpg" vspace="0" width="120"></A><BR>
+ 
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsl_lang_design.html" onMouseOut="rolloverOff('side-xsl_lang_design');" onMouseOver="rolloverOn('side-xsl_lang_design');"><IMG alt="lang()" border="0" height="12" hspace="0" name="side-xsl_lang_design" onLoad="rolloverLoad('side-xsl_lang_design','graphics/xsl_lang_design-label-2.jpg','graphics/xsl_lang_design-label-3.jpg');" src="graphics/xsl_lang_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_unparsed_design.html" onMouseOut="rolloverOff('side-xsl_unparsed_design');" onMouseOver="rolloverOn('side-xsl_unparsed_design');"><IMG alt="Unparsed entities" border="0" height="12" hspace="0" name="side-xsl_unparsed_design" onLoad="rolloverLoad('side-xsl_unparsed_design','graphics/xsl_unparsed_design-label-2.jpg','graphics/xsl_unparsed_design-label-3.jpg');" src="graphics/xsl_unparsed_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="xsl_if_design.html" onMouseOut="rolloverOff('side-xsl_if_design');" onMouseOver="rolloverOn('side-xsl_if_design');"><IMG alt="If design" border="0" height="12" hspace="0" name="side-xsl_if_design" onLoad="rolloverLoad('side-xsl_if_design','graphics/xsl_if_design-label-2.jpg','graphics/xsl_if_design-label-3.jpg');" src="graphics/xsl_if_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_choose_design.html" onMouseOut="rolloverOff('side-xsl_choose_design');" onMouseOver="rolloverOn('side-xsl_choose_design');"><IMG alt="Choose|When|Otherwise design" border="0" height="12" hspace="0" name="side-xsl_choose_design" onLoad="rolloverLoad('side-xsl_choose_design','graphics/xsl_choose_design-label-2.jpg','graphics/xsl_choose_design-label-3.jpg');" src="graphics/xsl_choose_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_include_design.html" onMouseOut="rolloverOff('side-xsl_include_design');" onMouseOver="rolloverOn('side-xsl_include_design');"><IMG alt="Include|Import design" border="0" height="12" hspace="0" name="side-xsl_include_design" onLoad="rolloverLoad('side-xsl_include_design','graphics/xsl_include_design-label-2.jpg','graphics/xsl_include_design-label-3.jpg');" src="graphics/xsl_include_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_variable_design.html" onMouseOut="rolloverOff('side-xsl_variable_design');" onMouseOver="rolloverOn('side-xsl_variable_design');"><IMG alt="Variable|Param design" border="0" height="12" hspace="0" name="side-xsl_variable_design" onLoad="rolloverLoad('side-xsl_variable_design','graphics/xsl_variable_design-label-2.jpg','graphics/xsl_variable_design-label-3.jpg');" src="graphics/xsl_variable_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+   
+  <A href="xsltc_runtime.html" onMouseOut="rolloverOff('side-xsltc_runtime');" onMouseOver="rolloverOn('side-xsltc_runtime');"><IMG alt="Runtime" border="0" height="12" hspace="0" name="side-xsltc_runtime" onLoad="rolloverLoad('side-xsltc_runtime','graphics/xsltc_runtime-label-2.jpg','graphics/xsltc_runtime-label-3.jpg');" src="graphics/xsltc_runtime-label-3.jpg" vspace="0" width="120"></A><BR> 
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_dom.html" onMouseOut="rolloverOff('side-xsltc_dom');" onMouseOver="rolloverOn('side-xsltc_dom');"><IMG alt="Internal DOM" border="0" height="12" hspace="0" name="side-xsltc_dom" onLoad="rolloverLoad('side-xsltc_dom','graphics/xsltc_dom-label-2.jpg','graphics/xsltc_dom-label-3.jpg');" src="graphics/xsltc_dom-label-3.jpg" vspace="0" width="120"></A><BR>            
+            
+  <A href="xsltc_namespace.html" onMouseOut="rolloverOff('side-xsltc_namespace');" onMouseOver="rolloverOn('side-xsltc_namespace');"><IMG alt="Namespaces" border="0" height="12" hspace="0" name="side-xsltc_namespace" onLoad="rolloverLoad('side-xsltc_namespace','graphics/xsltc_namespace-label-2.jpg','graphics/xsltc_namespace-label-3.jpg');" src="graphics/xsltc_namespace-label-3.jpg" vspace="0" width="120"></A><BR>             
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsltc_trax.html" onMouseOut="rolloverOff('side-xsltc_trax');" onMouseOver="rolloverOn('side-xsltc_trax');"><IMG alt="Translet & TrAX" border="0" height="12" hspace="0" name="side-xsltc_trax" onLoad="rolloverLoad('side-xsltc_trax','graphics/xsltc_trax-label-2.jpg','graphics/xsltc_trax-label-3.jpg');" src="graphics/xsltc_trax-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_predicates.html" onMouseOut="rolloverOff('side-xsltc_predicates');" onMouseOver="rolloverOn('side-xsltc_predicates');"><IMG alt="XPath Predicates" border="0" height="12" hspace="0" name="side-xsltc_predicates" onLoad="rolloverLoad('side-xsltc_predicates','graphics/xsltc_predicates-label-2.jpg','graphics/xsltc_predicates-label-3.jpg');" src="graphics/xsltc_predicates-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_iterators.html" onMouseOut="rolloverOff('side-xsltc_iterators');" onMouseOver="rolloverOn('side-xsltc_iterators');"><IMG alt="Xsltc Iterators" border="0" height="12" hspace="0" name="side-xsltc_iterators" onLoad="rolloverLoad('side-xsltc_iterators','graphics/xsltc_iterators-label-2.jpg','graphics/xsltc_iterators-label-3.jpg');" src="graphics/xsltc_iterators-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_native_api.html" onMouseOut="rolloverOff('side-xsltc_native_api');" onMouseOver="rolloverOn('side-xsltc_native_api');"><IMG alt="Xsltc Native API" border="0" height="12" hspace="0" name="side-xsltc_native_api" onLoad="rolloverLoad('side-xsltc_native_api','graphics/xsltc_native_api-label-2.jpg','graphics/xsltc_native_api-label-3.jpg');" src="graphics/xsltc_native_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_trax_api.html" onMouseOut="rolloverOff('side-xsltc_trax_api');" onMouseOver="rolloverOn('side-xsltc_trax_api');"><IMG alt="Xsltc TrAX API" border="0" height="12" hspace="0" name="side-xsltc_trax_api" onLoad="rolloverLoad('side-xsltc_trax_api','graphics/xsltc_trax_api-label-2.jpg','graphics/xsltc_trax_api-label-3.jpg');" src="graphics/xsltc_trax_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_performance.html" onMouseOut="rolloverOff('side-xsltc_performance');" onMouseOver="rolloverOn('side-xsltc_performance');"><IMG alt="Performance Hints" border="0" height="12" hspace="0" name="side-xsltc_performance" onLoad="rolloverLoad('side-xsltc_performance','graphics/xsltc_performance-label-2.jpg','graphics/xsltc_performance-label-3.jpg');" src="graphics/xsltc_performance-label-3.jpg" vspace="0" width="120"></A><BR>            
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+  <UL>  
+    <LI><A href="#overview">Compiler Overview</A></LI>
+    <LI><A href="#ast">Building the Abstract Syntax Tree</A></LI>
+    <LI><A href="#typecheck">Type-check and Cast Expressions</A></LI>
+    <LI><A href="#compile">JVM byte-code generation</A></LI>
+  </UL>
+
+  
+
+  <A name="overview"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Compiler overview</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>The main component of the XSLTC compiler is the class</P>   
+    <UL>
+      <LI><CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.compiler.XSLTC</FONT></CODE></LI>
+    </UL>
+
+    <P>This class uses three parsers to consume the input stylesheet(s):</P>
+
+    <UL>
+      <LI><CODE><FONT face="courier, monospaced">javax.xml.parsers.SAXParser</FONT></CODE></LI>
+    </UL>
+
+    <P>is used to parse the stylesheet document and pass its contents to
+    the compiler as basic SAX2 events.</P>
+
+    <UL>
+      <LI><CODE><FONT face="courier, monospaced">com.sun.xslt.compiler.XPathParser</FONT></CODE></LI>
+    </UL>
+
+    <P> is a parser used to parse XPath expressions and patterns. This parser
+    is generated using JavaCUP and JavaLEX from Princeton University.</P>
+
+    <UL>
+      <LI><CODE><FONT face="courier, monospaced">com.sun.xslt.compiler.Parser</FONT></CODE></LI>
+    </UL>
+
+    <P>is a wrapper for the other two parsers. This parser is responsible for
+    using the other two parsers to build the compiler's abstract syntax tree
+    (which is described in more detail in the next section of this document).
+    </P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  
+  <A name="ast"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Building an Abstract Syntax Tree</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>An abstract syntax tree (AST) is a data-structure commonly used by
+    compilers to separate the parse-phase from the later phases of the
+    compilation. The AST has one node for each parsed token from the stylesheet
+    and can easily be parsed at the stages of type-checking and bytecode
+    generation.</P>
+
+    <UL>
+      <LI>
+        <A href="#mapping">Mapping stylesheet elements to AST nodes</A>
+      </LI>
+      <LI>
+        <A href="#domxsl">Building the AST from AST nodes</A>
+      </LI>
+      <LI>
+        <A href="#mapping">Mapping XPath expressions and patterns to additional AST nodes</A>
+      </LI>
+    </UL>
+
+    <P>The SAX parser passes the contents of the stylesheet to XSLTC's main
+    parser. The SAX events represent a decomposition of the XML document that
+    contains the stylesheet. The main parser needs to create one AST node from
+    each node that it receives from the SAX parser. It also needs to use the
+    XPath parser to decompose attributes that contain XPath expressions and
+    patterns. Remember that XSLT is in effect two languages: XML and XPath,
+    and one parser is needed for each of these languages. The SAX parser breaks
+    down the stylesheet document, the XPath parser breaks down XPath expressions
+    and patterns, and the main parser maps the decomposed elements into nodes
+    in the abstract syntax tree.</P>
+
+    <A name="mapping"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Mapping stylesheets elements to AST nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>Every element that is defined in the XSLT 1.0 spec is represented by a
+    a class in the <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.compiler</FONT></CODE> package. The
+    main parser class contains a <CODE><FONT face="courier, monospaced">Hashtable</FONT></CODE> that that maps XSL
+    elements into Java classes that make up the nodes in the AST. These Java
+    classes all reside in the <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.compiler</FONT></CODE>
+    package and extend either the <CODE><FONT face="courier, monospaced">TopLevelElement</FONT></CODE> or the
+    <CODE><FONT face="courier, monospaced">Instruction</FONT></CODE> classes. (Both these classes extend the
+    <CODE><FONT face="courier, monospaced">SyntaxTreeNode</FONT></CODE> class.)</P>
+
+    <P>The mapping from XSL element names to Java classes/AST nodes is set up
+    in the <CODE><FONT face="courier, monospaced">initClasses()</FONT></CODE> method of the main parser:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    private void initStdClasses() {
+	try {
+	    initStdClass(&quot;template&quot;,    &quot;Template&quot;);
+	    initStdClass(&quot;param&quot;,       &quot;Param&quot;);
+	    initStdClass(&quot;with-param&quot;,  &quot;WithParam&quot;);
+	    initStdClass(&quot;variable&quot;,    &quot;Variable&quot;);
+	    initStdClass(&quot;output&quot;,      &quot;Output&quot;);
+	    :
+	    :
+	    :
+	}
+    }
+
+    private void initClass(String elementName, String className)
+	throws ClassNotFoundException {
+	_classes.put(elementName,
+		     Class.forName(COMPILER_PACKAGE + '.' + className));
+    }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="domxsl"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Building the AST from AST nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The parser builds an AST from the various syntax tree nodes. Each node
+    contains a reference to its parent node, a vector containing references
+    to all child nodes and a structure containing all attribute nodes:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    protected SyntaxTreeNode _parent; // Parent node
+    private   Vector _contents;       // Child nodes
+    protected Attributes _attributes; // Attributes of this element</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+
+    <P>These variables should be accessed using these methods:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    protected final SyntaxTreeNode getParent();
+    protected final Vector getContents();
+    protected String getAttribute(String qname);
+    protected Attributes getAttributes();</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>At this time the AST only contains nodes that represent the XSL elements
+    from the stylesheet. A SAX parse is generic and can only handle XML files
+    and will not break up and identify XPath patterns/expressions (these are
+    stored as attributes to the various nodes in the tree). Each XSL instruction
+    gets its own node in the AST, and the XPath patterns/expressions are stored
+    as attributes of these nodes. A stylesheet looking like this:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:stylesheet .......&gt;
+      &lt;xsl:template match=&quot;chapter&quot;&gt;
+        &lt;xsl:text&gt;Chapter&lt;/xsl:text&gt;
+        &lt;xsl:value-of select=&quot;.&quot;&gt;
+      &lt;/xsl:template&gt;
+    &lt;/xsl&gt;stylesheet&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>will be stored in the AST as indicated in the following picture:</P>
+    <P><IMG align="right" alt="ast_stage1.gif" border="0" hspace="4" src="images/ast_stage1.gif" vspace="4"><BR clear="all"></P>
+    <P><I>Figure 1: The AST in its first stage</I></P>
+
+    <P>All objects that make up the nodes in the initial AST have a
+    <CODE><FONT face="courier, monospaced">parseContents()</FONT></CODE> method. This method is responsible for:</P>
+
+    <UL>
+      <LI>parsing the values of those attributes that contain XPath expressions
+      or patterns, breaking each expression/pattern into AST nodes and inserting
+      them into the tree.</LI>
+      <LI>reading/checking all other required attributes</LI>
+      <LI>propagate the <CODE><FONT face="courier, monospaced">parseContents()</FONT></CODE> call down the tree</LI>
+    </UL>
+    </FONT></TD></TR></TABLE><BR>
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Mapping XPath expressions and patterns to additional AST nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The nodes that represent the XPath expressions and patterns extend
+    either the <CODE><FONT face="courier, monospaced">Expression</FONT></CODE> or <CODE><FONT face="courier, monospaced">Pattern</FONT></CODE> class
+    respectively. These nodes are not appended to the <CODE><FONT face="courier, monospaced">_contents</FONT></CODE>
+    vectory of each node, but rather stored as individual references in each
+    AST element node. One example is the <CODE><FONT face="courier, monospaced">ForEach</FONT></CODE> class that
+    represents the <CODE><FONT face="courier, monospaced">&lt;xsl:for-each&gt;</FONT></CODE> element. This class has
+    a variable that contains a reference to the AST sub-tree that represents
+    its <CODE><FONT face="courier, monospaced">select</FONT></CODE> attribute:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    private Expression _select;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+   
+    <P>There is no standard way of storing these XPath expressions and each
+    AST node that contains one or more XPath expression/pattern must handle
+    that itself. This handling basically involves passing the attribute's
+    value to the XPath parser and receiving back an AST sub-tree.</P>
+
+    <P>With all XPath expressions/patterns expanded, the AST will look somewhat
+    like this:</P>
+
+    <P><IMG align="right" alt="ast_stage2.gif" border="0" hspace="4" src="images/ast_stage2.gif" vspace="4"><BR clear="all"></P>
+    <P><I>Fiugre 2: The AST in its second stage</I></P>
+
+    </FONT></TD></TR></TABLE><BR>
+  </FONT></TD></TR></TABLE><BR>
+
+  
+
+  <A name="typecheck"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Type-check and Cast Expressions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>In many cases we will need to typecast the top node in the expression
+    sub-tree to suit the expected result-type of the expression, or to typecast
+    child nodes to suit the allowed types for the various operators in the
+    expression. This is done by calling 'typeCheck()' on the root-node in the
+    XSL tree. Each SyntaxTreeNode node is responsible for inserting type-cast
+    nodes between itself and its child nodes or XPath nodes. These type-cast
+    nodes will convert the output-types of the child/XPath nodes to the expected
+    input-type of the parent node. Let look at our AST again and the node that
+    represents the <CODE><FONT face="courier, monospaced">&lt;xsl:value-of&gt;</FONT></CODE> element. This element
+    expects to receive a string from its <CODE><FONT face="courier, monospaced">select</FONT></CODE> XPath expression,
+    but the <CODE><FONT face="courier, monospaced">Step</FONT></CODE> expression will return either a node-set or a
+    single node. An extra node is inserted into the AST to perform the
+    necessary type conversions:</P>
+
+    <P><IMG align="right" alt="ast_stage3.gif" border="0" hspace="4" src="images/ast_stage3.gif" vspace="4"><BR clear="all"></P>
+    <P><I>Figure 3: XPath expression type cast</I></P>
+
+    <P>The <CODE><FONT face="courier, monospaced">typeCheck()</FONT></CODE> method of each SyntaxTreeNode object will
+    call <CODE><FONT face="courier, monospaced">typeCheck()</FONT></CODE> on each of its XPath expressions. This method
+    will return the native type returned by the expression. The AST node will
+    insert an additional type-conversion node if the return-type does not match
+    the expected data-type. Each possible return type is represented by a class
+    in the <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.compiler.util</FONT></CODE> package. These
+    classes all contain methods that will generate bytecodes needed to perform
+    the actual type conversions (at runtime). The type-cast nodes in the AST
+    mainly consist of calls to these methods.</P>
+  </FONT></TD></TR></TABLE><BR>
+
+  
+
+  <A name="compile"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>JVM byte-code generation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <UL>
+      <LI><A href="#stylesheet">Compiling the stylesheet</A></LI>
+      <LI><A href="#toplevel">Compiling top-level elements</A></LI>
+      <LI><A href="#templates">Compiling template code</A></LI>
+      <LI><A href="#instructions">Compiling instructions, functions expressions and patterns</A></LI>
+    </UL>
+
+    <P>Evey node in the AST extends the <CODE><FONT face="courier, monospaced">SyntaxTreeNode</FONT></CODE> base class
+    and implements the <CODE><FONT face="courier, monospaced">translate()</FONT></CODE> method. This method is
+    responsible for outputting the actual bytecodes that make up the
+    functionality required for each element, function, expression or pattern.
+    </P>
+
+    <A name="stylesheet"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Compiling the stylesheet</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>Some nodes in the AST require more complex code than others. The best
+    example is the <CODE><FONT face="courier, monospaced">&lt;xsl:stylesheet&gt;</FONT></CODE> element. The code that
+    represents this element has to tie together the code that is generated by
+    all the other elements and generate the actual class definition for the main
+    translet class. The <CODE><FONT face="courier, monospaced">Stylesheet</FONT></CODE> class generates the translet's
+    constructor and methods that handle all top-level elements.</P>
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="toplevel"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Compiling top-level elements</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The bytecode that handles top-level elements must be generated before any
+    other code. The '<CODE><FONT face="courier, monospaced">translate()</FONT></CODE>' method in these classes are
+    mainly called from these methods in the Stylesheet class:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    private String compileBuildKeys(ClassGenerator);
+    private String compileTopLevel(ClassGenerator, Enumeration);
+    private void compileConstructor(ClassGenerator, Output);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>These methods handle most top-level elements, such as global variables
+    and parameters, <CODE><FONT face="courier, monospaced">&lt;xsl:output&gt;</FONT></CODE> and
+    <CODE><FONT face="courier, monospaced">&lt;xsl:decimal-format&gt;</FONT></CODE> instructions.</P>
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="templates"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Compiling template code</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>All XPath patterns in <CODE><FONT face="courier, monospaced">&lt;xsl:apply-template&gt;</FONT></CODE>
+    instructions are converted into numeric values (known as the pattern's
+    kernel 'type'). All templates with identical pattern kernel types are
+    grouped together and inserted into a table known as a test sequence.
+    (The table of test sequences is found in the Mode class in the compiler
+    package. There will be one such table for each mode that is used in the
+    stylesheet). This table is used to build a big <CODE><FONT face="courier, monospaced">switch()</FONT></CODE>
+    statement in the translet's <CODE><FONT face="courier, monospaced">applyTemplates()</FONT></CODE> method. This
+    method is initially called with the root node of the input document.</P>
+
+    <P>The <CODE><FONT face="courier, monospaced">applyTemplates()</FONT></CODE> method determines the node's type and
+    passes this type to the <CODE><FONT face="courier, monospaced">switch()</FONT></CODE> statement to look up the
+    matching template. The test sequence code (the <CODE><FONT face="courier, monospaced">TestSeq</FONT></CODE> class)
+    is responsible for inserting bytecodes to find  one  matching template
+    in cases where more than one template matches the current node type.</P>
+
+    <P>There may be several templates that share the same pattern kernel type.
+    Here are a few examples of templates with patterns that all have the same
+    kernel type:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:template match=&quot;A/C&quot;&gt;
+    &lt;xsl:template match=&quot;A/B/C&quot;&gt;
+    &lt;xsl:template match=&quot;A | C&quot;&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>All these templates will be grouped under the type for
+    <CODE><FONT face="courier, monospaced">&lt;C&gt;</FONT></CODE> and will all get the same kernel type (the type for
+    <CODE><FONT face="courier, monospaced">&quot;C&quot;</FONT></CODE>). The last template will be grouped both under
+    <CODE><FONT face="courier, monospaced">&quot;C&quot;</FONT></CODE> and <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE>, since it matches either element.
+    If the type identifier for <CODE><FONT face="courier, monospaced">&quot;C&quot;</FONT></CODE> in this case is 8, all these
+    templates will be put under <CODE><FONT face="courier, monospaced">case 8:</FONT></CODE> in
+    <CODE><FONT face="courier, monospaced">applyTemplates()</FONT></CODE>'s big <CODE><FONT face="courier, monospaced">switch()</FONT></CODE> statement. The
+    <CODE><FONT face="courier, monospaced">TestSeq</FONT></CODE> class will insert some code under the
+    <CODE><FONT face="courier, monospaced">case 8:</FONT></CODE> statement (similar to if's and then's) in order to
+    determine which of the three templates to trigger.</P>
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="instructions"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Compiling instructions, functions, expressions and patterns</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The template code is generated by calling <CODE><FONT face="courier, monospaced">translate()</FONT></CODE> on
+    each <CODE><FONT face="courier, monospaced">Template</FONT></CODE> object in the abstract syntax tree. This call
+    will be propagated down the abstract syntax tree and every element will
+    output the bytecodes necessary to complete its task.</P>
+
+    <P>The Java Virtual Machine is stack-based, which goes hand-in-hand with
+    the tree structure of a stylesheet and the AST. A node in the AST will
+    call <CODE><FONT face="courier, monospaced">translate()</FONT></CODE> on its child nodes and any XPath nodes before
+    it generates its own bytecodes. In that way the correct sequence of JVM
+    instructions is generated.  Each one of the child nodes is responsible of
+    creating code that leaves the node's output value (if any) on the stack.
+    The typical procedure for the parent node is to create JVM code that
+    consumes these values off the stack and then leave its own output on the
+    stack (for its parent).</P>
+
+    <P>The tree-structure of the stylesheet is in this way closely tied with
+    the stack-based JVM. The design does not offer any obvious way of extending
+    the compiler to output code for other non-stack-based VMs or processors.</P>
+    </FONT></TD></TR></TABLE><BR>
+
+  </FONT></TD></TR></TABLE><BR>
+
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2004 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

@@ -1,0 +1,5 @@
+com.fujitsu.xml.xbase.resolver
+com.fujitsu.xml.xlink.dataset
+com.fujitsu.xml.xlink.processor
+com.fujitsu.xml.xpointer.location
+com.fujitsu.xml.xpointer.processor

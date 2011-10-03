@@ -1,0 +1,98 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/Turtle
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+N3
+dir
+
+
+
+add
+
+NTriples
+dir
+
+
+
+add
+
+RaptorTurtle
+dir
+
+
+
+add
+
+TurtleTestVocab.ttl
+file
+
+
+
+add
+
+build
+file
+
+
+
+add
+
+i18n.ttl
+file
+
+
+
+add
+
+manifest.ttl
+file
+
+
+
+add
+
+simple.ttl
+file
+
+
+
+add
+
+turtle-tests.zip
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

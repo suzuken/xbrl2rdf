@@ -1,0 +1,161 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/ontology
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+bugs
+dir
+
+
+
+add
+
+daml
+dir
+
+
+
+add
+
+dig
+dir
+
+
+
+add
+
+list0.rdf
+file
+
+
+
+add
+
+list1.rdf
+file
+
+
+
+add
+
+list2.rdf
+file
+
+
+
+add
+
+list3.rdf
+file
+
+
+
+add
+
+list4.rdf
+file
+
+
+
+add
+
+list5.rdf
+file
+
+
+
+add
+
+owl
+dir
+
+
+
+add
+
+rdfs
+dir
+
+
+
+add
+
+relativenames.rdf
+file
+
+
+
+add
+
+testImport1
+dir
+
+
+
+add
+
+testImport2
+dir
+
+
+
+add
+
+testImport3
+dir
+
+
+
+add
+
+testImport4
+dir
+
+
+
+add
+
+testImport5
+dir
+
+
+
+add
+
+testImport6
+dir
+
+
+
+add
+
+testImport7
+dir
+
+
+
+add
+

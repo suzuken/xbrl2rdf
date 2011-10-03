@@ -1,0 +1,77 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/rdfms-seq-representation
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+empty.nt
+file
+
+
+
+add
+
+test001.nt
+file
+
+
+
+add
+
+test001.rdf
+file
+
+
+
+add
+
+test002.nt
+file
+
+
+
+add
+
+test003a.nt
+file
+
+
+
+add
+
+test003b.nt
+file
+
+
+
+add
+
+test004.nt
+file
+
+
+
+add
+

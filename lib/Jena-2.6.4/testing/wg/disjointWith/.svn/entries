@@ -1,0 +1,182 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/disjointWith
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+Manifest001.rdf
+file
+
+
+
+add
+
+Manifest002.rdf
+file
+
+
+
+add
+
+Manifest003.rdf
+file
+
+
+
+add
+
+Manifest004.rdf
+file
+
+
+
+add
+
+Manifest005.rdf
+file
+
+
+
+add
+
+Manifest006.rdf
+file
+
+
+
+add
+
+Manifest007.rdf
+file
+
+
+
+add
+
+Manifest008.rdf
+file
+
+
+
+add
+
+Manifest009.rdf
+file
+
+
+
+add
+
+Manifest010.rdf
+file
+
+
+
+add
+
+conclusions001.rdf
+file
+
+
+
+add
+
+conclusions002.rdf
+file
+
+
+
+add
+
+consistent003.rdf
+file
+
+
+
+add
+
+consistent004.rdf
+file
+
+
+
+add
+
+consistent005.rdf
+file
+
+
+
+add
+
+consistent006.rdf
+file
+
+
+
+add
+
+consistent007.rdf
+file
+
+
+
+add
+
+consistent008.rdf
+file
+
+
+
+add
+
+consistent009.rdf
+file
+
+
+
+add
+
+inconsistent010.rdf
+file
+
+
+
+add
+
+premises001.rdf
+file
+
+
+
+add
+
+premises002.rdf
+file
+
+
+
+add
+

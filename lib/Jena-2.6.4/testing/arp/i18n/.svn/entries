@@ -1,0 +1,203 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/arp/i18n
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+arabic-macarabic.rdf
+file
+
+
+
+add
+
+arabic-utf8.rdf
+file
+
+
+
+add
+
+arabic-windows-1256.rdf
+file
+
+
+
+add
+
+badbom16be.rdf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+badbom16le.rdf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+badbom8.rdf
+file
+
+
+
+add
+
+bom.nt
+file
+
+
+
+add
+
+bom16be.rdf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+bom16le.rdf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+bom8.rdf
+file
+
+
+
+add
+
+eq-bug73_0.rdf
+file
+
+
+
+add
+
+eq-bug73_1.rdf
+file
+
+
+
+add
+
+eq-bug73_2.rdf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+i18nID.rdf
+file
+
+
+
+add
+
+icubug.rdf
+file
+
+
+
+add
+
+icubugtwo.rdf
+file
+
+
+
+add
+
+latin1.rdf
+file
+
+
+
+add
+
+macroman.rdf
+file
+
+
+
+add
+
+t9000.nt
+file
+
+
+
+add
+
+t9000.rdf
+file
+
+
+
+add
+

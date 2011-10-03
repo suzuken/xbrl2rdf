@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>
+    XLink Data Model
+  </title>
+</head>
+<body>
+  <h1 align="center">XLink Data Model</h1>
+  This section gives an overview and describes the class configuration of an XLink data model.
+  <ul>
+    <li>
+      <a href="#abstruct">Overview</a>
+      <ul>
+        <li>
+          <a href="#datamodel">Class configuration of an XLink data model</a>
+        <li>
+          <a href="#class">Overview of main classes</a>
+      </ul>
+  </ul>
+  <hr>
+  <a name="abstruct"></a>
+  <h2>Overview</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <p>
+        An XLink data model consists of an XLink data set and at least one DOM tree related to the XLink data set.<br>
+        An XLink data set contains the results of analyzing XLink descriptions in XML documents and the relationship between XML documents and DOM trees[Steve1].<br>
+        Applications can refer to information written in XLink by a linkage of DOM and an XLink data set in the configuration described above for an XLink data model.<br>
+      </p>
+    </dd>
+  </dl>
+  <a name="datamodel"></a>
+  <h3>Class configuration of an XLink data model</h3>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      Figure 1 shows the class configuration of an XLink data model.<br>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img src="../images/datamodel.jpg" alt="XLink data model"><br>
+        <br>
+        <div align="left">
+          #1  Node that defines Locator, Title, and Arc<br>
+          #2  Node corresponding to a link start resource or link end resource<br>
+        </div>
+        <br>
+        Figure 1  Class configuration of an XLink data model<br>
+        <br>
+      </div>
+      <br>
+    </dd>
+  </dl>
+  <a name="class"></a>
+  <h3>Overview of main classes</h3>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <a name="XLinkDataSet"></a>
+      <h3><i>class XLinkDataSet</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            This is the main unit of an XLink data set.<br>
+            This is the highest class that manages the XLink information in an XLink data model.  All results analyzed by XLiP can be obtained, starting from an XLink data set.<br>
+          </p>
+        </dd>
+      </dl>
+      <a name="XLinkDeclaration"></a>
+      <h3><i>class XLinkDeclaration</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            This is link declaration information.<br>
+            Extended-type[Steve2] elements and simple-type elements defined in XLink are modeled in this class.  This class provides a starting point from which information of elements under the class is obtained.<br>
+          </p>
+        </dd>
+      </dl>
+      <a name="Arc"></a>
+      <h3><i>class Arc</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            This is arc information.<br>
+            Arc-type elements defined in XLink are modeled in this class.  This class provides detailed information related to traversal.
+          </p>
+        </dd>
+      </dl>
+      <a name="Locator"></a>
+      <h3><i>class Locator</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            This is locator information.<br>
+            Locator-type elements and resource-type elements defined in XLink are modeled in this class.<br>
+            This class provides information on the resource locations of link start and end positions and related information.
+          </p>
+        </dd>
+      </dl>
+      <a name="Address"></a>
+      <h3><i>class Address</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            This is address information.<br>
+            href attribute values of locator-type elements defined in XLink are modeled in this class.  This class provides URI and fragment identifiers included in URI.
+          </p>
+        </dd>
+      </dl>
+      <a name="Title"></a>
+      <h3><i>class Title</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            This is title information.<br>
+            Title-type elements are modeled in this class.<br>
+            This is not the title attribute information defined as a global attribute of XLink.
+          </p>
+        </dd>
+      </dl>
+    </dd>
+  </dl>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; FUJITSU LIMITED 2000,2001
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/arp/comments
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+test01.rdf
+file
+
+
+
+add
+
+test02.rdf
+file
+
+
+
+add
+
+test03.rdf
+file
+
+
+
+add
+
+test04.rdf
+file
+
+
+
+add
+
+test05.rdf
+file
+
+
+
+add
+
+test06.rdf
+file
+
+
+
+add
+
+test07.rdf
+file
+
+
+
+add
+
+test08.rdf
+file
+
+
+
+add
+
+test09.rdf
+file
+
+
+
+add
+
+test0X.nt
+file
+
+
+
+add
+
+test10.rdf
+file
+
+
+
+add
+
+test11.rdf
+file
+
+
+
+add
+
+test12.rdf
+file
+
+
+
+add
+
+test13.rdf
+file
+
+
+
+add
+
+test1X.nt
+file
+
+
+
+add
+

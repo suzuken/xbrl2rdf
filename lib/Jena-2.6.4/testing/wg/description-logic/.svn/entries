@@ -1,0 +1,2345 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/description-logic
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+Manifest001.rdf
+file
+
+
+
+add
+
+Manifest002.rdf
+file
+
+
+
+add
+
+Manifest003.rdf
+file
+
+
+
+add
+
+Manifest004.rdf
+file
+
+
+
+add
+
+Manifest005.rdf
+file
+
+
+
+add
+
+Manifest006.rdf
+file
+
+
+
+add
+
+Manifest007.rdf
+file
+
+
+
+add
+
+Manifest008.rdf
+file
+
+
+
+add
+
+Manifest009.rdf
+file
+
+
+
+add
+
+Manifest010.rdf
+file
+
+
+
+add
+
+Manifest011.rdf
+file
+
+
+
+add
+
+Manifest012.rdf
+file
+
+
+
+add
+
+Manifest013.rdf
+file
+
+
+
+add
+
+Manifest014.rdf
+file
+
+
+
+add
+
+Manifest015.rdf
+file
+
+
+
+add
+
+Manifest016.rdf
+file
+
+
+
+add
+
+Manifest017.rdf
+file
+
+
+
+add
+
+Manifest018.rdf
+file
+
+
+
+add
+
+Manifest019.rdf
+file
+
+
+
+add
+
+Manifest020.rdf
+file
+
+
+
+add
+
+Manifest021.rdf
+file
+
+
+
+add
+
+Manifest022.rdf
+file
+
+
+
+add
+
+Manifest023.rdf
+file
+
+
+
+add
+
+Manifest024.rdf
+file
+
+
+
+add
+
+Manifest025.rdf
+file
+
+
+
+add
+
+Manifest026.rdf
+file
+
+
+
+add
+
+Manifest027.rdf
+file
+
+
+
+add
+
+Manifest028.rdf
+file
+
+
+
+add
+
+Manifest029.rdf
+file
+
+
+
+add
+
+Manifest030.rdf
+file
+
+
+
+add
+
+Manifest031.rdf
+file
+
+
+
+add
+
+Manifest032.rdf
+file
+
+
+
+add
+
+Manifest033.rdf
+file
+
+
+
+add
+
+Manifest034.rdf
+file
+
+
+
+add
+
+Manifest035.rdf
+file
+
+
+
+add
+
+Manifest040.rdf
+file
+
+
+
+add
+
+Manifest101.rdf
+file
+
+
+
+add
+
+Manifest102.rdf
+file
+
+
+
+add
+
+Manifest103.rdf
+file
+
+
+
+add
+
+Manifest104.rdf
+file
+
+
+
+add
+
+Manifest105.rdf
+file
+
+
+
+add
+
+Manifest106.rdf
+file
+
+
+
+add
+
+Manifest107.rdf
+file
+
+
+
+add
+
+Manifest108.rdf
+file
+
+
+
+add
+
+Manifest109.rdf
+file
+
+
+
+add
+
+Manifest110.rdf
+file
+
+
+
+add
+
+Manifest111.rdf
+file
+
+
+
+add
+
+Manifest201.rdf
+file
+
+
+
+add
+
+Manifest202.rdf
+file
+
+
+
+add
+
+Manifest203.rdf
+file
+
+
+
+add
+
+Manifest204.rdf
+file
+
+
+
+add
+
+Manifest205.rdf
+file
+
+
+
+add
+
+Manifest206.rdf
+file
+
+
+
+add
+
+Manifest207.rdf
+file
+
+
+
+add
+
+Manifest208.rdf
+file
+
+
+
+add
+
+Manifest209.rdf
+file
+
+
+
+add
+
+Manifest501.rdf
+file
+
+
+
+add
+
+Manifest502.rdf
+file
+
+
+
+add
+
+Manifest503.rdf
+file
+
+
+
+add
+
+Manifest504.rdf
+file
+
+
+
+add
+
+Manifest601.rdf
+file
+
+
+
+add
+
+Manifest602.rdf
+file
+
+
+
+add
+
+Manifest603.rdf
+file
+
+
+
+add
+
+Manifest604.rdf
+file
+
+
+
+add
+
+Manifest605.rdf
+file
+
+
+
+add
+
+Manifest606.rdf
+file
+
+
+
+add
+
+Manifest608.rdf
+file
+
+
+
+add
+
+Manifest609.rdf
+file
+
+
+
+add
+
+Manifest610.rdf
+file
+
+
+
+add
+
+Manifest611.rdf
+file
+
+
+
+add
+
+Manifest612.rdf
+file
+
+
+
+add
+
+Manifest613.rdf
+file
+
+
+
+add
+
+Manifest614.rdf
+file
+
+
+
+add
+
+Manifest615.rdf
+file
+
+
+
+add
+
+Manifest616.rdf
+file
+
+
+
+add
+
+Manifest617.rdf
+file
+
+
+
+add
+
+Manifest623.rdf
+file
+
+
+
+add
+
+Manifest624.rdf
+file
+
+
+
+add
+
+Manifest625.rdf
+file
+
+
+
+add
+
+Manifest626.rdf
+file
+
+
+
+add
+
+Manifest627.rdf
+file
+
+
+
+add
+
+Manifest628.rdf
+file
+
+
+
+add
+
+Manifest629.rdf
+file
+
+
+
+add
+
+Manifest630.rdf
+file
+
+
+
+add
+
+Manifest631.rdf
+file
+
+
+
+add
+
+Manifest632.rdf
+file
+
+
+
+add
+
+Manifest633.rdf
+file
+
+
+
+add
+
+Manifest634.rdf
+file
+
+
+
+add
+
+Manifest641.rdf
+file
+
+
+
+add
+
+Manifest642.rdf
+file
+
+
+
+add
+
+Manifest643.rdf
+file
+
+
+
+add
+
+Manifest644.rdf
+file
+
+
+
+add
+
+Manifest646.rdf
+file
+
+
+
+add
+
+Manifest650.rdf
+file
+
+
+
+add
+
+Manifest661.rdf
+file
+
+
+
+add
+
+Manifest662.rdf
+file
+
+
+
+add
+
+Manifest663.rdf
+file
+
+
+
+add
+
+Manifest664.rdf
+file
+
+
+
+add
+
+Manifest665.rdf
+file
+
+
+
+add
+
+Manifest667.rdf
+file
+
+
+
+add
+
+Manifest901.rdf
+file
+
+
+
+add
+
+Manifest902.rdf
+file
+
+
+
+add
+
+Manifest903.rdf
+file
+
+
+
+add
+
+Manifest904.rdf
+file
+
+
+
+add
+
+Manifest905.rdf
+file
+
+
+
+add
+
+Manifest906.rdf
+file
+
+
+
+add
+
+Manifest907.rdf
+file
+
+
+
+add
+
+Manifest908.rdf
+file
+
+
+
+add
+
+Manifest909.rdf
+file
+
+
+
+add
+
+Manifest910.rdf
+file
+
+
+
+add
+
+conclusions001.rdf
+file
+
+
+
+add
+
+conclusions002.rdf
+file
+
+
+
+add
+
+conclusions003.rdf
+file
+
+
+
+add
+
+conclusions004.rdf
+file
+
+
+
+add
+
+conclusions007.rdf
+file
+
+
+
+add
+
+conclusions008.rdf
+file
+
+
+
+add
+
+conclusions010.rdf
+file
+
+
+
+add
+
+conclusions011.rdf
+file
+
+
+
+add
+
+conclusions012.rdf
+file
+
+
+
+add
+
+conclusions013.rdf
+file
+
+
+
+add
+
+conclusions014.rdf
+file
+
+
+
+add
+
+conclusions015.rdf
+file
+
+
+
+add
+
+conclusions017.rdf
+file
+
+
+
+add
+
+conclusions019.rdf
+file
+
+
+
+add
+
+conclusions022.rdf
+file
+
+
+
+add
+
+conclusions023.rdf
+file
+
+
+
+add
+
+conclusions026.rdf
+file
+
+
+
+add
+
+conclusions027.rdf
+file
+
+
+
+add
+
+conclusions029.rdf
+file
+
+
+
+add
+
+conclusions030.rdf
+file
+
+
+
+add
+
+conclusions032.rdf
+file
+
+
+
+add
+
+conclusions033.rdf
+file
+
+
+
+add
+
+conclusions101.rdf
+file
+
+
+
+add
+
+conclusions102.rdf
+file
+
+
+
+add
+
+conclusions103.rdf
+file
+
+
+
+add
+
+conclusions104.rdf
+file
+
+
+
+add
+
+conclusions105.rdf
+file
+
+
+
+add
+
+conclusions106.rdf
+file
+
+
+
+add
+
+conclusions107.rdf
+file
+
+
+
+add
+
+conclusions108.rdf
+file
+
+
+
+add
+
+conclusions109.rdf
+file
+
+
+
+add
+
+conclusions110.rdf
+file
+
+
+
+add
+
+conclusions111.rdf
+file
+
+
+
+add
+
+conclusions201.rdf
+file
+
+
+
+add
+
+conclusions202.rdf
+file
+
+
+
+add
+
+conclusions203.rdf
+file
+
+
+
+add
+
+conclusions204.rdf
+file
+
+
+
+add
+
+conclusions205.rdf
+file
+
+
+
+add
+
+conclusions206.rdf
+file
+
+
+
+add
+
+conclusions207.rdf
+file
+
+
+
+add
+
+conclusions208.rdf
+file
+
+
+
+add
+
+conclusions661.rdf
+file
+
+
+
+add
+
+conclusions662.rdf
+file
+
+
+
+add
+
+conclusions663.rdf
+file
+
+
+
+add
+
+conclusions664.rdf
+file
+
+
+
+add
+
+conclusions665.rdf
+file
+
+
+
+add
+
+conclusions667.rdf
+file
+
+
+
+add
+
+conclusions901.rdf
+file
+
+
+
+add
+
+conclusions903.rdf
+file
+
+
+
+add
+
+conclusions905.rdf
+file
+
+
+
+add
+
+consistent005.rdf
+file
+
+
+
+add
+
+consistent006.rdf
+file
+
+
+
+add
+
+consistent009.rdf
+file
+
+
+
+add
+
+consistent016.rdf
+file
+
+
+
+add
+
+consistent018.rdf
+file
+
+
+
+add
+
+consistent020.rdf
+file
+
+
+
+add
+
+consistent021.rdf
+file
+
+
+
+add
+
+consistent024.rdf
+file
+
+
+
+add
+
+consistent025.rdf
+file
+
+
+
+add
+
+consistent028.rdf
+file
+
+
+
+add
+
+consistent031.rdf
+file
+
+
+
+add
+
+consistent034.rdf
+file
+
+
+
+add
+
+consistent501.rdf
+file
+
+
+
+add
+
+consistent503.rdf
+file
+
+
+
+add
+
+consistent605.rdf
+file
+
+
+
+add
+
+consistent606.rdf
+file
+
+
+
+add
+
+consistent609.rdf
+file
+
+
+
+add
+
+consistent616.rdf
+file
+
+
+
+add
+
+consistent624.rdf
+file
+
+
+
+add
+
+consistent625.rdf
+file
+
+
+
+add
+
+consistent628.rdf
+file
+
+
+
+add
+
+consistent631.rdf
+file
+
+
+
+add
+
+consistent634.rdf
+file
+
+
+
+add
+
+consistent905.rdf
+file
+
+
+
+add
+
+consistent906.rdf
+file
+
+
+
+add
+
+consistent907.rdf
+file
+
+
+
+add
+
+consistent908.rdf
+file
+
+
+
+add
+
+inconsistent001.rdf
+file
+
+
+
+add
+
+inconsistent002.rdf
+file
+
+
+
+add
+
+inconsistent003.rdf
+file
+
+
+
+add
+
+inconsistent004.rdf
+file
+
+
+
+add
+
+inconsistent007.rdf
+file
+
+
+
+add
+
+inconsistent008.rdf
+file
+
+
+
+add
+
+inconsistent010.rdf
+file
+
+
+
+add
+
+inconsistent011.rdf
+file
+
+
+
+add
+
+inconsistent012.rdf
+file
+
+
+
+add
+
+inconsistent013.rdf
+file
+
+
+
+add
+
+inconsistent014.rdf
+file
+
+
+
+add
+
+inconsistent015.rdf
+file
+
+
+
+add
+
+inconsistent017.rdf
+file
+
+
+
+add
+
+inconsistent019.rdf
+file
+
+
+
+add
+
+inconsistent022.rdf
+file
+
+
+
+add
+
+inconsistent023.rdf
+file
+
+
+
+add
+
+inconsistent026.rdf
+file
+
+
+
+add
+
+inconsistent027.rdf
+file
+
+
+
+add
+
+inconsistent029.rdf
+file
+
+
+
+add
+
+inconsistent030.rdf
+file
+
+
+
+add
+
+inconsistent032.rdf
+file
+
+
+
+add
+
+inconsistent033.rdf
+file
+
+
+
+add
+
+inconsistent035.rdf
+file
+
+
+
+add
+
+inconsistent040.rdf
+file
+
+
+
+add
+
+inconsistent101.rdf
+file
+
+
+
+add
+
+inconsistent102.rdf
+file
+
+
+
+add
+
+inconsistent103.rdf
+file
+
+
+
+add
+
+inconsistent104.rdf
+file
+
+
+
+add
+
+inconsistent105.rdf
+file
+
+
+
+add
+
+inconsistent106.rdf
+file
+
+
+
+add
+
+inconsistent107.rdf
+file
+
+
+
+add
+
+inconsistent108.rdf
+file
+
+
+
+add
+
+inconsistent109.rdf
+file
+
+
+
+add
+
+inconsistent110.rdf
+file
+
+
+
+add
+
+inconsistent111.rdf
+file
+
+
+
+add
+
+inconsistent502.rdf
+file
+
+
+
+add
+
+inconsistent504.rdf
+file
+
+
+
+add
+
+inconsistent601.rdf
+file
+
+
+
+add
+
+inconsistent602.rdf
+file
+
+
+
+add
+
+inconsistent603.rdf
+file
+
+
+
+add
+
+inconsistent604.rdf
+file
+
+
+
+add
+
+inconsistent608.rdf
+file
+
+
+
+add
+
+inconsistent610.rdf
+file
+
+
+
+add
+
+inconsistent611.rdf
+file
+
+
+
+add
+
+inconsistent612.rdf
+file
+
+
+
+add
+
+inconsistent613.rdf
+file
+
+
+
+add
+
+inconsistent614.rdf
+file
+
+
+
+add
+
+inconsistent615.rdf
+file
+
+
+
+add
+
+inconsistent617.rdf
+file
+
+
+
+add
+
+inconsistent623.rdf
+file
+
+
+
+add
+
+inconsistent626.rdf
+file
+
+
+
+add
+
+inconsistent627.rdf
+file
+
+
+
+add
+
+inconsistent629.rdf
+file
+
+
+
+add
+
+inconsistent630.rdf
+file
+
+
+
+add
+
+inconsistent632.rdf
+file
+
+
+
+add
+
+inconsistent633.rdf
+file
+
+
+
+add
+
+inconsistent641.rdf
+file
+
+
+
+add
+
+inconsistent642.rdf
+file
+
+
+
+add
+
+inconsistent643.rdf
+file
+
+
+
+add
+
+inconsistent644.rdf
+file
+
+
+
+add
+
+inconsistent646.rdf
+file
+
+
+
+add
+
+inconsistent650.rdf
+file
+
+
+
+add
+
+inconsistent909.rdf
+file
+
+
+
+add
+
+inconsistent910.rdf
+file
+
+
+
+add
+
+nonconclusions005.rdf
+file
+
+
+
+add
+
+nonconclusions006.rdf
+file
+
+
+
+add
+
+nonconclusions009.rdf
+file
+
+
+
+add
+
+nonconclusions016.rdf
+file
+
+
+
+add
+
+nonconclusions018.rdf
+file
+
+
+
+add
+
+nonconclusions020.rdf
+file
+
+
+
+add
+
+nonconclusions021.rdf
+file
+
+
+
+add
+
+nonconclusions024.rdf
+file
+
+
+
+add
+
+nonconclusions025.rdf
+file
+
+
+
+add
+
+nonconclusions028.rdf
+file
+
+
+
+add
+
+nonconclusions031.rdf
+file
+
+
+
+add
+
+nonconclusions034.rdf
+file
+
+
+
+add
+
+nonconclusions209.rdf
+file
+
+
+
+add
+
+nonconclusions902.rdf
+file
+
+
+
+add
+
+nonconclusions904.rdf
+file
+
+
+
+add
+
+premises001.rdf
+file
+
+
+
+add
+
+premises002.rdf
+file
+
+
+
+add
+
+premises003.rdf
+file
+
+
+
+add
+
+premises004.rdf
+file
+
+
+
+add
+
+premises005.rdf
+file
+
+
+
+add
+
+premises006.rdf
+file
+
+
+
+add
+
+premises007.rdf
+file
+
+
+
+add
+
+premises008.rdf
+file
+
+
+
+add
+
+premises009.rdf
+file
+
+
+
+add
+
+premises010.rdf
+file
+
+
+
+add
+
+premises011.rdf
+file
+
+
+
+add
+
+premises012.rdf
+file
+
+
+
+add
+
+premises013.rdf
+file
+
+
+
+add
+
+premises014.rdf
+file
+
+
+
+add
+
+premises015.rdf
+file
+
+
+
+add
+
+premises016.rdf
+file
+
+
+
+add
+
+premises017.rdf
+file
+
+
+
+add
+
+premises018.rdf
+file
+
+
+
+add
+
+premises019.rdf
+file
+
+
+
+add
+
+premises020.rdf
+file
+
+
+
+add
+
+premises021.rdf
+file
+
+
+
+add
+
+premises022.rdf
+file
+
+
+
+add
+
+premises023.rdf
+file
+
+
+
+add
+
+premises024.rdf
+file
+
+
+
+add
+
+premises025.rdf
+file
+
+
+
+add
+
+premises026.rdf
+file
+
+
+
+add
+
+premises027.rdf
+file
+
+
+
+add
+
+premises028.rdf
+file
+
+
+
+add
+
+premises029.rdf
+file
+
+
+
+add
+
+premises030.rdf
+file
+
+
+
+add
+
+premises031.rdf
+file
+
+
+
+add
+
+premises032.rdf
+file
+
+
+
+add
+
+premises033.rdf
+file
+
+
+
+add
+
+premises034.rdf
+file
+
+
+
+add
+
+premises101.rdf
+file
+
+
+
+add
+
+premises102.rdf
+file
+
+
+
+add
+
+premises103.rdf
+file
+
+
+
+add
+
+premises104.rdf
+file
+
+
+
+add
+
+premises105.rdf
+file
+
+
+
+add
+
+premises106.rdf
+file
+
+
+
+add
+
+premises107.rdf
+file
+
+
+
+add
+
+premises108.rdf
+file
+
+
+
+add
+
+premises109.rdf
+file
+
+
+
+add
+
+premises110.rdf
+file
+
+
+
+add
+
+premises111.rdf
+file
+
+
+
+add
+
+premises201.rdf
+file
+
+
+
+add
+
+premises202.rdf
+file
+
+
+
+add
+
+premises203.rdf
+file
+
+
+
+add
+
+premises204.rdf
+file
+
+
+
+add
+
+premises205.rdf
+file
+
+
+
+add
+
+premises206.rdf
+file
+
+
+
+add
+
+premises207.rdf
+file
+
+
+
+add
+
+premises208.rdf
+file
+
+
+
+add
+
+premises209.rdf
+file
+
+
+
+add
+
+premises661.rdf
+file
+
+
+
+add
+
+premises662.rdf
+file
+
+
+
+add
+
+premises663.rdf
+file
+
+
+
+add
+
+premises664.rdf
+file
+
+
+
+add
+
+premises665.rdf
+file
+
+
+
+add
+
+premises667.rdf
+file
+
+
+
+add
+
+premises901.rdf
+file
+
+
+
+add
+
+premises902.rdf
+file
+
+
+
+add
+
+premises903.rdf
+file
+
+
+
+add
+
+premises904.rdf
+file
+
+
+
+add
+
+premises905.rdf
+file
+
+
+
+add
+

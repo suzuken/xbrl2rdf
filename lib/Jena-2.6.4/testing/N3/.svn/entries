@@ -1,0 +1,756 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/N3
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+a1.n3
+file
+
+
+
+add
+
+contexts.n3
+file
+
+
+
+add
+
+lists-simple.n3
+file
+
+
+
+add
+
+lstring.n3
+file
+
+
+
+add
+
+make-results
+file
+
+
+
+add
+
+make-tests
+file
+
+
+
+add
+
+n3-parser-tests
+file
+
+
+
+add
+
+n3-reader-tests
+file
+
+
+
+add
+
+n3-writer-test-01.n3
+file
+
+
+
+add
+
+n3-writer-test-02.n3
+file
+
+
+
+add
+
+n3-writer-test-03.n3
+file
+
+
+
+add
+
+n3-writer-test-04.n3
+file
+
+
+
+add
+
+n3-writer-test-05.n3
+file
+
+
+
+add
+
+n3-writer-test-06.n3
+file
+
+
+
+add
+
+n3-writer-test-07.n3
+file
+
+
+
+add
+
+n3-writer-test-08.n3
+file
+
+
+
+add
+
+n3-writer-test-09.n3
+file
+
+
+
+add
+
+n3-writer-test-10.n3
+file
+
+
+
+add
+
+n3-writer-test-11.n3
+file
+
+
+
+add
+
+n3-writer-test-12.n3
+file
+
+
+
+add
+
+n3-writer-test-13.n3
+file
+
+
+
+add
+
+n3-writer-test-14.n3
+file
+
+
+
+add
+
+n3-writer-test-15.n3
+file
+
+
+
+add
+
+n3-writer-test-16.n3
+file
+
+
+
+add
+
+n3-writer-test-17.n3
+file
+
+
+
+add
+
+n3-writer-test-18.n3
+file
+
+
+
+add
+
+n3-writer-test-19.n3
+file
+
+
+
+add
+
+n3-writer-test-20.n3
+file
+
+
+
+add
+
+n3-writer-test-21.n3
+file
+
+
+
+add
+
+n3-writer-test-22.n3
+file
+
+
+
+add
+
+n3-writer-test-23.n3
+file
+
+
+
+add
+
+n3-writer-test-24.n3
+file
+
+
+
+add
+
+n3-writer-test-25.n3
+file
+
+
+
+add
+
+n3-writer-test-26.n3
+file
+
+
+
+add
+
+n3-writer-test-27.n3
+file
+
+
+
+add
+
+n3-writer-test-28.n3
+file
+
+
+
+add
+
+n3-writer-test-29.n3
+file
+
+
+
+add
+
+n3-writer-tests
+file
+
+
+
+add
+
+path1.n3
+file
+
+
+
+add
+
+path2.n3
+file
+
+
+
+add
+
+quantifiers.n3
+file
+
+
+
+add
+
+qvars1.n3
+file
+
+
+
+add
+
+qvars2.n3
+file
+
+
+
+add
+
+rdf-result-01.nt
+file
+
+
+
+add
+
+rdf-result-02.nt
+file
+
+
+
+add
+
+rdf-result-03.nt
+file
+
+
+
+add
+
+rdf-result-04.nt
+file
+
+
+
+add
+
+rdf-result-05.nt
+file
+
+
+
+add
+
+rdf-result-06.nt
+file
+
+
+
+add
+
+rdf-result-07.nt
+file
+
+
+
+add
+
+rdf-result-08.nt
+file
+
+
+
+add
+
+rdf-result-09.nt
+file
+
+
+
+add
+
+rdf-result-10.nt
+file
+
+
+
+add
+
+rdf-result-11.nt
+file
+
+
+
+add
+
+rdf-result-12.nt
+file
+
+
+
+add
+
+rdf-result-13.nt
+file
+
+
+
+add
+
+rdf-result-14.nt
+file
+
+
+
+add
+
+rdf-result-15.nt
+file
+
+
+
+add
+
+rdf-result-16.nt
+file
+
+
+
+add
+
+rdf-result-17.nt
+file
+
+
+
+add
+
+rdf-result-18.nt
+file
+
+
+
+add
+
+rdf-result-19.nt
+file
+
+
+
+add
+
+rdf-result-20.nt
+file
+
+
+
+add
+
+rdf-result-21.nt
+file
+
+
+
+add
+
+rdf-result-22.nt
+file
+
+
+
+add
+
+rdf-result-23.nt
+file
+
+
+
+add
+
+rdf-result-24.nt
+file
+
+
+
+add
+
+rdf-result-25.nt
+file
+
+
+
+add
+
+rdf-result-26.nt
+file
+
+
+
+add
+
+rdf-result-27.nt
+file
+
+
+
+add
+
+rdf-result-28.nt
+file
+
+
+
+add
+
+rdf-test-01.n3
+file
+
+
+
+add
+
+rdf-test-02.n3
+file
+
+
+
+add
+
+rdf-test-03.n3
+file
+
+
+
+add
+
+rdf-test-04.n3
+file
+
+
+
+add
+
+rdf-test-05.n3
+file
+
+
+
+add
+
+rdf-test-06.n3
+file
+
+
+
+add
+
+rdf-test-07.n3
+file
+
+
+
+add
+
+rdf-test-08.n3
+file
+
+
+
+add
+
+rdf-test-09.n3
+file
+
+
+
+add
+
+rdf-test-10.n3
+file
+
+
+
+add
+
+rdf-test-11.n3
+file
+
+
+
+add
+
+rdf-test-12.n3
+file
+
+
+
+add
+
+rdf-test-13.n3
+file
+
+
+
+add
+
+rdf-test-14.n3
+file
+
+
+
+add
+
+rdf-test-15.n3
+file
+
+
+
+add
+
+rdf-test-16.n3
+file
+
+
+
+add
+
+rdf-test-17.n3
+file
+
+
+
+add
+
+rdf-test-18.n3
+file
+
+
+
+add
+
+rdf-test-19.n3
+file
+
+
+
+add
+
+rdf-test-20.n3
+file
+
+
+
+add
+
+rdf-test-21.n3
+file
+
+
+
+add
+
+rdf-test-22.n3
+file
+
+
+
+add
+
+rdf-test-23.n3
+file
+
+
+
+add
+
+rdf-test-24.n3
+file
+
+
+
+add
+
+rdf-test-25.n3
+file
+
+
+
+add
+
+rdf-test-26.n3
+file
+
+
+
+add
+
+rdf-test-27.n3
+file
+
+
+
+add
+
+rdf-test-28.n3
+file
+
+
+
+add
+
+resolves-rdf.n3
+file
+
+
+
+add
+
+sep-term.n3
+file
+
+
+
+add
+
+sib.n3
+file
+
+
+
+add
+
+strquot.n3
+file
+
+
+
+add
+
+t10.n3
+file
+
+
+
+add
+

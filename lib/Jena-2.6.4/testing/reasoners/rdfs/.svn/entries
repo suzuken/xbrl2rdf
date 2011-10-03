@@ -1,0 +1,504 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/reasoners/rdfs
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+data1.rdf
+file
+
+
+
+add
+
+data2.rdf
+file
+
+
+
+add
+
+data3.rdf
+file
+
+
+
+add
+
+dataRDFS12.rdf
+file
+
+
+
+add
+
+dttest1.nt
+file
+
+
+
+add
+
+dttest2.nt
+file
+
+
+
+add
+
+dttest3.nt
+file
+
+
+
+add
+
+empty.rdf
+file
+
+
+
+add
+
+manifest-nodirect-noresource.rdf
+file
+
+
+
+add
+
+manifest-nodirect.rdf
+file
+
+
+
+add
+
+manifest-rdfs12.rdf
+file
+
+
+
+add
+
+manifest-simple.rdf
+file
+
+
+
+add
+
+manifest-standard.rdf
+file
+
+
+
+add
+
+manifest.rdf
+file
+
+
+
+add
+
+query-res.nt
+file
+
+
+
+add
+
+query10.nt
+file
+
+
+
+add
+
+query11.nt
+file
+
+
+
+add
+
+query12.nt
+file
+
+
+
+add
+
+query13.nt
+file
+
+
+
+add
+
+query14.nt
+file
+
+
+
+add
+
+query15.nt
+file
+
+
+
+add
+
+query16.nt
+file
+
+
+
+add
+
+query17.nt
+file
+
+
+
+add
+
+query18.nt
+file
+
+
+
+add
+
+query19.nt
+file
+
+
+
+add
+
+query2.nt
+file
+
+
+
+add
+
+query20.nt
+file
+
+
+
+add
+
+query21.nt
+file
+
+
+
+add
+
+query22.nt
+file
+
+
+
+add
+
+query3.nt
+file
+
+
+
+add
+
+query4.nt
+file
+
+
+
+add
+
+query5.nt
+file
+
+
+
+add
+
+query7.nt
+file
+
+
+
+add
+
+query8.nt
+file
+
+
+
+add
+
+query9.nt
+file
+
+
+
+add
+
+queryRDFS12.nt
+file
+
+
+
+add
+
+result1.rdf
+file
+
+
+
+add
+
+result10.rdf
+file
+
+
+
+add
+
+result11-noresource.rdf
+file
+
+
+
+add
+
+result11.rdf
+file
+
+
+
+add
+
+result12-noresource.rdf
+file
+
+
+
+add
+
+result12.rdf
+file
+
+
+
+add
+
+result13-noresource.rdf
+file
+
+
+
+add
+
+result13.rdf
+file
+
+
+
+add
+
+result14.rdf
+file
+
+
+
+add
+
+result15.rdf
+file
+
+
+
+add
+
+result16-noresource.rdf
+file
+
+
+
+add
+
+result16.rdf
+file
+
+
+
+add
+
+result17.rdf
+file
+
+
+
+add
+
+result18-simple.rdf
+file
+
+
+
+add
+
+result18.rdf
+file
+
+
+
+add
+
+result19-nodirect.rdf
+file
+
+
+
+add
+
+result19.rdf
+file
+
+
+
+add
+
+result2.rdf
+file
+
+
+
+add
+
+result20-nodirect.rdf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+result20.rdf
+file
+
+
+
+add
+
+result21.rdf
+file
+
+
+
+add
+
+result22.rdf
+file
+
+
+
+add
+
+result3.rdf
+file
+
+
+
+add
+
+result4.rdf
+file
+
+
+
+add
+
+result7.rdf
+file
+
+
+
+add
+
+result8.rdf
+file
+
+
+
+add
+
+result9.rdf
+file
+
+
+
+add
+
+resultRDFS12.rdf
+file
+
+
+
+add
+
+tbox1.rdf
+file
+
+
+
+add
+
+timing-data.rdf
+file
+
+
+
+add
+
+timing-tbox.rdf
+file
+
+
+
+add
+

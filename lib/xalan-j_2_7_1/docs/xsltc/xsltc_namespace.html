@@ -1,0 +1,600 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>XSLTC and Namespaces</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xsltc_namespace-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+ 
+  <A href="index.html" onMouseOut="rolloverOff('side-index');" onMouseOver="rolloverOn('side-index');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-index" onLoad="rolloverLoad('side-index','graphics/index-label-2.jpg','graphics/index-label-3.jpg');" src="graphics/index-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_compiler.html" onMouseOut="rolloverOff('side-xsltc_compiler');" onMouseOver="rolloverOn('side-xsltc_compiler');"><IMG alt="Compiler design" border="0" height="12" hspace="0" name="side-xsltc_compiler" onLoad="rolloverLoad('side-xsltc_compiler','graphics/xsltc_compiler-label-2.jpg','graphics/xsltc_compiler-label-3.jpg');" src="graphics/xsltc_compiler-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsl_whitespace_design.html" onMouseOut="rolloverOff('side-xsl_whitespace_design');" onMouseOver="rolloverOn('side-xsl_whitespace_design');"><IMG alt="Whitespace" border="0" height="12" hspace="0" name="side-xsl_whitespace_design" onLoad="rolloverLoad('side-xsl_whitespace_design','graphics/xsl_whitespace_design-label-2.jpg','graphics/xsl_whitespace_design-label-3.jpg');" src="graphics/xsl_whitespace_design-label-3.jpg" vspace="0" width="120"></A><BR>
+
+  <A href="xsl_sort_design.html" onMouseOut="rolloverOff('side-xsl_sort_design');" onMouseOver="rolloverOn('side-xsl_sort_design');"><IMG alt="xsl:sort" border="0" height="12" hspace="0" name="side-xsl_sort_design" onLoad="rolloverLoad('side-xsl_sort_design','graphics/xsl_sort_design-label-2.jpg','graphics/xsl_sort_design-label-3.jpg');" src="graphics/xsl_sort_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_key_design.html" onMouseOut="rolloverOff('side-xsl_key_design');" onMouseOver="rolloverOn('side-xsl_key_design');"><IMG alt="Keys" border="0" height="12" hspace="0" name="side-xsl_key_design" onLoad="rolloverLoad('side-xsl_key_design','graphics/xsl_key_design-label-2.jpg','graphics/xsl_key_design-label-3.jpg');" src="graphics/xsl_key_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_comment_design.html" onMouseOut="rolloverOff('side-xsl_comment_design');" onMouseOver="rolloverOn('side-xsl_comment_design');"><IMG alt="Comment design" border="0" height="12" hspace="0" name="side-xsl_comment_design" onLoad="rolloverLoad('side-xsl_comment_design','graphics/xsl_comment_design-label-2.jpg','graphics/xsl_comment_design-label-3.jpg');" src="graphics/xsl_comment_design-label-3.jpg" vspace="0" width="120"></A><BR>
+ 
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsl_lang_design.html" onMouseOut="rolloverOff('side-xsl_lang_design');" onMouseOver="rolloverOn('side-xsl_lang_design');"><IMG alt="lang()" border="0" height="12" hspace="0" name="side-xsl_lang_design" onLoad="rolloverLoad('side-xsl_lang_design','graphics/xsl_lang_design-label-2.jpg','graphics/xsl_lang_design-label-3.jpg');" src="graphics/xsl_lang_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_unparsed_design.html" onMouseOut="rolloverOff('side-xsl_unparsed_design');" onMouseOver="rolloverOn('side-xsl_unparsed_design');"><IMG alt="Unparsed entities" border="0" height="12" hspace="0" name="side-xsl_unparsed_design" onLoad="rolloverLoad('side-xsl_unparsed_design','graphics/xsl_unparsed_design-label-2.jpg','graphics/xsl_unparsed_design-label-3.jpg');" src="graphics/xsl_unparsed_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="xsl_if_design.html" onMouseOut="rolloverOff('side-xsl_if_design');" onMouseOver="rolloverOn('side-xsl_if_design');"><IMG alt="If design" border="0" height="12" hspace="0" name="side-xsl_if_design" onLoad="rolloverLoad('side-xsl_if_design','graphics/xsl_if_design-label-2.jpg','graphics/xsl_if_design-label-3.jpg');" src="graphics/xsl_if_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_choose_design.html" onMouseOut="rolloverOff('side-xsl_choose_design');" onMouseOver="rolloverOn('side-xsl_choose_design');"><IMG alt="Choose|When|Otherwise design" border="0" height="12" hspace="0" name="side-xsl_choose_design" onLoad="rolloverLoad('side-xsl_choose_design','graphics/xsl_choose_design-label-2.jpg','graphics/xsl_choose_design-label-3.jpg');" src="graphics/xsl_choose_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_include_design.html" onMouseOut="rolloverOff('side-xsl_include_design');" onMouseOver="rolloverOn('side-xsl_include_design');"><IMG alt="Include|Import design" border="0" height="12" hspace="0" name="side-xsl_include_design" onLoad="rolloverLoad('side-xsl_include_design','graphics/xsl_include_design-label-2.jpg','graphics/xsl_include_design-label-3.jpg');" src="graphics/xsl_include_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_variable_design.html" onMouseOut="rolloverOff('side-xsl_variable_design');" onMouseOver="rolloverOn('side-xsl_variable_design');"><IMG alt="Variable|Param design" border="0" height="12" hspace="0" name="side-xsl_variable_design" onLoad="rolloverLoad('side-xsl_variable_design','graphics/xsl_variable_design-label-2.jpg','graphics/xsl_variable_design-label-3.jpg');" src="graphics/xsl_variable_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+   
+  <A href="xsltc_runtime.html" onMouseOut="rolloverOff('side-xsltc_runtime');" onMouseOver="rolloverOn('side-xsltc_runtime');"><IMG alt="Runtime" border="0" height="12" hspace="0" name="side-xsltc_runtime" onLoad="rolloverLoad('side-xsltc_runtime','graphics/xsltc_runtime-label-2.jpg','graphics/xsltc_runtime-label-3.jpg');" src="graphics/xsltc_runtime-label-3.jpg" vspace="0" width="120"></A><BR> 
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_dom.html" onMouseOut="rolloverOff('side-xsltc_dom');" onMouseOver="rolloverOn('side-xsltc_dom');"><IMG alt="Internal DOM" border="0" height="12" hspace="0" name="side-xsltc_dom" onLoad="rolloverLoad('side-xsltc_dom','graphics/xsltc_dom-label-2.jpg','graphics/xsltc_dom-label-3.jpg');" src="graphics/xsltc_dom-label-3.jpg" vspace="0" width="120"></A><BR>            
+            
+  <IMG alt="Namespaces" border="0" height="12" hspace="0" src="graphics/xsltc_namespace-label-1.jpg" vspace="0" width="120"><BR>             
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsltc_trax.html" onMouseOut="rolloverOff('side-xsltc_trax');" onMouseOver="rolloverOn('side-xsltc_trax');"><IMG alt="Translet & TrAX" border="0" height="12" hspace="0" name="side-xsltc_trax" onLoad="rolloverLoad('side-xsltc_trax','graphics/xsltc_trax-label-2.jpg','graphics/xsltc_trax-label-3.jpg');" src="graphics/xsltc_trax-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_predicates.html" onMouseOut="rolloverOff('side-xsltc_predicates');" onMouseOver="rolloverOn('side-xsltc_predicates');"><IMG alt="XPath Predicates" border="0" height="12" hspace="0" name="side-xsltc_predicates" onLoad="rolloverLoad('side-xsltc_predicates','graphics/xsltc_predicates-label-2.jpg','graphics/xsltc_predicates-label-3.jpg');" src="graphics/xsltc_predicates-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_iterators.html" onMouseOut="rolloverOff('side-xsltc_iterators');" onMouseOver="rolloverOn('side-xsltc_iterators');"><IMG alt="Xsltc Iterators" border="0" height="12" hspace="0" name="side-xsltc_iterators" onLoad="rolloverLoad('side-xsltc_iterators','graphics/xsltc_iterators-label-2.jpg','graphics/xsltc_iterators-label-3.jpg');" src="graphics/xsltc_iterators-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_native_api.html" onMouseOut="rolloverOff('side-xsltc_native_api');" onMouseOver="rolloverOn('side-xsltc_native_api');"><IMG alt="Xsltc Native API" border="0" height="12" hspace="0" name="side-xsltc_native_api" onLoad="rolloverLoad('side-xsltc_native_api','graphics/xsltc_native_api-label-2.jpg','graphics/xsltc_native_api-label-3.jpg');" src="graphics/xsltc_native_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_trax_api.html" onMouseOut="rolloverOff('side-xsltc_trax_api');" onMouseOver="rolloverOn('side-xsltc_trax_api');"><IMG alt="Xsltc TrAX API" border="0" height="12" hspace="0" name="side-xsltc_trax_api" onLoad="rolloverLoad('side-xsltc_trax_api','graphics/xsltc_trax_api-label-2.jpg','graphics/xsltc_trax_api-label-3.jpg');" src="graphics/xsltc_trax_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_performance.html" onMouseOut="rolloverOff('side-xsltc_performance');" onMouseOver="rolloverOn('side-xsltc_performance');"><IMG alt="Performance Hints" border="0" height="12" hspace="0" name="side-xsltc_performance" onLoad="rolloverLoad('side-xsltc_performance','graphics/xsltc_performance-label-2.jpg','graphics/xsltc_performance-label-3.jpg');" src="graphics/xsltc_performance-label-3.jpg" vspace="0" width="120"></A><BR>            
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+  <UL>
+    <LI><A href="#functionality">Functionality</A></LI>
+    <LI><A href="#overview">Namespace overview</A></LI>
+    <LI><A href="#NSA">The DOM &amp; namespaces</A></LI>    
+    <LI><A href="#NSB">Namespaces in the XSL stylesheet</A></LI>
+    <LI><A href="#NSC">Namespaces in the output document</A></LI>
+  </UL>
+  <A name="functionality"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Functionality</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>Namespaces are used when an XML documents has elements have the same
+    name, but are from different contexts, and thus have different meanings
+    and interpretations. For instance, a <CODE><FONT face="courier, monospaced">&lt;TITLE&gt;</FONT></CODE> element can
+    be a HTML title element in one part of the XML document, while it in other
+    parts of the document the <CODE><FONT face="courier, monospaced">&lt;TITLE&gt;</FONT></CODE> element is used for
+    encapsulating the title of a play or a book. This sort of confusion is
+    very common when reading XML source from multiple documents, but can also
+    occur within a single document.</P>
+
+    <P>Namespaces have three very important properties: a name, a prefix (an
+    alias for its name) and a scope. Namespaces are declared as attributes of
+    almost any node in an XML document. The declaration looks like this:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;element xmlns:prefix=&quot;http://some.site/spec&quot;&gt;....&lt;/element&gt;
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>The <CODE><FONT face="courier, monospaced">&quot;xmlns&quot;</FONT></CODE> tells that this is a namespace declaration. The
+    scope of the namespace declaration is the element in which it is defined
+    and all the children of that element.The prefix is the local alias we use
+    for referencing the namespace, and the URL (it can be anything, really) is
+    the name/definition of the namespace. Note that even though the namespace
+    definition is normally an URL, it does not have to point to anything. It
+    is recommended that it points to a page that describes the elements in the
+    namespace, but it does not have to. The prefix can be just about anything
+    - or nothing (in which case it is the default namespace). Any prefix,
+    including the empty prefix for the default namespace, can be redefined to
+    refer to a different namespace at any time in an XML document. This is
+    more likely to happen to the default namespace than any other prefix. Here
+    is an example of this:</P>
+
+    <A name="xml_sample_1"><!--anchor--></A>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;?xml version=&quot;1.0&quot;?&gt;
+    
+    &lt;employees xmlns:postal=&quot;http://postal.ie/spec-1.0&quot;
+               xmlns:email=&quot;http://www.w3c.org/some-spec-3.2&quot;&gt;
+        &lt;employee&gt;
+            &lt;name&gt;Bob Worker&lt;/name&gt;
+            &lt;postal:address&gt;
+                &lt;postal:street&gt;Nassau Street&lt;/postal:street&gt;
+                &lt;postal:city&gt;Dublin 3&lt;/postal:city&gt;
+                &lt;postal:country&gt;Ireland&lt;/postal:country&gt;
+            &lt;/postal:address&gt;
+            &lt;email:address&gt;bob.worker@hisjob.ie&lt;/email:address&gt;
+        &lt;/employee&gt;
+    &lt;/employees&gt;
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>This short document has two namespace declarations, one with the prefix
+    <CODE><FONT face="courier, monospaced">&quot;postal&quot;</FONT></CODE> and another with the prefix <CODE><FONT face="courier, monospaced">&quot;email&quot;</FONT></CODE>. The
+    prefixes are used to distinguish between elements for e-mail addresses and
+    regular postal addresses. In addition to these two namespaces there is also
+    an initial (unnamed) default namespace being used for the
+    <CODE><FONT face="courier, monospaced">&lt;name&gt;</FONT></CODE> and <CODE><FONT face="courier, monospaced">&lt;employee&gt;</FONT></CODE> tags. The scope of the
+    default namespace is in this case the whole document, while the scope of
+    the other two declared namespaces is the <CODE><FONT face="courier, monospaced">&lt;employees&gt;</FONT></CODE>
+    element and its children.</P>
+
+    <P>By changing the default namespace we could have made the document a
+    little bit simpler and more readable:</P>
+
+    <A name="xml_sample_2"><!--anchor--></A>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;?xml version=&quot;1.0&quot;?&gt;
+    
+    &lt;employees xmlns:email=&quot;http://www.w3c.org/some-spec-3.2&quot;&gt;
+        &lt;employee&gt;
+            &lt;name&gt;Bob Worker&lt;/name&gt;
+            &lt;address xmlns=&quot;http://postal.ie/spec-1.0&quot;&gt;
+                &lt;street&gt;Nassau Street&lt;/street&gt;
+                &lt;city&gt;Dublin 3&lt;/city&gt;
+                &lt;country&gt;Ireland&lt;/country&gt;
+            &lt;/address&gt;
+            &lt;email:address&gt;bob.worker@hisjob.ie&lt;/email:address&gt;
+        &lt;/employee&gt;
+    &lt;/employees&gt;
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>The default namespace is redefined for the <CODE><FONT face="courier, monospaced">&lt;address&gt;</FONT></CODE> node
+    and its children, so there is no need to specify the street as
+    <CODE><FONT face="courier, monospaced">&lt;postal:street&gt;</FONT></CODE> - just plain <CODE><FONT face="courier, monospaced">&lt;street&gt;</FONT></CODE> is
+    sufficient. Note that this also applies to the <CODE><FONT face="courier, monospaced">&lt;address&gt;</FONT></CODE>
+    where the namespace is first defined. This is in effect a redefinition of
+    the default namespace.</P>
+  </FONT></TD></TR></TABLE><BR><A name="overview"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Namespace overview</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>Namespaces will have to be handled in three separate parts of the XSLT
+    compiler:</P>
+
+    <A name="all_namespaces"><!--anchor--></A>
+      <P><IMG align="right" alt="all_namespaces.gif" border="0" hspace="4" src="images/all_namespaces.gif" vspace="4"><BR clear="all"></P>
+      <P><I>Figure 1: Namespace handlers in the XSLTC</I></P>
+
+    <P>The most obvious is the namespaces in the source XML document
+    (marked <A href="#NSA">&quot;NS A&quot;</A> in figure 1). These namespaces will be
+    handled by our DOM implementation class. The source XSL stylesheet also
+    has its own set of namespaces (<A href="NSB.html">&quot;NS B&quot;</A>) - one of which
+    is the XSL namespace. These namespaces will be handled at run-time and
+    whatever information that is needed to process there should be compiled
+    into the translet. There is also a set of namespaces that will be used in
+    the resulting document (<A href="NSC.html">&quot;NS C&quot;</A>). This is an
+    intersection of the first two. The output document should not contain any
+    more namespace declarations than necessary.</P>
+
+    </FONT></TD></TR></TABLE><BR><A name="NSA"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>The DOM &amp; namespaces</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <UL>
+      <LI><A href="#dom-namespace">DOM node types and namespace types</A></LI>
+      <LI><A href="#assign">Assigning namespace types to DOM nodes</A></LI>                
+    </UL>
+    <A name="dom-namespace"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>DOM node types and namespace types</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>Refer to the XSLTC <A href="xsltc_runtime.html">runtime
+    environment design</A> document for a description of node types before
+    proceeding. In short, each node in the our DOM implementation is
+    represented by a simple integer. By using this integer as an index into an
+    array called <CODE><FONT face="courier, monospaced">_type[]</FONT></CODE> we can find the type of the node.</P>
+
+    <P>The type of the node is an integer representing the type of element the
+    node is. All elements <CODE><FONT face="courier, monospaced">&lt;bob&gt;</FONT></CODE> will be given the same type,
+    all text nodes will be given the same type, and so on. By using the node
+    type as an index an array called <CODE><FONT face="courier, monospaced">_namesArray[]</FONT></CODE> we can find the
+    name of the element type - in this case &quot;bob&quot;. This code fragment shows
+    how you can, with our current implementation, find the name of a node:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int    node = iterator.getNext();  // get next node
+    int    type = _type[node];         // get node type
+    String name = _namesArray[type];   // get node name
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>We want to keep the one-type-per-node arrangement, since that lets us
+    produce fairly efficient code. One type in the DOM maps to one type in
+    the compiled translet. What we could do to represent the namespace for
+    each node in the DOM is to add a <CODE><FONT face="courier, monospaced">_namespaceType[]</FONT></CODE> array that holds
+    namespace types. Each node type maps to a namespace type, and each
+    namespace type maps to a namespace name (and a prefix with a limited
+    scope):</P>
+
+    <A name="type_mappings"><!--anchor--></A>
+    <P><IMG align="right" alt="type_mappings.gif" border="0" hspace="4" src="images/type_mappings.gif" vspace="4"><BR clear="all"></P>
+      <P><I>Figure 2: Mapping between node types/names, namespace types/names</I></P>
+
+    <P>This code fragment shows how we could get the namespace name for a node:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    int    node      = iterator.getNext();    // get next node
+    int    type      = _type[node];           // get node type
+    int    nstype    = _namespace[type];      // get namespace type
+    String name      = _namesArray[type];     // get node element name
+    String namespace = _nsNamesArray[nstype]; // get node namespace name
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>Note that namespace prefixes are not included here. Namespace prefixes
+    are local to the XML document and will be expanded to the full namespace
+    names when the nodes are put into the DOM. This, however, is not a trivial
+    matter.</P>
+    </FONT></TD></TR></TABLE><BR><A name="assign"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Assigning namespace types to DOM nodes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>We cannot simply have a single namespace prefix array similar to the
+    <CODE><FONT face="courier, monospaced">_namespaceArray[]</FONT></CODE> array for mapping a namespace type to a single
+    prefix. This because prefixes can refer to different namespaces depending
+    on where in the document the prefixes are being used. In our last example's
+    <A href="xml_sample_2.html">XML fragment</A> the empty prefix <CODE><FONT face="courier, monospaced">&quot;&quot;</FONT></CODE>
+    initially referred to the default namespace (the one with no name - just
+    like a Clint Eastwood character). Later on in the document the empty
+    prefix is changed to refer to a namespace called 
+    <CODE><FONT face="courier, monospaced">&quot;http://postal.ie/spec-1.0&quot;</FONT></CODE>.</P>
+
+    <P>Namespace prefixes are only relevant at the time when the XML document
+    is parsed and the DOM is built. Once we have the DOM completed we only need
+    a table that maps each node type to a namespace type, and another array of
+    all the names of the different namespaces. So what we want to end up with
+    is something like this:</P>
+
+     <P><IMG align="right" alt="dom_namespace1.gif" border="0" hspace="4" src="images/dom_namespace1.gif" vspace="4"><BR clear="all"></P>
+     <P><I>Figure 3: Each namespace references in the DOM gets one entry</I></P>
+
+    <P>The namespace table has one entry for each namespace, nomatter how many
+    prefixes were used ro reference this namespace in the DOM. To build this
+    array we need a temporary data structure used by the DOM builder. This
+    structure is a hashtable - where the various prefixes are used for the
+    hash values. The contents of each entry in the table will be a small stack
+    where previous meanings of each prefix will be stored:</P>
+
+     <P><IMG align="right" alt="dom_namespace2.gif" border="0" hspace="4" src="images/dom_namespace2.gif" vspace="4"><BR clear="all"></P>
+     <P><I>Figure 4: Temporary data structure used by the DOM builder</I></P>
+
+    <P>When the first node is encountered we define a new namespace
+    <CODE><FONT face="courier, monospaced">&quot;foo&quot;</FONT></CODE> and assign this namespace type/index 1 (the default 
+    namespace <CODE><FONT face="courier, monospaced">&quot;&quot;</FONT></CODE> has index 0). At the same time we use the prefix
+    <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE> for a lookup in the hashtable. This gives us
+    an integer stack used for the prefix <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE>. We push the namespace
+    type 1 on this stack. From now on, until <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE> is pop'ed off this
+    stack, the prefix <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE> will map to namespace type 1, which
+    represents the namespace URI <CODE><FONT face="courier, monospaced">&quot;foo&quot;</FONT></CODE>.</P>
+
+    <P>We then encounter the next node with a new namespace definition with
+    the same namespace prefix, we create a new namespace <CODE><FONT face="courier, monospaced">&quot;bar&quot;</FONT></CODE> and
+    we put that in the namespace table under type 2. Again we use the prefix
+    <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE> as an entry into the namespace prefix table and we get the
+    same integer stack. We now push namespace type 2 on the stack, so that
+    namespace prefix <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE> maps to namespace URI <CODE><FONT face="courier, monospaced">&quot;bar&quot;</FONT></CODE>. When
+    we have traversed this node's children we need to pop the integer off the
+    stack, so when we're back at the first node the prefix <CODE><FONT face="courier, monospaced">&quot;A&quot;</FONT></CODE> again
+    will point to namespace type 0, which maps to <CODE><FONT face="courier, monospaced">&quot;foo&quot;</FONT></CODE>. To keep
+    track of what nodes had what namespace declarations, we use a namespace
+    declaration stack:</P>
+
+    <P><IMG align="right" alt="dom_namespace3.gif" border="0" hspace="4" src="images/dom_namespace3.gif" vspace="4"><BR clear="all"></P>
+     <P><I>Figure 5: Namespace declaration stack</I></P>
+     
+    <P>Every namespace declaration is pushed on the namespace declaration
+    stack. This stack holds the node index for where the namespace was
+    declared, and a reference to the prefix stack for this declaration.
+    The <CODE><FONT face="courier, monospaced">endElement()</FONT></CODE> method of the DOMBuilder class will need to
+    remove namespace declaration for the node that is closed. This is done
+    by first checking the namespace declaration stack for any namespaces
+    declared by this node. If any declarations are found these are un-declared
+    by poping the namespace prefixes off the respective prefix stack(s), and
+    then poping the entry/entries for this node off the namespace declaration
+    stack.</P>
+
+    <P>The <CODE><FONT face="courier, monospaced">endDocument()</FONT></CODE> method will build an array that contains
+    all namespaces used in the source XML document - <CODE><FONT face="courier, monospaced">_nsNamesArray[]</FONT></CODE>
+    - which holds the URIs of all refered namespaces. This method also builds
+    an array that maps all DOM node types to namespace types. This two arrays
+    are accessed through two new methods in the DOM interface:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public String getNamespaceName(int node);
+    public int    getNamespaceType(int node);
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  </FONT></TD></TR></TABLE><BR></FONT></TD></TR></TABLE><BR><A name="NSB"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Namespaces in the XSL stylesheet</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <UL>
+    <LI><A href="#store-access">Storing and accessing namespace information</A></LI>
+    <LI><A href="#mapdom-stylesheet">Mapping DOM namespaces to stylesheet namespaces</A></LI>
+    <LI><A href="#wildcards">Wildcards and namespaces</A></LI>
+  </UL>
+    <A name="store-access"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Storing and accessing namespace information</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The SymbolTable class has three datastructures that are used to hold
+    namespace information:</P>
+
+    <UL>
+      <LI>
+        First there is the <CODE><FONT face="courier, monospaced">_namespaces[]</FONT></CODE> Hashtable that maps the names
+        of in-scope namespace to their respective prefixes. Each key in the
+        Hashtable object has a stack. A new prefix is pushed on the stack for
+        each new declaration of a namespace.
+      </LI>
+      <LI>
+        Then there is the <CODE><FONT face="courier, monospaced">_prefixes[]</FONT></CODE> Hashtable. This has the reverse
+        function of the <CODE><FONT face="courier, monospaced">_namespaces[]</FONT></CODE> Hashtable - it maps from
+        prefixes to namespaces.
+      </LI>
+      <LI>
+        There is also a hashtable that is used for implementing the
+        <CODE><FONT face="courier, monospaced">&lt;xsl:namespace-alias&gt;</FONT></CODE> element. The keys in this
+        hashtable is taken from the <CODE><FONT face="courier, monospaced">stylesheet-prefix</FONT></CODE> attribute of
+        this element, and the resulting prefix (from the <CODE><FONT face="courier, monospaced">result-prefix</FONT></CODE>
+        attribute) is used as the value for each key.
+      </LI>
+    </UL>
+
+    <P>The SymbolTable class offers 4 methods for accessing these data
+    structures:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public void   pushNamespace(String prefix, String uri);
+    public void   popNamespace(String prefix);
+    public String lookupPrefix(String uri);
+    public String lookupNamespace(String prefix);
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>These methods are wrapped by two methods in the Parser class (a Parser
+    object alwas has a SymbolTable object):</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    // This method pushes all namespaces declared within a single element
+    public void pushNamespaces(ElementEx element);
+    // This method pops all namespaces declared within a single element
+    public void popNamespaces(ElementEx element);
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>The translet class has, just like the DOM, a <CODE><FONT face="courier, monospaced">namesArray[]</FONT></CODE>
+    structure for holding the expanded QNames of all accessed elements. The
+    compiled translet fills this array in its constructor. When the translet
+    has built the DOM (a DOMImpl object), it passes the DOM to the a DOM
+    adapter (a DOMAdapter object) together with the names array. The DOM
+    adapter then maps the translet's types to the DOM's types.</P>
+   </FONT></TD></TR></TABLE><BR><A name="mapdom-stylesheet"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Mapping DOM namespaces and stylesheet namespaces</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>Each entry in the DOM's <CODE><FONT face="courier, monospaced">_namesArray[]</FONT></CODE> is expanded to contain
+    the full QName, so that instead of containing <CODE><FONT face="courier, monospaced">prefix:localname</FONT></CODE> it
+    will now contain <CODE><FONT face="courier, monospaced">namespace-uri:localname</FONT></CODE>. In this way the expanded
+    QName in the translet will match the exanded QName in the DOM. This assures
+    matches on full QNames, but does not do much for <CODE><FONT face="courier, monospaced">match=&quot;A:*&quot;</FONT></CODE> type
+    XPath patterns. This is where our main challenge lies.</P>
+    </FONT></TD></TR></TABLE><BR><A name="wildcards"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Wildcards and namespaces</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The original implementation of the XSLTC runtime environment would
+    only allow matches on &quot;<CODE><FONT face="courier, monospaced">*</FONT></CODE>&quot; and &quot;<CODE><FONT face="courier, monospaced">@*</FONT></CODE>&quot; patterns. This was
+    achieved by mapping all elements that could not be mapped to a translet
+    type to 3 (DOM.ELEMENT type), and similarly all unknown attributes to
+    type 4 (DOM.ATTRIBUTE type). The main <CODE><FONT face="courier, monospaced">switch()</FONT></CODE> statement in
+    <CODE><FONT face="courier, monospaced">applyTemplates()</FONT></CODE> would then have a separate &quot;<CODE><FONT face="courier, monospaced">case()</FONT></CODE>&quot;
+    for each of these. (Under each <CODE><FONT face="courier, monospaced">case()</FONT></CODE> you might have to check
+    for the node's parents in case you were matching on &quot;<CODE><FONT face="courier, monospaced">path/*</FONT></CODE>&quot;-type
+    patterns.) This figure shows how that was done:</P>
+
+    <A name="match_namespace1"><!--anchor--></A>
+    <P><IMG align="right" alt="match_namespace1.gif" border="0" hspace="4" src="images/match_namespace1.gif" vspace="4"><BR clear="all"></P>
+    <P><I>Figure 6: Previous pattern matching</I></P>
+
+    <P>The &quot;Node test&quot; box here represents the &quot;<CODE><FONT face="courier, monospaced">switch()</FONT></CODE>&quot; statement.
+    The &quot;Node parent test&quot; box represent each &quot;<CODE><FONT face="courier, monospaced">case:</FONT></CODE>&quot; for that 
+    <CODE><FONT face="courier, monospaced">switch()</FONT></CODE> statement. There is one <CODE><FONT face="courier, monospaced">case:</FONT></CODE> for each know
+    translet node type. For each node type we have to check for any parent
+    patterns - for instance, for the pattern &quot;<CODE><FONT face="courier, monospaced">/foo/bar/baz</FONT></CODE>&quot;, we will
+    get a match with <CODE><FONT face="courier, monospaced">case &quot;baz&quot;</FONT></CODE>, and we have to check that the parent
+    node is &quot;<CODE><FONT face="courier, monospaced">bar</FONT></CODE>&quot; and that the grandparent is &quot;<CODE><FONT face="courier, monospaced">foo</FONT></CODE>&quot; before
+    we can say that we have a hit. The &quot;Element parent test&quot; is the test that
+    is done all DOM nodes that do not directly match any translet types. This
+    is the test for &quot;<CODE><FONT face="courier, monospaced">*</FONT></CODE>&quot; or &quot;<CODE><FONT face="courier, monospaced">foo/*</FONT></CODE>&quot;. Similarly we have a
+    &quot;<CODE><FONT face="courier, monospaced">case:</FONT></CODE>&quot; for match on attributes (&quot;<CODE><FONT face="courier, monospaced">@*</FONT></CODE>&quot;).</P>
+
+    <P>What we now want to achieve is to insert a check for patterns on the
+    format &quot;<CODE><FONT face="courier, monospaced">ns:*</FONT></CODE>&quot;, &quot;<CODE><FONT face="courier, monospaced">foo/ns:*</FONT></CODE>&quot; or &quot;<CODE><FONT face="courier, monospaced">ns:@*</FONT></CODE>&quot;, which
+    this figure illustrates:</P>
+
+    <A name="match_namespace2"><!--anchor--></A>
+      <P><IMG align="right" alt="match_namespace2.gif" border="0" hspace="4" src="images/match_namespace2.gif" vspace="4"><BR clear="all"></P>
+      <P><I>Figure 7: Pattern matching with namespace tests</I></P>
+
+
+    <P>Each node in the DOM needs a namespace type as well as the QName type.
+    With this type we can match wildcard rules to any specific namespace.
+    So after any checks have been done on the whole QName of a node (the type),
+    we can match on the namespace type of the node. The main dispatch
+    <CODE><FONT face="courier, monospaced">switch()</FONT></CODE> in <CODE><FONT face="courier, monospaced">applyTemplates()</FONT></CODE> must be changed from this:</P>
+
+    <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+        public void applyTemplates(DOM dom, NodeIterator iterator,
+                                   TransletOutputHandler handler) {
+
+            // Get next node from iterator
+            while ((node = iterator.next()) != END) {
+                // Get internal node type
+                final int type = DOM.getType(node);
+                switch(type) {
+                case DOM.ROOT:      // Match on &quot;/&quot; pattern
+                    handleRootNode();       
+                    break;
+                case DOM.TEXT:      // Handle text nodes
+                    handleText();
+                    break;
+                case DOM.ELEMENT:   // Match on &quot;*&quot; pattern
+                    handleWildcardElement();
+                    break;
+                case DOM.ATTRIBUTE: // Handle on &quot;@*&quot; pattern
+                    handleWildcardElement();
+                    break;
+                case nodeType1:     // Handle 1st known element type
+                    compiledCodeForType1();
+                    break;
+                    :
+                    :
+                    :
+                case nodeTypeN:   // Handle nth known element type
+                    compiledCodeForTypeN();
+                    break;
+                default:
+                   NodeIterator newIterator = DOM.getChildren(node);
+                   applyTemplates(DOM, newIterator, handler);
+                   break;
+                }
+            }
+            return;
+        }
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>To something like this:</P>
+
+    <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+        public void applyTemplates(DOM dom, NodeIterator iterator,
+                                   TransletOutputHandler handler) {
+
+            // Get next node from iterator
+            while ((node = iterator.next()) != END) {
+
+                // First run check on node type
+                final int type = DOM.getType(node);
+                switch(type) {
+                case DOM.ROOT:      // Match on &quot;/&quot; pattern
+                    handleRootNode();
+                    continue;
+                case DOM.TEXT:      // Handle text nodes
+                    handleText();
+                    continue;
+                case DOM.ELEMENT:   // Not handled here!!!
+                    break;
+                case DOM.ATTRIBUTE: // Not handled here!!!
+                    break;
+                case nodeType1:     // Handle 1st known element type
+                    if (compiledCodeForType1() == match) continue;
+                    break;
+                    :
+                    :
+                    :
+                case nodeTypeN:     // Handle nth known element type
+                    if (compiledCodeForTypeN() == match) continue;
+                    break;
+                default:
+                    break;
+                }
+
+                // Then run check on namespace type
+                final int namespace = DOM.getNamespace(type);
+                switch(namespace) {
+                case 0: // Handle nodes matching 1st known namespace
+                    if (handleThisNamespace() == match) continue;
+                    break;
+                case 1: // Handle nodes matching 2nd known namespace
+                    if (handleOtherNamespace() == match) continue;
+                    break;
+                }
+
+                // Finally check on element/attribute wildcard
+                if (type == DOM.ELEMENT) {
+                    if (handleWildcardElement() == match)
+                        continue;
+                    else {
+                       // The default action for elements
+                       NodeIterator newIterator = DOM.getChildren(node);
+                       applyTemplates(DOM, newIterator, handler);
+                    }
+                }
+                else if (type == DOM.ATTRIBUTE) {
+                    handleWildcardAttribute();
+                    continue; 
+                }
+            }
+        }
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>First note that the default action (iterate on children) does not hold for
+    attributes, since attribute nodes do not have children. Then note that the way
+    the three levels of tests are ordered is consistent with the way patterns
+    should be prioritised:</P>
+
+    <UL>
+
+      <LI><B>Match on element/attribute types:</B></LI>
+        <UL>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;/&quot;</FONT></CODE> - match on the root node</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;B&quot;</FONT></CODE> - match on any B element</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;A/B&quot;</FONT></CODE> - match on B elements with A parent</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;A | B&quot;</FONT></CODE> - match on B or A element</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;foo:B&quot;</FONT></CODE> - match on B element within &quot;foo&quot; namespace</LI>
+        </UL>
+        <LI><B>Match on namespace:</B></LI>
+        <UL>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;foo:*&quot;</FONT></CODE> - match on any element within &quot;foo&quot; namespace</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;foo:@*&quot;</FONT></CODE> - match on any attribute within &quot;foo&quot; namespace</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;A/foo:*&quot;</FONT></CODE> - match on any element within &quot;foo&quot; namespace with A parent</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;A/foo:@*&quot;</FONT></CODE> - match on any attribute within &quot;foo&quot; namespace with A parent</LI>
+        </UL>      
+
+      <LI><B>Match on wildcard:</B> </LI>
+        <UL>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;*&quot;</FONT></CODE> - match on any element</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;@*&quot;</FONT></CODE> - match on any attribute</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;A/*&quot;</FONT></CODE> - match on any element with A parent</LI>
+          <LI><CODE><FONT face="courier, monospaced">match=&quot;A/@*&quot;</FONT></CODE> - match on any attribute with A parent</LI>
+        </UL>
+     
+    </UL>
+
+     </FONT></TD></TR></TABLE><BR></FONT></TD></TR></TABLE><BR><A name="NSC"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Namespaces in the output document</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>These are the categories of namespaces that end up in the output
+    document:</P>
+
+    <UL>
+      <LI>
+        Namespaces used in literal elements/attributes in the stylesheet. These
+        namespaces should be declared <B>once</B> before use in the output
+        document. These elements are copied to the output document independent
+        of namespaces in the input XML document. However, the namespaces can
+        be declared using the same prefix, such that a namespace used by a
+        literal result element can overshadow a namespace from the DOM.
+      </LI>
+      <LI>
+        Namespaces from elements in the stylesheet that match elements in the
+        DOM. No namespaces from the DOM should be copied to the output document
+        unless they are actually referenced in the stylesheet. No namespaces
+        from the stylesheet should be copied to the output document unless the
+        elements in which they are references match elements in the DOM.
+      </LI>
+    </UL>
+
+      <A name="output_namespaces1"><!--anchor--></A>
+      <P><IMG align="right" alt="output_namespaces1.gif" border="0" hspace="4" src="images/output_namespaces1.gif" vspace="4"><BR clear="all"></P>
+      <P><I>Figure 8: Namespace declaration in the output document</I></P>    
+
+    <P>Any literal element that ends up in the output document must declare all
+    namespaces that were declared in the <CODE><FONT face="courier, monospaced">&lt;xsl:stylesheet&lt;</FONT></CODE>
+    element. Exceptions are namespaces that are listed in this element's
+    <CODE><FONT face="courier, monospaced">exclude-result-prefixes</FONT></CODE> or <CODE><FONT face="courier, monospaced">extension-element-prefixes</FONT></CODE>
+    attributes. These namespaces should only be declared if they are referenced
+    in the output.</P>
+
+    <P>Literal elements should only declare namespaces when necessary. A
+    literal element should only declare a namespace in the case where it
+    references a namespace using prefix that is not in scope for this
+    namespace. The output handler will take care of this problem. All namespace
+    declarations are put in the output document using the output handler's
+    <CODE><FONT face="courier, monospaced">declarenamespace()</FONT></CODE> method. This method will monitor all namespace
+    declarations and make sure that no unnecessary declarations are output.
+    The datastructures used for this are similar to those used to track
+    namespaces in the XSL stylesheet:</P>
+
+    <A name="output_namespaces2"><!--anchor--></A>
+    <P><IMG align="right" alt="output_namespaces2.gif" border="0" hspace="4" src="images/output_namespaces2.gif" vspace="4"><BR clear="all"></P>
+      <P><I>Figure 9: Handling Namespace declarations in the output document</I></P>
+
+ </FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2004 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

@@ -1,0 +1,299 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>XSLTC Performance</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xsltc_performance-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+ 
+  <A href="index.html" onMouseOut="rolloverOff('side-index');" onMouseOver="rolloverOn('side-index');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-index" onLoad="rolloverLoad('side-index','graphics/index-label-2.jpg','graphics/index-label-3.jpg');" src="graphics/index-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_compiler.html" onMouseOut="rolloverOff('side-xsltc_compiler');" onMouseOver="rolloverOn('side-xsltc_compiler');"><IMG alt="Compiler design" border="0" height="12" hspace="0" name="side-xsltc_compiler" onLoad="rolloverLoad('side-xsltc_compiler','graphics/xsltc_compiler-label-2.jpg','graphics/xsltc_compiler-label-3.jpg');" src="graphics/xsltc_compiler-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsl_whitespace_design.html" onMouseOut="rolloverOff('side-xsl_whitespace_design');" onMouseOver="rolloverOn('side-xsl_whitespace_design');"><IMG alt="Whitespace" border="0" height="12" hspace="0" name="side-xsl_whitespace_design" onLoad="rolloverLoad('side-xsl_whitespace_design','graphics/xsl_whitespace_design-label-2.jpg','graphics/xsl_whitespace_design-label-3.jpg');" src="graphics/xsl_whitespace_design-label-3.jpg" vspace="0" width="120"></A><BR>
+
+  <A href="xsl_sort_design.html" onMouseOut="rolloverOff('side-xsl_sort_design');" onMouseOver="rolloverOn('side-xsl_sort_design');"><IMG alt="xsl:sort" border="0" height="12" hspace="0" name="side-xsl_sort_design" onLoad="rolloverLoad('side-xsl_sort_design','graphics/xsl_sort_design-label-2.jpg','graphics/xsl_sort_design-label-3.jpg');" src="graphics/xsl_sort_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_key_design.html" onMouseOut="rolloverOff('side-xsl_key_design');" onMouseOver="rolloverOn('side-xsl_key_design');"><IMG alt="Keys" border="0" height="12" hspace="0" name="side-xsl_key_design" onLoad="rolloverLoad('side-xsl_key_design','graphics/xsl_key_design-label-2.jpg','graphics/xsl_key_design-label-3.jpg');" src="graphics/xsl_key_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_comment_design.html" onMouseOut="rolloverOff('side-xsl_comment_design');" onMouseOver="rolloverOn('side-xsl_comment_design');"><IMG alt="Comment design" border="0" height="12" hspace="0" name="side-xsl_comment_design" onLoad="rolloverLoad('side-xsl_comment_design','graphics/xsl_comment_design-label-2.jpg','graphics/xsl_comment_design-label-3.jpg');" src="graphics/xsl_comment_design-label-3.jpg" vspace="0" width="120"></A><BR>
+ 
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsl_lang_design.html" onMouseOut="rolloverOff('side-xsl_lang_design');" onMouseOver="rolloverOn('side-xsl_lang_design');"><IMG alt="lang()" border="0" height="12" hspace="0" name="side-xsl_lang_design" onLoad="rolloverLoad('side-xsl_lang_design','graphics/xsl_lang_design-label-2.jpg','graphics/xsl_lang_design-label-3.jpg');" src="graphics/xsl_lang_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_unparsed_design.html" onMouseOut="rolloverOff('side-xsl_unparsed_design');" onMouseOver="rolloverOn('side-xsl_unparsed_design');"><IMG alt="Unparsed entities" border="0" height="12" hspace="0" name="side-xsl_unparsed_design" onLoad="rolloverLoad('side-xsl_unparsed_design','graphics/xsl_unparsed_design-label-2.jpg','graphics/xsl_unparsed_design-label-3.jpg');" src="graphics/xsl_unparsed_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="xsl_if_design.html" onMouseOut="rolloverOff('side-xsl_if_design');" onMouseOver="rolloverOn('side-xsl_if_design');"><IMG alt="If design" border="0" height="12" hspace="0" name="side-xsl_if_design" onLoad="rolloverLoad('side-xsl_if_design','graphics/xsl_if_design-label-2.jpg','graphics/xsl_if_design-label-3.jpg');" src="graphics/xsl_if_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_choose_design.html" onMouseOut="rolloverOff('side-xsl_choose_design');" onMouseOver="rolloverOn('side-xsl_choose_design');"><IMG alt="Choose|When|Otherwise design" border="0" height="12" hspace="0" name="side-xsl_choose_design" onLoad="rolloverLoad('side-xsl_choose_design','graphics/xsl_choose_design-label-2.jpg','graphics/xsl_choose_design-label-3.jpg');" src="graphics/xsl_choose_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_include_design.html" onMouseOut="rolloverOff('side-xsl_include_design');" onMouseOver="rolloverOn('side-xsl_include_design');"><IMG alt="Include|Import design" border="0" height="12" hspace="0" name="side-xsl_include_design" onLoad="rolloverLoad('side-xsl_include_design','graphics/xsl_include_design-label-2.jpg','graphics/xsl_include_design-label-3.jpg');" src="graphics/xsl_include_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_variable_design.html" onMouseOut="rolloverOff('side-xsl_variable_design');" onMouseOver="rolloverOn('side-xsl_variable_design');"><IMG alt="Variable|Param design" border="0" height="12" hspace="0" name="side-xsl_variable_design" onLoad="rolloverLoad('side-xsl_variable_design','graphics/xsl_variable_design-label-2.jpg','graphics/xsl_variable_design-label-3.jpg');" src="graphics/xsl_variable_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+   
+  <A href="xsltc_runtime.html" onMouseOut="rolloverOff('side-xsltc_runtime');" onMouseOver="rolloverOn('side-xsltc_runtime');"><IMG alt="Runtime" border="0" height="12" hspace="0" name="side-xsltc_runtime" onLoad="rolloverLoad('side-xsltc_runtime','graphics/xsltc_runtime-label-2.jpg','graphics/xsltc_runtime-label-3.jpg');" src="graphics/xsltc_runtime-label-3.jpg" vspace="0" width="120"></A><BR> 
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_dom.html" onMouseOut="rolloverOff('side-xsltc_dom');" onMouseOver="rolloverOn('side-xsltc_dom');"><IMG alt="Internal DOM" border="0" height="12" hspace="0" name="side-xsltc_dom" onLoad="rolloverLoad('side-xsltc_dom','graphics/xsltc_dom-label-2.jpg','graphics/xsltc_dom-label-3.jpg');" src="graphics/xsltc_dom-label-3.jpg" vspace="0" width="120"></A><BR>            
+            
+  <A href="xsltc_namespace.html" onMouseOut="rolloverOff('side-xsltc_namespace');" onMouseOver="rolloverOn('side-xsltc_namespace');"><IMG alt="Namespaces" border="0" height="12" hspace="0" name="side-xsltc_namespace" onLoad="rolloverLoad('side-xsltc_namespace','graphics/xsltc_namespace-label-2.jpg','graphics/xsltc_namespace-label-3.jpg');" src="graphics/xsltc_namespace-label-3.jpg" vspace="0" width="120"></A><BR>             
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsltc_trax.html" onMouseOut="rolloverOff('side-xsltc_trax');" onMouseOver="rolloverOn('side-xsltc_trax');"><IMG alt="Translet & TrAX" border="0" height="12" hspace="0" name="side-xsltc_trax" onLoad="rolloverLoad('side-xsltc_trax','graphics/xsltc_trax-label-2.jpg','graphics/xsltc_trax-label-3.jpg');" src="graphics/xsltc_trax-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_predicates.html" onMouseOut="rolloverOff('side-xsltc_predicates');" onMouseOver="rolloverOn('side-xsltc_predicates');"><IMG alt="XPath Predicates" border="0" height="12" hspace="0" name="side-xsltc_predicates" onLoad="rolloverLoad('side-xsltc_predicates','graphics/xsltc_predicates-label-2.jpg','graphics/xsltc_predicates-label-3.jpg');" src="graphics/xsltc_predicates-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_iterators.html" onMouseOut="rolloverOff('side-xsltc_iterators');" onMouseOver="rolloverOn('side-xsltc_iterators');"><IMG alt="Xsltc Iterators" border="0" height="12" hspace="0" name="side-xsltc_iterators" onLoad="rolloverLoad('side-xsltc_iterators','graphics/xsltc_iterators-label-2.jpg','graphics/xsltc_iterators-label-3.jpg');" src="graphics/xsltc_iterators-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_native_api.html" onMouseOut="rolloverOff('side-xsltc_native_api');" onMouseOver="rolloverOn('side-xsltc_native_api');"><IMG alt="Xsltc Native API" border="0" height="12" hspace="0" name="side-xsltc_native_api" onLoad="rolloverLoad('side-xsltc_native_api','graphics/xsltc_native_api-label-2.jpg','graphics/xsltc_native_api-label-3.jpg');" src="graphics/xsltc_native_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_trax_api.html" onMouseOut="rolloverOff('side-xsltc_trax_api');" onMouseOver="rolloverOn('side-xsltc_trax_api');"><IMG alt="Xsltc TrAX API" border="0" height="12" hspace="0" name="side-xsltc_trax_api" onLoad="rolloverLoad('side-xsltc_trax_api','graphics/xsltc_trax_api-label-2.jpg','graphics/xsltc_trax_api-label-3.jpg');" src="graphics/xsltc_trax_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <IMG alt="Performance Hints" border="0" height="12" hspace="0" src="graphics/xsltc_performance-label-1.jpg" vspace="0" width="120"><BR>            
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Introduction</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P><B>XSLT is not a programming language!</B> Just so you remember.
+    XSLT is a declarative language and can be used by you to describe
+    <B>what</B> you want put in your output document and
+    <B>what</B> you want this output to look like. It does not describe
+    <B>how</B> these tasks should be carried. That is the job of the XSLT
+    processor. This document is <B>not</B> a &quot;<I>programmer's guide to XSLT</I>&quot;
+    and should not be considered as such. All XSLT processors have their
+    properties and ways of handling XSL elements and XPath properties. This
+    document will give you some insight into the XSLTC internals, so that you
+    can channel your stylesheets through XSLTC's shortest and most efficient
+    code paths.</P>
+
+    <P>XSLTC's performance has always been one of its key selling points.
+    (I should probably find a better term here, since we're giving XSLTC away
+    for free.) But, there are some specific patterns and expressions that are
+    not handled much better than with other interpretive XSLT processors, and
+    this document is an attempt to pinpoint these and to outline alternatives.
+    </P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Contents</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <UL>
+      <LI><A href="#pred">Avoid using predicates in '*' patterns</A></LI>
+      <LI><A href="#idkey">Avoid using id/key-patterns</A></LI>
+      <LI><A href="#union">Avoid union expressions where possible</A></LI>
+      <LI><A href="#sort">Sort stored node-sets once</A></LI>
+      <LI><A href="#cache">Cache input documents</A></LI>
+      <LI><A href="#trax">TrAX vs. native API</A></LI>
+    </UL>
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="pred"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Avoid using predicates in wildcard patterns</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>XSLTC gains its speed from the simple dispatch loop in the translet's
+    <CODE><FONT face="courier, monospaced">applyTemplates()</FONT></CODE> method. This method uses a simple
+    <CODE><FONT face="courier, monospaced">switch()</FONT></CODE> statement to choose the desired template based on
+    the current node's node type (an integer). By adding a pattern with a
+    wildcard (no type) and a predicate, XSLTC is forced to evaluate the
+    predicate for every single node.</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:template match=&quot;*[2]&quot;&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>The above pattern should be avoided by selecting the desired node when
+    using <CODE><FONT face="courier, monospaced">&lt;xsl:apply-templates&gt;</FONT></CODE>. Use named templates or
+    modes to make sure you trigger the correct template:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:template match=&quot;/&quot;&gt;
+      &lt;xsl:apply-templates select=&quot;bar&quot;/&gt;
+    &lt;/xsl:template&gt;
+
+    &lt;xsl:template match=&quot;*[2]&quot;/&gt;
+
+    &lt;xsl:template match=&quot;*&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>can be replaced by:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:template match=&quot;/&quot;&gt;
+      &lt;xsl:apply-templates select=&quot;bar&quot;/&gt;
+      &lt;xsl:apply-templates select=&quot;bar[2]&quot; mode=&quot;second&quot;/&gt;
+    &lt;/xsl:template&gt;
+
+    &lt;xsl:template match=&quot;*&quot; mode=&quot;second&quot;/&gt;
+
+    &lt;xsl:template match=&quot;*&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>This change will only improve performance if the stylesheet is fairly
+    large and has a good few templates (10 or more). Also note that the order
+    of the output is changed by this approach, so if the order is significant
+    you'll have to stick to the original stylesheet.</P>
+
+    <P><B>Important note:</B> The type of pattern referred to as a
+    type-less pattern, as it does not match any specific node type. Such
+    patterns do in general degrade the performance of XSLTC. Type-less patterns
+    must be evaluated for every single node in the input document - causing a
+    general performance degradation.</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="idkey"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Avoid using id/key-patterns</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>Id and key patterns can be used to trigger a template if the current
+    node has a specific id or has a specific value in a key's index:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:template match=&quot;id('some-value')&quot;/&gt;
+
+    &lt;xsl:template match=&quot;key('key-name', 'some-value')&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>Looking up a value/node-pair in an index does not require much processing
+    time at all. But, this is also a type-less pattern and can match any type
+    of node. This degrades XSLTC's performance, just like wildcard patterns
+    with predicates (see above paragraph).</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="union"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Avoid union expressions where possible</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>Union expressions provide an all-in-one-go easy way of applying templates
+    to sets of nodes:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:apply-templates select=&quot;foo|bar|baz&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>The union iterator that is used to implement union expressions is 
+    unfortunately not very efficient. If node order is not of importance, then
+    one can benefit from breaking the union up in several elements:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:apply-templates select=&quot;foo&quot;/&gt;
+    &lt;xsl:apply-templates select=&quot;bar&quot;/&gt;
+    &lt;xsl:apply-templates select=&quot;baz&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>But, remeber that this will give you all <CODE><FONT face="courier, monospaced">&lt;foo&gt;</FONT></CODE>
+    elements first, then all <CODE><FONT face="courier, monospaced">&lt;bar&gt;</FONT></CODE> elements, and so on.
+    This is not always desirable. You may want to handle these elements in
+    the order in which they appear in the input document.</P>
+
+    <P><B>Important note:</B> This does <B>not</B> apply to union patterns.
+    Using unions in patterns actually makes smaller and more efficient code,
+    as only one copy of the templete body has to be compiled. Use:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:template match=&quot;foo|bar|baz&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>instead of:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;xsl:template match=&quot;foo&quot;/&gt;
+    &lt;xsl:template match=&quot;bar&quot;/&gt;
+    &lt;xsl:template match=&quot;baz&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+ 
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="sort"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Sort stored node-sets once</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>This item is very obvious, but nevertheless easy to forget in some
+    complicated cases. If you put a result-tree fragment inside a variable, and
+    you want the nodes in a specific, sorted order, then sort the nodes as you
+    create the variable and not when you use it. Instead of:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+
+    &lt;xsl:variable name=&quot;bars&quot;&gt;
+      &lt;xsl:copy-of select=&quot;//foo/bar&quot;/&gt;
+    &lt;/xsl:variable&gt;
+
+    &lt;xsl:template match=&quot;/&quot;&gt;
+      &lt;xsl:text&gt;List of bar's in sorted order:&amp;#xa;&lt;/xsl:text&gt;
+      &lt;xsl:for-each select=&quot;$bars-sorted&quot;&gt;
+        &lt;xsl:value-of select=&quot;@name&quot;/&gt;
+        &lt;xsl:text&gt;&amp;#xa;&lt;/xsl:text&gt;
+      &lt;/xsl:for-each&gt;
+    &lt;/xsl:template&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>A better way, and with most XSLT processors the only legal way, is to
+    sort the result tree when creating it:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+
+    &lt;xsl:variable name=&quot;bars&quot;&gt;
+      &lt;xsl:for-each select=&quot;//foo/bar&quot;&gt;
+        &lt;xsl:sort select=&quot;@name&quot;/&gt;
+        &lt;xsl:copy-of select=&quot;.&quot;/&gt;
+      &lt;/xsl:for-each&gt;
+    &lt;/xsl:variable&gt;
+
+    &lt;xsl:template match=&quot;/&quot;&gt;
+      &lt;xsl:text&gt;List of bar's in sorted order:&amp;#xa;&lt;/xsl:text&gt;
+      &lt;xsl:for-each select=&quot;$bars&quot;&gt;
+        &lt;xsl:value-of select=&quot;@name&quot;/&gt;
+        &lt;xsl:text&gt;&amp;#xa;&lt;/xsl:text&gt;
+      &lt;/xsl:for-each&gt;
+    &lt;/xsl:template&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>It is very common to sort node-sets returned by the id() and key()
+    functions. Instead of doing this sorting over and over again, one should
+    use a variable and store the node set in the desired sort order, and read
+    the node set from the variable whenever used.</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="cache"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Cache the input document</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <P>All XSLT processors use an internal DOM-like structure, and XSLTC is no
+    exception. The internal DOM is tailored for the XSLTC design and can be
+    navigated efficiently by the translet. Building the internal DOM is a
+    rather slow process, and does very many cases take more time than the
+    actual transformation. This is a general rule, and does not only apply to
+    XSLTC. It is advisable, and common in most large-scale XSLT-based
+    applications, to create a cache for the input documents. Not only does this
+    prevent CPU- and memory-intensive DOM creation, but it also prevents several
+    translets from having their own private copies of common input documents.
+    Both XSLTC's  internal API and TrAX implementation provide ways of
+    implementing a decent input document cache:</P>
+
+    <UL>
+      <LI>See <A href="#trax-cache">below</A> for a description of how
+      to do this using the TrAX interface.</LI>
+
+      <LI>The <A href="xsltc_native_api.html#document-locator">native API
+      documentation</A> contains a section on using the internal
+      <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.compiler.SourceLoader</FONT></CODE> interface.</LI>
+    </UL>
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="trax"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TrAX vs. native API</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TrAX performance benefits</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>If XSLTC's two-step approach to XSLT processing suits your application
+    then there is no reason why you should not use the TrAX API. The API fits
+    very nicely in with XSLTC internals and processing model. In fact, you may
+    even benefit from using TrAX in cases where your stylesheet is compiled
+    into a large ammount of auxiliary classes. The most obvious benefit is that
+    the translet class and auxiliary classes are all bundled inside the
+    <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object. Performance can also be improved due to the
+    fact that XSLTC chaches all auxiliary classes inside <CODE><FONT face="courier, monospaced">Templates</FONT></CODE>
+    code, preventing the class loader from being invoked more than necessary.
+    This is just theory and no tests have been done, but you should see a
+    performance improvement when using XSLTC and TrAX in such cases.</P>
+
+    </FONT></TD></TR></TABLE><BR>
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Treat Templates objects as compiled translets</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>When using TrAX, the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object should be considered
+    the result of a compilation. With XSLTC this is the actual case - the
+    <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object contains the translet Java class(es). With
+    other XSLT processors the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> directly or indirectly
+    contains data-structures represent all or parts of the input stylesheet.
+    The bottom line is: Create your <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object once, cache
+    and re-use it as often as possible.</P>
+
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="trax-cache"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Input document caching</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>An extension to the TrAX API allows input documents to be cached. The
+    extensions is a sub-class to the TrAX <CODE><FONT face="courier, monospaced">Source</FONT></CODE> class, which can
+    be used to wrap XSLTC's internal DOM structures. This is described in
+    detail in the <A href="xsltc_trax_api.html">XSLTC TrAX API reference</A>.
+    </P>
+
+    <P>If you do chose to implement a DOM cache, you should have your cache
+    implement the <CODE><FONT face="courier, monospaced">javax.xml.transform.URIResolver</FONT></CODE> interface so
+    that documents loaded by the <CODE><FONT face="courier, monospaced">document()</FONT></CODE> function are also read
+    from your cache.</P>
+
+    </FONT></TD></TR></TABLE><BR>
+
+  </FONT></TD></TR></TABLE><BR>
+
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2004 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

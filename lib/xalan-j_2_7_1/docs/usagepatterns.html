@@ -1,0 +1,650 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>Basic usage patterns</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/usagepatterns-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+  
+  <A href="whatsnew.html" onMouseOut="rolloverOff('side-whatsnew');" onMouseOver="rolloverOn('side-whatsnew');"><IMG alt="What's New" border="0" height="12" hspace="0" name="side-whatsnew" onLoad="rolloverLoad('side-whatsnew','graphics/whatsnew-label-2.jpg','graphics/whatsnew-label-3.jpg');" src="graphics/whatsnew-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="readme.html" onMouseOut="rolloverOff('side-readme');" onMouseOver="rolloverOn('side-readme');"><IMG alt="Release Notes" border="0" height="12" hspace="0" name="side-readme" onLoad="rolloverLoad('side-readme','graphics/readme-label-2.jpg','graphics/readme-label-3.jpg');" src="graphics/readme-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="overview.html" onMouseOut="rolloverOff('side-overview');" onMouseOver="rolloverOn('side-overview');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-overview" onLoad="rolloverLoad('side-overview','graphics/overview-label-2.jpg','graphics/overview-label-3.jpg');" src="graphics/overview-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="downloads.html" onMouseOut="rolloverOff('side-downloads');" onMouseOver="rolloverOn('side-downloads');"><IMG alt="Download/Build" border="0" height="12" hspace="0" name="side-downloads" onLoad="rolloverLoad('side-downloads','graphics/downloads-label-2.jpg','graphics/downloads-label-3.jpg');" src="graphics/downloads-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <A href="getstarted.html" onMouseOut="rolloverOff('side-getstarted');" onMouseOver="rolloverOn('side-getstarted');"><IMG alt="Getting Started" border="0" height="12" hspace="0" name="side-getstarted" onLoad="rolloverLoad('side-getstarted','graphics/getstarted-label-2.jpg','graphics/getstarted-label-3.jpg');" src="graphics/getstarted-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc_usage.html" onMouseOut="rolloverOff('side-xsltc_usage');" onMouseOver="rolloverOn('side-xsltc_usage');"><IMG alt="Using XSLTC" border="0" height="12" hspace="0" name="side-xsltc_usage" onLoad="rolloverLoad('side-xsltc_usage','graphics/xsltc_usage-label-2.jpg','graphics/xsltc_usage-label-3.jpg');" src="graphics/xsltc_usage-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="faq.html" onMouseOut="rolloverOff('side-faq');" onMouseOver="rolloverOn('side-faq');"><IMG alt="FAQs" border="0" height="12" hspace="0" name="side-faq" onLoad="rolloverLoad('side-faq','graphics/faq-label-2.jpg','graphics/faq-label-3.jpg');" src="graphics/faq-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="samples.html" onMouseOut="rolloverOff('side-samples');" onMouseOver="rolloverOn('side-samples');"><IMG alt="Sample Apps" border="0" height="12" hspace="0" name="side-samples" onLoad="rolloverLoad('side-samples','graphics/samples-label-2.jpg','graphics/samples-label-3.jpg');" src="graphics/samples-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="commandline.html" onMouseOut="rolloverOff('side-commandline');" onMouseOver="rolloverOn('side-commandline');"><IMG alt="Command Line" border="0" height="12" hspace="0" name="side-commandline" onLoad="rolloverLoad('side-commandline','graphics/commandline-label-2.jpg','graphics/commandline-label-3.jpg');" src="graphics/commandline-label-3.jpg" vspace="0" width="120"></A><BR>
+    
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="features.html" onMouseOut="rolloverOff('side-features');" onMouseOver="rolloverOn('side-features');"><IMG alt="Features" border="0" height="12" hspace="0" name="side-features" onLoad="rolloverLoad('side-features','graphics/features-label-2.jpg','graphics/features-label-3.jpg');" src="graphics/features-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="trax.html" onMouseOut="rolloverOff('side-trax');" onMouseOver="rolloverOn('side-trax');"><IMG alt="Transform API" border="0" height="12" hspace="0" name="side-trax" onLoad="rolloverLoad('side-trax','graphics/trax-label-2.jpg','graphics/trax-label-3.jpg');" src="graphics/trax-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xpath_apis.html" onMouseOut="rolloverOff('side-xpath_apis');" onMouseOver="rolloverOn('side-xpath_apis');"><IMG alt="XPath API" border="0" height="12" hspace="0" name="side-xpath_apis" onLoad="rolloverLoad('side-xpath_apis','graphics/xpath_apis-label-2.jpg','graphics/xpath_apis-label-3.jpg');" src="graphics/xpath_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="Usage Patterns" border="0" height="12" hspace="0" src="graphics/usagepatterns-label-1.jpg" vspace="0" width="120"><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="apidocs/index.html" onMouseOut="rolloverOff('side-ext-42');" onMouseOver="rolloverOn('side-ext-42');"><IMG alt="Xalan-J API" border="0" height="12" hspace="0" name="side-ext-42" onLoad="rolloverLoad('side-ext-42','graphics/ext-42-label-2.jpg','graphics/ext-42-label-3.jpg');" src="graphics/ext-42-label-3.jpg" vspace="0" width="120"></A><BR>    
+  <A href="public_apis.html" onMouseOut="rolloverOff('side-public_apis');" onMouseOver="rolloverOn('side-public_apis');"><IMG alt="Public APIs" border="0" height="12" hspace="0" name="side-public_apis" onLoad="rolloverLoad('side-public_apis','graphics/public_apis-label-2.jpg','graphics/public_apis-label-3.jpg');" src="graphics/public_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="dtm.html" onMouseOut="rolloverOff('side-dtm');" onMouseOver="rolloverOn('side-dtm');"><IMG alt="DTM" border="0" height="12" hspace="0" name="side-dtm" onLoad="rolloverLoad('side-dtm','graphics/dtm-label-2.jpg','graphics/dtm-label-3.jpg');" src="graphics/dtm-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="extensions.html" onMouseOut="rolloverOff('side-extensions');" onMouseOver="rolloverOn('side-extensions');"><IMG alt="Extensions" border="0" height="12" hspace="0" name="side-extensions" onLoad="rolloverLoad('side-extensions','graphics/extensions-label-2.jpg','graphics/extensions-label-3.jpg');" src="graphics/extensions-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensionslib.html" onMouseOut="rolloverOff('side-extensionslib');" onMouseOver="rolloverOn('side-extensionslib');"><IMG alt="Extensions Library" border="0" height="12" hspace="0" name="side-extensionslib" onLoad="rolloverLoad('side-extensionslib','graphics/extensionslib-label-2.jpg','graphics/extensionslib-label-3.jpg');" src="graphics/extensionslib-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensions_xsltc.html" onMouseOut="rolloverOff('side-extensions_xsltc');" onMouseOver="rolloverOn('side-extensions_xsltc');"><IMG alt="XSLTC Exts" border="0" height="12" hspace="0" name="side-extensions_xsltc" onLoad="rolloverLoad('side-extensions_xsltc','graphics/extensions_xsltc-label-2.jpg','graphics/extensions_xsltc-label-3.jpg');" src="graphics/extensions_xsltc-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="design/design2_0_0.html" onMouseOut="rolloverOff('side-ext-58');" onMouseOver="rolloverOn('side-ext-58');"><IMG alt="Xalan 2 Design" border="0" height="12" hspace="0" name="side-ext-58" onLoad="rolloverLoad('side-ext-58','graphics/ext-58-label-2.jpg','graphics/ext-58-label-3.jpg');" src="graphics/ext-58-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc/index.html" onMouseOut="rolloverOff('side-ext-60');" onMouseOver="rolloverOn('side-ext-60');"><IMG alt="XSLTC Design" border="0" height="12" hspace="0" name="side-ext-60" onLoad="rolloverLoad('side-ext-60','graphics/ext-60-label-2.jpg','graphics/ext-60-label-3.jpg');" src="graphics/ext-60-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="builds.html" onMouseOut="rolloverOff('side-builds');" onMouseOver="rolloverOn('side-builds');"><IMG alt="Building a release" border="0" height="12" hspace="0" name="side-builds" onLoad="rolloverLoad('side-builds','graphics/builds-label-2.jpg','graphics/builds-label-3.jpg');" src="graphics/builds-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="http://xml.apache.org/xalan-j/test/overview.html" onMouseOut="rolloverOff('side-ext-66');" onMouseOver="rolloverOn('side-ext-66');"><IMG alt="Testing" border="0" height="12" hspace="0" name="side-ext-66" onLoad="rolloverLoad('side-ext-66','graphics/ext-66-label-2.jpg','graphics/ext-66-label-3.jpg');" src="graphics/ext-66-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="bugreporting.html" onMouseOut="rolloverOff('side-bugreporting');" onMouseOver="rolloverOn('side-bugreporting');"><IMG alt="Bug Reporting" border="0" height="12" hspace="0" name="side-bugreporting" onLoad="rolloverLoad('side-bugreporting','graphics/bugreporting-label-2.jpg','graphics/bugreporting-label-3.jpg');" src="graphics/bugreporting-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="contact_us.html" onMouseOut="rolloverOff('side-contact_us');" onMouseOver="rolloverOn('side-contact_us');"><IMG alt="Contact us" border="0" height="12" hspace="0" name="side-contact_us" onLoad="rolloverLoad('side-contact_us','graphics/contact_us-label-2.jpg','graphics/contact_us-label-3.jpg');" src="graphics/contact_us-label-3.jpg" vspace="0" width="120"></A><BR>  
+  
+  
+  
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+<UL>
+<LI><A href="#basic">Basic steps</A></LI>
+<LI><A href="#plug">Plugging in the Transformer and XML parser</A></LI>
+<LI><A href="#outputprops">Configuring serialization output properties</A></LI>
+<LI><A href="#outputencoding">Caution: setting output encoding in the stylesheet</A></LI>
+<LI><A href="#incremental">Performing incremental transformations</A></LI>
+<LI><A href="#embed">Working with embedded stylesheets</A></LI>
+<LI><A href="#params">Setting stylesheet parameters</A></LI>
+<LI><A href="#serialize">Serializing output</A></LI>
+<LI><A href="#sax">Explicitly working with SAX</A></LI>
+<LI><A href="#outasin">Using transformation output as input for another transformation</A></LI>
+<LI><A href="#dom">Processing and producing DOM trees</A></LI>
+<LI><A href="#xpath">Working with XPath expressions</A></LI>
+<LI><A href="#applet">Using the Xalan-Java applet wrapper</A></LI>
+<LI><A href="#servlet">Using Xalan-Java in a servlet</A></LI>
+<LI><A href="#extensions">Creating and using extensions</A></LI>
+<LI><A href="#multithreading">Multithreading</A></LI>
+<LI><A href="#debugging">Debugger interface</A></LI>
+</UL>
+<P>See also: <A href="features.html">Transform Features</A>.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Unless otherwise specified, the usage discussed in this section refers to 
+the Xalan-Java Interpretive processor. See <A href="xsltc_usage.html">Getting Started Using  
+XSLTC</A> for information on using the Xalan-Java Compiling processor.</I></FONT></TD></TR></TABLE><BR>
+<A name="basic"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Basic steps</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <OL>
+    <LI><A href="#transformerfactory">Instantiate a TransformerFactory</A></LI>
+    <LI><A href="#transformer">Process the stylesheet and generate a Transformer</A></LI>
+    <LI><A href="#transformation">Perform the transformation</A></LI>
+  </OL>
+    <P>The following example illustrates the three basic steps involved in performing a transformation.</P>
+    <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>// 1. Instantiate a TransformerFactory.
+javax.xml.transform.TransformerFactory tFactory = 
+                  javax.xml.transform.TransformerFactory.newInstance();
+
+// 2. Use the TransformerFactory to process the stylesheet Source and
+//    generate a Transformer.
+javax.xml.transform.Transformer transformer = tFactory.newTransformer
+                (new javax.xml.transform.stream.StreamSource(&quot;foo.xsl&quot;));
+
+// 3. Use the Transformer to transform an XML Source and send the
+//    output to a Result object.
+transformer.transform
+    (new javax.xml.transform.stream.StreamSource(&quot;foo.xml&quot;), 
+     new javax.xml.transform.stream.StreamResult( new
+                                  java.io.FileOutputStream(&quot;foo.out&quot;)));</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>For a working example of this model at its simplest, see SimpleTransform.java in the java/samples/SimpleTransform subdirectory.</I></FONT></TD></TR></TABLE>
+  </FONT></TD></TR></TABLE><BR><A name="transformerfactory"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>1. Instantiate a TransformerFactory</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P><A href="apidocs/javax/xml/transform/TransformerFactory.html">TransformerFactory</A> is an abstract class with a static newInstance() method that instantiates the concrete subclass designated by the javax.xml.transform.TransformerFactory system property.</P>
+  <P>The default setting for this system property is <A href="apidocs/org/apache/xalan/processor/TransformerFactoryImpl.html">org.apache.xalan.processor.TransformerFactoryImpl</A>.</P>
+</FONT></TD></TR></TABLE><BR><A name="transformer"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>2. Use the TransformerFactory to process the stylesheet Source and produce a Transformer</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>The TransformerFactory <A href="apidocs/javax/xml/transform/TransformerFactory.html#newTransformer(javax.xml.transform.Source)">newTransformer(Source xslSource)</A> method processes the stylesheet Source into a Templates object and returns a Transformer that you can use to perform a transformation (apply the Templates object to an XML Source).</P>
+<P>You may provide the stylesheet Source in the form of a stream of XML markup (<A href="apidocs/javax/xml/transform/stream/StreamSource.html">StreamSource</A>), a DOM Node (<A href="apidocs/javax/xml/transform/dom/DOMSource.html">DOMSource</A>), or a SAX InputSource (<A href="apidocs/javax/xml/transform/sax/SAXSource.html">SAXSource</A>). To specify a StreamSource, you may use a system ID or file name (using URI syntax), a java.io.InputStream, or a java.io.Reader. The use of DOMSource and SAXSource are illustrated in subsequent sections.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>If you plan to use the stylesheet Source to transform multiple XML Sources, you should use the TransformerFactory <A href="apidocs/javax/xml/transform/TransformerFactory.html#newTemplates(javax.xml.transform.Source)">newTemplates(Source xslSource)</A> method to explicitly generate a Templates object. For each transformation, use the Templates object to generate a new Transformer. For the details, see <A href="#multithreading">Multithreading</A>.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR><A name="transformation"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>3. Use the Transformer to perform a transformation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>Use the Transformer <A href="apidocs/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,javax.xml.transform.Result">transform(Source xmlSource, Result transformResult)</A> method to transform  the XML Source and place the transformation output in a Result object.</P>
+<P>Just as with the stylesheet, you can supply the XML Source in the form of a <A href="apidocs/javax/xml/transform/stream/StreamSource.html">StreamSource</A>, <A href="apidocs/javax/xml/transform/dom/DOMSource.html">DOMSource</A>, or <A href="apidocs/javax/xml/transform/sax/SAXSource.html">SAXSource</A>. Likewise, the Result may be a <A href="apidocs/javax/xml/transform/stream/StreamResult.html">StreamResult</A>, <A href="apidocs/javax/xml/transform/dom/DOMResult.html">DOMResult</A>, or <A href="apidocs/javax/xml/transform/sax/SAXResult.html">SAXResult</A>.</P>
+<P>For each node in the XML source, the Transformer uses the transformation instructions in the Templates object to determine which template to apply: one of the templates in the Templates object, a default template rule as specified in the XSLT spec, or none.</P>
+</FONT></TD></TR></TABLE><BR><A name="plug"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Plugging in a Transformer and XML parser</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>The Java API for XML Processing interfaces enable you to isolate your application from the internal implementation details of a given Transformer, SAX parser, or DOM parser. For each of these objects, there is an abstract Factory class with a static newInstance() method that instantiates a concrete Factory which wraps the underlying implementation. These newInstance() methods use system property settings to determine which implementation to instantiate.</P>
+<P>Xalan-Java is distributed with a system property setting for the Xalan-Java processor. This setting is in <CODE><FONT face="courier, monospaced">xalan.jar</FONT></CODE> in META-INF/services (see src/META-INF/services).</P>
+<DL>
+  <DT>System property</DT>
+    <DD>Setting</DD>
+  <DT><CODE><FONT face="courier, monospaced">javax.xml.transform.TransformerFactory</FONT></CODE></DT>
+   <DD><CODE><FONT face="courier, monospaced">org.apache.xalan.processor.TransformerFactoryImpl</FONT></CODE></DD>
+</DL>
+<P>If you are using Xerces, the XML parser factory settings are as follows:</P>
+<DL>
+  <DT>System property</DT>
+    <DD>Setting</DD>
+  <DT><CODE><FONT face="courier, monospaced">javax.xml.parsers.DocumentBuilderFactory</FONT></CODE></DT>
+   <DD><CODE><FONT face="courier, monospaced">org.apache.xerces.jaxp.DocumentBuilderFactoryImpl</FONT></CODE></DD>    
+  <DT><CODE><FONT face="courier, monospaced">javax.xml.parsers.SAXParserFactory</FONT></CODE></DT>
+   <DD><CODE><FONT face="courier, monospaced">org.apache.xerces.jaxp.SAXParserFactoryImpl</FONT></CODE></DD>
+ </DL>
+<P>You can change any of these settings as follows (in order of precedence):</P>
+<OL>
+  <LI>Set the system property from the command line when you launch Java or from within your application.<BR><BR></LI>
+  <LI>Set the system property in jaxp.properties in the JAVA_HOME/lib directory, where JAVA_HOME is the root of the JDK.<BR><BR></LI>
+  <LI>Revise the entry in src/META-INF/services and rebuild <CODE><FONT face="courier, monospaced">xalan.jar</FONT></CODE> or <CODE><FONT face="courier, monospaced">xercesImpl.jar</FONT></CODE>, depending on which entry you have changed.<BR><BR></LI>
+</OL>
+<P>For example, to use the Crimson XML parser in place of the Xerces XML parser, place Crimson on the class path and set the 
+<CODE><FONT face="courier, monospaced">javax.xml.parsers.SAXParserFactory</FONT></CODE> system property to <CODE><FONT face="courier, monospaced">org.apache.crimson.jaxp.SAXParserFactoryImpl</FONT></CODE>.</P>
+<P>For more information about the mechanism used to determine system property values and how you can plug other implementations into your applications, see &quot;Section 3: Plugability Layer&quot; in the <I>Java API for XML Processing</I> at 
+<A href="http://java.sun.com/aboutJava/communityprocess/review/jsr063/index.html">JSR-000063 1.1</A>.</P> 
+</FONT></TD></TR></TABLE><BR><A name="outputprops"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Configuring serialization output properties</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>Output properties for XML, HTML, and text transformation output are defined in property files in the org.apache.xml.serializer package.</P>
+<P>You can override the default value of these properties in your stylesheet by using the attributes of an xsl:output element. 
+You can override the Xalan specific default settings as follows:</P>
+<OL>
+  <LI>Declare the xalan namespace in your stylesheet element (xmlns:xalan=&quot;http://xml.apache.org/xalan&quot;).<BR><BR></LI>
+  <LI>Use the namespace prefix you assign (for example, &quot;xalan&quot;) to redefine properties of interest in the stylesheet xsl:output
+      element (for example, xalan:indent-amount=&quot;5&quot;).</LI>
+</OL>
+<P>The following stylesheet fragment declares the xalan namespace and sets indent-amount to 2:</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; 
+                xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+                xmlns:xalan=&quot;http://xml.apache.org/xalan&quot;&gt;
+                
+  &lt;xsl:output method=&quot;xml&quot; 
+              encoding=&quot;UTF-8&quot;
+              indent=&quot;yes&quot; 
+              xalan:indent-amount=&quot;2&quot;/&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  <P>If you want to change the property settings globally, edit the values in the property files in src/org/apache/xml/serializer, 
+  and use Ant to <A href="readme.html#jar">rebuild <CODE><FONT face="courier, monospaced">serializer.jar</FONT></CODE></A>. Be aware that if you change the default value
+  of a standard property, such as the default encoding value, this may be in conflict with the default value specified by the XSLT 1.0 
+  recommendation.</P>
+<P>The properties files define the following properties:</P>
+<P><I>output_xml.properties</I>:</P>
+<TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+  <TR>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Property</B>&nbsp;
+      </FONT></TD>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Default value</B>&nbsp;
+      </FONT></TD>
+  </TR>  
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">version&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">1.0&nbsp;
+      </FONT></TD>
+  </TR>  
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">encoding&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">UTF-8&nbsp;
+      </FONT></TD>
+  </TR>  
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">indent&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">no&nbsp;
+      </FONT></TD>
+  </TR>  
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">omit-xml-declaration&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">no&nbsp;
+      </FONT></TD>
+  </TR> 
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">standalone&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">no&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">media-type&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">text/xml&nbsp;
+      </FONT></TD>
+  </TR>     
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:indent-amount&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">0&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:content-handler&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.apache.xml.serializer.ToXMLStream&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:entities&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org/apache/xml/serializer/XMLEntities&nbsp;
+      </FONT></TD>
+  </TR>
+</TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The xalan:content-handler property specifies the default name of the Java class that implements the 
+<A href="apidocs/org/xml/sax/ContentHandler.html">org.xml.sax.ContentHandler</A>
+interface and recieves calls during result tree serialization. If you specify an 
+alternate Java class it must implement the ContentHandler interface.</I></FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>You can also create your own XML entity file (mapping characters to
+entities) or edit src/org/apache/xml/serializer/XMLEntities.properties and
+rebuild <CODE><FONT face="courier, monospaced">serializer.jar</FONT></CODE>.</I></FONT></TD></TR></TABLE>
+<P><I>output_html.properties</I>:</P>
+<TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+  <TR>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Property</B>&nbsp;
+      </FONT></TD>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Default value</B>&nbsp;
+      </FONT></TD>
+  </TR>  
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">version&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">4.0&nbsp;
+      </FONT></TD>
+  </TR> 
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">indent&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">yes&nbsp;
+      </FONT></TD>
+  </TR>   
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">media-type&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">text/html&nbsp;
+      </FONT></TD>
+  </TR>   
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:indent-amount&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">0&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:content-handler&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.apache.xml.serializer.ToHTMLStream&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:entities&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org/apache/xml/serializer/HTMLEntities&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:use-url-escaping&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">yes&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:omit-meta-tag&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">no&nbsp;
+      </FONT></TD>
+  </TR>
+</TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The xalan:content-handler property specifies the default name of the Java class that implements the 
+<A href="apidocs/org/xml/sax/ContentHandler.html">org.xml.sax.ContentHandler</A>
+interface and recieves calls during result tree serialization. If you specify an 
+alternate Java class it must implement the ContentHandler interface.</I></FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>You can also create your own HTML entity file (mapping characters to entities) 
+or edit src/org/apache/xml/serializer/HTMLEntities.properties and rebuild <CODE><FONT face="courier, monospaced">serializer.jar</FONT></CODE>.</I></FONT></TD></TR></TABLE>
+<P><I>output_text.properties</I>:</P>
+<TABLE border="0" cellpadding="2" cellspacing="2" width="100%">  
+  <TR>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Property</B>&nbsp;
+      </FONT></TD>
+    <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Default value</B>&nbsp;
+      </FONT></TD>
+  </TR>
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">media-type&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">text/plain&nbsp;
+      </FONT></TD>
+  </TR>    
+  <TR>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalan:content-handler&nbsp;
+      </FONT></TD>
+    <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.apache.xml.serializer.ToTextStream&nbsp;
+      </FONT></TD>
+  </TR>
+</TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The xalan:content-handler property specifies the default name of the Java class that implements the 
+<A href="apidocs/org/xml/sax/ContentHandler.html">org.xml.sax.ContentHandler</A>
+interface and recieves calls during result tree serialization. If you specify an 
+alternate Java class it must implement the ContentHandler interface.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR><A name="outputencoding"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Caution: setting output encoding in the stylesheet</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>When you use the &lt;xsl:output&gt; encoding attribute to set output character encoding, you should not 
+use StreamResult(java.io.Writer) to construct a 
+<A href="apidocs/javax/xml/transform/stream/StreamResult.html">StreamResult</A> object to hold the transformation result.
+If you do, the Writer uses its own encoding rather than the encoding specified in the stylesheet.</P>
+<P>If you want to use a Writer, you can specify an encoding when you create the Writer (java.io.OutputStreamWriter). Once the 
+Writer exists, you cannot reset the encoding it uses.</P>
+</FONT></TD></TR></TABLE><BR><A name="incremental"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Performing incremental transformations</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>The <A href="dtm.html">DTM</A> (Document Table Model) supports incremental transformations, the incremental generation of the 
+transformation result while the source document is still being parsed. For more information, see 
+<A href="dtm.html#incremental">incremental transformations</A>.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>You can also enable incremental transformations with the <A href="commandline.html">command-line utility</A> by including the -INCREMENTAL flag.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR><A name="embed"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Working with embedded stylesheets</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>An XML Source may include an <A href="http://www.w3.org/TR/xml-stylesheet/">xml-stylesheet processing instruction</A> which identifies the stylesheet to be used to process the document. As indicated by the processing instruction <I>href</I> attribute, the stylesheet itself may be embedded in the XML document or located elsewhere.</P>
+<P>Suppose you have an XML document (foo.xml) with the following xml-stylesheet processing instruction:</P>
+<P><CODE><FONT face="courier, monospaced">&lt;?xml-stylesheet type=&quot;text/xml&quot; href=&quot;foo.xsl&quot;?&gt;</FONT></CODE></P>
+<P>The following fragment uses this instruction to locate the stylesheet (foo.xsl in the same directory as foo.xml) and create a Templates object. Note the use of the TransformerFactory getAssociatedStylesheet() in step 2a.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>An XML document may include more than one xml-stylesheet processing instruction, hence the support for working with multiple stylesheets. If more than one stylesheet is returned, the other stylesheets are imported into the first stylesheet.</I></FONT></TD></TR></TABLE>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>// 1. Instantiate the TransformerFactory.
+javax.xml.transform.TransformerFactory tFactory = 
+                    javax.xml.transform.TransformerFactory.newInstance();
+// 2a. Get the stylesheet from the XML source.
+String media = null , title = null, charset = null;
+javax.xml.transform.Source stylesheet = tFactory.getAssociatedStylesheet
+                   (new StreamSource(&quot;foo.xml&quot;), media, title, charset);
+
+// 2b. Process the stylesheet and generate a Transformer.
+Transformer transformer = tFactory.newTransformer(stylesheet);
+
+// 3. Use the Transformer to perform the transformation and send the
+//    the output to a Result object.
+transformer.transform
+             (new javax.xml.transform.stream.StreamSource(&quot;foo.xml&quot;),
+              new StreamResult (new java.io.FileOutputStream(&quot;foo.out&quot;)));</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>For a sample that uses this technique, see <A href="samples.html#usestylesheetpi">UseStylesheetPI</A>.</P>
+<P>You can also instruct the <A href="commandline.html">command-line utility</A> to use stylesheet processing
+instructions:</P>
+<OL>
+  <LI>Include the <CODE><FONT face="courier, monospaced">-in</FONT></CODE> flag with an XML source that contains a stylesheet processing instruction.<BR><BR></LI>
+  <LI>Do not include the <CODE><FONT face="courier, monospaced">-xsl</FONT></CODE> flag.</LI>
+</OL>
+</FONT></TD></TR></TABLE><BR><A name="serialize"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Serializing output</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>In some cases, you may want to &quot;transform&quot; a DOM tree into a stream, which the XML community calls serialization. 
+<A href="http://java.sun.com/webservices/jaxp/index.jsp" target="_top">JAXP 1.3</A> and the Xalan-Java Transformer implementation provide direct 
+support for this operation. Simply use the TransformerFactory newTransformer() method (no arguments) to create a Transformer 
+that you can use to &quot;copy&quot; a DOMSource to a StreamResult. For examples, see Examples.exampleDOM2DOM(), 
+Examples.exampleSerializeNode(), and Examples.exampleAsSerializer() in the <A href="samples.html#trax">trax (JAXP transform) sample</A>.</P>
+</FONT></TD></TR></TABLE><BR><A name="params"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Setting stylesheet parameters</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>An XSLT stylesheet may include parameters that are set at run time each time a transformation is performed. To set a stylesheet parameter, use the Transformer 
+<A href="apidocs/javax/xml/transform/Transformer.html#setParameter(java.lang.String,java.lang.Object)">setParameter(String name, Object value)</A> method. For a working example, see UseStylesheetParam.java in the samples/UseStylesheetParam subdirectory.</P>
+<P>You can also set a parameter with the command-line utility by including the <CODE><FONT face="courier, monospaced">-param</FONT></CODE> flag. For example:</P>
+<P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xslt.Process -in foo.xml -xsl foo.xsl -param param1 foobar</FONT></CODE></P>
+<P>where <CODE><FONT face="courier, monospaced">param</FONT></CODE> is the parameter name and <CODE><FONT face="courier, monospaced">foobar</FONT></CODE> is the parameter value. The parameter namespace is null.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Xalan-Java 2 processes string parameters. You are no longer required (as you were with Xalan-Java version 1) to enclose strings in single 
+quotes (') as string expressions.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR><A name="sax"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Explicitly working with SAX</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>Xalan-Java uses the SAX event model to process stylesheets, to parse XML input documents, and to produce output. For each of these operations, an XMLReader reads input, firing parse events, and a ContentHandler listens to the XMLReader and executes parse event methods.</P>
+<P>When you use the basic procedure described above for performing transformations, Xalan-Java takes care of many of the SAX details under the covers. You are free to make these details explicit, which simply means that you can intervene in the procedure to accommodate the precise environment in which your application operates.</P>
+<P>Suppose, for example, you are using a custom XMLReader (perhaps for doing more than just parsing static XML documents) to generate Xalan-Java SAX parse events. You might even have a custom reader for producing/processing stylesheets. You can cast the TransformerFactory to a SAXTransformerFactory, which provides access to a TransformerHandler, which you can set as the ContentHandler for this reader.</P>
+  <P>The following example explicitly sets up the XMLReader and ContentHandlers, and replicates the <A href="#basic">basic steps</A> described above.</P>
+  <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>// Instantiate a TransformerFactory.
+javax.xml.transform.TransformerFactory tFactory = 
+                    javax.xml.transform.TransformerFactory.newInstance();
+// Verify that the TransformerFactory implementation you are using
+// supports SAX input and output (Xalan-Java does!).
+if (tFactory.getFeature(javax.xml.transform.sax.SAXSource.FEATURE) &amp;&amp; 
+    tFactory.getFeature(javax.xml.transform.sax.SAXResult.FEATURE))
+  { 
+    // Cast the TransformerFactory to SAXTransformerFactory.
+    javax.xml.transform.sax.SAXTransformerFactory saxTFactory = 
+                   ((javax.xml.transform.sax.SAXTransformerFactory) tFactory);
+    // Create a Templates ContentHandler to handle parsing of the 
+    // stylesheet.
+    javax.xml.transform.sax.TemplatesHandler templatesHandler = 
+                                        saxTFactory.newTemplatesHandler();
+
+    // Create an XMLReader and set its ContentHandler.
+    org.xml.sax.XMLReader reader = 
+                   org.xml.sax.helpers.XMLReaderFactory.createXMLReader();
+    reader.setContentHandler(templatesHandler);
+    
+    // Parse the stylesheet.                       
+    reader.parse(&quot;foo.xsl&quot;);
+
+    // Get the Templates object (generated during the parsing of the stylesheet)
+    // from the TemplatesHandler.
+    javax.xml.transform.Templates templates = 
+                                          templatesHandler.getTemplates();
+    // Create a Transformer ContentHandler to handle parsing of 
+    // the XML Source.  
+    javax.xml.transform.sax.TransformerHandler transformerHandler 
+                           = saxTFactory.newTransformerHandler(templates);
+    // Reset the XMLReader's ContentHandler to the TransformerHandler.
+    reader.setContentHandler(transformerHandler);
+
+    // Set the ContentHandler to also function as a LexicalHandler, which
+    // can process &quot;lexical&quot; events (such as comments and CDATA). 
+    reader.setProperty(&quot;http://xml.org/sax/properties/lexical-handler&quot;, 
+                        transformerHandler);
+
+    // Set up a Serializer to serialize the Result to a file.
+    org.apache.xml.serializer.Serializer serializer = 
+    org.apache.xml.serializer.SerializerFactory.getSerializer
+    (org.apache.xml.serializer.OutputPropertiesFactory.getDefaultMethodProperties
+                                                                   (&quot;xml&quot;));
+    serializer.setOutputStream(new java.io.FileOutputStream(&quot;foo.out&quot;));
+    // The Serializer functions as a SAX ContentHandler.
+    javax.xml.transform.Result result =
+      new javax.xml.transform.sax.SAXResult(serializer.asContentHandler());
+    transformerHandler.setResult(result);
+      
+    // Parse the XML input document.
+    reader.parse(&quot;foo.xml&quot;);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>If you want to perform multiple transformations with the same Templates object and a TransformerHandler, you must create a new
+    TransformerHandler for each transformation. The Xalan-Java implementation of TransformerHandler 
+    (<A href="apidocs/org/apache/xalan/transformer/TransformerHandlerImpl.html">TransformerHandlerImpl</A> fails to respond 
+    to events after the first endDocument event occurs.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR><A name="outasin"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using transformation output as input for another transformation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+<P>You can chain together a series of transformations such that the output of each transformation provides input for the next transformation. Xalan-Java supports two basic strategies for chaining a series of transformations:</P>
+<UL>
+  <LI>Use the SAXTransformerFactory to process the stylesheet and create a TransformerHandler for each transformation. Then you can set
+the first TransformerHandler as the ContentHandler for the XMLReader that parses the input, make the second TransformerHandler the ContentHandler for the output of the first TransformerHandler, and so on. For more detail and an example, see the <A href="samples.html#pipe">Pipe</A> sample.<BR><BR></LI>
+  <LI>Use the SAXTransformerFactory to process the stylesheet and create a SAX XMLFilter for each transformation. Set an XMLReader as the parent of the first XMLFilter, the first XMLFilter as the parent of the second XMLFilter, and so on. You launch the series of transformations by instructing the last XMLFilter to parse the XML Source for the first transformation. For more detail and an example, see the <A href="samples.html#usexmlfilters">UseXMLFilters</A> sample.</LI>
+</UL>
+</FONT></TD></TR></TABLE><BR><A name="dom"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Processing and producing DOM trees</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>In some cases, the input and/or desired output for a transformation may be a DOM tree object. The javax.xml.transform.DOM package provides <A href="apidocs/javax/xml/transform/dom/DOMSource.html">DOMSource</A> and a <A href="apidocs/javax/xml/transform/dom/DOMResult.html">DOMResult</A>, either or both of which you can use when you perform a transformation.</P>
+<P>In some cases, your application provides input in the form of a DOM tree, which accelerates the transformation process, since the input has in effect already been processed. To produce DOM input from a stream, you can use a <A href="apidocs/javax/xml/parsers/DocumentBuilderFactory.html">DocumentBuilderFactory</A> to produce a <A href="apidocs/javax/xml/parsers/DocumentBuilder.html">DocumentBuilder</A> with which you can parse the XML input into a DOM Document, as illustrated below.</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>// Instantiate a DocumentBuilderFactory.
+javax.xml.parsers.DocumentBuilderFactory dfactory =
+                    javax.xml.parsers.DocumentBuilderFactory.newInstance();
+// Use the DocumentBuilderFactory to provide access to a DocumentBuilder.
+javax.xml.parsers.DocumentBuilder dBuilder = dfactory.newDocumentBuilder();
+// Use the DocumentBuilder to parse the XML input.
+org.w3c.dom.Document inDoc = dBuilder.parse(&quot;foo.xml&quot;);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>To produce DOM output, simply use a Transformer to transform to a DOMResult object.</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>// Generate a Transformer.
+javax.xml.transform.Transformer transformer = tFactory.newTransformer
+                  (new javax.xml.transform.stream.StreamSource(&quot;foo.xsl&quot;));
+// Create an empy DOMResult object for the output.
+javax.xml.transform.dom.DOMResult domResult =
+                                   new javax.xml.transform.dom.DOMResult();
+// Perform the transformation.
+transformer.transform(new javax.xml.transform.dom.DOMSource(inDoc),
+                      domResult);
+// Now you can get the output Node from the DOMResult.
+org.w3c.dom.Node node = domResult.getNode();</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Create a new DOMResult object or use DOMResult.setNode() to assign a new container each time you want to perform a transformation 
+and place the output in a DOMResult object.</I></FONT></TD></TR></TABLE>
+<P>The <A href="samples.html#dom2dom">DOM2DOM</A> illustrates both procedures, and serializes the DOMResult to System.out.</P>
+</FONT></TD></TR></TABLE><BR><A name="xpath"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Working with XPath expressions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>XSLT stylesheets use XPath expressions to select nodes, specify conditions, and generate text for the result tree. XPath provides an API that you can call directly. For example, you may want to evaluate an XPath expression programmatically and do your own processing without a stylesheet.</P>
+<P>XPath is an independent entity, with clients other than XSLT processors (such as XPointer). Accordingly, Xalan-Java 2 has packaged XPath as a separate module (org.apache.xpath and its subpackages). The org.apache.xpath.XPathAPI class contains convenience methods that you can use to return single DOM Nodes, NodeIterators, and XObjects. Apart from their own functionality, these methods also provide a path into the lower-level XPath API that you may find useful.</P>
+<P>JAXP 1.3 also provides an API for xpath expression evaluation in the javax.xml.xpath package. Users are 
+ recommended to use the new JAXP 1.3 XPath API rather than the old Xalan-Java 2 specific XPath API.</P>
+<P>For an example that uses the Xalan-Java 2 specific XPathAPI to execute XPath expressions against XML source files, 
+see <A href="samples.html#applyxpath">ApplyXPath</A>. For examples on how to use the new JAXP 1.3 XPath
+API, see <A href="samples.html#applyxpathjaxp">ApplyXPathJAXP</A> and 
+<A href="samples.html#xpathresolver">XPathResolver</A>.</P>
+</FONT></TD></TR></TABLE><BR><A name="applet"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using the Xalan-Java applet wrapper</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<OL> 
+<LI>Include <A href="apidocs/org/apache/xalan/client/XSLTProcessorApplet.html">XSLTProcessorApplet</A> in an HTML client.<BR><BR></LI>
+<LI>Specify the XML source document and XSL stylesheet.<BR><BR>
+You can use the DocumentURL and StyleURL PARAM tags or the <A href="apidocs/org/apache/xalan/client/XSLTProcessorApplet.html#setDocumentURL(java.lang.String)">setdocumentURL()</A> and <A href="apidocs/org/apache/xalan/client/XSLTProcessorApplet.html#setStyleURL(java.lang.String)">setStyleURL()</A> methods. If the XML document contains a stylesheet Processing Instruction (PI), you do not need to specify an XSL stylesheet.<BR><BR></LI>
+<LI>Call the <A href="apidocs/org/apache/xalan/client/XSLTProcessorApplet.html#transformToHtml(java.lang.String,java.lang.String)">transformToHtml()</A> or <A href="apidocs/org/apache/xalan/client/XSLTProcessorApplet.html#getHtmlText()">getHtmlText()</A> method, which performs the transformation and returns the new document as a String.</LI></OL>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The transformToHTML() method takes arguments for the XML source document and XSL stylesheet. The getHtmlText() method takes no arguments: it uses property or parameter settings, as in the example below.</I></FONT></TD></TR></TABLE>
+<P>For an example, see the <A href="samples.html#appletxmltohtml">AppletXMLtoHTML</A> sample applet. The &lt;applet&gt; tag is in samples/AppletXMLtoHTML/client.html:</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;applet  
+    name=&quot;xslControl&quot;
+    code=&quot;org.apache.xalan.client.XSLTProcessorApplet.class&quot;
+    archive=&quot;../../xalan.jar,../../build/xalan.jar,../../serializer.jar,../../build/serializer.jar,../../lib/xml-apis.jar,../../lib/xercesImpl.jar&quot;
+    height=&quot;0&quot;
+    width&quot;0&quot;&gt;
+    &lt;param name=&quot;documentURL&quot; value=&quot;xalanApplets.xml&quot;/&gt;
+    &lt;param name=&quot;styleURL&quot; value=&quot;s1ToHTML.xsl&quot;/&gt;
+&lt;/applet&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>When the user clicks the Transform button, the HTML client calls the getHtmlText() method, and puts the returned HTML text in a frame for the user to view.</P>
+<P>For samples, see <A href="samples.html#applet">AppletXMLtoHTML</A>.</P>
+<A name="netscape"><!--anchor--></A><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Problems with Netscape</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The JAXP strategy of reading system properties 
+    generates SecurityExceptions when you attempt to run Xalan-Java applets in the Netscape Communicator 4.7.</P> 
+    <P>Stuart Connell 
+    &lt;Stuart.Connell@compuware.com&gt; reports that the Xalan-Java applet wrapper does work in Netscape Communicator 6, 
+    provided that you avoid calls to the AppletContext showStatus() method. In other words, you can remove the showStatus() calls
+    from org.apache.xalan.client.XSLTProcessorApplet, and run Xalan-Java applets from Netscape Communicator 6. This appears to be a
+    Netscape bug, which hopefully will be fixed soon. For more information, see 
+    <A href="http://issues.apache.org/bugzilla/show_bug.cgi?id=3231">Bugzilla bug 3231</A>.</P>
+</FONT></TD></TR></TABLE><BR>    
+</FONT></TD></TR></TABLE><BR><A name="servlet"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using Xalan-Java in a servlet</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>You can set up a servlet to use Xalan-Java to respond to requests for XML documents by transforming those documents into HTML and serving them to web browsers. To respond to HTTP GET requests, all you need to do is overwrite the HttpServlet doGet() method with a procedure that instantiates a Transformer and uses it to perform a transformation. As the following example shows, you can generate a ResultStream that a PrintWriter writes to the HttpResponse OutputStream, returning the transformation output to the web browser.</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+public class SampleXSLTServlet extends javax.servlet.http.HttpServlet {
+  
+  public final static String FS = System.getProperty(&quot;file.separator&quot;); 
+  // Respond to HTTP GET requests from browsers.
+  public void doGet (javax.servlet.http.HttpServletRequest request,
+                     javax.servlet.http.HttpServletResponse response)
+    throws javax.servlet.ServletException, java.io.IOException
+  {
+    // Set content type for HTML.
+    response.setContentType(&quot;text/html; charset=UTF-8&quot;);    
+    // Output goes to the response PrintWriter.
+    java.io.PrintWriter out = response.getWriter();
+    try
+    {	
+      javax.xml.transform.TransformerFactory tFactory = 
+                javax.xml.transform.TransformerFactory.newInstance();
+      //get the real path for xml and xsl files.
+      String ctx = getServletContext().getRealPath(&quot;&quot;) + FS;        
+      // Get the XML input document and the stylesheet, both in the servlet
+      // engine document directory.
+      javax.xml.transform.Source xmlSource = 
+                new javax.xml.transform.stream.StreamSource
+                             (new java.net.URL(&quot;file&quot;, &quot;&quot;, ctx+&quot;foo.xml&quot;).openStream());
+      javax.xml.transform.Source xslSource = 
+                new javax.xml.transform.stream.StreamSource
+                             (new java.net.URL(&quot;file&quot;, &quot;&quot;, ctx+&quot;foo.xsl&quot;).openStream());
+      // Generate the transformer.
+      javax.xml.transform.Transformer transformer = 
+                             tFactory.newTransformer(xslSource);
+      // Perform the transformation, sending the output to the response.
+      transformer.transform(xmlSource, 
+                           new javax.xml.transform.stream.StreamResult(out));
+    }
+    // If an Exception occurs, return the error to the client.
+    catch (Exception e)
+    {
+      out.write(e.getMessage());
+      e.printStackTrace(out);    
+    }
+    // Close the PrintWriter.
+    out.close();
+  }  
+}</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>For a working sample, see <A href="samples.html#simplexsltservlet">SimpleXSLTServlet</A>.</P>
+<P>In the preceding example, the URLs for the XML document and XSL stylesheet are hardcoded in the servlet. You can also create a servlet that parses the request URL for input parameters specifying the XML document, XSL stylesheet, and any relevant stylesheet parameters. For samples, see <A href="samples.html#usestylesheetparamservlet">UseStylesheetParamServlet</A> and <A href="samples.html#xsltservletwithparams">XSLTServletWithParams</A>. For a more robust and complex sample that also employs a properties file to determine which stylesheet to use depending on the client browser/device, see <A href="samples.html#applyxslt">ApplyXSLT</A>.</P>
+</FONT></TD></TR></TABLE><BR><A name="extensions"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Creating and using extensions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>For those cases where you want to be able to call procedural code from within a stylesheet, the Xalan-Java Extensions facility supports the creation of extension elements and extension functions. See <A href="extensions.html">Extensions</A> and <A href="samples.html#extensions">Extensions samples</A>.</P>
+</FONT></TD></TR></TABLE><BR><A name="multithreading"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Multithreading</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>A given Templates object may be used repeatedly and even in multiple threads running concurrently for the transformation of XML input, but you should use the Templates object to instantiate a separate Transformer for each transformation you perform. The Templates object is an immutable runtime representation of the structure and content of a stylesheet (which may include and import multiple stylesheet sources). A Transformer, on the other hand, is a lightweight object that tracks state information during the transformation, and should only be used to perform a single transformation.</P>
+
+<P>If you want to perform multiple transformations (sequentially or concurrently) with the same stylesheet instructions, do the following:</P>
+<OL>
+  <LI>Use the TransformerFactory <A href="apidocs/javax/xml/transform/TransformerFactory.html#newTemplates(javax.xml.transform.Source)">newTemplates(Source xslSource)</A> method to create a Templates object.<BR><BR></LI>
+<LI>For each transformation, use the Templates object <A href="apidocs/javax/xml/transform/Templates.html#newTransformer()">newTransformer()</A> method to create a Transformer, and use that Transformer's 
+<A href="apidocs/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,javax.xml.transform.Result)">transform(Source xmlSource, Result transformResult)</A> method to perform the transformation.</LI>
+</OL>
+<P>For an example, see Examples.exampleUseTemplatesObj() in the <A href="samples.html#trax">trax sample</A>.</P>
+</FONT></TD></TR></TABLE><BR><A name="debugging"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Debugger Interface</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+		<P>Xalan-Java contains a debugger interface in the org.apache.xalan.xslt.trace package:</P> 
+		<UL>
+		  <LI><A href="apidocs/org/apache/xalan/trace/TraceListener.html">TraceListener</A> is an interface that debuggers 
+		  can implement. Or, like the <A href="commandline.html">command-line utility</A>, you can use the <A href="apidocs/org/apache/xalan/trace/PrintTraceListener.html">PrintTraceListener</A> implementation of that interface.
+      <BR><BR></LI>
+      <LI>You can register a TraceListener with the 
+      <A href="apidocs/org/apache/xalan/trace/TraceManager.html">TraceManager</A> associated
+      with the Transformer that will perform a given transformation.<BR><BR></LI>
+		  <LI><A href="apidocs/org/apache/xalan/trace/TracerEvent.html">TracerEvent</A> is an event that is 
+		  passed to the TraceListener.trace() function. It is called before a node is 'executed' in the stylesheet.<BR><BR></LI>
+		  <LI><A href="apidocs/org/apache/xalan/trace/GenerateEvent.html">GenerateEvent</A> is an event that is 
+		  passed to the TraceListener.generated() function. It is called after an event occurs to create something in the result
+      tree.<BR><BR></LI>
+      <LI><A href="apidocs/org/apache/xalan/trace/SelectionEvent.html">SelectionEvent</A> is an event triggered by the
+       selection of a stylesheet node.</LI>
+      <LI><A href="apidocs/org/apache/xalan/trace/ExtensionEvent.html">ExtensionEvent</A> is an event that is
+       passed to the TraceListener.extension() function.  It is called before an extension call is made.<BR><BR></LI>
+		</UL>
+    <P>The <A href="commandline.html">command-line utility</A> uses the debugger interface when you include one or more of the
+     following switches: <CODE><FONT face="courier, monospaced">-TT</FONT></CODE>, <CODE><FONT face="courier, monospaced">-TG</FONT></CODE>, <CODE><FONT face="courier, monospaced">-TS</FONT></CODE>, <CODE><FONT face="courier, monospaced">-TTC</FONT></CODE>.</P>
+    <P>Example:</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>import org.apache.xalan.transformer.TransformerImpl;
+import org.apache.xalan.trace.TraceManager;
+import org.apache.xalan.trace.PrintTraceListener;
+...
+// Set up a PrintTraceListener object to print to a file.
+java.io.FileWriter fw = new java.io.FileWriter(&quot;events.log&quot;);
+java.io.PrintWriter pw = new java.io.PrintWriter(fw);
+PrintTraceListener ptl = new PrintTraceListener(pw);
+
+// Print information as each node is 'executed' in the stylesheet.
+ptl.m_traceElements = true;
+// Print information after each result-tree generation event.
+ptl.m_traceGeneration = true;
+// Print information after each selection event.
+ptl.m_traceSelection = true;
+// Print information whenever a template is invoked.
+ptl.m_traceTemplates = true;
+// Print information whenever an extension is called.
+ptl.m_traceExtension = true;
+
+// Set up the transformation    
+javax.xml.transform.TransformerFactory tFactory = 
+                     javax.xml.transform.TransformerFactory.newInstance();
+javax.xml.transform.Transformer transformer = 
+  tFactory.newTransformer(new javax.xml.transform.stream.StreamSource
+                                                             (&quot;foo.xsl&quot;));
+
+// Cast the Transformer object to TransformerImpl.
+if (transformer instanceof TransformerImpl) {
+  TransformerImpl transformerImpl = (TransformerImpl)transformer;
+  
+  // Register the TraceListener with the TraceManager associated 
+  // with the TransformerImpl.
+  TraceManager trMgr = transformerImpl.getTraceManager();
+  trMgr.addTraceListener(ptl);
+  
+  // Perform the transformation --printing information to
+  // the events log during the process.
+  transformer.transform
+      ( new javax.xml.transform.stream.StreamSource(&quot;foo.xml&quot;), 
+        new javax.xml.transform.stream.StreamResult
+                                    (new java.io.FileWriter(&quot;foo.out&quot;)) );
+}
+// Close the PrintWriter and FileWriter.
+pw.close();
+fw.close();</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>For a sample application that uses this technique, see <A href="samples.html#trace">Trace</A>.</P>
+</FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2006 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

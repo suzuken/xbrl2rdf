@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinancialStatements>
+<InstanceCount>1</InstanceCount>
+<InstanceInformation>
+<InstanceFileName>jpfr-asr-G03727-000-2009-09-02-01-2009-12-01</InstanceFileName>
+<StatementInformation>
+<StatementID>NonconsolidatedBSNonconsolidatedFinancialStatements</StatementID>
+<FileName>0204001</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue>１【財務諸表】</HeaderValue>
+<HeaderValue>%EntityName%</HeaderValue>
+<HeaderValue>（１）【貸借対照表】</HeaderValue>
+<HeaderValue/>
+</Header>
+<ColumnName>
+<ColumnValue>前期</ColumnValue>
+<ColumnValue>(平成21年３月２日現在)</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>当期</ColumnValue>
+<ColumnValue>(平成21年９月２日現在)</ColumnValue>
+</ColumnName>
+<DecimalScale>（単位：円）</DecimalScale>
+<SplitMaxSize>40</SplitMaxSize>
+<SplitMinSize>30</SplitMinSize>
+<SplitDepth>1</SplitDepth>
+</StatementInformation>
+<StatementInformation>
+<StatementID>NonconsolidatedPLNonconsolidatedFinancialStatements</StatementID>
+<FileName>0204002</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue/>
+<HeaderValue/>
+<HeaderValue>（２）【損益及び剰余金計算書】</HeaderValue>
+<HeaderValue/>
+</Header>
+<ColumnName>
+<ColumnValue>前期</ColumnValue>
+<ColumnValue>自　平成20年９月３日</ColumnValue>
+<ColumnValue>至　平成21年３月２日</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>当期</ColumnValue>
+<ColumnValue>自　平成21年３月３日</ColumnValue>
+<ColumnValue>至　平成21年９月２日</ColumnValue>
+</ColumnName>
+<DecimalScale>（単位：円）</DecimalScale>
+<SplitMaxSize>40</SplitMaxSize>
+<SplitMinSize>30</SplitMinSize>
+<SplitDepth>1</SplitDepth>
+</StatementInformation>
+</InstanceInformation>
+</FinancialStatements>

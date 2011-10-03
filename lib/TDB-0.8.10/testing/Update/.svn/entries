@@ -1,0 +1,63 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/TDB-0.8.10/testing/Update
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+create-1.ru
+file
+
+
+
+add
+
+drop-1.ru
+file
+
+
+
+add
+
+update-1.ru
+file
+
+
+
+add
+
+update-2.ru
+file
+
+
+
+add
+
+update-3.ru
+file
+
+
+
+add
+

@@ -1,0 +1,112 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/TDB-0.8.10/testing/Values
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+data-1.ttl
+file
+
+
+
+add
+
+manifest.ttl
+file
+
+
+
+add
+
+value-00.rq
+file
+
+
+
+add
+
+value-01.rq
+file
+
+
+
+add
+
+value-02.rq
+file
+
+
+
+add
+
+value-03.rq
+file
+
+
+
+add
+
+value-04.rq
+file
+
+
+
+add
+
+value-05.rq
+file
+
+
+
+add
+
+value-06.rq
+file
+
+
+
+add
+
+value-07.rq
+file
+
+
+
+add
+
+value-08.rq
+file
+
+
+
+add
+
+value-09.rq
+file
+
+
+
+add
+

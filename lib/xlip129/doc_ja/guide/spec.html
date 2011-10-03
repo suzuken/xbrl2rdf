@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+  <title>
+    XLiP Specifications
+  </title>
+  <style type="text/css">
+<!--
+    h1 {
+      margin-left:  0pt;
+    }
+    h2 {
+      margin-left: 10pt;
+    }
+    div {
+      margin-left: 15pt;
+    }
+    ul,ol {
+      margin-top: 0pt;
+    }
+-->
+  </style>
+</head>
+<body>
+  <h1 align="center">
+    XLiP標準仕様一覧
+  </h1>
+  <h2>
+    XLiPの動作条件
+  </h2>
+  <div>
+    XLiPは、以下の標準仕様を満たすライブラリを必要とします。
+    <ul>
+      <li>
+        <a name="W3C"></a><a href="http://www.w3.org/">The World Wide Web Consortium (W3C)</a> <a href="http://www.w3.org/TR/">Technical Reports</a>
+        <ul>
+          <li>
+            <a name="XML"></a>
+            <a href="http://www.w3.org/TR/2000/REC-xml-20001006">Extensible Markup Language (XML) 1.0 (Second Edition)</a>
+          <li>
+            <a name="NameSpace"></a>
+            <a href="http://www.w3.org/TR/1999/REC-xml-names-19990114/">Namespaces in XML</a>
+          <li>
+            <a name="DOM"></a>
+            <a href="http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/">Document Object Model (DOM) Level 2 Core Specification Version 1.0</a>
+        </ul>
+      <li>
+        <a href="http://jcp.org/jsr/overview/index.en.jsp">Java Specification Requests</a>
+        <ul>
+          <li>
+            <a name="JAXP"></a>
+            <a href="http://java.sun.com/xml/downloads/jaxp.html">Java&#8482; API for XML Processing (JAXP) 1.1</a>
+        </ul>
+    </ul>
+  </div>
+
+  <h2>
+    XLiPが準拠する標準仕様
+  </h2>
+  <div>
+    XLiPは、以下の標準仕様に準拠します。
+    <ul>
+      <li>
+        <a href="http://www.w3.org/">W3C</a>勧告
+        <ul>
+          <li>
+            <a name="XLink"></a>
+            <a href="http://www.w3.org/TR/xlink/">XML Linking Language(XLink) Version1.0</a>
+          <li>
+            <a name="XPath"></a>
+            <a href="http://www.w3.org/TR/xpath">XML Path Language (XPath) Version 1.0</a>
+          <li>
+            <a name="XMLBase"></a>
+            <a href="http://www.w3.org/TR/xmlbase/">XML Base</a>
+        </ul>
+      <li>
+        <a href="http://www.w3.org/">W3C</a>勧告候補
+        <ul>
+          <li>
+            <a name="XPointer"></a>
+            <a href="http://www.w3.org/TR/xptr">XML Pointer Language (XPointer) Version 1.0</a>
+        </ul>
+      <li>
+        その他
+        <ul>
+          <li>
+            上記標準仕様の前提となる各種標準仕様(
+            <a href="http://www.ietf.org/">The Internet Engineering Task Force(IETF)</a>
+              <a href="http://www.ietf.org/rfc.html">Request for Comments</a>,
+            <a href="http://www.w3c.org/TR/">W3C Technical Reports</a>,
+            <a href="http://www.iso.ch/iso/en/ISOOnline.frontpage">ISO</a>等)
+        </ul>
+    </ul>
+  </div>
+  <h2>
+    制限
+  </h2>
+  <div>
+    XLiPには、以下の制限があります。
+    <ol>
+      <li>フラグメント識別子について
+        <div style="margin-left: 0pt;">
+          現在は、xpointerによりDOMツリーの一部(サブツリー)を参照するよう指定された場合でも、サブツリーだけではなく、サブツリーを含むDOMツリー全体を読み込みます。
+        </div>
+    </ol>
+    その他の詳細な制限については、API仕様書を参照してください。
+  </div>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; Fujitsu Limited 2000,2001
+  </div>
+</body>
+</html>

@@ -1,0 +1,805 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>Xalan-Java Samples</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/samples-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+  
+  <A href="whatsnew.html" onMouseOut="rolloverOff('side-whatsnew');" onMouseOver="rolloverOn('side-whatsnew');"><IMG alt="What's New" border="0" height="12" hspace="0" name="side-whatsnew" onLoad="rolloverLoad('side-whatsnew','graphics/whatsnew-label-2.jpg','graphics/whatsnew-label-3.jpg');" src="graphics/whatsnew-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="readme.html" onMouseOut="rolloverOff('side-readme');" onMouseOver="rolloverOn('side-readme');"><IMG alt="Release Notes" border="0" height="12" hspace="0" name="side-readme" onLoad="rolloverLoad('side-readme','graphics/readme-label-2.jpg','graphics/readme-label-3.jpg');" src="graphics/readme-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="overview.html" onMouseOut="rolloverOff('side-overview');" onMouseOver="rolloverOn('side-overview');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-overview" onLoad="rolloverLoad('side-overview','graphics/overview-label-2.jpg','graphics/overview-label-3.jpg');" src="graphics/overview-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="downloads.html" onMouseOut="rolloverOff('side-downloads');" onMouseOver="rolloverOn('side-downloads');"><IMG alt="Download/Build" border="0" height="12" hspace="0" name="side-downloads" onLoad="rolloverLoad('side-downloads','graphics/downloads-label-2.jpg','graphics/downloads-label-3.jpg');" src="graphics/downloads-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <A href="getstarted.html" onMouseOut="rolloverOff('side-getstarted');" onMouseOver="rolloverOn('side-getstarted');"><IMG alt="Getting Started" border="0" height="12" hspace="0" name="side-getstarted" onLoad="rolloverLoad('side-getstarted','graphics/getstarted-label-2.jpg','graphics/getstarted-label-3.jpg');" src="graphics/getstarted-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc_usage.html" onMouseOut="rolloverOff('side-xsltc_usage');" onMouseOver="rolloverOn('side-xsltc_usage');"><IMG alt="Using XSLTC" border="0" height="12" hspace="0" name="side-xsltc_usage" onLoad="rolloverLoad('side-xsltc_usage','graphics/xsltc_usage-label-2.jpg','graphics/xsltc_usage-label-3.jpg');" src="graphics/xsltc_usage-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="faq.html" onMouseOut="rolloverOff('side-faq');" onMouseOver="rolloverOn('side-faq');"><IMG alt="FAQs" border="0" height="12" hspace="0" name="side-faq" onLoad="rolloverLoad('side-faq','graphics/faq-label-2.jpg','graphics/faq-label-3.jpg');" src="graphics/faq-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <IMG alt="Sample Apps" border="0" height="12" hspace="0" src="graphics/samples-label-1.jpg" vspace="0" width="120"><BR>
+  <A href="commandline.html" onMouseOut="rolloverOff('side-commandline');" onMouseOver="rolloverOn('side-commandline');"><IMG alt="Command Line" border="0" height="12" hspace="0" name="side-commandline" onLoad="rolloverLoad('side-commandline','graphics/commandline-label-2.jpg','graphics/commandline-label-3.jpg');" src="graphics/commandline-label-3.jpg" vspace="0" width="120"></A><BR>
+    
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="features.html" onMouseOut="rolloverOff('side-features');" onMouseOver="rolloverOn('side-features');"><IMG alt="Features" border="0" height="12" hspace="0" name="side-features" onLoad="rolloverLoad('side-features','graphics/features-label-2.jpg','graphics/features-label-3.jpg');" src="graphics/features-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="trax.html" onMouseOut="rolloverOff('side-trax');" onMouseOver="rolloverOn('side-trax');"><IMG alt="Transform API" border="0" height="12" hspace="0" name="side-trax" onLoad="rolloverLoad('side-trax','graphics/trax-label-2.jpg','graphics/trax-label-3.jpg');" src="graphics/trax-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xpath_apis.html" onMouseOut="rolloverOff('side-xpath_apis');" onMouseOver="rolloverOn('side-xpath_apis');"><IMG alt="XPath API" border="0" height="12" hspace="0" name="side-xpath_apis" onLoad="rolloverLoad('side-xpath_apis','graphics/xpath_apis-label-2.jpg','graphics/xpath_apis-label-3.jpg');" src="graphics/xpath_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="usagepatterns.html" onMouseOut="rolloverOff('side-usagepatterns');" onMouseOver="rolloverOn('side-usagepatterns');"><IMG alt="Usage Patterns" border="0" height="12" hspace="0" name="side-usagepatterns" onLoad="rolloverLoad('side-usagepatterns','graphics/usagepatterns-label-2.jpg','graphics/usagepatterns-label-3.jpg');" src="graphics/usagepatterns-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="apidocs/index.html" onMouseOut="rolloverOff('side-ext-42');" onMouseOver="rolloverOn('side-ext-42');"><IMG alt="Xalan-J API" border="0" height="12" hspace="0" name="side-ext-42" onLoad="rolloverLoad('side-ext-42','graphics/ext-42-label-2.jpg','graphics/ext-42-label-3.jpg');" src="graphics/ext-42-label-3.jpg" vspace="0" width="120"></A><BR>    
+  <A href="public_apis.html" onMouseOut="rolloverOff('side-public_apis');" onMouseOver="rolloverOn('side-public_apis');"><IMG alt="Public APIs" border="0" height="12" hspace="0" name="side-public_apis" onLoad="rolloverLoad('side-public_apis','graphics/public_apis-label-2.jpg','graphics/public_apis-label-3.jpg');" src="graphics/public_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="dtm.html" onMouseOut="rolloverOff('side-dtm');" onMouseOver="rolloverOn('side-dtm');"><IMG alt="DTM" border="0" height="12" hspace="0" name="side-dtm" onLoad="rolloverLoad('side-dtm','graphics/dtm-label-2.jpg','graphics/dtm-label-3.jpg');" src="graphics/dtm-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="extensions.html" onMouseOut="rolloverOff('side-extensions');" onMouseOver="rolloverOn('side-extensions');"><IMG alt="Extensions" border="0" height="12" hspace="0" name="side-extensions" onLoad="rolloverLoad('side-extensions','graphics/extensions-label-2.jpg','graphics/extensions-label-3.jpg');" src="graphics/extensions-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensionslib.html" onMouseOut="rolloverOff('side-extensionslib');" onMouseOver="rolloverOn('side-extensionslib');"><IMG alt="Extensions Library" border="0" height="12" hspace="0" name="side-extensionslib" onLoad="rolloverLoad('side-extensionslib','graphics/extensionslib-label-2.jpg','graphics/extensionslib-label-3.jpg');" src="graphics/extensionslib-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensions_xsltc.html" onMouseOut="rolloverOff('side-extensions_xsltc');" onMouseOver="rolloverOn('side-extensions_xsltc');"><IMG alt="XSLTC Exts" border="0" height="12" hspace="0" name="side-extensions_xsltc" onLoad="rolloverLoad('side-extensions_xsltc','graphics/extensions_xsltc-label-2.jpg','graphics/extensions_xsltc-label-3.jpg');" src="graphics/extensions_xsltc-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="design/design2_0_0.html" onMouseOut="rolloverOff('side-ext-58');" onMouseOver="rolloverOn('side-ext-58');"><IMG alt="Xalan 2 Design" border="0" height="12" hspace="0" name="side-ext-58" onLoad="rolloverLoad('side-ext-58','graphics/ext-58-label-2.jpg','graphics/ext-58-label-3.jpg');" src="graphics/ext-58-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc/index.html" onMouseOut="rolloverOff('side-ext-60');" onMouseOver="rolloverOn('side-ext-60');"><IMG alt="XSLTC Design" border="0" height="12" hspace="0" name="side-ext-60" onLoad="rolloverLoad('side-ext-60','graphics/ext-60-label-2.jpg','graphics/ext-60-label-3.jpg');" src="graphics/ext-60-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="builds.html" onMouseOut="rolloverOff('side-builds');" onMouseOver="rolloverOn('side-builds');"><IMG alt="Building a release" border="0" height="12" hspace="0" name="side-builds" onLoad="rolloverLoad('side-builds','graphics/builds-label-2.jpg','graphics/builds-label-3.jpg');" src="graphics/builds-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="http://xml.apache.org/xalan-j/test/overview.html" onMouseOut="rolloverOff('side-ext-66');" onMouseOver="rolloverOn('side-ext-66');"><IMG alt="Testing" border="0" height="12" hspace="0" name="side-ext-66" onLoad="rolloverLoad('side-ext-66','graphics/ext-66-label-2.jpg','graphics/ext-66-label-3.jpg');" src="graphics/ext-66-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="bugreporting.html" onMouseOut="rolloverOff('side-bugreporting');" onMouseOver="rolloverOn('side-bugreporting');"><IMG alt="Bug Reporting" border="0" height="12" hspace="0" name="side-bugreporting" onLoad="rolloverLoad('side-bugreporting','graphics/bugreporting-label-2.jpg','graphics/bugreporting-label-3.jpg');" src="graphics/bugreporting-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="contact_us.html" onMouseOut="rolloverOff('side-contact_us');" onMouseOver="rolloverOn('side-contact_us');"><IMG alt="Contact us" border="0" height="12" hspace="0" name="side-contact_us" onLoad="rolloverLoad('side-contact_us','graphics/contact_us-label-2.jpg','graphics/contact_us-label-3.jpg');" src="graphics/contact_us-label-3.jpg" vspace="0" width="120"></A><BR>  
+  
+  
+  
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+<P>Xalan-Java Interpretive samples:</P>
+<UL>
+<LI><A href="#simpletransform">SimpleTransform</A></LI>
+<LI><A href="#usestylesheetpi">UseStylesheetPI</A></LI>
+<LI><A href="#usestylesheetparam">UseStylesheetParam</A></LI>
+<LI><A href="#sax2sax">SAX2SAX</A></LI>
+<LI><A href="#dom2dom">DOM2DOM</A></LI>
+<LI><A href="#pipe">Pipe</A></LI>
+<LI><A href="#usexmlfilters">UseXMLFilters</A></LI>
+<LI><A href="#appletxmltohtml">AppletXMLtoHTML</A></LI>
+<LI><A href="#extensions">Extensions</A></LI>
+<LI><A href="#trace">Trace</A></LI>
+<LI><A href="#validate">Validate</A></LI>
+<LI><A href="#trax">trax (JAXP transform samples)</A></LI>
+<LI><A href="#transformthread">TransformThread</A></LI>
+<LI><A href="#applyxpath">ApplyXPath</A></LI>
+<LI><A href="#applyxpathdom">ApplyXPathDOM</A></LI>
+<LI><A href="#applyxpathjaxp">ApplyXPathJAXP</A></LI>
+<LI><A href="#xpathresolver">XPathResolver</A></LI>
+<LI><A href="#extensionresolver">ExtensionFunctionResolver</A></LI>
+</UL>
+<P>Xalan-Java Interpretive servlet samples:</P>
+<UL>
+<LI><A href="#servlet">servlet</A></LI>
+</UL>
+<P>Xalan-Java Compiled samples:</P>
+<UL>
+<LI><A href="#translets">translets</A></LI>
+</UL>  
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Samples to help you get started</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>Each of the subdirectories in the Xalan-Java java/samples directory
+   contains the source files for one or more sample applications.  The class
+   files for the samples are in the following jar files:</P>
+<TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+<TR>
+  <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>JAR file</B>&nbsp;
+      </FONT></TD>
+  <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Content</B>&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalansamples.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Everything except the Xalan-Java Interpretive servlet sample and some
+      XSLTC samples&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xalanservlet.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Xalan-Java Interpretive servlet sample&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xsltcapplet.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">XSLTC applet sample&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xsltcbrazil.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">XSLTC Brazil server sample&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xsltcejb.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">XSLTC EJB sample&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xsltcservlet.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">XSLTC servlet sample&nbsp;
+      </FONT></TD>
+</TR>
+</TABLE>
+<P>With most of the samples, you can use the following procedure:</P>
+ <OL>
+   <LI>Be sure <CODE><FONT face="courier, monospaced">xalan.jar</FONT></CODE>, <CODE><FONT face="courier, monospaced">serializer.jar</FONT></CODE>, <CODE><FONT face="courier, monospaced">xml-apis.jar</FONT></CODE>, the appropriate samples JAR file, 
+       and <CODE><FONT face="courier, monospaced">xercesImpl.jar</FONT></CODE> are on the system class path. For the extension examples, <CODE><FONT face="courier, monospaced">bsf.jar</FONT></CODE> 
+       and (for the JavaScript extensions) <CODE><FONT face="courier, monospaced">js.jar</FONT></CODE> must also be on the class path.</LI>
+   <LI>Be sure the java executable is on your path.</LI>
+   <LI>Go to the samples subdirectory containing the sample (use the DOS shell if you are running Windows).</LI>
+   <LI>Run the sample from the command line (as indicated below).</LI>
+   <LI>Examine the application source files. You may also want to modify the source files. Remember that if you
+       modify a java file, you must recompile the class and place it on the classpath before you can run the
+       modified application.</LI>
+ </OL>      
+<P>The basic command line for running most of the samples is </P> 
+    <P><CODE><FONT face="courier, monospaced">java <I>classname args</I></FONT></CODE></P>
+    <P>where <I>classname</I> is the sample class and <I>args</I> are the arguments, if any. As described in
+     the following sections, some samples take no arguments. The UseStylesheetParam sample takes an
+     additional argument. Several samples in extensions use the Xalan-Java 
+     <A href="commandline.html">command-line utility</A>, so they take arguments for the XML source
+     file and the XSL stylesheet.</P>
+  </FONT></TD></TR></TABLE><BR>
+   
+   <A name="simpletransform"><!--anchor--></A>
+   <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>SimpleTransform</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+   <P>What it does: The SimpleTransform class uses the birds.xsl stylesheet to transform birds.xml, and prints the
+   output to birds.out.</P>
+   <P>You can run it from the SimpleTransform subdirectory with</P>
+   <P><CODE><FONT face="courier, monospaced">java SimpleTransform</FONT></CODE></P>
+   </FONT></TD></TR></TABLE><BR>
+   
+   <A name="usestylesheetpi"><!--anchor--></A>
+   <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>UseStylesheetPI</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+   <P>What it does: The UseStylesheetPI class uses the stylesheet processing instruction in the XML source document to determine
+   which stylesheet to use to perform the transformation.</P>
+   <P>You can run it from the UseStylesheetPI subdirectory with</P>
+   <P><CODE><FONT face="courier, monospaced">java UseStylesheetPI</FONT></CODE></P>
+   <P>For more information, see <A href="usagepatterns.html#embed">Working with embedded stylesheets</A>.</P>
+   </FONT></TD></TR></TABLE><BR>
+   
+   <A name="usestylesheetparam"><!--anchor--></A>
+   <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>UseStylesheetParam</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+   <P>What it does: The UseStyleSheetParam class uses foo.xsl and a stylesheet parameter to transform foo.xml,
+   and prints the output to System.out. The stylesheet parameter appears as a text node in the output.</P>
+   <P>Run this sample from the UseStylesheetParam subdirectory with</P> 
+   <P><CODE><FONT face="courier, monospaced">java UseStylesheetParam <I>param</I></FONT></CODE></P>
+   <P>where <I>param</I> is the stylesheet parameter value (a string of your choice).</P>  
+   </FONT></TD></TR></TABLE><BR>
+   
+   <A name="sax2sax"><!--anchor--></A>
+   <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>SAX2SAX</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+   <P>What it does: Explicitly sets the SAX XMLReader and SAX ContentHandler for processing the stylesheet (birds.xsl), processing the XML input (birds.xml), and producing the output (birds.out).</P>
+   <P>Run this sample from the SAX2SAX subdirectory with</P>
+   <P><CODE><FONT face="courier, monospaced">java SAX2SAX</FONT></CODE></P>
+   </FONT></TD></TR></TABLE><BR>
+   
+   <A name="dom2dom"><!--anchor--></A>
+   <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>DOM2DOM</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+   <P>What it does: the DOM2DOM class uses the birds.xsl stylesheet to transform a DOM Document generated from birds.xml,
+   produces an output DOM, and traverses the DOM, printing the traversal to System.out. In contrast to SimpleTransform,
+   DOM2DOM illustrates the procedure for processing an input DOM and creating an output DOM that is available for
+   further processing.</P>
+   <P>You can run it from the DOM2DOM subdirectory with</P>
+   <P><CODE><FONT face="courier, monospaced">java DOM2DOM</FONT></CODE></P>
+   </FONT></TD></TR></TABLE><BR>
+   
+   <A name="pipe"><!--anchor--></A>
+   <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Pipe</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+   <P>What it does: Pipes the output from one transformation to a second transformation, then from the second
+    transformation to the third transformation. Transformer1 is the ContentHandler for the XMLReader (which parses the
+    input document). Transformer2 provides the ContentHandler for Transformer1, and Transformer3 for Transformer2.</P>
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Pipe and UseXMLFilters illustrate two strategies for using the output of one transformation as the input for
+    another transformation. The Pipe sample incorporates a &quot;push&quot; model -- Transformer1 &quot;pushes&quot; its output to
+    Transformer2, and so on -- whereas in the UseXMLFilters sample, Transformer3 &quot;pulls&quot; its input from Transformer2,
+    and so on.</I></FONT></TD></TR></TABLE>
+    <P>Run this sample from the Pipe subdirectory with</P> 
+    <P><CODE><FONT face="courier, monospaced">java Pipe</FONT></CODE></P>
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="usexmlfilters"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>UseXMLFilters</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <P>What it does: Chains together the same transformations as the preceding Pipe sample. Using each Transformer
+    object as an extension of the SAX XMLFilter interface, sets the XMLReader as the parent of filter1,
+    filter1 as the parent of filter2, and filter2 as the parent of of filter3.</P>
+    <P><IMG align="right" alt="xmlfilters.gif" border="0" hspace="4" src="images/xmlfilters.gif" vspace="4"><BR clear="all"></P>
+    <P>Run this sample from the UseXMLFilters subdirectory with</P>
+    <P><CODE><FONT face="courier, monospaced">java UseXMLFilters</FONT></CODE></P>
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="appletxmltohtml"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>AppletXMLtoHTML</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <P>This applet uses a stylesheet to transform an XML document into HTML. It displays the XML document, the
+     stylesheet, and the HTML output.</P>
+    <P>How to run it: Open appletXMLtoHTML.html in the Internet Explorer 5 browser.</P>
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>For information about running Xalan-Java applets in Netscape Communicator, see <A href="usagepatterns.html#netscape">Problems
+    with Netscape</A>.<BR><BR>
+    This applet looks for <CODE><FONT face="courier, monospaced">xalan.jar</FONT></CODE> and <CODE><FONT face="courier, monospaced">serializer.jar</FONT></CODE> in the build directory, or the top level directory, and <CODE><FONT face="courier, monospaced">xml-apis.jar</FONT></CODE> and 
+    <CODE><FONT face="courier, monospaced">xercesImpl.jar</FONT></CODE> in the lib subdirectory. If you have placed these JAR files elsewhere, adjust the applet archive setting in 
+    client.html accordingly.</I></FONT></TD></TR></TABLE>
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="servlet"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>servlet</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <P>For a general introduction, see <A href="usagepatterns.html#servlet">Using Xalan-Java in a servlet</A>.</P>
+    <P>The servlet subdirectory contains four sample servlets and one JSP that use Xalan-Java to perform transformations. The sample 
+    code is compiled and packed in xalanservlet.war. To run these samples, you must place 
+    xalanservlet.war on a web server with a servlet engine. For example, using <A href="http://tomcat.apache.org/index.html">jakarta-tomcat 4.1.*</A>. 
+    Copy the xalanservlet.war to %Tomcat_Home%/webapps. For more details about deploying
+    servlets on Tomcat, please refer to <A href="http://tomcat.apache.org/tomcat-4.1-doc/appdev/deployment.html">Deployment Organization</A>.</P>
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Dependency on Tomcat version. If encountering &quot;java.lang.VerifyError: Cannot inherit from final class&quot; error, 
+    replace <CODE><FONT face="courier, monospaced">xercesImpl.jar</FONT></CODE> under %Tomcat_Home%/common/endorsed with the one included with Xalan-Java .</I></FONT></TD></TR></TABLE>
+    <P><A href="#simplexsltservlet">servlet.SimpleXSLTServlet</A> applies a particular stylesheet to a particular 
+    XML document.</P> 
+    <P><A href="#usestylesheetparamservlet">servlet.UseStylesheetParamServlet</A> sets a stylesheet parameter 
+    (the parameter name is hardwired into the servlet), and requires the user to supply parameters for the 
+    XML document and XSL stylesheet.</P>
+    <P><A href="#jspsample">jspSample.jsp</A> is a Java ServerPage that sets a stylesheet parameter and applies the
+     stylesheet to the XML document.</P>
+    <P><A href="#xsltservletwithparams">servlet.XSLTServletWithParams</A> accepts parameters for the XML document, 
+    the XSL stylesheet, and any number of stylesheet parameters.</P>
+    <P><A href="#applyxslt">servlet.ApplyXSLT</A> (and associated classes) is closer to a production level servlet. It accepts parameters, provides a 
+    listener for capturing and reporting debugger messages, and supports  use of a property file to determine which 
+    stylesheet to apply based on the identity of the client browser/device.</P>
+    <A name="simplexsltservlet"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>servlet.SimpleXSLTServlet</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: servlet.SimpleXSLTServlet applies the birds.xsl stylesheet to birds.xml 
+    and returns the transformation result to the HTTP client.</P>
+    <P>To run this servlet: set up an HTML page to call the servlet as
+    follows:</P>
+    <DL><DT>http://localhost:port/xalanservlet/SimpleXSLTServlet</DT></DL>
+    </FONT></TD></TR></TABLE><BR><A name="usestylesheetparamservlet"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>servlet.UseStylesheetParamServlet</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Paul Campbell &lt;seapwc@halcyon.com&gt; wrote this servlet and the following explanatory text.
+    Thank you, Paul!</I></FONT></TD></TR></TABLE>
+    <P>What it does: The client (perhaps an HTML form) specifies an XML document, a stylesheet, and a value to be passed
+    to the stylesheet for a stylesheet parameter named &quot;param1&quot;. The servlet performs the transformation and returns
+    the output to the client. The client must specify which stylesheet (containing a &quot;param1&quot; stylesheet parameter&quot;) 
+    and XML file are to be used or use sample files fooparam.xml and fooparam.xsl.</P>
+    <P>How to run it: set up an HTML client to call the servlet with arguments along the lines of</P>
+    <DL><DT>http://localhost:port/xalanservlet/UseStylesheetParamServlet?
+    XML=fooparam.xml&amp;XSL=fooparam.xsl&amp;PVAL=GoodBye</DT></DL>
+    <P>In the doGet() method, the servlet obtains the PVAL value &quot;GoodBye&quot; from the servlet request and passes it to the 
+    stylesheet as the paramValue argument in a Transformer setParameter() call:</P>
+    <P><CODE><FONT face="courier, monospaced">String paramValue = httpServletRequest.getParameter(&quot;PVAL&quot;);</FONT></CODE><BR>
+    <CODE><FONT face="courier, monospaced">...</FONT></CODE><BR>
+    <CODE><FONT face="courier, monospaced">transformer.setParameter(&quot;param1&quot;, paramValue);</FONT></CODE></P>
+    <P>The result is returned to the client:</P>
+    <P><CODE><FONT face="courier, monospaced">&lt;html&gt;&lt;body&gt;&lt;p&gt;GoodBye&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</FONT></CODE></P>
+    </FONT></TD></TR></TABLE><BR><A name="jspsample"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>jspSample.jsp</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Paul Campbell &lt;seapwc@halcyon.com&gt; wrote this Java Server Page.</I></FONT></TD></TR></TABLE>
+    <P>This Java Server Page performs essentially the same operation as 
+    <A href="#usestylesheetparamservlet">servlet.UseStylesheetParamServlet</A>. It applies a stylesheet parameter 
+    to a stylesheet (fooparam.xsl), applies the stylesheet to an XML source document (fooparam.xml), and returns the
+    result.</P>
+    <P>Call JSP as follows:</P>
+    <DL><DT>http://localhost:port/xalanservlet/jspSample.jsp?
+    XML=fooparam.xml&amp;XSL=fooparam.xsl&amp;PMA=GoodBye</DT></DL>
+    <P>The JSP obtains the PMA value &quot;GoodBye&quot; from the http request and passes it to the stylesheet as the 
+    paramValue argument in a Transformer setParameter() call.</P>    
+    </FONT></TD></TR></TABLE><BR><A name="xsltservletwithparams"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>servlet.XSLTServletWithParams</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: servlet.XSLTServletWithParams takes parameters in the request -- a URL parameter for
+    the XML input document URL and an xslURL parameter for the stylesheet URL.</P>
+    <P>To use XSLTServletWithParams to perform the same transformation as SimplestServlet: 
+    use birds.xsl and birds.xml as examples. Set up an HTML page to call the servlet as follows:</P>
+    <DL><DT>http://localhost:port/xalanservlet/XSLTServletWithParams?URL=birds.xml&amp;
+    xslURL=birds.xsl</DT></DL>
+    <P>If the XML document contains an associated stylesheet (a stylesheet Processing Instruction) that you want to use, simply omit the
+    xslURL parameter.</P>
+    <P>If the stylesheet takes stylesheet parameters, you can include them in the URL. For example to set the param1
+    stylesheet parameter to foo, include param1=foo in the URL.</P>
+    </FONT></TD></TR></TABLE><BR><A name="applyxslt"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>servlet.ApplyXSLT</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: The client (which you must set up) specifies an XML document and a stylesheet. The servlet
+    performs the transformation and returns the output to the client. You can use media.properties to specify 
+    which stylesheet is to be used depending on the client browser/device.</P>
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The source files for this servlet, including ApplyXSLT.java, ApplyXSLTProperties.java, DefaultApplyXSLTProperties.java,
+    ApplyXSLTListener.java, ApplyXSLTException.java. booklist1.xsl, booklist2.xsl and catalog.xml,
+    are provided for testing.</I></FONT></TD></TR></TABLE>
+    <P>To run the servlet:  set system property server.root=server root. Set up an HTML page to call
+    servlet.ApplyXSLT with arguments as illustrated below.</P>
+    <P>The files catalog.xml,  booklist1.xsl and booklist2.xsl are used in the following example.
+    In the deployment descriptor, booklist1.xsl is set as the default xsl file. If you create these 
+    files yourself, make sure that you set the output method to &quot;xml&quot; in the stylesheet.</P>
+    <P>Examples:</P>
+    <DL>
+    <DT>http://localhost:port/xalanservlet/ApplyXSLT?URL=/xalanservlet/catalog.xml&amp;xslURL=
+    /xalanservlet/booklist2.xsl</DT>
+    <DD>...applies the booklist2.xsl stylesheet to the catalog.xml data. Both files are<BR>
+    served from the Web server's HTTP document root.<BR><BR></DD>
+    <DT>http://localhost:port/xalanservlet/ApplyXSLT?URL=/xalanservlet/catalog.xml&amp;xslURL=
+    /xalanservlet/booklist2.xsl&amp;debug=true</DT>
+    <DD>...ensures that XML and XSL processor messages are returned in the event of problems
+    applying booklist2.xsl to catalog.xml<BR><BR></DD>
+    <DT>http://localhost:port/xalanservlet/ApplyXSLT/xalanservlet/catalog.xml?xslURL=/xalanservlet/booklist2.xsl</DT>
+    <DD>...applies the booklist2.xsl stylesheet to the catalog.xml data, just like the first example.
+    This is an alternative way of specifying the XML XSLTInputSource by utilizing the HTTP request's path
+    information.<BR><BR></DD>
+    <DT>http://localhost:port/xalanservlet/ApplyXSLT/xalanservlet/catalog.xml</DT>
+    <DD>...examines catalog.xml for an associated XSL stylesheet booklist1.xsl (a stylesheet Processing Instruction). If multiple XSLs are associated with the data, the stylesheet whose media attribute maps to your browser type will be chosen.  If no mapping is successful, the primary associated stylesheet is used.<BR><BR></DD>
+    </DL>     
+    </FONT></TD></TR></TABLE><BR>
+    </FONT></TD></TR></TABLE><BR>
+   
+    <A name="extensions"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Extensions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <P>For an introduction to the creation and use of extension elements and extension functions, and
+    for information about the extensions library distributed with the Xalan-Java Interpretive processor, 
+    see <A href="extensions.html">Extensions</A>. Extensions are also supported for the Xalan-Java 
+    Compiling processor (XSLTC), however no samples exist at this time.  See 
+    <A href="extensions_xsltc.html">Extensions for XSLTC</A>.</P>
+    <UL>
+      <LI><A href="#ext1">1-redir</A></LI>
+      <LI><A href="#ext2">2-basicJscript</A></LI>
+      <LI><A href="#ext3">3-java-namespace</A></LI>
+      <LI><A href="#ext4">4-numlistJava</A></LI>
+      <LI><A href="#ext5">5-numlistJScript</A></LI>
+      <LI><A href="#sql">SQL library extensions</A></LI>
+    </UL>
+    <P>The extensions subdirectory contains six samples with Xalan-Java Interpretive extensions. Two of the samples use
+     extensions implemented in JavaScript, and four of the samples use extensions implemented in Java.</P>
+    <P>To run these examples, you must place <CODE><FONT face="courier, monospaced">bsf.jar</FONT></CODE> and <CODE><FONT face="courier, monospaced">js.jar</FONT></CODE> (version 1.5, available from 
+     <A href="http://www.mozilla.org/rhino">http://www.mozilla.org/rhino</A>) on the classpath. 
+     You do not need <CODE><FONT face="courier, monospaced">js.jar</FONT></CODE> on the classpath for the samples that use Java extensions. <A href="faq.html">
+     Problems related to JDK 1.4 or higher</A>.</P>
+    <P>Use java.org.apache.xalan.xslt.Process, the Xalan-Java command-line utility, to run most of these samples from
+     the <A href="commandline.html">command line</A>. The command line must include an -in flag with the 
+     XML source and an -xsl flag with the XSL stylesheet. If you want the output to be written to a file, rather
+     than to the screen, add an -out flag with the output file name.</P>
+    <P>Run these samples from the extensions directory as follows (each of the following is a single command
+     line):</P> 
+
+    <A name="ext1"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>1-redir</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: Uses the Redirect extension elements shipped with Xalan-Java to direct output to two output
+     files.</P>
+    <P>Run this sample from the extensions subdirectory with</P> 
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xslt.Process -in 1-redir.xml</FONT></CODE><BR>
+     &nbsp;&nbsp;<CODE><FONT face="courier, monospaced">-xsl 1-redir.xsl</FONT></CODE></P>
+    <P>The standard (non-redirected) output is written to the screen. The redirected output is written to 1-redir-out, or
+     whatever filename you assign to the doc/foo @file attribute in 1-redir.xml. The stylesheet gets the file name for
+     redirected output from the XML input file.</P>
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="ext2"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>2-basicJscript</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: Uses an extension element and extension function implemented in JavaScript to compute a
+      deadline for responding to a customer inquiry.</P>
+     <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I><CODE><FONT face="courier, monospaced">js.jar</FONT></CODE> must be on the classpath.</I></FONT></TD></TR></TABLE>
+    <P>Run this sample from the extensions subdirectory with</P>
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xslt.Process -in 2-basicJscript.xml</FONT></CODE>
+     <BR>&nbsp;&nbsp;<CODE><FONT face="courier, monospaced">-xsl 2-basicJscript.xsl</FONT></CODE></P>     
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="ext3"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>3-java-namespace</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: Uses extension functions to format dates. This sample illustrates use of the predefined java
+     extension namespace to provide ready access to extensions implemented in Java.</P>
+    <P>Run this sample from the extensions subdirectory with</P> 
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xslt.Process -in 3-java-namespace.xml</FONT></CODE>
+     <BR>&nbsp;&nbsp;<CODE><FONT face="courier, monospaced">-xsl 3-java-namespace.xsl</FONT></CODE></P>    
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="ext4"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>4-numlistJava</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: Uses a Java extension to transform a set of name elements into a numbered and alphabetized
+     list.</P>
+    <P>Run this sample from the extensions subdirectory with</P> 
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xslt.Process -in numlist.xml</FONT></CODE> 
+     <BR>&nbsp;&nbsp;<CODE><FONT face="courier, monospaced">-xsl 4-numlistJava.xsl</FONT></CODE></P>    
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="ext5"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>5-numlistJscript</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>What it does: Uses a JavaScript  extension to transform a set of name elements into a numbered and
+     alphabetized list. This sample performs the same operations as the preceding Java extension.</P>
+     <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I><CODE><FONT face="courier, monospaced">js.jar</FONT></CODE> must be on the classpath.</I></FONT></TD></TR></TABLE>
+    <P>Run this sample from the extensions subdirectory with</P>
+    <P><CODE><FONT face="courier, monospaced"> java org.apache.xalan.xslt.Process -in numlist.xml</FONT></CODE>
+     <BR>&nbsp;&nbsp;<CODE><FONT face="courier, monospaced">-xsl 5-numlistJscript.xsl</FONT></CODE></P>
+    </FONT></TD></TR></TABLE><BR>
+    </FONT></TD></TR></TABLE><BR>
+   
+    <A name="sql"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>SQL library extensions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <P>The <A href="extensionslib.html#sql">SQL library </A> 
+     extension enables you to execute SQL queries from within a stylesheet, 
+     and to incorporate query result sets in the XML output. 
+     To use the SQL library, you need a JDBC driver, the underlying DBMS, 
+     and a database.</P>
+    <P>Our samples use Apache Derby DBMS, but the SQL Extensions and sample code
+     can be configured to query data from any DBMS that can be accessed through
+     JDBC.</P>
+
+    <A name="dbsetup"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Setting up the SQL extension samples</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">   
+    <P>To run the SQL library extension samples, do the following:</P>
+    <P>The SQL Extension examples require the Apache Derby jars.
+     The Derby jars are available from <A href="http://db.apache.org/derby/">
+     http://db.apache.org/derby/</A>.</P>
+    <P>The sample batch/script files are configured to look for the 
+     derby jars in the xml-xalan/java/samples/extensions/sql directory by default.</P>
+    <P>If you already have derby installed and want to use that implementation.
+      You can do one of the following.</P>
+    <OL>
+      <LI>set the environment variable DERBY_JAR_DIR to point to the location of <CODE><FONT face="courier, monospaced">derby.jar</FONT></CODE> and <CODE><FONT face="courier, monospaced">derbytools.jar</FONT></CODE></LI>
+      <LI>have the <CODE><FONT face="courier, monospaced">derby.jar</FONT></CODE> and <CODE><FONT face="courier, monospaced">derbytools.jar</FONT></CODE> in your classpath.</LI>
+    </OL>
+    <P>First create the sample database using Derby.  To do this, </P>
+    <UL><LI>on Windows, execute the command<BR> <CODE><FONT face="courier, monospaced">runDerby.bat createdb.sql</FONT></CODE></LI>
+        <LI>on Unix, execute the command<BR> <CODE><FONT face="courier, monospaced">sh runDerby.sh createdb.sql</FONT></CODE></LI>
+    </UL>
+    <P>You can use the Derby tools to examine the raw database. To do this, </P>
+      <UL>
+      <LI>on Windows execute the command<BR>
+      <CODE><FONT face="courier, monospaced">runDerby.bat</FONT></CODE><BR>
+      At the lj&gt; prompt type the following commands:<BR>
+      <CODE><FONT face="courier, monospaced">lj&gt; connect 'sampleDB';</FONT></CODE><BR>
+      <CODE><FONT face="courier, monospaced">lj&gt; select * from import1;</FONT></CODE><BR><BR>
+      <CODE><FONT face="courier, monospaced">To quit the lj session type</FONT></CODE><BR>
+      <CODE><FONT face="courier, monospaced">lj&gt; quit;</FONT></CODE><BR>
+      <BR></LI>
+      <LI>To Start lj on Unix type<BR>
+      <CODE><FONT face="courier, monospaced">sh runDerby.sh</FONT></CODE><BR><BR></LI>
+      </UL>
+    <P>Once the sample database has been created, you can run the sample
+      stylesheets using the runXalan script.</P>
+    </FONT></TD></TR></TABLE><BR>
+
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>SQL Library samples</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">   
+    <UL>
+    <LI><A href="#Dump-SQL">The Details - Dump SQL</A></LI>
+    <LI><A href="#basic-conn">Basic Connections</A></LI>
+    <LI><A href="#ext-conn">ExternalConnection</A></LI>
+    <LI><A href="#pquery">Parameterized query</A></LI>
+    <LI><A href="#streamable">Streamable</A></LI>
+    <LI><A href="#showerror">Show-error</A></LI>
+    </UL>
+    </FONT></TD></TR></TABLE><BR>
+
+    <A name="Dump-SQL"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Dump-SQL</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The Dump SQL example is used to show what data is available to the XSLT process.</P>
+    <P>To run the DumpSQL Example, execute the following command<BR>
+         <CODE><FONT face="courier, monospaced">runXalan.bat -XSL basic-connection/DumpSQL.xsl</FONT></CODE></P>
+    <P>Dump SQL should produce the following output:</P>
+    <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    &lt;sql&gt;
+      &lt;metadata&gt;
+        &lt;column-header searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;true&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;false&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;10&quot; 
+    column-typename=&quot;INTEGER&quot; column-type=&quot;4&quot; column-display-size=&quot;11&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;PRODUCTID&quot; column-name=&quot;PRODUCTID&quot;&gt;&lt;/column-header&gt;
+        &lt;column-header searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;false&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;true&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;40&quot; 
+    column-typename=&quot;VARCHAR&quot; column-type=&quot;12&quot; column-display-size=&quot;40&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;NAME&quot; column-name=&quot;NAME&quot;&gt;&lt;/column-header&gt;
+      &lt;/metadata&gt;
+      &lt;row-set&gt;
+       &lt;row&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;true&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;false&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;10&quot; 
+    column-typename=&quot;INTEGER&quot; column-type=&quot;4&quot; column-display-size=&quot;11&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;PRODUCTID&quot; column-name=&quot;PRODUCTID&quot;&gt;1&lt;/col&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;false&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;true&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;40&quot; 
+    column-typename=&quot;VARCHAR&quot; column-type=&quot;12&quot; column-display-size=&quot;40&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;NAME&quot; column-name=&quot;NAME&quot;&gt;toothpaste&lt;/col&gt;
+       &lt;/row&gt;
+       &lt;row&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;true&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;false&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;10&quot; 
+    column-typename=&quot;INTEGER&quot; column-type=&quot;4&quot; column-display-size=&quot;11&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;PRODUCTID&quot; column-name=&quot;PRODUCTID&quot;&gt;2&lt;/col&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;false&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;true&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;40&quot; 
+    column-typename=&quot;VARCHAR&quot; column-type=&quot;12&quot; column-display-size=&quot;40&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;NAME&quot; column-name=&quot;NAME&quot;&gt;milk&lt;/col&gt;
+       &lt;/row&gt;
+       &lt;row&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;true&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;false&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;10&quot; 
+    column-typename=&quot;INTEGER&quot; column-type=&quot;4&quot; column-display-size=&quot;11&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;PRODUCTID&quot; column-name=&quot;PRODUCTID&quot;&gt;3&lt;/col&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;false&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;true&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;40&quot; 
+    column-typename=&quot;VARCHAR&quot; column-type=&quot;12&quot; column-display-size=&quot;40&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;NAME&quot; column-name=&quot;NAME&quot;&gt;bread&lt;/col&gt;
+       &lt;/row&gt;
+       &lt;row&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;true&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;false&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;10&quot; 
+    column-typename=&quot;INTEGER&quot; column-type=&quot;4&quot; column-display-size=&quot;11&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;PRODUCTID&quot; column-name=&quot;PRODUCTID&quot;&gt;4&lt;/col&gt;
+        &lt;col searchable=&quot;true&quot; writable=&quot;false&quot; signed=&quot;false&quot; 
+    nullable=&quot;true&quot; definitely-writable=&quot;false&quot; case-sensitive=&quot;true&quot; 
+    table-name=&quot;IMPORT1&quot; schema-name=&quot;&quot; scale=&quot;0&quot; precision=&quot;40&quot; 
+    column-typename=&quot;VARCHAR&quot; column-type=&quot;12&quot; column-display-size=&quot;40&quot; 
+    catalogue-name=&quot;&quot; column-label=&quot;NAME&quot; column-name=&quot;NAME&quot;&gt;cereal&lt;/col&gt;
+       &lt;/row&gt;
+      &lt;/row-set&gt;
+    &lt;/sql&gt;
+    </PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+    
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="basic-conn"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Basic-Connection</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P><B>Contributed by John Gentilin (johnglinux@eyecatching.com).</B></P>
+    <P>What it does: illustrates two strategies for connecting to a database, executing a 
+      static query, and returning the query result.</P>
+    <P>The first strategy is to get connection information along with the static query from 
+      the stylesheet (dbtest.xsl)\ in the form of stylesheet parameters.</P>
+    <P>The second strategy is to get connection information from a nodeset in an XML source 
+      document (dbInfo.xml).</P>
+    <P><A href="#dbsetup">Set up the database</A>, and run this sample from the 
+      extensions/sql/ directory.</P>
+    <P>1. To get connection information from the stylesheet:</P>
+     <CODE><FONT face="courier, monospaced">runXalan -xsl basic-connection/dbtest.xsl -out import1.html</FONT></CODE>
+    <P>2. To get connection information in the form of a nodeset from the XML source document:</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in dbinfo.xml -xsl dbtest-cinfo.xsl -out import1.html</FONT></CODE>
+    </FONT></TD></TR></TABLE><BR>
+    
+    <A name="ext-conn"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>ExternalConnection</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P><B>Contributed by John Gentilin (johnglinux@eyecatching.com).</B></P>
+    <P>What it does: The ExternalConnection classes uses the default implementation of the 
+     ConnectionPool interface to create a pool of connections. A stylesheet in turn uses a 
+     connection from this pool to instantiate an XConnection object and connect to a datasource.</P>
+    <P>The stylesheet uses this named connection pool to instantiate an XConnection object and 
+     connect to the datasource. The ExternalConnection class is in <CODE><FONT face="courier, monospaced">xalansamples.jar</FONT></CODE>.</P>
+    <P><A href="#dbsetup">Set up the database</A>, be sure <CODE><FONT face="courier, monospaced">xalanxamples.jar</FONT></CODE> is on the 
+     class path, and run this sample from the extensions/sql directory:</P>
+    <CODE><FONT face="courier, monospaced">runExtConnection ext-connection/dbtest.xsl</FONT></CODE>
+    <P>ExternalConnection creates the ConnectionPool, and performs a transformation with dbtest.xsl, 
+     which draws from the pool to instantiate an XConnection object, connect to the datasource, 
+     execute a static query, and return the query result.</P>
+    </FONT></TD></TR></TABLE><BR>
+  
+    <A name="pquery"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Parameterized query</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P><B>Contributed by John Gentilin (johnglinux@eyecatching.com).</B></P>
+    <P>What it does: connects to a datasource, executes a parameterized query, and returns 
+     the result. The XML source document provides the parameter value as well as the connection 
+     information. The parameter value is in a node in the XML source.</P>
+    <P>The stylesheet gets the required connection and parameter information from the XML source, 
+     sets up and executes the parameterized query, and retuns the query result set.</P>
+    <P><A href="#dbsetup">Set up the database</A>, and run this sample from the sql subdirectory:</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in pquery/dbinfo.xml -xsl pquery/dbtest.xsl -out import1.html</FONT></CODE>
+    </FONT></TD></TR></TABLE><BR>
+  
+    <A name="streamable"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Streamable</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P><B>Contributed by John Gentilin (johnglinux@eyecatching.com).</B></P>
+    <P>What it does: Illustrates enabling and disabling of a streamable result set returned by a query.</P>
+    <P>With a streamable result set, you can create a query that will return many rows but the
+     result will only consume the amount of memory to represent a single row. As a benefit,
+     you can perform transformations on large amounts of data while maintaining a low memory profile. 
+     On the down side, when you use streaming, you can NOT, visit previous nodes because the SQL
+     extension only supports unidirectional cursors. If you requires that the whole query be available
+     so that you can apply templates to previous rows, just disable caching.</P>
+    <P><A href="#dbsetup">Set up the database</A>, and run these samples from the sql subdirectory.</P>
+    <P>1. An example where streaming is disabled:</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in streamable/dbinfo.xml -xsl streamable/cachedNodes.xsl -out import1.html</FONT></CODE>
+    <P>2. An example where streaming is enabled</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in streamable/dbinfo.xml -xsl streamable/streamNodes.xsl -out import1.html</FONT></CODE>
+    <P>3. This example performs a pivor function swaping rows and columns, streaming is 
+     required to be disabled here.</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in streamable/dbinfo.xml -xsl streamable/pivot.xsl -out import1.html</FONT></CODE>
+    </FONT></TD></TR></TABLE><BR>
+ 
+    <A name="showerror"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Show-error</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P><B>Contributed by John Gentilin (johnglinux@eyecatching.com).</B></P>
+    <P>What it does: use the SQL library ExtensionError class to return an error message 
+     in the output stream. The stylesheet calls a template with a select statement that 
+     returns a nodeset when an error occurs.</P>
+    <P><A href="#dbsetup">Set up the database</A>, and run this sample from the extensions/sql subdirectory:</P>
+    <P>1. An example where we specify invalid connection information:</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in show-error/dbinfo.xml -xsl show-error/invalidConn.xsl -out import1.html</FONT></CODE>
+    <P>2. An example where we specify invalid parameters to a parameterized query:</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in show-error/dbinfo.xml -xsl show-error/invalidPQuery.xsl -out import1.html</FONT></CODE>
+    <P>3. An example where we specify an invlaid query:</P>
+     <CODE><FONT face="courier, monospaced">runXalan -in show-error/dbinfo.xml -xsl show-error/invalidQuery.xsl -out import1.html</FONT></CODE>
+    </FONT></TD></TR></TABLE><BR>
+    </FONT></TD></TR></TABLE><BR>    
+    
+    <A name="trace"><!--anchor--></A>
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Trace</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+      <P>What it does: Trace uses the TraceListener and TraceManager classes to log transformation events.</P>
+      <P>Run this sample from the Trace subdirectory with</P>
+      <P><CODE><FONT face="courier, monospaced">java Trace</FONT></CODE></P>
+      <P>and examine the result in events.log. Additionally, run this sample from the extensions subdirectory with</P>
+      <P><CODE><FONT face="courier, monospaced">java Trace 3-java-namespace</FONT></CODE></P>
+      <P>for the trace of a stylesheet with extensions.  For more information, see <A href="usagepatterns.html#debugging">Debugger Interface</A></P>
+     </FONT></TD></TR></TABLE><BR><A name="validate"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Validate</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <UL>
+     <LI><A href="#validatexmlinput">ValidateXMLInput</A></LI>
+     <LI><A href="#validateutility">Validate utility</A></LI>
+     </UL><A name="validatexmlinput"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>ValidateXMLInput</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+     <P>What it does: Uses <A href="apidocs/javax/xml/parsers/SAXParserFactory.html">SAXParserFactory</A> to turn on validation, and 
+     <A href="apidocs/org/xml/sax/XMLReader.html">XMLReader</A> to parse the XML input and report errors and warnings to a SAX event
+     handler. The XML input (birds.xml) contains an internal DOCTYPE declaration, and a few minor document type violations, which you are 
+     invited to fix, add to, and vary in any way you find useful.</P>
+     <P>Run this sample from the Validate subdirectory with</P>
+     <P><CODE><FONT face="courier, monospaced">java ValidateXMLInput</FONT></CODE></P>
+     </FONT></TD></TR></TABLE><BR><A name="validateutility"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Validate utility</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+     <P>What it does: Uses the <A href="apidocs/javax/xml/parsers/SAXParser.html">JAXP SAXParser</A> with a SAX event handler 
+     (extends <A href="apidocs/org/xml/sax/helpers/DefaultHandler.html">DefaultHandler</A> and implements 
+     <A href="apidocs/org/xml/sax/ext/LexicalHandler.html">LexicalHandler</A>) to verify that XML files conform to their declared 
+     document type. You can use this utility to verify that an individual file or all the .xml files in a directory are
+     well-formed and valid. Each .xml file should contain a DOCTYPE declaration.</P>
+     <P>Run this sample from any directory with</P>
+     <P><CODE><FONT face="courier, monospaced">java Validate <I>file-or-dir-name</I> [<I>logfile</I></FONT></CODE>]</P>
+     <P>where <I>file-or-dir-name</I> is an XML file or directory pathname, and <I>logfile</I> designates a log.
+     If you omit the second argument, Validate reports its findings to the screen.</P>
+     <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>A limitation: Files containing document parts appear to fail if you check them with Validate. Check readme.xml, 
+     which &quot;includes&quot; by entity reference a number of files, and it passes. The parse operation scans the entire document
+     with the includes. Check an &quot;included&quot; file (such as history.xml) as if it were an independent document and it fails.</I></FONT></TD></TR></TABLE>
+     </FONT></TD></TR></TABLE><BR>
+     </FONT></TD></TR></TABLE><BR>
+
+     <A name="trax"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>trax (JAXP transform samples)</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <P>What it does: runs a number of samples illustrating uses of the <A href="trax.html">JAXP transform interfaces</A>.</P>
+     <P>Run this sample from the trax subdirectory with</P>
+     <P><CODE><FONT face="courier, monospaced">java Examples</FONT></CODE></P>
+     <P>and examine the source in Examples.java and ExampleContentHandler.java.</P>
+     </FONT></TD></TR></TABLE><BR>
+     
+     <A name="transformthread"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TransformThread</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <P>What it does: spawns multiple threads, with each thread running two transformations on two different XML files.</P>
+     <P>Run this sample from the TransformThread subdirectory with</P>
+     <P><CODE><FONT face="courier, monospaced">java TransformThread</FONT></CODE></P>
+     <P>and examine the source in TransformThread.java. A more detailed description along with configuration options are listed in the header.</P>
+     </FONT></TD></TR></TABLE><BR>
+     
+     <A name="applyxpath"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>ApplyXPath</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <P>What it does: ApplyXPath uses the convenience methods in the Xalan-Java 2 specific <A href="apidocs/org/apache/xpath/XPathAPI.html">XPathAPI</A> to
+     execute an XPath expression against an XML document and return the nodes (if any) it finds.</P>
+     <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>You can use this sample as an aid when you want to find out what a given XPath expression returns from a
+     given XML file. Keep in mind that the context node (base point of evaluation) for the XPath expression is the document
+     root.</I></FONT></TD></TR></TABLE>
+     <P>Run this sample from the ApplyXPath subdirectory with</P> 
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPath <I>XMLFile XPathExpression</I></FONT></CODE></P>
+     <P>where <I>XMLFile</I> is an XML source file and <I>XPathExpression</I> is an XPath expression to
+     apply to that file. The ApplyXPath subdirectory contains an XML file named foo.xml --<BR>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE><FONT face="courier, monospaced">&lt;doc&gt;&lt;name first=&quot;David&quot; last=&quot;Marston&quot;/&gt;...&lt;/doc&gt;</FONT></CODE><BR> -- so you can try command
+     lines like</P>
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPath foo.xml /</FONT></CODE></P>
+     <P>and</P>
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPath foo.xml /doc/name/@first</FONT></CODE></P>
+     <P>For more information, see <A href="usagepatterns.html#xpath">Working with XPath expressions</A>.</P>
+     </FONT></TD></TR></TABLE><BR>
+    
+     <A name="applyxpathdom"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>ApplyXPathDOM</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <P>What it does: ApplyXPathDOM is very similar to the <A href="#applyxpath">ApplyXPath</A> sample, but it uses the API 
+     in the <A href="http://www.w3.org/TR/2004/NOTE-DOM-Level-3-XPath-20040226/">DOM Level 3 XPath 
+     Specification</A> to execute an XPath expression against an XML document and return 
+     the nodes (if any) it finds.</P>
+     <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>You can use this sample as an aid when you want to find out what a given XPath expression returns from a
+     given XML file. Keep in mind that the context node (base point of evaluation) for the XPath expression is the document
+     root.</I></FONT></TD></TR></TABLE>
+     <P>Run this sample from the ApplyXPathDOM subdirectory with</P> 
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPathDOM <I>XMLFile XPathExpression</I></FONT></CODE></P>
+     <P>where <I>XMLFile</I> is an XML source file and <I>XPathExpression</I> is an XPath expression to
+     apply to that file. The ApplyXPathDOM subdirectory contains an XML file named foo.xml --<BR>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<CODE><FONT face="courier, monospaced">&lt;doc&gt;&lt;name first=&quot;David&quot; last=&quot;Marston&quot;/&gt;...&lt;/doc&gt;</FONT></CODE><BR> -- so you can try command
+     lines like</P>
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPathDOM foo.xml /</FONT></CODE></P>
+     <P>and</P>
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPathDOM foo.xml /doc/name/@first</FONT></CODE></P>
+     <P>For more information, see <A href="usagepatterns.html#xpath">Working with XPath expressions</A>.</P>
+     </FONT></TD></TR></TABLE><BR>
+     
+     <A name="applyxpathjaxp"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>ApplyXPathJAXP</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <P>What it does: ApplyXPathJAXP is similar to the <A href="#applyxpath">ApplyXPath</A> sample, but it uses the XPath API in JAXP 1.3
+     to evaluate an XPath expression against an XML document and return the evaluation result in the specified type.</P>
+     <P>Run this sample from the XPathAPI subdirectory with</P>
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPathJAXP <I>XMLFile XPathExpression ReturnType</I></FONT></CODE></P>
+     <P>where <I>XMLFile</I> is an XML source file, <I>XPathExpression</I> is an XPath expression to 
+     apply to that file, and <I>ReturnType</I> is one of the strings from the list {&quot;num&quot;, &quot;bool&quot;, &quot;str&quot;, &quot;node&quot;, &quot;nodeset&quot;}
+     designating the return type of the evaluation. The XPathAPI subdirectory contains an XML file named 
+     foo.xml. So you can try command lines like</P>
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPathJAXP foo.xml /doc/name[1]/@last str</FONT></CODE></P>
+     <P>and</P>
+     <P><CODE><FONT face="courier, monospaced">java ApplyXPathJAXP foo.xml /doc/name nodeset</FONT></CODE></P>
+     </FONT></TD></TR></TABLE><BR>
+
+     <A name="xpathresolver"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>XPathResolver</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <P>What it does: XPathResolver provides sample implementations of the NamespaceContext, XPathFunctionResolver 
+     and XPathVariableResolver interfaces described in the <A href="apidocs/javax/xml/xpath/XPath.html">
+     JAXP 1.3 XPath API</A>. 
+     The sample demonstrates how these implementations can be used to to evaluate XPath expressions that contain 
+     extension functions and references to variables.</P>
+     <P>Run this sample from the XPathAPI subdirectory with</P>
+     <P><CODE><FONT face="courier, monospaced">java XPathResolver</FONT></CODE></P>
+     </FONT></TD></TR></TABLE><BR>
+
+     <A name="extensionresolver"><!--anchor--></A>
+     <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>ExtensionFunctionResolver</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+     <P>What it does: ExtensionFunctionResolver demonstrates how to use the sample implementation of XPathFunctionResolver to 
+     evaluate XPath expressions containing Java or EXSLT extension functions.</P>
+     <P>To run this sample from the XPathAPI subdirectory, you need to compile ExtensionTest.java first and put
+     the XPathAPI directory on your classpath. Run the sample using</P>
+     <P><CODE><FONT face="courier, monospaced">java ExtensionFunctionResolver</FONT></CODE></P>
+     </FONT></TD></TR></TABLE><BR>
+     
+     <A name="translets"><!--anchor--></A><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Translets</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+                 <UL>
+                 <LI><A href="#xsltc1">JAXPTransletOneTransformation</A></LI>
+                 <LI><A href="#xsltc2">JAXPTransletMultipleTransformations</A></LI>
+                 <LI><A href="#xsltcother">Other XSLTC samples</A></LI>   
+                 </UL>
+                 <P>You can use the JAXP interfaces to compile and run translets.
+                 For an overview of the usage patterns these samples illustrate, see 
+                 <A href="xsltc_usage.html#api">Calling XSLTC with the JAXP API</A>.</P>
+                 <A name="xsltc1"><!--anchor--></A>
+                 <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>JAXPTransletOneTransformation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+                 <P>What it does: Uses the XSLTC TransformerFactory to compile a translet and use
+                 the translet to transform the XSLTC to-do list from XML into HTML.</P>
+                 <P>Run this sample from the translets subdirectory with</P>
+                 <P><CODE><FONT face="courier, monospaced">java JAXPTransletOneTransformation</FONT></CODE></P>
+                 <P>View the result in todo.html.</P>
+                 </FONT></TD></TR></TABLE><BR><A name="xsltc2"><!--anchor--></A>
+                 <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>JAXPTransletMultipleTransformations</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+                 <P>What it does: Uses the XSLTC TransformerFactory to compile a translet and use
+                 the Templates object associated with the translet to transform the XSLTC and Xalan to-do lists from XML 
+                 into HTML.</P>
+                 <P>Run this sample from the translets subdirectory with</P>
+                 <P><CODE><FONT face="courier, monospaced">java JAXPTransletMultipleTransformations</FONT></CODE></P>
+                 <P>View the results in todo.html and todotoo.html.</P>                
+                 </FONT></TD></TR></TABLE><BR><A name="xsltcother"><!--anchor--></A>
+                 <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Other XSLTC samples</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+                 <P>Other XSLTC samples are located in the following samples subdirectories:</P>
+                 <UL>
+                 <LI>CompiledServlet</LI>
+                 <LI>CompiledBrazil</LI>
+                 <LI>CompiledJAXP</LI>
+                 <LI>CompiledApplet</LI>
+                 <LI>CompiledEJB</LI>
+                 </UL>
+                 <P>For information about each of these samples, consult the README file in the subdirectory.</P>
+                 <P>XSLTC provides demos for using XSLTC as a servlet and as a handler for
+                 Brazil (a new and powerful Web techology from Sun labs).</P>
+                 <P>To run the Brazil-handler demo, download Brazil from sunlabs:</P>
+                 <P><CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;<A href="http://research.sun.com/research/download/index.html">http://research.sun.com/research/download/index.html</A></FONT></CODE></P>
+                 <P>The translet must be specified as a pure class name,
+                 accessible through the Brazil-handler's classpath. For
+                 example:</P>
+                 <P><CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;translet=mk054</FONT></CODE></P>
+                 <P>The document must be specified as a valid URL. For example:</P>
+                 <P><CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;document=http://server/path/to/filename.xml</FONT></CODE></P>
+                 <P>If the file is local to the Brazil handler, it has to be
+                specified using the &quot;file:filename.xml&quot; format.</P>
+                <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>In order to run the Brazil-handler demo, you also need to
+                      make the Brazil and javax classes available from your
+                      classpath</I></FONT></TD></TR></TABLE>
+                 <P>To run the servlet demo, download the java extensions for servlets from Sun:</P>
+                 <P><CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;
+                 <A href="http://java.sun.com/products/servlet/download.html">
+                 http://java.sun.com/products/servlet/download.html</A></FONT></CODE></P>
+                 </FONT></TD></TR></TABLE><BR>
+                 </FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2006 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

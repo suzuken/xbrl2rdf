@@ -1,0 +1,962 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>Xalan-Java Extensions</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/extensions-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+  
+  <A href="whatsnew.html" onMouseOut="rolloverOff('side-whatsnew');" onMouseOver="rolloverOn('side-whatsnew');"><IMG alt="What's New" border="0" height="12" hspace="0" name="side-whatsnew" onLoad="rolloverLoad('side-whatsnew','graphics/whatsnew-label-2.jpg','graphics/whatsnew-label-3.jpg');" src="graphics/whatsnew-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="readme.html" onMouseOut="rolloverOff('side-readme');" onMouseOver="rolloverOn('side-readme');"><IMG alt="Release Notes" border="0" height="12" hspace="0" name="side-readme" onLoad="rolloverLoad('side-readme','graphics/readme-label-2.jpg','graphics/readme-label-3.jpg');" src="graphics/readme-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="overview.html" onMouseOut="rolloverOff('side-overview');" onMouseOver="rolloverOn('side-overview');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-overview" onLoad="rolloverLoad('side-overview','graphics/overview-label-2.jpg','graphics/overview-label-3.jpg');" src="graphics/overview-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="downloads.html" onMouseOut="rolloverOff('side-downloads');" onMouseOver="rolloverOn('side-downloads');"><IMG alt="Download/Build" border="0" height="12" hspace="0" name="side-downloads" onLoad="rolloverLoad('side-downloads','graphics/downloads-label-2.jpg','graphics/downloads-label-3.jpg');" src="graphics/downloads-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <A href="getstarted.html" onMouseOut="rolloverOff('side-getstarted');" onMouseOver="rolloverOn('side-getstarted');"><IMG alt="Getting Started" border="0" height="12" hspace="0" name="side-getstarted" onLoad="rolloverLoad('side-getstarted','graphics/getstarted-label-2.jpg','graphics/getstarted-label-3.jpg');" src="graphics/getstarted-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc_usage.html" onMouseOut="rolloverOff('side-xsltc_usage');" onMouseOver="rolloverOn('side-xsltc_usage');"><IMG alt="Using XSLTC" border="0" height="12" hspace="0" name="side-xsltc_usage" onLoad="rolloverLoad('side-xsltc_usage','graphics/xsltc_usage-label-2.jpg','graphics/xsltc_usage-label-3.jpg');" src="graphics/xsltc_usage-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="faq.html" onMouseOut="rolloverOff('side-faq');" onMouseOver="rolloverOn('side-faq');"><IMG alt="FAQs" border="0" height="12" hspace="0" name="side-faq" onLoad="rolloverLoad('side-faq','graphics/faq-label-2.jpg','graphics/faq-label-3.jpg');" src="graphics/faq-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="samples.html" onMouseOut="rolloverOff('side-samples');" onMouseOver="rolloverOn('side-samples');"><IMG alt="Sample Apps" border="0" height="12" hspace="0" name="side-samples" onLoad="rolloverLoad('side-samples','graphics/samples-label-2.jpg','graphics/samples-label-3.jpg');" src="graphics/samples-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="commandline.html" onMouseOut="rolloverOff('side-commandline');" onMouseOver="rolloverOn('side-commandline');"><IMG alt="Command Line" border="0" height="12" hspace="0" name="side-commandline" onLoad="rolloverLoad('side-commandline','graphics/commandline-label-2.jpg','graphics/commandline-label-3.jpg');" src="graphics/commandline-label-3.jpg" vspace="0" width="120"></A><BR>
+    
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="features.html" onMouseOut="rolloverOff('side-features');" onMouseOver="rolloverOn('side-features');"><IMG alt="Features" border="0" height="12" hspace="0" name="side-features" onLoad="rolloverLoad('side-features','graphics/features-label-2.jpg','graphics/features-label-3.jpg');" src="graphics/features-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="trax.html" onMouseOut="rolloverOff('side-trax');" onMouseOver="rolloverOn('side-trax');"><IMG alt="Transform API" border="0" height="12" hspace="0" name="side-trax" onLoad="rolloverLoad('side-trax','graphics/trax-label-2.jpg','graphics/trax-label-3.jpg');" src="graphics/trax-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xpath_apis.html" onMouseOut="rolloverOff('side-xpath_apis');" onMouseOver="rolloverOn('side-xpath_apis');"><IMG alt="XPath API" border="0" height="12" hspace="0" name="side-xpath_apis" onLoad="rolloverLoad('side-xpath_apis','graphics/xpath_apis-label-2.jpg','graphics/xpath_apis-label-3.jpg');" src="graphics/xpath_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="usagepatterns.html" onMouseOut="rolloverOff('side-usagepatterns');" onMouseOver="rolloverOn('side-usagepatterns');"><IMG alt="Usage Patterns" border="0" height="12" hspace="0" name="side-usagepatterns" onLoad="rolloverLoad('side-usagepatterns','graphics/usagepatterns-label-2.jpg','graphics/usagepatterns-label-3.jpg');" src="graphics/usagepatterns-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="apidocs/index.html" onMouseOut="rolloverOff('side-ext-42');" onMouseOver="rolloverOn('side-ext-42');"><IMG alt="Xalan-J API" border="0" height="12" hspace="0" name="side-ext-42" onLoad="rolloverLoad('side-ext-42','graphics/ext-42-label-2.jpg','graphics/ext-42-label-3.jpg');" src="graphics/ext-42-label-3.jpg" vspace="0" width="120"></A><BR>    
+  <A href="public_apis.html" onMouseOut="rolloverOff('side-public_apis');" onMouseOver="rolloverOn('side-public_apis');"><IMG alt="Public APIs" border="0" height="12" hspace="0" name="side-public_apis" onLoad="rolloverLoad('side-public_apis','graphics/public_apis-label-2.jpg','graphics/public_apis-label-3.jpg');" src="graphics/public_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="dtm.html" onMouseOut="rolloverOff('side-dtm');" onMouseOver="rolloverOn('side-dtm');"><IMG alt="DTM" border="0" height="12" hspace="0" name="side-dtm" onLoad="rolloverLoad('side-dtm','graphics/dtm-label-2.jpg','graphics/dtm-label-3.jpg');" src="graphics/dtm-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <IMG alt="Extensions" border="0" height="12" hspace="0" src="graphics/extensions-label-1.jpg" vspace="0" width="120"><BR>
+  <A href="extensionslib.html" onMouseOut="rolloverOff('side-extensionslib');" onMouseOver="rolloverOn('side-extensionslib');"><IMG alt="Extensions Library" border="0" height="12" hspace="0" name="side-extensionslib" onLoad="rolloverLoad('side-extensionslib','graphics/extensionslib-label-2.jpg','graphics/extensionslib-label-3.jpg');" src="graphics/extensionslib-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensions_xsltc.html" onMouseOut="rolloverOff('side-extensions_xsltc');" onMouseOver="rolloverOn('side-extensions_xsltc');"><IMG alt="XSLTC Exts" border="0" height="12" hspace="0" name="side-extensions_xsltc" onLoad="rolloverLoad('side-extensions_xsltc','graphics/extensions_xsltc-label-2.jpg','graphics/extensions_xsltc-label-3.jpg');" src="graphics/extensions_xsltc-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="design/design2_0_0.html" onMouseOut="rolloverOff('side-ext-58');" onMouseOver="rolloverOn('side-ext-58');"><IMG alt="Xalan 2 Design" border="0" height="12" hspace="0" name="side-ext-58" onLoad="rolloverLoad('side-ext-58','graphics/ext-58-label-2.jpg','graphics/ext-58-label-3.jpg');" src="graphics/ext-58-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc/index.html" onMouseOut="rolloverOff('side-ext-60');" onMouseOver="rolloverOn('side-ext-60');"><IMG alt="XSLTC Design" border="0" height="12" hspace="0" name="side-ext-60" onLoad="rolloverLoad('side-ext-60','graphics/ext-60-label-2.jpg','graphics/ext-60-label-3.jpg');" src="graphics/ext-60-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="builds.html" onMouseOut="rolloverOff('side-builds');" onMouseOver="rolloverOn('side-builds');"><IMG alt="Building a release" border="0" height="12" hspace="0" name="side-builds" onLoad="rolloverLoad('side-builds','graphics/builds-label-2.jpg','graphics/builds-label-3.jpg');" src="graphics/builds-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="http://xml.apache.org/xalan-j/test/overview.html" onMouseOut="rolloverOff('side-ext-66');" onMouseOver="rolloverOn('side-ext-66');"><IMG alt="Testing" border="0" height="12" hspace="0" name="side-ext-66" onLoad="rolloverLoad('side-ext-66','graphics/ext-66-label-2.jpg','graphics/ext-66-label-3.jpg');" src="graphics/ext-66-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="bugreporting.html" onMouseOut="rolloverOff('side-bugreporting');" onMouseOver="rolloverOn('side-bugreporting');"><IMG alt="Bug Reporting" border="0" height="12" hspace="0" name="side-bugreporting" onLoad="rolloverLoad('side-bugreporting','graphics/bugreporting-label-2.jpg','graphics/bugreporting-label-3.jpg');" src="graphics/bugreporting-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="contact_us.html" onMouseOut="rolloverOff('side-contact_us');" onMouseOver="rolloverOn('side-contact_us');"><IMG alt="Contact us" border="0" height="12" hspace="0" name="side-contact_us" onLoad="rolloverLoad('side-contact_us','graphics/contact_us-label-2.jpg','graphics/contact_us-label-3.jpg');" src="graphics/contact_us-label-3.jpg" vspace="0" width="120"></A><BR>  
+  
+  
+  
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+<UL>
+<LI><A href="#intro">Introduction</A></LI>
+<LI><A href="#supported-lang">Supported languages</A></LI>
+<LI><A href="#basic-pattern">The basic pattern</A></LI>
+<LI><A href="#setup-runtime">Setting up the runtime environment</A></LI>
+<LI><A href="#basic-syntax">Syntax</A></LI>
+<LI><A href="#ext-elements">Using an extension element</A></LI>
+<LI><A href="#ext-functions">Using extension functions</A></LI>
+<LI><A href="#java-namespace">Alternative: using the abbreviated syntax for extensions implemented in Java</A></LI>
+<LI>Examples: <A href="#ex-basic">basic JavaScript example</A>, <A href="#ex-java-namespace">using the java namespace</A>, <A href="#ex-java">using a Java Hashtable</A>, <A href="#ex-javascript">using a JavaScript array</A></LI>
+</UL>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Unless otherwise specified, the Xalan-Java extensions discussed in this section refers to 
+the Xalan-Java Interpretive processor. See <A href="extensions_xsltc.html">Extensions for XSLTC</A> for 
+more information.</I></FONT></TD></TR></TABLE><BR>
+<A name="intro"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Introduction</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+  <P>For those situations where you would like to augment the functionality of XSLT with calls to a 
+     procedural language, Xalan-Java supports the creation and use of extension elements and extension 
+     functions. Xalan-Java also provides a growing <A href="extensionslib.html">extensions library</A> 
+     available for your use. An extension (a collection of elements and functions) inhabits a namespace, 
+     either a namespace you declare and designate as an extensions namespace, or one of the predefined 
+     namespaces that Xalan-Java provides. For information about XML namespaces, see 
+     <A href="http://www.w3.org/TR/REC-xml-names/">Namespaces in XML</A>.</P>
+  <P><B>Extension elements:</B>  Unlike a literal result element, which the stylesheet simply 
+     transfers to the result tree, an extension element performs an action. For example, you can use 
+     the Redirect extension elements shipped with Xalan-Java to redirect portions of your transformation 
+     output to one or more files. Extension elements may contain attributes, text nodes, other elements, 
+     basically any valid XML. Extension elements may perform quite sophisticated actions, given that 
+     the extension routine (the implementation) has direct access to the XSLT processor context object 
+     and to the element. In many cases the implementation returns void or null; if it does return a 
+     value, that value is placed in the transformation result tree.</P>
+  <P><B>Extension functions:</B>  You can think of extension functions as extending the core library 
+     of functions that XPath provides. An extension function passes arguments to the extension 
+     implementation and returns a value. You can use extension functions to return values that XSLT 
+     can interact with directly (node-set, result tree fragment, string, boolean, and number) as well 
+     as values (of any type) that you pass in turn to other extension functions. Extension functions 
+     written in Java can also access certain items in the XSLT execution environment through an 
+     <A href="apidocs/org/apache/xalan/extensions/ExpressionContext.html">ExpressionContext</A> 
+     interface.</P>
+  <P>XSLT extensions are specified in the <A href="http://www.w3.org/TR/xslt#extension">XSLT 
+     Recommendation</A>.  This document focuses on the Xalan-Java implementation of those 
+     requirements, not on XSLT extensions in general. For additional information on extensions, 
+     consult the Recommendation or the other resources listed in <A href="overview.html#uptospeed">Getting up to speed with XSLT</A>.</P>
+</FONT></TD></TR></TABLE><BR>
+<A name="supported-lang"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Supported languages</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>Extensions written in Java are directly supported by Xalan-Java.  For extensions written in languages 
+   other than Java, Xalan-Java uses the <A href="http://jakarta.apache.org/bsf/index.html" target="_top">Bean Scripting Framework (BSF)</A>, an architecture for incorporating 
+   scripting into Java applications and applets. BSF allows an application to take advantage of 
+   scripting while being independent of any specific scripting language. To date, we have tested 
+   extensions implemented in JavaScript. The set of scripting languages supported using BSF is determined
+   by the BSF implementation you are using. If you are using Jakarta BSF, please refer to 
+   <A href="http://jakarta.apache.org/bsf/index.html">Jakarta BSF Supported Languages</A> for other
+   scripting languages with BSF support.</P>
+<P>BSF requires bsf.jar on the classpath. This JAR file is no longer shipped with Xalan-Java. It can be 
+   downloaded from <A href="http://jakarta.apache.org/bsf/index.html">the Apache Jakarta BSF project 
+   web site</A>. It is required only if you have extensions written in languages other than Java. 
+   The additional JAR files or DLLs required to support extensions written in other languages are 
+   listed at the Jakarta BSF web site as <A href="http://jakarta.apache.org/bsf/projects.html"> 
+   Related Projects </A> . These files are available from the sources indicated and are not shipped 
+   with Xalan-Java. </P>
+<A name="BSFManager"><!--anchor--></A>
+<P>By default Xalan-Java assumes BSF support is provided by the Jakarta BSF implementation. There are three 
+   ways of specifying the class that provides the BSF Manager service:.</P>
+<UL><LI>Set the system property org.apache.xalan.extensions.bsf.BSFManager;</LI>
+    <LI>In the property file &quot;/lib/xalan.properties&quot; in the JRE directory, add the key 
+    org.apache.xalan.extensions.bsf.BSFManager with the value that is the fully qualified BSF 
+    implementation class name;</LI>
+    <LI>Include a META-INF/services/org.apache.xalan.extensions.bsf.BSFManager 
+    file in your classpath;</LI>
+</UL>
+</FONT></TD></TR></TABLE><BR><A name="basic-pattern"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>The basic pattern</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>Let's examine a simple example. The stylesheet below uses an extension element and an 
+   extension function to transform an element in the XML source into a statement in the output 
+   indicating the date by which a customer can expect a response to a given enquiry.</P>
+
+<P>The source element contains a numdays attribute. The extension element contains a multiplier 
+   attribute, which is used to set a variable in the extension. The extension function computes the 
+   deadline, that is the current date plus numdays * multiplier. So for &lt;deadline numdays=&quot;3&quot;/&gt; 
+   (in the XML source) and &lt;my-ext:timelapse multiplier=&quot;2&quot;/&gt; (in the stylesheet), the 
+   extension computes a deadline 6 days from now, and the stylesheet template transforms the 
+   deadline element into a string along the lines of <CODE><FONT face="courier, monospaced">&lt;p&gt;We have logged your enquiry 
+   and will respond by April 29, 2000 12:07:16 PM EST.&lt;/p&gt;</FONT></CODE></P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The extension function could include both numdays and multiplier as arguments, thus bypassing 
+   the need for the extension element, but the purpose here is to illustrate the usage pattern for 
+   extension elements.</I></FONT></TD></TR></TABLE>
+<P>As you review this stylesheet, please note the following:</P>
+<OL>
+  <LI>The declaration of the xalan namespace, which provides support for the component and
+      component/script elements:<BR><BR>
+    <CODE><FONT face="courier, monospaced">xmlns:xalan=&quot;http://xml.apache.org/xalan&quot;</FONT></CODE><BR><BR></LI>
+  <LI>The declaration of a namespace for this extension:<BR><BR>
+    <CODE><FONT face="courier, monospaced">xmlns:my-ext=&quot;ext1&quot;</FONT></CODE><BR><BR></LI>
+  <LI>The designation of this namespace prefix as an extension prefix. This causes any element in the 
+      namespace associated with this prefix to be treated as an extension element rather than a literal 
+      result element.<BR><BR>
+     <CODE><FONT face="courier, monospaced">extension-element-prefixes=&quot;my-ext&quot;</FONT></CODE><BR><BR></LI>
+  <LI>The xalan:component with attributes designating the namespace prefix and the elements and
+     functions this extension provides.<BR><BR></LI>
+  <LI>The xalan:script subelement with a JavaScript implementation of the extension. For Java
+     extensions, the xalan:script element has a src attribute that you set to identify the Java class.</LI>
+</OL>
+<A name="ex-basic"><!--anchor--></A>   
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;!--Namespaces are global if you set them in the stylesheet element--&gt;
+&lt;xsl:stylesheet 
+    xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; 
+    version=&quot;1.0&quot;   
+    xmlns:xalan=&quot;http://xml.apache.org/xalan&quot;
+    xmlns:my-ext=&quot;ext1&quot;
+    extension-element-prefixes=&quot;my-ext&quot;&gt;
+    
+  &lt;!--The component and its script are in the xalan namespace and define the 
+    implementation of the extension.--&gt;
+  &lt;xalan:component prefix=&quot;my-ext&quot; elements=&quot;timelapse&quot; functions=&quot;getdate&quot;&gt;
+    &lt;xalan:script lang=&quot;javascript&quot;&gt;
+      var multiplier=1;
+      // The methods or functions that implement extension elements always take 2
+      // arguments. The first argument is the XSL Processor context; the second 
+      // argument is the element node.
+      function timelapse(xslProcessorContext, elem)
+      {
+        multiplier=parseInt(elem.getAttribute(&quot;multiplier&quot;));
+        // The element return value is placed in the result tree.
+        // If you do not want a return value, return null.
+        return null;
+      }
+      function getdate(numdays)
+      {
+        var d = new Date();
+        var totalDays = parseInt(numdays) * multiplier;
+        d.setDate(d.getDate() + totalDays);
+        return d.toLocaleString();
+      }
+    &lt;/xalan:script&gt;
+  &lt;/xalan:component&gt;
+      
+  &lt;xsl:template match=&quot;deadline&quot;&gt;
+    &lt;p&gt;&lt;my-ext:timelapse multiplier=&quot;2&quot;/&gt;We have logged your enquiry and will 
+      respond by &lt;xsl:value-of select=&quot;my-ext:getdate(string(@numdays))&quot;/&gt;.&lt;/p&gt;
+  &lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+</FONT></TD></TR></TABLE><BR>
+<A name="setup-runtime"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Setting up the runtime environment</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>To run the preceding example, bsf.jar and js.jar must be on the classpath. Remember that bsf.jar 
+   must be on the classpath to run any extension written in a language other than Java. For extensions 
+   implemented in a scripting language, see the additional requirements in 
+   <A href="#supported-lang">Supported languages</A>.</P>
+</FONT></TD></TR></TABLE><BR>
+<A name="basic-syntax"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Syntax</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>You can always use the pattern illustrated above to set up and use extension elements and extension 
+   functions. For extension elements and functions implemented in Java, it is recommended that you use 
+   the abbreviated syntax, described in <A href="#java-namespace">Alternative: using the abbreviated 
+   syntax for extensions implemented in Java</A>. Unless you are using the abbreviated syntax, do 
+   the following:</P>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>1. Declare the xalan namespace</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR><CODE><FONT face="courier, monospaced">xmlns:xalan=&quot;http://xml.apache.org/xalan&quot;</FONT></CODE></P>
+<P>The xalan namespace provides support for the xalan:component element and xalan:script subelement.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The old namespace http://xml.apache.org/xslt is still supported for backward compatibility.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>2. Declare a unique namespace for each extension prefix</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR><CODE><FONT face="courier, monospaced">xmlns:<I>prefix</I>=<I>URI</I></FONT></CODE></P>
+<P>The <I>prefix</I> identifies the namespace, and <I>URI</I> is an arbitrary (but unique) 
+string that matches the value of the prefix attribute of an xalan:component element in the 
+stylesheet.<BR>
+Example: <CODE><FONT face="courier, monospaced">xmlns:ext1=&quot;xyz&quot;</FONT></CODE><BR><BR></P>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>3. If you are using extension elements, designate the extension element prefixes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR>This step is required only if you are using extension elements.  If you are using extension 
+functions only, you can skip this step.</P>
+<P>In the stylesheet element, write:</P> 
+<P><CODE><FONT face="courier, monospaced">extension-element-prefixes=&quot;<I>prefix-1 prefix-2 ...</I>&quot;</FONT></CODE></P>
+<P>In a literal result element or extension element include the xsl prefix:</P>
+<P><CODE><FONT face="courier, monospaced">xsl:extension-element-prefixes=&quot;<I>prefix1 prefix2 ...</I>&quot;</FONT></CODE></P>
+<P>Keep in mind that where you declare namespaces and designate extension prefixes determines the scope of those namespaces.To make your extensions available throughout the stylesheet, include these settings and attribute in the stylesheet element.</P>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>4. (Optional) Exclude the extension namespace declaration from the result tree</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR>By default, namespace declarations are included in the transformation output. To exclude 
+namespaces from the output, use</P>
+<P><CODE><FONT face="courier, monospaced">exclude-result-prefixes=&quot;<I>prefix-1 prefix-2 ...</I>&quot;</FONT></CODE></P>
+<P>in the stylesheet element or</P>
+<P><CODE><FONT face="courier, monospaced">xsl:exclude-result-prefixes=&quot;<I>prefix-1 prefix-2 ...</I>&quot;</FONT></CODE></P> 
+<P>in a literal result element or extension element.</P>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>5. Set up an xalan:component</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR>In the scope of the xalan namespace declaration:</P>
+<P><CODE><FONT face="courier, monospaced">&lt;xalan:component prefix=&quot;<I>prefix</I>&quot; </FONT></CODE><BR>
+   <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;functions=&quot;<I>func-1 func-2 ...func-n</I>&quot;</FONT></CODE><BR> 
+   <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;elements=&quot;<I>elem-1 elem-2 ...elem-n</I>&quot;&gt;</FONT></CODE><BR>
+   <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&lt;!--See xalan:script below--&gt;</FONT></CODE><BR>
+   <CODE><FONT face="courier, monospaced">&lt;/xalan:component&gt;</FONT></CODE></P>
+<P>where <I>func-1 func-2 ... func-n</I> and <I>elem-1 elem-2 ... elem-n</I> designate the 
+functions and elements the extension provides and the stylesheet uses. You can use the function-available 
+and element-available functions to determine at run time whether a function or element designated in the 
+xalan:component is actually available.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>If the component is implemented in Java, the values of the functions and elements attributes are 
+ignored. The function-available and element-available functions use reflection to examine the actual 
+Java methods.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+<A name="setup-script"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>6. Set up the xalan:script element</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR>In each xalan:component, you must include exactly one xalan:script element. If the extension 
+is implemented in JavaScript:</P>
+<P><CODE><FONT face="courier, monospaced">&lt;xalan:script lang=&quot;javascript&quot; &gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&lt;!--The implementation script--&gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&lt;/xalan:script&gt;</FONT></CODE></P>
+<P>For other scripting languages supported by BSF, use the same approach as for JavaScript.
+The src attribute is also supported in the xalan:script element. If it is present, the script will
+be loaded from the URL specified in the src attribute. Otherwise the script is taken from the text child
+of the xalan:script element.</P>
+<P>If the extension is implemented in Java, you have three choices for the format of the src attribute 
+in the xalan:script element.</P>
+<P><CODE><FONT face="courier, monospaced">&lt;xalan:script lang=&quot;javaclass&quot; src=&quot;xalan://<I>FQCN</I>&quot;/&gt;</FONT></CODE>
+<BR>where <I>FQCN</I> is the fully qualified class name.
+<BR>Example: <CODE><FONT face="courier, monospaced">&lt;xalan:script lang=&quot;javaclass&quot; src=&quot;xalan://java.util.Hashtable&quot;/&gt;</FONT></CODE></P>
+<P><CODE><FONT face="courier, monospaced">&lt;xalan:script lang=&quot;javaclass&quot; src=&quot;xalan://<I>PJPN</I>&quot;/&gt;</FONT></CODE>
+<BR>where <I>PJPN</I> is the beginning of or the complete name of a java package.
+<BR>Example: <CODE><FONT face="courier, monospaced">&lt;xalan:script lang=&quot;javaclass&quot; src=&quot;java.util&quot;/&gt;</FONT></CODE></P>
+<P><CODE><FONT face="courier, monospaced">&lt;xalan:script lang=&quot;javaclass&quot; src=&quot;http://xml.apache.org/xalan/java&quot;/&gt;</FONT></CODE></P>
+<P>The different formats for the value of the src attribute when using Java extensions are more fully 
+explained in <A href="#java-namespace-declare">Declare the namespace</A>.</P>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Implicit DTD for xalan:component</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;!ELEMENT xalan:component (xalan:script)&gt;
+&lt;!ATTLIST xalan:component
+  prefix CDATA #REQUIRED
+  elements NMTOKENS #IMPLIED
+  functions NMTOKENS #IMPLIED&gt;
+
+&lt;!ELEMENT xalan:script (#PCDATA | EMPTY)?&gt;
+&lt;!ATTLIST xalan:script
+  lang CDATA #REQUIRED
+  src CDATA #IMPLIED&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR><A name="ext-elements"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using an extension element</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>Extension elements pass the extension two objects:</P>
+<UL>
+<LI><A href="apidocs/org/apache/xalan/extensions/XSLProcessorContext.html">
+org.apache.xalan.extensions.XSLProcessorContext</A>, which provides access to the XSL processor, 
+the XML source tree, the stylesheet tree, the current context node, and the current mode (if any).
+<BR><BR></LI>
+<LI><A href="apidocs/org/apache/xalan/templates/ElemExtensionCall.html">
+org.apache.xalan.templates.ElemExtensionCall</A>, which provides the API for interacting with 
+the extension element.</LI>
+</UL>
+<P>You can use the ElemExtensionCall getAttribute(String name) method, for example, to read element 
+attributes in their raw form.  Use the getAttribute(String name, Node sourceNode, XSLTEngineImpl 
+processor) method to evaluate the attribute as an attribute value template.  Note that the method 
+names are the same but the method signatures are different.  For full details, see the 
+<A href="apidocs/org/apache/xalan/templates/ElemExtensionCall.html">Javadoc</A> for the 
+ElemExtensionCall class.</P>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Implementing an extension element</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>For each extension element in a namespace, the implementation must be a Java method with the 
+following signature, or the scripting language equivalent:</P>
+<P><CODE><FONT face="courier, monospaced"><I>Type element</I>(org.apache.xalan.extensions.XSLProcessorContext, </FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;org.apache.xalan.templates.ElemExtensionCall extensionElement)</FONT></CODE></P>
+<P>where <I>Type</I> designates the return type and <I>element</I> is the local part of the 
+extension element name (the element name without the namespace prefix). In the method signature, you 
+may also use superclasses of the indicated types.</P>
+<P>If the extension element is implemented in a loosely typed scripting language, such as JavaScript, 
+the arguments and return value are untyped.</P>
+<P><B>Caution:</B> The value returned by an extension element is placed in the transformation result. 
+If you are not interested in a return value, use a public void Java method or return null from a 
+scripting language function.</P>
+<P>Java example: <CODE><FONT face="courier, monospaced">public void myElement</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(org.apache.xalan.extensions.XSLProcessorContext, </FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;org.apache.xalan.templates.ElemExtensionCall extensionElement)</FONT></CODE></P>
+<P>JavaScript example: <CODE><FONT face="courier, monospaced">function myElement(xslProcContext, element)</FONT></CODE></P>
+<P>The <A href="extensionslib.html#redirect">Redirect extension</A> in the extensions 
+library contains three extension elements.</P>
+</FONT></TD></TR></TABLE><BR>
+
+</FONT></TD></TR></TABLE><BR><A name="ext-functions"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Using extension functions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>Extension functions may include arguments of any type and return a value of any type.</P>
+<P>XSLT recognizes five data types: node-set, result-tree-fragment, string, boolean, and number. You 
+can use XPath expressions to set variables with values of these types. You can also pass literals for 
+string, boolean, and number arguments. If you want to pass an argument of a type that XSLT does not 
+recognize, use another extension function to return an object of that type. The stylesheet that appears 
+in <A href="#format-date-stylesheet">Formatting a date</A>, for example uses extension functions 
+to return a Date object and a SimpleDateFormat object, and then uses these objects to call another 
+extension function.</P>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Data type mapping and method selection</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>When calling an extension function written in a language other than Java, objects of the following 
+Java classes will always be passed to the extension function:</P>
+  <TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+    <TR>
+      <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>XSLT Type</B>&nbsp;
+      </FONT></TD>
+      <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Java Type</B>&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Node-Set&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.w3c.dom.traversal.NodeIterator&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">String&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java.lang.String&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java.lang.Boolean&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Number&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java.lang.Double&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Result Tree Fragment&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.w3c.dom.DocumentFragment&nbsp;
+      </FONT></TD>
+    </TR>
+  </TABLE>
+<P>Any non-XSLT type is passed without conversion.</P>
+<P>When calling an extension function written in Java, the extension function signature can specify 
+any of the indicated Java types, as explained below:</P>
+  <TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+    <TR>
+      <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>XSLT Type</B>&nbsp;
+      </FONT></TD>
+      <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Java Types</B>&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Node-Set&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.w3c.dom.traversal.NodeIterator, org.w3c.dom.NodeList, org.w3c.dom.Node or its 
+           subclasses, java.lang.String, java.lang.Object, char, [double, float, long, int, short, byte,] 
+           boolean&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">String&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java.lang.String, java.lang.Object, char, [double, float, long, int, short, byte,] boolean&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">boolean, java.lang.Boolean, java.lang.Object, java.lang.String&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Number&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">double, java.lang.Double, float, long, int, short,char, byte, boolean, java.lang.String, 
+           java.lang.Object&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Result Tree Fragment&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.w3c.dom.traversal.NodeIterator, org.w3c.dom.NodeList, org.w3c.dom.Node or its subclasses, 
+           java.lang.String, java.lang.Object, char, [double, float, long, int, short, byte,] boolean&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Non-XSLT Type&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">the native type or any of its superclasses, double, float, long, int, short, char, byte, 
+           java.lang.String&nbsp;
+      </FONT></TD>
+    </TR>
+  </TABLE>
+<P>When calling extension functions written in Java, Xalan-Java selects the method to call as follows:</P>
+<OL>
+  <LI>Xalan-Java selects all methods whose name matches the extension function name as specified in 
+      <A href="#ext-func-calls">Extension function Java calls</A>.</LI>
+  <LI>From this list of methods, Xalan-Java determines which methods are <I>qualified</I>.</LI>
+  <LI>Each qualified method is assigned a score based on the table shown above. To assign the score 
+      to a given method, Xalan-Java examines each of the XSLT argument types in the function invocation 
+      in the stylesheet. For each argument, the appropriate row in the table above is selected. Then, 
+      the corresponding Java parameter type in the method signature in the Java program is scored. 
+      Types which appear earlier in the list are given a higher score.  That is, the list appears in 
+      order of scoring preference from highest to lowest. Types shown in square brackets have equal 
+      priority.</LI>
+  <LI>The method with the highest score is invoked after the arguments are converted to the appropriate 
+      type. If more than one method has the highest score, an exception is thrown.</LI>
+</OL>
+<P>Any extension function written in Java can have a first parameter of 
+type <CODE><FONT face="courier, monospaced">org.apache.xalan.extensions.ExpressionContext</FONT></CODE>. Any method with an 
+ExpressionContext as the first parameter will score higher than any method which does not have an 
+ExpressionContext as a first parameter.</P>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="ext-func-retval"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Return values</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>The Xalan-Java extension mechanism examines the class of the value returned from a function and 
+   converts the value into an XSLT type according to the following table:</P>
+  <TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+    <TR>
+      <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Java Types</B>&nbsp;
+      </FONT></TD>
+      <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>XSLT Type</B>&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.w3c.dom.traversal.NodeIterator<BR>org.apache.xml.dtm.DTM<BR>org.apache.xml.dtm.DTMAxisIterator<BR>org.apache.xml.dtm.DTMIterator<BR>org.w3c.dom.Node&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Node-Set&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java.lang.String&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">String&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java.lang.Boolean&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java.lang.Number&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Number&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.w3c.dom.DocumentFragment&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Result Tree Fragment&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">org.apache.xpath.objects.XObject&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specified XSLT Type&nbsp;
+      </FONT></TD>
+    </TR>
+    <TR>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">All other classes&nbsp;
+      </FONT></TD>
+       <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Non-XSLT Type&nbsp;
+      </FONT></TD>
+    </TR>
+  </TABLE>
+  <P>Note that the above test is applied using <CODE><FONT face="courier, monospaced">instanceof</FONT></CODE> so that any subclasses of the 
+     classes listed above will be treated the same as the listed superclass.  For example, a 
+     <CODE><FONT face="courier, monospaced">java.lang.Double</FONT></CODE> will be treated the same as a <CODE><FONT face="courier, monospaced">java.lang.Number</FONT></CODE> and 
+     will be converted to an XSLT Number.</P>
+  <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The return value conversion can somtimes cause confusion.  For example, if your 
+     extension function returns an object that is a subclass of NodeIterator, that object will be 
+     converted by Xalan-Java to an XSLT Node-Set.  If you later attempt to treat that object as a 
+     non-XSLT object of your original class and try to invoke a method on that object, your method 
+     invocation will fail.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="ext-func-calls"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Extension function Java calls</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>The technique for instantiating Java objects and calling Java methods depends on the format of the 
+   extension namespace that was declared.  See <A href="#java-namespace-declare">Declare the 
+   namespace</A> for the three different formats of namespace declarations for Java extensions. 
+   For each namespace format, the section below describes how to instantiate an object, how to invoke 
+   an instance method, and how to invoke a static method. The sections below explain, for each syntax, 
+   which methods are <I>qualified</I> for method selection as described in the preceeding section.</P>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Class format namespace</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR><B>To create an instance of an object</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:new (<I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix. A new instance is to be created with 
+   the <I>args</I> constructor arguments (if any). All constructor methods are qualified for method 
+   selection.
+<BR>Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;myType&quot;</FONT></CODE>
+<BR><CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;my-class:new()&quot;&gt;</FONT></CODE></P>
+
+<P><B>To invoke an instance method on a specified object</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>methodName</I> (<I>object</I>, <I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix and <I>methodName</I> is the name of 
+   the method to invoke on <I>object</I> with the <I>args</I> arguments. <I>object</I> must 
+   be an object of the class indicated by the namespace declaration.  Otherwise, the case shown 
+   immediately below will apply. Only instance methods with  the name <I>methodName</I> are 
+   qualified methods. If a matching method is found, <I>object</I> will be used to identify the 
+   object instance and <I>args</I> will be passed to the invoked method.
+<BR>
+Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;new-pop&quot;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;my-class:valueOf($myType, string(@population))&quot;&gt;</FONT></CODE></P>
+
+<P><B>To invoke an instance method on a default object</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>methodName</I> (<I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix and <I>methodName</I> is the name of 
+the method to invoke with the <I>args</I> arguments. The first <I>arg</I>, if any, must not be 
+an object of the class indicated by the namespace declaration.  Otherwise, the case shown immediately 
+above will apply. Only instance methods with the name <I>methodName</I> are qualified methods. If 
+a matching method is found, a default instance of the class will be created if it does not already 
+exist.
+<BR>
+Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;new-pop&quot;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;my-class:valueOf(string(@population))&quot;&gt;</FONT></CODE></P>
+
+<P><B>To invoke a static method</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>methodName</I> (<I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix and <I>methodName</I> is the name of 
+the method to invoke with the <I>args</I> arguments. Only static methods with the name 
+<I>methodName</I> are qualified methods. If a matching method is found, <I>args</I> will 
+be passed to the invoked static method.
+<BR>
+Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;new-pop&quot;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;my-class:printit(string(@population))&quot;&gt;</FONT></CODE></P>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Package format namespace</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR><B>To create an instance of an object</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>subpackage</I>.<I>class</I>.new (<I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix, <I>subpackage</I> is the rest of the 
+package name (the beginning of the package name was in the namespace declaration), and <I>class</I> 
+is the name of the class. A new instance is to be created with the <I>args</I> constructor 
+arguments (if any). All constructor methods are qualified for method selection.
+<BR>Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;myType&quot;</FONT></CODE>
+<BR><CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;my-package:extclass.new()&quot;&gt;</FONT></CODE></P>
+
+<P><B>To invoke an instance method on a specified instance</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>methodName</I> (<I>object</I>, <I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix and <I>methodName</I> is the name of 
+the method to invoke on <I>object</I> with the <I>args</I> arguments. Only instance methods of 
+the <I>object</I> with the name <I>methodName</I> are qualified methods. If a matching method 
+is found, <I>object</I> will be used to identify the object instance and <I>args</I> will be 
+passed to the invoked method.
+<BR>
+Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;new-pop&quot;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;my-package:valueOf($myType, string(@population))&quot;&gt;</FONT></CODE></P>
+
+<P><B>To invoke a static method</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>subpackage</I>.<I>class</I>.<I>methodName</I> (<I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix, <I>subpackage</I> is the rest of 
+the package name (the beginning of the package name was in the namespace declaration), <I>class</I> 
+is the name of the class, and <I>methodName</I> is the name of the method to invoke with the 
+<I>args</I> arguments. Only static methods with the name <I>methodName</I> are qualified 
+methods. If a matching method is found, <I>args</I> will be passed to the invoked static method.
+<BR>
+Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;new-pop&quot;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;my-package:extclass.printit(string(@population))&quot;&gt;</FONT></CODE></P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Unlike the class format namespace, there is no concept of a default object since the namespace 
+declaration does not identify a unique class.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Java format namespace</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><BR><B>To create an instance of an object</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>FQCN</I>.new (<I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix for the Java namespace and <I>FQCN</I> 
+is the fully qualified class name of the class whose constructor is to be called. A new instance is to 
+be created with the <I>args</I> constructor arguments (if any). All constructor methods are 
+qualified for method selection.
+<BR>Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;myHash&quot;</FONT></CODE>
+<BR><CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;java:java.util.Hashtable.new()&quot;&gt;</FONT></CODE></P>
+
+<P><B>To invoke an instance method on a specified instance</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>methodName</I> (<I>object</I>, <I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix and <I>methodName</I> is the name of 
+the method to invoke on <I>object</I> with the <I>args</I> arguments. Only instance methods of 
+the <I>object</I> with the name <I>methodName</I> are qualified methods. If a matching method 
+is found, <I>object</I> will be used to identify the object instance and <I>args</I> will be 
+passed to the invoked method.
+<BR>
+Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;new-pop&quot;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;java:put($myHash, string(@region), $newpop)&quot;&gt;</FONT></CODE></P>
+
+<P><B>To invoke a static method</B>:
+<BR><CODE><FONT face="courier, monospaced"><I>prefix</I>:<I>FQCN</I>.<I>methodName</I> (<I>args</I>)</FONT></CODE></P>
+<P>where <I>prefix</I> is the extension namespace prefix, <I>FQCN</I> is the fully qualified 
+class name of the class whose static method is to be called, and <I>methodName</I> is the name of 
+the method to invoke with the <I>args</I> arguments. Only static methods with the name 
+<I>methodName</I> are qualified methods. If a matching method is found, <I>args</I> will be 
+passed to the invoked static method.
+<BR>
+Example: <CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;new-pop&quot;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select=&quot;java:java.lang.Integer.valueOf(string(@population))&quot;&gt;</FONT></CODE></P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Unlike the class format namespace, there is no concept of a default object since the namespace 
+declaration does not identify a unique class.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR>
+
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Passing Nodes to java</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>Please keep in mind that <B>all</B> LocationPath expressions return a node-set, even if the 
+expression only returns a single attribute or a text node (node-sets with one member). You can use 
+the XSLT string() function (as in the syntax examples above) to convert a node-set value to string, 
+and the number() function to convert a node-set value to number (a double).</P>
+<P>If you want to pass a node-set to an extension function, set up a Java method to accept an 
+org.w3c.dom.NodeList (or an org.apache.xpath.NodeSet, which implements NodeList, if you want to modify 
+the nodes).</P>
+<P>Suppose, for example, you have a myExtensions.ProcessNodes class with the following doSomething 
+method:</P>
+<P><CODE><FONT face="courier, monospaced">public static boolean doSomething(org.w3c.dom.NodeList nList)</FONT></CODE></P>
+<P>Assuming you set up this extension in the node-ext namespace, any of the following extension calls 
+from a stylesheet are syntactically possible:</P>
+<P><CODE><FONT face="courier, monospaced">&lt;!--Process the current node--&gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;success&quot; select=&quot;node-ext:MyExtensions.ProcessNodes.doSomething(.)&quot;/&gt;</FONT></CODE></P>
+<P><CODE><FONT face="courier, monospaced">&lt;!--Process all nodes in current context--&gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;success&quot; select=&quot;node-ext:MyExtensions.ProcessNodes.doSomething(*)&quot;/&gt;</FONT></CODE></P>
+<P><CODE><FONT face="courier, monospaced">&lt;!-- Process all nodes --&gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;success&quot; select=&quot;node-ext:MyExtensions.ProcessNodes.doSomething(/*)&quot;/&gt;</FONT></CODE></P>
+<P><CODE><FONT face="courier, monospaced">&lt;!--Process the foo/baz nodes in current context --&gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;success&quot; select=&quot;node-ext:MyExtensions.ProcessNodes.doSomething(foo/baz)&quot;/&gt;</FONT></CODE></P>
+<P><CODE><FONT face="courier, monospaced">&lt;!--Process the/foo/baz and /bar/saz nodes --&gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&lt;xsl:variable name=&quot;success&quot; select=&quot;node-ext:MyExtensions.ProcessNodes.doSomething(/foo/baz | /bar/saz)&quot;/&gt;</FONT></CODE></P>
+<P>The NodeList is in fact a list of references into the XML document, so keep in mind that 
+getNextSibling(), for example, gets you the next sibling in the document, which may not be the next 
+Node in the NodeList.</P>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Implementing extension functions</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>For each extension function in a namespace which is implemented in a language other than Java, the 
+implementation must include a method with the following signature, or the scripting language 
+equivalent:</P>
+<P><CODE><FONT face="courier, monospaced">public <I> object function</I>(<I>args</I>)</FONT></CODE></P>
+<P>where <I>object</I> is the return type, <I>function</I> is the local part of the extension 
+function name (the function name without the namespace prefix), and <I>args</I> correspond to the 
+arguments in the function call.</P>
+<P>In addition, for extension functions implemented in Java, the implementation may include either a 
+Java method with the signature shown above or one with the following signature:</P>
+<P><CODE><FONT face="courier, monospaced">public <I> object function</I>(org.apache.xalan.extensions.ExpressionContext, 
+<I>args</I>)</FONT></CODE></P>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR><A name="java-namespace"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Alternative: using the abbreviated syntax for extensions implemented in Java</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>For extension functions and extension elements implemented in Java, Xalan-Java permits an abbreviated 
+syntax. When you use the abbreviated syntax, you do not use an xalan:component to designate the 
+functions.</P>
+<P>The abbreviated syntax supports the use of extension functions and extension elements implemented 
+in Java. You cannot use this syntax with extensions implemented in JavaScript or another scripting 
+language.</P>
+<A name="java-namespace-declare"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Declare the namespace</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>Declare the namespace for your extensions using one of the following three formats. The 
+technique for invoking an extension for each format is explained in 
+<A href="#ext-func-calls">Extension function Java calls</A>.</P>
+<P><B>class format:</B> <CODE><FONT face="courier, monospaced">xmlns:my-class=&quot;xalan://<I>FQCN</I>&quot;</FONT></CODE></P>
+<P>where <I>FQCN</I> is the fully qualified class name.
+<BR>Examples: <CODE><FONT face="courier, monospaced">xmlns:my-class=&quot;xalan://java.util.Hashtable&quot;</FONT></CODE>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<CODE><FONT face="courier, monospaced">xmlns:my-class=&quot;xalan://mypackage.myclass&quot;</FONT></CODE></P>
+<P><B>package format:</B> <CODE><FONT face="courier, monospaced">xmlns:my-class=&quot;xalan://<I>PJPN</I>&quot;</FONT></CODE></P>
+<P>where <I>PJPN</I> is a partial java package name.  That is, it is the beginning of or the 
+complete name of a java package.
+<BR>Examples: <CODE><FONT face="courier, monospaced">xmlns:my-package=&quot;xalan://java.util&quot;</FONT></CODE>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<CODE><FONT face="courier, monospaced">xmlns:my-package=&quot;xalan://mypackage&quot;</FONT></CODE></P>
+<P><B>Java format:</B> <CODE><FONT face="courier, monospaced">xmlns:java=&quot;http://xml.apache.org/xalan/java&quot;</FONT></CODE></P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The old namespace http://xml.apache.org/xslt/java is still supported for backward compatibility.
+</I></FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Although the namespace declarations for the class and package formats are shown with the 
+xalan:// prefix, the current implementation for those formats will simply use the string to the right 
+of the rightmost forward slash as the Java class name. This format, however, is the preferred 
+format for extension namespace declarations.</I></FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The class: prefix which was sometimes required in earlier versions of Xalan-Java is no longer 
+required.</I></FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>These formats are also available when coding the src attribute of the xalan:script element 
+as explained in <A href="#setup-script">Set up the xalan:script element</A>.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Use the namespace when you make extension calls</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>Use the declared prefix with the syntax described in <A href="#ext-func-calls">Extension 
+function Java calls</A>.</P>
+<P>That is all. You do not include an xalan:component element. Using the abbreviated syntax clearly 
+involves less setup than using the xalan:component/xalan:script approach.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>We recommend that, for extensions coded in Java, the abbreviated syntax should always be used 
+since the xalan:component/xalan:script constructs add no functionality.</I></FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The abbreviated syntax is supported in XSLTC, but the xalan:component/xalan:script constructs 
+are not.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR><A name="ex-java-namespace"><!--anchor--></A> 
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Example: Formatting a date</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>This example uses extension functions to call the SimpleDateFormat class and the IntDate class. 
+IntDate uses String arguments to set up a Date object:</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>import java.util.Date;
+import java.util.Calendar;
+
+public class IntDate
+{
+  public static Date getDate(String year, String month, String day)
+    {
+      // Date(int, int, int) has been deprecated, so use Calendar to
+      // set the year, month, and day.
+      Calendar c = Calendar.getInstance();
+      // Convert each argument to int.
+      c.set ( Integer.parseInt(year),
+              Integer.parseInt(month),
+              Integer.parseInt(day) );
+      return c.getTime();
+    }
+}</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>The template transforms date elements with four attributes. For example, it transforms 
+<CODE><FONT face="courier, monospaced">&lt;date format=&quot;EEEE, MMM dd, yyyy&quot; year=&quot;2000&quot; month=&quot;4&quot; day=&quot;27&quot;/&gt;</FONT></CODE> 
+into &lt;p&gt;Date: Thursday, April 27, 2000.&lt;/p&gt;.</P>
+<P>As you review this stylesheet, please keep the following in mind:</P>
+ <UL>
+  <LI>The exclude-result-prefixes stylesheet attribute prevents the java namespace declaration from
+   appearing in the output.</LI>
+  <LI>The XSLT type returned by any LocationPath expression is node-set, so the XSLT string
+    function is used to convert the format, year, month, and day attribute values from node-sets to
+    strings.</LI>
+  <LI>The format attribute provides a String argument for constructing a java.text.SimpleDateFormat
+    object.</LI>
+    <LI>The IntDate class uses String values provided by the year, month, and day attributes, to set the
+    date. XSLT can pass number values, but these are converted into doubles.</LI>
+  <LI>The formatter variable holds a SimpleDateFormat object, and the date variable holds a Date object.
+    XSLT does not understand either of these types, but they are used to call the SimpleDateFormat format
+     method. In that call, $formatter is the object, and $date is the argument. The syntax for calling
+     Java constructors and methods is described above in <A href="#ext-func-calls">Extension 
+     function Java calls</A>.</LI>    
+ </UL><A name="format-date-stylesheet"><!--anchor--></A>   
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;xsl:stylesheet 
+    xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; 
+    version=&quot;1.0&quot;   
+    xmlns:java=&quot;http://xml.apache.org/xalan/java&quot;
+    exclude-result-prefixes=&quot;java&quot;&gt;
+    
+  &lt;!--Other templates for transforming the rest of
+                                            the XML source documents--&gt;
+  
+  &lt;xsl:template match=&quot;date&quot;&gt; 
+    &lt;xsl:variable name=&quot;year&quot; select=&quot;string(./@year)&quot;/&gt;
+    &lt;xsl:variable name=&quot;month&quot; select=&quot;string(./@month)&quot;/&gt; 
+    &lt;xsl:variable name=&quot;day&quot; select=&quot;string(./@day)&quot;/&gt;          
+    &lt;xsl:variable name=&quot;format&quot; select=&quot;string(./@format)&quot;/&gt;
+
+    &lt;xsl:variable name=&quot;formatter&quot;       
+        select=&quot;java:java.text.SimpleDateFormat.new($format)&quot;/&gt;
+
+    &lt;xsl:variable name=&quot;date&quot; 
+        select=&quot;java:IntDate.getDate($year, $month, $day)&quot;/&gt;
+
+    &lt;p&gt;Date: &lt;xsl:value-of select=&quot;java:format($formatter, $date)&quot;/&gt;&lt;/p&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;  
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Examples: using Java and JavaScript to implement the same extension</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>This section contains two examples. The first example uses a Java extension to transform a set of 
+name elements  into an alphabetical and numbered list. The second example uses a JavaScript script 
+to do the same. Both examples include equivalent extension elements and an extension function.</P>
+<A name="ex-java"><!--anchor--></A> 
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Java implementation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>MyCounter.java</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>Import java.util.*;
+
+public class MyCounter {
+  Hashtable counters = new Hashtable ();
+
+  public MyCounter () 
+  {}
+
+  public void init
+             ( org.apache.xalan.extensions.XSLProcessorContext context,
+               org.apache.xalan.templates.ElemExtensionCall extElem ) 
+  {
+    String name = extElem.getAttribute(&quot;name&quot;);
+    String value = extElem.getAttribute(&quot;value&quot;);
+    int val;
+    try 
+    {
+      val = Integer.parseInt (value);
+    } 
+    catch (NumberFormatException e) 
+    {
+      e.printStackTrace ();
+      val = 0;
+    }
+    counters.put (name, new Integer (val));
+  }
+
+  public int read(String name) 
+  {
+    Integer cval = (Integer) counters.get (name);
+    return (cval == null) ? 0 : cval.intValue ();
+  }
+
+  public void incr
+             ( org.apache.xalan.extensions.XSLProcessorContext context,
+               org.apache.xalan.templates.ElemExtensionCall extElem) 
+  {
+    String name = extElem.getAttribute(&quot;name&quot;);
+    Integer cval = (Integer) counters.get(name);
+    int nval = (cval == null) ? 0 : (cval.intValue () + 1);
+    counters.put (name, new Integer (nval));
+  }
+}
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>An XML source document:</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;doc&gt;
+  &lt;name first=&quot;David&quot; last=&quot;Marston&quot;/&gt;
+  &lt;name first=&quot;David&quot; last=&quot;Bertoni&quot;/&gt;
+  &lt;name first=&quot;Donald&quot; last=&quot;Leslie&quot;/&gt;
+  &lt;name first=&quot;Emily&quot; last=&quot;Farmer&quot;/&gt;
+  &lt;name first=&quot;Jack&quot; last=&quot;Donohue&quot;/&gt;
+  &lt;name first=&quot;Myriam&quot; last=&quot;Midy&quot;/&gt;
+  &lt;name first=&quot;Paul&quot; last=&quot;Dick&quot;/&gt;
+  &lt;name first=&quot;Robert&quot; last=&quot;Weir&quot;/&gt;
+  &lt;name first=&quot;Scott&quot; last=&quot;Boag&quot;/&gt;
+  &lt;name first=&quot;Shane&quot; last=&quot;Curcuru&quot;/&gt;
+&lt;/doc&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>The stylesheet:</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;?xml version=&quot;1.0&quot;?&gt; 
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+                xmlns:xalan=&quot;http://xml.apache.org/xalan&quot;
+                xmlns:counter=&quot;MyCounter&quot;
+                extension-element-prefixes=&quot;counter&quot;
+                version=&quot;1.0&quot;&gt;
+
+  &lt;xalan:component prefix=&quot;counter&quot;
+                   elements=&quot;init incr&quot; functions=&quot;read&quot;&gt;
+    &lt;xalan:script lang=&quot;javaclass&quot; src=&quot;xalan://MyCounter&quot;/&gt;
+  &lt;/xalan:component&gt;
+
+  &lt;xsl:template match=&quot;/&quot;&gt;
+    &lt;HTML&gt;
+      &lt;H1&gt;Names in alphabetical order&lt;/H1&gt;
+      &lt;counter:init name=&quot;index&quot; value=&quot;1&quot;/&gt;
+      &lt;xsl:for-each select=&quot;doc/name&quot;&gt;
+        &lt;xsl:sort select=&quot;@last&quot;/&gt;
+        &lt;xsl:sort select=&quot;@first&quot;/&gt;
+        &lt;p&gt;
+        &lt;xsl:text&gt;[&lt;/xsl:text&gt;
+        &lt;xsl:value-of select=&quot;counter:read('index')&quot;/&gt;
+        &lt;xsl:text&gt;]. &lt;/xsl:text&gt;
+        &lt;xsl:value-of select=&quot;@last&quot;/&gt;
+        &lt;xsl:text&gt;, &lt;/xsl:text&gt;
+        &lt;xsl:value-of select=&quot;@first&quot;/&gt;
+        &lt;/p&gt;
+        &lt;counter:incr name=&quot;index&quot;/&gt;
+      &lt;/xsl:for-each&gt;
+    &lt;/HTML&gt;
+  &lt;/xsl:template&gt;
+ 
+&lt;/xsl:stylesheet&gt;
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>Transformation output:</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;HTML&gt;
+&lt;H1&gt;Names in alphabetical order&lt;/H1&gt;
+&lt;p&gt;[1]. Bertoni, David&lt;/p&gt;
+&lt;p&gt;[2]. Boag, Scott&lt;/p&gt;
+&lt;p&gt;[3]. Curcuru, Shane&lt;/p&gt;
+&lt;p&gt;[4]. Dick, Paul&lt;/p&gt;
+&lt;p&gt;[5]. Donohue, Jack&lt;/p&gt;
+&lt;p&gt;[6]. Farmer, Emily&lt;/p&gt;
+&lt;p&gt;[7]. Leslie, Donald&lt;/p&gt;
+&lt;p&gt;[8]. Marston, David&lt;/p&gt;
+&lt;p&gt;[9]. Midy, Myriam&lt;/p&gt;
+&lt;p&gt;[10]. Weir, Robert&lt;/p&gt;
+&lt;/HTML&gt;</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+</FONT></TD></TR></TABLE><BR><A name="ex-javascript"><!--anchor--></A> 
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>JavaScript implementation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P></P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>&lt;?xml version=&quot;1.0&quot;?&gt; 
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+                xmlns:xalan=&quot;http://xml.apache.org/xalan&quot;
+                xmlns:counter=&quot;MyCounter&quot;
+                extension-element-prefixes=&quot;counter&quot;
+                version=&quot;1.0&quot;&gt;
+
+  &lt;xalan:component prefix=&quot;counter&quot;
+                   elements=&quot;init incr&quot; functions=&quot;read&quot;&gt;
+    &lt;xalan:script lang=&quot;javascript&quot;&gt;
+      var counters = new Array();
+
+      function init (xslproc, elem) {
+        name = elem.getAttribute (&quot;name&quot;);
+        value = parseInt(elem.getAttribute (&quot;value&quot;));
+        counters[name] = value;
+        return null;
+      }
+
+      function read (name) {
+        // Return a string.
+        return &quot;&quot; + (counters[name]);
+      }
+
+      function incr (xslproc, elem)
+      {
+        name = elem.getAttribute (&quot;name&quot;);
+        counters[name]++;
+        return null;
+      }
+    &lt;/xalan:script&gt;
+  &lt;/xalan:component&gt;
+
+  &lt;xsl:template match=&quot;/&quot;&gt;
+    &lt;HTML&gt;
+      &lt;H1&gt;Names in alphatebical order&lt;/H1&gt;
+      &lt;counter:init name=&quot;index&quot; value=&quot;1&quot;/&gt;
+      &lt;xsl:for-each select=&quot;doc/name&quot;&gt;
+        &lt;xsl:sort select=&quot;@last&quot;/&gt;
+        &lt;xsl:sort select=&quot;@first&quot;/&gt;
+        &lt;p&gt;
+        &lt;xsl:text&gt;[&lt;/xsl:text&gt;
+        &lt;xsl:value-of select=&quot;counter:read('index')&quot;/&gt;
+        &lt;xsl:text&gt;]. &lt;/xsl:text&gt;
+        &lt;xsl:value-of select=&quot;@last&quot;/&gt;
+        &lt;xsl:text&gt;, &lt;/xsl:text&gt;
+        &lt;xsl:value-of select=&quot;@first&quot;/&gt;
+        &lt;/p&gt;
+        &lt;counter:incr name=&quot;index&quot;/&gt;
+      &lt;/xsl:for-each&gt;
+    &lt;/HTML&gt;
+  &lt;/xsl:template&gt;
+ 
+&lt;/xsl:stylesheet&gt;
+</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>This stylesheet produces the same output as the preceding example with the Java extension.</P>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2006 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

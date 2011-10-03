@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>
+    Overview of Processing Model
+  </title>
+</head>
+<body>
+  <h1 align="center">Overview of Processing Model</h1>
+  This section gives an overview of the processing model using XLiP.
+  <ul>
+    <li>
+      <a href="#appimage">Application Image</a>
+    <li>
+      <a href="#process">Processing Flow</a>
+      <ul>
+        <li>
+          <a href="#construction">Constructing an XLink data model</a>
+        <li>
+          <a href="#reference">Referencing an XLink data model</a>
+      </ul>
+  </ul>
+  <hr>
+
+  <a name="appimage"></a>
+  <h2>Application Image</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      Figure 1 shows an application image where XML document links are processed based on the XLink standard.<br>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img src="../images/pblock.jpg" alt="application model"><br>
+        <br>
+          Figure 1  Application image<br>
+        <br>
+      </div>
+      <br>
+      An application requests the XML processor and the XLink processor that generates DOM to perform processing, and it accesses the generated information space.
+      The information space is referred to as an XLink data model.<br>
+      An XLink data model consists of an XLink data set and at least one related DOM.<br>
+      An XLink data set contains the results of analyzing XLink descriptions in XML documents.<br>
+    </dd>
+  </dl>
+
+  <a name="process"></a>
+  <h2>Processing Flow</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      A model used for processing link information defined in accordance with XLink consists of the following two processes.
+      <ol>
+        <li><a href="#construction">Constructing an XLink data model</a>
+        <li><a href="#reference">Referencing an XLink data model</a>
+      </ol>
+    </dd>
+  </dl>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <a name="construction"></a>
+      <h3>Constructing an XLink data model</h3>
+      An XLink data model consists of the following two data items.
+      <ul>
+        <li>
+          DOM tree (XML documents including XLink descriptions)
+        <li>
+          XLink data set (results of analyzing a DOM tree)
+      </ul>
+      XLiP analyzes a received DOM tree to construct an XLink data set.<br>
+      The link base drawn up by XLink is also analyzed.  In this case, if another XML document specified as a target of "onLoad" is found, a DOM tree corresponding to the XML document is generated and an XLink analysis is performed.
+      This is a reflexive operation, so an application that uses XLiP need not consider it.<br>
+      This operation enables XLiP to construct an XLink data model that consists of an XLink data set and multiple DOM trees.<br>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img src="../images/buildmodel.jpg" alt="XLink data model building">
+        <br>
+        Figure 2  Constructing an XLink data model<br>
+        <br>
+      </div>
+      <br>
+    </dd>
+  </dl>
+
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <a name="reference"></a>
+      <h3>Referencing an XLink data model</h3>
+      <p>
+        An XLink data model is referenced from an XLink data set.  For details on referencing an XLink data model from an XLink data set, see <a href="accessdata.html#">Referencing an XLink Data Model</a>.<br>
+        The XLink processor provides a means of extract information from an XLink data set.<br>
+      </p>
+
+      <p>
+        The time of referencing an XLink data model can be determined according to the context of an application (e.g., at the request of a user).
+        Users can use this function as follows:
+      </p>
+      <ul>
+        <li>An XML document for which XLink analysis has been performed is assumed to be displayed.  When a user clicks a certain location, an XLink data set is referenced.
+        <li>Immediate after construction of an XLink data model, the user obtains the link information set to a node in a document that starts traversal from an XLink data set, and obtains the link information the user wants.
+      </ul>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img src="../images/access.jpg" alt="access model">
+        <br>
+        Figure 3  Referencing an XLink data model<br>
+        <br>
+      </div>
+      <br>
+    </dd>
+  </dl>
+
+  <hr>
+  <!--
+    <address>
+      <a href="mailto:xlp@ml.fujitsu.co.jp">xlp@ml.fujitsu.co.jp</a>
+    </address>
+  -->
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; FUJITSU LIMITED 2000,2001
+  </div>
+</body>
+</html>

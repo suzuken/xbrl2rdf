@@ -1,0 +1,77 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/mysql-connector-java-5.0.8/src/testsuite/ssl-test-certs
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+ca-cert.pem
+file
+
+
+
+add
+
+ca-key.pem
+file
+
+
+
+add
+
+server-cert.pem
+file
+
+
+
+add
+
+server-key.pem
+file
+
+
+
+add
+
+server-req.pem
+file
+
+
+
+add
+
+test-cert-store
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

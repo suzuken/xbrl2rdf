@@ -1,0 +1,98 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/reasoners
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+bugs
+dir
+
+
+
+add
+
+genericRuleTest.rules
+file
+
+
+
+add
+
+importTest.rules
+file
+
+
+
+add
+
+include.rules
+file
+
+
+
+add
+
+owl
+dir
+
+
+
+add
+
+rdfs
+dir
+
+
+
+add
+
+ruleParserTest1.rules
+file
+
+
+
+add
+
+ruleset1.rules
+file
+
+
+
+add
+
+ruleset2.rules
+file
+
+
+
+add
+
+transitive
+dir
+
+
+
+add
+

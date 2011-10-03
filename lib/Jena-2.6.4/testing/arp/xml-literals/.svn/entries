@@ -1,0 +1,91 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/arp/xml-literals
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+html.nt
+file
+
+
+
+add
+
+html.rdf
+file
+
+
+
+add
+
+owls.rdf
+file
+
+
+
+add
+
+reported1.nt
+file
+
+
+
+add
+
+reported1.rdf
+file
+
+
+
+add
+
+reported2.nt
+file
+
+
+
+add
+
+reported2.rdf
+file
+
+
+
+add
+
+reported3.nt
+file
+
+
+
+add
+
+reported3.rdf
+file
+
+
+
+add
+

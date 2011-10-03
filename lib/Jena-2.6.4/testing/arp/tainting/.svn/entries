@@ -1,0 +1,315 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/arp/tainting
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+base-bad.nt
+file
+
+
+
+add
+
+base-good.nt
+file
+
+
+
+add
+
+base-with-bad-base-bad.nt
+file
+
+
+
+add
+
+base-with-bad-base-good.nt
+file
+
+
+
+add
+
+base.rdf
+file
+
+
+
+add
+
+collection-bad.nt
+file
+
+
+
+add
+
+collection-good.nt
+file
+
+
+
+add
+
+collection.rdf
+file
+
+
+
+add
+
+damlcollection-bad.nt
+file
+
+
+
+add
+
+damlcollection-good.nt
+file
+
+
+
+add
+
+damlcollection.rdf
+file
+
+
+
+add
+
+lang-bad.nt
+file
+
+
+
+add
+
+lang-good.nt
+file
+
+
+
+add
+
+lang.rdf
+file
+
+
+
+add
+
+propValueA-bad.nt
+file
+
+
+
+add
+
+propValueA-good.nt
+file
+
+
+
+add
+
+propValueA.rdf
+file
+
+
+
+add
+
+propValueB-bad.nt
+file
+
+
+
+add
+
+propValueB-good.nt
+file
+
+
+
+add
+
+propValueB.rdf
+file
+
+
+
+add
+
+propValueC-bad.nt
+file
+
+
+
+add
+
+propValueC-good.nt
+file
+
+
+
+add
+
+propValueC.rdf
+file
+
+
+
+add
+
+propValueD-bad.nt
+file
+
+
+
+add
+
+propValueD-good.nt
+file
+
+
+
+add
+
+propValueD.rdf
+file
+
+
+
+add
+
+propValueE-bad.nt
+file
+
+
+
+add
+
+propValueE-good.nt
+file
+
+
+
+add
+
+propValueE.rdf
+file
+
+
+
+add
+
+property-bad.nt
+file
+
+
+
+add
+
+property-good.nt
+file
+
+
+
+add
+
+property.rdf
+file
+
+
+
+add
+
+ptUnknown-bad.nt
+file
+
+
+
+add
+
+ptUnknown-good.nt
+file
+
+
+
+add
+
+ptUnknown.rdf
+file
+
+
+
+add
+
+typedLiteral-bad.nt
+file
+
+
+
+add
+
+typedLiteral-good.nt
+file
+
+
+
+add
+
+typedLiteral.rdf
+file
+
+
+
+add
+
+typedNode-bad.nt
+file
+
+
+
+add
+
+typedNode-good.nt
+file
+
+
+
+add
+
+typedNode.rdf
+file
+
+
+
+add
+

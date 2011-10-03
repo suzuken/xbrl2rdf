@@ -1,0 +1,119 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/mysql-connector-java-5.0.8
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+CHANGES
+file
+
+
+
+add
+
+COPYING
+file
+
+
+
+add
+
+EXCEPTIONS-CONNECTOR-J
+file
+
+
+
+add
+
+README
+file
+
+
+
+add
+
+README.txt
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+build.xml
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+debug
+dir
+
+
+
+add
+
+docs
+dir
+
+
+
+add
+
+mysql-connector-java-5.0.8-bin.jar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+src
+dir
+
+
+
+add
+

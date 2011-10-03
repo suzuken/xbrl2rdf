@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+  <title>
+    処理モデル概要
+  </title>
+</head>
+<body>
+  <h1 align="center">処理モデル概要</h1>
+  XLiPを利用した処理モデルの概要を説明します。
+  <ul>
+    <li>
+      <a href="#appimage">アプリケーションイメージ</a>
+    <li>
+      <a href="#process">処理の流れ</a>
+      <ul>
+        <li>
+          <a href="#construction">XLinkデータモデルの構築</a>
+        <li>
+          <a href="#reference">XLinkデータモデルの参照</a>
+      </ul>
+  </ul>
+  <hr>
+
+  <a name="appimage"></a>
+  <h2>アプリケーションイメージ</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      XLink規格に基づいたXML文書のリンクを処理するアプリケーションのイメージを図1に示します。<br>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img width=522 height=340 src="../images/pblock.jpg" alt="application model"><br>
+        <br>
+          図1 アプリケーションイメージ<br>
+        <br>
+      </div>
+      <br>
+      アプリケーションは、DOMを生成するXMLプロセッサと、本XLinkプロセッサに処理を依頼し、生成された情報空間へアクセスすることになります。
+      このような情報空間をXLinkデータモデルと呼びます。<br>
+      XLinkデータモデルは、1つのXLinkデータセットと、1つ以上の関連するDOMから構成されます。<br>
+      XLinkデータセットは、XML文書中のXLink記述を解析した結果を保持します。<br>
+    </dd>
+  </dl>
+
+  <a name="process"></a>
+  <h2>処理の流れ</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      XLinkに沿って記述されたリンク情報を処理するためのモデルは、以下の2つのプロセスから構成されます。
+      <ol>
+        <li><a href="#construction">XLinkデータモデルの構築</a>
+        <li><a href="#reference">XLinkデータモデルの参照</a>
+      </ol>
+    </dd>
+  </dl>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <a name="construction"></a>
+      <h3>XLinkデータモデルの構築</h3>
+      XLinkデータモデルは、以下の2つのデータから構成されます。
+      <ul>
+        <li>
+          DOMツリー(XLink記述を含むXML文書)
+        <li>
+          XLinkデータセット(DOMツリーを解析した結果)
+      </ul>
+      XLiPは、受け取ったDOMツリーを解析することにより、XLinkデータセットを構築します。<br>
+      解析にはXLinkで策定されているリンクベースの解析が含まれますが、
+      この時"onLoad"の対象として指定された別のXML文書が見つかった場合、
+      そのXML文書に対応するDOMツリーを生成し、更にXLink解析を行います。
+      これは再帰的な動作ですが、
+      XLiPを利用するアプリケーションが意識する必要はありません。<br>
+      この結果XLiPは、1つのXLinkデータセットと複数のDOMツリーから構成される、
+      XLinkデータモデルを構築します。<br>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img width=522 height=340 src="../images/buildmodel.jpg" alt="XLink data model building">
+        <br>
+        図2 XLinkデータモデルの構築<br>
+        <br>
+      </div>
+      <br>
+    </dd>
+  </dl>
+
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <a name="reference"></a>
+      <h3>XLinkデータモデルの参照</h3>
+      <p>
+        XLinkデータモデルの参照は、XLinkデータセットを起点とします。XLinkデータセットを起点とするXLinkデータモデルの参照の詳細については、<a href="accessdata.html#">XLinkデータモデルの参照（詳細）</a>を参照してください。<br>
+        なお、XLinkプロセッサにおいても、XLinkデータセットからいくつかの情報を抽出するための手段を提供します。<br>
+      </p>
+
+      <p>
+        XLinkデータモデルを参照するタイミングは、アプリケーションのコンテキスト（たとえばユーザのリクエスト時など）により任意に決定できます。
+        このため、以下の様な使い方ができます。
+      </p>
+      <ul>
+        <li>XLink解析済みのXML文書を表示しておき、特定の場所をユーザがクリックしたときなどにXLinkデータセットを参照する。
+        <li>XLinkデータモデル構築の直後に、XLinkデータセットから、トラバーサルを開始する任意の文書中のノードに設定されたリンク情報を取得し、所望のリンク情報を取得する。
+      </ul>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img width=522 height=340 src="../images/access.jpg" alt="access model">
+        <br>
+        図3 XLinkデータモデルの参照<br>
+        <br>
+      </div>
+      <br>
+    </dd>
+  </dl>
+
+  <hr>
+  <!--
+    <address>
+      <a href="mailto:xlp@ml.fujitsu.co.jp">xlp@ml.fujitsu.co.jp</a>
+    </address>
+  -->
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; Fujitsu Limited 2000,2001
+  </div>
+</body>
+</html>

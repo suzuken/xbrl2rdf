@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+  <title>
+    XLiP Glossary
+  </title>
+  <style type="text/css">
+<!--
+    body {
+      font-size: midium;
+    }
+    h1 {
+      margin-left:  0pt;
+    }
+    td {
+      vertical-align: top;
+    }
+    ul {
+      margin-top: 0pt;
+    }
+-->
+  </style>
+</head>
+<body>
+  <h1 align="center">
+    XLiP用語集
+  </h1>
+  <table border=2>
+    <tr>
+      <th>
+        用語
+      </th>
+      <th>
+        定義
+      </th>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XBaseResolver">XBaseリゾルバ</a><br>
+        (class XBaseResolver)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XMLBase">XML Base</a>で定義
+        されている、URI参照から絶対URIへの解決手段を提供します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDataSet">XLinkデータセット</a><br>
+        (class XLinkDataSet)<br>
+      </td>
+      <td valign="top">
+        XLinkデータモデルのルートとなる情報です。<br>
+        すべての<a href="#XLinkDeclaration">リンク宣言情報</a>は、
+        <a href="#XLinkDataSet">XLinkデータセット</a>から取得します。<br>
+        <a href="#XLinkProcessor">XLinkプロセッサ</a>によって構築し、取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <!-- クラス定義を持たない概念的なもの -->
+        <a name="XLinkDataModel">XLinkデータモデル</a><br>
+      </td>
+      <td valign="top">
+        XLinkを取り扱うためのデータモデルです。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkProcessor">XLinkプロセッサ</a><br>
+        (class XLinkProcessor)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XLink">XLink</a>で定義されている
+        要素を含むXML文書を解析する機能を提供します。<br>
+        解析結果は、<a href="#XLinkDataSet">XLinkデータセット</a>として
+        取得できます。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkException">XLink例外</a><br>
+        (class XLinkException)<br>
+      </td>
+      <td valign="top">
+        <a href="#XLinkProcessor">XLinkプロセッサ</a>の処理中に発生した
+        例外を通知します。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XPointerProcessor">XPointerプロセッサ</a><br>
+        (class XPointerProcessor)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XPointer">XPointer</a>で定義されている
+        フラグメント識別子の解析機能を提供します。<br>
+        解析の結果として、XPointerが指す
+        <a href="#Location">ロケーション情報</a>
+        または<a href="#NodeSet">ノードセット</a>が得られます。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XPointerException">XPointer例外</a><br>
+        (class XPointerException)<br>
+      </td>
+      <td valign="top">
+        <a href="#XPointerProcessor">XPointerプロセッサ</a>の処理中に
+        発生した例外を通知します。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Arc">アーク情報</a><br>
+        (class Arc)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XLink">XLink</a>で定義されている
+        arc型要素の情報、またはsimple型要素の以下の属性を集約した情報を
+        モデル化した情報です。<br>
+        <a href="#XLinkDeclaration">リンク宣言情報</a>から取得します。<br>
+        <ul>
+          <li>
+            arcrole属性
+          <li>
+            title属性
+          <li>
+            show属性
+          <li>
+            actuate属性
+          <li>
+            from属性
+          <li>
+            to属性
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="ArcList">アーク情報リスト</a><br>
+        (interface ArcList)<br>
+      </td>
+      <td valign="top">
+        <a href="#Arc">アーク情報</a>のリストを提供します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="ArcHashtable">アーク情報リストテーブル</a><br>
+        (interface ArcHashtable)<br>
+      </td>
+      <td valign="top">
+        文字列をキーとして登録された<a href="#ArcList">アーク情報リスト</a>を
+        提供します。キーとなる文字列には、以下が用いられています。
+        <ul>
+          <li>
+            <a href="#Arc">アーク情報</a>が保持するfrom属性の値
+          <li>
+            <a href="#Locator">ロケータ情報</a>が保持するlabel属性の値
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Address">アドレス情報</a><br>
+        (class Address)<br>
+      </td>
+      <td valign="top">
+        <a href="#Locator">ロケータ情報</a>に集約されている
+        href属性をモデル化した情報です。<br>
+        <a href="#Locator">ロケータ情報</a>から取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Title">タイトル情報</a><br>
+        (class Title)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XLink">XLink</a>で定義されている
+        title型要素をモデル化した情報です。<br>
+        <a href="#XLinkDeclaration">リンク宣言情報</a>、
+        <a href="#Locator">ロケータ情報</a>
+        および<a href="#Arc">アーク情報</a>から取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="DocumentHashtable">ドキュメント情報テーブル</a><br>
+        (interface DocumentHashtable)<br>
+      </td>
+      <td valign="top">
+        <a href="#XLinkProcessor">XLinkプロセッサ</a>が処理を行った
+        XML 文書に対応するDocumentを返します。<br>
+        検索キーは、文書のURIです。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="NodeSet">ノードセット</a><br>
+        (interface NodeSet)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XPath">XPath</a>で定義されている、
+        ノードセットをモデル化した情報で、
+        <a href="spec.html#DOM">DOM</a>で定義されているNodeのコレクションです。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XPNode">ノードロケーション情報</a><br>
+        (class XPNode)<br>
+      </td>
+      <td valign="top">
+        Node型の<a href="#Location">ロケーション情報</a>をモデル化した
+        情報です。<br>
+        詳細については、<a href="spec.html#XPath">XPath</a>
+        の&quot;5 Data Model&quot;を参照してください。<br>
+        XPointerプロセッサが提供するメソッドの結果として取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Point">ポイントロケーション情報</a><br>
+        (class Point)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XPointer">XPointer</a>で定義されている
+        Point Locationをモデル化した情報です。<br>
+        XPointerプロセッサが提供するメソッドの結果として取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkMessageReporter">メッセージレポータ</a><br>
+        (class XLinkMessageReporter)<br>
+      </td>
+      <td valign="top">
+        <a href="#XLinkProcessor">XLinkプロセッサ</a>内部で
+        <a href="#XLinkException">XLink例外</a>が発生した際に、
+        アプリケーションへエラーを通知するためのインタフェースです。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDeclaration">リンク宣言情報</a><br>
+        (class XLinkDeclaration)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XLink/">XLink</a>で定義されている
+        以下の要素をモデル化した情報です。<br>
+        <a href="#XLinkDataSet">XLinkデータセット</a>から取得します。<br>
+        <ul>
+          <li>
+            extended型要素
+          <li>
+            simple型要素
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDeclarationList">リンク宣言情報リスト</a><br>
+        (interface XLinkDeclarationList)<br>
+      </td>
+      <td valign="top">
+        <a href="#XLinkDeclaration">リンク宣言情報</a>のコレクションです。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDeclarationHashtable">リンク宣言情報リストテーブル</a><br>
+        (interface XLinkDeclarationHashtable)<br>
+      </td>
+      <td valign="top">
+        XLinkプロセッサが処理を行った XML文書に対応する<a href="#XLinkDeclarationList">リンク宣言情報リスト</a>を返します。
+        検索キーは、XML文書に対応する<a href="spec.html#DOM">DOM</a>のDocumentオブジェクトです。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Range">レンジロケーション情報</a><br>
+        (class Range)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XPointer">XPointer</a>で
+        定義されているRange Locationをモデル化した情報です。<br>
+        XPointerプロセッサが提供するメソッドの結果として取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="LocationSet">ロケーションセット</a><br>
+        (class LocationSet)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XPointer">XPointer</a>で定義
+        されている、ロケーションセットをモデル化した情報で、ロケーション情報の
+        コレクションです。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Location">ロケーション情報</a><br>
+        (interface Location)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XPointer">XPointer</a>で
+        定義されているlocationをモデル化したインタフェースです。<br>
+        <a href="#XPNode">ノードロケーション情報</a>、
+        <a href="#Point">ポイントロケーション情報</a>および
+        <a href="#Range">レンジロケーション情報</a>で実装されています。<br>
+        XPointerプロセッサが提供するメソッドの結果として取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Locator">ロケータ情報</a><br>
+        (class Locator)<br>
+      </td>
+      <td valign="top">
+        <a href="spec.html#XLink">XLink</a>で定義されている
+        locator型要素およびresource型要素の情報、またはsimple型要素の以下の
+        属性を集約した情報をモデル化した情報です。<br>
+        <ul>
+          <li>
+            href属性
+          <li>
+            role属性
+          <li>
+            title属性
+          <li>
+            label属性
+        </ul>
+        <a href="#XLinkDeclaration">リンク宣言情報</a>から取得します。<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="LocatorList">ロケータ情報リスト</a><br>
+        (interface LocatorList)<br>
+      </td>
+      <td valign="top">
+        <a href="#Locator">ロケータ情報</a>のコレクションです。
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="LocatorHashtable">ロケータ情報リストテーブル</a><br>
+        (interface LocatorHashtable)<br>
+      </td>
+      <td valign="top">
+        ノードをキーとして登録された
+        <a href="#LocatorList">ロケータ情報リスト</a>を提供します。
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; Fujitsu Limited 2000,2001
+  </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+  <title>
+    XLinkデータモデルの参照（詳細）
+  </title>
+</head>
+<body>
+  <h1 align="center">XLinkデータモデルの参照（詳細）</h1>
+  XLinkデータモデルの構築方法と、XLinkデータセットの利用方法について説明します。<br>
+  <ul>
+    <li>
+      <a href="#create">XLinkデータモデルの取得</a>
+    <li>
+      <a href="#access">XLinkデータセットの利用</a>
+      <ul>
+        <li>
+          <a href="#isStartingResource">リンク開始リソースの判定</a>
+        <li>
+          <a href="#hasDocument">取り込み済みXML文書の確認</a>
+        <li>
+          <a href="#getEndingResources">リンク終了リソース（トラバース先）の取得</a>
+        <li>
+          <a href="#traverse">トラバース先の選択と取得</a>
+      </ul>
+  </ul>
+  <hr>
+
+  <a name="create"></a>
+  <h2>XLinkデータモデルの取得</h2>
+  <dl>
+    <dd>
+      XLinkプロセッサでは、XML文書のURIまたはDOMツリーを入力として、XLinkデータモデルを構築する機能を提供しています。<br>
+      アプリケーションは、この機能を利用して、構築済みのXLinkデータモデルを取得します。<br>
+      <pre>
+        [例]
+          XLinkProcessor xLinkProcessor;  // XLinkプロセッサ
+          …
+          // XLinkデータセット(XLinkデータモデルのルート)の取得
+          XLinkDataSet xLinkDataSet = xLinkProcessor.getDataSet();
+      </pre>
+      アプリケーションは取得済みのXLinkデータモデルから、XLinkプロセッサなしに、様々な情報を抽出することができます。<br>
+      なお、XLinkプロセッサは、XLinkデータモデルの構築以外に、構築済みのXLinkデータモデルから情報を抽出する際に利用できる便利な手段も提供しています。<br>
+      <p>
+        <b>関連インタフェース、クラス</b><br>
+        XLinkProcessor, XLinkDataSet
+      </p>
+<!--</dd> -->
+  </dl>
+
+  <a name="access"></a>
+  <h2>XLinkデータセットの利用</h2>
+  <dl>
+    <dd>
+
+      <div>
+        <a name="isStartingResource"></a>
+        <h3><u>リンク開始リソースの判定</u></h3>
+        XLinkデータモデル中のXML文書のある要素がリンク開始リソースかどうかは、以下の手順で調べられます。<br>
+        <ol>
+          <li>
+            XLinkデータセットから、リンク開始リソースを保持するロケータ情報リストテーブル(startingResources)を取得します。
+          <li>
+            ロケータ情報リストテーブルに、リンク開始リソースかどうかを判定したい要素（ノード）を引数として、ロケータ情報リストの取得を試みます。
+        </ol>
+        <pre>
+        [例]
+          XLinkDataSet xLinkDataSet;  // XLinkデータセット
+          Node testNode;              // リンク開始リソースかどうかを
+                                      // 判定したい要素
+          ...
+          // リンク開始リソースを保持するロケータ情報リストテーブルの取得
+          LocatorHashtable table = xLinkDataSet.getResourceObjects();
+
+          // ロケータ情報リストの取得
+          LocatorList locatorList = table.get(testNode);
+          if (locatorList != null) {
+            // testNodeはリンク開始リソースです。
+            // ロケータ情報リストには、リンク終了リソースを示す
+            // ロケータ情報が保持されています。
+          } else {
+            // testNodeはリンク開始リソースではありません。
+          }
+        </pre>
+        なおXLinkプロセッサ（<i>XLinkProcessor</i>）では、同様の問い合わせメソッドとして<i>isStartingResource()</i>を用意しています。<br>
+        <pre>
+        [例]
+          XLinkProcessor xLinkProcessor;  // XLinkプロセッサ
+          Node testNode;                  // リンク開始リソースかどうかを
+                                          //   判定したい要素
+          ...
+          if (xLinkProcessor.isStartingResource(testNode)) {
+            // testNodeはリンク開始リソースです。
+          } else {
+            // testNodeはリンク開始リソースではありません。
+          }
+        </pre>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img width=522 height=340 src="../images/isstartingresource.jpg" alt="needed data"><br>
+          <br>
+          図1 処理に必要なデータ<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>関連インタフェース、クラス</b><br>
+          XLinkDataSet, LocatorHashtable, LocatorList, XLinkProcessor
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <a name="hasDocument"></a>
+        <h3><u>取り込み済みXML文書の確認</u></h3>
+        XLinkプロセッサは、XLinkのリンクベースを実現するために、アプリケーションが直接指定していないXML文書をDOMツリーに変換して、XLinkデータモデルに取り込みます。
+        このため、リンクベースとして処理されたXML文書は、XLinkデータモデルの構築が終了した時点で、DOMとして取得することができます。<br>
+        あるXML文書が、XLinkデータモデルにDOMとして取り込まれているかどうかは、以下の手順で調べることが出来ます。<br>
+        <ol>
+          <li>
+            XLinkデータセットからドキュメント情報テーブル(documentOnScope)を取得します。
+          <li>
+            ドキュメント情報テーブルに、取り込み済みかどうかを判定したいXML文書の絶対URIを引数として、問い合わせます。
+        </ol>
+        <pre>
+        [例]
+          XLinkDataSet xLinkDataSet;  // XLinkデータセット
+          String docAbsoluteURI;      // 取り込み済みかをどうか
+                                      //   判定したいXML文書の絶対URI
+          ...
+          DocumentHashtable table = XLinkDataSet.getDocumentsOnScope();
+          boolean hasDocument = table.containsKey(docAbsoluteURI);
+          if (hasDocument) {
+            // XML文書はDOMとして取り込み済み
+            Document doc = table.get(docAbsoluteURI); // DOMツリーを取得
+            ...
+          }
+        </pre>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img width=522 height=340 src="../images/hasdocument.jpg" alt="needed data"><br>
+          <br>
+          図2 処理に必要なデータ<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>関連インタフェース、クラス</b><br>
+          XLinkDataSet, DocumentHashtable
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <a name="getEndingResources"></a>
+        <h3><u>リンク終了リソース（トラバース先）の取得</u></h3>
+        XLinkでは3つ以上のオブジェクト間のリンクを記述できます。つまり、1つのリンク開始位置に対して、複数のリンク終了位置を関連付けられます。<br>
+        XLinkデータモデルでは、リンク開始位置、リンク終了位置をロケータ情報として保持しています。<br>
+        リンク開始リソースを指すロケータ情報から、リンク終了リソースを指すロケータ情報は、以下の手順で検索することができます。<br>
+        <ol>
+          <li>
+            リンク開始リソースを指すロケータ情報に属する、リンク宣言情報を取得します。
+          <li>
+            リンク宣言情報から、リンク開始リソースを指すロケータ情報のラベルをキーとして、アーク情報を取得します。
+          <li>
+            リンク宣言情報から取得できるロケータ情報リストから、アーク情報のリンク先とラベルが一致するロケータ情報を検索します。
+        </ol>
+        <pre>
+        [例]
+          Locator startingResource;   // リンク開始リソースを指すロケータ情報
+          ...
+
+          // リンク開始リソースを指すロケータ情報が属する、
+          //   リンク宣言情報を取得します。
+          XLinkDeclaration xLinkDecl = startingResource.getParent();
+
+          // リンク宣言情報から、ロケータ情報リストを取得します。
+          LocatorList locatorList = xLinkDecl.getLocators();
+
+          // リンク宣言情報から、リンク開始リソースを指すロケータ情報の
+          //   ラベルをキーとして、アーク情報を取得します。
+          ArcHashtable arcTable = xLinkDecl.getArcs();
+          ArcList arcList = arcTable.get(startingResource.getLabel());
+          for (int i = 0; i &lt; arcList.getLength(); ++i) {
+            Arc arc = arcList.item(i);
+
+            // アーク情報のリンク先とラベルが一致する
+            //   ロケータ情報を検索します。
+            for (int j = 0; j &lt; locatorList.getLength(); ++j) {
+              Locator locator = locatorList.item(j);
+              if (arc.getTo().equals(locator.getLabel())) {
+                // このロケータ情報(locator)は、
+                //   リンク終了リソースを指すロケータ情報です。
+              }
+            }
+          }
+        </pre>
+        この手順の結果得られるロケータ情報のうち、どのロケータ情報を選択するかは、
+        アプリケーションに依存します。<br>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img width=522 height=340 src="../images/endingresources.jpg" alt="needed data"><br>
+          <br>
+          図3 処理に必要なデータ<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>関連インタフェース、クラス</b><br>
+          XLinkDeclaration, Arc, Locator, ArcHashtable, ArcList, LocatorList
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <a name="traverse"></a>
+        <h3><u>トラバース先の選択と取得</u></h3>
+        <a href="#getEndingResources">リンク終了リソース（トラバース先）の取得</a>
+        で得られたロケータ情報が複数ある場合の選択は、アプリケーションに依存します。<br>
+        XLinkデータモデルでは、トラバースを行うタイミングや見せ方に関する情報を、
+        ロケータ情報を検索する際に用いたアーク情報によって提供しています。<br>
+        アプリケーションは、アーク情報やロケータ情報から得られる情報を用いて、
+        トラバース先を絞り込むことができます。<br>
+        また、トラバース先のURIは、ロケータ情報から得られるアドレス情報から取得できます。
+        URIのフラグメント識別子にXPointerが利用されている場合は、XPointerプロセッサに問い合わせることで、該当するロケーションを取得することができます。<br>
+        なおXLinkプロセッサ（<i>XLinkProcessor</i>）では、XPointerで指定されたトラバース先のノードを取得するメソッド（<i>getFragments()</i>）を用意しています。<br>
+        <pre>
+        [例]
+          XLinkProcessor xLinkProcessor;  // XLinkプロセッサ
+          String xpointer;                // XPointer記述
+          Document document;              // XPointerで検索の対象とするDOM
+          ...
+          // XPointer解析の結果を、ノードのリストとして取得します。
+          NodeSet nodeSet =
+            xLinkProcessor.getFragments(document, xpinter);
+        </pre>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img width=753 height=403 src="../images/traverse.jpg" alt="needed data"><br>
+          <br>
+          図4 処理に必要なデータ<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>関連インタフェース、クラス</b><br>
+          Locator, Address, Arc
+        </p>
+      </div>
+
+<!--</dd> -->
+  </dl>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; Fujitsu Limited 2000,2001
+  </div>
+</body>
+</html>

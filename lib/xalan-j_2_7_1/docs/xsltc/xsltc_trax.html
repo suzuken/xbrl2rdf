@@ -1,0 +1,617 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>The Translet API and TrAX</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xsltc_trax-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+ 
+  <A href="index.html" onMouseOut="rolloverOff('side-index');" onMouseOver="rolloverOn('side-index');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-index" onLoad="rolloverLoad('side-index','graphics/index-label-2.jpg','graphics/index-label-3.jpg');" src="graphics/index-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_compiler.html" onMouseOut="rolloverOff('side-xsltc_compiler');" onMouseOver="rolloverOn('side-xsltc_compiler');"><IMG alt="Compiler design" border="0" height="12" hspace="0" name="side-xsltc_compiler" onLoad="rolloverLoad('side-xsltc_compiler','graphics/xsltc_compiler-label-2.jpg','graphics/xsltc_compiler-label-3.jpg');" src="graphics/xsltc_compiler-label-3.jpg" vspace="0" width="120"></A><BR>
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <A href="xsl_whitespace_design.html" onMouseOut="rolloverOff('side-xsl_whitespace_design');" onMouseOver="rolloverOn('side-xsl_whitespace_design');"><IMG alt="Whitespace" border="0" height="12" hspace="0" name="side-xsl_whitespace_design" onLoad="rolloverLoad('side-xsl_whitespace_design','graphics/xsl_whitespace_design-label-2.jpg','graphics/xsl_whitespace_design-label-3.jpg');" src="graphics/xsl_whitespace_design-label-3.jpg" vspace="0" width="120"></A><BR>
+
+  <A href="xsl_sort_design.html" onMouseOut="rolloverOff('side-xsl_sort_design');" onMouseOver="rolloverOn('side-xsl_sort_design');"><IMG alt="xsl:sort" border="0" height="12" hspace="0" name="side-xsl_sort_design" onLoad="rolloverLoad('side-xsl_sort_design','graphics/xsl_sort_design-label-2.jpg','graphics/xsl_sort_design-label-3.jpg');" src="graphics/xsl_sort_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_key_design.html" onMouseOut="rolloverOff('side-xsl_key_design');" onMouseOver="rolloverOn('side-xsl_key_design');"><IMG alt="Keys" border="0" height="12" hspace="0" name="side-xsl_key_design" onLoad="rolloverLoad('side-xsl_key_design','graphics/xsl_key_design-label-2.jpg','graphics/xsl_key_design-label-3.jpg');" src="graphics/xsl_key_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_comment_design.html" onMouseOut="rolloverOff('side-xsl_comment_design');" onMouseOver="rolloverOn('side-xsl_comment_design');"><IMG alt="Comment design" border="0" height="12" hspace="0" name="side-xsl_comment_design" onLoad="rolloverLoad('side-xsl_comment_design','graphics/xsl_comment_design-label-2.jpg','graphics/xsl_comment_design-label-3.jpg');" src="graphics/xsl_comment_design-label-3.jpg" vspace="0" width="120"></A><BR>
+ 
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsl_lang_design.html" onMouseOut="rolloverOff('side-xsl_lang_design');" onMouseOver="rolloverOn('side-xsl_lang_design');"><IMG alt="lang()" border="0" height="12" hspace="0" name="side-xsl_lang_design" onLoad="rolloverLoad('side-xsl_lang_design','graphics/xsl_lang_design-label-2.jpg','graphics/xsl_lang_design-label-3.jpg');" src="graphics/xsl_lang_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+  <A href="xsl_unparsed_design.html" onMouseOut="rolloverOff('side-xsl_unparsed_design');" onMouseOver="rolloverOn('side-xsl_unparsed_design');"><IMG alt="Unparsed entities" border="0" height="12" hspace="0" name="side-xsl_unparsed_design" onLoad="rolloverLoad('side-xsl_unparsed_design','graphics/xsl_unparsed_design-label-2.jpg','graphics/xsl_unparsed_design-label-3.jpg');" src="graphics/xsl_unparsed_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="xsl_if_design.html" onMouseOut="rolloverOff('side-xsl_if_design');" onMouseOver="rolloverOn('side-xsl_if_design');"><IMG alt="If design" border="0" height="12" hspace="0" name="side-xsl_if_design" onLoad="rolloverLoad('side-xsl_if_design','graphics/xsl_if_design-label-2.jpg','graphics/xsl_if_design-label-3.jpg');" src="graphics/xsl_if_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_choose_design.html" onMouseOut="rolloverOff('side-xsl_choose_design');" onMouseOver="rolloverOn('side-xsl_choose_design');"><IMG alt="Choose|When|Otherwise design" border="0" height="12" hspace="0" name="side-xsl_choose_design" onLoad="rolloverLoad('side-xsl_choose_design','graphics/xsl_choose_design-label-2.jpg','graphics/xsl_choose_design-label-3.jpg');" src="graphics/xsl_choose_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_include_design.html" onMouseOut="rolloverOff('side-xsl_include_design');" onMouseOver="rolloverOn('side-xsl_include_design');"><IMG alt="Include|Import design" border="0" height="12" hspace="0" name="side-xsl_include_design" onLoad="rolloverLoad('side-xsl_include_design','graphics/xsl_include_design-label-2.jpg','graphics/xsl_include_design-label-3.jpg');" src="graphics/xsl_include_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+  <A href="xsl_variable_design.html" onMouseOut="rolloverOff('side-xsl_variable_design');" onMouseOver="rolloverOn('side-xsl_variable_design');"><IMG alt="Variable|Param design" border="0" height="12" hspace="0" name="side-xsl_variable_design" onLoad="rolloverLoad('side-xsl_variable_design','graphics/xsl_variable_design-label-2.jpg','graphics/xsl_variable_design-label-3.jpg');" src="graphics/xsl_variable_design-label-3.jpg" vspace="0" width="120"></A><BR> 
+
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+   
+  <A href="xsltc_runtime.html" onMouseOut="rolloverOff('side-xsltc_runtime');" onMouseOver="rolloverOn('side-xsltc_runtime');"><IMG alt="Runtime" border="0" height="12" hspace="0" name="side-xsltc_runtime" onLoad="rolloverLoad('side-xsltc_runtime','graphics/xsltc_runtime-label-2.jpg','graphics/xsltc_runtime-label-3.jpg');" src="graphics/xsltc_runtime-label-3.jpg" vspace="0" width="120"></A><BR> 
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+
+  <A href="xsltc_dom.html" onMouseOut="rolloverOff('side-xsltc_dom');" onMouseOver="rolloverOn('side-xsltc_dom');"><IMG alt="Internal DOM" border="0" height="12" hspace="0" name="side-xsltc_dom" onLoad="rolloverLoad('side-xsltc_dom','graphics/xsltc_dom-label-2.jpg','graphics/xsltc_dom-label-3.jpg');" src="graphics/xsltc_dom-label-3.jpg" vspace="0" width="120"></A><BR>            
+            
+  <A href="xsltc_namespace.html" onMouseOut="rolloverOff('side-xsltc_namespace');" onMouseOver="rolloverOn('side-xsltc_namespace');"><IMG alt="Namespaces" border="0" height="12" hspace="0" name="side-xsltc_namespace" onLoad="rolloverLoad('side-xsltc_namespace','graphics/xsltc_namespace-label-2.jpg','graphics/xsltc_namespace-label-3.jpg');" src="graphics/xsltc_namespace-label-3.jpg" vspace="0" width="120"></A><BR>             
+            
+ <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+ 
+   <IMG alt="Translet & TrAX" border="0" height="12" hspace="0" src="graphics/xsltc_trax-label-1.jpg" vspace="0" width="120"><BR>
+   <A href="xsltc_predicates.html" onMouseOut="rolloverOff('side-xsltc_predicates');" onMouseOver="rolloverOn('side-xsltc_predicates');"><IMG alt="XPath Predicates" border="0" height="12" hspace="0" name="side-xsltc_predicates" onLoad="rolloverLoad('side-xsltc_predicates','graphics/xsltc_predicates-label-2.jpg','graphics/xsltc_predicates-label-3.jpg');" src="graphics/xsltc_predicates-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_iterators.html" onMouseOut="rolloverOff('side-xsltc_iterators');" onMouseOver="rolloverOn('side-xsltc_iterators');"><IMG alt="Xsltc Iterators" border="0" height="12" hspace="0" name="side-xsltc_iterators" onLoad="rolloverLoad('side-xsltc_iterators','graphics/xsltc_iterators-label-2.jpg','graphics/xsltc_iterators-label-3.jpg');" src="graphics/xsltc_iterators-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_native_api.html" onMouseOut="rolloverOff('side-xsltc_native_api');" onMouseOver="rolloverOn('side-xsltc_native_api');"><IMG alt="Xsltc Native API" border="0" height="12" hspace="0" name="side-xsltc_native_api" onLoad="rolloverLoad('side-xsltc_native_api','graphics/xsltc_native_api-label-2.jpg','graphics/xsltc_native_api-label-3.jpg');" src="graphics/xsltc_native_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_trax_api.html" onMouseOut="rolloverOff('side-xsltc_trax_api');" onMouseOver="rolloverOn('side-xsltc_trax_api');"><IMG alt="Xsltc TrAX API" border="0" height="12" hspace="0" name="side-xsltc_trax_api" onLoad="rolloverLoad('side-xsltc_trax_api','graphics/xsltc_trax_api-label-2.jpg','graphics/xsltc_trax_api-label-3.jpg');" src="graphics/xsltc_trax_api-label-3.jpg" vspace="0" width="120"></A><BR>
+   <A href="xsltc_performance.html" onMouseOut="rolloverOff('side-xsltc_performance');" onMouseOver="rolloverOn('side-xsltc_performance');"><IMG alt="Performance Hints" border="0" height="12" hspace="0" name="side-xsltc_performance" onLoad="rolloverLoad('side-xsltc_performance','graphics/xsltc_performance-label-2.jpg','graphics/xsltc_performance-label-3.jpg');" src="graphics/xsltc_performance-label-3.jpg" vspace="0" width="120"></A><BR>            
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Contents</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>Note: This document describes the design of XSLTC's TrAX implementation.
+  The XSLTC <A href="xsltc_trax_api.html">TrAX API user documentation</A>
+  is kept in a separate document.</P>
+
+  <P>The structure of this document is, and should be kept, as follows:</P>
+
+  <UL>
+    <LI>A brief introduction to TrAX/JAXP</LI>
+    <LI>Overall design of the XSLTC TrAX implementation</LI>
+    <LI>Detailed design of various TrAX components</LI>
+  </UL>
+
+  <UL>
+    <LI><A href="#abstract">Abstract</A></LI>
+    <LI><A href="#trax">TrAX basics</A></LI>
+    <LI><A href="#config">TrAX configuration</A></LI>
+    <LI><A href="#design">XSLTC TrAX architecture</A></LI>
+    <LI><A href="#detailed_design">XSLTC TrAX detailed design</A></LI>
+      <UL>
+        <LI><A href="#factory_design">TransformerFactory design</A></LI>
+        <LI><A href="#templates_design">Templates design</A></LI>
+        <LI><A href="#transformer_design">Transformer design</A></LI>
+        <LI><A href="#config_design">TrAX configuration design</A></LI>
+      </UL>
+  </UL>
+  </FONT></TD></TR></TABLE><BR>
+
+  
+
+  <A name="abstract"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Abstract</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>JAXP is the Java extension API for XML parsing. TrAX is an API for XML
+  transformations and is included in the later versions of JAXP. JAXP includes
+  two packages, one for XML parsing and one for XML transformations (TrAX):</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    javax.xml.parsers
+    javax.xml.transform</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>XSLTC is an XSLT processing engine and fulfills the role as an XML
+  transformation engine behind the TrAX portion of the JAXP API. XSLTC is a
+  provider for the TrAX API and a client of the JAXP parser API.</P>
+
+  <P>This document describes the design used for integrating XSLTC translets
+  with the JAXP TrAX API. The heart of the design is a wrapper class around the
+  XSLTC compiler that extends the JAXP <CODE><FONT face="courier, monospaced">SAXTransformerFactory</FONT></CODE>
+  interface. This factory delivers translet class definitions (Java bytecodes)
+  wrapped inside TrAX <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> objects. These
+  <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> objects can be used to instanciate 
+  <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> objects that transform XML documents into markup or
+  plain text. Alternatively a <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> object can be created
+  directly by the <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE>, but this approach is not
+  recommended with XSLTC. The reason for this will be explained later in this
+  document.</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  
+
+  <A name="trax"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TrAX basics</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>The Java API for XML Processing (JAXP) includes an XSLT framework based
+  on the Transformation API for XML (TrAX). A JAXP transformation application
+  can use the TrAX framework in two ways. The simplest way is:</P>
+
+  <UL>
+    <LI>create an instance of the TransformerFactory class</LI>
+    <LI>from the factory instance and a given XSLT stylesheet, create a new
+    Transformer object</LI>
+    <LI>call the Transformer object's transform() method, specifying the XML
+    input and a Result object.</LI>
+  </UL><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    import javax.xml.transform.*;
+
+        public class Compile {
+
+            public void run(Source xsl) {
+                ....
+                TransformerFactory factory = TransformerFactory.newInstance();
+                Transformer transformer = factory.newTransformer(xsl);
+                ....
+            }
+        }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>This suits most conventional XSLT processors that transform XML documents
+  in one go. XSLTC needs one extra step to compile the XSL stylesheet into a
+  Java class (a &quot;translet&quot;). Fortunately TrAX has another approach
+  that suits XSLTC two-step transformation model:</P>
+
+  <UL>
+    <LI>create an instance of the TransformerFactory class</LI>
+    <LI>from the factory instance and a given XSLTC, stylesheet, create a new
+    Templates object (this step will compile the stylesheet and put the
+    bytecodes for translet class(es) into the Templates object)</LI>
+    <LI>from the Template object create a Transformer object (this will
+    instanciate a new translet object).</LI>
+    <LI>call the Transformer object's transform() method, specifying the XML
+    input and a Result object.</LI>
+  </UL><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    import javax.xml.transform.*;
+
+        public class Compile {
+
+            public void run(Source xsl) {
+                ....
+                TransformerFactory factory = TransformerFactory.newInstance();
+                Templates templates = factory.newTemplates(xsl);
+                Transformer transformer = templates.newTransformer();
+                ....
+            }
+        }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>Note that the first two steps need be performed only once for each
+  stylesheet. Once the stylesheet is compiled into a translet and wrapped in a
+  <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object, the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object can be used
+  over and over again to create Transformer object (instances of the translet).
+  The <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> instances can even be serialized and stored on
+  stable storage (ie. in a memory or disk cache) for later use.</P>
+
+  <P>The code below illustrates a simple JAXP transformation application that
+  creates the <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> directly. Remember that this is not the
+  ideal approach with XSLTC, as the stylesheet is compiled for each
+  transformation.</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    import javax.xml.transform.stream.StreamSource;
+    import javax.xml.transform.stream.StreamResult;
+    import javax.xml.transform.Transformer;
+    import javax.xml.transform.TransformerFactory;
+
+    public class Proto {
+
+        public void run(String xmlfile, String xslfile) {
+            Transformer transformer;
+            TransformerFactory factory = TransformerFactory.newInstance();
+
+        try {
+            StreamSource stylesheet = new StreamSource(xslfile);
+            transformer = factory.newTransformer(stylesheet);
+            transformer.transform(new StreamSource(xmlfile),
+                                  new StreamResult(System.out));
+        }
+        catch (Exception e) {
+            // handle errors...
+        }
+        :
+        :
+    }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>This approach seems simple is probably used in many applications. But, the
+  use of <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> objects is useful when multiple instances of
+  the same <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> are needed. <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE>
+  objects are not thread safe, and if a server wants to handle several clients
+  requests it would be best off to create one global <CODE><FONT face="courier, monospaced">Templates</FONT></CODE>
+  object, and then from this create a <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> object for each
+  thread handling the requests. This approach is also by far the best for
+  XSLTC, as the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object will hold the class definitions
+  that make up the translet and its auxiliary classes. (Note that the bytecodes
+  and not the actuall class definitions are stored when serializing a
+  <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object to disk. This is because of class loader
+  security restrictions.) To accomodate this second approach to TrAX
+  transformations, the above class would be modified  as follows:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    try {
+        StreamSource stylesheet = new StreamSource(xslfile);
+        Templates templates = factory.newTemplates(stylesheet);
+        transformer = templates.newTransformer();
+        transformer.transform(new StreamSource(inputFilename),
+                              new StreamResult(System.out));
+    }
+    catch (Exception e) {
+        // handle errors...
+    }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  
+
+  <A name="config"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TrAX configuration</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>JAXP's <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> is configurable similar to the
+  other Java extensions. The API supports configuring thefactory by:</P>
+
+  <UL>
+    <LI>passing vendor-specific attributes from the application, through the
+    TrAX interface, to the underlying XSL processor</LI>
+    <LI>registering an ErrorListener that will be used to pass error and
+    warning messages from the XSL processor to the application</LI>
+    <LI>registering an URIResolver that the application can use to load XSL
+    and XML documents on behalf of the XSL processor (the XSL processor will
+    use this to support the xsl:include and xsl:import elements and the
+    document() functions.</LI>
+  </UL>
+
+  <P>The JAXP TransformerFactory can be queried at runtime to discover what
+  features it supports. For example, an application might want to know if a
+  particular factory implementation supports the use of SAX events as a source,
+  or whether it can write out transformation results as a DOM. The factory API
+  queries with the getFeature() method. In the above code, we could add the
+  following code before the try-catch block:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    if (!factory.getFeature(StreamSource.FEATURE) || !factory.getFeature(StreamResult.FEATURE)) {
+        System.err.println(&quot;Stream Source/Result not supported by TransformerFactory\nExiting....&quot;);
+        System.exit(1);
+    }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>Other elements in the TrAX API are configurable. A Transformer object can
+  be passed settings that override the default output settings and the settings
+  defined in the stylesheet for indentation, output document type, etc.</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  
+
+  <A name="design"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>XSLTC TrAX architecture</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>XSLTC's architecture fits nicely in behind the TrAX interface. XSLTC's
+  compiler is put behind the <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> interface, the
+  translet class definition (either as a set of in-memory
+  <CODE><FONT face="courier, monospaced">Class</FONT></CODE> objects or as a two-dimmensional array of bytecodes on
+  disk) is encapsulated in the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> implementation and the
+  instanciated translet object is wrapped inside the <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE>
+  implementation. Figure 1 (below) shows this two-layered TrAX architecture:
+  </P>
+  
+  <P><IMG align="right" alt="TransletWrapping" border="0" hspace="4" src="images/trax_translet_wrapping.gif" vspace="4"><BR clear="all"></P>
+  <P><I>Figure 1: Translet class definitions are wrapped inside Templates objects</I></P>
+
+  <P>The <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> implementation also implements the
+  <CODE><FONT face="courier, monospaced">SAXTransformerFactory</FONT></CODE> and <CODE><FONT face="courier, monospaced">ErrorListener</FONT></CODE>
+  interfaces from the TrAX API.</P>
+
+  <P>The TrAX implementation has intentionally been kept completely separate
+  from the XSLTC native code. This prevents users of XSLTC's native API from
+  having to include the TrAX code in an application. All the code that makes
+  up our TrAX implementation resides in this package:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    org.apache.xalan.xsltc.trax</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>Message to all XSLTC developers: Keep it this way! Do not mix TrAX
+  and Native code!</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  
+
+  <A name="detailed_design"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TrAX implementation details</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+
+  <P>The main components of our TrAX implementation are:</P>
+
+  <UL>
+    <LI><A href="#transformer_factory">the TransformerFactory class</A></LI>
+    <LI><A href="#templates">the Templates class</A></LI>
+    <LI><A href="#transformer">the Transformer class</A></LI>
+    <LI><A href="#transformer">output properties handling</A></LI>
+  </UL>
+
+  <A name="factory_design"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TransformerFactory implementation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <P>The methods that make up the basic <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE>
+  iterface are: </P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public Templates newTemplates(Source source);
+    public Transformer newTransformer();
+    public ErrorListener getErrorListener();
+    public void setErrorListener(ErrorListener listener);
+    public Object getAttribute(String name);
+    public void setAttribute(String name, Object value);
+    public boolean getFeature(String name);
+    public URIResolver getURIResolver();
+    public void setURIResolver(URIResolver resolver);
+    public Source getAssociatedStylesheet(Source src, String media, String title, String charset);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>And for the <CODE><FONT face="courier, monospaced">SAXTransformerFactory</FONT></CODE> interface:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public TemplatesHandler   newTemplatesHandler();
+    public TransformerHandler newTransformerHandler();
+    public TransformerHandler newTransformerHandler(Source src);
+    public TransformerHandler newTransformerHandler(Templates templates);
+    public XMLFilter newXMLFilter(Source src);
+    public XMLFilter newXMLFilter(Templates templates);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <P>And for the <CODE><FONT face="courier, monospaced">ErrorListener</FONT></CODE> interface:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public void error(TransformerException exception);
+    public void fatalError(TransformerException exception);
+    public void warning(TransformerException exception);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TransformerFactory basics</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The very core of XSLTC TrAX support for XSLTC is the implementation of
+    the basic <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> interface. This factory class is
+    more or less a wrapper around the the XSLTC compiler and creates
+    <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> objects in which compiled translet classes can
+    reside. These <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> objects can then be used to create
+    <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> objects. In cases where the
+    <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE>  is created directly by the factory we will use
+    the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> class internally. In that way the transformation
+    will appear to be done in one step from the users point of view, while we
+    in reality use to steps. As described earler, this is not the best approach
+    when using XSLTC, as it causes the stylesheet to be compiled for each and
+    every transformation.</P>
+  </FONT></TD></TR></TABLE><BR>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TransformerFactory attribute settings</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The <CODE><FONT face="courier, monospaced">getAttribute()</FONT></CODE> and <CODE><FONT face="courier, monospaced">setAttribute()</FONT></CODE> methods
+    only recognise two attributes: <CODE><FONT face="courier, monospaced">translet-name</FONT></CODE> and
+    <CODE><FONT face="courier, monospaced">debug</FONT></CODE>. The latter is obvious - it forces XSLTC to output debug
+    information (dumps the stack in the very unlikely case of a failure). The
+    <CODE><FONT face="courier, monospaced">translet-name</FONT></CODE> attribute can be used to set the default class
+    name for any nameless translet classes that the factory creates. A nameless
+    translet will, for instance, be created when the factory compiles a translet
+    for the identity transformation. There is a default name,
+    <CODE><FONT face="courier, monospaced">GregorSamsa</FONT></CODE>, for nameless translets, so there is no absolute
+    need to set this attribute. (Gregor Samsa is the main character from Kafka's
+    &quot;Metamorphosis&quot; - transformations, metamorphosis - I am sure you
+    see the connection.)</P>
+  </FONT></TD></TR></TABLE><BR>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TransformerFactory stylesheet handling</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The compiler is can be passed a stylesheet through various methods in
+    the <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> interface. A stylesheet is passed in as
+    a <CODE><FONT face="courier, monospaced">Source</FONT></CODE> object that containin either a DOM, a SAX parser or
+    a stream. The <CODE><FONT face="courier, monospaced">getInputSource()</FONT></CODE> method handles all inputs and
+    converts them, if necessary, to SAX. The TrAX implementation contains an
+    adapter that will generate SAX events from a DOM, and this adapter is used
+    for DOM input. If the <CODE><FONT face="courier, monospaced">Source</FONT></CODE> object contains a SAX parser, this
+    parser is just passed directly to the compiler. A SAX parse is instanciated
+    (using JAXP) if the <CODE><FONT face="courier, monospaced">Source</FONT></CODE> object contains a stream.</P>
+  </FONT></TD></TR></TABLE><BR>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>TransformerFactory URI resolver</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>A TransformerFactory needs a <CODE><FONT face="courier, monospaced">URIResolver</FONT></CODE> to locate documents
+    that are referenced in <CODE><FONT face="courier, monospaced">&lt;xsl:import&gt;</FONT></CODE> and
+    <CODE><FONT face="courier, monospaced">&lt;xsl:include&gt;</FONT></CODE> elements. XSLTC has an internal interface
+    that shares the same purpose. This internal interface is implemented by the
+    <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE>:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public InputSource loadSource(String href, String context, XSLTC xsltc);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+    <P>This method will simply use any defined <CODE><FONT face="courier, monospaced">URIResolver</FONT></CODE> and
+    proxy the call on to the URI resolver's <CODE><FONT face="courier, monospaced">resolve()</FONT></CODE> method. This
+    method returns a <CODE><FONT face="courier, monospaced">Source</FONT></CODE> object, which is converted to SAX
+    events and passed back to the compiler.</P>
+  </FONT></TD></TR></TABLE><BR>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="template_design"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Templates design</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Templates creation</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> implementation invokes the XSLTC
+    compiler to generate the translet class and auxiliary classes. These classes
+    are stored inside our <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> implementation in a manner
+    which allows the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object to be serialized. By making
+    it possible to store <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> on stable storage we allow the
+    TrAX user to store/cache translet class(es), thus making room for XSLTC's
+    one-compilation-multiple-transformations approach. This was done by giving
+    the <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> implementation an array of byte-arrays that
+    contain the bytecodes for the translet class and its auxiliary classes. When
+    the user first requests a <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> instance from the
+    <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object for the first time we create one or more
+    <CODE><FONT face="courier, monospaced">Class</FONT></CODE> objects from these byte arrays. Note that this is done
+    only once as long as the <CODE><FONT face="courier, monospaced">Template</FONT></CODE> object resides in memory. The
+    <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object then invokes the JVM's class loader with the
+    class definition(s) to instanciate the translet class(es). The translet
+    objects are then wraped inside a <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> object, which is
+    returned to the client code:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+
+    // Contains the name of the main translet class
+    private String   _transletName = null;
+
+    // Contains the actual class definition for the translet class and
+    // any auxiliary classes (representing node sort records, predicates, etc.)
+    private byte[][] _bytecodes = null;
+    
+    /**
+     * Defines the translet class and auxiliary classes.
+     * Returns a reference to the Class object that defines the main class
+     */
+    private Class defineTransletClasses() {
+	TransletClassLoader loader = getTransletClassLoader();
+
+	try {
+	    Class transletClass = null;
+	    final int classCount = _bytecodes.length;
+	    for (int i = 0; i &lt; classCount; i++) {
+		Class clazz = loader.defineClass(_bytecodes[i]);
+		if (clazz.getName().equals(_transletName))
+		    transletClass = clazz;
+	    }
+	    return transletClass; // Could still be 'null'
+	}
+	catch (ClassFormatError e) {
+	    return null;
+	}
+    }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+  </FONT></TD></TR></TABLE><BR>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Translet class loader</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object will create the actual translet
+    <CODE><FONT face="courier, monospaced">Class</FONT></CODE> object(s) the first time the
+    <CODE><FONT face="courier, monospaced">newTransformer()</FONT></CODE> method is called. (The &quot;first time&quot; means the
+    first time either after the object was instanciated or the first time after
+    it has been read from storage using serialization.) These class(es) cannot
+    be created using the standard class loader since the method:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    Class defineClass(String name, byte[] b, int off, int len);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>of the ClassLoader is protected. XSLTC uses its own class loader that
+    extends the standard class loader:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    // Our own private class loader - builds Class definitions from bytecodes
+    private class TransletClassLoader extends ClassLoader {
+        public Class defineClass(byte[] b) {
+            return super.defineClass(null, b, 0, b.length);
+        }
+    }</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+    <P>This class loader is instanciated inside a privileged code section:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    TransletClassLoader loader = 
+        (TransletClassLoader) AccessController.doPrivileged(
+            new PrivilegedAction() {
+                public Object run() {
+                    return new TransletClassLoader();
+                }
+            }
+        );</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+    <P>Then, when the newTransformer() method returns it passes back and
+    instance of XSLTC's <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> implementation that contains
+    an instance of the main translet class. (One transformation may need several
+    Java classes - for sort-records, predicates, etc. - but there is always one
+    main translet class.)</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Class loader security issues</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>When XSLTC is placed inside a JAR-file in the
+    <CODE><FONT face="courier, monospaced">$JAVA_HOME/jre/lib/ext</FONT></CODE> it is loaded by the extensions class
+    loader and not the default (bootstrap) class loader. The extensions class
+    loader does not look for class files/definitions in the user's
+    <CODE><FONT face="courier, monospaced">CLASSPATH</FONT></CODE>. This can cause two problems: A) XSLTC does not find
+    classes for external Java functions, and B) XSLTC does not find translet or
+    auxiliary classes when used through the native API.</P>
+
+    <P>Both of these problems are caused by XSLTC internally calling the
+    <CODE><FONT face="courier, monospaced">Class.forName()</FONT></CODE> method. This method will use the current class
+    loader to locate the desired class (be it an external Java class or a
+    translet/aux class). This is prevented by forcing XSLTC to use the bootstrap
+    class loader, as illustrated below:</P>
+
+    <P><IMG align="right" alt="ClassLoader" border="0" hspace="4" src="images/class_loader.gif" vspace="4"><BR clear="all"></P>
+    <P><I>Figure 2: Avoiding the extensions class loader</I></P>
+
+    <P>These are the steps that XSLTC will go through to load a class:</P>
+
+    <OL>
+      <LI>the application requests an instance of the transformer factory </LI>
+      <LI>the Java extensions mechanism locates XSLTC as the transformer
+      factory implementation using the extensions class loader</LI>
+      <LI>the extensions class loader loads XSLTC</LI>
+      <LI>XSLTC's compiler attempts to get a reference to an external Java
+      class, but the call to Class.forName() fails, as the extensions class
+      loader does not use the user's class path</LI>
+      <LI>XSLTC attempts to get a reference to the bootstrap class loader, and
+      requests it to load the external class</LI>
+      <LI>the bootstrap class loader loads the requested class</LI>
+    </OL>
+
+    <P>Step 5) is only allowed if XSLTC has special permissions. But, remember
+    that this problem only occurs when XSLTC is put in the
+    <CODE><FONT face="courier, monospaced">$JAVA_HOME/jre/lib/ext</FONT></CODE> directory, where it is given all
+    permissions (by the default security file).</P>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  </FONT></TD></TR></TABLE><BR>
+
+  <A name="transformer_design"><!--anchor--></A>
+  <TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Transformer detailed design</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> class is a simple proxy that passes
+    transformation settings on to its translet instance before it invokes the
+    translet's <CODE><FONT face="courier, monospaced">doTransform()</FONT></CODE> method. The <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE>'s
+    <CODE><FONT face="courier, monospaced">transform()</FONT></CODE> method maps directly to the translet's
+    <CODE><FONT face="courier, monospaced">doTransform()</FONT></CODE> method.</P>
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Transformer input and output handling</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+      <P>The <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> handles its input in a manner similar to
+      that of the <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE>. It has two methods for
+      creating standard SAX input and output handlers for its input and output
+      files:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    private DOMImpl getDOM(Source source, int mask);
+    private ContentHandler getOutputHandler(Result result);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+      <P>One aspect of the <CODE><FONT face="courier, monospaced">getDOM</FONT></CODE> method is that it handles four
+      various types of <CODE><FONT face="courier, monospaced">Source</FONT></CODE> objects. In addition to the standard
+      DOM, SAX and stream types, it also handles an extended
+      <CODE><FONT face="courier, monospaced">XSLTCSource</FONT></CODE> input type. This input type is a lightweight
+      wrapper from XSLTC's internal DOM-like input tree. This allows the user
+      to create a cache or pool of XSLTC's native input data structures
+      containing the input XML document. The <CODE><FONT face="courier, monospaced">XSLTCSource</FONT></CODE> class
+      is located in:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    org.apache.xalan.xsltc.trax.XSLTCSource</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+    </FONT></TD></TR></TABLE><BR>
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Transformer parameter settings</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+      <P>XSLTC's native interface has get/set methods for stylesheet parameters,
+      identical to those of the TrAX API. The parameter handling methods of
+      the <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> implementation are pure proxies.</P>
+    </FONT></TD></TR></TABLE><BR>
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Transformer output settings</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+      <P>The Transformer interface of TrAX has for methods for retrieving and
+      defining the transformation output document settings:</P><DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+    public Properties getOutputProperties();
+    public String getOutputProperty(String name);
+    public void setOutputProperties(Properties properties);
+    public void setOutputProperty(String name, String value);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+      <P>There are three levels of output settings. First there are the default
+      settings defined in the XSLT 1.0 spec, then there
+      are the settings defined in the attributes of the &lt;xsl:output&gt;
+      element, and finally there are the settings passed in through the TrAX
+      get/setOutputProperty() methods.</P>
+
+      <P><IMG align="right" alt="Output settings" border="0" hspace="4" src="images/trax_output_settings.gif" vspace="4"><BR clear="all"></P>
+      <P><I>Figure 3: Passing output settings from TrAX to the translet</I></P>
+
+      <P>The AbstractTranslet class has a series of fields that contain the
+      default values for the output settings. The compiler/Output class will
+      compile code into the translet's constructor that updates these values
+      depending on the attributes in the &lt;xsl:output&gt; element. The
+      Transformer implementation keeps in instance of the java.util.Properties
+      class where it keeps all properties that are set by the
+      <CODE><FONT face="courier, monospaced">setOutputProperty()</FONT></CODE> and the
+      <CODE><FONT face="courier, monospaced">setOutputProperties()</FONT></CODE> methods. These settings are written to
+      the translet's output settings fields prior to initiating the
+      transformation.</P>
+
+    </FONT></TD></TR></TABLE><BR>
+
+    <TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="474"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="472"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Transformer URI resolver</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="472"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="472"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="464"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+      <P>The <CODE><FONT face="courier, monospaced">uriResolver()</FONT></CODE> method of the Transformer interface is
+      used to set a locator for documents referenced by the document() function
+      in XSL. The native XSLTC API has a defined interface for a DocumentCache.
+      The functionality provided by XSLTC's internal <CODE><FONT face="courier, monospaced">DocumentCache</FONT></CODE>
+      interface is somewhat complimentary to the <CODE><FONT face="courier, monospaced">URIResolver</FONT></CODE>, and
+      can be used side-by-side. To acomplish this we needed to find out in which
+      ways the translet can load an external document:</P>
+
+      <P><IMG align="right" alt="URIResolver" border="0" hspace="4" src="images/uri_resolver.gif" vspace="4"><BR clear="all"></P>
+      <P><I>Figure 4: Using URIResolver and DocumentCache objects</I></P>
+
+      <P>From the diagram we see that these three ways are:</P>
+      <UL>
+        <LI>LoadDocument -&gt; .xml</LI>
+        <LI>LoadDocument -&gt; DocumentCache -&gt; .xml</LI>
+        <LI>LoadDocument -&gt; URIResolver -&gt; .xml</LI>
+        <LI>LoadDocument -&gt; DocumentCache -&gt; URIResolver -&gt; .xml</LI>
+      </UL>
+
+    </FONT></TD></TR></TABLE><BR>
+
+    </FONT></TD></TR></TABLE><BR>
+  </FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2004 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

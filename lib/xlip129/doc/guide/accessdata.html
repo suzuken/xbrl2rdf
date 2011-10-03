@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>
+    Referencing an XLink Data Model
+  </title>
+</head>
+<body>
+  <h1 align="center">Referencing an XLink Data Model</h1>
+  This section explains how to construct an XLink data model and how to use an XLink data set.<br>
+  <ul>
+    <li>
+      <a href="#create">Obtaining an XLink Data Model</a>
+    <li>
+      <a href="#access">Using an XLink Data Set</a>
+      <ul>
+        <li>
+          <a href="#isStartingResource">Determining a link start resource</a>
+        <li>
+          <a href="#hasDocument">Checking a captured XML document</a>
+        <li>
+          <a href="#getEndingResources">Obtaining a link end resource (target object of traversal)</a>
+        <li>
+          <a href="#traverse">Selecting and obtaining a target object of traversal </a>
+      </ul>
+  </ul>
+  <hr>
+
+  <a name="create"></a>
+  <h2>Obtaining an XLink Data Model</h2>
+  <dl>
+    <dd>
+      The XLink processor provides a function for constructing an XLink data model by entering the URI of an XML document or a DOM tree.<br>
+      Applications use this function to obtain constructed XLink data models.<br>
+      <pre>
+        [Example]
+          XLinkProcessor xLinkProcessor;  // XLink processor
+          ...
+          // Obtain an XLink data set (route of an XLink data model)
+          XLinkDataSet xLinkDataSet = xLinkProcessor.getDataSet();
+      </pre>
+      Applications can extract different types of information items from obtained XLink data models without using the XLink processor.<br>
+      The XLink processor also provides a means of extracting information from a constructed XLink data model instead of constructing an XLink data model.<br>
+      <p>
+        <b>Related interfaces and classes</b><br>
+        XLinkProcessor, XLinkDataSet
+      </p>
+<!--</dd> -->
+  </dl>
+
+  <a name="access"></a>
+  <h2>Using an XLink Data Set</h2>
+  <dl>
+    <dd>
+
+      <div>
+        <a name="isStartingResource"></a>
+        <h3><u>Determining a link start resource</u></h3>
+        To determine if an element in an XML document in an XLink data model is a link start resource, take the following steps:<br>
+        <ol>
+          <li>
+            From an XLink data set, obtain the locator information list table (startingResources) that contains a link start resource.
+          <li>
+            Attempt to obtain a locator information list by specifying the element (node) as an argument in the locator information list table. 
+        </ol>
+        <pre>
+        [Example]
+          XLinkDataSet xLinkDataSet;  // XLink data set
+          Node testNode;              // Element that a user wants to determine 
+                                      // whether it is or is not a link start resource
+          ...
+          // Obtain the locator information list table that contains a link start resource.
+          LocatorHashtable table = xLinkDataSet.getResourceObjects();
+
+          // Obtain a locator information list.
+          LocatorList locatorList = table.get(testNode);
+          if (locatorList != null) {
+            // testNode is a link start resource.
+            // The locator information list contains locator information that 
+            // indicates a link end resource.
+          } else {
+            // testNode is not a link start resource.
+          }
+        </pre>
+        The XLink processor (<i>XLinkProcessor</i>) provides <i>isStartingResource()</i> as a similar query method.<br>
+        <pre>
+        [Example]
+          XLinkProcessor xLinkProcessor;  // XLink processor
+          Node testNode;                  // Element that a user wants to determine                                          // whether it is or is not a link start 
+					  // resource
+          ...
+          if (xLinkProcessor.isStartingResource(testNode)) {
+            // testNode is a link start resource.
+          } else {
+            // testNode is not a link start resource.
+          }
+        </pre>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img src="../images/isstartingresource.jpg" alt="needed data"><br>
+          <br>
+          Figure 1  Data required for processing<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>Related interfaces and classes</b><br>
+          XLinkDataSet, LocatorHashtable, LocatorList, XLinkProcessor
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <a name="hasDocument"></a>
+        <h3><u>Checking a captured XML document</u></h3>
+        To implement an XLink link base, the XLink processor converts an XML document that is not specified in a DOM tree by an application in order to capture it in an XLink data model.
+        As a result, a user can obtain the XML document as a DOM when the construction of the XLink data model is completed.<br>
+        To determine whether an XML document is captured in an XLink data model as a DOM, take the following steps:<br>
+        <ol>
+          <li>
+            Obtain the document information table (documentOnScope) from an XLink data set.
+          <li>
+            Query the document information table by using the absolute URI of the XML document.
+        </ol>
+        <pre>
+        [Example]
+          XLinkDataSet xLinkDataSet;  // XLink data set
+          String docAbsoluteURI;      // Absolute URI of the XML document that a
+                                      // user wants to determine whether it
+				      // was or was not captured
+          ...
+          DocumentHashtable table = XLinkDataSet.getDocumentsOnScope();
+          boolean hasDocument = table.containsKey(docAbsoluteURI);
+          if (hasDocument) {
+            // The XML document was captured as a DOM.
+            Document doc = table.get(docAbsoluteURI); // Obtain the DOM tree.
+            ...
+          }
+        </pre>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img src="../images/hasdocument.jpg" alt="needed data"><br>
+          <br>
+          Figure 2  Data required for processing<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>Related interfaces and classes</b><br>
+          XLinkDataSet, DocumentHashtable
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <a name="getEndingResources"></a>
+        <h3><u>Obtaining a link end resource (target object of traversal)</u></h3>
+        Users can define links among more than three objects in XLink.  Namely, users can link multiple link end positions to a link start position.<br>
+        An XLink data model contains a link start position and link end positions as locator information.<br>
+        To search location information that refers to a link start resource in order to find locator information that refers to a link end resource, take the following steps:<br>
+        <ol>
+          <li>
+            Obtain link declaration information belonging to the locator information that refers to the link start resource.
+          <li>
+            Using the label of the locator information that refers to the link start resource as a key, obtain arc information from the link declaration information.
+          <li>
+            From a locator information list that can be obtained from the link declaration information, search for locator information whose label agrees with the target that is linked to the arc information.
+        </ol>
+        <pre>
+        [Example]
+          Locator startingResource;   // Locator information that refers to a 
+				      //  link start resource
+          ...
+
+          // Obtain link declaration information to which the locator 
+          //   information that refers to a link start resource belongs.
+          XLinkDeclaration xLinkDecl = startingResource.getParent();
+
+          // Obtain a locator information list from the link declaration 
+	  //  information.
+          LocatorList locatorList = xLinkDecl.getLocators();
+
+          // Obtain arc information from the link declaration information,
+          //   using the label of the locator information that refers to a 
+	  //   link start resource as a key.
+          ArcHashtable arcTable = xLinkDecl.getArcs();
+          ArcList arcList = arcTable.get(startingResource.getLabel());
+          for (int i = 0; i &lt; arcList.getLength(); ++i) {
+            Arc arc = arcList.item(i);
+
+            // Search for locator information whose label agrees with 
+            //   the target that is linked to the arc information.
+            for (int j = 0; j &lt; locatorList.getLength(); ++j) {
+              Locator locator = locatorList.item(j);
+              if (arc.getTo().equals(locator.getLabel())) {
+                // This locator information (locator) is locator
+                //   information that refers to a link end resource.
+              }
+            }
+          }
+        </pre>
+        The locator information selected from the locator information obtained from the above procedure depends on the application.<br>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img src="../images/endingresources.jpg" alt="needed data"><br>
+          <br>
+          Figure 3  Data required for processing<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>Related interfaces and classes</b><br>
+          XLinkDeclaration, Arc, Locator, ArcHashtable, ArcList, LocatorList
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <a name="traverse"></a>
+        <h3><u>Selecting and obtaining a target object of traversal </u></h3>
+        If multiple locator information items have been obtained in the process of <a href="#getEndingResources">obtaining a link end resource (target object of traversal)</a>, the information item to select depends on the application.<br>
+        Using the arc information used to search for locator information, an XLink data model provides information on when to traverse and when to show traverse paths[Steve1].<br>
+        Applications can use information obtained from the arc information and locator information to narrow down the possible [Steve2]target objects of traversal.<br>
+        The URI traversed to can be obtained from address information obtained from the locator information.
+        When XPointer is used as a URI fragment identifier, an appropriate location can be obtained by querying the XPointer processor.<br>
+        The XLink processor (<i>XLinkProcessor</i>) provides a method (<i>getFragments()</i>) for obtaining the node traversed to as specified by XPointer.<br>
+        <pre>
+        [Example]
+          XLinkProcessor xLinkProcessor;  // XLink processor
+          String xpointer;                // XPointer description
+          Document document;              // DOM searched by XPointer
+          ...
+          // Obtain the results of XPointer analysis as a node list.
+          NodeSet nodeSet =
+            xLinkProcessor.getFragments(document, xpinter);
+        </pre>
+        <br>
+        <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+          <br>
+          <img src="../images/traverse.jpg" alt="needed data"><br>
+          <br>
+          Figure 4  Data required for processing<br>
+          <br>
+        </div>
+        <br>
+        <p>
+          <b>Related interfaces and classes</b><br>
+          Locator, Address, Arc
+        </p>
+      </div>
+
+<!--</dd> -->
+  </dl>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; FUJITSU LIMITED 2000,2001
+  </div>
+</body>
+</html>

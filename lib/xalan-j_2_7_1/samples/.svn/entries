@@ -1,0 +1,273 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/xalan-j_2_7_1/samples
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+AppletXMLtoHTML
+dir
+
+
+
+add
+
+ApplyXPath
+dir
+
+
+
+add
+
+ApplyXPathDOM
+dir
+
+
+
+add
+
+CompiledApplet
+dir
+
+
+
+add
+
+CompiledBrazil
+dir
+
+
+
+add
+
+CompiledEJB
+dir
+
+
+
+add
+
+CompiledJAXP
+dir
+
+
+
+add
+
+CompiledServlet
+dir
+
+
+
+add
+
+DOM2DOM
+dir
+
+
+
+add
+
+Pipe
+dir
+
+
+
+add
+
+SAX2SAX
+dir
+
+
+
+add
+
+SimpleTransform
+dir
+
+
+
+add
+
+Trace
+dir
+
+
+
+add
+
+TransformThread
+dir
+
+
+
+add
+
+UseStylesheetPI
+dir
+
+
+
+add
+
+UseStylesheetParam
+dir
+
+
+
+add
+
+UseXMLFilters
+dir
+
+
+
+add
+
+Validate
+dir
+
+
+
+add
+
+XPathAPI
+dir
+
+
+
+add
+
+extensions
+dir
+
+
+
+add
+
+servlet
+dir
+
+
+
+add
+
+translets
+dir
+
+
+
+add
+
+trax
+dir
+
+
+
+add
+
+xalansamples.jar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+xalanservlet.war
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+xsltcapplet.jar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+xsltcbrazil.jar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+xsltcejb.jar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+xsltcservlet.jar
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

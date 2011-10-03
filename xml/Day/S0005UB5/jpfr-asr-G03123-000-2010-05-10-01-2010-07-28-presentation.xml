@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <roleRef xlink:type="simple" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/o/rt/2010-03-11/jpfr-rt-2010-03-11.xsd#RoleNonConsolidatedBalanceSheets" roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedBalanceSheets"/>
+  <roleRef xlink:type="simple" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/o/rt/2010-03-11/jpfr-rt-2010-03-11.xsd#RoleNonConsolidatedStatementsOfIncome" roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedStatementsOfIncome"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedBalanceSheets">
+<!-- 親要素  流動資産 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2010-03-11/jpfr-t-cte-2010-03-11.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="jpfr-t-cte_CurrentAssetsAbstract" xlink:title="jpfr-t-cte_CurrentAssetsAbstract"/>
+<!-- 　　出資金 -->
+    <loc xlink:type="locator" xlink:href="jpfr-asr-G03123-000-2010-05-10-01-2010-07-28.xsd#jpfr-asr-G03123-000_InvestmentsInCapitalSilentPartnershipAndOtherCAFND" xlink:label="jpfr-asr-G03123-000_InvestmentsInCapitalSilentPartnershipAndOtherCAFND" xlink:title="jpfr-asr-G03123-000_InvestmentsInCapitalSilentPartnershipAndOtherCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-asr-G03123-000_InvestmentsInCapitalSilentPartnershipAndOtherCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="7.5" use="optional" priority="0"/>
+<!-- 　　その他金融商品 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_OtherFinancialInstrumentsCAFND" xlink:label="jpfr-t-fnd_OtherFinancialInstrumentsCAFND" xlink:title="jpfr-t-fnd_OtherFinancialInstrumentsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-t-fnd_OtherFinancialInstrumentsCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="8.5" use="optional" priority="0"/>
+<!-- 　　オプション証券等 -->
+    <loc xlink:type="locator" xlink:href="jpfr-asr-G03123-000-2010-05-10-01-2010-07-28.xsd#jpfr-asr-G03123-000_OptionSecuritiesCAFND" xlink:label="jpfr-asr-G03123-000_OptionSecuritiesCAFND" xlink:title="jpfr-asr-G03123-000_OptionSecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-asr-G03123-000_OptionSecuritiesCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="10.5" use="optional" priority="0"/>
+<!-- 　　出資証券 -->
+    <loc xlink:type="locator" xlink:href="jpfr-asr-G03123-000-2010-05-10-01-2010-07-28.xsd#jpfr-asr-G03123-000_InvestmentBondCAFND" xlink:label="jpfr-asr-G03123-000_InvestmentBondCAFND" xlink:title="jpfr-asr-G03123-000_InvestmentBondCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-asr-G03123-000_InvestmentBondCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.5" use="optional" priority="0"/>
+<!-- 　　優先出資証券 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_PreferredSecuritiesCAFND" xlink:label="jpfr-t-fnd_PreferredSecuritiesCAFND" xlink:title="jpfr-t-fnd_PreferredSecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-t-fnd_PreferredSecuritiesCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.6" use="optional" priority="0"/>
+<!-- 　　優先出資引受権証書 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_PreferredSecuritiesOnDeedsCAFND" xlink:label="jpfr-t-fnd_PreferredSecuritiesOnDeedsCAFND" xlink:title="jpfr-t-fnd_PreferredSecuritiesOnDeedsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-t-fnd_PreferredSecuritiesOnDeedsCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.7" use="optional" priority="0"/>
+<!-- 　　受入担保金代用有価証券 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCashCollateralReceivedCAFND" xlink:label="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCashCollateralReceivedCAFND" xlink:title="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCashCollateralReceivedCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCashCollateralReceivedCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="32.1" use="optional" priority="0"/>
+<!-- 　　買取受益権 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_AcquiredBeneficiarySecuritiesCAFND" xlink:label="jpfr-t-fnd_AcquiredBeneficiarySecuritiesCAFND" xlink:title="jpfr-t-fnd_AcquiredBeneficiarySecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-t-fnd_AcquiredBeneficiarySecuritiesCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="32.2" use="optional" priority="0"/>
+<!-- 　　預有価証券 -->
+    <loc xlink:type="locator" xlink:href="jpfr-asr-G03123-000-2010-05-10-01-2010-07-28.xsd#jpfr-asr-G03123-000_SecuritiesCAFND" xlink:label="jpfr-asr-G03123-000_SecuritiesCAFND" xlink:title="jpfr-asr-G03123-000_SecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-asr-G03123-000_SecuritiesCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="32.3" use="optional" priority="0"/>
+<!-- 　　コマーシャル・ペーパー -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_CommercialPapersCAFND" xlink:label="jpfr-t-fnd_CommercialPapersCAFND" xlink:title="jpfr-t-fnd_CommercialPapersCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-t-fnd_CommercialPapersCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.1" use="optional" priority="0"/>
+<!-- 　　外国譲渡性預金証書 -->
+    <loc xlink:type="locator" xlink:href="jpfr-asr-G03123-000-2010-05-10-01-2010-07-28.xsd#jpfr-asr-G03123-000_ForeignNegotiableCertificateOfDepositCAFND" xlink:label="jpfr-asr-G03123-000_ForeignNegotiableCertificateOfDepositCAFND" xlink:title="jpfr-asr-G03123-000_ForeignNegotiableCertificateOfDepositCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-asr-G03123-000_ForeignNegotiableCertificateOfDepositCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.2" use="optional" priority="0"/>
+<!-- 　　外国貸付債権信託受益証券 -->
+    <loc xlink:type="locator" xlink:href="jpfr-asr-G03123-000-2010-05-10-01-2010-07-28.xsd#jpfr-asr-G03123-000_ForeignLendingClaimTrustBeneficiaryCertificateCAFND" xlink:label="jpfr-asr-G03123-000_ForeignLendingClaimTrustBeneficiaryCertificateCAFND" xlink:title="jpfr-asr-G03123-000_ForeignLendingClaimTrustBeneficiaryCertificateCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-asr-G03123-000_ForeignLendingClaimTrustBeneficiaryCertificateCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.3" use="optional" priority="0"/>
+<!-- 　　貸付債権信託受益券 -->
+    <loc xlink:type="locator" xlink:href="jpfr-asr-G03123-000-2010-05-10-01-2010-07-28.xsd#jpfr-asr-G03123-000_LendingClaimTrustProfitTicketCAFND" xlink:label="jpfr-asr-G03123-000_LendingClaimTrustProfitTicketCAFND" xlink:title="jpfr-asr-G03123-000_LendingClaimTrustProfitTicketCAFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentAssetsAbstract" xlink:to="jpfr-asr-G03123-000_LendingClaimTrustProfitTicketCAFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.4" use="optional" priority="0"/>
+<!-- 親要素  流動負債 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2010-03-11/jpfr-t-cte-2010-03-11.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:title="jpfr-t-cte_CurrentLiabilitiesAbstract"/>
+<!-- 　　差入保証金代用有価証券 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForGuaranteeDepositsCLFND" xlink:label="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForGuaranteeDepositsCLFND" xlink:title="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForGuaranteeDepositsCLFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:to="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForGuaranteeDepositsCLFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.1" use="optional" priority="0"/>
+<!-- 　　差入委託証拠金代用有価証券 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCustomersMarginCLFND" xlink:label="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCustomersMarginCLFND" xlink:title="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCustomersMarginCLFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:to="jpfr-t-fnd_SecuritiesReceivedAsCustomersDepositsForCustomersMarginCLFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="17.2" use="optional" priority="0"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedStatementsOfIncome">
+<!-- 親要素  損益計算書 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:label="jpfr-t-fnd_StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:title="jpfr-t-fnd_StatementsOfIncomeAndRetainedEarningsAbstractFND"/>
+<!-- 　　一部交換に伴う当期純利益金額分配額 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_DistributionOfNetIncomeFromPartialExchangeFND" xlink:label="jpfr-t-fnd_DistributionOfNetIncomeFromPartialExchangeFND" xlink:title="jpfr-t-fnd_DistributionOfNetIncomeFromPartialExchangeFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-fnd_StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="jpfr-t-fnd_DistributionOfNetIncomeFromPartialExchangeFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="13.5" use="optional" priority="0"/>
+<!-- 親要素  剰余金増加額又は欠損金減少額 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFND" xlink:label="jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFND" xlink:title="jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFND"/>
+<!-- 　　一部交換に伴う剰余金増加額又は欠損金減少額 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFromPartialExchangeFND" xlink:label="jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFromPartialExchangeFND" xlink:title="jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFromPartialExchangeFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFND" xlink:to="jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFromPartialExchangeFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="1.5" use="optional" priority="0"/>
+<!-- 親要素  剰余金減少額又は欠損金増加額 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFND" xlink:label="jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFND" xlink:title="jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFND"/>
+<!-- 　　一部交換に伴う剰余金減少額又は欠損金増加額 -->
+    <loc xlink:type="locator" xlink:href="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2010-03-11/jpfr-t-fnd-2010-03-11.xsd#jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFromPartialExchangeFND" xlink:label="jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFromPartialExchangeFND" xlink:title="jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFromPartialExchangeFND"/>
+    <presentationArc xlink:type="arc" xlink:from="jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFND" xlink:to="jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFromPartialExchangeFND" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" order="1.5" use="optional" priority="0"/>
+  </presentationLink>
+</linkbase>

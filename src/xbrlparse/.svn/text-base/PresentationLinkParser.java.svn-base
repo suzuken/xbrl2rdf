@@ -1,0 +1,164 @@
+package xbrlparse;
+
+import java.net.URISyntaxException;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+//http://info.edinet-fsa.go.jp/jp/fr/gaap/r/fnd/an/2009-03-09/jpfr-fnd-an-2009-03-09-presentation.xml
+//どのpresentationLinkのroleをもつものに格納されたのかをちゃんと記録できるようにするべき。
+
+public class PresentationLinkParser extends LinkBaseParser {
+	public Boolean NSflag = null;
+
+	// private Map<String, PresentationArc> presentationArcMapping;
+
+	public PresentationLinkParser() {}
+	public PresentationLinkParser(String url){setLBURL(url); setDLB(new DiscoverableLinkBase(url));}
+
+	@Override
+	public void analyzeElements(Element elementDefinitions, String url) throws URISyntaxException {
+		//defaultのNSがない場合もある。そういう場合は逐一変えなきゃならない。flagで対応しておく。
+		String defaultNS = elementDefinitions.getAttribute("xmlns");
+		if(defaultNS != ""){
+			NSflag = true;
+			System.out.println("名前空間[" + defaultNS + "]の定義が始まります。");
+		}else{
+			NSflag = false;
+			System.out.println("デフォルトの名前空間はありません。");
+		}
+		NodeList listDocumentation = elementDefinitions
+				.getElementsByTagName("documentation");
+		for (int indexDocumentation = 0; indexDocumentation < listDocumentation
+				.getLength(); indexDocumentation++) {
+			Element elementDocumentation = (Element) listDocumentation
+					.item(indexDocumentation);
+			String documentationName = elementDocumentation.getFirstChild()
+					.getNodeValue();
+			System.out.println(documentationName + "の情報を取得します。");
+		}
+
+		NodeList listRoleRef =null;
+
+		if(NSflag){listRoleRef = elementDefinitions.getElementsByTagName("roleRef");}
+		else{listRoleRef = elementDefinitions.getElementsByTagNameNS(getNamespaceMapping().get("link"),"roleRef");}
+
+		for (int indexRoleRef = 0; indexRoleRef < listRoleRef .getLength(); indexRoleRef++) {
+			Element elementRoleRef = (Element) listRoleRef.item(indexRoleRef);
+			System.out.println("roleRefの情報を取得します");
+
+			// roleRefの各attributeの情報を取得・解析し、roleRefクラスに格納するメソッド
+			analyzeRoleRef(elementRoleRef, url);
+		}
+
+		// ここから、presentationLink要素の解析
+		NodeList listPresentationLink = null;
+
+		if(NSflag){listPresentationLink = elementDefinitions.getElementsByTagName("presentationLink");}
+		else{listPresentationLink = elementDefinitions.getElementsByTagNameNS(getNamespaceMapping().get("link"),"presentationLink");}
+		for (int indexPresentationLink = 0; indexPresentationLink < listPresentationLink
+				.getLength(); indexPresentationLink++) {
+			Element elementPresentationLink = (Element) listPresentationLink
+					.item(indexPresentationLink);
+			System.out.println("presentationLinkの情報を取得します");
+			String elementPresentationLinkType = elementPresentationLink
+					.getAttributeNS(getNamespaceMapping().get("xlink"), "type");
+			String elementPresentationLinkRole = elementPresentationLink
+					.getAttributeNS(getNamespaceMapping().get("xlink"), "role");
+
+
+			analyzePresentationLink(elementPresentationLink, url);
+		}
+
+		printMap(getRoleRefMapping());
+		printMap(getLocatorMapping());
+		printMap(getArcMapping());
+
+	}
+
+	private void analyzePresentationLink(Element elementPresentationLink,String url) {
+		NodeList listLoc = null;
+
+		if(NSflag){listLoc = elementPresentationLink.getElementsByTagName("loc");}
+		else{listLoc = elementPresentationLink.getElementsByTagNameNS(getNamespaceMapping().get("link"),"loc");}
+		for (int indexLocator = 0; indexLocator < listLoc.getLength(); indexLocator++) {
+			Element elementLoc = (Element) listLoc.item(indexLocator);
+			analyzeLoc(elementLoc, url);
+		}
+
+		NodeList listPresentationArc = null;
+		if(NSflag){listPresentationArc = elementPresentationLink.getElementsByTagName("presentationArc");}
+		else{listPresentationArc = elementPresentationLink.getElementsByTagNameNS(getNamespaceMapping().get("link"), "presentationArc");}
+		for (int indexPresentationArc = 0; indexPresentationArc < listPresentationArc
+				.getLength(); indexPresentationArc++) {
+			Element elementPresentationArc = (Element) listPresentationArc
+					.item(indexPresentationArc);
+			analyzeArc(elementPresentationArc);
+		}
+
+		// ここに、arcで子をとり、locatormappingから親子とって、階層にする処理を追加する。
+		// １つ１つのロケータが子を持つある可能性があると仮定する
+		// すると、すべてのロケータがArrayListをもち、childのリストを持つとする。
+		// したがって、presentationのlocatorにはchildリストを事前に定義しておき、子locatorをaddできるようにしておけばいい。
+		// iteratorでgetArcMapping.getをまわして、すべてのarcに関して親子関係を抽出しつつ、
+		// locatormappingから対象となるfromとtoを抜き出して、add。
+
+		Set<String> key = getArcMapping().keySet();
+		Iterator<String> iter = key.iterator();
+		while (iter.hasNext()) {
+			String str = iter.next(); // 該当オブジェクト取得
+			PresentationArc arc = (PresentationArc) getArcMapping().get(str);
+			if (arc.getArcrole().equals(
+					"http://www.xbrl.org/2003/arcrole/parent-child")) {
+
+				PresentationLocator locfrom = (PresentationLocator) getLocatorMapping()
+						.get(arc.getFrom());
+				PresentationLocator locto = (PresentationLocator) getLocatorMapping()
+						.get(arc.getTo());
+				// 子として、loctoを格納
+				locfrom.add(locto);
+			}
+		}
+	}
+
+	@Override
+	public void analyzeLoc(Element elementLoc, String url) {
+		String type = elementLoc.getAttributeNS(getNamespaceMapping().get("xlink"), "type");
+		String href = elementLoc.getAttributeNS(getNamespaceMapping().get("xlink"), "href");
+		String label = elementLoc.getAttributeNS(getNamespaceMapping().get("xlink"), "label");
+		// hrefをresolveしたい
+		String absoluteHref = resolveHref(href, url);
+		// fragmentとuriも得たい
+		String strArray[] = absoluteHref.split("#");
+		String uri = strArray[0]; // hrefの#より前の部分
+		String fragment = strArray[1]; // hrefの#より後ろの部分
+		// クラスへ格納
+		Locator loc = new PresentationLocator(label, absoluteHref, type, uri,
+				fragment);
+		getLocatorMapping().put(label, loc);
+	}
+
+	@Override
+	public void analyzeArc(Element elementPArc) {
+		String type = elementPArc.getAttributeNS(getNamespaceMapping().get("xlink"), "type");
+		String arcrole = elementPArc.getAttributeNS(getNamespaceMapping().get("xlink"), "arcrole");
+		String from = elementPArc.getAttributeNS(getNamespaceMapping().get("xlink"), "from");
+		String to = elementPArc.getAttributeNS(getNamespaceMapping().get("xlink"), "to");
+		String order = elementPArc.getAttribute("order");
+
+		// クラスへ格納
+		PresentationArc pa = new PresentationArc(type, arcrole, from, to, order);
+
+		String preferredLabel = elementPArc.getAttribute("preferredLabel");
+		if (preferredLabel != null) {
+			pa.setPreferredLabel(preferredLabel);
+		}
+
+		// keyはfrom/to
+		getArcMapping().put(from + "@" + to, pa);
+	}
+
+}

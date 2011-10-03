@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+  <title>
+    XLinkデータモデル
+  </title>
+</head>
+<body>
+  <h1 align="center">XLinkデータモデル</h1>
+  XLinkデータモデルの概要とクラス構成について説明します。
+  <ul>
+    <li>
+      <a href="#abstruct">概要</a>
+      <ul>
+        <li>
+          <a href="#datamodel">XLinkデータモデルのクラス構成</a>
+        <li>
+          <a href="#class">主要クラスの概要</a>
+      </ul>
+  </ul>
+  <hr>
+  <a name="abstruct"></a>
+  <h2>概要</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <p>
+        XLinkデータモデルは、XLinkデータセットと、XLinkデータセットと関連を持つ1つ以上のDOMツリーで構成されます。<br>
+        XLinkデータセットは、XML文書中のXLink記述を解析した結果とDOMツリーとの関係を保持します。<br>
+        アプリケーションは、このようなXLinkデータモデルの構成により、DOMとXLinkデータセットの連携により、XLinkで記述された情報を自由に参照することができます。<br>
+      </p>
+    </dd>
+  </dl>
+  <a name="datamodel"></a>
+  <h3>XLinkデータモデルのクラス構成</h3>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      XLinkデータモデルのクラス構成を図1に示します。<br>
+      <br>
+      <div align="center" style="border-width: 1; border-style: solid; border-color: black">
+        <br>
+        <img src="../images/datamodel.jpg" alt="XLink data model"><br>
+        <br>
+        <div align="left">
+          #1: Locator, Title, Arcを定義しているNode<br>
+          #2: リンク開始リソースまたはリンク終了リソースに該当するNode<br>
+        </div>
+        <br>
+        図1 XLinkデータモデルのクラス構成<br>
+        <br>
+      </div>
+      <br>
+    </dd>
+  </dl>
+  <a name="class"></a>
+  <h3>主要クラスの概要</h3>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      <a name="XLinkDataSet"></a>
+      <h3><i>class XLinkDataSet</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            XLinkデータセットの本体です。<br>
+            XLinkデータモデルにおいてXLink情報を管理する最上位のクラスで、XLiPによるすべての解析結果は、XLinkデータセットを起点として取得できます。<br>
+          </p>
+        </dd>
+      </dl>
+      <a name="XLinkDeclaration"></a>
+      <h3><i>class XLinkDeclaration</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            リンク宣言情報です。<br>
+            XLinkで定義されているextended型要素およびsimple型要素をモデル化したクラスで、配下の要素の情報を取得する起点を提供します。<br>
+          </p>
+        </dd>
+      </dl>
+      <a name="Arc"></a>
+      <h3><i>class Arc</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            アーク情報です。<br>
+            XLinkで定義されているarc型要素をモデル化したクラスで、トラバーサルに関連する詳細情報を提供します。
+          </p>
+        </dd>
+      </dl>
+      <a name="Locator"></a>
+      <h3><i>class Locator</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            ロケータ情報です。<br>
+            XLinkで定義されているlocator型要素およびresource型要素をモデル化したクラスです。<br>
+            リンクの開始・終了位置となるリソースの所在情報ならびに関連情報を提供します。
+          </p>
+        </dd>
+      </dl>
+      <a name="Address"></a>
+      <h3><i>class Address</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            アドレス情報です。<br>
+            XLinkで定義されているlocator型要素のhref属性値をモデル化したクラスで、URIと、URIに含まれるフラグメント識別子を提供します。
+          </p>
+        </dd>
+      </dl>
+      <a name="Title"></a>
+      <h3><i>class Title</i></h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <p>
+            タイトル情報です。<br>
+            title型要素をモデル化したクラスです。<br>
+            XLinkのグローバル属性として定義されているtitle属性の情報ではありません。
+          </p>
+        </dd>
+      </dl>
+    </dd>
+  </dl>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; Fujitsu Limited 2000,2001
+  </div>
+</body>
+</html>

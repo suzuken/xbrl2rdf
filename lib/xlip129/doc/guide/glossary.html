@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>
+    XLiP Glossary
+  </title>
+  <style type="text/css">
+<!--
+    body {
+      font-size: medium;
+    }
+    h1 {
+      margin-left:  0pt;
+    }
+    td {
+      vertical-align: top;
+    }
+    ul {
+      margin-top: 0pt;
+    }
+-->
+  </style>
+</head>
+<body>
+  <h1 align="center">
+    XLiP Glossary
+  </h1>
+  <table border=2>
+    <tr>
+      <th>
+        Terms
+      </th>
+      <th>
+        Definition
+      </th>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XBaseResolver">XBase resolver</a><br>
+        (class XBaseResolver)<br>
+      </td>
+      <td valign="top">
+        Provides a means of resolution from a URI reference to an absolute URI defined in <a href="spec.html#XMLBase">XML Base</a>.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDataSet">XLink data set</a><br>
+        (class XLinkDataSet)<br>
+      </td>
+      <td valign="top">
+        Information that is a route to an XLink data model.<br>
+        All <a href="#XLinkDeclaration">link declaration information</a> is obtained from an <a href="#XLinkDataSet">XLink data set</a>.<br>
+        The <a href="#XLinkProcessor">XLink processor</a> constructs and obtains this data.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <!-- coment -->
+        <a name="XLinkDataModel">XLink data model</a><br>
+      </td>
+      <td valign="top">
+        A data model for handling XLink.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkProcessor">XLink processor</a><br>
+        (class XLinkProcessor)<br>
+      </td>
+      <td valign="top">
+        Provides a function for analyzing XML documents including elements defined in <a href="spec.html#XLink">XLink</a>.<br>
+        Analysis results can be obtained as an <a href="#XLinkDataSet">XLink data set</a>.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkException">XLink exception</a><br>
+        (class XLinkException)<br>
+      </td>
+      <td valign="top">
+        An exception that occurred during the processing of the <a href="#XLinkProcessor">XLink processor</a> is reported.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XPointerProcessor">XPointer processor</a><br>
+        (class XPointerProcessor)<br>
+      </td>
+      <td valign="top">
+        Provides a function for analyzing fragment identifiers defined in <a href="spec.html#XPointer">XPointer</a>.<br>
+        
+        <a href="#Location">Location information</a> referred to by XPointer and a <a href="#NodeSet">node set</a> can be obtained as analysis results.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XPointerException">XPointer exception</a><br>
+        (class XPointerException)<br>
+      </td>
+      <td valign="top">
+        An exception that occurred during the processing of the <a href="#XPointerProcessor">XPointer processor</a> is reported.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Arc">Arc information</a><br>
+        (class Arc)<br>
+      </td>
+      <td valign="top">
+        Arc-type element information defined in <a href="spec.html#XLink">XLink</a> or the information for which the simple-type element attributes listed below are unified are modeled for this information.<br>
+        This information is obtained from <a href="#XLinkDeclaration">link declaration information</a>.<br>
+        <ul>
+          <li>
+            arcrole attribute
+          <li>
+            title attribute
+          <li>
+            show attribute
+          <li>
+            actuate attribute
+          <li>
+            from attribute
+          <li>
+            to attribute
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="ArcList">Arc information list</a><br>
+        (interface ArcList)<br>
+      </td>
+      <td valign="top">
+        Provides a list of <a href="#Arc">arc information</a>.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="ArcHashtable">Arc information list table</a><br>
+        (interface ArcHashtable)<br>
+      </td>
+      <td valign="top">
+        Provides an <a href="#ArcList">arc information list</a> in which strings are registered as keys.  The following strings can be keys:
+        <ul>
+          <li>
+            Value of the from attribute contained in <a href="#Arc">arc information</a>
+          <li>
+            Value of the label attribute contained in <a href="#Locator">locator information</a>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Address">Address information</a><br>
+        (class Address)<br>
+      </td>
+      <td valign="top">
+        The href attributes unified to <a href="#Locator">locator information</a> are modeled for this information.<br>
+        This information is obtained from <a href="#Locator">locator information</a>.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Title">Title information</a><br>
+        (class Title)<br>
+      </td>
+      <td valign="top">
+        Title-type elements defined in <a href="spec.html#XLink">XLink</a> are modeled for this information.<br>
+        This information is obtained from <a href="#XLinkDeclaration">link declaration information</a>, <a href="#Locator">locator information</a>, and <a href="#Arc">arc information</a>.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="DocumentHashtable">Document information table</a><br>
+        (interface DocumentHashtable)<br>
+      </td>
+      <td valign="top">
+        Returns a document corresponding to the XML document processed by the <a href="#XLinkProcessor">XLink processor</a>.<br>
+        The search key is the document URI.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="NodeSet">Node set</a><br>
+        (interface NodeSet)<br>
+      </td>
+      <td valign="top">
+        Node sets defined in <a href="spec.html#XPath">XPath</a> are modeled for this information.  This set is a collection of nodes defined in a <a href="spec.html#DOM">DOM</a>.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XPNode">Node location information</a><br>
+        (class XPNode)<br>
+      </td>
+      <td valign="top">
+        Node-type <a href="#Location">location information</a> is modeled for this information.<br>
+        For details, see &quot;5. Data Model&quot; of <a href="spec.html#XPath">XPath</a>.<br>
+        This information is obtained as the results of a method provided by the XPointer processor.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Point">Point location information</a><br>
+        (class Point)<br>
+      </td>
+      <td valign="top">
+        Point Location defined in <a href="spec.html#XPointer">XPointer</a> is modeled for this information.<br>
+        This information is obtained as the results of a method provided in the XPointer processor.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkMessageReporter">Message reporter</a><br>
+        (class XLinkMessageReporter)<br>
+      </td>
+      <td valign="top">
+        Interface that notifies an application of an error if an <a href="#XLinkException">XLink exception</a> occurs in the <a href="#XLinkProcessor">XLink processor</a>.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDeclaration">Link declaration information</a><br>
+        (class XLinkDeclaration)<br>
+      </td>
+      <td valign="top">
+        The elements listed below and defined in <a href="spec.html#XLink/">XLink</a> are modeled for this information.<br>
+        This information is obtained from an <a href="#XLinkDataSet">XLink data set</a>.<br>
+        <ul>
+          <li>
+            extended-type element
+          <li>
+            simple-type element
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDeclarationList">Link declaration information list</a><br>
+        (interface XLinkDeclarationList)<br>
+      </td>
+      <td valign="top">
+        A collection of <a href="#XLinkDeclaration">link declaration information</a>.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="XLinkDeclarationHashtable">Link declaration information list table</a><br>
+        (interface XLinkDeclarationHashtable)<br>
+      </td>
+      <td valign="top">
+        Returns a <a href="#XLinkDeclarationList">link declaration information list</a> corresponding to the XML document processed by the XLink processor.
+        A search key is a <a href="spec.html#DOM">DOM</a> Document object corresponding to an XML document.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Range">Range location information</a><br>
+        (class Range)<br>
+      </td>
+      <td valign="top">
+        Range Location defined in <a href="spec.html#XPointer">XPointer</a> is modeled for this information.<br>
+        This information is obtained as the results of a method provided by the XPointer processor.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="LocationSet">Location set</a><br>
+        (class LocationSet)<br>
+      </td>
+      <td valign="top">
+        The location set defined in <a href="spec.html#XPointer">XPointer</a> is modeled for this information.  This set is a collection of location information.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Location">Location information</a><br>
+        (interface Location)<br>
+      </td>
+      <td valign="top">
+        Locations defined in <a href="spec.html#XPointer">XPointer</a> are modeled for this interface.<br>
+        The interface is installed with <a href="#XPNode">node location information</a>, 
+        <a href="#Point">point location information</a>, and
+        <a href="#Range">range location information</a>.<br>
+        The interface is obtained as a result of a method provided in the XPointer processor.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="Locator">Locator information</a><br>
+        (class Locator)<br>
+      </td>
+      <td valign="top">
+        Information of locator-type elements and resource-type elements defined in <a href="spec.html#XLink">XLink</a> or the information for which the following attributes of simple-type elements are unified are modeled for this information:<br>
+        <ul>
+          <li>
+            href attribute
+          <li>
+            role attribute
+          <li>
+            title attribute
+          <li>
+            label attribute
+        </ul>
+        This information is obtained from <a href="#XLinkDeclaration">link declaration information</a>.<br>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="LocatorList">Locator information list</a><br>
+        (interface LocatorList)<br>
+      </td>
+      <td valign="top">
+        A collection of <a href="#Locator">locator information</a>.
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <a name="LocatorHashtable">Locator information list table</a><br>
+        (interface LocatorHashtable)<br>
+      </td>
+      <td valign="top">
+        Provides a <a href="#LocatorList">locator information list</a> in which nodes are registered as keys.
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; FUJITSU LIMITED 2000,2001
+  </div>
+</body>
+</html>

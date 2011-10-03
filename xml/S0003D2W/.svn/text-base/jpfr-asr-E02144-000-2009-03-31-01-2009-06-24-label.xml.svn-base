@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Edited with XiRUTE .NET Library 01-04 -->
+<link:linkbase xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:label xml:lang="ja" xlink:type="resource" xlink:label="jpfr-asr-E02144-000_OptionPremiumNOE_label" xlink:role="http://www.xbrl.org/2003/role/documentation">オプション料、営業外費用</link:label>
+    <link:label xml:lang="ja" xlink:type="resource" xlink:label="jpfr-asr-E02144-000_OptionPremiumNOE_label_2" xlink:role="http://www.xbrl.org/2003/role/label">オプション料</link:label>
+    <link:label xml:lang="ja" xlink:type="resource" xlink:label="jpfr-asr-E02144-000_OptionPremiumNOE_label_1" xlink:role="http://www.xbrl.org/2003/role/verboseLabel">オプション料、営業外費用</link:label>
+    <link:loc xlink:type="locator" xlink:href="jpfr-asr-E02144-000-2009-03-31-01-2009-06-24.xsd#jpfr-asr-E02144-000_OptionPremiumNOE" xlink:label="jpfr-asr-E02144-000_OptionPremiumNOE" />
+    <link:labelArc xlink:type="arc" xlink:from="jpfr-asr-E02144-000_OptionPremiumNOE" xlink:to="jpfr-asr-E02144-000_OptionPremiumNOE_label" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" order="1" />
+    <link:labelArc xlink:type="arc" xlink:from="jpfr-asr-E02144-000_OptionPremiumNOE" xlink:to="jpfr-asr-E02144-000_OptionPremiumNOE_label_1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" order="1" />
+    <link:labelArc xlink:type="arc" xlink:from="jpfr-asr-E02144-000_OptionPremiumNOE" xlink:to="jpfr-asr-E02144-000_OptionPremiumNOE_label_2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" order="1" />
+  </link:labelLink>
+</link:linkbase>

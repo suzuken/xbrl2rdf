@@ -1,0 +1,182 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/xalan-j_2_7_1/docs/apidocs/org/apache/xalan
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+Version.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+class-use
+dir
+
+
+
+add
+
+client
+dir
+
+
+
+add
+
+extensions
+dir
+
+
+
+add
+
+lib
+dir
+
+
+
+add
+
+package-frame.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+package-summary.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+package-tree.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+package-use.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+processor
+dir
+
+
+
+add
+
+res
+dir
+
+
+
+add
+
+serialize
+dir
+
+
+
+add
+
+templates
+dir
+
+
+
+add
+
+trace
+dir
+
+
+
+add
+
+transformer
+dir
+
+
+
+add
+
+xslt
+dir
+
+
+
+add
+
+xsltc
+dir
+
+
+
+add
+

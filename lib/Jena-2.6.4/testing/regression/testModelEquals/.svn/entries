@@ -1,0 +1,140 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/regression/testModelEquals
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+1-1.rdf
+file
+
+
+
+add
+
+1-2.rdf
+file
+
+
+
+add
+
+2-1.rdf
+file
+
+
+
+add
+
+2-2.rdf
+file
+
+
+
+add
+
+3-1.rdf
+file
+
+
+
+add
+
+3-2.rdf
+file
+
+
+
+add
+
+4-1.rdf
+file
+
+
+
+add
+
+4-2.rdf
+file
+
+
+
+add
+
+5-1.rdf
+file
+
+
+
+add
+
+5-2.rdf
+file
+
+
+
+add
+
+6-1.rdf
+file
+
+
+
+add
+
+6-2.rdf
+file
+
+
+
+add
+
+7-1.nt
+file
+
+
+
+add
+
+7-2.nt
+file
+
+
+
+add
+
+8-1.nt
+file
+
+
+
+add
+
+8-2.nt
+file
+
+
+
+add
+

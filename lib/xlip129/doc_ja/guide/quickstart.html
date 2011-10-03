@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+  <title>
+    クイックスタート
+  </title>
+</head>
+<body>
+  <h1 align="center">クイックスタート</h1>
+  XLiPの簡単な利用例をご紹介します。
+  <ul>
+    <li>
+      <a href="#step1">Step1: ライブラリの準備</a>
+    <li>
+      <a href="#step2">Step2: ソース記述のための要件</a>
+    <li>
+      <a href="#step3">Step3: XLinkプロセッサの生成からXLinkデータセットの取得まで</a>
+    <li>
+      <a href="#step4">Step4: XLinkデータモデルの参照例</a>
+  </ul>
+  <hr>
+<!-- step1 -->
+  <a name="step1"></a>
+  <h2>Step1: ライブラリの準備</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      XLiPの利用にあたっては、<font color="red" size="+1">JAXP1.1対応のXMLパーザが必要です</font>。<br>
+      必要なライブラリの詳細については、<a href="spec.html">XLiP標準仕様一覧</a>をご覧ください。
+    </dd>
+  </dl>
+
+<!-- step2 -->
+  <a name="step2"></a>
+  <h2>Step2: ソース記述のための要件</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      XLiPが提供するXLinkプロセッサおよびXLinkデータモデルを利用するには、以下のimport文が必要です。
+      <pre>
+    import com.fujitsu.xml.xlink.processor.*;
+    import com.fujitsu.xml.xlink.dataset.*;
+      </pre>
+    </dd>
+  </dl>
+
+<!-- step3 -->
+  <a name="step3"></a>
+  <h2>Step3: XLinkプロセッサの生成からXLinkデータセットの取得まで</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+
+<!-- step3-1 -->
+      <h3>XLinkプロセッサの生成</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          XLinkデータモデルを構築するために、XLinkプロセッサを生成します。
+          XLinkプロセッサは、以下のように生成します。
+          <pre>
+    XLinkProcessor xLinkProcessor = new XLinkProcessor();
+          </pre>
+        </dd>
+      </dl>
+
+<!-- step3-2 -->
+      <h3>XLinkデータモデルの構築</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          生成したXLinkプロセッサを用いて、XLinkデータモデルを構築します。
+          XLinkプロセッサでは、XLinkデータモデルを構築する手段として、以下の2種類のメソッドを用意しています。
+          <ul>
+            <li>
+              <dl>
+                <dt>
+                  createXLinkDataSet(String uri)
+                </dt>
+                <dd>
+                  XML文書のURIのみを指定する方法です。
+                  XLinkプロセッサは指定されたURIを参照してDOMツリーを生成します。
+                  また、リンクベース処理の結果に応じて、指定されたURIとは別のDOMツリーも生成する場合があります。
+                </dd>
+              </dl>
+            <li>
+              <dl>
+                <dt>
+                  createXLinkDataSet(Document doc, String uri)
+                </dt>
+                <dd>
+                  XML文書から構築されたDOMツリーと、そのURIを指定する方法です。
+                  XLinkプロセッサは指定されたDOMツリーを使用します。また，リンクベース処理の結果に応じて、指定されたuriとは別のDOMツリーも生成する場合があります。
+                </dd>
+              </dl>
+          </ul>
+        </dd>
+      </dl>
+
+<!-- step3-3 -->
+      <h3>XLinkデータセットの取得</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          XLinkプロセッサから、構築済みのXLinkデータモデルの起点であるXLinkデータセットを取得します。
+          XLinkデータセットは、XLinkプロセッサから、以下のように取得します。
+          <pre>
+    XLinkDataSet xLinkDataSet = xLinkProcessor.getgetDataSet();
+          </pre>
+          これで、XLinkで記述された様々な情報を抽出する準備が整いました。<br>
+          次のステップでは、簡単な情報抽出の例を紹介します。
+        </dd>
+      </dl>
+
+<!-- step3-3 -->
+      <h3>これまでのまとめ</h3>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <pre>
+    import com.fujitsu.xml.xlink.processor.*;
+    import com.fujitsu.xml.xlink.dataset.*;
+    …
+      String uri; // XLink解析の対象とするXML文書のURI
+      …
+      try {
+        // XLinkプロセッサの生成
+        XLinkProcessor xLinkProcessor = new XLinkProcessor();
+
+        // XLinkデータモデルの構築
+        //   ここでは、URIのみを指定する方法を用いています。
+        xLinkProcessor.createXLinkDataSet(uri);
+
+        // XLinkデータセットの取得
+        XLinkDataSet xLinkDataSet = xLinkProcessor.getgetDataSet();
+      } catch (Exception e) {
+        // 任意の例外処理
+        System.out.println("Error Detected : " + e.getMessage());
+        return;
+      }
+          </pre>
+        </dd>
+      </dl>
+    </dd>
+  </dl>
+
+  <a name="step4"></a>
+  <h2>Step4: XLinkデータモデルの参照例</h2>
+  <dl>
+    <dt>
+    </dt>
+    <dd>
+      ここでは、XLinkデータセットを参照してトラバースを行う例を説明します。<br>
+      例では、以下のような動作を実現します。
+      <ol>
+        <li>
+          XLinkデータモデル中のDOMに含まれる任意のノードが、リンク開始リソースであるか判断します。
+        <li>
+          ノードがXLinkのsimple型要素で指定されるリンク開始リソースであった場合、リンク終了リソースのロケータ情報を取得します。
+      </ol>
+      この結果取得されたロケータ情報を用いて、アプリケーションは任意のハイパーリンクを実現することができます。<br>
+      以下に例を示します。
+
+      <pre>
+    Node node;  // 判定対象のノード
+    XLinkDataSet xLinkDataSet;  // XLinkデータセット
+    …
+
+    // リンク開始リソースを保持するロケータ情報リスト
+    // テーブルを取得します。
+    LocatorHashtable table = xLinkDataSet.getResourceObjects();
+
+    // ロケータ情報リストを取得します。
+    LocatorList locatorList = table.get(node);
+
+    if (locatorList == null) {
+      // nodeはリンク開始リソースではありませんでした。
+      return;
+    }
+
+    for (int i = 0; i &lt; locatorList.getLength(); ++i) {
+      // ロケータ情報を取得します。
+      Locator startingResource = locatorList.item(i);
+
+      // ロケータ情報が属するリンク宣言情報を取得します。
+      XLinkDeclaration xLinkDeclaration =
+        startingResource.getParent();
+
+      // リンク宣言情報がsimple型要素であるか判定します。
+      if (xLinkDeclaration.getType() ==
+            XLinkDeclaration.ARC_TYPE_SIMPLE) {
+
+        // リンク終了リソースのロケータ情報を検索します。
+        LocatorList endingResource =
+          xLinkDeclaration.getLocators();
+        for (int j = 0; j &lt; endingResource.getLenth(); ++j) {
+
+          // リンク終了リソースのロケータ情報を取得します。
+          Locator to = endingResource.item(j);
+
+          // リンク終了リソースのロケータ情報が
+          // リモートリソースであるか判定します。
+          if (to.getType() == Locator.TYPE_LOCATOR) {
+
+            // 任意のハイパーリンク処理
+
+            // 例1 リンク先の絶対URIの取得
+            Address address = to.getHref();
+            String absoluteURI = address.getEncodedAbsoluteUri();
+
+            // 例2 リンク先ノードの取得
+            NodeSet nodeSet = to.getResources();
+            for (int k = 0; k &lt; nodeSet.getLength(); ++k) {
+              Node node = nodeSet.item(k);
+            }
+          }
+        }
+      }
+    }
+      </pre>
+    </dd>
+  </dl>
+  <hr>
+  <div align="center" style="text-align='center'">
+    All Rights Reserved, Copyright&copy; Fujitsu Limited 2000,2001
+  </div>
+</body>
+</html>

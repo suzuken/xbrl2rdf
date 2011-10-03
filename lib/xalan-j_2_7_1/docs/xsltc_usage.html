@@ -1,0 +1,715 @@
+<HTML><HEAD><SCRIPT language="JavaScript" src="resources/script.js" type="text/javascript"></SCRIPT><TITLE>Getting Started with XSLTC</TITLE></HEAD><BODY alink="#ff0000" bgcolor="#ffffff" leftmargin="4" link="#0000ff" marginheight="4" marginwidth="4" text="#000000" topmargin="4" vlink="#0000aa"><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" height="60" rowspan="3" valign="top" width="135"><IMG alt="logo" border="0" height="60" hspace="0" src="resources/logo.gif" vspace="0" width="135"></TD><TD align="left" colspan="4" height="5" valign="top" width="456"><IMG alt="line" border="0" height="5" hspace="0" src="resources/line.gif" vspace="0" width="456"></TD><TD align="left" height="60" rowspan="3" valign="top" width="29"><IMG alt="right" border="0" height="60" hspace="0" src="resources/right.gif" vspace="0" width="29"></TD></TR><TR><TD align="left" bgcolor="#0086b2" colspan="4" height="35" valign="top" width="456"><IMG alt="" border="0" height="35" hspace="0" src="graphics/xsltc_usage-header.jpg" vspace="0" width="456"></TD></TR><TR><TD align="left" height="20" valign="top" width="168"><IMG alt="bottom" border="0" height="20" hspace="0" src="resources/bottom.gif" vspace="0" width="168"></TD><TD align="left" height="20" valign="top" width="96"><A href="http://xml.apache.org/" onMouseOut="rolloverOff('xml');" onMouseOver="rolloverOn('xml');" target="new"><IMG alt="http://xml.apache.org/" border="0" height="20" hspace="0" name="xml" onLoad="rolloverLoad('xml','resources/button-xml-hi.gif','resources/button-xml-lo.gif');" src="resources/button-xml-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.apache.org/" onMouseOut="rolloverOff('asf');" onMouseOver="rolloverOn('asf');" target="new"><IMG alt="http://www.apache.org/" border="0" height="20" hspace="0" name="asf" onLoad="rolloverLoad('asf','resources/button-asf-hi.gif','resources/button-asf-lo.gif');" src="resources/button-asf-lo.gif" vspace="0" width="96"></A></TD><TD align="left" height="20" valign="top" width="96"><A href="http://www.w3.org/" onMouseOut="rolloverOff('w3c');" onMouseOver="rolloverOn('w3c');" target="new"><IMG alt="http://www.w3.org/" border="0" height="20" hspace="0" name="w3c" onLoad="rolloverLoad('w3c','resources/button-w3c-hi.gif','resources/button-w3c-lo.gif');" src="resources/button-w3c-lo.gif" vspace="0" width="96"></A></TD></TR></TABLE><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD align="left" valign="top" width="120"><IMG alt="join" border="0" height="14" hspace="0" src="resources/join.gif" vspace="0" width="120"><BR>
+  
+  <A href="whatsnew.html" onMouseOut="rolloverOff('side-whatsnew');" onMouseOver="rolloverOn('side-whatsnew');"><IMG alt="What's New" border="0" height="12" hspace="0" name="side-whatsnew" onLoad="rolloverLoad('side-whatsnew','graphics/whatsnew-label-2.jpg','graphics/whatsnew-label-3.jpg');" src="graphics/whatsnew-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="readme.html" onMouseOut="rolloverOff('side-readme');" onMouseOver="rolloverOn('side-readme');"><IMG alt="Release Notes" border="0" height="12" hspace="0" name="side-readme" onLoad="rolloverLoad('side-readme','graphics/readme-label-2.jpg','graphics/readme-label-3.jpg');" src="graphics/readme-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="overview.html" onMouseOut="rolloverOff('side-overview');" onMouseOver="rolloverOn('side-overview');"><IMG alt="Overview" border="0" height="12" hspace="0" name="side-overview" onLoad="rolloverLoad('side-overview','graphics/overview-label-2.jpg','graphics/overview-label-3.jpg');" src="graphics/overview-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="downloads.html" onMouseOut="rolloverOff('side-downloads');" onMouseOver="rolloverOn('side-downloads');"><IMG alt="Download/Build" border="0" height="12" hspace="0" name="side-downloads" onLoad="rolloverLoad('side-downloads','graphics/downloads-label-2.jpg','graphics/downloads-label-3.jpg');" src="graphics/downloads-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <A href="getstarted.html" onMouseOut="rolloverOff('side-getstarted');" onMouseOver="rolloverOn('side-getstarted');"><IMG alt="Getting Started" border="0" height="12" hspace="0" name="side-getstarted" onLoad="rolloverLoad('side-getstarted','graphics/getstarted-label-2.jpg','graphics/getstarted-label-3.jpg');" src="graphics/getstarted-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="Using XSLTC" border="0" height="12" hspace="0" src="graphics/xsltc_usage-label-1.jpg" vspace="0" width="120"><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="faq.html" onMouseOut="rolloverOff('side-faq');" onMouseOver="rolloverOn('side-faq');"><IMG alt="FAQs" border="0" height="12" hspace="0" name="side-faq" onLoad="rolloverLoad('side-faq','graphics/faq-label-2.jpg','graphics/faq-label-3.jpg');" src="graphics/faq-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="samples.html" onMouseOut="rolloverOff('side-samples');" onMouseOver="rolloverOn('side-samples');"><IMG alt="Sample Apps" border="0" height="12" hspace="0" name="side-samples" onLoad="rolloverLoad('side-samples','graphics/samples-label-2.jpg','graphics/samples-label-3.jpg');" src="graphics/samples-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="commandline.html" onMouseOut="rolloverOff('side-commandline');" onMouseOver="rolloverOn('side-commandline');"><IMG alt="Command Line" border="0" height="12" hspace="0" name="side-commandline" onLoad="rolloverLoad('side-commandline','graphics/commandline-label-2.jpg','graphics/commandline-label-3.jpg');" src="graphics/commandline-label-3.jpg" vspace="0" width="120"></A><BR>
+    
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="features.html" onMouseOut="rolloverOff('side-features');" onMouseOver="rolloverOn('side-features');"><IMG alt="Features" border="0" height="12" hspace="0" name="side-features" onLoad="rolloverLoad('side-features','graphics/features-label-2.jpg','graphics/features-label-3.jpg');" src="graphics/features-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="trax.html" onMouseOut="rolloverOff('side-trax');" onMouseOver="rolloverOn('side-trax');"><IMG alt="Transform API" border="0" height="12" hspace="0" name="side-trax" onLoad="rolloverLoad('side-trax','graphics/trax-label-2.jpg','graphics/trax-label-3.jpg');" src="graphics/trax-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xpath_apis.html" onMouseOut="rolloverOff('side-xpath_apis');" onMouseOver="rolloverOn('side-xpath_apis');"><IMG alt="XPath API" border="0" height="12" hspace="0" name="side-xpath_apis" onLoad="rolloverLoad('side-xpath_apis','graphics/xpath_apis-label-2.jpg','graphics/xpath_apis-label-3.jpg');" src="graphics/xpath_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="usagepatterns.html" onMouseOut="rolloverOff('side-usagepatterns');" onMouseOver="rolloverOn('side-usagepatterns');"><IMG alt="Usage Patterns" border="0" height="12" hspace="0" name="side-usagepatterns" onLoad="rolloverLoad('side-usagepatterns','graphics/usagepatterns-label-2.jpg','graphics/usagepatterns-label-3.jpg');" src="graphics/usagepatterns-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="apidocs/index.html" onMouseOut="rolloverOff('side-ext-42');" onMouseOver="rolloverOn('side-ext-42');"><IMG alt="Xalan-J API" border="0" height="12" hspace="0" name="side-ext-42" onLoad="rolloverLoad('side-ext-42','graphics/ext-42-label-2.jpg','graphics/ext-42-label-3.jpg');" src="graphics/ext-42-label-3.jpg" vspace="0" width="120"></A><BR>    
+  <A href="public_apis.html" onMouseOut="rolloverOff('side-public_apis');" onMouseOver="rolloverOn('side-public_apis');"><IMG alt="Public APIs" border="0" height="12" hspace="0" name="side-public_apis" onLoad="rolloverLoad('side-public_apis','graphics/public_apis-label-2.jpg','graphics/public_apis-label-3.jpg');" src="graphics/public_apis-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="dtm.html" onMouseOut="rolloverOff('side-dtm');" onMouseOver="rolloverOn('side-dtm');"><IMG alt="DTM" border="0" height="12" hspace="0" name="side-dtm" onLoad="rolloverLoad('side-dtm','graphics/dtm-label-2.jpg','graphics/dtm-label-3.jpg');" src="graphics/dtm-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="extensions.html" onMouseOut="rolloverOff('side-extensions');" onMouseOver="rolloverOn('side-extensions');"><IMG alt="Extensions" border="0" height="12" hspace="0" name="side-extensions" onLoad="rolloverLoad('side-extensions','graphics/extensions-label-2.jpg','graphics/extensions-label-3.jpg');" src="graphics/extensions-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensionslib.html" onMouseOut="rolloverOff('side-extensionslib');" onMouseOver="rolloverOn('side-extensionslib');"><IMG alt="Extensions Library" border="0" height="12" hspace="0" name="side-extensionslib" onLoad="rolloverLoad('side-extensionslib','graphics/extensionslib-label-2.jpg','graphics/extensionslib-label-3.jpg');" src="graphics/extensionslib-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="extensions_xsltc.html" onMouseOut="rolloverOff('side-extensions_xsltc');" onMouseOver="rolloverOn('side-extensions_xsltc');"><IMG alt="XSLTC Exts" border="0" height="12" hspace="0" name="side-extensions_xsltc" onLoad="rolloverLoad('side-extensions_xsltc','graphics/extensions_xsltc-label-2.jpg','graphics/extensions_xsltc-label-3.jpg');" src="graphics/extensions_xsltc-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="design/design2_0_0.html" onMouseOut="rolloverOff('side-ext-58');" onMouseOver="rolloverOn('side-ext-58');"><IMG alt="Xalan 2 Design" border="0" height="12" hspace="0" name="side-ext-58" onLoad="rolloverLoad('side-ext-58','graphics/ext-58-label-2.jpg','graphics/ext-58-label-3.jpg');" src="graphics/ext-58-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="xsltc/index.html" onMouseOut="rolloverOff('side-ext-60');" onMouseOver="rolloverOn('side-ext-60');"><IMG alt="XSLTC Design" border="0" height="12" hspace="0" name="side-ext-60" onLoad="rolloverLoad('side-ext-60','graphics/ext-60-label-2.jpg','graphics/ext-60-label-3.jpg');" src="graphics/ext-60-label-3.jpg" vspace="0" width="120"></A><BR>
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="builds.html" onMouseOut="rolloverOff('side-builds');" onMouseOver="rolloverOn('side-builds');"><IMG alt="Building a release" border="0" height="12" hspace="0" name="side-builds" onLoad="rolloverLoad('side-builds','graphics/builds-label-2.jpg','graphics/builds-label-3.jpg');" src="graphics/builds-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="http://xml.apache.org/xalan-j/test/overview.html" onMouseOut="rolloverOff('side-ext-66');" onMouseOver="rolloverOn('side-ext-66');"><IMG alt="Testing" border="0" height="12" hspace="0" name="side-ext-66" onLoad="rolloverLoad('side-ext-66','graphics/ext-66-label-2.jpg','graphics/ext-66-label-3.jpg');" src="graphics/ext-66-label-3.jpg" vspace="0" width="120"></A><BR>
+  <A href="bugreporting.html" onMouseOut="rolloverOff('side-bugreporting');" onMouseOver="rolloverOn('side-bugreporting');"><IMG alt="Bug Reporting" border="0" height="12" hspace="0" name="side-bugreporting" onLoad="rolloverLoad('side-bugreporting','graphics/bugreporting-label-2.jpg','graphics/bugreporting-label-3.jpg');" src="graphics/bugreporting-label-3.jpg" vspace="0" width="120"></A><BR>  
+  <IMG alt="separator" border="0" height="6" hspace="0" src="resources/separator.gif" vspace="0" width="120"><BR>
+  <A href="contact_us.html" onMouseOut="rolloverOff('side-contact_us');" onMouseOver="rolloverOn('side-contact_us');"><IMG alt="Contact us" border="0" height="12" hspace="0" name="side-contact_us" onLoad="rolloverLoad('side-contact_us','graphics/contact_us-label-2.jpg','graphics/contact_us-label-3.jpg');" src="graphics/contact_us-label-3.jpg" vspace="0" width="120"></A><BR>  
+  
+  
+  
+<IMG alt="close" border="0" height="14" hspace="0" src="resources/close.gif" vspace="0" width="120"><BR></TD><TD align="left" valign="top" width="500"><TABLE border="0" cellpadding="3" cellspacing="0"><TR><TD>
+
+<UL>
+  <LI><A href="#intro">Introduction</A></LI>
+  <LI><A href="#classpath">Setting the system classpath for XSLTC</A></LI>
+  <LI><A href="#compile">Compiling translets from the command line</A></LI>
+  <LI><A href="#run">Running translets from the command line</A></LI>
+  <LI><A href="#api">Calling XSLTC with the JAXP API</A></LI>
+  <LI><A href="#xsltcsmart">Smart Transformer Switch</A></LI>
+  <LI><A href="#native_api">Calling XSLTC with the native API</A></LI>
+  <LI><A href="#constraints">Usage constraints</A></LI>
+  <LI><A href="samples.html#translets">Sample translets</A></LI>
+  <LI><A href="extensions_xsltc.html">Extensions for XSLTC</A></LI>  
+</UL>
+<P>See also: <A href="xsltc/index.html">XSLTC Design</A></P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Unless otherwise specified, the usage discussed in this section refers to 
+the Xalan-Java Compiling processor, XSLTC. See <A href="usagepatterns.html">Basic Usage 
+Patterns</A> for information on using the Xalan-Java Interpretive processor.</I></FONT></TD></TR></TABLE><BR>
+
+<A name="intro"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Introduction</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>XSLTC provides a compiler and a runtime processor. 
+Use the compiler to compile an XSL stylesheet into a translet (i.e., a set of
+Java classes). Use the runtime processor to apply the translet to an XML
+document and perform a transformation.</P>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="classpath"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Setting the system classpath for XSLTC</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>The xalan.jar contains support for both Xalan-Java processors.  You
+can use the JAXP <CODE><FONT face="courier, monospaced">javax.xml.transform.TransformerFactory</FONT></CODE> property
+(see <A href="#api">&quot;Calling XSLTC with the JAXP API&quot;</A> below) to
+select which processor to use:  the Interpretive or the Compiling processor.</P>
+<P>To use XSLTC, simply put xalan.jar, serializer.jar, xml-apis.jar, and xercesImpl.jar on
+your classpath.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>To compile and run translets, you must use JDK (or JRE) 1.3.1 or higher.</I></FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>Although the XSLTC developers make every effort to avoid changes that
+affect binary compatibility, we cannot guarantee that a translet will work with
+any version of the run-time processor other than the one that corresponds to
+the version of the XSLTC compiler that was used to create the translet.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Bundled System Classpath</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>
+To use this newer approach, simply put xalan.jar, serializer.jar, xml-apis.jar and 
+xercesImpl.jar in your classpath.  There is no need to include xsltc.jar, BCEL.jar, JLex.jar,
+regexp.jar, java_cup.jar or runtime.jar as required in previous releases.
+</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>In order to compile and run translets you must have a JAXP 1.3 compliant XML
+parser installed. Our distribution includes <A href="http://xerces.apache.org/xerces2-j/index.html" target="_top">Xerces-Java 2.9.0</A>.
+Include xercesImpl.jar and xml-apis.jar in your class path.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Unbundled System Classpath</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>The binary distribution contains XSLTC and all its support classes bundled 
+into xalan.jar. To use the unbundled approach, rebuild 
+the xsltc.jar file using the xsltc.unbundledjar target. The support jars that 
+you'll need to add to your classpath are available in the Xalan Java lib 
+directory.</P>
+<P>To compile translets, run translets, and use the XSLTC API, using
+the unbundled jar approach, put the following on the system classpath:</P>
+<TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+<TR>
+  <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Classes or JAR</B>&nbsp;
+      </FONT></TD>
+  <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>To compile a translet</B>&nbsp;
+      </FONT></TD>
+  <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>To run a translet</B>&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">the translet&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xsltc.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">runtime.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">BCEL.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">JLex.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">java_cup.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">regexp.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">xml-dtm.jar&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">required&nbsp;
+      </FONT></TD>
+</TR>
+</TABLE>
+<P>The translet is the set of class files or the JAR file that you generate with
+the compiler; see <A href="#compile">Compiling translets</A>.</P>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="compile"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Compiling translets from the command line</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <UL>
+      <LI><A href="#comp-synopsis">Synopsis</A></LI>
+      <LI><A href="#comp-args">Flags and arguments</A></LI>
+      <LI><A href="#comp-examples">Examples</A></LI>
+    </UL>
+    <P>The XSLT Compiler is a Java-based tool for compiling XSLT
+    stylesheets into lightweight and portable Java byte codes 
+    called translets.</P>  
+
+    <P>To run the compiler from the command line or from a script, 
+    <A href="#classpath">set the classpath</A> and 
+    run the class <CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.cmdline.Compile</FONT></CODE>. The
+    synopsis of the options and arguments accepted by this class is shown below.
+    </P>
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>You can also use the
+    <A href="commandline.html">Xalan-Java command-line utility</A>, to
+          compile or run XSLTC translets.</I></FONT></TD></TR></TABLE>
+
+<A name="comp-synopsis"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Synopsis</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P>
+<CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Compile</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;[-o &lt;output&gt;] [-d &lt;directory&gt;] [-j &lt;jarfile&gt;]</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;[-p &lt;package name&gt;] [-n] [-x] [-v] [-u] [-h]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;{&lt;stylesheet&gt; | -i }</FONT></CODE></P> 
+</FONT></TD></TR></TABLE><BR>
+
+<A name="comp-args"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Flags and arguments</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The following flags and arguments are supported:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>-o &lt;output&gt;
+   Specifies the name of the generated translet class.
+   If you omit this argument, the translet class is
+   named &lt;stylesheet&gt;.  Translets are written as 
+   .class files.
+
+-d &lt;directory&gt;
+   Specifies the destination directory.  If you omit
+   this argument, the translet class files are placed
+   in the current working directory.
+
+-j &lt;jarfile&gt;
+   Outputs the generated translet class files into a 
+   jar file named &lt;jarfile&gt;.jar. When this option is 
+   used, only the jar file is output.
+
+-p &lt;package name&gt;
+   Specifies a package name for the generated translet
+   classes.
+
+-n Enables template inlining (default behavior better on average).
+
+-x Turns on additional debugging messages.
+
+-s Disables calling System.exit
+
+-u  &lt;stylesheet&gt;
+  Specifies the stylesheet with a URI such as 
+  'http://myserver/stylesheet1.xsl'.
+
+   &lt;stylesheet&gt;
+   (No flag) The pathname of the stylesheet file.
+
+-i Force stylesheet to be read from stdin
+
+-v Prints version of compiler
+
+-h Prints usage statement</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The translet name is the same as the name of the Java class that
+implements the translet.  If the name specified by the <CODE><FONT face="courier, monospaced">-o</FONT></CODE> option
+or derived from the URL for the stylesheet contains characters that are not
+permitted in a Java class name, any such character will be replaced with an
+underscore.  For example, if the translet name specified by the <CODE><FONT face="courier, monospaced">-o</FONT></CODE>
+option is <CODE><FONT face="courier, monospaced">my-stylesheet</FONT></CODE>, or if the URL of the stylesheet is
+<CODE><FONT face="courier, monospaced">http://example.org/my-stylesheet.xsl</FONT></CODE>, the translet will actually
+be named <CODE><FONT face="courier, monospaced">my_stylesheet</FONT></CODE>.
+</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="comp-examples"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Examples</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+    <P>The following examples assume that you have already set the
+           classpath to include the translet and the required JAR
+    files (see <A href="#classpath">setting the system classpath</A>).</P>
+
+    <P><B>Example 1:</B>  Creating a translet from the hamlet.xsl
+       stylesheet.</P>
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Compile</FONT></CODE><BR>
+    <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; hamlet.xsl</FONT></CODE></P>    
+    <P>Example 1 produces a set of class files such as hamlet.class, hamlet$0.class, hamlet$1.class.</P>
+
+    <P><B>Example 2:</B>  Outputting to a JAR file.</P>
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Compile</FONT></CODE><BR>
+    <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; -j hamlet.jar hamlet.xsl</FONT></CODE></P>
+    <P>Example 2 produces hamlet.jar, which contains the translet class
+       files.</P>
+
+    <P><B>Example 3:</B> Specifying the translet class name. </P> 
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Compile</FONT></CODE><BR>
+    <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; -o newhamlet hamlet.xsl</FONT></CODE></P>
+    <P>Example 3 produces a set of class files such as newhamlet.class,
+       newhamlet$0.class, etc., rather than hamlet.class, hamlet$0.class,
+       etc.</P>
+
+
+    <P><B>Example 4:</B> Compiling multiple stylesheets.</P>
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Compile</FONT></CODE><BR>
+    <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; hamlet1.xsl hamlet2.xsl hamlet3.xsl</FONT></CODE></P>
+    <P>Example 4 produces three translets and set of class files derived from the three stylesheets.</P>
+
+    <P><B>Example 5:</B> Package Specification.</P>
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Compile</FONT></CODE><BR>
+    <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; -p com.mycompany.translets hamlet.xsl</FONT></CODE></P>
+    <P>Example 5 produces a set of class files such as com/mycompany/translets/hamlet.class,
+    com/mycompany/translets/hamlet$0.class', etc.</P>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="run"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Running translets from the command line</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+    <UL>
+      <LI><A href="#run-synopsis">Synopsis</A></LI>
+      <LI><A href="#run-args">Flags and arguments</A></LI>
+      <LI><A href="#run-examples">Examples</A></LI>
+    </UL>
+
+    <P>The XSLTC runtime processor is a Java-based tool for 
+    transforming XML document files using a translet (compiled 
+    stylesheet). </P>
+
+    <P>The XSLTC processor can be run on any platform including UNIX,
+    Windows, NT, Mac that supports Java, including a Palm Pilot
+    with J2ME CLDC (Java 2 Micro Edition, Connected Limited Device
+    Configuration).</P>
+
+    <P>To run a translet from the command line or a script,
+     <A href="#classpath">set the classpath</A> (be sure to include
+     the translet) and run the translet with the appropriate flags and arguments
+     (described below).</P>
+
+    <TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>You can also use the
+    <A href="commandline.html">Xalan-Java Command-line Utility</A>, to
+          compile or run XSLTC translets.</I></FONT></TD></TR></TABLE>
+
+<A name="run-synopsis"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Synopsis</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Transform</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; [-j &lt;jarfile&gt;] [-x] {-u &lt;document_url&gt; | &lt;document&gt;} &lt;class&gt;</FONT></CODE><BR>
+<CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; [&lt;name1&gt;=&lt;value1&gt; ...]</FONT></CODE></P>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="run-args"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Flags and arguments</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The following flags and arguments are supported:</P>
+
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>
+
+-j Specifies &lt;jarfile&gt; from which to load translet.
+
+-x Turns on debugging messages.
+
+-s Disables calling System.exit
+
+-u Specifies the XML input &lt;document&gt; with a URI,
+   such as 'http://myserver/hamlet.xml'.
+
+Arguments without flags:
+
+   &lt;document&gt;
+   Filename of the XML input document. 
+   
+   &lt;document_url&gt;
+   URI of the XML input document (see the -u flag above). 
+
+   &lt;class&gt;
+   The translet that performs the transformation. The translet
+   may take a set of stylesheet parameters specified as
+   name-value pairs. The format for a name-value pair is
+   &lt;name&gt;=&lt;value&gt;.</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="run-examples"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Examples</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+
+    <P>The following examples assume that you have already set the classpath to include the translet and the required JAR
+    files (see <A href="#classpath">setting the system classpath</A>).</P>
+    <P>A possible variation: You have set the classpath to include the required JAR files, but when you run the translet,
+    you use the java -cp flag to add the current working directory (containing the translet class files you have just generated)
+    to the classpath.</P>
+    <P><I>Windows:</I><CODE><FONT face="courier, monospaced"> java -cp .;%CLASSPATH% ...</FONT></CODE><BR>
+       <I>UNIX:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</I><CODE><FONT face="courier, monospaced"> java -cp .:$CLASSPATH ...</FONT></CODE></P>
+    
+    <P><B>Example 1:</B> Processing an XML document.</P>
+
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Transform</FONT></CODE><BR>
+       <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;  hamlet.xml hamlet</FONT></CODE></P> 
+
+    <P>Example 1 uses the specified translet (hamlet) to transform the specified XML input document (hamlet.xml). 
+    The XML input document is in the current working directory. The translet was created by using
+    org.apache.xalan.xslt.cmdline.Compile to compile an XSL stylesheet (hamlet.xsl). </P>
+
+    <P><B>Example 2:</B> Passing stylesheet parameters to the translet.</P>
+
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Transform</FONT></CODE><BR>
+       <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; hamlet.xml hamlet</FONT></CODE><BR>
+       <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp; speaker=HAMLET 'scene=SCENE IV'</FONT></CODE></P>
+
+    <P>Example 2 passes &quot;HAMLET&quot; to the stylesheet for the stylesheet parameter named speaker, and &quot;SCENE IV&quot; for the
+    stylesheet parameter named scene. The second name-value pair was placed in single quotes to 
+    specify a value containing a space.</P>
+    
+    <P><B>Example 3:</B> Processing an XML input document specified with a URI.</P>
+
+    <P><CODE><FONT face="courier, monospaced">java org.apache.xalan.xsltc.cmdline.Transform</FONT></CODE><BR>
+       <CODE><FONT face="courier, monospaced">&nbsp;&nbsp;&nbsp;&nbsp;  -u http://zarya.east/test.xml hamlet</FONT></CODE></P>
+
+    <P>Example 3 applies the translet (hamlet) to the XML input document (http://zarya.east/test.xml hamlet). Inclusion of
+    the flag (-u) is optional.</P>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="api"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Calling XSLTC with the JAXP API</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<UL>
+<LI><A href="#api-attributes">XSLTC TransformerFactory attributes</A></LI>
+<LI><A href="#api-examples">Examples</A></LI>
+</UL>
+<P>XSLTC translets are integrated with the JAXP 1.3 API. Accordingly, it is now possible to set a 
+system property and use a TransformerFactory to generate a Transformer that performs a transformation by compiling 
+and running a translet.</P>
+
+<P>When you use the JAXP 1.3 API to run Xalan-Java, the
+<CODE><FONT face="courier, monospaced">javax.xml.transform.TransformerFactory</FONT></CODE> system property is set to
+<CODE><FONT face="courier, monospaced">org.apache.xalan.processor.TransformerFactoryImpl</FONT></CODE>. As it currently
+stands, this Xalan-Java implementation of TransformerFactory always uses the Xalan-Java
+Interpretive processor to perform transformations.  To use translets to perform
+transformations, set this system property to
+<CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.trax.TransformerFactoryImpl</FONT></CODE>. For
+information on setting this and related system properties designating XML
+parsers and XSL transformers, see
+<A href="usagepatterns.html#plug">Plugging in a Transformer and XML
+parser</A>.</P>
+
+<P>To use the JAXP 1.3 API to perform transformations with translets do the
+   following:</P>
+<OL>
+  <LI>Set the <CODE><FONT face="courier, monospaced">javax.xml.transform.TransformerFactory</FONT></CODE> system
+      property as indicated above.<BR><BR></LI>
+  <LI>Instantiate a <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE>.<BR><BR></LI>
+  <LI>Instantiate a <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> object either directly from
+      the <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> or through a <CODE><FONT face="courier, monospaced">Templates</FONT></CODE>
+      object.  A <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> is a processed instance of a
+      stylesheet (a translet) that can be used to perform a
+      transformation.  See below for more information on when you should use
+      a <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object.<BR><BR></LI>
+  <LI>Perform the transformation, using a StreamSource object for the XML
+      input and a StreamResult object to hold the transformation output.</LI>
+</OL>
+<P>Both a <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object and a <CODE><FONT face="courier, monospaced">Tranformer</FONT></CODE> object are
+   processed representations of a stylesheet, but you cannot use a
+   <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object to perform transformations.  Instead,
+   you can use a <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object to create new
+   <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> instances, without having to reprocess the
+   stylesheet each time.  You can use a <CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> to
+   generate a <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object or a <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE>
+   object directly.  You can use a <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> more than once,
+   but you cannot use it concurrently on more than one thread.  If you need
+   to use the same stylesheet to perform transformations on more than one
+   thread at the same time, use a <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object and create
+   as many <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> objects as you require.</P>
+
+<P>XSLTC also defines a set of attributes that you can set on the
+<CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE> in order to save and subsequently use those
+translets by way of the JAXP Transform API - without having to recompile the
+stylesheet each time.</P>
+
+<A name="api-attributes"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>XSLTC TransformerFactory attributes</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+The JAXP Transform API defines a <CODE><FONT face="courier, monospaced">
+<A href="apidocs/javax/xml/transform/TransformerFactory.html#setAttribute(java.lang.String, java.lang.Object)">TransformerFactory.setAttribute</A>
+</FONT></CODE> method that you can use to set implementation-defined attributes.
+<TABLE border="0" cellpadding="2" cellspacing="2" width="100%">
+<TR>
+  <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Attribute</B>&nbsp;
+      </FONT></TD><TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Purpose</B>&nbsp;
+      </FONT></TD>
+  <TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Type of value</B>&nbsp;
+      </FONT></TD><TD align="center" bgcolor="#039acc" colspan="1" rowspan="1" valign="center"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="-1"><B>Default value</B>&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">translet-name&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies the name of the translet&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">String&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">&quot;GregorSamsa&quot;&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">destination-directory&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies where to save translet class files&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">String&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">null&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">package-name&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies which package translet class files will be in&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">String&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">null&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">jar-name&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies the name of a jar file in which translets should be saved&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">String&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">null&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">generate-translet&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies whether translet class files should be generated&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean.FALSE&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">auto-translet&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies that time-stamp of translet file, if any, should be compared with that of stylesheet to decide whether to recompile the stylesheet&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean.FALSE&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">use-classpath&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies that precompiled translet classes should be looked up from the classpath when a new transformer or templates is created&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean.FALSE&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">enable-inlining&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Specifies whether methods that represent templates should be inlined.  See <A href="#constraints">Usage constraints</A>&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean.FALSE&nbsp;
+      </FONT></TD>
+</TR>
+<TR>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">debug&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Enables debugging messages&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean&nbsp;
+      </FONT></TD>
+  <TD align="left" bgcolor="#a0ddf0" colspan="1" rowspan="1" valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">Boolean.FALSE&nbsp;
+      </FONT></TD>
+</TR>
+</TABLE>
+<P>The <CODE><FONT face="courier, monospaced">translet-name</FONT></CODE>, <CODE><FONT face="courier, monospaced">destination-directory</FONT></CODE>,
+<CODE><FONT face="courier, monospaced">package-name</FONT></CODE> and <CODE><FONT face="courier, monospaced">jar-name</FONT></CODE> attributes are transient.
+They only apply to the next invocation of either the <CODE><FONT face="courier, monospaced">newTemplates</FONT></CODE>
+or the <CODE><FONT face="courier, monospaced">newTransformer</FONT></CODE> method on that
+<CODE><FONT face="courier, monospaced">TransformerFactory</FONT></CODE>.</P>
+<TABLE border="0" cellpadding="0" cellspacing="3" width="100%"><TR><TD valign="top" width="20"><IMG alt="Note" border="0" height="24" hspace="0" src="resources/note.gif" vspace="0" width="20"></TD><TD valign="top"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1"><I>The translet name is the same as the name of the Java class that
+implements the translet.  If the value specified for the
+<CODE><FONT face="courier, monospaced">translet-name</FONT></CODE> attribute contains characters that are not
+permitted in a Java class name, any such character will be replaced with an
+underscore.  For example, if the translet name specified was
+<CODE><FONT face="courier, monospaced">my-stylesheet</FONT></CODE>, the translet will actually be named
+<CODE><FONT face="courier, monospaced">my_stylesheet</FONT></CODE>.</I></FONT></TD></TR></TABLE>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="api-examples"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="666699" colspan="2" width="484"><TABLE border="0" cellpadding="0" cellspacing="0" width="484"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="482"><FONT color="#ffffff" face="arial,helvetica,sanserif"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Examples</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="482"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="482"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="474"><FONT color="#000000" face="arial,helvetica,sanserif" size="-1">
+<P><B>Example 1:</B> Using a translet/Templates object for multiple
+concurrent transformations</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>import java.util.Properties;
+import javax.xml.transform.Transformer;
+import java.io.FileOutputStream;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.Templates;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.transform.stream.StreamResult;
+...
+// Set the TransformerFactory system property.
+// Note: For more flexibility, load properties from a properties file.
+String key = &quot;javax.xml.transform.TransformerFactory&quot;;
+String value = &quot;org.apache.xalan.xsltc.trax.TransformerFactoryImpl&quot;;
+Properties props = System.getProperties();
+props.put(key, value);
+System.setProperties(props);
+...
+String xslInURI;
+// Instantiate the TransformerFactory, and use it with a StreamSource
+// XSL stylesheet to create a translet as a Templates object.
+TransformerFactory tFactory = TransformerFactory.newInstance();
+Templates translet = tFactory.newTemplates(new StreamSource(xslInURI));
+...
+String xmlInURI;
+String htmlOutURI;
+String xmlInURI2;
+String htmlOutURI2;
+...
+// For each thread, instantiate a new Transformer, and perform the
+// transformations on that thread from a StreamSource to a StreamResult;
+Transformer transformer = translet.newTransformer();
+transformer.transform(new StreamSource(xmlInURI),
+                  new StreamResult(new FileOutputStream(htmlOutURI)));
+transformer.transform(new StreamSource(xmlInURI2),
+                  new StreamResult(new FileOutputStream(htmlOutURI2)));
+...</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>For a working sample that illustrates this usage pattern, see <A href="samples.html#xsltc1">JAXPTransletOneTransformation</A>.</P>
+<P><B>Example 2:</B> Compiling a translet/Templates object for a single transformation</P>
+<DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>import java.util.Properties;
+import javax.xml.transform.TransformerFactory;
+import java.io.FileOutputStream;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.transform.stream.StreamResult;
+...
+// Set the TransformerFactory system property.
+// Note: For more flexibility, load properties from a properties file.
+String key = &quot;javax.xml.transform.TransformerFactory&quot;;
+String value = &quot;org.apache.xalan.xsltc.trax.TransformerFactoryImpl&quot;;
+Properties props = System.getProperties();
+props.put(key, value);
+System.setProperties(props);
+...
+String xslInURI;
+String xmlInURI;
+String xmlInURI2;
+String htmlOutURI;
+String htmlOutURI2;
+// Instantiate the TransformerFactory, and use it along with a StreamSource
+// XSL stylesheet to create a Transformer.
+TransformerFactory tFactory = TransformerFactory.newInstance();
+Transformer transformer =
+                 tFactory.newTransformer(new StreamSource(xslInURI));
+// Perform the transformation from a StreamSource to a StreamResult;
+transformer.transform(new StreamSource(xmlInURI),
+                  new StreamResult(new FileOutputStream(htmlOutURI)));
+// Re-use the same transformer for a second transformation
+transformer.transform(new StreamSource(xmlInURI2),
+                  new StreamResult(new FileOutputStream(htmlOutURI2)));</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV>
+<P>For a working sample that illustrates this usage pattern, see <A href="samples.html#xsltc2">JAXPTransletMultipleTransformations</A>.</P>
+</FONT></TD></TR></TABLE><BR>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="xsltcsmart"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Smart Transformer Switch</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>As part of the JAXP API, a &quot;Smart Transformer Switch&quot; enables automatic switching 
+between Xalan-Java Interpretive and XSLTC processors within your application. It uses Xalan-Java Interpretive 
+processor to create your <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> objects, and uses XSLTC to create your 
+<CODE><FONT face="courier, monospaced">Templates</FONT></CODE> objects.</P>
+<P>To use the switch, you set the JAXP system property,
+<CODE><FONT face="courier, monospaced">javax.xml.transform.TransformerFactory</FONT></CODE>, to
+<CODE><FONT face="courier, monospaced">org.apache.xalan.xsltc.trax.SmartTransformerFactoryImpl</FONT></CODE>. 
+For one-time transformations or transformations that require extensions
+supported by Xalan-Java Interpretive, and not XSLTC, you would use the
+<CODE><FONT face="courier, monospaced">SmartTransformerFactoryImpl</FONT></CODE> to create <CODE><FONT face="courier, monospaced">Transformer</FONT></CODE>
+objects. For a repeated transformation where performance is critical, you would
+create a <CODE><FONT face="courier, monospaced">Templates</FONT></CODE> object from which you would create your
+<CODE><FONT face="courier, monospaced">Transformer</FONT></CODE> objects.</P> 
+</FONT></TD></TR></TABLE><BR>
+
+<A name="native_api"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Calling XSLTC with the native API</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<P>The XSLTC Native API is no longer supported.  Instead, you should always
+use XSLTC with the JAXP Transform API.</P>
+</FONT></TD></TR></TABLE><BR>
+
+<A name="constraints"><!--anchor--></A>
+<TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="666699" colspan="2" width="494"><TABLE border="0" cellpadding="0" cellspacing="0" width="494"><TR><TD bgcolor="#039acc" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#039acc" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#039acc" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" width="492"><FONT color="#ffffff" face="arial,helvetica,sanserif" size="+1"><IMG alt="" border="0" height="2" hspace="0" src="resources/void.gif" vspace="0" width="2"><B>Usage constraints</B></FONT></TD><TD bgcolor="#017299" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#017299" height="1" width="492"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="492"></TD><TD bgcolor="#017299" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></TD></TR><TR><TD width="10">&nbsp;</TD><TD width="484"><FONT color="#000000" face="arial,helvetica,sanserif">
+<UL>
+  <LI>The default for template inlining has been changed. Previously,
+    by default, inlining (putting all the templates into one big method) was on and 
+    the <CODE><FONT face="courier, monospaced">&quot;-n&quot;</FONT></CODE> option to the compile command line disabled inlining. 
+    With inlining on, XSLTC can generate methods that are too long (<B>&gt; 64K length</B>) 
+    to run, or contain jump offsets that are too large for the JVM to handle. 
+    Now the default is not to inline templates. Instead, compilation creates separate 
+    methods for each template. Inlining was thought to improve performance, 
+    but with recent hotspot technology in the Java 1.4.x JVM, performance is better with 
+    inlining off. From the command line, you would use <CODE><FONT face="courier, monospaced">&quot;-n&quot;</FONT></CODE> 
+    to turn on inlining, or with JAXP set the &quot;enable-inlining&quot; attribute to the TransformerFactory. 
+    For example, 
+      <DIV align="right"><TABLE border="0" cellpadding="0" cellspacing="4" width="464"><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#ffffff" width="462"><FONT size="-1"><PRE>TransformerFactory tfac = new TransformerFactory(); 
+tfac.setAttribute(&quot;enable-inlining&quot;, Boolean.TRUE);</PRE></FONT></TD><TD bgcolor="#0086b2" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR><TR><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD><TD bgcolor="#0086b2" height="1" width="462"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="462"></TD><TD bgcolor="#0086b2" height="1" width="1"><IMG alt="" border="0" height="1" hspace="0" src="resources/void.gif" vspace="0" width="1"></TD></TR></TABLE></DIV><BR></LI>
+  <LI>XSLTC tries to determine the order in which global variables are initialized 
+    by tracking the dependencies between them. In some cases, the value of a variable 
+    may depend on a template, e.g., if <CODE><FONT face="courier, monospaced">xsl:call-template</FONT></CODE> is used to initialized
+    a variable whose type is RTF. If this happens, a
+    <CODE><FONT face="courier, monospaced">NullPointerException</FONT></CODE> may be thrown at run-time 
+    when the translet attempts to access a variable that has not been properly 
+    initialized. In most cases, this problem can be avoided by reordering the 
+    variable declarations.<BR></LI>
+</UL>
+<P>To check on the open bugs in the current Apache xml-xalan/java repository, 
+  follow the instructions below:</P>
+<OL>
+  <LI>Go to <A href="http://issues.apache.org/jira">http://issues.apache.org/jira</A>.</LI>
+  <LI>Select project <B>XalanJ2</B>.</LI>
+  <LI>Select <B>XSLTC</B> from the Components list.</LI> 
+</OL>
+</FONT></TD></TR></TABLE><BR>
+</TD></TR></TABLE></TD></TR></TABLE><BR><TABLE border="0" cellpadding="0" cellspacing="0" width="620"><TR><TD bgcolor="#0086b2"><IMG alt="dot" height="1" src="resources/dot.gif" width="1"></TD></TR><TR><TD align="center"><FONT color="#0086b2" size="-1"><I>
+              Copyright &copy; 2006 The Apache Software Foundation.
+              All Rights Reserved.
+            </I></FONT></TD></TR></TABLE></BODY></HTML>

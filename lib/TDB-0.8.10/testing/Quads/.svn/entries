@@ -1,0 +1,70 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/TDB-0.8.10/testing/Quads
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+data-1.ttl
+file
+
+
+
+add
+
+data-2.ttl
+file
+
+
+
+add
+
+data-dft.ttl
+file
+
+
+
+add
+
+manifest.ttl
+file
+
+
+
+add
+
+quad-01.rq
+file
+
+
+
+add
+
+quad-02.rq
+file
+
+
+
+add
+

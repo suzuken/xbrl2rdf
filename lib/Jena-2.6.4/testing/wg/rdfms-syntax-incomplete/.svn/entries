@@ -1,0 +1,210 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/wg/rdfms-syntax-incomplete
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+error001-bad.nt
+file
+
+
+
+add
+
+error001-good.nt
+file
+
+
+
+add
+
+error001.rdf
+file
+
+
+
+add
+
+error002-bad.nt
+file
+
+
+
+add
+
+error002-good.nt
+file
+
+
+
+add
+
+error002.rdf
+file
+
+
+
+add
+
+error003-bad.nt
+file
+
+
+
+add
+
+error003-good.nt
+file
+
+
+
+add
+
+error003.rdf
+file
+
+
+
+add
+
+error004-bad.nt
+file
+
+
+
+add
+
+error004-good.nt
+file
+
+
+
+add
+
+error004.rdf
+file
+
+
+
+add
+
+error005-bad.nt
+file
+
+
+
+add
+
+error005-good.nt
+file
+
+
+
+add
+
+error005.rdf
+file
+
+
+
+add
+
+error006-bad.nt
+file
+
+
+
+add
+
+error006-good.nt
+file
+
+
+
+add
+
+error006.rdf
+file
+
+
+
+add
+
+test001.nt
+file
+
+
+
+add
+
+test001.rdf
+file
+
+
+
+add
+
+test002.nt
+file
+
+
+
+add
+
+test002.rdf
+file
+
+
+
+add
+
+test003.nt
+file
+
+
+
+add
+
+test003.rdf
+file
+
+
+
+add
+
+test004.nt
+file
+
+
+
+add
+
+test004.rdf
+file
+
+
+
+add
+

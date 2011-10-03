@@ -1,0 +1,317 @@
+<rdf:RDF
+    xmlns:xbrlont_ins="http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#"
+    xmlns:xbrlont_property="http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/property/"
+    xmlns:jpfr-oe="http://info.edinet-fsa.go.jp/jp/fr/gaap/o/oe/2009-03-09#"
+    xmlns:jpfr-t-fnd="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance#"
+    xmlns:jpfr-di="http://info.edinet-fsa.go.jp/jp/fr/gaap/o/di/2009-03-09#"
+    xmlns:link="http://www.xbrl.org/2003/linkbase#"
+    xmlns:xlink="http://www.w3.org/1999/xlink#"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance#"
+    xmlns:iso4217="http://www.xbrl.org/2003/iso4217#"
+    xmlns:jpfr-t-cte="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#"
+    xmlns:xbrlont_class="http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/class#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15114079</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#SurplusDeficitFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A1"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63296260</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DividendsFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A3"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#InterestIncomeOIFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A4"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">262732</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#OrdinaryIncome">
+    <xbrlont_ins:hasAmount rdf:nodeID="A2"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DecreaseInSurplusOrIncreaseInDeficitFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A5"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68592373</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">905362615</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5297270</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#PrincipalFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A7"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#Liabilities">
+    <xbrlont_ins:hasAmount rdf:nodeID="A9"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OperatingRevenueFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A10"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">805678</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#InvestmentTrustManagementFeeOEFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A12"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2669489</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#LiabilitiesAndNetAssets">
+    <xbrlont_ins:hasAmount rdf:nodeID="A14"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DistributionOfNetIncomeFromPartialRedemptionsFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A15"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DecreaseInSurplusOrIncreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A16"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#CurrentLiabilities">
+    <xbrlont_ins:hasAmount rdf:nodeID="A13"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#ParentsTrustBeneficiarySecuritiesCAFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A17"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">699543011</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4969814</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63296260</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#ProfitAndLossOnBuyingAndSellingOfSecuritiesAndOtherOIFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A6"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48825</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">699543011</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#G03727">
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OperatingExpensesFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DividendsFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#Assets"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#TrusteeFeePayableCLFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#PrincipalFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#TrusteeFeeOEFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#ProfitAndLossOnBuyingAndSellingOfSecuritiesAndOtherOIFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#RedemptionPayableCLFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#UnpaidDividendsCLFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#OperatingIncome"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DecreaseInSurplusOrIncreaseInDeficitFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#CallLoansCAFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#Liabilities"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OtherExpensesOEFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#InvestmentTrustManagementFeeOEFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#IncreaseInSurplusOrDecreaseInDeficitFromPartialRedemptionsFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OperatingRevenueFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#InvestmentTrustManagementFeePayableCLFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#CurrentAssets"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DistributionOfNetIncomeFromPartialRedemptionsFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#InterestIncomeOIFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#CurrentLiabilities"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#ParentsTrustBeneficiarySecuritiesCAFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OtherAccruedExpensesCLFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#DecreaseInSurplusOrIncreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#LiabilitiesAndNetAssets"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#OrdinaryIncome"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#NetAssets"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#SurplusDeficitFND"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#NetIncome"/>
+    <xbrlont_ins:hasAccount rdf:resource="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#IncreaseInSurplusOrDecreaseInDeficitFND"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#NetIncome">
+    <xbrlont_ins:hasAmount rdf:nodeID="A21"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15114079</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#InvestmentTrustManagementFeePayableCLFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A11"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">693458595</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#スター・マンスリープラス">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <xbrlont_property:hasEDINETCode rdf:resource="http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#G03727"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#TrusteeFeePayableCLFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A19"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OperatingExpensesFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A8"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">262732</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#TrusteeFeeOEFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A23"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1810725</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">699543011</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-208489093</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#OperatingIncome">
+    <xbrlont_ins:hasAmount rdf:nodeID="A18"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63296260</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#CallLoansCAFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A26"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#IncreaseInSurplusOrDecreaseInDeficitFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A22"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">430396</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26288</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#CurrentAssets">
+    <xbrlont_ins:hasAmount rdf:nodeID="A20"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OtherExpensesOEFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A27"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4261</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6084416</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#RedemptionPayableCLFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A29"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#OtherAccruedExpensesCLFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A28"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16709290</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#NetAssets">
+    <xbrlont_ins:hasAmount rdf:nodeID="A30"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1157</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">696873522</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">301168</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#Assets">
+    <xbrlont_ins:hasAmount rdf:nodeID="A25"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#IncreaseInSurplusOrDecreaseInDeficitFromPartialRedemptionsFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A0"/>
+    <xbrlont_ins:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-03</xbrlont_ins:hasStartDate>
+    <xbrlont_ins:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasEndDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/fnd/2009-03-09#UnpaidDividendsCLFND">
+    <xbrlont_ins:hasAmount rdf:nodeID="A24"/>
+    <xbrlont_ins:hasInstant rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-09-02</xbrlont_ins:hasInstant>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2669489</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68593530</rdf:value>
+    <xbrlont_ins:hasUnit rdf:resource="http://www.xbrl.org/2003/iso4217#JPY"/>
+  </rdf:Description>
+</rdf:RDF>

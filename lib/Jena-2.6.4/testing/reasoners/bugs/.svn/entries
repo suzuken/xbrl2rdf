@@ -1,0 +1,196 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/testing/reasoners/bugs
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+bad-intersection.owl
+file
+
+
+
+add
+
+broken.n3
+file
+
+
+
+add
+
+cardFPTest.owl
+file
+
+
+
+add
+
+cceTest.owl
+file
+
+
+
+add
+
+deleteBug.owl
+file
+
+
+
+add
+
+dtValidation.owl
+file
+
+
+
+add
+
+equivalentClassTest.owl
+file
+
+
+
+add
+
+food.owl
+file
+
+
+
+add
+
+groundClosure2.rules
+file
+
+
+
+add
+
+layeredValidation.owl
+file
+
+
+
+add
+
+literalLeak.daml
+file
+
+
+
+add
+
+loop.owl
+file
+
+
+
+add
+
+owl-debug.rules
+file
+
+
+
+add
+
+owl-partial.owl
+file
+
+
+
+add
+
+rangeBug.owl
+file
+
+
+
+add
+
+rdfs-error1.brules
+file
+
+
+
+add
+
+sbug.owl
+file
+
+
+
+add
+
+sbug.rdf
+file
+
+
+
+add
+
+subpropertyModel.n3
+file
+
+
+
+add
+
+test.owl
+file
+
+
+
+add
+
+tgcCMEbug.owl
+file
+
+
+
+add
+
+unbroken.n3
+file
+
+
+
+add
+
+userDatatypes.owl
+file
+
+
+
+add
+
+wine.owl
+file
+
+
+
+add
+

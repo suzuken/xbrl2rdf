@@ -1,0 +1,79 @@
+﻿<FinancialStatements>
+<InstanceCount>1</InstanceCount>
+<InstanceInformation>
+<InstanceFileName>jpfr-asr-E02144-000-2009-03-31-01-2009-06-24</InstanceFileName>
+<StatementInformation>
+<StatementID>NonconsolidatedBSNonconsolidatedFinancialStatements</StatementID>
+<FileName>0105310_0529900102106</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue>２【財務諸表等】</HeaderValue>
+<HeaderValue>(1)【財務諸表】</HeaderValue>
+<HeaderValue>①【貸借対照表】</HeaderValue>
+<HeaderValue />
+</Header>
+<ColumnName>
+<ColumnValue>前事業年度</ColumnValue>
+<ColumnValue>(平成20年３月31日)</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>当事業年度</ColumnValue>
+<ColumnValue>(平成21年３月31日)</ColumnValue>
+</ColumnName>
+<DecimalScale>(単位：百万円)</DecimalScale>
+<SplitMaxSize>46</SplitMaxSize>
+<SplitMinSize>42</SplitMinSize>
+<SplitDepth>1</SplitDepth>
+</StatementInformation>
+<StatementInformation>
+<StatementID>NonconsolidatedPLNonconsolidatedFinancialStatements</StatementID>
+<FileName>0105320_0529900102106</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue />
+<HeaderValue />
+<HeaderValue>②【損益計算書】</HeaderValue>
+<HeaderValue />
+</Header>
+<ColumnName>
+<ColumnValue>前事業年度</ColumnValue>
+<ColumnValue>(自&#160;平成19年４月１日</ColumnValue>
+<ColumnValue>　至&#160;平成20年３月31日)</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>当事業年度</ColumnValue>
+<ColumnValue>(自&#160;平成20年４月１日</ColumnValue>
+<ColumnValue>　至&#160;平成21年３月31日)</ColumnValue>
+</ColumnName>
+<DecimalScale>(単位：百万円)</DecimalScale>
+<SplitMaxSize>45</SplitMaxSize>
+<SplitMinSize>30</SplitMinSize>
+<SplitDepth>1</SplitDepth>
+</StatementInformation>
+<StatementInformation>
+<StatementID>NonconsolidatedSSNonconsolidatedFinancialStatements</StatementID>
+<FileName>0105330_0529900102106</FileName>
+<Language>ja</Language>
+<Header>
+<HeaderValue />
+<HeaderValue />
+<HeaderValue>③【株主資本等変動計算書】</HeaderValue>
+<HeaderValue />
+</Header>
+<ColumnName>
+<ColumnValue>前事業年度</ColumnValue>
+<ColumnValue>(自&#160;平成19年４月１日</ColumnValue>
+<ColumnValue>　至&#160;平成20年３月31日)</ColumnValue>
+</ColumnName>
+<ColumnName>
+<ColumnValue>当事業年度</ColumnValue>
+<ColumnValue>(自&#160;平成20年４月１日</ColumnValue>
+<ColumnValue>　至&#160;平成21年３月31日)</ColumnValue>
+</ColumnName>
+<DecimalScale>(単位：百万円)</DecimalScale>
+<SplitMaxSize>41</SplitMaxSize>
+<SplitMinSize>40</SplitMinSize>
+<SplitDepth>4</SplitDepth>
+</StatementInformation>
+</InstanceInformation>
+</FinancialStatements>

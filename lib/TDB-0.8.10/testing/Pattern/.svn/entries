@@ -1,0 +1,56 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/TDB-0.8.10/testing/Pattern
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+data-1.ttl
+file
+
+
+
+add
+
+manifest.ttl
+file
+
+
+
+add
+
+pattern-1.rq
+file
+
+
+
+add
+
+pattern-2.rq
+file
+
+
+
+add
+

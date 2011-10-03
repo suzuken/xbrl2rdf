@@ -1,0 +1,154 @@
+10
+
+dir
+0
+svn://hpcs01.comp.ae.keio.ac.jp/repos/trunk/xbrl2rdf/lib/Jena-2.6.4/bat
+svn://hpcs01.comp.ae.keio.ac.jp/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7af6ee3c-d753-0410-b0e7-eb7699a32827
+
+arq.bat
+file
+
+
+
+add
+
+arq_version.bat
+file
+
+
+
+add
+
+check_root.bat
+file
+
+
+
+add
+
+make_classpath.bat
+file
+
+
+
+add
+
+n3.bat
+file
+
+
+
+add
+
+qexpr.bat
+file
+
+
+
+add
+
+qparse.bat
+file
+
+
+
+add
+
+qtest.bat
+file
+
+
+
+add
+
+query.bat
+file
+
+
+
+add
+
+rdfcat.bat
+file
+
+
+
+add
+
+rdfcompare.bat
+file
+
+
+
+add
+
+rdfcopy.bat
+file
+
+
+
+add
+
+rdfparse.bat
+file
+
+
+
+add
+
+rset.bat
+file
+
+
+
+add
+
+schemagen.bat
+file
+
+
+
+add
+
+sparql.bat
+file
+
+
+
+add
+
+update.bat
+file
+
+
+
+add
+
+version.bat
+file
+
+
+
+add
+
