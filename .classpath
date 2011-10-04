@@ -17,9 +17,6 @@
 	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/arq-2.8.8-tests.jar"/>
 	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/arq-2.8.8.jar"/>
 	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/log4j-1.2.14.jar"/>
-	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/slf4j-api-1.5.8.jar"/>
-	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/slf4j-log4j12-1.5.8.jar"/>
-	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/tdb-0.8.10-tests.jar"/>
 	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/tdb-0.8.10.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar"/>

@@ -27,7 +27,7 @@ import com.hp.hpl.jena.vocabulary.XSD;
 import com.hp.hpl.jena.datatypes.xsd.impl.XSDDateType;
 import com.hp.hpl.jena.db.DBConnection;
 import java.io.FileInputStream;
-
+import java.net.URISyntaxException;
 
 //xbrlインスタンスから得られたデータを受け取り、
 //rdfを生成し、rdfデータをデータベースに格納するために渡すクラス
@@ -39,7 +39,7 @@ import java.io.FileInputStream;
 public class RDFMaker extends Thread {
 
 	XbrlParser XBRLPARSER;
-	//EdinetData EDINETDATA;
+	// EdinetData EDINETDATA;
 	private String nsCls;
 	private String nsIns;
 	private String nsPrp;
@@ -51,17 +51,17 @@ public class RDFMaker extends Thread {
 	private String DBPassword;
 	private String DBType;
 
-	public void setXBRLPARSER(XbrlParser parser){
-		XBRLPARSER=parser;
+	public void setXBRLPARSER(XbrlParser parser) {
+		XBRLPARSER = parser;
 	}
 
-	public void run(){
+	public void run() {
 		RDFbinding(XBRLPARSER);
 	}
 
-	//xbrlインスタンスから生成したデータを受け取る
-	public void RDFbinding(XbrlParser xbrlparser){
-		
+	// xbrlインスタンスから生成したデータを受け取る
+	public void RDFbinding(XbrlParser xbrlparser) {
+
 		Map<String, String> nsmap = new HashMap<String, String>();
 		nsmap.put("xbrlont_class", this.getNsCls());
 		nsmap.put("xbrlont_ins", this.getNsIns());
@@ -69,118 +69,170 @@ public class RDFMaker extends Thread {
 		nsmap.put("foaf", this.getNsFoaf());
 
 		// in the first time, you should create default model.
-		//Model model = ModelFactory.createDefaultModel();
+		// Model model = ModelFactory.createDefaultModel();
 		/*
-		 * locationを指定.
-		 * 公開するディレクトリに構築するのが良い
+		 * locationを指定. 公開するディレクトリに構築するのが良い
 		 */
 		Model model = TDBFactory.createModel(this.getTdbloc());
 
 		/*
 		 * 以下、RDFモデルに関する記述
 		 */
-		//抽出してきた名前空間をここでも認識させる。
-		//ただし、valueの末尾に#をつける。
+		// 抽出してきた名前空間をここでも認識させる。
+		// ただし、valueの末尾に#をつける。
 		Set<String> keys = xbrlparser.getNamespaceMapping().keySet();
 		Iterator<String> ite = keys.iterator();
-		while(ite.hasNext()) {              //ループ
-			String str = ite.next();        //該当オブジェクト取得
-			//勘定科目に関するprefix
+		while (ite.hasNext()) { // ループ
+			String str = ite.next(); // 該当オブジェクト取得
+			// 勘定科目に関するprefix
 			String value = xbrlparser.getNamespaceMapping().get(str);
-			if(!value.substring(value.length()).equals("#")){
+			if (!value.substring(value.length()).equals("#")) {
 				value = value + "#";
 			}
-			//valueを入れなおす。
+			// valueを入れなおす。
 			xbrlparser.getNamespaceMapping().put(str, value);
 		}
-
 
 		model.setNsPrefixes(xbrlparser.getNamespaceMapping());
 		model.setNsPrefixes(nsmap);
 
-		//まず、会社名のresource作成。foaf:Organizationにタイプ付け。
-		System.out.println(this.getNsIns() + xbrlparser.getDocumentInfoMapping().get("EntityNameJaEntityInformation").getValue());
-		Resource company = model.createResource(this.getNsIns() + xbrlparser.getDocumentInfoMapping().get("EntityNameJaEntityInformation").getValue());
-		Resource foafOrg = model.createResource(this.getNsFoaf() + "Organization");
+		// まず、会社名のresource作成。foaf:Organizationにタイプ付け。
+		System.out.println(this.getNsIns()
+				+ xbrlparser.getDocumentInfoMapping().get(
+						"EntityNameJaEntityInformation").getValue());
+		Resource company = model.createResource(this.getNsIns()
+				+ xbrlparser.getDocumentInfoMapping().get(
+						"EntityNameJaEntityInformation").getValue());
+		Resource foafOrg = model.createResource(this.getNsFoaf()
+				+ "Organization");
 		company.addProperty(RDF.type, foafOrg);
 
-		//次に、company hasEdicode [EDINETCODE]をつける。
-		System.out.println(this.getNsIns() + xbrlparser.getContextInfoMapping().get("DocumentInfo").getEdinetCode());
-		Resource edicode = model.createResource(this.getNsIns() + xbrlparser.getContextInfoMapping().get("DocumentInfo").getEdinetCode());
-		Property hasEdicode = model.createProperty(this.getNsPrp(), "hasEDINETCode");
+		// 次に、company hasEdicode [EDINETCODE]をつける。
+		System.out.println(this.getNsIns()
+				+ xbrlparser.getContextInfoMapping().get("DocumentInfo")
+						.getEdinetCode());
+		Resource edicode = model.createResource(this.getNsIns()
+				+ xbrlparser.getContextInfoMapping().get("DocumentInfo")
+						.getEdinetCode());
+		Property hasEdicode = model.createProperty(this.getNsPrp(),
+				"hasEDINETCode");
 		company.addProperty(hasEdicode, edicode);
 
-		//jpfr-t-<?> hasAccountをつくる
-		//とりあえずjpfr-t-cte→jpfr-t-cteである必要はないかもしれない。ない。
-		//Resource accountElement = model.createResource(xbrlparser.getNamespaceMapping().get("jpfr-t-cte") + "SurplusDeficitFND");
+		// jpfr-t-<?> hasAccountをつくる
+		// とりあえずjpfr-t-cte→jpfr-t-cteである必要はないかもしれない。ない。
+		// Resource accountElement =
+		// model.createResource(xbrlparser.getNamespaceMapping().get("jpfr-t-cte")
+		// + "SurplusDeficitFND");
 
-		//iteratorで回す。対象はInstanceInfoMappingが対象。１つ１つの勘定科目に対するループ。
+		// iteratorで回す。対象はInstanceInfoMappingが対象。１つ１つの勘定科目に対するループ。
 		Resource accountElement = null;
 		Set<String> InstanceKeys = xbrlparser.getInstanceInfoMapping().keySet();
 		Iterator<String> InstanceIte = InstanceKeys.iterator();
-		while(InstanceIte.hasNext()){
+		while (InstanceIte.hasNext()) {
 			String Istr = InstanceIte.next();
-			System.out.println("今の項目は→" + xbrlparser.getInstanceInfoMapping().get(Istr).getLocalName() + " 値は：" + xbrlparser.getInstanceInfoMapping().get(Istr).getValue());
-			//jpfr-t-cte:ローカル名的なのをリソースにする。ちょっと調整必要かも
-			accountElement = model.createResource(xbrlparser.getInstanceInfoMapping().get(Istr).getNamespaceURI() + "#" + xbrlparser.getInstanceInfoMapping().get(Istr).getLocalName());
-			Property hasAccount = model.createProperty(this.getNsIns(), "hasAccount");
+			System.out.println("今の項目は→"
+					+ xbrlparser.getInstanceInfoMapping().get(Istr)
+							.getLocalName() + " 値は："
+					+ xbrlparser.getInstanceInfoMapping().get(Istr).getValue());
+			// jpfr-t-cte:ローカル名的なのをリソースにする。ちょっと調整必要かも
+			accountElement = model.createResource(xbrlparser
+					.getInstanceInfoMapping().get(Istr).getNamespaceURI()
+					+ "#"
+					+ xbrlparser.getInstanceInfoMapping().get(Istr)
+							.getLocalName());
+			Property hasAccount = model.createProperty(this.getNsIns(),
+					"hasAccount");
 			edicode.addProperty(hasAccount, accountElement);
 
-			//accountElementにvalueをつける。hasAmountプロパティで。
+			// accountElementにvalueをつける。hasAmountプロパティで。
 			Resource blankValue = model.createResource();
-			Property hasAmount = model.createProperty(this.getNsIns(), "hasAmount");
+			Property hasAmount = model.createProperty(this.getNsIns(),
+					"hasAmount");
 			accountElement.addProperty(hasAmount, blankValue);
 
-			//空白ノードに金額情報をつける。数値はリテラルで、型はxsd:integer
-			if(!(xbrlparser.getInstanceInfoMapping().get(Istr).getValue()==null)){
-				Literal valueOfAccount = model.createTypedLiteral(xbrlparser.getInstanceInfoMapping().get(Istr).getValue(), XSD.integer.getURI());
+			// 空白ノードに金額情報をつける。数値はリテラルで、型はxsd:integer
+			if (!(xbrlparser.getInstanceInfoMapping().get(Istr).getValue() == null)) {
+				Literal valueOfAccount = model.createTypedLiteral(xbrlparser
+						.getInstanceInfoMapping().get(Istr).getValue(),
+						XSD.integer.getURI());
 				blankValue.addLiteral(RDF.value, valueOfAccount);
-			}else{
-				Literal valueOfAccount = model.createTypedLiteral(0, XSD.integer.getURI());
+			} else {
+				Literal valueOfAccount = model.createTypedLiteral(0,
+						XSD.integer.getURI());
 				blankValue.addLiteral(RDF.value, valueOfAccount);
 			}
 
-			//金額情報の通貨単位をつける iso4217:JPYとか。 ちゃんとURI解決させる。
-			Resource unitOfAccount = model.createResource(xbrlparser.getNamespaceMapping().get(xbrlparser.getUnitInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getUnitRef()).getMeasurePrefix()) + xbrlparser.getUnitInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getUnitRef()).getMeasureLocalName());
+			// 金額情報の通貨単位をつける iso4217:JPYとか。 ちゃんとURI解決させる。
+			Resource unitOfAccount = model.createResource(xbrlparser
+					.getNamespaceMapping().get(
+							xbrlparser.getUnitInfoMapping().get(
+									xbrlparser.getInstanceInfoMapping().get(
+											Istr).getUnitRef())
+									.getMeasurePrefix())
+					+ xbrlparser.getUnitInfoMapping().get(
+							xbrlparser.getInstanceInfoMapping().get(Istr)
+									.getUnitRef()).getMeasureLocalName());
 			Property hasUnit = model.createProperty(this.getNsIns(), "hasUnit");
 			blankValue.addProperty(hasUnit, unitOfAccount);
 
-			//日付情報を付属させる。そのエレメントが属するクラスによって変わってくる。
-			//contextInfoからとる。contextRefから参照できるcontextInfoの、periodInstantまたはstartDate,endDateをとってくる。
-			//contextInfoのidによってクラスをInstantとDurationに分けてあるので、それぞれからとるようにする。
-			if(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()) instanceof xbrlparse.InstantDocumentInfo){
-				Literal Instant = model.createTypedLiteral(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()).getPeriodInstant(), XSDDateType.XSDdate);
-				Property hasInstant = model.createProperty(this.getNsIns(), "hasInstant");
+			// 日付情報を付属させる。そのエレメントが属するクラスによって変わってくる。
+			// contextInfoからとる。contextRefから参照できるcontextInfoの、periodInstantまたはstartDate,endDateをとってくる。
+			// contextInfoのidによってクラスをInstantとDurationに分けてあるので、それぞれからとるようにする。
+			if (xbrlparser.getContextInfoMapping().get(
+					xbrlparser.getInstanceInfoMapping().get(Istr)
+							.getContextRef()) instanceof xbrlparse.InstantDocumentInfo) {
+				Literal Instant = model.createTypedLiteral(xbrlparser
+						.getContextInfoMapping().get(
+								xbrlparser.getInstanceInfoMapping().get(Istr)
+										.getContextRef()).getPeriodInstant(),
+						XSDDateType.XSDdate);
+				Property hasInstant = model.createProperty(this.getNsIns(),
+						"hasInstant");
 				accountElement.addLiteral(hasInstant, Instant);
-			}
-			else if(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()) instanceof xbrlparse.DurationDocumentInfo){
-				Literal startDate = model.createTypedLiteral(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()).getStartDate(), XSDDateType.XSDdate);
-				Literal endDate = model.createTypedLiteral(xbrlparser.getContextInfoMapping().get(xbrlparser.getInstanceInfoMapping().get(Istr).getContextRef()).getEndDate(),XSDDateType.XSDdate);
-				Property hasStartDate = model.createProperty(this.getNsIns(), "hasStartDate");
-				Property hasEndDate = model.createProperty(this.getNsIns(), "hasEndDate");
+			} else if (xbrlparser.getContextInfoMapping().get(
+					xbrlparser.getInstanceInfoMapping().get(Istr)
+							.getContextRef()) instanceof xbrlparse.DurationDocumentInfo) {
+				Literal startDate = model.createTypedLiteral(xbrlparser
+						.getContextInfoMapping().get(
+								xbrlparser.getInstanceInfoMapping().get(Istr)
+										.getContextRef()).getStartDate(),
+						XSDDateType.XSDdate);
+				Literal endDate = model.createTypedLiteral(xbrlparser
+						.getContextInfoMapping().get(
+								xbrlparser.getInstanceInfoMapping().get(Istr)
+										.getContextRef()).getEndDate(),
+						XSDDateType.XSDdate);
+				Property hasStartDate = model.createProperty(this.getNsIns(),
+						"hasStartDate");
+				Property hasEndDate = model.createProperty(this.getNsIns(),
+						"hasEndDate");
 				accountElement.addLiteral(hasStartDate, startDate);
 				accountElement.addLiteral(hasEndDate, endDate);
+			} else {
 			}
-			else{}
 		}
 
-		try {
-			connectDB(model);
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			connectDB(model);
+//		} catch (ClassNotFoundException e) {
+//			e.printStackTrace();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+		outputRDF(model);
 	}
+
 	/**
 	 * 単一のファイルを読み込むメソッド
+	 * 
 	 * @param inputFileName
 	 */
 	public void readModelTest(String inputFileName) {
-		Model model=TDBFactory.createModel(this.getTdbloc());
+		Model model = TDBFactory.createModel(this.getTdbloc());
 		InputStream in = FileManager.get().open(inputFileName);
-		if(in == null){
-			throw new IllegalArgumentException("File: " + inputFileName + " not found");
+		if (in == null) {
+			throw new IllegalArgumentException("File: " + inputFileName
+					+ " not found");
 		}
 		// read the RDF/XML file
 		model.read(in, null);
@@ -188,9 +240,10 @@ public class RDFMaker extends Thread {
 		// write it to standard out
 		model.write(System.out);
 	}
-	
+
 	/**
 	 * ローカルファイルにrdfを出力する関数。
+	 * 
 	 * @param model
 	 */
 	public void outputRDF(Model model) {
@@ -208,11 +261,13 @@ public class RDFMaker extends Thread {
 			e.printStackTrace();
 		}
 
+		System.out.println("出力完了しました。");
 		model.write(out);
 	}
 
-	public void connectDB(Model model) throws ClassNotFoundException, SQLException{
-		//JDBC
+	public void connectDB(Model model) throws ClassNotFoundException,
+			SQLException {
+		// JDBC
 
 		Class.forName("com.mysql.jdbc.Driver");
 
@@ -229,46 +284,57 @@ public class RDFMaker extends Thread {
 
 		xbrlDBmodel.add(model);
 
-		//outputの形式はN-TRIPLEでなければならない。RDF/XMLだとBadURIのエラーが出る。
+		// outputの形式はN-TRIPLEでなければならない。RDF/XMLだとBadURIのエラーが出る。
 		xbrlDBmodel.write(System.out, "N-TRIPLE");
 
 		conn.close();
 
 		// list the statements in the Model
-//		StmtIterator iter = model.listStatements();
+		// StmtIterator iter = model.listStatements();
 
 		// print out the predicate, subject and object of each statement
-		/*while (iter.hasNext()) {
-		    Statement stmt      = iter.nextStatement();  // get next statement
-		    Resource  subject   = stmt.getSubject();     // get the subject
-		    Property  predicate = stmt.getPredicate();   // get the predicate
-		    RDFNode   object    = stmt.getObject();      // get the object
-
-		    System.out.print(subject.toString());
-		    System.out.print(" " + predicate.toString() + " ");
-		    if (object instanceof Resource) {
-		       System.out.print(object.toString());
-		    } else {
-		        // object is a literal
-		        System.out.print(" \"" + object.toString() + "\"");
-		    }
-
-		    System.out.println(" .");
-		}*/
+		/*
+		 * while (iter.hasNext()) { Statement stmt = iter.nextStatement(); //
+		 * get next statement Resource subject = stmt.getSubject(); // get the
+		 * subject Property predicate = stmt.getPredicate(); // get the
+		 * predicate RDFNode object = stmt.getObject(); // get the object
+		 * 
+		 * System.out.print(subject.toString()); System.out.print(" " +
+		 * predicate.toString() + " "); if (object instanceof Resource) {
+		 * System.out.print(object.toString()); } else { // object is a literal
+		 * System.out.print(" \"" + object.toString() + "\""); }
+		 * 
+		 * System.out.println(" ."); }
+		 */
 		model.write(System.out, "N-TRIPLE");
 	}
 
-
-	public static void main(String[] args) throws ClassNotFoundException, SQLException {
-		String configFile = "prop.conf";	//for default
+	public void createRDF(String[] args) throws URISyntaxException, IOException{
+		//XbrlParserにxbrlファイルをセット
+		XbrlParser xp = new XbrlParser(args[0]);
+		xp.parseStart();
+		this.RDFbinding(xp);
+	}
+	/**
+	 * ランチャーメソッド。引数にxbrlファイルを指定することで、RDFを生成する。
+	 * 
+	 * @param args
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 * @throws IOException 
+	 * @throws URISyntaxException 
+	 */
+	public static void main(String[] args) throws ClassNotFoundException,
+			SQLException, URISyntaxException, IOException {
+		String configFile = "app.conf"; // for default
 		Properties prop = new Properties();
 		try {
-		   prop.load(new FileInputStream(configFile));
+			prop.load(new FileInputStream(configFile));
 		} catch (IOException e) {
-		   e.printStackTrace();
-		   return;
+			e.printStackTrace();
+			return;
 		}
-		
+
 		RDFMaker maker = new RDFMaker();
 
 		maker.setNsCls(prop.getProperty("nsClass"));
@@ -278,7 +344,9 @@ public class RDFMaker extends Thread {
 		maker.setTdbloc(prop.getProperty("tdbFactoryLoc"));
 		maker.setOutputRDFPath(prop.getProperty("outputRDFPath"));
 
-		maker.readModelTest(args[0]);
+//		maker.readModelTest(args[0]);
+		
+		maker.createRDF(args);
 	}
 
 	public String getJdbcUrl() {
@@ -336,7 +404,7 @@ public class RDFMaker extends Thread {
 	public String getNsPrp() {
 		return nsPrp;
 	}
-	
+
 	public String getNsFoaf() {
 		return nsFoaf;
 	}
@@ -360,6 +428,5 @@ public class RDFMaker extends Thread {
 	public String getOutputRDFPath() {
 		return outputRDFPath;
 	}
-	
-}
 
+}

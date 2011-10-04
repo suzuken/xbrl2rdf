@@ -35,7 +35,7 @@ public class XbrlParser extends Thread{
 	 */
 	public static void main(String[] args) throws URISyntaxException, IOException{
 		XbrlParser xp = new XbrlParser(args[0]);
-		xp.parseStart(args[0]);
+		xp.parseStart();
 	}
 
 	public XbrlParser(String str){
@@ -44,7 +44,7 @@ public class XbrlParser extends Thread{
 	@Override
 		public void run(){
 		try {
-			this.parseStart(XBRLURL);
+			this.parseStart();
 			System.out.println(Thread.currentThread());
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
@@ -201,7 +201,8 @@ public class XbrlParser extends Thread{
 	 * @throws URISyntaxException
 	 * @throws IOException
 	 */
-	public void parseStart(String url)throws URISyntaxException, IOException{
+//	public void parseStart(String url)throws URISyntaxException, IOException{
+	public void parseStart()throws URISyntaxException, IOException{
 		DOMResult domResult = new DOMResult();
 		this.namespaceMapping = new HashMap<String, String>();
 		this.contextInfoMapping = new HashMap<String, ContextInfo>();
@@ -213,14 +214,14 @@ public class XbrlParser extends Thread{
 			TransformerFactory tf = TransformerFactory.newInstance();
 			Transformer transformer = tf.newTransformer();
 			//ローカルではないファイルにも対応したい。
-			if(isHttpURL(url)){
-				URL httpURL = new URL(url);
+			if(isHttpURL(this.XBRLURL)){
+				URL httpURL = new URL(this.XBRLURL);
 				HttpURLConnection http = (HttpURLConnection)httpURL.openConnection();
 				http.setRequestMethod("GET");
 				http.connect();
 				transformer.transform(new StreamSource(http.getInputStream()), domResult);
 			}else{
-				transformer.transform(new StreamSource(new FileInputStream(url)), domResult);
+				transformer.transform(new StreamSource(new FileInputStream(this.XBRLURL)), domResult);
 			}
 		} catch (TransformerConfigurationException e) {
 			e.printStackTrace();
@@ -251,7 +252,7 @@ public class XbrlParser extends Thread{
 			getNamespace(elementDefinitions);
 		}
 		try {
-			this.analyzeElements(elementDefinitions, url);
+			this.analyzeElements(elementDefinitions, this.XBRLURL);
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
