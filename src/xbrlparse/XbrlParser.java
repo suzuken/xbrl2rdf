@@ -257,7 +257,6 @@ public class XbrlParser extends Thread{
 		}
 
 
-
 /*		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		factory.setValidating(true);
 		factory.setNamespaceAware(true);
