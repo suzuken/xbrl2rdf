@@ -50,6 +50,7 @@ public class RDFMaker extends Thread {
 	private String DBUser;
 	private String DBPassword;
 	private String DBType;
+	private String outputRDFDir;
 
 	public void setXBRLPARSER(XbrlParser parser) {
 		XBRLPARSER = parser;
@@ -350,9 +351,27 @@ public class RDFMaker extends Thread {
 		maker.setNsPrp(prop.getProperty("nsProperty"));
 		maker.setNsFoaf(prop.getProperty("nsFoaf"));
 		maker.setTdbloc(prop.getProperty("tdbFactoryLoc"));
-		maker.setOutputRDFPath(prop.getProperty("outputRDFPath"));
+		maker.setOutputRDFDir(prop.getProperty("outputRDFDir"));
+		maker.setOutputRDFPath(prop.getProperty("outputRDFDir") + getFileName(args[0]) + ".rdf");
 
 		maker.createRDF(args);
+	}
+	
+	/**
+	 * ファイル名から拡張子を取り除く
+	 * @param filename
+	 * @return
+	 */
+	public static String getFileName(String filename){
+		if(filename == null){
+			return null;
+		}
+		int point = filename.lastIndexOf(".");
+		int slash = filename.lastIndexOf("/");
+		if(point != -1){
+			return filename.substring(slash, point);
+		}
+		return filename;
 	}
 
 	public String getJdbcUrl() {
@@ -433,6 +452,14 @@ public class RDFMaker extends Thread {
 
 	public String getOutputRDFPath() {
 		return outputRDFPath;
+	}
+
+	public void setOutputRDFDir(String outputRDFDir) {
+		this.outputRDFDir = outputRDFDir;
+	}
+
+	public String getOutputRDFDir() {
+		return outputRDFDir;
 	}
 
 }
