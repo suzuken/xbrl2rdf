@@ -38,6 +38,15 @@ TDBのソースコードが入っています。
 使い方
 ----
 
+ java bin/xbrlparse/XbrlProcessor XBRLPATH
+
+動作フロー
+-----
+
+* まずxbrlファイルをrdfに変換します。xbrlのパースを行い、DTSのパースも行います。
+* 生成したrdfファイルを元に、TDBに格納します。
+
+
 ロードマップ
 ------
 

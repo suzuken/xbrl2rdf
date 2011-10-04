@@ -84,14 +84,14 @@ public class XbrlProcessor {
 
 				//
 
-				/*//ここでスキーマのパーサを起動する。
-				 * TODO スキーマパーサから取得した各種リンクベースのデータをXBRLインスタンスの要素にマッピングする
-				SchemaParser sp = SchemaParserStarter(((XbrlParser) xp).getSchemaURI());
+				//ここでスキーマのパーサを起動する。
+				// TODO スキーマパーサから取得した各種リンクベースのデータをXBRLインスタンスの要素にマッピングする
+//				SchemaParser sp = SchemaParserStarter(((XbrlParser) xp).getSchemaURI());
+//
+//				ArrayList<DiscoverableTaxonomySet> list = sp.getDXSD().getChildren();
+//
+//				ListParseStarter(list);
 
-				ArrayList<DiscoverableTaxonomySet> list = sp.getDXSD().getChildren();
-
-				ListParseStarter(list);
-*/
 
 				/*
 				 * rdfMakerの起動。
