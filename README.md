@@ -38,7 +38,7 @@ TDBのソースコードが入っています。
 使い方
 ----
 
- java bin/xbrlparse/XbrlProcessor XBRLPATH
+ java bin/xbrlonto/RDFMaker XBRLPATH
 
 動作フロー
 -----

@@ -226,6 +226,7 @@ public class RDFMaker extends Thread {
 	 * 単一のファイルを読み込むメソッド
 	 * 
 	 * @param inputFileName
+	 * @deprecated
 	 */
 	public void readModelTest(String inputFileName) {
 		Model model = TDBFactory.createModel(this.getTdbloc());
@@ -265,7 +266,14 @@ public class RDFMaker extends Thread {
 		model.write(out);
 	}
 
-	public void connectDB(Model model) throws ClassNotFoundException,
+	/**
+	 * relational databaseに格納するためのメソッド
+	 * 
+	 * @param model
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 */
+	public void insertModelDB(Model model) throws ClassNotFoundException,
 			SQLException {
 		// JDBC
 
@@ -344,8 +352,6 @@ public class RDFMaker extends Thread {
 		maker.setTdbloc(prop.getProperty("tdbFactoryLoc"));
 		maker.setOutputRDFPath(prop.getProperty("outputRDFPath"));
 
-//		maker.readModelTest(args[0]);
-		
 		maker.createRDF(args);
 	}
 
