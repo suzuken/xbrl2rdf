@@ -2,11 +2,10 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/arq-2.8.7.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/icu4j-3.4.4.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/iri-0.8.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/jena-2.6.4-tests.jar"/>
-	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/jena-2.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/jena-2.6.4.jar" sourcepath="/home/suzuken/workspace/xbrl2rdf/lib/Jena-2.6.4/lib-src/jena-2.6.4-sources.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/junit-4.5.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/lucene-core-2.3.1.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/slf4j-api-1.5.8.jar"/>
@@ -14,11 +13,9 @@
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/wstx-asl-3.2.9.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/xercesImpl-2.7.1.jar"/>
-	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/arq-2.8.8-tests.jar"/>
-	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/arq-2.8.8.jar"/>
 	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/log4j-1.2.14.jar"/>
 	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/tdb-0.8.10-tests.jar"/>
-	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/tdb-0.8.10.jar"/>
+	<classpathentry kind="lib" path="lib/TDB-0.8.10/lib/tdb-0.8.10.jar" sourcepath="lib/TDB-0.8.10/tdb-0.8.10-sources.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="lib" path="lib/SQLiteJDBC/sqlite-jdbc-3.7.2-javadoc.jar"/>
 	<classpathentry kind="lib" path="lib/SQLiteJDBC/sqlite-jdbc-3.7.2-sources.jar"/>
@@ -28,5 +25,10 @@
 	<classpathentry kind="lib" path="lib/xalan-j_2_7_1/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="lib/xalan-j_2_7_1/xml-apis.jar"/>
 	<classpathentry kind="lib" path="lib/xlip129/xmllink.jar"/>
+	<classpathentry kind="lib" path="lib/ARQ-2.8.8/lib/arq-2.8.8.jar" sourcepath="lib/ARQ-2.8.8/arq-2.8.8-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/suzuken/workspace/xbrl2rdf/lib/ARQ-2.8.8/doc/javadoc/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

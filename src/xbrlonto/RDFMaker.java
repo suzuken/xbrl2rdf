@@ -20,6 +20,7 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.vocabulary.RDF;
@@ -28,6 +29,8 @@ import com.hp.hpl.jena.datatypes.xsd.impl.XSDDateType;
 import com.hp.hpl.jena.db.DBConnection;
 import java.io.FileInputStream;
 import java.net.URISyntaxException;
+
+import org.openjena.riot.system.PrefixMap;
 
 //xbrlインスタンスから得られたデータを受け取り、
 //rdfを生成し、rdfデータをデータベースに格納するために渡すクラス
@@ -63,11 +66,12 @@ public class RDFMaker extends Thread {
 	// xbrlインスタンスから生成したデータを受け取る
 	public void RDFbinding(XbrlParser xbrlparser) {
 
-		Map<String, String> nsmap = new HashMap<String, String>();
-		nsmap.put("xbrlont_class", this.getNsCls());
-		nsmap.put("xbrlont_ins", this.getNsIns());
-		nsmap.put("xbrlont_property", this.getNsPrp());
-		nsmap.put("foaf", this.getNsFoaf());
+//		PrefixMapping nsmap = (PrefixMapping) new HashMap<String, String>();
+//		PrefixMapping nsmap = new PrefixMapping();
+//		nsmap.setNsPrefix("xbrlont_class", this.getNsCls());
+//		nsmap.setNsPrefix("xbrlont_ins", this.getNsIns());
+//		nsmap.setNsPrefix("xbrlont_property", this.getNsPrp());
+//		nsmap.setNsPrefix("foaf", this.getNsFoaf());
 
 		// in the first time, you should create default model.
 		// Model model = ModelFactory.createDefaultModel();
@@ -75,27 +79,16 @@ public class RDFMaker extends Thread {
 		 * locationを指定. 公開するディレクトリに構築するのが良い
 		 */
 		Model model = TDBFactory.createModel(this.getTdbloc());
-
+		
 		/*
 		 * 以下、RDFモデルに関する記述
 		 */
-		// 抽出してきた名前空間をここでも認識させる。
-		// ただし、valueの末尾に#をつける。
-		Set<String> keys = xbrlparser.getNamespaceMapping().keySet();
-		Iterator<String> ite = keys.iterator();
-		while (ite.hasNext()) { // ループ
-			String str = ite.next(); // 該当オブジェクト取得
-			// 勘定科目に関するprefix
-			String value = xbrlparser.getNamespaceMapping().get(str);
-			if (!value.substring(value.length()).equals("#")) {
-				value = value + "#";
-			}
-			// valueを入れなおす。
-			xbrlparser.getNamespaceMapping().put(str, value);
-		}
+		
 
-		model.setNsPrefixes(xbrlparser.getNamespaceMapping());
-		model.setNsPrefixes(nsmap);
+//		Map<String, String> testmap = xbrlparser.getNamespaceMapping();
+		
+//		model.setNsPrefixes(xbrlparser.getNamespaceMapping());
+//		model.setNsPrefixes(nsmap);
 
 		// まず、会社名のresource作成。foaf:Organizationにタイプ付け。
 		System.out.println(this.getNsIns()
@@ -213,6 +206,26 @@ public class RDFMaker extends Thread {
 			}
 		}
 
+//		model.setNsPrefix("xbrlontclass", this.getNsCls());
+//		model.setNsPrefix("xbrlontins", this.getNsIns());
+//		model.setNsPrefix("xbrlontproperty", this.getNsPrp());
+//		model.setNsPrefix("foaf", this.getNsFoaf());
+		
+		// 抽出してきた名前空間をここでも認識させる。
+		// ただし、valueの末尾に#をつける。
+		Set<String> keys = xbrlparser.getNamespaceMapping().keySet();
+		Iterator<String> ite = keys.iterator();
+		while (ite.hasNext()) { // ループ
+			String str = ite.next(); // 該当オブジェクト取得
+			// 勘定科目に関するprefix
+			String value = xbrlparser.getNamespaceMapping().get(str);
+			if (!value.substring(value.length()).equals("#")) {
+				value = value + "#";
+			}
+			// valueを入れなおす。
+//			xbrlparser.getNamespaceMapping().put(str, value);
+//			model.setNsPrefix(str, value);
+		}
 //		try {
 //			connectDB(model);
 //		} catch (ClassNotFoundException e) {

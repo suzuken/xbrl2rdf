@@ -1,0 +1,27 @@
+-classpath
+'/home/afs/Projects/ARQ/target/classes:/home/afs/.m2/repo/log4j/log4j/1.2.14/log4j-1.2.14.jar:/home/afs/.m2/repo/com/hp/hpl/jena/iri/0.8/iri-0.8.jar:/home/afs/.m2/repo/com/hp/hpl/jena/jena/2.6.4/jena-2.6.4.jar:/home/afs/.m2/repo/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/afs/.m2/repo/org/apache/lucene/lucene-core/2.3.1/lucene-core-2.3.1.jar:/home/afs/.m2/repo/xerces/xercesImpl/2.7.1/xercesImpl-2.7.1.jar:/home/afs/.m2/repo/org/codehaus/woodstox/wstx-asl/3.2.9/wstx-asl-3.2.9.jar:/home/afs/.m2/repo/com/ibm/icu/icu4j/3.4.4/icu4j-3.4.4.jar:/home/afs/.m2/repo/org/slf4j/slf4j-log4j12/1.5.8/slf4j-log4j12-1.5.8.jar:/home/afs/.m2/repo/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar'
+-encoding
+'UTF-8'
+-public
+-quiet
+-sourcepath
+'/home/afs/Projects/ARQ/src'
+-author
+-bottom
+'Copyright ? 2004, 2005, 2006, 2007, 2008, 2009 Hewlett-Packard Development Company, LP Copyright ? 2010 Talis Systems Ltd. Copyright ? 2010, 2011 Epimorphics Ltd.'
+-charset
+'UTF-8'
+-d
+'/home/afs/Projects/ARQ/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'ARQ 2.8.8'
+-group
+'SPARQL Query and Update' 'com.hp.hpl.jena.query:com.hp.hpl.jena.update'
+-group
+'LARQ -- Lucene Search for ARQ' 'com.hp.hpl.jena.query.larq'
+-use
+-version
+-windowtitle
+'ARQ 2.8.8'

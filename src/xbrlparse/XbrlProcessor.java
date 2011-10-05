@@ -99,6 +99,7 @@ public class XbrlProcessor {
 				xbrlonto.RDFMaker rdfmaker = new xbrlonto.RDFMaker();
 				rdfmaker.setXBRLPARSER((XbrlParser) xp);
 				rdfmaker.start();
+				
 
 			}
 
