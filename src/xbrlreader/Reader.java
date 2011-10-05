@@ -4,7 +4,6 @@ import java.util.Map;
 
 public interface Reader {
 	
-	
 	/**
 	 * 名前空間をmapで返すメソッド
 	 * @return
@@ -26,7 +25,7 @@ public interface Reader {
 	 * 例：DocumentInfo, Prior2YearNonConsolidatedInstant
 	 * @return
 	 */
-	public String[] getContext(String contextId);
+	public Context getContext(String contextId);
 	
 	
 	/**

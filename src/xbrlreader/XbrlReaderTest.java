@@ -4,6 +4,8 @@
 package xbrlreader;
 
 
+import static org.junit.Assert.*;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,32 +18,42 @@ import org.junit.Test;
  *
  */
 public class XbrlReaderTest {
+	
+	public static String xbrlurl;
+	public static XbrlReader reader;
 
 	public static void main(String[] args){
 		JUnitCore.main(XbrlReaderTest.class.getName());
+		xbrlurl = "./tests/data/xml/S0004PT1/jpfr-asr-G03727-000-2009-09-02-01-2009-12-01.xbrl";
 	}
 
 	@Test
-	public void testGetSchemaRef(){
+	public void getSchemaRef(){
+		XbrlReader xr = new XbrlReader(xbrlurl);
+		String s = xr.getSchemaRef();
+		String t = "jpfr-asr-G03727-000-2009-09-02-01-2009-12-01.xsd";
+		assertEquals(s, t);
 	}
 	
 	@Test
-	public void testGetContext(){
+	public void getContext(){
+		XbrlReader xr = new XbrlReader(xbrlurl);
+		String di = "DocumentInfo";
+		Context c = xr.getContext(di);
+	}
+	
+	@Test
+	public void getUnit(){
 		
 	}
 	
 	@Test
-	public void testGetUnit(){
+	public void getValue(){
 		
 	}
 	
 	@Test
-	public void testGetValue(){
-		
-	}
-	
-	@Test
-	public void testIsExistElement(){
+	public void isExistElement(){
 		
 	}
 	
