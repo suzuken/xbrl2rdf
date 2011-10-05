@@ -2,20 +2,18 @@ package xbrlreader;
 
 import java.util.Map;
 
+import javax.xml.xpath.XPathExpressionException;
+
 public interface Reader {
 	
-	/**
-	 * 名前空間をmapで返すメソッド
-	 * @return
-	 */
-	public Map<String, String> getNameSpace();
 	
 	/**
 	 * schemaRefを取得するメソッド
 	 * 
 	 * @return
+	 * @throws XPathExpressionException 
 	 */
-	public String getSchemaRef();
+	public String getSchemaRef() throws XPathExpressionException;
 	
 	
 	/**
@@ -24,8 +22,9 @@ public interface Reader {
 	 * @param contextId: contextIdを文字列で指定する。
 	 * 例：DocumentInfo, Prior2YearNonConsolidatedInstant
 	 * @return
+	 * @throws XPathExpressionException 
 	 */
-	public Context getContext(String contextId);
+	public Context getContext(String contextId) throws XPathExpressionException;
 	
 	
 	/**
@@ -35,8 +34,9 @@ public interface Reader {
 	 * 例：JPY
 	 * @return
 	 * 例：iso4217:JPY
+	 * @throws XPathExpressionException 
 	 */
-	public String getUnit(String unitId);
+	public String getUnit(String unitId) throws XPathExpressionException;
 	
 	
 	/**
@@ -45,8 +45,9 @@ public interface Reader {
 	 * @param namespace
 	 * @param elementName
 	 * @return
+	 * @throws XPathExpressionException 
 	 */
-	public String getValue(String namespace, String elementName);
+	public Account getAccount(String namespace, String elementName) throws XPathExpressionException;
 	
 	/**
 	 * 名前空間名とエレメントの名前を入力して、エレメントがあるかどうかを調べる関数

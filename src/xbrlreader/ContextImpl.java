@@ -16,7 +16,6 @@ public class ContextImpl implements Context {
 	public String periodEndDate;
 	public String periodStartDate;
 	public String scenario;
-	public String[] period;
 	
 	public ContextImpl(){}
 	public ContextImpl(String id,
@@ -25,8 +24,8 @@ public class ContextImpl implements Context {
 			String periodInstant,
 			String periodEndDate,
 			String periodStartDate,
-			String scenario,
-			String[] period){
+			String scenario
+			){
 		setId(id);
 		setIdentifier(identifier);
 		setIdentifierScheme(identifierScheme);
@@ -34,7 +33,6 @@ public class ContextImpl implements Context {
 		setPeriodEndDate(periodEndDate);
 		setPeriodStartDate(periodStartDate);
 		setScenario(scenario);
-		setPeriod(period);
 	}
 
 	public void setId(String id) {
@@ -65,9 +63,6 @@ public class ContextImpl implements Context {
 		this.scenario = scenario;
 	}
 
-	public void setPeriod(String[] period) {
-		this.period = period;
-	}
 
 	@Override
 	public String getId() {
@@ -98,8 +93,12 @@ public class ContextImpl implements Context {
 		return scenario;
 	}
 	@Override
-	public String[] getPeriod() {
-		return period;
+	public String toString() {
+		return "ContextImpl [id=" + id + ", identifier=" + identifier
+				+ ", identifierScheme=" + identifierScheme + ", periodEndDate="
+				+ periodEndDate + ", periodInstant=" + periodInstant
+				+ ", periodStartDate=" + periodStartDate + ", scenario="
+				+ scenario + "]";
 	}
 
 }

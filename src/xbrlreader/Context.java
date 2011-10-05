@@ -22,6 +22,5 @@ public interface Context {
 	 * @return
 	 */
 	public String getScenario();
-	public String[] getPeriod();
 
 }

@@ -25,8 +25,9 @@ public class XbrlReaderTest {
 	public static void main(String[] args){
 		JUnitCore.main(XbrlReaderTest.class.getName());
 		xbrlurl = "./tests/data/xml/S0004PT1/jpfr-asr-G03727-000-2009-09-02-01-2009-12-01.xbrl";
+		reader = new XbrlReader(xbrlurl);
 	}
-
+	
 	@Test
 	public void getSchemaRef(){
 		XbrlReader xr = new XbrlReader(xbrlurl);
