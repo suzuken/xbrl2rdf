@@ -25,6 +25,10 @@ import org.xml.sax.SAXException;
 
 import xbrlparse.InstanceInfo;
 
+/**
+ * @author suzuken
+ *
+ */
 public class XbrlReader implements Reader {
 	
 	public XPath xpath;
@@ -94,7 +98,7 @@ public class XbrlReader implements Reader {
 
 		//nodeルートがxsd:schemaじゃなければ、問題あり。
 		if (!this.elementDefinitions.getNamespaceURI().equals("http://www.xbrl.org/2003/instance") || !elementDefinitions.getLocalName().equals("xbrl")) {
-			System.out.println("xbrli:xbrl要素が見つかりません。処理スキップします。");
+			System.out.println("xbrli:xbrl要素が見つかりません。処理をスキップします。");
 		} else {
 			System.out.println("xbrli:xbrl要素の解釈を開始します。");
 			_getNamespaceByRoot(this.elementDefinitions);
@@ -148,12 +152,6 @@ public class XbrlReader implements Reader {
 				periodEndDate, periodStartDate, scenario);
 	}
 	
-	
-	private Element _getElementByXPath(String xpathExpr) throws XPathExpressionException{
-		Node result = (Node) this.xpath.evaluate(xpathExpr, this.doc, XPathConstants.NODE);
-		Element el = (Element) result;
-		return el;
-	}
 
 	@Override
 	public XLink getSchemaRef() throws XPathExpressionException  {
@@ -162,6 +160,7 @@ public class XbrlReader implements Reader {
 		return new SchemaRefLink(href, type);
 	}
 
+	@Override
 	public XLink getRoleRef() throws XPathExpressionException  {
 		String href = this.xpath.evaluate("/xbrli:xbrl/link:roleRef/@xlink:href", this.doc);
 		String roleURI = this.xpath.evaluate("/xbrli:xbrl/link:roleRef/@roleURI", this.doc);
@@ -174,7 +173,8 @@ public class XbrlReader implements Reader {
 		String measure = this.xpath.evaluate("/xbrli:xbrl/xbrli:unit[@id='" + unitId + "']/xbrli:measure", this.doc);
 		return measure;
 	}
-	
+
+	@Override
 	public Account getAccount(String namespace, String elementName) throws XPathExpressionException{
 		Element el = _getElementByXPath("/xbrli:xbrl/" + namespace + ":" + elementName);
 		String unitRef = el.getAttributeNode("unitRef").getValue();
@@ -187,7 +187,7 @@ public class XbrlReader implements Reader {
 		return new AccountImpl(namespaceURI, localName, unitRef, contextRef, decimals, id, value);
 	} 
 	
-	//[YEAR][|non][conslidated][Instant|Duration]のみ
+	@Override
 	public ArrayList<Account> getAccountsByContext(String contextRef) throws XPathExpressionException{
 		ArrayList<Account> ret = new ArrayList<Account>();
 		NodeList nl = (NodeList) this.xpath.evaluate("/xbrli:xbrl/*[@contextRef='" + contextRef + "']",
@@ -199,13 +199,15 @@ public class XbrlReader implements Reader {
 		}
 		return ret;
 	}
-	
+
+	@Override
 	public DocumentInfo getDocumentInfo(String elementName) throws XPathExpressionException{
 		String value = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName, this.doc);
 		String contextRef = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName + "/@contextRef", this.doc);
 		return new DocumentInfo(elementName, contextRef, value);
 	}
 	
+	@Override
 	public ArrayList<DocumentInfo> getAllDocumentInfo() throws XPathExpressionException{
 		ArrayList<DocumentInfo> ret = new ArrayList<DocumentInfo>();
 		NodeList nl = (NodeList) this.xpath.evaluate("/xbrli:xbrl/*[@contextRef='DocumentInfo']",
@@ -217,8 +219,38 @@ public class XbrlReader implements Reader {
 		}
 		return ret;
 	}
+
+	@Override
+	public Boolean isExistElement(String namespace, String elementName) {
+		//TODO implementation
+		return null;
+	}
+
+	/**
+	 * xpath用の名前空間をメンバに追加する関数
+	 * 
+	 * XPathで名前空間を取り扱うにはNamespaceContextを実装する必要がある。
+	 * そのため、SimpleNamespaceContextを利用し、名前空間を取り扱う。
+	 * 
+	 * @param namespace
+	 * @param uri
+	 */
+	public void setNamespaceContext(String namespace, String uri){
+		((SimpleNamespaceContext) this.nsc).addMapping(namespace, uri);
+	}
 	
-	//elementからDocumentInfoを作成
+	/*
+	 * 以下、ヘルパ関数
+	 */
+	
+	//xpathからelementを取得するためのヘルパ関数
+	private Element _getElementByXPath(String xpathExpr) throws XPathExpressionException{
+		Node result = (Node) this.xpath.evaluate(xpathExpr, this.doc, XPathConstants.NODE);
+		Element el = (Element) result;
+		return el;
+	}
+	
+	//elementからDocumentInfoを作成するヘルパ関数
 	private DocumentInfo _createDocumentInfo(Element elementInstance){
 		String value = null;
 		String localName = elementInstance.getLocalName();
@@ -231,7 +263,7 @@ public class XbrlReader implements Reader {
 		return new DocumentInfo(localName, contextRef, value);
 	}
 	
-	//elementからAccountを作成
+	//elementからAccountを作成するヘルパ関数
 	private Account _createInstance(Element elementInstance) {
 		Long value = null;
 		String namespaceURI = elementInstance.getNamespaceURI();
@@ -248,15 +280,5 @@ public class XbrlReader implements Reader {
 		return new AccountImpl(namespaceURI, localName, unitRef, contextRef, decimals, id, value);
 	}
 
-
-	@Override
-	public Boolean isExistElement(String namespace, String elementName) {
-		
-		return null;
-	}
-
-	public void setNamespaceContext(String namespace, String uri){
-		((SimpleNamespaceContext) this.nsc).addMapping(namespace, uri);
-	}
 
 }
