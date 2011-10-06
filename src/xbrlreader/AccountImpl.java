@@ -94,7 +94,7 @@ public class AccountImpl implements Account {
 	}
 	@Override
 	public String toString() {
-		return "InstanceInfo [contextRef=" + contextRef + ", decimals="
+		return "AccountImpl [contextRef=" + contextRef + ", decimals="
 				+ decimals + ", id=" + id + ", localName=" + localName
 				+ ", namespaceURI=" + namespaceURI + ", unitRef=" + unitRef
 				+ ", value=" + value + "]";

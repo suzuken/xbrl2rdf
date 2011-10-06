@@ -28,7 +28,6 @@ public class XbrlReader implements Reader {
 	public String xbrlurl;
 	public Context context;
 	public String schemaRef;
-//	public Map<String,String> namespace;
 	public NamespaceContext nsc;
 	
 	//DOMのためのメンバ
@@ -43,7 +42,7 @@ public class XbrlReader implements Reader {
 		x.prepare();
 		
 		//値の取得テスト
-//		System.out.println(x.getAccount("jpfr-t-fnd", "SurplusDeficitFND"));
+		System.out.println(x.getAccount("jpfr-t-cte", "CapitalStock"));
 		System.out.println(x.getContext("DocumentInfo"));
 		System.out.println(x.getContext("Prior1YearNonConsolidatedDuration"));
 		System.out.println(x.getContext("Prior1YearNonConsolidatedInstant"));
@@ -158,14 +157,14 @@ public class XbrlReader implements Reader {
 	}
 	
 	public Account getAccount(String namespace, String elementName) throws XPathExpressionException{
-		Element el = _getElementByXPath("//" + namespace + ":" + elementName);
+		Element el = _getElementByXPath("/xbrli:xbrl/" + namespace + ":" + elementName);
 		String unitRef = el.getAttributeNode("unitRef").getValue();
 		String namespaceURI = this.nsc.getNamespaceURI(namespace);
 		String localName = elementName;
 		String contextRef = el.getAttributeNode("contextRef").getValue();
 		String decimals = el.getAttributeNode("decimals").getValue();
 		String id = el.getAttributeNode("id").getValue();
-		Long value = Long.parseLong(el.getNodeValue());
+		Long value = Long.parseLong(el.getFirstChild().getNodeValue());
 		return new AccountImpl(namespaceURI, localName, unitRef, contextRef, decimals, id, value);
 	} 
 	
