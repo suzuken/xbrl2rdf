@@ -66,13 +66,6 @@ public class RDFMaker extends Thread {
 	// xbrlインスタンスから生成したデータを受け取る
 	public void RDFbinding(XbrlParser xbrlparser) {
 
-//		PrefixMapping nsmap = (PrefixMapping) new HashMap<String, String>();
-//		PrefixMapping nsmap = new PrefixMapping();
-//		nsmap.setNsPrefix("xbrlont_class", this.getNsCls());
-//		nsmap.setNsPrefix("xbrlont_ins", this.getNsIns());
-//		nsmap.setNsPrefix("xbrlont_property", this.getNsPrp());
-//		nsmap.setNsPrefix("foaf", this.getNsFoaf());
-
 		// in the first time, you should create default model.
 		// Model model = ModelFactory.createDefaultModel();
 		/*

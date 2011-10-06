@@ -1,8 +1,6 @@
 package xbrlreader;
 
 import java.util.ArrayList;
-import java.util.Map;
-
 import javax.xml.xpath.XPathExpressionException;
 
 public interface Reader {
