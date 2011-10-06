@@ -6,6 +6,8 @@ package xbrlreader;
 
 import static org.junit.Assert.*;
 
+import javax.xml.xpath.XPathExpressionException;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -29,15 +31,15 @@ public class XbrlReaderTest {
 	}
 	
 	@Test
-	public void getSchemaRef(){
+	public void getSchemaRef() throws XPathExpressionException{
 		XbrlReader xr = new XbrlReader(xbrlurl);
-		String s = xr.getSchemaRef();
+		XLink s = xr.getSchemaRef();
 		String t = "jpfr-asr-G03727-000-2009-09-02-01-2009-12-01.xsd";
 		assertEquals(s, t);
 	}
 	
 	@Test
-	public void getContext(){
+	public void getContext() throws XPathExpressionException{
 		XbrlReader xr = new XbrlReader(xbrlurl);
 		String di = "DocumentInfo";
 		Context c = xr.getContext(di);

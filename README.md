@@ -38,6 +38,10 @@ TDBのソースコードが入っています。
 使い方
 ----
 
+ Xbrlデータの標準出力
+ java bin/xbrlreader/XbrlReader XBRLPATH
+
+ RDFの生成
  java bin/xbrlonto/RDFMaker XBRLPATH
 
 動作フロー
@@ -51,6 +55,7 @@ TDBのソースコードが入っています。
 ロードマップ
 ------
 
-* テストケースの整備
+* XbrlReaderのテストケースの整備
+* RDFMakerをXbrlReaderに対応させる
 * コマンドラインオプションの整備
 * TDBをSPARQLエンドポイントとして利用
