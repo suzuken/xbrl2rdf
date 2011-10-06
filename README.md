@@ -39,9 +39,11 @@ TDBのソースコードが入っています。
 ----
 
 Xbrlデータの標準出力
+
     java bin/xbrlreader/XbrlReader XBRLPATH
 
 RDFの生成
+
     java bin/xbrlonto/RDFMaker XBRLPATH
 
 動作フロー
