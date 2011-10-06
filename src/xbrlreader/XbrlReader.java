@@ -49,6 +49,7 @@ public class XbrlReader implements Reader {
 		System.out.println(x.getContext("CurrentYearNonConsolidatedDuration"));
 		System.out.println(x.getContext("CurrentYearNonConsolidatedInstant"));
 		System.out.println(x.getSchemaRef());
+		System.out.println(x.getRoleRef());
 		System.out.println(x.getUnit("JPY"));
 	}
 	
@@ -145,9 +146,17 @@ public class XbrlReader implements Reader {
 	}
 
 	@Override
-	public String getSchemaRef() throws XPathExpressionException  {
+	public XLink getSchemaRef() throws XPathExpressionException  {
 		String href = this.xpath.evaluate("/xbrli:xbrl/link:schemaRef/@xlink:href", this.doc);
-		return href;
+		String type = this.xpath.evaluate("/xbrli:xbrl/link:schemaRef/@xlink:type", this.doc);
+		return new SchemaRefLink(href, type);
+	}
+
+	public XLink getRoleRef() throws XPathExpressionException  {
+		String href = this.xpath.evaluate("/xbrli:xbrl/link:roleRef/@xlink:href", this.doc);
+		String roleURI = this.xpath.evaluate("/xbrli:xbrl/link:roleRef/@roleURI", this.doc);
+		String type = this.xpath.evaluate("/xbrli:xbrl/link:roleRef/@xlink:type", this.doc);
+		return new RoleRefLink(href, roleURI, type);
 	}
 
 	@Override

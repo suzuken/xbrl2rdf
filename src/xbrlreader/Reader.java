@@ -13,8 +13,9 @@ public interface Reader {
 	 * @return
 	 * @throws XPathExpressionException 
 	 */
-	public String getSchemaRef() throws XPathExpressionException;
+	public XLink getSchemaRef() throws XPathExpressionException;
 	
+	public XLink getRoleRef() throws XPathExpressionException;
 	
 	/**
 	 * コンテキストオブジェクトを返すためのメソッド
