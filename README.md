@@ -38,11 +38,11 @@ TDBのソースコードが入っています。
 使い方
 ----
 
- Xbrlデータの標準出力
- java bin/xbrlreader/XbrlReader XBRLPATH
+Xbrlデータの標準出力
+    java bin/xbrlreader/XbrlReader XBRLPATH
 
- RDFの生成
- java bin/xbrlonto/RDFMaker XBRLPATH
+RDFの生成
+    java bin/xbrlonto/RDFMaker XBRLPATH
 
 動作フロー
 -----
@@ -52,7 +52,7 @@ TDBのソースコードが入っています。
 * 生成したrdfファイルを元に、TDBに格納します。
 
 
-ロードマップ
+TODO
 ------
 
 * XbrlReaderのテストケースの整備
