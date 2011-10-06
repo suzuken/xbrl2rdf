@@ -1,6 +1,7 @@
 package xbrlreader;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
@@ -13,12 +14,16 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import org.apache.xpath.NodeSet;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 //import org.w3c.dom.xpath.XPathExpression;
 import org.xml.sax.SAXException;
+
+import xbrlparse.InstanceInfo;
 
 public class XbrlReader implements Reader {
 	
@@ -30,8 +35,6 @@ public class XbrlReader implements Reader {
 	public String schemaRef;
 	public NamespaceContext nsc;
 	
-	//DOMのためのメンバ
-	public DOMResult dom;
 	//DOMの定義のためのメンバ
 	private Element elementDefinitions;
 	
@@ -43,6 +46,13 @@ public class XbrlReader implements Reader {
 		
 		//値の取得テスト
 		System.out.println(x.getAccount("jpfr-t-cte", "CapitalStock"));
+		System.out.println(x.getAccountsByContext("Prior2YearNonConsolidatedDuration"));
+		System.out.println(x.getAccountsByContext("Prior2YearNonConsolidatedInstant"));
+		System.out.println(x.getAccountsByContext("Prior1YearNonConsolidatedDuration"));
+		System.out.println(x.getAccountsByContext("Prior1YearNonConsolidatedInstant"));
+		System.out.println(x.getAccountsByContext("CurrentYearNonConsolidatedDuration"));
+		System.out.println(x.getAccountsByContext("CurrentYearNonConsolidatedInstant"));
+		System.out.println(x.getAccountsByContext("Prior1YearNonConsolidatedDuration"));
 		System.out.println(x.getContext("DocumentInfo"));
 		System.out.println(x.getContext("Prior1YearNonConsolidatedDuration"));
 		System.out.println(x.getContext("Prior1YearNonConsolidatedInstant"));
@@ -56,8 +66,6 @@ public class XbrlReader implements Reader {
 	public XbrlReader(String xbrlurl) {
 		super();
 		this.xbrlurl = xbrlurl;
-		this.dom = new DOMResult();
-//		this.namespace = new HashMap<String, String>();
 		this.nsc = new SimpleNamespaceContext();
 	}
 	
@@ -80,14 +88,14 @@ public class XbrlReader implements Reader {
 		this.doc = builder.parse(this.xbrlurl);
 		
 		Element root = this.doc.getDocumentElement();
-		elementDefinitions = (Element) root;
+		this.elementDefinitions = (Element) root;
 
 		//nodeルートがxsd:schemaじゃなければ、問題あり。
-		if (!elementDefinitions.getNamespaceURI().equals("http://www.xbrl.org/2003/instance") || !elementDefinitions.getLocalName().equals("xbrl")) {
+		if (!this.elementDefinitions.getNamespaceURI().equals("http://www.xbrl.org/2003/instance") || !elementDefinitions.getLocalName().equals("xbrl")) {
 			System.out.println("xbrli:xbrl要素が見つかりません。処理スキップします。");
 		} else {
 			System.out.println("xbrli:xbrl要素の解釈を開始します。");
-			_getNamespaceByRoot(elementDefinitions);
+			_getNamespaceByRoot(this.elementDefinitions);
 		}
 
 		//ファクトリクラスを使ってXPathオブジェクトを作成
@@ -177,6 +185,36 @@ public class XbrlReader implements Reader {
 		return new AccountImpl(namespaceURI, localName, unitRef, contextRef, decimals, id, value);
 	} 
 	
+	//[YEAR][|non][conslidated][Instant|Duration]のみ
+	public ArrayList<Account> getAccountsByContext(String contextRef) throws XPathExpressionException{
+		ArrayList<Account> ret = new ArrayList<Account>();
+		NodeList nl = (NodeList) this.xpath.evaluate("/xbrli:xbrl/*[@contextRef='" + contextRef + "']",
+				this.doc, XPathConstants.NODESET);
+		for(int indexInstance =0; indexInstance < nl.getLength(); indexInstance++){
+			Element elementInstance = (Element) nl.item(indexInstance);
+			Account a = this._createInstance(elementInstance);
+			ret.add(a);
+		}
+		return ret;
+	}
+	
+	//elementからAccountを作成
+	private Account _createInstance(Element elementInstance) {
+		Long value = null;
+		String namespaceURI = elementInstance.getNamespaceURI();
+		String localName = elementInstance.getLocalName();
+		String unitRef = elementInstance.getAttribute("unitRef");
+		String contextRef = elementInstance.getAttribute("contextRef");
+		String decimals = elementInstance.getAttribute("decimals");
+		String id = elementInstance.getAttribute("id");
+		if (elementInstance.hasChildNodes()){
+			value = Long.valueOf(elementInstance.getFirstChild().getNodeValue());
+		}else{
+			value = null;
+		}
+		return new AccountImpl(namespaceURI, localName, unitRef, contextRef, decimals, id, value);
+	}
+
 
 	@Override
 	public Boolean isExistElement(String namespace, String elementName) {
