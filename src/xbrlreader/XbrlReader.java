@@ -53,6 +53,8 @@ public class XbrlReader implements Reader {
 		System.out.println(x.getAccountsByContext("CurrentYearNonConsolidatedDuration"));
 		System.out.println(x.getAccountsByContext("CurrentYearNonConsolidatedInstant"));
 		System.out.println(x.getAccountsByContext("Prior1YearNonConsolidatedDuration"));
+		System.out.println(x.getDocumentInfo("FirstColumnNonconsolidatedBS"));
+		System.out.println(x.getAllDocumentInfo());
 		System.out.println(x.getContext("DocumentInfo"));
 		System.out.println(x.getContext("Prior1YearNonConsolidatedDuration"));
 		System.out.println(x.getContext("Prior1YearNonConsolidatedInstant"));
@@ -196,6 +198,37 @@ public class XbrlReader implements Reader {
 			ret.add(a);
 		}
 		return ret;
+	}
+	
+	public DocumentInfo getDocumentInfo(String elementName) throws XPathExpressionException{
+		String value = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName, this.doc);
+		String contextRef = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName + "/@contextRef", this.doc);
+		return new DocumentInfo(elementName, contextRef, value);
+	}
+	
+	public ArrayList<DocumentInfo> getAllDocumentInfo() throws XPathExpressionException{
+		ArrayList<DocumentInfo> ret = new ArrayList<DocumentInfo>();
+		NodeList nl = (NodeList) this.xpath.evaluate("/xbrli:xbrl/*[@contextRef='DocumentInfo']",
+				this.doc, XPathConstants.NODESET);
+		for(int indexInstance =0; indexInstance < nl.getLength(); indexInstance++){
+			Element elementInstance = (Element) nl.item(indexInstance);
+			DocumentInfo a = this._createDocumentInfo(elementInstance);
+			ret.add(a);
+		}
+		return ret;
+	}
+	
+	//elementからDocumentInfoを作成
+	private DocumentInfo _createDocumentInfo(Element elementInstance){
+		String value = null;
+		String localName = elementInstance.getLocalName();
+		String contextRef = elementInstance.getAttribute("contextRef");
+		if (elementInstance.hasChildNodes()){
+			value = elementInstance.getFirstChild().getNodeValue();
+		}else{
+			value = null;
+		}
+		return new DocumentInfo(localName, contextRef, value);
 	}
 	
 	//elementからAccountを作成
