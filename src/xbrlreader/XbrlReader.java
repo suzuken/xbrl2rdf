@@ -45,6 +45,8 @@ public class XbrlReader implements Reader {
 	//テスト用
 	//xbrlのurlを渡して起動
 	public static void main(String[] args) throws XPathExpressionException, TransformerException, SAXException, IOException, ParserConfigurationException{
+		long start  = System.currentTimeMillis(); //start
+		
 		XbrlReader x = new XbrlReader(args[0]);
 		x.prepare();
 		
@@ -67,6 +69,10 @@ public class XbrlReader implements Reader {
 		System.out.println(x.getSchemaRef());
 		System.out.println(x.getRoleRef());
 		System.out.println(x.getUnit("JPY"));
+		
+		long stop = System.currentTimeMillis();
+		
+		System.out.println("実行時間は" + (stop - start) + "ミリ秒です。");
 	}
 	
 	public XbrlReader(String xbrlurl) {
@@ -145,8 +151,9 @@ public class XbrlReader implements Reader {
 				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:startDate", this.doc);
 		String periodEndDate = this.xpath.evaluate(
 				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:endDate", this.doc);
-		String scenario = this.xpath.evaluate(
-				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:endDate", this.doc);
+		
+		Element jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/jpfr-oe:*");
+		String scenario = (jpoe != null) ? jpoe.getNodeName(): null;
 		
 		return new ContextImpl(contextId, identifier, identifierScheme, periodInstant,
 				periodEndDate, periodStartDate, scenario);
