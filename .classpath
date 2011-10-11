@@ -30,5 +30,6 @@
 			<attribute name="javadoc_location" value="file:/home/suzuken/workspace/xbrl2rdf/lib/ARQ-2.8.8/doc/javadoc/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/args4j/args4j/target/args4j-2.0.19-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
