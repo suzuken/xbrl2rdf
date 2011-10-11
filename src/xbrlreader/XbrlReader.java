@@ -176,9 +176,11 @@ public class XbrlReader implements Reader {
 	}
 
 	@Override
-	public String getUnit(String unitId) throws XPathExpressionException {
+	public Unit getUnit(String unitId) throws XPathExpressionException {
 		String measure = this.xpath.evaluate("/xbrli:xbrl/xbrli:unit[@id='" + unitId + "']/xbrli:measure", this.doc);
-		return measure;
+		Unit u = new UnitImpl(unitId, measure);
+		u.setMeasureNamespaceURI(this.nsc.getNamespaceURI(u.getMeasurePrefix()));
+		return u;
 	}
 
 	@Override

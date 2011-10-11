@@ -3,6 +3,8 @@
  */
 package xbrlreader;
 
+import java.util.Iterator;
+
 /**
  * @author suzuken
  *

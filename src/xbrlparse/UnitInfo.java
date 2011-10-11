@@ -1,5 +1,12 @@
 package xbrlparse;
 
+
+/**
+ * @author Kenta Suzuki <suzuken326@gmail.com>
+ * 
+ * 通貨単位の情報を扱うためのクラス
+ *
+ */
 public class UnitInfo {
 	private String id = null;
 	private String measureValue = null;

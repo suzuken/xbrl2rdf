@@ -44,7 +44,7 @@ public interface Reader {
 	 * 例：iso4217:JPY
 	 * @throws XPathExpressionException 
 	 */
-	public String getUnit(String unitId) throws XPathExpressionException;
+	public Unit getUnit(String unitId) throws XPathExpressionException;
 	
 	
 	/**
