@@ -129,7 +129,6 @@ public class RDFMaker implements Maker {
 	}
 
 
-
 	/**
 	 *　modelを作成するメソッド 
 	 * @throws XPathExpressionException 
