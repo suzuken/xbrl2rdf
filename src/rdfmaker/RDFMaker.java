@@ -7,12 +7,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathExpressionException;
 
+import org.kohsuke.args4j.Argument;
+import org.kohsuke.args4j.CmdLineException;
+import org.kohsuke.args4j.CmdLineParser;
+import org.kohsuke.args4j.ExampleMode;
+import org.kohsuke.args4j.Option;
 import org.xml.sax.SAXException;
 
 import com.hp.hpl.jena.datatypes.xsd.impl.XSDDateType;
@@ -41,6 +47,7 @@ import xbrlreader.XbrlReader;
  */
 public class RDFMaker implements Maker {
 
+	private static final ExampleMode ALL = null;
 	public XbrlReader x;
 	public String dest;
 	public Model model;
@@ -51,25 +58,68 @@ public class RDFMaker implements Maker {
 
 	private String nsFoaf;
 	private String tdbloc;
+	
 	private String outputRDFPath;
-	private String outputRDFDir;
+
+	@Option(name="-o",usage="Set a directory for output RDF files")
+	public String outputRDFDir;
+	
+	@Option(name="-r",usage="recursively parsing XBRL, and generate RDF files")
+	private boolean recursive;
 
 	private String[] enableContextRef;
+	
+	@Argument
+	private List<String> arguments = new ArrayList<String>();
 
 
 	//for testing
 	// 0: xbrl's url
 	// 1: destination folder or output filename's path
+	/**
+	 * -xbrl: XBRLファイルのパスを指定
+	 * -output: 出力先のパスを指定（デフォルトは./output）
+	 * 
+	 * @param args
+	 * @throws TransformerException
+	 * @throws SAXException
+	 * @throws IOException
+	 * @throws ParserConfigurationException
+	 * @throws XPathExpressionException
+	 */
 	public static void main(String[] args) throws TransformerException, SAXException, IOException, ParserConfigurationException, XPathExpressionException{
 		long start = System.currentTimeMillis();
-
 		RDFMaker r = new RDFMaker(args);
-		r.createModel();
-		r.outputRDF(r.model);
+		r.doMain(args);
 
 		long stop = System.currentTimeMillis();
 
 		System.out.println("実行時間は" + (stop - start) + "ミリ秒です。");
+	}
+	
+	public void doMain(String[] args) throws XPathExpressionException{
+		CmdLineParser parser = new CmdLineParser(this);
+		try {
+			parser.parseArgument(args);
+			if(arguments.isEmpty()){
+				throw new CmdLineException("No argument is given");
+			}
+		} catch (CmdLineException e) {
+			// if there's a problem in the command line,
+			// you'll get this exception. this will report
+			// an error message.
+			System.err.println(e.getMessage());
+			System.err.println("java SampleMain [options...] arguments...");
+			// print the list of available options
+			parser.printUsage(System.err);
+			System.err.println();
+			// print option sample. This is useful some time
+			System.err.println(" Example: java SampleMain"+parser.printExample(ALL));
+			return;
+		}
+		
+		this.createModel();
+		this.outputRDF(this.model);
 	}
 
 	/**

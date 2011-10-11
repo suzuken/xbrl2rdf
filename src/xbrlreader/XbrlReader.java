@@ -15,6 +15,7 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 import org.apache.xpath.NodeSet;
+import org.kohsuke.args4j.Option;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
@@ -34,7 +35,9 @@ public class XbrlReader implements Reader {
 	public XPath xpath;
 	public Document doc;	//DOM
 	
+	@Option(name="-xbrl",usage="Set a path for XBRL file")
 	public String xbrlurl;
+	
 	public Context context;
 	public String schemaRef;
 	public NamespaceContext nsc;
@@ -42,9 +45,21 @@ public class XbrlReader implements Reader {
 	//DOMの定義のためのメンバ
 	private Element elementDefinitions;
 	
-	//テスト用
-	//xbrlのurlを渡して起動
+	/**
+	 * テスト用
+	 * xbrlのurlを渡して起動
+	 * 
+	 * -xbrl: XBRLファイルのパスを指定
+	 * 
+	 * @param args
+	 * @throws XPathExpressionException
+	 * @throws TransformerException
+	 * @throws SAXException
+	 * @throws IOException
+	 * @throws ParserConfigurationException
+	 */
 	public static void main(String[] args) throws XPathExpressionException, TransformerException, SAXException, IOException, ParserConfigurationException{
+		
 		long start  = System.currentTimeMillis(); //start
 		
 		XbrlReader x = new XbrlReader(args[0]);
