@@ -27,6 +27,37 @@ RDFの生成
 
     java bin/xbrlonto/RDFMaker XBRLPATH
 
+app.confで各種設定をできます。
+
+    # 名前空間の設定
+    nsClass=http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/class#
+    nsInstance=http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/instance#
+    nsProperty=http://www.yamaguti.comp.ae.keio.ac.jp/xbrl_ontology/property#
+    nsFoaf=http://xmlns.com/foaf/0.1/
+
+    # Context Settings
+    enableContextRef = Prior2YearNonConsolidatedDuration, Prior2YearNonConsolidatedInstant, \
+    Prior2YearConsolidatedDuration, Prior2YearConsolidatedInstant, \
+    Prior1YearNonConsolidatedDuration, Prior1YearNonConsolidatedInstant, \
+    Prior1YearConsolidatedDuration, Prior1YearConsolidatedInstant, \
+    CurrentYearNonConsolidatedDuration, CurrentYearNonConsolidatedInstant, \
+    CurrentYearConsolidatedDuration, CurrentYearConsolidatedInstant
+
+    # TDB setup
+    tdbFactoryLoc = ./output/TDB/default
+
+    # default rdf path for output
+    # outputRDFPath = ./output/test2.rdf
+    outputRDFDir = ./output
+
+    # Database setting
+    # for default, xbrl2rdf using TDB. When you use RDS to store RDF,
+    # please confirm this setting.
+    jdbcUrl = jdbc:mysql://localhost/mydb
+    DBUser = user
+    DBPassword = password
+    DBType = MySQL
+
 動作フロー
 -----
 
