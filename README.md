@@ -73,3 +73,4 @@ TODO
 * RDFMakerをXbrlReaderに対応させる
 * コマンドラインオプションの整備
 * TDBをSPARQLエンドポイントとして利用
+* RDFMakerで再帰的にrdfを生成できるようにする
