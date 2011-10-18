@@ -30,6 +30,7 @@ import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.XSD;
 
+import util.FileSearch;
 import xbrlreader.Account;
 import xbrlreader.Context;
 import xbrlreader.Unit;
@@ -89,9 +90,16 @@ public class RDFMaker implements Maker {
 	 */
 	public static void main(String[] args) throws TransformerException, SAXException, IOException, ParserConfigurationException, XPathExpressionException{
 		long start = System.currentTimeMillis();
-		RDFMaker r = new RDFMaker(args);
-		r.doMain(args);
-
+		FileSearch search = new FileSearch();
+		Integer last_slash = args[0].lastIndexOf('/');
+		String directoryPath = args[0].substring(0, last_slash);
+		String filePath = args[0].substring(last_slash + 1, args[0].length());
+		File[] files = search.listFiles(directoryPath, filePath);
+		//TODO アスタリスクじゃない場合も考える。絶対パスの場合はどうなるか検証する。
+		for (Integer i = 0, ii=files.length; i<ii; i++){
+			RDFMaker r = new RDFMaker(files[i].getAbsolutePath());
+			r.doMain(args);
+		}
 		long stop = System.currentTimeMillis();
 
 		System.out.println("実行時間は" + (stop - start) + "ミリ秒です。");
@@ -147,11 +155,20 @@ public class RDFMaker implements Maker {
 	}
 
 
-	public RDFMaker(String args[]) throws TransformerException, SAXException, IOException, ParserConfigurationException{
+	/**
+	 * @param path XBRLファイルのパス
+	 * @throws TransformerException
+	 * @throws SAXException
+	 * @throws IOException
+	 * @throws ParserConfigurationException
+	 */
+	public RDFMaker(String path) throws TransformerException, SAXException, IOException, ParserConfigurationException{
 		super();
-		this.x = new XbrlReader(args[0]);
+		this.x = new XbrlReader(path);
+		
+		
 		this.x.prepare();
-		this.dest = args[1];
+		this.dest = this.outputRDFDir;
 
 		String configFile = "app.conf"; // for default
 		Properties prop = new Properties();
@@ -175,7 +192,8 @@ public class RDFMaker implements Maker {
 		this.setNsFoaf(prop.getProperty("nsFoaf"));
 		this.setTdbloc(prop.getProperty("tdbFactoryLoc"));
 		this.setOutputRDFDir(prop.getProperty("outputRDFDir"));
-		this.setOutputRDFPath(prop.getProperty("outputRDFDir") + getFileName(args[0]) + ".rdf");
+//		this.setOutputRDFPath(prop.getProperty("outputRDFDir") + getFileName(args[0]) + ".rdf");
+		this.setOutputRDFPath(prop.getProperty("outputRDFDir") + getFileName(path) + ".rdf");
 	}
 
 

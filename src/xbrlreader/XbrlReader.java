@@ -1,5 +1,6 @@
 package xbrlreader;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -93,6 +94,12 @@ public class XbrlReader implements Reader {
 	public XbrlReader(String xbrlurl) {
 		super();
 		this.xbrlurl = xbrlurl;
+		this.nsc = new SimpleNamespaceContext();
+	}
+	
+	public XbrlReader(File xbrl){
+		super();
+		this.xbrlurl = xbrl.getAbsolutePath();
 		this.nsc = new SimpleNamespaceContext();
 	}
 	
