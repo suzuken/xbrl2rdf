@@ -21,11 +21,13 @@ eclipseのプロジェクトになっています。
 
 Xbrlデータの標準出力
 
-    java bin/xbrlreader/XbrlReader XBRLPATH
+    java bin/xbrlreader/XbrlReader input/*.xbrl
 
 RDFの生成
 
-    java bin/xbrlonto/RDFMaker XBRLPATH
+    java bin/xbrlonto/RDFMaker input/*.xbrl
+
+    java bin/xbrlonto/RDFMaker -o ./output input/*.xbrl
 
 app.confで各種設定をできます。
 
