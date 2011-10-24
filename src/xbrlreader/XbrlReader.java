@@ -95,6 +95,7 @@ public class XbrlReader implements Reader {
 		super();
 		this.xbrlurl = xbrlurl;
 		this.nsc = new SimpleNamespaceContext();
+		System.out.println(this.xbrlurl);
 	}
 	
 	public XbrlReader(File xbrl){
@@ -163,6 +164,7 @@ public class XbrlReader implements Reader {
 
 	@Override
 	public Context getContext(String contextId) throws XPathExpressionException {
+		Element jpoe;
 		String identifier = this.xpath.evaluate(
 				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:entity/xbrli:identifier", this.doc);
 		String identifierScheme = this.xpath.evaluate(
@@ -173,12 +175,15 @@ public class XbrlReader implements Reader {
 				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:startDate", this.doc);
 		String periodEndDate = this.xpath.evaluate(
 				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:endDate", this.doc);
-		
-		Element jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/jpfr-oe:*");
+		if(this.nsc.getNamespaceURI("jpfr-oe") != null){
+			jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/jpfr-oe:*");
+		}else{
+			jpoe = null;
+		}
 		String scenario = (jpoe != null) ? jpoe.getNodeName(): null;
-		
 		return new ContextImpl(contextId, identifier, identifierScheme, periodInstant,
 				periodEndDate, periodStartDate, scenario);
+		
 	}
 	
 

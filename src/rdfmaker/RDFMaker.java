@@ -66,7 +66,7 @@ public class RDFMaker implements Maker {
 	public String outputRDFDir;
 	
 	@Option(name="-r",usage="recursively parsing XBRL, and generate RDF files")
-	private boolean recursive;
+	private static boolean recursive=true;
 
 	private String[] enableContextRef;
 	
@@ -91,10 +91,10 @@ public class RDFMaker implements Maker {
 	public static void main(String[] args) throws TransformerException, SAXException, IOException, ParserConfigurationException, XPathExpressionException{
 		long start = System.currentTimeMillis();
 		FileSearch search = new FileSearch();
-		Integer last_slash = args[0].lastIndexOf('/');
-		String directoryPath = args[0].substring(0, last_slash);
-		String filePath = args[0].substring(last_slash + 1, args[0].length());
-		File[] files = search.listFiles(directoryPath, filePath);
+//		Integer last_slash = args[0].lastIndexOf('/');
+//		String directoryPath = args[0].substring(0, last_slash);
+//		String filePath = args[0].substring(last_slash + 1, args[0].length());
+		File[] files = search.listFiles(args[0], args[1], 2, recursive, 0);
 		//TODO アスタリスクじゃない場合も考える。絶対パスの場合はどうなるか検証する。
 		for (Integer i = 0, ii=files.length; i<ii; i++){
 			RDFMaker r = new RDFMaker(files[i].getAbsolutePath());
