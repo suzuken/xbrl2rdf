@@ -29,6 +29,10 @@ RDFの生成
 
     java bin/xbrlonto/RDFMaker -o ./output input/*.xbrl
 
+またはeclipseで
+
+    ${project_loc}/input/EDINET/2011/2 .*.xbrl
+
 app.confで各種設定をできます。
 
     # 名前空間の設定
@@ -76,3 +80,20 @@ TODO
 * コマンドラインオプションの整備
 * TDBをSPARQLエンドポイントとして利用
 * RDFMakerで再帰的にrdfを生成できるようにする
+
+* hasStartDateとhasEndDateをちゃんと同じ枠に入れるようにする。以下のようなミスが
+  ある。本来は１つの期間の中にstartdateとenddateを入れるようにしなければならない
+  。
+
+  <rdf:Description rdf:about="http://info.edinet-fsa.go.jp/jp/fr/gaap/t/cte/2009-03-09#DisposalOfTreasuryStockTS">
+    <j.0:hasAmount rdf:nodeID="A3"/>
+    <j.0:hasAmount rdf:nodeID="A4"/>
+    <j.0:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-04-01</j.0:hasStartDate>
+    <j.0:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-04-01</j.0:hasStartDate>
+    <j.0:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-03-31</j.0:hasEndDate>
+    <j.0:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-03-31</j.0:hasEndDate>
+  </rdf:Description>
+
+* contextについては同じ指定を書き過ぎていてrdfが巨大になってしまっているので、内
+  容を簡単に参照できるようにする。具体的には、コンテキストをrdfのグラフの中に埋
+  め込んで、おなじものを参照させるようにする。

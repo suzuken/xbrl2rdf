@@ -66,7 +66,7 @@ public class RDFMaker implements Maker {
 	public String outputRDFDir;
 	
 	@Option(name="-r",usage="recursively parsing XBRL, and generate RDF files")
-	private static boolean recursive=true;
+	private static boolean recursive=false;
 
 	private String[] enableContextRef;
 	
@@ -253,7 +253,7 @@ public class RDFMaker implements Maker {
 
 						// 日付情報を付属させる。そのエレメントが属するクラスによって変わってくる。
 						Context c = this.x.getContext(contextRef);
-						if(c.getPeriodInstant() != null){
+						if(c.getPeriodInstant() != null && c.getPeriodInstant() != ""){
 							Literal Instant = this.model.createTypedLiteral(c.getPeriodInstant(), 
 									XSDDateType.XSDdate);
 							Property hasInstant = this.model.createProperty(this.getNsIns(),
