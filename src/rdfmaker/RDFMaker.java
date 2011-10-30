@@ -199,6 +199,8 @@ public class RDFMaker implements Maker {
 
 	/**
 	 *　modelを作成するメソッド 
+	 *  TODO contextのノードを作成して、hasContextプロパティで各勘定科目のノードをつなげてあげれば、より使いやすくなりそう。
+	 *  TODO 文書情報についてもちゃんとノードを作成して情報を埋め込む。基本的にはxbrlの表示を買えないように作る。
 	 * @throws XPathExpressionException 
 	 */
 	public void createModel() throws XPathExpressionException{
@@ -261,6 +263,7 @@ public class RDFMaker implements Maker {
 							accountElement.addLiteral(hasInstant, Instant);
 						}
 						else if(c.getPeriodStartDate() != null){
+							//TODO 新しい期間のためのノードを作成して、区切る。
 							Literal startDate = this.model.createTypedLiteral(c.getPeriodStartDate(),
 									XSDDateType.XSDdate);
 							Literal endDate = this.model.createTypedLiteral(c.getPeriodEndDate(),
