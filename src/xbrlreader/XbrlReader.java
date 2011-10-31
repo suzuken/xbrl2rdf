@@ -125,7 +125,7 @@ public class XbrlReader implements Reader {
 		Element root = this.doc.getDocumentElement();
 		this.elementDefinitions = (Element) root;
 
-		//nodeルートがxsd:schemaじゃなければ、問題あり。
+		//nodeルートがxbrli:xbrlじゃなければ問題あり。
 		if (!this.elementDefinitions.getNamespaceURI().equals("http://www.xbrl.org/2003/instance") || !elementDefinitions.getLocalName().equals("xbrl")) {
 			System.out.println("xbrli:xbrl要素が見つかりません。処理をスキップします。");
 		} else {
