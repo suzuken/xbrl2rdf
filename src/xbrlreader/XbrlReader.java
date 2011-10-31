@@ -176,14 +176,21 @@ public class XbrlReader implements Reader {
 		String periodEndDate = this.xpath.evaluate(
 				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:endDate", this.doc);
 		if(this.nsc.getNamespaceURI("jpfr-oe") != null){
-			jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/jpfr-oe:*");
+//				&& this.xpath.evaluate("/xbrli:xbrl/xbrli:context[@id='"
+//						+ contextId +"']/xbrli:scenario", this.doc) != null){
+//			jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/jpfr-oe:*");
+			jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/*");
 		}else{
 			jpoe = null;
 		}
 		String scenario = (jpoe != null) ? jpoe.getNodeName(): null;
-		return new ContextImpl(contextId, identifier, identifierScheme, periodInstant,
+		Context c = new ContextImpl(contextId, identifier, identifierScheme, periodInstant,
 				periodEndDate, periodStartDate, scenario);
-		
+		if(c.getScenario() !=null && this.nsc.getNamespaceURI("jpfr-oe") != null){
+			c.setScenarioNamespaceURI(this.nsc.getNamespaceURI(c.getScenarioPrefix()));
+		}
+		return c;
+
 	}
 	
 

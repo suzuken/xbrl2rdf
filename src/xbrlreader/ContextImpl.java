@@ -16,7 +16,18 @@ public class ContextImpl implements Context {
 	public String periodEndDate;
 	public String periodStartDate;
 	public String scenario;
+	public String scenarioPrefix;
+	public String scenarioLocalName;
+	public String scenarioNamespaceURI;
 	
+	public String getScenarioNamespaceURI() {
+		return scenarioNamespaceURI;
+	}
+	
+	@Override
+	public void setScenarioNamespaceURI(String scenarioNamespaceURI) {
+		this.scenarioNamespaceURI = scenarioNamespaceURI;
+	}
 	public ContextImpl(){}
 	public ContextImpl(String id,
 			String identifier,
@@ -33,7 +44,19 @@ public class ContextImpl implements Context {
 		setPeriodEndDate(periodEndDate);
 		setPeriodStartDate(periodStartDate);
 		setScenario(scenario);
+		setScenarioPL(scenario);
 	}
+	
+	
+	@Override
+	public void setScenarioPL (String measureValue){
+		if(measureValue !=null){
+			String str[] = measureValue.split(":");
+			this.scenarioPrefix = str[0];
+			this.scenarioLocalName = str[1];
+		}
+	}
+
 
 	public void setId(String id) {
 		this.id = id;
@@ -99,6 +122,22 @@ public class ContextImpl implements Context {
 				+ periodEndDate + ", periodInstant=" + periodInstant
 				+ ", periodStartDate=" + periodStartDate + ", scenario="
 				+ scenario + "]";
+	}
+	@Override
+	public String getScenarioPrefix() {
+		return scenarioPrefix;
+	}
+	@Override
+	public void setScenarioPrefix(String scenarioPrefix) {
+		this.scenarioPrefix = scenarioPrefix;
+	}
+	@Override
+	public String getScenarioLocalName() {
+		return scenarioLocalName;
+	}
+	@Override
+	public void setScenarioLocalName(String scenarioLocalName) {
+		this.scenarioLocalName = scenarioLocalName;
 	}
 
 }

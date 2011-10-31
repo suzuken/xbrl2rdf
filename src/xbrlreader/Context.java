@@ -22,5 +22,12 @@ public interface Context {
 	 * @return
 	 */
 	public String getScenario();
+	void setScenarioNamespaceURI(String scenarioNamespaceURI);
+	public String getScenarioNamespaceURI();
+	void setScenarioPL(String measureValue);
+	String getScenarioPrefix();
+	void setScenarioPrefix(String scenarioPrefix);
+	String getScenarioLocalName();
+	void setScenarioLocalName(String scenarioLocalName);
 
 }
