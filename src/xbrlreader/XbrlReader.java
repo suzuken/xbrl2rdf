@@ -245,9 +245,14 @@ public class XbrlReader implements Reader {
 
 	@Override
 	public DocumentInfo getDocumentInfo(String elementName) throws XPathExpressionException{
-		String value = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName, this.doc);
-		String contextRef = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName + "/@contextRef", this.doc);
-		return new DocumentInfo(elementName, contextRef, value);
+		if(this.nsc.getNamespaceURI("jpfr-di") != null){
+			String value = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName, this.doc);
+			String contextRef = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName + "/@contextRef", this.doc);
+			return new DocumentInfo(elementName, contextRef, value);
+		}
+		else{
+			return null;
+		}
 	}
 	
 	@Override

@@ -204,7 +204,13 @@ public class RDFMakerV2 implements Maker {
 	public void createModel() throws XPathExpressionException{
 		this.model = TDBFactory.createModel();
 
-		Resource company = this.model.createResource(this.getNsOwl() + this.x.getDocumentInfo("EntityNameJaEntityInformation").getValue());
+		String companyName = 
+				this.x.getDocumentInfo("EntityNameJaEntityInformation").getValue();
+		companyName = companyName.replaceAll("\\[", "［");
+		companyName = companyName.replaceAll("\\]", "］");
+		
+		Resource company = this.model.createResource(this.getNsOwl()
+				+ companyName);
 		Resource foafOrg = this.model.createResource(this.getNsFoaf()
 				+ "Organization");
 		company.addProperty(RDF.type, foafOrg);
