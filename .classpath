@@ -31,5 +31,15 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/args4j/args4j/target/args4j-2.0.19-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/trove4j-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/slf4j-jdk14-1.5.0.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/slf4j-api-1.5.0.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/sil-0.44.2b.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/openrdf-sesame-2.5.0-onejar.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/onto-crypto-0.1.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/lucene-core-3.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/lubm.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/log4j-1.2.6.jar"/>
+	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/jsi-1.0b6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
