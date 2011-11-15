@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -67,7 +68,8 @@ public class XbrlReader implements Reader {
 		x.prepare();
 		
 		//値の取得テスト
-		System.out.println(x.getAccount("jpfr-t-cte", "CapitalStock"));
+//		System.out.println(x.getAccount("jpfr-t-cte", "CapitalStock"));
+		System.out.println(x.getAccount("ifrs_2", "CashAndCashEquivalents"));
 		System.out.println(x.getAccountsByContext("Prior2YearNonConsolidatedDuration"));
 		System.out.println(x.getAccountsByContext("Prior2YearNonConsolidatedInstant"));
 		System.out.println(x.getAccountsByContext("Prior1YearNonConsolidatedDuration"));
@@ -163,34 +165,39 @@ public class XbrlReader implements Reader {
 	}
 
 	@Override
-	public Context getContext(String contextId) throws XPathExpressionException {
+	public Context getContext(String contextId){
 		Element jpoe;
-		String identifier = this.xpath.evaluate(
-				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:entity/xbrli:identifier", this.doc);
-		String identifierScheme = this.xpath.evaluate(
-				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:entity/xbrli:identifier/@scheme", this.doc);
-		String periodInstant = this.xpath.evaluate(
-				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:instant", this.doc);
-		String periodStartDate = this.xpath.evaluate(
-				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:startDate", this.doc);
-		String periodEndDate = this.xpath.evaluate(
-				"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:endDate", this.doc);
-		if(this.nsc.getNamespaceURI("jpfr-oe") != null){
-//				&& this.xpath.evaluate("/xbrli:xbrl/xbrli:context[@id='"
-//						+ contextId +"']/xbrli:scenario", this.doc) != null){
-//			jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/jpfr-oe:*");
-			jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/*");
-		}else{
-			jpoe = null;
+		String identifier;
+		try {
+			identifier = this.xpath.evaluate(
+					"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:entity/xbrli:identifier", this.doc);
+			String identifierScheme = this.xpath.evaluate(
+					"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:entity/xbrli:identifier/@scheme", this.doc);
+			String periodInstant = this.xpath.evaluate(
+					"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:instant", this.doc);
+			String periodStartDate = this.xpath.evaluate(
+					"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:startDate", this.doc);
+			String periodEndDate = this.xpath.evaluate(
+					"/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:period/xbrli:endDate", this.doc);
+			if(this.nsc.getNamespaceURI("jpfr-oe") != null){
+//					&& this.xpath.evaluate("/xbrli:xbrl/xbrli:context[@id='"
+//							+ contextId +"']/xbrli:scenario", this.doc) != null){
+//				jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/jpfr-oe:*");
+				jpoe = _getElementByXPath("/xbrli:xbrl/xbrli:context[@id='" + contextId +"']/xbrli:scenario/*");
+			}else{
+				jpoe = null;
+			}
+			String scenario = (jpoe != null) ? jpoe.getNodeName(): null;
+			Context c = new ContextImpl(contextId, identifier, identifierScheme, periodInstant,
+					periodEndDate, periodStartDate, scenario);
+			if(c.getScenario() !=null && this.nsc.getNamespaceURI("jpfr-oe") != null){
+				c.setScenarioNamespaceURI(this.nsc.getNamespaceURI(c.getScenarioPrefix()));
+			}
+			return c;
+		} catch (XPathExpressionException e) {
+			e.printStackTrace();
 		}
-		String scenario = (jpoe != null) ? jpoe.getNodeName(): null;
-		Context c = new ContextImpl(contextId, identifier, identifierScheme, periodInstant,
-				periodEndDate, periodStartDate, scenario);
-		if(c.getScenario() !=null && this.nsc.getNamespaceURI("jpfr-oe") != null){
-			c.setScenarioNamespaceURI(this.nsc.getNamespaceURI(c.getScenarioPrefix()));
-		}
-		return c;
-
+		return null;
 	}
 	
 
@@ -210,44 +217,77 @@ public class XbrlReader implements Reader {
 	}
 
 	@Override
-	public Unit getUnit(String unitId) throws XPathExpressionException {
-		String measure = this.xpath.evaluate("/xbrli:xbrl/xbrli:unit[@id='" + unitId + "']/xbrli:measure", this.doc);
-		Unit u = new UnitImpl(unitId, measure);
-		u.setMeasureNamespaceURI(this.nsc.getNamespaceURI(u.getMeasurePrefix()));
-		return u;
+	public Unit getUnit(String unitId){
+		String measure;
+		try {
+			measure = this.xpath.evaluate("/xbrli:xbrl/xbrli:unit[@id='" + unitId + "']/xbrli:measure", this.doc);
+			Unit u = new UnitImpl(unitId, measure);
+			u.setMeasureNamespaceURI(this.nsc.getNamespaceURI(u.getMeasurePrefix()));
+			return u;
+		} catch (XPathExpressionException e) {
+			System.out.println("unitId: " + unitId + "のgetUnitでエラー。");
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	@Override
-	public Account getAccount(String namespace, String elementName) throws XPathExpressionException{
-		Element el = _getElementByXPath("/xbrli:xbrl/" + namespace + ":" + elementName);
-		String unitRef = el.getAttributeNode("unitRef").getValue();
-		String namespaceURI = this.nsc.getNamespaceURI(namespace);
-		String localName = elementName;
-		String contextRef = el.getAttributeNode("contextRef").getValue();
-		String decimals = el.getAttributeNode("decimals").getValue();
-		String id = el.getAttributeNode("id").getValue();
-		Long value = Long.parseLong(el.getFirstChild().getNodeValue());
-		return new AccountImpl(namespaceURI, localName, unitRef, contextRef, decimals, id, value);
+	public Account getAccount(String namespace, String elementName){
+	
+		Element el;
+		try {
+			el = _getElementByXPath("/xbrli:xbrl/" + namespace + ":" + elementName);
+			String unitRef = el.getAttributeNode("unitRef").getValue();
+			String namespaceURI = this.nsc.getNamespaceURI(namespace);
+			String localName = elementName;
+			String contextRef = el.getAttributeNode("contextRef").getValue();
+			String decimals = el.getAttributeNode("decimals").getValue();
+			String id = (el.getAttributeNode("id") != null) ?
+					el.getAttributeNode("id").getValue() : null;
+			Long value = Long.parseLong(el.getFirstChild().getNodeValue());
+			return new AccountImpl(namespaceURI, localName, unitRef, contextRef, decimals, id, value);
+		} catch (XPathExpressionException e) {
+			System.out.println("namespace: " + namespace + ", elementName: " + elementName 
+					+ "のgetAccountでエラー");
+			e.printStackTrace();
+		}
+		return null;
 	} 
 	
 	@Override
-	public ArrayList<Account> getAccountsByContext(String contextRef) throws XPathExpressionException{
+	public ArrayList<Account> getAccountsByContext(String contextRef){
 		ArrayList<Account> ret = new ArrayList<Account>();
-		NodeList nl = (NodeList) this.xpath.evaluate("/xbrli:xbrl/*[@contextRef='" + contextRef + "']",
-				this.doc, XPathConstants.NODESET);
-		for(int indexInstance =0; indexInstance < nl.getLength(); indexInstance++){
-			Element elementInstance = (Element) nl.item(indexInstance);
-			Account a = this._createInstance(elementInstance);
-			ret.add(a);
+		NodeList nl;
+		try {
+			nl = (NodeList) this.xpath.evaluate("/xbrli:xbrl/*[@contextRef='" + contextRef + "']",
+					this.doc, XPathConstants.NODESET);
+			for(int indexInstance =0; indexInstance < nl.getLength(); indexInstance++){
+				Element elementInstance = (Element) nl.item(indexInstance);
+				Account a = this._createInstance(elementInstance);
+				ret.add(a);
+			}
+			return ret;
+		} catch (XPathExpressionException e) {
+			System.out.println("contextRef:" + contextRef + "のgetAccountsByContextでエラー");
+			e.printStackTrace();
 		}
-		return ret;
+		return null;
 	}
 
 	@Override
-	public DocumentInfo getDocumentInfo(String elementName) throws XPathExpressionException{
-		if(this.nsc.getNamespaceURI("jpfr-di") != null){
-			String value = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName, this.doc);
-			String contextRef = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName + "/@contextRef", this.doc);
+	public DocumentInfo getDocumentInfo(String elementName){
+		if(this.nsc.getNamespaceURI("jpfr-di") != null
+				&& this.nsc.getNamespaceURI("jpfr-di") != XMLConstants.NULL_NS_URI){
+			String value = null;
+			String contextRef = null;
+			try {
+				value = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName, this.doc);
+				contextRef = this.xpath.evaluate("/xbrli:xbrl/jpfr-di:" + elementName + "/@contextRef", this.doc);
+				return new DocumentInfo(elementName, contextRef, value);
+			} catch (XPathExpressionException e) {
+				System.out.println("elementName:" + elementName + "のgetDocumentInfoでエラー");
+				e.printStackTrace();
+			}
 			return new DocumentInfo(elementName, contextRef, value);
 		}
 		else{
