@@ -1,0 +1,54 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;5.&nbsp;Sail API</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="System documentation for Sesame 2.x "><link rel="up" href="index.html" title="System documentation for Sesame 2.x "><link rel="prev" href="ch04.html" title="Chapter&nbsp;4.&nbsp;Rio: RDF I/O"><link rel="next" href="ch06.html" title="Chapter&nbsp;6.&nbsp;Sail Query model"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;5.&nbsp;Sail API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch04.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch06.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-sailapi"></a>Chapter&nbsp;5.&nbsp;Sail API</h2></div></div></div><div class="figure-float"><div class="figure"><a name="figure-sail-api-uml"></a><p class="title"><b>Figure&nbsp;5.1.&nbsp;Class diagram for the Sail API</b></p><div class="mediaobject"><img src="figures/org_openrdf_sesame_sail.jpg" alt="Class diagram for the Sail API"></div></div></div><p>
+		The class diagram above shows the main Sail interfaces from package
+			<a href="../apidocs/org/openrdf/sail/package-summary.html" target="_top">
+			org.openrdf.sesame.sail</a>.
+		The Sail API defines a set of interfaces for RDF stores and inferencers.
+		The main interface is Sail, which defines methods to initialize, query,
+		modify and shut down the Sail object.
+	</p><p>
+		For scalability reasons, all data that is extracted from a Sail object
+		is returned in the form of (forward-only) iterators. This allows one to
+		fetch the entire set of stored statements, even if the set is to large
+		to store in main memory. Queries are expressed in terms of the Sail
+		Query Model (see <a href="ch06.html">Sail Query Model</a>).
+	</p><p>
+		New in Sesame 2.0 is the concept of statement contexts; a grouping
+		mechanism for statements. Statements can now be stored in contexts which
+		are identified by a URI or a blank node. Statements that are not stored
+		in a specific context are stored in the "default context". The Sail
+		interface defines methods for extracting the statements from a specific
+		context, from the default context, or from all contexts combined.
+	</p><p>
+		Also new in Sesame 2.0 is proper transaction support. Transactions are
+		modelled as separate objects, which is thought to be the most general
+		approach to modelling transactions: it allows the caller to create
+		transactions per object, per thread, or even per application.
+		Alternatives for matching commits or rollbacks to the appropriate
+		transaction are all more specific, e.g.: based on threads or calling
+		objects.
+	</p><p>
+		A Sail implementation may or may not support features like concurrent
+		transactions or transaction isolation; this is not defined by the Sail
+		API. Sails that do not have isolated transaction may block any query
+		calls during transactions; Sails that do not support concurrent
+		transactions might do the same for calls to startTransaction(). Sail
+		implementations should clearly document their behaviour with respect to
+		concurrent access.
+	</p><p>
+		Some Sails can be stacked on top of other Sails. These Sails should
+		implement the StackableSail interface. By stacking a Sail on top of
+		another, all calls for the bottom Sail will pass through the Sails that
+		are on top of it (see <a href="ch05.html#figure-sail-stack" title="Figure&nbsp;5.2.&nbsp;Example Sail stack">Figure&nbsp;5.2, &#8220;Example Sail stack&#8221;</a>). This feature
+		can be used for a whole range of applications: access control,
+		pluggable inferencers, hooks to external services, etc. A concrete
+		example is a mixed forward-/backward-chaining inferencer, which will
+		wrap transactions to do its forward-chaining work upon commit and
+		extend queries to do its backward-chaining work.
+	</p><div class="figure-float"><div class="figure"><a name="figure-sail-stack"></a><p class="title"><b>Figure&nbsp;5.2.&nbsp;Example Sail stack</b></p><div class="mediaobject"><img src="figures/sail-stack.png" alt="Example Sail stack"></div></div></div><p>
+		SailChangedListener's can register themselves with Sail objects in
+		order to be notified of any changes in the stored data. Whenever this
+		happens, the Sail will generate a SailChangedEvent and pass it to all
+		regsitered listeners.
+	</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch04.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;4.&nbsp;Rio: RDF I/O&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;6.&nbsp;Sail Query model</td></tr></table></div></body></html>

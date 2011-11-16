@@ -1,0 +1,38 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;2.&nbsp;Architecture</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="System documentation for Sesame 2.x "><link rel="up" href="index.html" title="System documentation for Sesame 2.x "><link rel="prev" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Introduction"><link rel="next" href="ch03.html" title="Chapter&nbsp;3.&nbsp;RDF Model"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;2.&nbsp;Architecture</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch03.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-introduction"></a>Chapter&nbsp;2.&nbsp;Architecture</h2></div></div></div><p>
+		The following figure shows the main components and APIs in Sesame and
+		how they are built on top of each other:
+	</p><div class="figure-float"><div class="figure"><a name="figure-sesame-arch"></a><p class="title"><b>Figure&nbsp;2.1.&nbsp;The Sesame architecture</b></p><div class="mediaobject"><img src="figures/block-diagram.png" alt="The Sesame architecture"></div></div></div><p>
+		Being an RDF-oriented framework, all parts of Sesame are to some extent
+		related to the RDF model. This model defines interfaces for the RDF
+		entities "URI", "blank node", "literal" and "statement".
+	</p><p>
+		Sesame has two main communication interfaces: the Sail API and the
+		Repository API. The Storage And Inference Layer (Sail) API is a low
+		level system API (or: SPI) for RDF stores and inferencers. It's
+		purpose is to abstract from the storage details, allowing various types
+		of storage and inference to be used.
+	</p><p>
+		The Repository API is a higer level API and is meant to be the main API
+		that people can program against. It offers various methods for uploading
+		data files, querying, and extracting and manipulating data. It comes in
+		two flavours: local and remote. The local Repository API can be used for
+		"local" repositories, as in "running in the same Java Virtual Machine".
+		The remote Repository API can be used in client-server settings, where
+		the application communicates with a Sesame server. The two flavours
+		share a common interface so that applications can be developed to work
+		with both local and remote repositories transparently.
+	</p><p>
+		Part of the Sail API is the Sail Query Model, which can be used to build
+		object models representing queries. A query engine like the SeRQL engine
+		takes care of parsing query strings and building such query object model
+		from them. These query object models can then be passed to Sail objects,
+		which take care of their evaluation.
+	</p><p>
+		Rio stands for "RDF I/O" and consists of a set of parsers and writers
+		for various RDF file formats. The parsers can be used to translate RDF
+		files to lists of statements, and the writers for the reverse operation.
+		Rio is used by the Repository API for data import and export, but can
+		also be used directly by applications.
+	</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;1.&nbsp;Introduction&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;3.&nbsp;RDF Model</td></tr></table></div></body></html>

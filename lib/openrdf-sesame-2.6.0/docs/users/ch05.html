@@ -1,0 +1,36 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;5.&nbsp;Application directory configuration</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="User Guide for Sesame 2.3"><link rel="up" href="index.html" title="User Guide for Sesame 2.3"><link rel="prev" href="ch04.html" title="Chapter&nbsp;4.&nbsp;Setting up to use the Sesame libraries"><link rel="next" href="ch06.html" title="Chapter&nbsp;6.&nbsp;Server software installation"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;5.&nbsp;Application directory configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch04.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch06.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-datadir-config"></a>Chapter&nbsp;5.&nbsp;Application directory configuration</h2></div></div></div><p>
+		In this chapter, we explain how to change the default data directory for
+		OpenRDF applications. You can skip this chapter if you only use Sesame
+		as a library, or if you consider the defaults to be fine.
+	</p><p>
+		All OpenRDF applications (Sesame Server, Workbench, and
+		Console) store configuration files and repository data in a
+		single directory (with subdirectories). On Windows machines, this
+		directory is <code class="filename">%APPDATA%\Aduna\</code> by default,
+		where <code class="filename">%APPDATA%</code> is the application data
+		directory of the user that runs the application. For example, in
+		case the application runs under the 'LocalService' user account
+		on Windows XP, the directory is <code class="filename">C:\Documents and
+			Settings\LocalService\Application Data\Aduna\</code>. On
+		Linux/UNIX, the default location is <code class="filename">$HOME/.aduna/</code>,
+		for example <code class="filename">/home/tomcat/.aduna/</code>. We will refer to
+		this data directory as <code class="filename">[ADUNA_DATA]</code> in the rest of
+		this manual.
+	</p><p>
+		The location of this data directory can be reconfigured using the Java
+		system property <em class="parameter"><code>info.aduna.platform.appdata.basedir</code></em>.
+		When you are using Tomcat as the servlet container then you can set this
+		property using the <em class="parameter"><code>JAVA_OPTS</code></em> parameter, for
+		example:
+	</p><div class="itemizedlist"><ul type="disc"><li><em class="parameter"><code>set JAVA_OPTS=-Dinfo.aduna.platform.appdata.basedir=\path\to\other\dir\</code></em>
+			(on Windows)
+		</li><li><em class="parameter"><code>export JAVA_OPTS='-Dinfo.aduna.platform.appdata.basedir=/path/to/other/dir/'</code></em>
+			(on Linux/UNIX)
+		</li></ul></div><p>
+		If you are using Apache Tomcat as a Windows Service you should use
+		the Windows Services configuration tool to set this property. Other users
+		can either edit the Tomcat startup script or set the property some
+		other way.
+	</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch04.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;4.&nbsp;Setting up to use the Sesame libraries&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;6.&nbsp;Server software installation</td></tr></table></div></body></html>

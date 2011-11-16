@@ -1,0 +1,22 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;6.&nbsp;Sail Query model</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="System documentation for Sesame 2.x "><link rel="up" href="index.html" title="System documentation for Sesame 2.x "><link rel="prev" href="ch05.html" title="Chapter&nbsp;5.&nbsp;Sail API"><link rel="next" href="ch07.html" title="Chapter&nbsp;7.&nbsp;Repository API"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;6.&nbsp;Sail Query model</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch07.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-sailquerymodel"></a>Chapter&nbsp;6.&nbsp;Sail Query model</h2></div></div></div><div class="figure-float"><div class="figure"><a name="figure-sail-query-model-uml"></a><p class="title"><b>Figure&nbsp;6.1.&nbsp;Class diagram for the Sail Query Model</b></p><div class="mediaobject"><img src="figures/org_openrdf_sesame_sail_query.jpg" alt="Class diagram for the Sail Query Model"></div></div></div><p>
+		The class diagram above shows the Sail Query model from package
+			<a href="../apidocs/org/openrdf/query/algebra/package-summary.html" target="_top">
+			org.openrdf.query.algebra</a>.
+		The Sail Query Model is a generic model for RDF queries. Queries in
+		various languages (SeRQL, RDQL, ...) are parsed to models built from
+		these classes. Objects of type Query can be handed over to Sail objects
+		for evaluation.
+	</p><p>
+		Sails are free to evaluate query models in a way that suits them best; a
+		Sail that operates on a powerful relational database supporting SQL, for
+		example, can translate (parts of) the query model to SQL queries. The
+		query model is also able to evaluate itself: The TripleSource interface
+		defines all methods that are needed by the query model to do this. By
+		implementing this interface, a Sail can use the self-evaluating feature.
+		The heuristics-based QueryOptimizer can be used to apply some general
+		optimizations to query models, resulting in lower evaluation times.
+	</p><p>
+		TODO:
+	</p><div class="itemizedlist"><ul type="disc"><li>Explain the Sail Query Model in more detail.</li><li>Reorganize the class diagram a little.</li></ul></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch05.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch07.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;5.&nbsp;Sail API&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;7.&nbsp;Repository API</td></tr></table></div></body></html>

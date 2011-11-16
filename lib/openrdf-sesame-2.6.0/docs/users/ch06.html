@@ -1,0 +1,73 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;6.&nbsp;Server software installation</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="User Guide for Sesame 2.3"><link rel="up" href="index.html" title="User Guide for Sesame 2.3"><link rel="prev" href="ch05.html" title="Chapter&nbsp;5.&nbsp;Application directory configuration"><link rel="next" href="ch07.html" title="Chapter&nbsp;7.&nbsp;Sesame Console"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;6.&nbsp;Server software installation</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch07.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-server-install"></a>Chapter&nbsp;6.&nbsp;Server software installation</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="ch06.html#section-server-required-software">6.1. Required software</a></span></dt><dt><span class="section"><a href="ch06.html#section-sesame-server-installation">6.2. Sesame server installation</a></span></dt><dt><span class="section"><a href="ch06.html#d0e333">6.3. Logging Configuration</a></span></dt><dt><span class="section"><a href="ch06.html#d0e357">6.4. Repository Configuration</a></span></dt></dl></div><p>
+		In this section, we explain how you can install a Sesame HTTP 
+		Server. You can skip this if you are not planning to run a Sesame
+		server but intend to use Sesame as a library to program against.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-server-required-software"></a>6.1.&nbsp;Required software</h2></div></div></div><p>
+			The Sesame server software requires the following software:
+		</p><div class="itemizedlist"><ul type="disc"><li>Java 5 or newer</li><li>
+				A Java Servlet Container that supports Java Servlet API 2.4 and
+				Java Server Pages (JSP) 2.0, or newer. We recommend using a
+				recent, stable version of
+				<a href="http://tomcat.apache.org/" target="_top">Apache Tomcat</a>.
+				At the time of writing, this is either version 5.5.x or 6.x.
+			</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-sesame-server-installation"></a>6.2.&nbsp;Sesame server installation</h2></div></div></div><p>
+			The Sesame 2.0 server software comes in the form of two Java Web
+			Applications: <span class="emphasis"><em>Sesame (HTTP) server</em></span> and
+			<span class="emphasis"><em>OpenRDF Workbench</em></span>.
+		</p><p>
+			Sesame Server provides HTTP access to Sesame repositories and is
+			meant to be accessed by other applications. Apart from some
+			functionality to view the server's log messages, it doesn't provide
+			any user oriented functionality. Instead, the user oriented
+			functionality is part of OpenRDF Workbench. OpenRDF Workbench
+			provides a web interface for querying, updating and exploring the
+			repositories of a Sesame Server.
+		</p><p>
+			If you have not done so already, you will first need to
+			<a href="http://www.openrdf.org/download.jsp" target="_top">download</a>
+			the Sesame 2.0 SDK. Both Sesame Server and OpenRDF Workbench can be
+			found in the <code class="filename">war</code> directory of the SDK. The
+			war-files in this directory need to be deployed in a Java Servlet
+			Container (see <a href="ch06.html#section-server-required-software" title="6.1.&nbsp;Required software">Section&nbsp;6.1, &#8220;Required software&#8221;</a>).
+			The deployment process is container-specific, please consult the
+			documentation for your container on how to deploy a web application.
+		</p><p>
+			After you have deployed the Sesame Server webapp, you should be able
+			to access it, by default, at path <code class="filename">/openrdf-sesame</code>.
+			You can point your browser at this location to verify that the
+			deployment succeeded. Your browser should show the Sesame welcome
+			screen as well as some options to view the server logs, among other
+			things. Similarly, after deployment, the OpenRDF Workbench should be
+			available at path <code class="filename">/openrdf-workbench</code>.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e333"></a>6.3.&nbsp;Logging Configuration</h2></div></div></div><p>
+			Both Sesame Server and OpenRDF Workbench use the
+			<a href="http://logback.qos.ch/" target="_top">Logback</a> logging framework.
+			In its default configuration, all Sesame Server log messages are sent
+			to the log file <code class="filename">[ADUNA_DATA]/OpenRDF Sesame/logs/main.log</code>
+			(and log messages for the Workbench to the same file in
+			<code class="filename">[ADUNA_DATA]/OpenRDF workbench</code>). See
+			<a href="ch05.html" title="Chapter&nbsp;5.&nbsp;Application directory configuration">Chapter&nbsp;5, <i>Application directory configuration</i></a> for more info about data
+			directories.
+		</p><p>
+			The default log level is <em class="parameter"><code>INFO</code></em>, indicating
+			that only important status messages, warnings and errors are logged.
+			The log level and -behaviour can be adjusted by modifying the
+			<code class="filename">.../conf/logback.xml</code> file. This file will be
+			generated when the server is first run. Please consult the logback
+			manual for configuration instructions.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e357"></a>6.4.&nbsp;Repository Configuration</h2></div></div></div><p>
+			A clean installation of a Sesame Server has a single repository by
+			default: the SYSTEM repository. This SYSTEM repository contains all
+			configuration data for the server, including data on which other
+			repositories exists and (in future releases) the access rights on
+			these repositories. This SYSTEM repository <span class="emphasis"><em>should
+					not</em></span> be used to store data that is not related to
+			the server configuration.
+		</p><p>
+			For now, the best way to create and manage repositories in a SYSTEM
+			repository is to use the Sesame Console or OpenRDF Workebench
+			(experimental). The Sesame Console is a command-line application for
+			interacting with Sesame, see <a href="ch07.html" title="Chapter&nbsp;7.&nbsp;Sesame Console">Chapter&nbsp;7, <i>Sesame Console</i></a>.
+		</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch05.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch07.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;5.&nbsp;Application directory configuration&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;7.&nbsp;Sesame Console</td></tr></table></div></body></html>

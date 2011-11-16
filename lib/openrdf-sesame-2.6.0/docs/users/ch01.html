@@ -1,0 +1,68 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;1.&nbsp;rdf:about Sesame 2</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="User Guide for Sesame 2.3"><link rel="up" href="index.html" title="User Guide for Sesame 2.3"><link rel="prev" href="index.html" title="User Guide for Sesame 2.3"><link rel="next" href="ch02.html" title="Chapter&nbsp;2.&nbsp;Source code and binaries"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;1.&nbsp;rdf:about Sesame 2</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="index.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch02.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-sesame2-whats-new"></a>Chapter&nbsp;1.&nbsp;rdf:about Sesame 2</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="ch01.html#d0e14">1.1. What is it?</a></span></dt><dt><span class="section"><a href="ch01.html#d0e43">1.2. What's new?</a></span></dt></dl></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e14"></a>1.1.&nbsp;What is it?</h2></div></div></div><p>
+			Sesame is an open source Java framework for storage and querying of
+			RDF data. The framework is fully extensible and configurable with
+			respect to storage mechanisms, inferencers, RDF file formats, query
+			result formats and query languages. Sesame offers a JBDC-like user
+			API, streamlined system APIs and a RESTful HTTP interface supporting
+			the SPARQL Protocol for RDF.
+		</p><p>
+			Of course, a framework isn't very useful without implementations of
+			the various APIs. Out of the box, Sesame supports SPARQL and SeRQL
+			querying, a memory-based and a disk-based RDF store and RDF Schema
+			inferencers. It also supports most popular RDF file formats and
+			query result formats. Various extensions are available or are being
+			worked at elsewhere.
+		</p><p>
+			Originally, Sesame was developed by
+			<a href="http://www.aduna-software.com/" target="_top">Aduna</a> (then
+			known as Aidministrator) as a research prototype for the hugely
+			successful EU research project
+			<a href="http://www.ontoknowledge.org/" target="_top">On-To-Knowledge</a>.
+			When this work ended in 2001, Aduna continued the development in
+			cooperation with <a href="http://www.nlnet.nl/" target="_top">NLnet Foundation</a>,
+			developers from <a href="" target="_top">Ontotext</a>, and a number of volunteer developers who
+			contribute ideas, bug reports and fixes.
+		</p><p>
+			Sesame is currently developed as a community project, with Aduna as
+			the project leader. Community support is available from
+			<a href="http://www.openrdf.org/" target="_top">www.openrdf.org</a>. Aduna
+			also offers commercial support and consultency services, feel free
+			to <a href="http://www.aduna-software.com/contact/" target="_top">contact
+				us</a> for more information.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e43"></a>1.2.&nbsp;What's new?</h2></div></div></div><p>
+			For those who have previously worked with Sesame 1.x: Sesame 2 is an
+			important step forward from the Sesame 1.x series, building on the
+			feedback that has been gathered during the past years. A lot of
+			improvements have been made to various APIs as well as the framework
+			as a whole.
+		</p><p>
+			Unfortunately, because of all the changes to APIs and the like,
+			<span class="emphasis"><em>Sesame 2 is not backwards compatible with earlier
+				releases</em></span>. Therefore, we suggest you read through this
+			user guide before starting to port any applications to Sesame 2.
+		</p><p>
+			So what's new in Sesame 2? Well, in short:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				Sesame 2 is completely targeted at Java 5. All APIs use
+				Java 5 features such as typed collections and iterators.
+			</li><li>
+				Revised Repository API that is much more targeted at
+				the use of Sesame as a library.
+			</li><li>
+				Support for context/provenance, allowing you to keep track
+				of individual RDF data units (like files, for instance).
+			</li><li>
+				Proper transaction/rollback support.
+			</li><li>
+				A REST-ful HTTP protocol that includes support for the
+				<a href="http://www.w3.org/TR/rdf-sparql-protocol/" target="_top">SPARQL protocol</a> and
+				<a href="http://www.w3.org/TR/rdf-sparql-XMLres/" target="_top">SPARQL Query Results XML Format</a>,
+				which are currently both Proposed Recommendations from the W3C.
+			</li><li>
+				Support for the
+				<a href="http://www.w3.org/TR/rdf-sparql-query/" target="_top">SPARQL Query Language</a>.
+			</li></ul></div><p>
+			A lot of these new features will be covered in the next chapters.
+		</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="index.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">User Guide for Sesame 2.3&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;2.&nbsp;Source code and binaries</td></tr></table></div></body></html>

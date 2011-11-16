@@ -1,0 +1,708 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>System documentation for Sesame 2.x </title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" lang="en"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>System documentation for Sesame 2.x </h1></div><div><p class="releaseinfo">
+			Draft
+		</p></div><div><p class="copyright">Copyright &copy; 2002-2011 Aduna B.V.</p></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#chapter-introduction">1. Introduction</a></span></dt><dt><span class="chapter"><a href="#chapter-introduction">2. Architecture</a></span></dt><dt><span class="chapter"><a href="#chapter-rdfmodel">3. RDF Model</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e57">3.1. Package org.openrdf.model.impl</a></span></dt></dl></dd><dt><span class="chapter"><a href="#chapter-rio">4. Rio: RDF I/O</a></span></dt><dt><span class="chapter"><a href="#chapter-sailapi">5. Sail API</a></span></dt><dt><span class="chapter"><a href="#chapter-sailquerymodel">6. Sail Query model</a></span></dt><dt><span class="chapter"><a href="#chapter-repository">7. Repository API</a></span></dt><dt><span class="chapter"><a href="#chapter-http-protocol">8. HTTP communication protocol for Sesame 2</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e176">8.1. Protocol summary</a></span></dt><dt><span class="section"><a href="#d0e188">8.2. Protocol version</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e198">8.2.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e212">8.3. Repository list</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e230">8.3.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e244">8.4. Repository queries</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e278">8.4.1. Requests examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e314">8.5. Repository statements</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e363">8.5.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e465">8.6. Context lists</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e483">8.6.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e497">8.7. Namespace declaration lists</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e517">8.7.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e542">8.8. Namespace declarations</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e556">8.8.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e592">8.9. Repository size</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e607">8.9.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e632">8.10. Content types</a></span></dt><dt><span class="section"><a href="#d0e740">8.11. TODO</a></span></dt></dl></dd><dt><span class="chapter"><a href="#chapter-codingstyle">9. Coding Style</a></span></dt></dl></div><div class="list-of-figures"><p><b>List of Figures</b></p><dl><dt>2.1. <a href="#figure-sesame-arch">The Sesame architecture</a></dt><dt>3.1. <a href="#figure-rdf-model-uml">Class diagram for the RDF model</a></dt><dt>5.1. <a href="#figure-sail-api-uml">Class diagram for the Sail API</a></dt><dt>5.2. <a href="#figure-sail-stack">Example Sail stack</a></dt><dt>6.1. <a href="#figure-sail-query-model-uml">Class diagram for the Sail Query Model</a></dt><dt>7.1. <a href="#figure-sesame-rep">The Sesame 2 Repository API</a></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>8.1. <a href="#table-rdf-formats">MIME types for RDF formats</a></dt><dt>8.2. <a href="#table-var-binding-formats">MIME types for variable binding formats</a></dt><dt>8.3. <a href="#table-boolean-formats">MIME types for boolean result formats</a></dt></dl></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-introduction"></a>Chapter&nbsp;1.&nbsp;Introduction</h2></div></div></div><p>
+		Sesame is a system/framework for storing and querying RDF data. It
+		includes various storage backends (memory, file, database), query
+		languages, inferencers, and client-server protocols.
+	</p><p>
+		This document describes the general architecture and the APIs for Sesame
+		2.0, a major revision of Sesame that focusses on adding context- and
+		transaction support. The required API changes for this are quite
+		extensive and will likely not be fully compatible with previous
+		releases, hence the new major version number.
+	</p></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-introduction"></a>Chapter&nbsp;2.&nbsp;Architecture</h2></div></div></div><p>
+		The following figure shows the main components and APIs in Sesame and
+		how they are built on top of each other:
+	</p><div class="figure-float"><div class="figure"><a name="figure-sesame-arch"></a><p class="title"><b>Figure&nbsp;2.1.&nbsp;The Sesame architecture</b></p><div class="mediaobject"><img src="figures/block-diagram.png" alt="The Sesame architecture"></div></div></div><p>
+		Being an RDF-oriented framework, all parts of Sesame are to some extent
+		related to the RDF model. This model defines interfaces for the RDF
+		entities "URI", "blank node", "literal" and "statement".
+	</p><p>
+		Sesame has two main communication interfaces: the Sail API and the
+		Repository API. The Storage And Inference Layer (Sail) API is a low
+		level system API (or: SPI) for RDF stores and inferencers. It's
+		purpose is to abstract from the storage details, allowing various types
+		of storage and inference to be used.
+	</p><p>
+		The Repository API is a higer level API and is meant to be the main API
+		that people can program against. It offers various methods for uploading
+		data files, querying, and extracting and manipulating data. It comes in
+		two flavours: local and remote. The local Repository API can be used for
+		"local" repositories, as in "running in the same Java Virtual Machine".
+		The remote Repository API can be used in client-server settings, where
+		the application communicates with a Sesame server. The two flavours
+		share a common interface so that applications can be developed to work
+		with both local and remote repositories transparently.
+	</p><p>
+		Part of the Sail API is the Sail Query Model, which can be used to build
+		object models representing queries. A query engine like the SeRQL engine
+		takes care of parsing query strings and building such query object model
+		from them. These query object models can then be passed to Sail objects,
+		which take care of their evaluation.
+	</p><p>
+		Rio stands for "RDF I/O" and consists of a set of parsers and writers
+		for various RDF file formats. The parsers can be used to translate RDF
+		files to lists of statements, and the writers for the reverse operation.
+		Rio is used by the Repository API for data import and export, but can
+		also be used directly by applications.
+	</p></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-rdfmodel"></a>Chapter&nbsp;3.&nbsp;RDF Model</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#d0e57">3.1. Package org.openrdf.model.impl</a></span></dt></dl></div><div class="figure-float"><div class="figure"><a name="figure-rdf-model-uml"></a><p class="title"><b>Figure&nbsp;3.1.&nbsp;Class diagram for the RDF model</b></p><div class="mediaobject"><img src="figures/org_openrdf_model.jpg" alt="Class diagram for the RDF model"></div></div></div><p>
+		The class diagram above shows the interfaces that are defined in
+		Sesame's RDF Model, package
+			<a href="../apidocs/org/openrdf/model/package-summary.html" target="_top">
+			org.openrdf.model</a>.
+		The RDF entities "URI", "blank node" and "literal" are organized in a
+		hierarchy reflecting their use in RDF. The interfaces Value and Resource
+		are empty place holders to make this hierachical organization possible.
+		These place holders are also used in the Statement interface to
+		reference the appropriate set of value types for the subject and object.
+	</p><p>
+		Various implementations of the RDF Model interfaces are possible. For
+		example, a Sail implementation might have its own dedicated
+		implementation that adds Sail-specific functionality. The ValueFactory
+		interface allows one to transparently create any of these objects. Every
+		Sail is able to produce a ValueFactory object that can be used for this
+		purpose.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e57"></a>3.1.&nbsp;Package org.openrdf.model.impl</h2></div></div></div><p>
+			Package
+				<a href="../apidocs/org/openrdf/model/impl/package-summary.html" target="_top">
+				org.openrdf.model.impl</a>
+			contains a default implementation of the RDF Model interfaces. These
+			classes can be used by Sail implementations that have no need for
+			their own implementation. The classes are also useful when operating
+			outside the context of a Sail object, for example when using Rio as
+			a separate library.
+		</p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-rio"></a>Chapter&nbsp;4.&nbsp;Rio: RDF I/O</h2></div></div></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-sailapi"></a>Chapter&nbsp;5.&nbsp;Sail API</h2></div></div></div><div class="figure-float"><div class="figure"><a name="figure-sail-api-uml"></a><p class="title"><b>Figure&nbsp;5.1.&nbsp;Class diagram for the Sail API</b></p><div class="mediaobject"><img src="figures/org_openrdf_sesame_sail.jpg" alt="Class diagram for the Sail API"></div></div></div><p>
+		The class diagram above shows the main Sail interfaces from package
+			<a href="../apidocs/org/openrdf/sail/package-summary.html" target="_top">
+			org.openrdf.sesame.sail</a>.
+		The Sail API defines a set of interfaces for RDF stores and inferencers.
+		The main interface is Sail, which defines methods to initialize, query,
+		modify and shut down the Sail object.
+	</p><p>
+		For scalability reasons, all data that is extracted from a Sail object
+		is returned in the form of (forward-only) iterators. This allows one to
+		fetch the entire set of stored statements, even if the set is to large
+		to store in main memory. Queries are expressed in terms of the Sail
+		Query Model (see <a href="#chapter-sailquerymodel">Sail Query Model</a>).
+	</p><p>
+		New in Sesame 2.0 is the concept of statement contexts; a grouping
+		mechanism for statements. Statements can now be stored in contexts which
+		are identified by a URI or a blank node. Statements that are not stored
+		in a specific context are stored in the "default context". The Sail
+		interface defines methods for extracting the statements from a specific
+		context, from the default context, or from all contexts combined.
+	</p><p>
+		Also new in Sesame 2.0 is proper transaction support. Transactions are
+		modelled as separate objects, which is thought to be the most general
+		approach to modelling transactions: it allows the caller to create
+		transactions per object, per thread, or even per application.
+		Alternatives for matching commits or rollbacks to the appropriate
+		transaction are all more specific, e.g.: based on threads or calling
+		objects.
+	</p><p>
+		A Sail implementation may or may not support features like concurrent
+		transactions or transaction isolation; this is not defined by the Sail
+		API. Sails that do not have isolated transaction may block any query
+		calls during transactions; Sails that do not support concurrent
+		transactions might do the same for calls to startTransaction(). Sail
+		implementations should clearly document their behaviour with respect to
+		concurrent access.
+	</p><p>
+		Some Sails can be stacked on top of other Sails. These Sails should
+		implement the StackableSail interface. By stacking a Sail on top of
+		another, all calls for the bottom Sail will pass through the Sails that
+		are on top of it (see <a href="#figure-sail-stack" title="Figure&nbsp;5.2.&nbsp;Example Sail stack">Figure&nbsp;5.2, &#8220;Example Sail stack&#8221;</a>). This feature
+		can be used for a whole range of applications: access control,
+		pluggable inferencers, hooks to external services, etc. A concrete
+		example is a mixed forward-/backward-chaining inferencer, which will
+		wrap transactions to do its forward-chaining work upon commit and
+		extend queries to do its backward-chaining work.
+	</p><div class="figure-float"><div class="figure"><a name="figure-sail-stack"></a><p class="title"><b>Figure&nbsp;5.2.&nbsp;Example Sail stack</b></p><div class="mediaobject"><img src="figures/sail-stack.png" alt="Example Sail stack"></div></div></div><p>
+		SailChangedListener's can register themselves with Sail objects in
+		order to be notified of any changes in the stored data. Whenever this
+		happens, the Sail will generate a SailChangedEvent and pass it to all
+		regsitered listeners.
+	</p></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-sailquerymodel"></a>Chapter&nbsp;6.&nbsp;Sail Query model</h2></div></div></div><div class="figure-float"><div class="figure"><a name="figure-sail-query-model-uml"></a><p class="title"><b>Figure&nbsp;6.1.&nbsp;Class diagram for the Sail Query Model</b></p><div class="mediaobject"><img src="figures/org_openrdf_sesame_sail_query.jpg" alt="Class diagram for the Sail Query Model"></div></div></div><p>
+		The class diagram above shows the Sail Query model from package
+			<a href="../apidocs/org/openrdf/query/algebra/package-summary.html" target="_top">
+			org.openrdf.query.algebra</a>.
+		The Sail Query Model is a generic model for RDF queries. Queries in
+		various languages (SeRQL, RDQL, ...) are parsed to models built from
+		these classes. Objects of type Query can be handed over to Sail objects
+		for evaluation.
+	</p><p>
+		Sails are free to evaluate query models in a way that suits them best; a
+		Sail that operates on a powerful relational database supporting SQL, for
+		example, can translate (parts of) the query model to SQL queries. The
+		query model is also able to evaluate itself: The TripleSource interface
+		defines all methods that are needed by the query model to do this. By
+		implementing this interface, a Sail can use the self-evaluating feature.
+		The heuristics-based QueryOptimizer can be used to apply some general
+		optimizations to query models, resulting in lower evaluation times.
+	</p><p>
+		TODO:
+	</p><div class="itemizedlist"><ul type="disc"><li>Explain the Sail Query Model in more detail.</li><li>Reorganize the class diagram a little.</li></ul></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-repository"></a>Chapter&nbsp;7.&nbsp;Repository API</h2></div></div></div><p>
+		The following figure shows an outline of the Repository API of Sesame
+		2, the main access API for developers:
+	</p><div class="figure-float"><div class="figure"><a name="figure-sesame-rep"></a><p class="title"><b>Figure&nbsp;7.1.&nbsp;The Sesame 2 Repository API</b></p><div class="mediaobject"><img src="figures/org_openrdf_sesame_repository.jpg" alt="The Sesame 2 Repository API"></div></div></div><p>
+		As can be seen, the new Repository API has roughly the functionality of
+		the repository from Sesame 1.x: it allows declarative
+		querying through SeRQL and other query languages, as well as direct
+		API access on individual statements.
+	</p><p>
+		The RepositoryImpl class is an implementation of the Repository
+		interface. The Connection interface allows one to do modification operations
+		directly on the repository. 
+	</p><p>
+		By default, <code class="classname">autoCommit</code> will be set to true.
+		This means that any add or remove operation carried out on the
+		repository will be an isolated transaction. It can be switched to
+		false to allow batch operations in a single transaction, improving
+		performance of such operations significantly.
+	</p><p>
+		Some code examples:
+	</p><pre class="programlisting">
+// create a new repository (no inferencing, in memory storage)
+Repository repository = new RepositoryImpl(MemoryStore.create());
+
+// create a statement and add it to the store
+ValueFactory factory = repository.getValueFactory();
+URI subject = factory.createURI("http://example.org/foo");
+URI object = factory.createUR("http://example.org/bar");
+
+Connection con = repository.getConnection();
+con.add(subject, RDF.TYPE, object);
+
+// now we want to export the contents of the store as N-Triples to
+// standard output:
+RDFHandler ntriplesWriter = new NTriplesWriter(System.out);
+con.getStatements(ntriplesWriter);
+
+// now we want the result of a query to be written as N-Triples
+String query = "SELECT * FROM {X} P {Y}";
+con.evaluateGraphQuery(QueryLanguage.SERQL, query, ntriplesWriter);
+
+// done, close the connection
+con.close();
+
+// we open an explicit transaction for uploading a file to the store
+File file = new File("/foo/bar/example.rdf");
+try { 
+  Connection newCon = repository.getConnection();
+  newCon.setAutoCommit(false);
+  
+  con.add(file, "http://www.foo.bar/", RDFFormat.RDFXML);
+  con.commit();
+}
+catch (Exception e) { // on any exception, we cancel the transaction
+  if (con != null) {
+    con.rollback();
+  }
+}</pre></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-http-protocol"></a>Chapter&nbsp;8.&nbsp;HTTP communication protocol for Sesame 2</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#d0e176">8.1. Protocol summary</a></span></dt><dt><span class="section"><a href="#d0e188">8.2. Protocol version</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e198">8.2.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e212">8.3. Repository list</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e230">8.3.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e244">8.4. Repository queries</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e278">8.4.1. Requests examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e314">8.5. Repository statements</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e363">8.5.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e465">8.6. Context lists</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e483">8.6.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e497">8.7. Namespace declaration lists</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e517">8.7.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e542">8.8. Namespace declarations</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e556">8.8.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e592">8.9. Repository size</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e607">8.9.1. Request examples</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e632">8.10. Content types</a></span></dt><dt><span class="section"><a href="#d0e740">8.11. TODO</a></span></dt></dl></div><p>
+		The following is a description of the HTTP-based communication protocol
+		for Sesame 2. Design consideration for the protocol included the rules
+		for the REST architectural style. In brief, this means that URLs are
+		used to represent resources and that standard HTTP methods (GET, PUT,
+		etc.) are used to access these resources. Client properties such as the
+		data formats that it can process are communicated to the server using
+		HTTP headers like <span class="emphasis"><em>Accept</em></span> and are not part of the
+		URLs. This way, a resource identified by a specific URL can, for
+		example, be presented as an HTML page to a web browser and as a binary
+		content stream to a client library. For more in depth information about
+		REST see
+		<a href="http://en.wikipedia.org/wiki/REST" target="_top">http://en.wikipedia.org/wiki/REST</a>,
+		<a href="http://rest.blueoxen.net/" target="_top">http://rest.blueoxen.net/</a> and
+		<a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" target="_top">http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm</a>.
+		More information about HTTP in general and HTTP headers in particular
+		can be found in <a href="http://www.ietf.org/rfc/rfc2616.txt" target="_top">RFC
+			2616 - Hypertext Transfer Protocol -- HTTP/1.1</a>.
+	</p><p>
+	    The Sesame 2 HTTP communication protocol is a fully compliant
+	    superset of the <a href="http://www.w3.org/TR/rdf-sparql-protocol/" target="_top">SPARQL Protocol
+		for RDF</a> W3C Recommendation. The current version of the
+	    protocol additionally supports communication for SPARQL 1.1 Update
+	    operations, as described in the <a href="http://www.w3.org/TR/sparql11-protocol/" target="_top">SPARQL 1.1
+		Protocol for RDF</a> W3C Working Draft.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e176"></a>8.1.&nbsp;Protocol summary</h2></div></div></div><p>
+			The REST architectural style implies that URLs are used to represent
+			the various resources that are available on a server. This section
+			gives a summary of the resources that are available from a Sesame
+			server with the HTTP-methods that can be used on them. In this
+			overview, &lt;SESAME_URL&gt; is used to denote the location of the
+			Sesame server, e.g. <span class="emphasis"><em>http://localhost/openrdf-sesame</em></span>.
+			Likewise, &lt;REP_ID&gt; denotes the ID of a specific repository
+			(e.g. "mem-rdf"), and &lt;PREFIX&gt; denotes a namespace prefix
+			(e.g. "rdfs").
+		</p><p>
+			The following is an overview of the resources that are available
+			from a Sesame server.
+		</p><pre class="screen">
+&lt;SESAME_URL&gt;
+    /protocol             : protocol version (GET)
+    /repositories         : overview of available repositories (GET)
+        /&lt;REP_ID&gt;         : query evaluation on a repository (GET/POST)
+            /statements   : repository statements (GET/POST/PUT/DELETE)
+            /contexts     : context overview (GET)
+            /size         : #statements in repository (GET)
+            /namespaces   : overview of namespace definitions (GET/DELETE)
+                /&lt;PREFIX&gt; : namespace-prefix definition (GET/PUT/DELETE)</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e188"></a>8.2.&nbsp;Protocol version</h2></div></div></div><p>
+			The version of the protocol that the server uses to communicate over
+			HTTP is available at: &lt;SESAME_URL&gt;/protocol. The version
+			described by this chapter is "6".
+		</p><p>
+			Supported methods on this URL are:
+		</p><div class="itemizedlist"><ul type="disc"><li>GET: Gets the protocol version string, e.g. "1", "2", etc.</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e198"></a>8.2.1.&nbsp;Request examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e201"></a>8.2.1.1.&nbsp;Fetch the protocol version</h4></div></div></div><p>Request:</p><pre class="screen">
+GET /openrdf-sesame/protocol HTTP/1.1
+Host: localhost</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 1
+
+4</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e212"></a>8.3.&nbsp;Repository list</h2></div></div></div><p>
+			An overview of the repositories that are available on a server can
+			be retrieved from &lt;SESAME_URL&gt;/repositories.
+		</p><p>
+			Supported methods on this URL are:
+		</p><div class="itemizedlist"><ul type="disc"><li>GET: Gets an list of available repositories, including ID,
+			title, read- and write access parameters for each listed repository.
+			The list is formatted as a tuple query result with variables "uri",
+			"id", "title", "readable" and "writable". The "uri" value gives the
+			URI/URL for the repository and the "readable" and "writable" values
+			are xsd:boolean typed literals indicating read- and write
+			permissions.</li></ul></div><p>
+			Request headers:
+		</p><div class="itemizedlist"><ul type="disc"><li>'Accept': Relevant values are the
+			<a href="#table-var-binding-formats" title="Table&nbsp;8.2.&nbsp;MIME types for variable binding formats">MIME types of supported
+				variable binding formats</a>.</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e230"></a>8.3.1.&nbsp;Request examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e233"></a>8.3.1.1.&nbsp;Fetch the repository list</h4></div></div></div><p>Request:</p><pre class="screen">
+GET /openrdf-sesame/repositories HTTP/1.1
+Host: localhost
+Accept: application/sparql-results+xml, */*;q=0.5</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: application/sparql-results+xml;charset=UTF-8
+
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;sparql xmlns='http://www.w3.org/2005/sparql-results#'&gt;
+  &lt;head&gt;
+    &lt;variable name='uri'/&gt;
+    &lt;variable name='id'/&gt;
+    &lt;variable name='title'/&gt;
+    &lt;variable name='readable'/&gt;
+    &lt;variable name='writable'/&gt;
+  &lt;/head&gt;
+  &lt;results ordered='false' distinct='false'&gt;
+    &lt;result&gt;
+      &lt;binding name='uri'&gt;
+        &lt;uri&gt;http://localhost/openrdf-sesame/repositories/mem-rdf&lt;/uri&gt;
+      &lt;/binding&gt;
+      &lt;binding name='id'&gt;
+        &lt;literal&gt;mem-rdf&lt;/literal&gt;
+      &lt;/binding&gt;
+      &lt;binding name='title'&gt;
+        &lt;literal&gt;Main Memory RDF repository&lt;/literal&gt;
+      &lt;/binding&gt;
+      &lt;binding name='readable'&gt;
+        &lt;literal datatype='http://www.w3.org/2001/XMLSchema#boolean'&gt;true&lt;/literal&gt;
+      &lt;/binding&gt;
+      &lt;binding name='writable'&gt;
+        &lt;literal datatype='http://www.w3.org/2001/XMLSchema#boolean'&gt;false&lt;/literal&gt;
+      &lt;/binding&gt;
+    &lt;/result&gt;
+  &lt;/results&gt;
+&lt;/sparql&gt;</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e244"></a>8.4.&nbsp;Repository queries</h2></div></div></div><p>
+			Queries on a specific repository with ID &lt;ID&gt; can be evaluated
+			by sending requests to: &lt;SESAME_URL&gt;/repositories/&lt;ID&gt;.
+			Both GET and POST methods are supported. The GET method is preferred
+			as it adheres to the REST architectural style. The POST method
+			should be used in cases where the length of the (URL-encoded) query
+			exceeds practicable limits of proxies, servers, etc. In case a POST
+			request is used, the query parameters should be send to the server
+			as www-form-urlencoded data.
+		</p><p>
+			Parameters:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				'query': The query to evaluate.
+			</li><li>
+				'queryLn' (optional): Specifies the query language that is used
+				for the query. Acceptable values are strings denoting the query
+				languages supported by the server, i.e. "serql" for SeRQL
+				queries and "sparql" for SPARQL queries. If not specified, the
+				server assumes the query is a SPARQL query.
+			</li><li>
+				'infer' (optional): Specifies whether inferred statements should
+				be included in the query evaluation. Inferred statements are
+				included by default. Specifying any value other than "true"
+				(ignoring case) restricts the query evluation to explicit
+				statements only.
+			 </li><li>'$&lt;varname&gt;' (optional): specifies variable
+				bindings. Variables appearing in the query can be bound to a
+				specific value outside the actual query using this option. The
+				value should be an N-Triples encoded RDF value.
+			 </li><li>'$&lt;timeout&gt;' (optional): specifies a maximum query execution time, in whole seconds. The value should be an integer. A setting of 0 or a negative number indicates unlimited query time (the default).
+			 </li></ul></div><p>
+			Request headers:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				'Accept': Relevant values are the
+				<a href="#table-rdf-formats" title="Table&nbsp;8.1.&nbsp;MIME types for RDF formats">MIME types of supported RDF formats</a> for graph queries, the
+				<a href="#table-var-binding-formats" title="Table&nbsp;8.2.&nbsp;MIME types for variable binding formats">MIME types of supported variable binding formats</a> for tuple queries, and the 
+				<a href="#table-boolean-formats" title="Table&nbsp;8.3.&nbsp;MIME types for boolean result formats">MIME types of supported boolean result formats</a> for boolean queries.
+			</li><li>
+				'Content-Type': Must be equal to
+				"application/x-www-form-urlencoded" when POST requests are used.
+			</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e278"></a>8.4.1.&nbsp;Requests examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e281"></a>8.4.1.1.&nbsp;Evaluate a SeRQL-select query on repository "mem-ref"</h4></div></div></div><p>Request:</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf?query=select%20%3Cfoo:bar%3E&amp;queryLn=serql HTTP/1.1
+Host: localhost
+Accept: application/sparql-results+xml, */*;q=0.5</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: application/sparql-results+xml;charset=UTF-8
+
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;sparql xmlns='http://www.w3.org/2005/sparql-results#'&gt;
+  &lt;head&gt;
+    &lt;variable name='&amp;lt;foo:bar&amp;gt;'/&gt;
+  &lt;/head&gt;
+  &lt;results ordered='false' distinct='false'&gt;
+    &lt;result&gt;
+      &lt;binding name='&amp;lt;foo:bar&amp;gt;'&gt;
+        &lt;uri&gt;foo:bar&lt;/uri&gt;
+      &lt;/binding&gt;
+    &lt;/result&gt;
+  &lt;/results&gt;
+&lt;/sparql&gt;</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e292"></a>8.4.1.2.&nbsp;Evaluate a SPARQL-construct query on repository "mem-ref"
+					using a POST request</h4></div></div></div><p>Request:</p><pre class="screen">
+POST /openrdf-sesame/repositories/mem-rdf HTTP/1.1
+Host: localhost
+Content-Type: application/x-www-form-urlencoded
+Accept: application/rdf+xml, */*;q=0.5
+
+query=construct%20{?s%20?p%20?o}%20where%20{?s%20?p%20?o}</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: application/rdf+xml;charset=UTF-8
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;
+&lt;/rdf:RDF&gt;</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e303"></a>8.4.1.3.&nbsp;Evaluate a SPARQL-ask query on repository "mem-ref"</h4></div></div></div><p>Request:</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf?query=ask%20{?s%20?p%20?o} HTTP/1.1
+Host: localhost
+Accept: text/boolean, */*;q=0.5</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: text/boolean;charset=US-ASCII
+
+true</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e314"></a>8.5.&nbsp;Repository statements</h2></div></div></div><p>
+			The statements for a specific repository with ID &lt;ID&gt; are
+			available at: &lt;SESAME_URL&gt;/repositories/&lt;ID&gt;/statements
+		</p><p>
+			Supported methods on this URL are:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				GET: Fetches statements from the repository.
+			</li><li>
+				PUT: Updates data in the repository, replacing any existing data
+				with the supplied data. The data supplied with this request is
+				expected to contain an RDF document in
+				<a href="#table-rdf-formats" title="Table&nbsp;8.1.&nbsp;MIME types for RDF formats">one of the supported RDF
+					formats</a>.
+			</li><li>
+				DELETE: Deletes statements from the repository.
+			</li><li>
+				POST: Performs updates on the data in the
+				repository. The data supplied with this request
+				is expected to contain either an RDF document,
+				a SPARQL 1.1 Update string, or a special
+				purpose transaction document. If an RDF
+				document is supplied, the statements found in
+				the RDF document will be added to the
+				repository. If a SPARQL 1.1 Update string is
+				supplied, the update operation will be parsed
+				and executed. If a transaction document is
+				supplied, the updates specified in the
+				transaction document will be executed.
+			</li></ul></div><p>
+			Parameters:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				'subj' (optional): Restricts a GET or DELETE operation to
+				statements with the specified N-Triples encoded resource as
+				subject.
+			</li><li>
+				'pred' (optional): Restricts a GET or DELETE operation to
+				statements with the specified N-Triples encoded URI as
+				predicate.
+			</li><li>
+				'obj' (optional): Restricts a GET or DELETE operation to
+				statements with the specified N-Triples encoded value as
+				object.
+			    </li><li>
+				'update' (optional): Only relevant for POST
+				operations. Specifies the SPARQL 1.1 Update
+				string to be executed. The value is expected to
+				be a syntactically valid SPARQL 1.1 Update
+				string.
+			</li><li>
+				'context' (optional): If specified, restricts the operation to
+				one or more specific contexts in the repository. The value of
+				this parameter is either an N-Triples encoded URI or bnode ID,
+				or the special value 'null' which represents all context-less
+				statements. If multiple 'context' parameters are specified, the
+				request will operate on the union of all specified contexts.
+				The operation is executed on all statements that are in the
+				repository if no context is specified.
+			</li><li>
+				'infer' (optional): Specifies whether inferred statements should
+				be included in the result of GET requests. Inferred statements
+				are included by default. Specifying any value other than "true"
+				(ignoring case) restricts the request to explicit statements
+				only.
+			</li><li>
+				'baseURI' (optional): Specifies the base URI to resolve any
+				relative URIs found in uploaded data against. This parameter
+				only applies to the PUT and POST method.
+			</li></ul></div><p>
+			Request headers:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				'Accept': Relevant values for GET requests are the
+				<a href="#table-rdf-formats" title="Table&nbsp;8.1.&nbsp;MIME types for RDF formats">MIME types of supported RDF
+					formats</a>.
+			</li><li>
+				'Content-Type': Must specify the encoding of any request data
+				that is sent to a server. Relevant values are the
+				<a href="#table-rdf-formats" title="Table&nbsp;8.1.&nbsp;MIME types for RDF formats">MIME types of supported RDF
+					formats</a>, "application/x-rdftransaction" for a
+				transaction document and "application/x-www-form-urlencoded" in
+				case the parameters are encoded in the request body (as opposed
+				to the being part of the request URL).
+			</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e363"></a>8.5.1.&nbsp;Request examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e366"></a>8.5.1.1.&nbsp;Fetch all statements from repository "mem-rdf"</h4></div></div></div><p>Request:</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf/statements HTTP/1.1
+Host: localhost
+Accept: application/rdf+xml</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: application/rdf+xml;charset=UTF-8
+
+[RDF/XML ENCODED RDF DATA]</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e377"></a>8.5.1.2.&nbsp;Fetch all statements from a specific context in repository "mem-rdf"</h4></div></div></div><p>Request:</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf/statements?context=_:n1234x5678 HTTP/1.1
+Host: localhost
+Accept: application/rdf+xml</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: application/rdf+xml;charset=UTF-8
+
+[RDF/XML ENCODED RDF DATA]</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e388"></a>8.5.1.3.&nbsp;Remove all statements from the "mem-rdf" repository</h4></div></div></div><p>Request:</p><pre class="screen">
+DELETE /openrdf-sesame/repositories/mem-rdf/statements HTTP/1.1
+Host: localhost</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e399"></a>8.5.1.4.&nbsp;Add data to the "mem-rdf" repository</h4></div></div></div><p>Request:</p><pre class="screen">
+POST /openrdf-sesame/repositories/mem-rdf/statements HTTP/1.1
+Host: localhost
+Content-Type: application/rdf+xml;charset=UTF-8
+  
+[RDF/XML ENCODED RDF DATA]</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e410"></a>8.5.1.5.&nbsp;Add data to the "mem-rdf" repository, replacing any and
+					all existing data</h4></div></div></div><p>Request:</p><pre class="screen">
+PUT /openrdf-sesame/repositories/mem-rdf/statements HTTP/1.1
+Host: localhost
+Content-Type: application/rdf+xml;charset=UTF-8
+  
+[RDF/XML ENCODED RDF DATA]</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e421"></a>8.5.1.6.&nbsp;Add data to a specific context in the "mem-rdf"
+					repository, replacing any data that is currently in this
+					context</h4></div></div></div><p>Request:</p><pre class="screen">
+PUT /openrdf-sesame/repositories/mem-rdf/statements?context=%3Curn:x-local:graph1%3E&amp;baseURI=%3Curn:x-local:graph1%3E HTTP/1.1
+Host: localhost
+Content-Type: application/x-turtle;charset=UTF-8
+
+[TURTLE ENCODED RDF DATA]</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e432"></a>8.5.1.7.&nbsp;Add statements without a context to the "mem-rdf"
+					repository, ignoring any context information that is
+					encoded in the supplied data</h4></div></div></div><p>Request:</p><pre class="screen">
+POST /openrdf-sesame/repositories/mem-rdf/statements?context=null HTTP/1.1
+Host: localhost
+Content-Type: application/x-turtle;charset=UTF-8
+
+[TURTLE ENCODED RDF DATA]</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e443"></a>8.5.1.8.&nbsp;Perform update described in a SPARQL 1.1 Update string</h4></div></div></div><p>Request:</p><pre class="screen">
+POST /openrdf-sesame/repositories/mem-rdf/statements HTTP/1.1
+Host: localhost
+Content-Type: application/x-www-form-urlencoded
+
+update=INSERT%20{?s%20?p%20?o}%20WHERE%20{?s%20?p%20?o}</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e454"></a>8.5.1.9.&nbsp;Perform updates described in a transaction document and
+					treat it as a single transaction</h4></div></div></div><p>Request:</p><pre class="screen">
+POST /openrdf-sesame/repositories/mem-rdf/statements HTTP/1.1
+Host: localhost
+Content-Type: application/x-rdftransaction
+
+[TRANSACTION DATA]</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e465"></a>8.6.&nbsp;Context lists</h2></div></div></div><p>
+			A list of resources that are used as context identifiers in a
+			repository with ID &lt;ID&gt; is available at:
+			&lt;SESAME_URL&gt;/repositories/&lt;ID&gt;/contexts
+		</p><p>
+			Supported methods on this URL are:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				GET: Gets a list of resources that are used as context
+				identifiers. The list is formatted as a tuple query result with
+				a single variable "contextID", which is bound to URIs and bnodes
+				that are used as context identifiers.
+			</li></ul></div><p>
+			Request headers:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				'Accept': Relevant values are the
+				<a href="#table-var-binding-formats" title="Table&nbsp;8.2.&nbsp;MIME types for variable binding formats">MIME types of
+				supported variable binding formats</a>.
+			</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e483"></a>8.6.1.&nbsp;Request examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e486"></a>8.6.1.1.&nbsp;Fetch all context identifiers from repository "mem-rdf"</h4></div></div></div><p>Request:</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf/contexts HTTP/1.1
+Host: localhost
+Accept: application/sparql-results+xml</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: application/sparql-results+xml
+
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;sparql xmlns='http://www.w3.org/2005/sparql-results#'&gt;
+  &lt;head&gt;
+    &lt;variable name='contextID'/&gt;
+  &lt;/head&gt;
+  &lt;results ordered='false' distinct='false'&gt;
+    &lt;result&gt;
+      &lt;binding name='contextID'&gt;
+        &lt;uri&gt;urn:x-local:graph1&lt;/uri&gt;
+      &lt;/binding&gt;
+    &lt;/result&gt;
+  &lt;/results&gt;
+&lt;/sparql&gt;</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e497"></a>8.7.&nbsp;Namespace declaration lists</h2></div></div></div><p>
+			Namespace declaration lists for a repository with ID &lt;ID&gt; are
+			available at: &lt;SESAME_URL&gt;/repositories/&lt;ID&gt;/namespaces.
+		</p><p>
+			Supported methods on this URL are:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				GET: Gets a list of namespace declarations that have been
+				defined for the repository. The list is formatted as a tuple
+				query result with variables "prefix" and "namespace", which are
+				both bound to literals.
+			</li><li>
+				DELETE: Removes all namespace declarations from the repository.
+			</li></ul></div><p>
+			Request headers:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				'Accept': Relevant values for GET requests are the
+				<a href="#table-var-binding-formats" title="Table&nbsp;8.2.&nbsp;MIME types for variable binding formats">MIME types of
+				supported variable binding formats</a>.
+			</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e517"></a>8.7.1.&nbsp;Request examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e520"></a>8.7.1.1.&nbsp;Fetch all namespace declaration info</h4></div></div></div><p>Request</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf/namespaces HTTP/1.1
+Host: localhost
+Accept: application/sparql-results+xml, */*;q=0.5</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: application/sparql-results+xml
+
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;sparql xmlns='http://www.w3.org/2005/sparql-results#'&gt;
+  &lt;head&gt;
+    &lt;variable name='prefix'/&gt;
+    &lt;variable name='namespace'/&gt;
+  &lt;/head&gt;
+  &lt;results ordered='false' distinct='false'&gt;
+    &lt;result&gt;
+      &lt;binding name='prefix'&gt;
+        &lt;literal&gt;rdf&lt;/literal&gt;
+      &lt;/binding&gt;
+      &lt;binding name='namespace'&gt;
+        &lt;literal&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt;/literal&gt;
+      &lt;/binding&gt;
+    &lt;/result&gt;
+  &lt;/results&gt;
+&lt;/sparql&gt;</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e531"></a>8.7.1.2.&nbsp;Remove all namespace declarations from the repository.</h4></div></div></div><p>Request:</p><pre class="screen">
+DELETE /openrdf-sesame/repositories/mem-rdf/namespaces HTTP/1.1
+Host: localhost</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e542"></a>8.8.&nbsp;Namespace declarations</h2></div></div></div><p>
+			Namespace declarations with prefix &lt;PREFIX&gt; for a
+			repository with ID &lt;ID&gt; are available at:
+			&lt;SESAME_URL&gt;/repositories/&lt;ID&gt;/namespaces/&lt;PREFIX&gt;.
+		</p><p>
+			Supported methods on this URL are:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				GET: Gets the namespace that has been defined for a particular
+				prefix.
+			</li><li>
+				PUT: Defines or updates a namespace declaration, mapping the
+				prefix to the namespace that is supplied in plain text in the
+				request body.
+			</li><li>
+				DELETE: Removes a namespace declaration.
+			</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e556"></a>8.8.1.&nbsp;Request examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e559"></a>8.8.1.1.&nbsp;Get the namespace for prefix 'rdf'</h4></div></div></div><p>Request</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf/namespaces/rdf HTTP/1.1
+Host: localhost</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=UTF-8
+
+http://www.w3.org/1999/02/22-rdf-syntax-ns#</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e570"></a>8.8.1.2.&nbsp;Set the namespace for a specific prefix</h4></div></div></div><p>Request:</p><pre class="screen">
+PUT /openrdf-sesame/repositories/mem-rdf/namespaces/example HTTP/1.1
+Host: localhost
+Content-Type: text/plain
+
+http://www.example.com</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e581"></a>8.8.1.3.&nbsp;Remove the namespace for a specific prefix</h4></div></div></div><p>Request:</p><pre class="screen">
+DELETE /openrdf-sesame/repositories/mem-rdf/namespaces/example HTTP/1.1
+Host: localhost</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 204 NO CONTENT</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e592"></a>8.9.&nbsp;Repository size</h2></div></div></div><p>
+			The repository size (defined as the number of statements it
+			contains) is available at:
+			&lt;SESAME_URL&gt;/repositories/&lt;ID&gt;/size.
+		</p><p>
+			Supported methods on this URL are:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				GET: Gets the number of statements in a repository.
+			</li></ul></div><p>
+			Parameters:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				'context' (optional): If specified, restricts the operation to
+				one or more specific contexts in the repository. The value of
+				this parameter is either an N-Triples encoded URI or bnode ID,
+				or the special value 'null' which represents all context-less
+				statements. If multiple 'context' parameters are specified, the
+				request will operate on the union of all specified contexts.
+				The operation is executed on all statements that are in the
+				repository if no context is specified.
+			</li></ul></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e607"></a>8.9.1.&nbsp;Request examples</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e610"></a>8.9.1.1.&nbsp;Get the size of repository 'mem-rdf'</h4></div></div></div><p>Request</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf/size HTTP/1.1
+Host: localhost</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: text/plain
+
+123456</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e621"></a>8.9.1.2.&nbsp;Get the size of a specific context in repository 'mem-rdf'</h4></div></div></div><p>Request</p><pre class="screen">
+GET /openrdf-sesame/repositories/mem-rdf/size?context=%3Curn:x-local:graph1%3E HTTP/1.1
+Host: localhost</pre><p>Response:</p><pre class="screen">
+HTTP/1.1 200 OK
+Content-Type: text/plain
+
+4321</pre></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e632"></a>8.10.&nbsp;Content types</h2></div></div></div><p>
+			The following table summarizes the MIME types for various document
+			formats that are relevant to this protocol.
+		</p><div class="table"><a name="table-rdf-formats"></a><p class="title"><b>Table&nbsp;8.1.&nbsp;MIME types for RDF formats</b></p><table summary="MIME types for RDF formats" border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="left">Format</th><th align="left">MIME type</th></tr></thead><tbody><tr><td align="left"><a href="http://www.w3.org/TR/rdf-syntax-grammar/" target="_top">RDF/XML</a></td><td align="left">application/rdf+xml</td></tr><tr><td align="left"><a href="http://www.w3.org/TR/rdf-testcases/#ntriples" target="_top">N-Triples</a></td><td align="left">text/plain</td></tr><tr><td align="left"><a href="http://www.dajobe.org/2004/01/turtle/" target="_top">Turtle</a></td><td align="left">application/x-turtle</td></tr><tr><td align="left"><a href="http://www.w3.org/DesignIssues/Notation3.html" target="_top">N3</a></td><td align="left">text/rdf+n3</td></tr><tr><td align="left"><a href="http://swdev.nokia.com/trix/TriX.html" target="_top">TriX</a></td><td align="left">application/trix</td></tr><tr><td align="left"><a href="http://www4.wiwiss.fu-berlin.de/bizer/TriG/Spec/" target="_top">TriG</a></td><td align="left">application/x-trig</td></tr></tbody></table></div><p>
+			<span class="emphasis"><em>
+				Note: Sesame currently does not support N3 as an input format.
+				For N3 documents that only use the basic N3 features, the Turtle
+				format can be used instead.
+			</em></span>
+		</p><div class="table"><a name="table-var-binding-formats"></a><p class="title"><b>Table&nbsp;8.2.&nbsp;MIME types for variable binding formats</b></p><table summary="MIME types for variable binding formats" border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="left">Format</th><th align="left">MIME type</th></tr></thead><tbody><tr><td align="left"><a href="http://www.w3.org/TR/rdf-sparql-XMLres/" target="_top">SPARQL
+						Query Results XML Format</a></td><td align="left">application/sparql-results+xml</td></tr><tr><td align="left">&gt;<a href="http://www.w3.org/TR/rdf-sparql-json-res/" target="_top">SPARQL
+						Query Results JSON Format</a></td><td align="left">application/sparql-results+json</td></tr><tr><td align="left">binary RDF results table format</td><td align="left">application/x-binary-rdf-results-table</td></tr></tbody></table></div><div class="table"><a name="table-boolean-formats"></a><p class="title"><b>Table&nbsp;8.3.&nbsp;MIME types for boolean result formats</b></p><table summary="MIME types for boolean result formats" border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="left">Format</th><th align="left">MIME type</th></tr></thead><tbody><tr><td align="left"><a href="http://www.w3.org/TR/rdf-sparql-XMLres/" target="_top">SPARQL
+						Query Results XML Format</a></td><td align="left">application/sparql-results+xml</td></tr><tr><td align="left">plain text boolean result format</td><td align="left">text/boolean</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e740"></a>8.11.&nbsp;TODO</h2></div></div></div><div class="itemizedlist"><ul type="disc"><li>
+				Document HTTP error codes
+			</li><li>
+				Decide on authentication/login mechanism
+			</li><li>
+				Describe use of HEAD and OPTIONS methods
+			</li></ul></div></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-codingstyle"></a>Chapter&nbsp;9.&nbsp;Coding Style</h2></div></div></div><p>
+		The following guide lines are used for the Java source code of Sesame:
+	</p><div class="itemizedlist"><ul type="disc"><li>Tabs are used for indentation</li><li>Code doesn't extend further than column 110</li><li>Comments do not extend further than column 80</li><li>Classes, methods, variables, etc. are as private as
+			possible (but not to the level where it gets inconvenient). So,
+			variables that are only accessed by the class they're defined in are
+			private, methods used by subclasses are protected, etc. This keeps
+			the APIs as clear and minimal as possible, making it easier to
+			restructure a class internally. Making classes, methods, etc. more
+			public is safe and easy, the reverse is hard and potentially breaks
+			backwards compatibility.</li><li>Class names start with an upper case letter (e.g.:
+			MyClassName), method- and variable names start with a lower case
+			letter (e.g. _name and getName()).</li><li>Class-, method- and variable names that consist of more than
+			one word capitalize the first letter of each word, for example:
+			MyClassName, myMethod() and _myVariable. Words that are actually
+			abbreviations of names appear as-is, e.g.: XMLUtil, RDFParser and
+			SeRQLEngine.</li><li>Names of constants (final variables) are in all-uppercase
+			letters.</li><li>All source files start with a comment containing the standard
+			BSD-header and mentions the appropriate copyright holder(s).</li></ul></div></div></div></body></html>

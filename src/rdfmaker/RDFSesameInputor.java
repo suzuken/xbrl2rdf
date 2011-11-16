@@ -21,7 +21,7 @@ import org.openrdf.repository.RepositoryException;
 import org.openrdf.repository.http.HTTPRepository;
 import org.openrdf.rio.RDFFormat;
 
-import org.apache.commons.httpclient.*;
+//import org.apache.commons.httpclient.HttpClient;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;

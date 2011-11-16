@@ -1,0 +1,284 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;7.&nbsp;Sesame Console</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="User Guide for Sesame 2.3"><link rel="up" href="index.html" title="User Guide for Sesame 2.3"><link rel="prev" href="ch06.html" title="Chapter&nbsp;6.&nbsp;Server software installation"><link rel="next" href="ch08.html" title="Chapter&nbsp;8.&nbsp;The Repository API"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;7.&nbsp;Sesame Console</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch06.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch08.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-console"></a>Chapter&nbsp;7.&nbsp;Sesame Console</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="ch07.html#d0e374">7.1. Getting started</a></span></dt><dt><span class="section"><a href="ch07.html#d0e395">7.2. Connecting to a set of repositories</a></span></dt><dt><span class="section"><a href="ch07.html#d0e405">7.3. Repository list</a></span></dt><dt><span class="section"><a href="ch07.html#section-console-repository-creation">7.4. Creating a repository</a></span></dt><dt><span class="section"><a href="ch07.html#d0e466">7.5. Other commands</a></span></dt><dt><span class="section"><a href="ch07.html#section-repository-config">7.6. Repository configuration</a></span></dt><dd><dl><dt><span class="section"><a href="ch07.html#d0e474">7.6.1. Memory store configuration</a></span></dt><dt><span class="section"><a href="ch07.html#section-native-store-config">7.6.2. Native store configuration</a></span></dt><dt><span class="section"><a href="ch07.html#section-rdbms-store-config">7.6.3. RDBMS store configuration</a></span></dt><dt><span class="section"><a href="ch07.html#d0e595">7.6.4. HTTP repository configuration</a></span></dt></dl></dd><dt><span class="section"><a href="ch07.html#d0e626">7.7. Repository configuration templates (advanced)</a></span></dt></dl></div><p>
+		This chapter describes Sesame Console, a command-line application for
+		interacting with Sesame. For now, the best way to create and manage
+		repositories in a SYSTEM repository is to use the Sesame Console.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e374"></a>7.1.&nbsp;Getting started</h2></div></div></div><p>
+			Sesame Console can be started using the
+			<code class="filename">console.bat/.sh</code> scripts that can be found in
+			the <code class="filename">bin</code> directory of the Sesame SDK. By default,
+			the console will connect to the "default data directory", which contains
+			the console's own set of repositories. See
+			<a href="ch05.html" title="Chapter&nbsp;5.&nbsp;Application directory configuration">Chapter&nbsp;5, <i>Application directory configuration</i></a> for more info on data directories.
+		</p><p>
+			The console can be operated by typing commands. Commands can span multiple
+			lines and end with a '.' at the end of a line. For example, to get an
+			overview of the available commands, type:
+		</p><pre class="screen">help.</pre><p>
+			To get help for a specific command, type 'help' followed by the command name,
+			e.g.:
+		</p><pre class="screen">help connect.</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e395"></a>7.2.&nbsp;Connecting to a set of repositories</h2></div></div></div><p>
+			As indicated in the previous section, the console connects to its own
+			set of repositories by default. Using the <span><strong class="command">connect</strong></span>
+			command you can make the console connect to a Sesame Server or to a
+			set of repositories of your file system. For example, to connect to a
+			Sesame Server that is listening to port 8080 on localhost, enter the
+			following command:
+		</p><pre class="screen">connect http://localhost:8080/openrdf-sesame.</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e405"></a>7.3.&nbsp;Repository list</h2></div></div></div><p>
+			To get an overview of the repositories that are available in the set
+			that your console is connected to, use the 'show' command:
+		</p><pre class="screen">show repositories.</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-console-repository-creation"></a>7.4.&nbsp;Creating a repository</h2></div></div></div><p>
+			The 'create' command can be used to add new repositories to the set
+			that the console is connected to. This command expects the name of
+			a template that describes the repository's configuration. Currently,
+			there are nine templates that are included with the console by default:
+		</p><div class="itemizedlist"><ul type="disc"><li><em class="parameter"><code>memory</code></em>
+				-- a memory based RDF repository
+			</li><li><em class="parameter"><code>memory-rdfs</code></em>
+				-- a main-memory repository with RDF Schema inferencing
+			</li><li><em class="parameter"><code>memory-rdfs-dt</code></em>
+				-- a main-memory repository with RDF Schema and direct type hierarchy inferencing
+			</li><li><em class="parameter"><code>native</code></em>
+				-- a repository that uses on-disk data structure
+			</li><li><em class="parameter"><code>native-rdfs</code></em>
+				-- a native repository with RDF Schema inferencing
+			</li><li><em class="parameter"><code>native-rdfs-dt</code></em>
+				-- a native repository with RDF Schema and direct type hierarchy inferencing
+			</li><li><em class="parameter"><code>pgsql</code></em>
+				-- a repository that stores data in a PostgreSQL database
+			</li><li><em class="parameter"><code>mysql</code></em>
+				-- a repository that stores data in a MySQL database
+			</li><li><em class="parameter"><code>remote</code></em>
+				-- a repository that serves as a proxy for a repository on a Sesame Server
+			</li></ul></div><p>
+			When the 'create' command is executed, the console will ask you to
+			fill in a number of parameters for the type of repository that you
+			chose. For example, to create a native repository, you execute the following
+			command:
+		</p><pre class="screen">create native.</pre><p>
+			The console will then ask you to provide an ID and title for the repository,
+			as well as the triple indexes that need to be created for this kind of store.
+			The values between square brackets indicate default values which you can select
+			by simply hitting enter. The output of this dialogue looks something like this:
+		</p><pre class="screen">
+Please specify values for the following variables:
+Repository ID [native]: myRepo
+Repository title [Native store]: My repository
+Triple indexes [spoc,posc]: 
+Repository created</pre><p>
+			Please see <a href="ch07.html#section-repository-config" title="7.6.&nbsp;Repository configuration">Section&nbsp;7.6, &#8220;Repository configuration&#8221;</a> for more info on the
+			repository configuration options.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e466"></a>7.5.&nbsp;Other commands</h2></div></div></div><p>
+			Please check the documentation that is provided by the console itself for
+			help on how to use the other commands. Most commands should be self
+			explanatory.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-repository-config"></a>7.6.&nbsp;Repository configuration</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e474"></a>7.6.1.&nbsp;Memory store configuration</h3></div></div></div><p>
+				A memory store is an RDF repository that stores its data in main
+				memory. Apart from the standard <em class="parameter"><code>ID</code></em> and
+				<em class="parameter"><code>title</code></em> parameters, this type of repository
+				has a <em class="parameter"><code>Persist</code></em> and
+				<em class="parameter"><code>Sync delay</code></em> parameter.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e491"></a>7.6.1.1.&nbsp;Memory Store persistence</h4></div></div></div><p>
+					The <em class="parameter"><code>Persist</code></em> parameter controls
+					whether the memory store will use a data file for
+					persistence over sessions. Persistent memory stores write
+					their data to disk before being shut down and read this data
+					back in the next time they are initialized. Non-persistent
+					memory stores are always empty upon initialization.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e499"></a>7.6.1.2.&nbsp;Synchronization delay</h4></div></div></div><p>
+					By default, the memory store persistence mechanism synchronizes
+					the disk backup directly upon any change to the contents of the
+					store. That means that directly after an update operation (upload,
+					removal) completes, the disk backup is updated. It is possible
+					to configure a synchronization delay however. This can be useful
+					if your application performs several transactions in sequence and
+					you want to prevent disk synchronization in the middle of this
+					sequence to improve update performance.
+				</p><p>
+					The synchronization delay is specified by a number, indicating
+					the time in milliseconds that the store will wait before it
+					synchronizes changes to disk. The value 0 indicates that there
+					should be no delay. Negative values can be used to postpone the
+					synchronization indefinitely, i.e. until the store is shut down.
+				</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-native-store-config"></a>7.6.2.&nbsp;Native store configuration</h3></div></div></div><p>
+				A native store stores and retrieves its data directly to/from
+				disk. The advantage of this over the memory store is that it
+				scales much better as it isn't limited to the size of available
+				memory. Of course, since it has to access the disk, it is also
+				slower than the in-memory store, but it is a good solution for
+				larger data sets.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e512"></a>7.6.2.1.&nbsp;Native store indexes</h4></div></div></div><p>
+					The native store uses on-disk <span class="emphasis"><em>indexes</em></span>
+					to speed up querying. It uses B-Trees for indexing
+					statements, where the index key consists of four fields:
+					subject (s), predicate (p), object (o) and context (c). The
+					order in which each of these fields is used in the key
+					determines the usability of an index on a specify statement
+					query pattern: searching statements with a specific subject
+					in an index that has the subject as the first field is
+					signifantly faster than searching these same statements in an
+					index where the subject field is second or third. In the worst
+					case, the 'wrong' statement pattern will result in a sequential
+					scan over the entire set of statements.
+				</p><p>
+					By default, the native repository only uses two indexes, one
+					with a subject-predicate-object-context (spoc) key pattern
+					and one with a predicate-object-subject-context (posc) key
+					pattern.  However, it is possible to define more or other
+					indexes for the native repository, using the
+					<em class="parameter"><code>Triple indexes</code></em> parameter. This can be
+					used to optimize performance for query patterns that occur
+					frequently.
+				</p><p>
+					The subject, predicate, object and context fields are
+					represented by the characters 's', 'p', 'o' and 'c'
+					respectively. Indexes can be specified by creating 4-letter
+					words from these four characters. Multiple indexes can be
+					specified by separating these words with commas, spaces
+					and/or tabs. For example, the string "spoc, posc" specifies
+					two indexes; a subject-predicate-object-context index and a
+					predicate-object-subject-context index.
+				</p><p>
+					Creating more indexes potentially speeds up querying (a
+					lot), but also adds overhead for maintaining the indexes.
+					Also, every added index takes up additional disk space.
+				</p><p>
+					The native store automatically creates/drops indexes upon
+					(re)initialization, so the parameter can be adjusted and
+					upon the first refresh of the configuration the native store
+					will change its indexing strategy, without loss of data.
+				</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-rdbms-store-config"></a>7.6.3.&nbsp;RDBMS store configuration</h3></div></div></div><p>
+				An RDBMS store is an RDF repository that stores its data in a
+				relational database. Currently, PostgreSQL and MySQL are
+				supported. Both RDBMS's have their own configuration template,
+				"pgsql" and "mysql" respectively, but these have the same set
+				of parameters.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e537"></a>7.6.3.1.&nbsp;JDBC driver</h4></div></div></div><p>
+					The RDBMS store communicates with a database via a JDBC driver
+					for the concerning RDBMS. These JDBC drivers are not included
+					in the Sesame SDK; you will need to add these jar-files to the
+					Console and/or Sesame server for these to be able to run the
+					RDBMS store. Note that you don't need to add the driver to the
+					Console if you only use it to configure an RDBMS store on a
+					Sesame server.
+				</p><p>
+					To add the JDBC driver to the Sesame Console, just put the JDBC
+					jar-file in the SDK's <code class="filename">lib</code> directory with
+					all the other jar-files. To add it to a Sesame server, add the
+					jar-file to the web application's <code class="filename">WEB-INF/lib</code>
+					directory.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e550"></a>7.6.3.2.&nbsp;JDBC parameters</h4></div></div></div><p>
+					The database that the RDBMS should use is defined using the
+					following set of parameters:
+				</p><div class="itemizedlist"><ul type="disc"><li><em class="parameter"><code>JDBC driver</code></em> -- specifies which JDBC
+						driver an RDBMS store should use. The default value
+						specified by the configuration templates should used
+						in most cases.
+					</li><li><em class="parameter"><code>Host</code></em> -- specifies the name of the
+						machine that is running the database.
+					</li><li><em class="parameter"><code>Port</code></em> -- specifies the port to use
+						for communication with the host machine. The
+						configuration templates specify the default port
+						numbers for their RDBMS's.
+					</li><li><em class="parameter"><code>Database</code></em> -- specifies the name of
+						the database that should be used.
+					</li><li><em class="parameter"><code>Connection properties</code></em> -- can
+						optionally be used to specify additional properties for
+						the JDBC driver. Please consult the documentation of the
+						RDBMS's JDBC driver for more info.
+					</li><li><em class="parameter"><code>User name</code></em> -- the user name or role
+						that should be used to authenticate with the RDBMS.
+					</li><li><em class="parameter"><code>Password</code></em> -- the password for the
+						specified user name or role.
+					</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e584"></a>7.6.3.3.&nbsp;Table layout parameters</h4></div></div></div><p>
+					The database's table layout can be tweaked using the
+					<em class="parameter"><code>Max number of triple tables</code></em> parameter. The
+					RDBMS store supports both a "monolithic" schema with a single
+					table that stores all statements, as well as a vertical schema
+					that stores statements in a per-predicate table.
+				</p><p>
+					The vertical layout has better query evaluation performance on
+					most data sets, but potentially leads to huge amounts of tables,
+					depending on the number of unique predicates in your data. If
+					the number of tables becomes too large, the database's performance
+					can start to decrease or it can even fail completely. To prevent
+					these problem, you can specify the maximum number of triple tables
+					that should be created. Setting this parameter to 1 results in a
+					monolithic schema, setting it to 0 or a negative value disables
+					the limit.
+				</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e595"></a>7.6.4.&nbsp;HTTP repository configuration</h3></div></div></div><p>
+				An HTTP repository isn't an actual store, but serves as a proxy for
+				a store on a (remote) Sesame server. Apart from the standard
+				<em class="parameter"><code>ID</code></em> and <em class="parameter"><code>title</code></em> parameters,
+				this type of repository has a <em class="parameter"><code>Sesame server location</code></em>
+				and a <em class="parameter"><code>Remote repository ID</code></em> parameter.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e612"></a>7.6.4.1.&nbsp;Sesame server location</h4></div></div></div><p>
+					This parameter specifies the URL of the Sesame Server that the
+					repository should communicate with. Default value is
+					http://localhost:8080/openrdf-sesame, which corresponds to a Sesame
+					Server that is running on your own machine.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e617"></a>7.6.4.2.&nbsp;Remote repository ID</h4></div></div></div><p>
+					This is the ID of the <span class="emphasis"><em>remote</em></span> repository that the
+					HTTP repository should communicate with. Please note an HTTP repository
+					two repository ID parameters: one identifying the remote repository and
+					one that specifies the HTTP repository's own ID.
+				</p></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e626"></a>7.7.&nbsp;Repository configuration templates (advanced)</h2></div></div></div><p>
+			In Sesame, repository configurations with all their parameters are modeled in
+			RDF and stored in the SYSTEM repository. So, in order to create a new repository,
+			the Console needs to create such an RDF document and submit it to the SYSTEM
+			repository. The Console uses so called <span class="emphasis"><em>repository configuration
+				templates</em></span> to accomplish this.
+		</p><p>
+			Repository configuration templates are simple Turtle RDF files that describe a
+			repository configuration, where some of the parameters are replaced with
+			variables. The Console parses these templates and asks the user to supply values
+			for the variables. The variables are then substituted with the specified values,
+			which produces the required configuration data.
+		</p><p>
+			The Sesame Console comes with a number of default templates, which are listed in
+			<a href="ch07.html#section-console-repository-creation" title="7.4.&nbsp;Creating a repository">Section&nbsp;7.4, &#8220;Creating a repository&#8221;</a>. The Console tries to
+			resolve the parameter specified with the 'create' command (e.g. "memory") to a
+			template file with the same name (e.g. "memory.ttl"). The default templates are
+			included in Console library, but the Console also looks in the
+			<code class="filename">templates</code> subdirectory of <code class="filename">[ADUNA_DATA]</code>.
+			You can define your own templates by placing template files in this directory.
+		</p><p>
+			To create your own templates, it's easiest to start with an existing template and
+			modify that to your needs. The default "memory.ttl" template looks like this:
+		</p><pre class="screen">
+#
+# Sesame configuration template for a main-memory repository
+#
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
+@prefix rep: &lt;http://www.openrdf.org/config/repository#&gt;.
+@prefix sr: &lt;http://www.openrdf.org/config/repository/sail#&gt;.
+@prefix sail: &lt;http://www.openrdf.org/config/sail#&gt;.
+@prefix ms: &lt;http://www.openrdf.org/config/sail/memory#&gt;.
+
+[] a rep:Repository ;
+   rep:repositoryID "{%Repository ID|memory%}" ;
+   rdfs:label "{%Repository title|Memory store%}" ;
+   rep:repositoryImpl [
+      rep:repositoryType "openrdf:SailRepository" ;
+      sr:sailImpl [
+         sail:sailType "openrdf:MemoryStore" ;
+         ms:persist {%Persist|true|false%} ;
+         ms:syncDelay {%Sync delay|0%}
+      ]
+   ].</pre><p>
+			Template variables are written down as <em class="parameter"><code>{%var name%}</code></em> and
+			can specify zero or more values, seperated by vertical bars ("|"). If one value
+			is specified then this value is interpreted as the default value for the variable.
+			The Console will use this default value when the user simply hits the Enter key.
+			If multiple variable values are specified, e.g.
+			<em class="parameter"><code>{%Persist|true|false%}</code></em>, then this is interpreted as set of
+			all possible values. If the user enters an unspecified value then that is
+			considered to be an error. The value that is specified first is used as the default
+			value.
+		</p><p>
+			The URIs that are used in the templates are the URIs that are specified by the
+			<code class="classname">RepsitoryConfig</code> and <code class="classname">SailConfig</code> classes
+			of Sesame's repository configuration mechanism. The relevant namespaces and URIs can
+			be found in these javadoc or source of these classes.
+		</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch06.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch08.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;6.&nbsp;Server software installation&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;8.&nbsp;The Repository API</td></tr></table></div></body></html>

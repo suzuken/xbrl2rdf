@@ -1,0 +1,60 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;7.&nbsp;Repository API</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="System documentation for Sesame 2.x "><link rel="up" href="index.html" title="System documentation for Sesame 2.x "><link rel="prev" href="ch06.html" title="Chapter&nbsp;6.&nbsp;Sail Query model"><link rel="next" href="ch08.html" title="Chapter&nbsp;8.&nbsp;HTTP communication protocol for Sesame 2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;7.&nbsp;Repository API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch06.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch08.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-repository"></a>Chapter&nbsp;7.&nbsp;Repository API</h2></div></div></div><p>
+		The following figure shows an outline of the Repository API of Sesame
+		2, the main access API for developers:
+	</p><div class="figure-float"><div class="figure"><a name="figure-sesame-rep"></a><p class="title"><b>Figure&nbsp;7.1.&nbsp;The Sesame 2 Repository API</b></p><div class="mediaobject"><img src="figures/org_openrdf_sesame_repository.jpg" alt="The Sesame 2 Repository API"></div></div></div><p>
+		As can be seen, the new Repository API has roughly the functionality of
+		the repository from Sesame 1.x: it allows declarative
+		querying through SeRQL and other query languages, as well as direct
+		API access on individual statements.
+	</p><p>
+		The RepositoryImpl class is an implementation of the Repository
+		interface. The Connection interface allows one to do modification operations
+		directly on the repository. 
+	</p><p>
+		By default, <code class="classname">autoCommit</code> will be set to true.
+		This means that any add or remove operation carried out on the
+		repository will be an isolated transaction. It can be switched to
+		false to allow batch operations in a single transaction, improving
+		performance of such operations significantly.
+	</p><p>
+		Some code examples:
+	</p><pre class="programlisting">
+// create a new repository (no inferencing, in memory storage)
+Repository repository = new RepositoryImpl(MemoryStore.create());
+
+// create a statement and add it to the store
+ValueFactory factory = repository.getValueFactory();
+URI subject = factory.createURI("http://example.org/foo");
+URI object = factory.createUR("http://example.org/bar");
+
+Connection con = repository.getConnection();
+con.add(subject, RDF.TYPE, object);
+
+// now we want to export the contents of the store as N-Triples to
+// standard output:
+RDFHandler ntriplesWriter = new NTriplesWriter(System.out);
+con.getStatements(ntriplesWriter);
+
+// now we want the result of a query to be written as N-Triples
+String query = "SELECT * FROM {X} P {Y}";
+con.evaluateGraphQuery(QueryLanguage.SERQL, query, ntriplesWriter);
+
+// done, close the connection
+con.close();
+
+// we open an explicit transaction for uploading a file to the store
+File file = new File("/foo/bar/example.rdf");
+try { 
+  Connection newCon = repository.getConnection();
+  newCon.setAutoCommit(false);
+  
+  con.add(file, "http://www.foo.bar/", RDFFormat.RDFXML);
+  con.commit();
+}
+catch (Exception e) { // on any exception, we cancel the transaction
+  if (con != null) {
+    con.rollback();
+  }
+}</pre></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch06.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch08.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;6.&nbsp;Sail Query model&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;8.&nbsp;HTTP communication protocol for Sesame 2</td></tr></table></div></body></html>

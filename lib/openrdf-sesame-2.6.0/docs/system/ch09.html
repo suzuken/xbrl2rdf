@@ -1,0 +1,20 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;9.&nbsp;Coding Style</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="System documentation for Sesame 2.x "><link rel="up" href="index.html" title="System documentation for Sesame 2.x "><link rel="prev" href="ch08.html" title="Chapter&nbsp;8.&nbsp;HTTP communication protocol for Sesame 2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;9.&nbsp;Coding Style</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;</td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-codingstyle"></a>Chapter&nbsp;9.&nbsp;Coding Style</h2></div></div></div><p>
+		The following guide lines are used for the Java source code of Sesame:
+	</p><div class="itemizedlist"><ul type="disc"><li>Tabs are used for indentation</li><li>Code doesn't extend further than column 110</li><li>Comments do not extend further than column 80</li><li>Classes, methods, variables, etc. are as private as
+			possible (but not to the level where it gets inconvenient). So,
+			variables that are only accessed by the class they're defined in are
+			private, methods used by subclasses are protected, etc. This keeps
+			the APIs as clear and minimal as possible, making it easier to
+			restructure a class internally. Making classes, methods, etc. more
+			public is safe and easy, the reverse is hard and potentially breaks
+			backwards compatibility.</li><li>Class names start with an upper case letter (e.g.:
+			MyClassName), method- and variable names start with a lower case
+			letter (e.g. _name and getName()).</li><li>Class-, method- and variable names that consist of more than
+			one word capitalize the first letter of each word, for example:
+			MyClassName, myMethod() and _myVariable. Words that are actually
+			abbreviations of names appear as-is, e.g.: XMLUtil, RDFParser and
+			SeRQLEngine.</li><li>Names of constants (final variables) are in all-uppercase
+			letters.</li><li>All source files start with a comment containing the standard
+			BSD-header and mentions the appropriate copyright holder(s).</li></ul></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch08.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;</td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;8.&nbsp;HTTP communication protocol for Sesame 2&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;</td></tr></table></div></body></html>

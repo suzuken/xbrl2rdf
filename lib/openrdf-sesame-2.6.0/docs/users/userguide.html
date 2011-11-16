@@ -1,0 +1,2938 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>User Guide for Sesame 2.3</title><link rel="stylesheet" href="openrdf.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" lang="en"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>User Guide for Sesame 2.3</h1></div><div><p class="copyright">Copyright &copy; 2002-2011 Aduna B.V.</p></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#chapter-sesame2-whats-new">1. rdf:about Sesame 2</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e14">1.1. What is it?</a></span></dt><dt><span class="section"><a href="#d0e43">1.2. What's new?</a></span></dt></dl></dd><dt><span class="chapter"><a href="#chapter-download">2. Source code and binaries</a></span></dt><dt><span class="chapter"><a href="#chapter-sesame-intro">3. Short introduction to Sesame's components</a></span></dt><dt><span class="chapter"><a href="#chapter-lib-install">4. Setting up to use the Sesame libraries</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e184">4.1. Downloading the libraries</a></span></dt><dt><span class="section"><a href="#d0e222">4.2. Logging: SLF4J initialization</a></span></dt></dl></dd><dt><span class="chapter"><a href="#chapter-datadir-config">5. Application directory configuration</a></span></dt><dt><span class="chapter"><a href="#chapter-server-install">6. Server software installation</a></span></dt><dd><dl><dt><span class="section"><a href="#section-server-required-software">6.1. Required software</a></span></dt><dt><span class="section"><a href="#section-sesame-server-installation">6.2. Sesame server installation</a></span></dt><dt><span class="section"><a href="#d0e333">6.3. Logging Configuration</a></span></dt><dt><span class="section"><a href="#d0e357">6.4. Repository Configuration</a></span></dt></dl></dd><dt><span class="chapter"><a href="#chapter-console">7. Sesame Console</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e374">7.1. Getting started</a></span></dt><dt><span class="section"><a href="#d0e395">7.2. Connecting to a set of repositories</a></span></dt><dt><span class="section"><a href="#d0e405">7.3. Repository list</a></span></dt><dt><span class="section"><a href="#section-console-repository-creation">7.4. Creating a repository</a></span></dt><dt><span class="section"><a href="#d0e466">7.5. Other commands</a></span></dt><dt><span class="section"><a href="#section-repository-config">7.6. Repository configuration</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e474">7.6.1. Memory store configuration</a></span></dt><dt><span class="section"><a href="#section-native-store-config">7.6.2. Native store configuration</a></span></dt><dt><span class="section"><a href="#section-rdbms-store-config">7.6.3. RDBMS store configuration</a></span></dt><dt><span class="section"><a href="#d0e595">7.6.4. HTTP repository configuration</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e626">7.7. Repository configuration templates (advanced)</a></span></dt></dl></dd><dt><span class="chapter"><a href="#chapter-repository-api">8. The Repository API</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e686">8.1. Creating a Repository object</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e725">8.1.1. Creating a main memory RDF Repository</a></span></dt><dt><span class="section"><a href="#d0e766">8.1.2. Creating a Native RDF Repository</a></span></dt><dt><span class="section"><a href="#d0e785">8.1.3. Creating a repository with RDF Schema inferencing</a></span></dt><dt><span class="section"><a href="#d0e812">8.1.4. Accessing a remote repository</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e835">8.2. Using a repository: RepositoryConnections</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e856">8.2.1. Adding RDF to a repository</a></span></dt><dt><span class="section"><a href="#d0e879">8.2.2. Querying a repository</a></span></dt><dt><span class="section"><a href="#d0e1128">8.2.3. Creating, retrieving, removing individual statements</a></span></dt><dt><span class="section"><a href="#d0e1203">8.2.4. Working with Collections and Iterations</a></span></dt><dt><span class="section"><a href="#d0e1238">8.2.5. Using context</a></span></dt><dt><span class="section"><a href="#section-transactions">8.2.6. Transactions</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#chapter-serql">9. The SeRQL query language (revision 3.1)</a></span></dt><dd><dl><dt><span class="section"><a href="#section-revisions">9.1. Revisions</a></span></dt><dd><dl><dt><span class="section"><a href="#section-revision-1.1">9.1.1. revision 1.1</a></span></dt><dt><span class="section"><a href="#section-revision-1.2">9.1.2. revision 1.2</a></span></dt><dt><span class="section"><a href="#section-revision-2.0">9.1.3. revision 2.0</a></span></dt><dt><span class="section"><a href="#section-revision-3.0">9.1.4. revision 3.0</a></span></dt><dt><span class="section"><a href="#section-revision-3.1">9.1.5. revision 3.1</a></span></dt></dl></dd><dt><span class="section"><a href="#section-introduction">9.2. Introduction</a></span></dt><dt><span class="section"><a href="#section-uris-literals-variables">9.3. URIs, literals and variables</a></span></dt><dd><dl><dt><span class="section"><a href="#section-variables">9.3.1. Variables</a></span></dt><dt><span class="section"><a href="#section-uris">9.3.2. URIs</a></span></dt><dt><span class="section"><a href="#section-literals">9.3.3. Literals</a></span></dt><dt><span class="section"><a href="#section-blanknodes">9.3.4. Blank Nodes (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-path-expressions">9.4. Path expressions</a></span></dt><dd><dl><dt><span class="section"><a href="#section-basic-path-expressions">9.4.1. Basic path expressions</a></span></dt><dt><span class="section"><a href="#section-path-expression-short-cuts">9.4.2. Path expression short cuts</a></span></dt><dt><span class="section"><a href="#section-optional">9.4.3. Optional path expressions</a></span></dt></dl></dd><dt><span class="section"><a href="#section-select-construct-queries">9.5. Select- and construct queries</a></span></dt><dt><span class="section"><a href="#section-select-queries">9.6. Select queries</a></span></dt><dt><span class="section"><a href="#section-construct-queries">9.7. Construct queries</a></span></dt><dt><span class="section"><a href="#section-where">9.8. The WHERE clause</a></span></dt><dd><dl><dt><span class="section"><a href="#section-boolean-constants">9.8.1. Boolean constants</a></span></dt><dt><span class="section"><a href="#section-value-equality">9.8.2. Value (in)equality</a></span></dt><dt><span class="section"><a href="#section-same-term">9.8.3. SameTerm (R3.1)</a></span></dt><dt><span class="section"><a href="#section-numerical-comparisons">9.8.4. Numerical comparisons</a></span></dt><dt><span class="section"><a href="#section-bound">9.8.5. Bound() (R3.0)</a></span></dt><dt><span class="section"><a href="#section-isuri">9.8.6. isUri() and isBnode() (R1.2)</a></span></dt><dt><span class="section"><a href="#section-like">9.8.7. Like (R1.2)</a></span></dt><dt><span class="section"><a href="#section-regex">9.8.8. Regex (R3.1)</a></span></dt><dt><span class="section"><a href="#section-langmatches">9.8.9. LangMatches (R3.1)</a></span></dt><dt><span class="section"><a href="#section-boolean-operators">9.8.10. And, or, not</a></span></dt><dt><span class="section"><a href="#section-in-list">9.8.11. In (R3.1)</a></span></dt><dt><span class="section"><a href="#section-nested-where">9.8.12. Nested WHERE clauses (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-other-functions">9.9. Other functions</a></span></dt><dd><dl><dt><span class="section"><a href="#section-label-lang-datatype">9.9.1. label(), lang() and datatype()</a></span></dt><dt><span class="section"><a href="#section-namespace">9.9.2. namespace() and localName() (R1.2)</a></span></dt><dt><span class="section"><a href="#section-str">9.9.3. str() (R3.1)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-order-by">9.10. The ORDER BY clause</a></span></dt><dt><span class="section"><a href="#section-limit-offset">9.11. The LIMIT and OFFSET clauses</a></span></dt><dt><span class="section"><a href="#section-using-namespace">9.12. The USING NAMESPACE clause</a></span></dt><dt><span class="section"><a href="#section-built-in-predicates">9.13. Built-in predicates (REVISED in R2.0)</a></span></dt><dt><span class="section"><a href="#section-setoper">9.14. Set combinatory operations</a></span></dt><dd><dl><dt><span class="section"><a href="#section-union">9.14.1. UNION (REVISED in R3.0, extended in R3.1)</a></span></dt><dt><span class="section"><a href="#section-intersect">9.14.2. INTERSECT (R1.2)</a></span></dt><dt><span class="section"><a href="#section-minus">9.14.3. MINUS (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-nesting">9.15. Query Nesting</a></span></dt><dd><dl><dt><span class="section"><a href="#section-in">9.15.1. IN (R1.2)</a></span></dt><dt><span class="section"><a href="#section-any">9.15.2. ANY and ALL (R1.2)</a></span></dt><dt><span class="section"><a href="#section-exists">9.15.3. EXISTS (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-context">9.16. Querying context (R2.0)</a></span></dt><dt><span class="section"><a href="#section-example-queries">9.17. Example SeRQL queries</a></span></dt><dd><dl><dt><span class="section"><a href="#section-example-query-1">9.17.1. Query 1</a></span></dt><dt><span class="section"><a href="#section-example-query-2">9.17.2. Query 2</a></span></dt><dt><span class="section"><a href="#section-example-query-3">9.17.3. Query 3</a></span></dt></dl></dd><dt><span class="section"><a href="#section-serql-references">9.18. References</a></span></dt><dt><span class="section"><a href="#section-serql-grammar">9.19. SeRQL grammar</a></span></dt></dl></dd></dl></div><div class="list-of-figures"><p><b>List of Figures</b></p><dl><dt>3.1. <a href="#figure-sesame-components">A high-level overview of Sesame's most prominent components and their dependencies</a></dt><dt>9.1. <a href="#figure-serql-basic-pe">A basic path expression</a></dt><dt>9.2. <a href="#figure-serql-multival-nodes">Multi-value nodes</a></dt><dt>9.3. <a href="#figure-serql-multival-nodes2">Multi-value nodes in a longer path expression</a></dt><dt>9.4. <a href="#figure-serql-branch">Branches in a path expression</a></dt><dt>9.5. <a href="#figure-serql-branch2">Branches in a longer path expression</a></dt><dt>9.6. <a href="#figure-serql-reif">A reification path expression</a></dt><dt>9.7. <a href="#figure-query1">Path expression for query 1</a></dt><dt>9.8. <a href="#figure-query2">Path expression for query 2</a></dt><dt>9.9. <a href="#figure-query3">Path expression for query 3</a></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>9.1. <a href="#d0e2084">Default namespaces</a></dt></dl></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-sesame2-whats-new"></a>Chapter&nbsp;1.&nbsp;rdf:about Sesame 2</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#d0e14">1.1. What is it?</a></span></dt><dt><span class="section"><a href="#d0e43">1.2. What's new?</a></span></dt></dl></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e14"></a>1.1.&nbsp;What is it?</h2></div></div></div><p>
+			Sesame is an open source Java framework for storage and querying of
+			RDF data. The framework is fully extensible and configurable with
+			respect to storage mechanisms, inferencers, RDF file formats, query
+			result formats and query languages. Sesame offers a JBDC-like user
+			API, streamlined system APIs and a RESTful HTTP interface supporting
+			the SPARQL Protocol for RDF.
+		</p><p>
+			Of course, a framework isn't very useful without implementations of
+			the various APIs. Out of the box, Sesame supports SPARQL and SeRQL
+			querying, a memory-based and a disk-based RDF store and RDF Schema
+			inferencers. It also supports most popular RDF file formats and
+			query result formats. Various extensions are available or are being
+			worked at elsewhere.
+		</p><p>
+			Originally, Sesame was developed by
+			<a href="http://www.aduna-software.com/" target="_top">Aduna</a> (then
+			known as Aidministrator) as a research prototype for the hugely
+			successful EU research project
+			<a href="http://www.ontoknowledge.org/" target="_top">On-To-Knowledge</a>.
+			When this work ended in 2001, Aduna continued the development in
+			cooperation with <a href="http://www.nlnet.nl/" target="_top">NLnet Foundation</a>,
+			developers from <a href="" target="_top">Ontotext</a>, and a number of volunteer developers who
+			contribute ideas, bug reports and fixes.
+		</p><p>
+			Sesame is currently developed as a community project, with Aduna as
+			the project leader. Community support is available from
+			<a href="http://www.openrdf.org/" target="_top">www.openrdf.org</a>. Aduna
+			also offers commercial support and consultency services, feel free
+			to <a href="http://www.aduna-software.com/contact/" target="_top">contact
+				us</a> for more information.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e43"></a>1.2.&nbsp;What's new?</h2></div></div></div><p>
+			For those who have previously worked with Sesame 1.x: Sesame 2 is an
+			important step forward from the Sesame 1.x series, building on the
+			feedback that has been gathered during the past years. A lot of
+			improvements have been made to various APIs as well as the framework
+			as a whole.
+		</p><p>
+			Unfortunately, because of all the changes to APIs and the like,
+			<span class="emphasis"><em>Sesame 2 is not backwards compatible with earlier
+				releases</em></span>. Therefore, we suggest you read through this
+			user guide before starting to port any applications to Sesame 2.
+		</p><p>
+			So what's new in Sesame 2? Well, in short:
+		</p><div class="itemizedlist"><ul type="disc"><li>
+				Sesame 2 is completely targeted at Java 5. All APIs use
+				Java 5 features such as typed collections and iterators.
+			</li><li>
+				Revised Repository API that is much more targeted at
+				the use of Sesame as a library.
+			</li><li>
+				Support for context/provenance, allowing you to keep track
+				of individual RDF data units (like files, for instance).
+			</li><li>
+				Proper transaction/rollback support.
+			</li><li>
+				A REST-ful HTTP protocol that includes support for the
+				<a href="http://www.w3.org/TR/rdf-sparql-protocol/" target="_top">SPARQL protocol</a> and
+				<a href="http://www.w3.org/TR/rdf-sparql-XMLres/" target="_top">SPARQL Query Results XML Format</a>,
+				which are currently both Proposed Recommendations from the W3C.
+			</li><li>
+				Support for the
+				<a href="http://www.w3.org/TR/rdf-sparql-query/" target="_top">SPARQL Query Language</a>.
+			</li></ul></div><p>
+			A lot of these new features will be covered in the next chapters.
+		</p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-download"></a>Chapter&nbsp;2.&nbsp;Source code and binaries</h2></div></div></div><p>
+		If you follow the download links from the
+		<a href="http://www.openrdf.org/download.jsp" target="_top">download section</a>
+		at openRDF.org you'll find that there are a number of different files that
+		you can download. Which one you need depends on what you want to do with it:
+	</p><div class="itemizedlist"><ul type="disc"><li><code class="filename">openrdf-sesame-(version)-sdk.tar.gz</code>.
+			This is a GNU-zipped tar archive of the complete binary version of
+			the Sesame SDK. It includes all the Sesame libraries packaged as
+			jar files and a set of Web Archive (.war) files for easy
+			deployment of Sesame's web applications (see <a href="#chapter-server-install" title="Chapter&nbsp;6.&nbsp;Server software installation">Chapter&nbsp;6, <i>Server software installation</i></a>). It also includes
+			documentation (such as  this user manual, and the API documentation).
+		</li><li><code class="filename">openrdf-sesame-(version)-sdk.zip</code>.
+			This is a zip archive that has the same contents as the tar.gz
+			file mentioned before.
+		</li><li><code class="filename">openrdf-sesame-(version)-onejar.jar</code>.
+			This is a Java Archive (.jar) file containing all the relevant
+			Sesame libraries. The main purpose of this jar file is easy
+			inclusion of all Sesame components when using it as an embedded
+			component/library in your own application: you only need to add
+			this one jar file to your classpath and you can start programming
+			against it.
+		</li></ul></div><p>
+		Apart from these binary downloads, the Sesame libraries are
+		also available as maven artifacts in a <span class="emphasis"><em>maven
+		    repository</em></span>.  This maven repository is located at
+		<a href="http://repo.aduna-software.org/maven2/releases/" target="_top">http://repo.aduna-software.org/maven2/releases/</a>.
+		Developers using maven can use this repository to automatically
+		resolve library dependencies and to get the latest released
+		versions of each library. See <a href="#chapter-lib-install" title="Chapter&nbsp;4.&nbsp;Setting up to use the Sesame libraries">Chapter&nbsp;4, <i>Setting up to use the Sesame libraries</i></a> for some tips.
+	    </p><p>
+		For instructions how to use the maven build system, see
+		<a href="http://maven.apache.org/" target="_top">http://maven.apache.org/</a>.
+	    </p><p>
+		Sesame's source code is available from our Subversion (SVN) repository:
+		<a href="http://repo.aduna-software.org/svn/org.openrdf/sesame/" target="_top">http://repo.aduna-software.org/svn/org.openrdf/sesame/</a>.
+		There is an SVN Web Viewer available as well at
+		<a href="http://repo.aduna-software.org/websvn/listing.php?repname=aduna&amp;path=/org.openrdf/sesame/" target="_top">http://repo.aduna-software.org/websvn/listing.php?repname=aduna&amp;path=/org.openrdf/sesame/</a>.
+		Source code for each release can be found in the <code class="filename">tags</code>
+		directory, the development version of the code is in the
+		<code class="filename">trunk</code> directory.
+	</p></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-sesame-intro"></a>Chapter&nbsp;3.&nbsp;Short introduction to Sesame's components</h2></div></div></div><p>
+		Before diving into the internals of Sesame, we will start with a short
+		introduction to Sesame by giving a high-level overview of its components.
+		It's important to have some basic knowledge about this as the rest of
+		this document will often refer to various components that are touched
+		upon here. It is assumed that the reader has at least some basic
+		knowledge about RDF, RDF Schema, OWL, etc. If this is not the case, some
+		introductory articles can be found at the following locations:
+	</p><div class="itemizedlist"><ul type="disc"><li><a href="http://www.rdfabout.net/" target="_top">http://www.rdfabout.net/</a></li><li><a href="http://www.w3.org/TR/rdf-primer/" target="_top">http://www.w3.org/TR/rdf-primer/</a></li></ul></div><p>
+		We will try to explain the Sesame framework using the following figure,
+		which shows the most prominent components and APIs in Sesame and how
+		they are built on top of each other. Each component/API depends on the
+		components/APIs that are beneath them.
+	</p><div class="figure-float"><div class="figure"><a name="figure-sesame-components"></a><p class="title"><b>Figure&nbsp;3.1.&nbsp;A high-level overview of Sesame's most prominent components and their dependencies</b></p><div class="mediaobject"><img src="figures/sesame-components.png" alt="A high-level overview of Sesame's most prominent components and their dependencies"></div></div></div><p> 
+		All the way at the bottom of the diagram is the RDF Model, the
+		foundation of the Sesame framework. Being an RDF-oriented framework,
+		all parts of Sesame are to some extent dependent on this RDF model,
+		which defines interfaces and implementation for all basic RDF
+		entities: URI, blank node, literal and statement.
+	</p><p>
+		Rio, which stands for "RDF I/O", consists of a set of parsers and
+		writers for various RDF file formats. The parsers can be used to
+		translate RDF files to sets of statements, and the writers for the
+		reverse operation. Rio can also be used independent of the rest of
+		Sesame.
+	</p><p> 
+		The Storage And Inference Layer (Sail) API is a low level System API
+		(SPI) for RDF stores and inferencers. Its purpose is to abstract from
+		the storage and inference details, allowing various types of storage and
+		inference to be used. The Sail API is mainly of interest for those who
+		are developing Sail implementations, for all others it suffices to know
+		how to create and configure one. There are several implementations of
+		the Sail API, for example the <code class="classname">MemoryStore</code> which
+		stores RDF data in main memory, and the
+		<code class="classname">NativeStore</code> which uses dedicated on-disk data
+		structures for storage.
+	</p><p> 
+		The Repository API is a higer level API that offers a large number of
+		developer-oriented methods for handling RDF data. The main goal of this
+		API is to make the life of application developers as easy as possible.
+		It offers various methods for uploading data files, querying, and
+		extracting and manipulating data. There are several implementations of
+		this API, the ones shown in this figure are the
+		<code class="classname">SailRepository</code> and the
+		<code class="classname">HTTPRepository</code>. The former translates calls to a
+		Sail implementation of choice, the latter offers transparent
+		client-server communication with a Sesame server over HTTP.
+	</p><p>
+		The top-most component in the diagram is the HTTP Server. The HTTP
+		Server consists of a number of Java Servlets that implement a protocol
+		for accessing Sesame repositories over HTTP. The details of this
+		protocol can be found in Sesame's system documentation, but most people
+		can simply use a client library to handle the communication. The
+		<code class="classname">HTTPClient</code> that is used by the
+		<code class="classname">HTTPRepository</code> is one such library.
+	</p><p>
+		While each part of the Sesame code is publicly available and extensible,
+		most application developers will be primarily interested in the
+		Repository API. This API is described in more detail in one of the
+		following chapters.
+	</p></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-lib-install"></a>Chapter&nbsp;4.&nbsp;Setting up to use the Sesame libraries</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#d0e184">4.1. Downloading the libraries</a></span></dt><dt><span class="section"><a href="#d0e222">4.2. Logging: SLF4J initialization</a></span></dt></dl></div><p>
+		In this chapter, we explain some basics about setting up your
+		application development environment to work with Sesame. In <a href="#chapter-repository-api" title="Chapter&nbsp;8.&nbsp;The Repository API">Chapter&nbsp;8, <i>The Repository API</i></a> we go into details of the use
+		of the APIs. If you do not want to program against the Sesame
+		libraries but just want to install and run the Sesame HTTP server,
+		please skip ahead to <a href="#chapter-server-install" title="Chapter&nbsp;6.&nbsp;Server software installation">Chapter&nbsp;6, <i>Server software installation</i></a>.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e184"></a>4.1.&nbsp;Downloading the libraries</h2></div></div></div><p>
+			As was explained in <a href="#chapter-download" title="Chapter&nbsp;2.&nbsp;Source code and binaries">Chapter&nbsp;2, <i>Source code and binaries</i></a>, various
+			download options are available to you. The quickest way to get
+			started with using the Sesame libraries is to download the Sesame
+			<span class="emphasis"><em>onejar</em></span> library and include it in your classpath. 	
+		</p><p>
+			However, it is important to note that the Sesame Framework consists
+			of a set of libraries: Sesame is not a monolithic piece of software,
+			you can pick and choose which parts you want and which ones you
+			don't. In those cases where you don't care about picking and
+			choosing and just want to get on with it, the onejar is a good
+			choice. If, however, you want a little more control over what is
+			included, you can download the complete SDK and select (from the
+			<code class="filename">lib</code> directory) those sesame libraries that you
+			require.
+		</p><p>
+			An alternative to picking libraries by hand is to use
+			maven. <a href="" target="_top">Apache
+			    Maven</a> is a software management tool that
+			helps you by offering things like library version
+			management and dependency management (which is very
+			useful because it means that once you decide you need a
+			particular Sesame library, maven automatically
+			downloads all the libraries that your library of choice
+			requires in turn), and giving you a handy-dandy build
+			environment. For details on how to start using maven,
+			we advise you to take a look at the Apache Maven
+			website at <a href="http://maven.apache.org/" target="_top">http://maven.apache.org/</a>. If
+			you are familiar with Maven, here are a few pointers to
+			help set up your maven project.
+		</p><p>
+		The groupId for all Sesame core artifacts is
+		<code class="filename">org.openrdf.sesame</code>.  For many projects you
+		will need only a part of the Sesame framework. For example, if
+		you require functionality for quick in-memory storage and
+		querying of RDF, you will only need to include dependencies on
+		the SAIL repository module (artifactId
+		<code class="filename">sesame-repository-sail</code>) and the in-memory
+		storage backend module (artifactId
+		<code class="filename">sesame-sail-memory</code>).
+	    </p><p>
+		To include a maven dependency in your project that
+		automatically gets you the entire Sesame core framework, use
+		artifactId <code class="filename">sesame-runtime</code>. 
+	    </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e222"></a>4.2.&nbsp;Logging: SLF4J initialization</h2></div></div></div><p>
+			Before you begin using the Sesame libraries, one important
+			configuration step needs to be taken: the initialization and
+			configuration of a logging framework.
+		</p><p>
+			Sesame uses the <a href="http://www.slf4j.org/" target="_top">Simple Logging
+				Facade for Java (SLF4J)</a>, which is a framework for
+			abstracting from the actual logging implementation. SLF4J allows
+			you, as a user of the Sesame framework, to plug in your own favorite
+			logging implementation at deployment time. SLF4J supports the most
+			popular logging implementations such as Java Logging, Apache Commons
+			Logging, Logback, log4j, etc. See the SLF4J website for more info.
+		</p><p>
+			What you need to do is to determine/decide which
+			logging implementation you (are going to) use and
+			include the appropriate SLF4J-bridge jar-file in your
+			classpath. For example, if you decide to use <a href="http://logging.apache.org/log4j/" target="_top">Apache
+			    log4j</a>, you need to include the
+			SLF4J-to-log4j bridge in your classpath. The SLF4J
+			release packages include bridges to various logging
+			implementations; just download the SLF4J release
+			package and include the appropriate bridge in your
+			classpath (or, when using Maven, set the appropriate
+			dependency); <code class="filename">slf4j-logj12-1.6.1.jar</code>,
+			for example. That's all!
+		</p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-datadir-config"></a>Chapter&nbsp;5.&nbsp;Application directory configuration</h2></div></div></div><p>
+		In this chapter, we explain how to change the default data directory for
+		OpenRDF applications. You can skip this chapter if you only use Sesame
+		as a library, or if you consider the defaults to be fine.
+	</p><p>
+		All OpenRDF applications (Sesame Server, Workbench, and
+		Console) store configuration files and repository data in a
+		single directory (with subdirectories). On Windows machines, this
+		directory is <code class="filename">%APPDATA%\Aduna\</code> by default,
+		where <code class="filename">%APPDATA%</code> is the application data
+		directory of the user that runs the application. For example, in
+		case the application runs under the 'LocalService' user account
+		on Windows XP, the directory is <code class="filename">C:\Documents and
+			Settings\LocalService\Application Data\Aduna\</code>. On
+		Linux/UNIX, the default location is <code class="filename">$HOME/.aduna/</code>,
+		for example <code class="filename">/home/tomcat/.aduna/</code>. We will refer to
+		this data directory as <code class="filename">[ADUNA_DATA]</code> in the rest of
+		this manual.
+	</p><p>
+		The location of this data directory can be reconfigured using the Java
+		system property <em class="parameter"><code>info.aduna.platform.appdata.basedir</code></em>.
+		When you are using Tomcat as the servlet container then you can set this
+		property using the <em class="parameter"><code>JAVA_OPTS</code></em> parameter, for
+		example:
+	</p><div class="itemizedlist"><ul type="disc"><li><em class="parameter"><code>set JAVA_OPTS=-Dinfo.aduna.platform.appdata.basedir=\path\to\other\dir\</code></em>
+			(on Windows)
+		</li><li><em class="parameter"><code>export JAVA_OPTS='-Dinfo.aduna.platform.appdata.basedir=/path/to/other/dir/'</code></em>
+			(on Linux/UNIX)
+		</li></ul></div><p>
+		If you are using Apache Tomcat as a Windows Service you should use
+		the Windows Services configuration tool to set this property. Other users
+		can either edit the Tomcat startup script or set the property some
+		other way.
+	</p></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-server-install"></a>Chapter&nbsp;6.&nbsp;Server software installation</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#section-server-required-software">6.1. Required software</a></span></dt><dt><span class="section"><a href="#section-sesame-server-installation">6.2. Sesame server installation</a></span></dt><dt><span class="section"><a href="#d0e333">6.3. Logging Configuration</a></span></dt><dt><span class="section"><a href="#d0e357">6.4. Repository Configuration</a></span></dt></dl></div><p>
+		In this section, we explain how you can install a Sesame HTTP 
+		Server. You can skip this if you are not planning to run a Sesame
+		server but intend to use Sesame as a library to program against.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-server-required-software"></a>6.1.&nbsp;Required software</h2></div></div></div><p>
+			The Sesame server software requires the following software:
+		</p><div class="itemizedlist"><ul type="disc"><li>Java 5 or newer</li><li>
+				A Java Servlet Container that supports Java Servlet API 2.4 and
+				Java Server Pages (JSP) 2.0, or newer. We recommend using a
+				recent, stable version of
+				<a href="http://tomcat.apache.org/" target="_top">Apache Tomcat</a>.
+				At the time of writing, this is either version 5.5.x or 6.x.
+			</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-sesame-server-installation"></a>6.2.&nbsp;Sesame server installation</h2></div></div></div><p>
+			The Sesame 2.0 server software comes in the form of two Java Web
+			Applications: <span class="emphasis"><em>Sesame (HTTP) server</em></span> and
+			<span class="emphasis"><em>OpenRDF Workbench</em></span>.
+		</p><p>
+			Sesame Server provides HTTP access to Sesame repositories and is
+			meant to be accessed by other applications. Apart from some
+			functionality to view the server's log messages, it doesn't provide
+			any user oriented functionality. Instead, the user oriented
+			functionality is part of OpenRDF Workbench. OpenRDF Workbench
+			provides a web interface for querying, updating and exploring the
+			repositories of a Sesame Server.
+		</p><p>
+			If you have not done so already, you will first need to
+			<a href="http://www.openrdf.org/download.jsp" target="_top">download</a>
+			the Sesame 2.0 SDK. Both Sesame Server and OpenRDF Workbench can be
+			found in the <code class="filename">war</code> directory of the SDK. The
+			war-files in this directory need to be deployed in a Java Servlet
+			Container (see <a href="#section-server-required-software" title="6.1.&nbsp;Required software">Section&nbsp;6.1, &#8220;Required software&#8221;</a>).
+			The deployment process is container-specific, please consult the
+			documentation for your container on how to deploy a web application.
+		</p><p>
+			After you have deployed the Sesame Server webapp, you should be able
+			to access it, by default, at path <code class="filename">/openrdf-sesame</code>.
+			You can point your browser at this location to verify that the
+			deployment succeeded. Your browser should show the Sesame welcome
+			screen as well as some options to view the server logs, among other
+			things. Similarly, after deployment, the OpenRDF Workbench should be
+			available at path <code class="filename">/openrdf-workbench</code>.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e333"></a>6.3.&nbsp;Logging Configuration</h2></div></div></div><p>
+			Both Sesame Server and OpenRDF Workbench use the
+			<a href="http://logback.qos.ch/" target="_top">Logback</a> logging framework.
+			In its default configuration, all Sesame Server log messages are sent
+			to the log file <code class="filename">[ADUNA_DATA]/OpenRDF Sesame/logs/main.log</code>
+			(and log messages for the Workbench to the same file in
+			<code class="filename">[ADUNA_DATA]/OpenRDF workbench</code>). See
+			<a href="#chapter-datadir-config" title="Chapter&nbsp;5.&nbsp;Application directory configuration">Chapter&nbsp;5, <i>Application directory configuration</i></a> for more info about data
+			directories.
+		</p><p>
+			The default log level is <em class="parameter"><code>INFO</code></em>, indicating
+			that only important status messages, warnings and errors are logged.
+			The log level and -behaviour can be adjusted by modifying the
+			<code class="filename">.../conf/logback.xml</code> file. This file will be
+			generated when the server is first run. Please consult the logback
+			manual for configuration instructions.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e357"></a>6.4.&nbsp;Repository Configuration</h2></div></div></div><p>
+			A clean installation of a Sesame Server has a single repository by
+			default: the SYSTEM repository. This SYSTEM repository contains all
+			configuration data for the server, including data on which other
+			repositories exists and (in future releases) the access rights on
+			these repositories. This SYSTEM repository <span class="emphasis"><em>should
+					not</em></span> be used to store data that is not related to
+			the server configuration.
+		</p><p>
+			For now, the best way to create and manage repositories in a SYSTEM
+			repository is to use the Sesame Console or OpenRDF Workebench
+			(experimental). The Sesame Console is a command-line application for
+			interacting with Sesame, see <a href="#chapter-console" title="Chapter&nbsp;7.&nbsp;Sesame Console">Chapter&nbsp;7, <i>Sesame Console</i></a>.
+		</p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-console"></a>Chapter&nbsp;7.&nbsp;Sesame Console</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#d0e374">7.1. Getting started</a></span></dt><dt><span class="section"><a href="#d0e395">7.2. Connecting to a set of repositories</a></span></dt><dt><span class="section"><a href="#d0e405">7.3. Repository list</a></span></dt><dt><span class="section"><a href="#section-console-repository-creation">7.4. Creating a repository</a></span></dt><dt><span class="section"><a href="#d0e466">7.5. Other commands</a></span></dt><dt><span class="section"><a href="#section-repository-config">7.6. Repository configuration</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e474">7.6.1. Memory store configuration</a></span></dt><dt><span class="section"><a href="#section-native-store-config">7.6.2. Native store configuration</a></span></dt><dt><span class="section"><a href="#section-rdbms-store-config">7.6.3. RDBMS store configuration</a></span></dt><dt><span class="section"><a href="#d0e595">7.6.4. HTTP repository configuration</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e626">7.7. Repository configuration templates (advanced)</a></span></dt></dl></div><p>
+		This chapter describes Sesame Console, a command-line application for
+		interacting with Sesame. For now, the best way to create and manage
+		repositories in a SYSTEM repository is to use the Sesame Console.
+	</p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e374"></a>7.1.&nbsp;Getting started</h2></div></div></div><p>
+			Sesame Console can be started using the
+			<code class="filename">console.bat/.sh</code> scripts that can be found in
+			the <code class="filename">bin</code> directory of the Sesame SDK. By default,
+			the console will connect to the "default data directory", which contains
+			the console's own set of repositories. See
+			<a href="#chapter-datadir-config" title="Chapter&nbsp;5.&nbsp;Application directory configuration">Chapter&nbsp;5, <i>Application directory configuration</i></a> for more info on data directories.
+		</p><p>
+			The console can be operated by typing commands. Commands can span multiple
+			lines and end with a '.' at the end of a line. For example, to get an
+			overview of the available commands, type:
+		</p><pre class="screen">help.</pre><p>
+			To get help for a specific command, type 'help' followed by the command name,
+			e.g.:
+		</p><pre class="screen">help connect.</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e395"></a>7.2.&nbsp;Connecting to a set of repositories</h2></div></div></div><p>
+			As indicated in the previous section, the console connects to its own
+			set of repositories by default. Using the <span><strong class="command">connect</strong></span>
+			command you can make the console connect to a Sesame Server or to a
+			set of repositories of your file system. For example, to connect to a
+			Sesame Server that is listening to port 8080 on localhost, enter the
+			following command:
+		</p><pre class="screen">connect http://localhost:8080/openrdf-sesame.</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e405"></a>7.3.&nbsp;Repository list</h2></div></div></div><p>
+			To get an overview of the repositories that are available in the set
+			that your console is connected to, use the 'show' command:
+		</p><pre class="screen">show repositories.</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-console-repository-creation"></a>7.4.&nbsp;Creating a repository</h2></div></div></div><p>
+			The 'create' command can be used to add new repositories to the set
+			that the console is connected to. This command expects the name of
+			a template that describes the repository's configuration. Currently,
+			there are nine templates that are included with the console by default:
+		</p><div class="itemizedlist"><ul type="disc"><li><em class="parameter"><code>memory</code></em>
+				-- a memory based RDF repository
+			</li><li><em class="parameter"><code>memory-rdfs</code></em>
+				-- a main-memory repository with RDF Schema inferencing
+			</li><li><em class="parameter"><code>memory-rdfs-dt</code></em>
+				-- a main-memory repository with RDF Schema and direct type hierarchy inferencing
+			</li><li><em class="parameter"><code>native</code></em>
+				-- a repository that uses on-disk data structure
+			</li><li><em class="parameter"><code>native-rdfs</code></em>
+				-- a native repository with RDF Schema inferencing
+			</li><li><em class="parameter"><code>native-rdfs-dt</code></em>
+				-- a native repository with RDF Schema and direct type hierarchy inferencing
+			</li><li><em class="parameter"><code>pgsql</code></em>
+				-- a repository that stores data in a PostgreSQL database
+			</li><li><em class="parameter"><code>mysql</code></em>
+				-- a repository that stores data in a MySQL database
+			</li><li><em class="parameter"><code>remote</code></em>
+				-- a repository that serves as a proxy for a repository on a Sesame Server
+			</li></ul></div><p>
+			When the 'create' command is executed, the console will ask you to
+			fill in a number of parameters for the type of repository that you
+			chose. For example, to create a native repository, you execute the following
+			command:
+		</p><pre class="screen">create native.</pre><p>
+			The console will then ask you to provide an ID and title for the repository,
+			as well as the triple indexes that need to be created for this kind of store.
+			The values between square brackets indicate default values which you can select
+			by simply hitting enter. The output of this dialogue looks something like this:
+		</p><pre class="screen">
+Please specify values for the following variables:
+Repository ID [native]: myRepo
+Repository title [Native store]: My repository
+Triple indexes [spoc,posc]: 
+Repository created</pre><p>
+			Please see <a href="#section-repository-config" title="7.6.&nbsp;Repository configuration">Section&nbsp;7.6, &#8220;Repository configuration&#8221;</a> for more info on the
+			repository configuration options.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e466"></a>7.5.&nbsp;Other commands</h2></div></div></div><p>
+			Please check the documentation that is provided by the console itself for
+			help on how to use the other commands. Most commands should be self
+			explanatory.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-repository-config"></a>7.6.&nbsp;Repository configuration</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e474"></a>7.6.1.&nbsp;Memory store configuration</h3></div></div></div><p>
+				A memory store is an RDF repository that stores its data in main
+				memory. Apart from the standard <em class="parameter"><code>ID</code></em> and
+				<em class="parameter"><code>title</code></em> parameters, this type of repository
+				has a <em class="parameter"><code>Persist</code></em> and
+				<em class="parameter"><code>Sync delay</code></em> parameter.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e491"></a>7.6.1.1.&nbsp;Memory Store persistence</h4></div></div></div><p>
+					The <em class="parameter"><code>Persist</code></em> parameter controls
+					whether the memory store will use a data file for
+					persistence over sessions. Persistent memory stores write
+					their data to disk before being shut down and read this data
+					back in the next time they are initialized. Non-persistent
+					memory stores are always empty upon initialization.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e499"></a>7.6.1.2.&nbsp;Synchronization delay</h4></div></div></div><p>
+					By default, the memory store persistence mechanism synchronizes
+					the disk backup directly upon any change to the contents of the
+					store. That means that directly after an update operation (upload,
+					removal) completes, the disk backup is updated. It is possible
+					to configure a synchronization delay however. This can be useful
+					if your application performs several transactions in sequence and
+					you want to prevent disk synchronization in the middle of this
+					sequence to improve update performance.
+				</p><p>
+					The synchronization delay is specified by a number, indicating
+					the time in milliseconds that the store will wait before it
+					synchronizes changes to disk. The value 0 indicates that there
+					should be no delay. Negative values can be used to postpone the
+					synchronization indefinitely, i.e. until the store is shut down.
+				</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-native-store-config"></a>7.6.2.&nbsp;Native store configuration</h3></div></div></div><p>
+				A native store stores and retrieves its data directly to/from
+				disk. The advantage of this over the memory store is that it
+				scales much better as it isn't limited to the size of available
+				memory. Of course, since it has to access the disk, it is also
+				slower than the in-memory store, but it is a good solution for
+				larger data sets.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e512"></a>7.6.2.1.&nbsp;Native store indexes</h4></div></div></div><p>
+					The native store uses on-disk <span class="emphasis"><em>indexes</em></span>
+					to speed up querying. It uses B-Trees for indexing
+					statements, where the index key consists of four fields:
+					subject (s), predicate (p), object (o) and context (c). The
+					order in which each of these fields is used in the key
+					determines the usability of an index on a specify statement
+					query pattern: searching statements with a specific subject
+					in an index that has the subject as the first field is
+					signifantly faster than searching these same statements in an
+					index where the subject field is second or third. In the worst
+					case, the 'wrong' statement pattern will result in a sequential
+					scan over the entire set of statements.
+				</p><p>
+					By default, the native repository only uses two indexes, one
+					with a subject-predicate-object-context (spoc) key pattern
+					and one with a predicate-object-subject-context (posc) key
+					pattern.  However, it is possible to define more or other
+					indexes for the native repository, using the
+					<em class="parameter"><code>Triple indexes</code></em> parameter. This can be
+					used to optimize performance for query patterns that occur
+					frequently.
+				</p><p>
+					The subject, predicate, object and context fields are
+					represented by the characters 's', 'p', 'o' and 'c'
+					respectively. Indexes can be specified by creating 4-letter
+					words from these four characters. Multiple indexes can be
+					specified by separating these words with commas, spaces
+					and/or tabs. For example, the string "spoc, posc" specifies
+					two indexes; a subject-predicate-object-context index and a
+					predicate-object-subject-context index.
+				</p><p>
+					Creating more indexes potentially speeds up querying (a
+					lot), but also adds overhead for maintaining the indexes.
+					Also, every added index takes up additional disk space.
+				</p><p>
+					The native store automatically creates/drops indexes upon
+					(re)initialization, so the parameter can be adjusted and
+					upon the first refresh of the configuration the native store
+					will change its indexing strategy, without loss of data.
+				</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-rdbms-store-config"></a>7.6.3.&nbsp;RDBMS store configuration</h3></div></div></div><p>
+				An RDBMS store is an RDF repository that stores its data in a
+				relational database. Currently, PostgreSQL and MySQL are
+				supported. Both RDBMS's have their own configuration template,
+				"pgsql" and "mysql" respectively, but these have the same set
+				of parameters.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e537"></a>7.6.3.1.&nbsp;JDBC driver</h4></div></div></div><p>
+					The RDBMS store communicates with a database via a JDBC driver
+					for the concerning RDBMS. These JDBC drivers are not included
+					in the Sesame SDK; you will need to add these jar-files to the
+					Console and/or Sesame server for these to be able to run the
+					RDBMS store. Note that you don't need to add the driver to the
+					Console if you only use it to configure an RDBMS store on a
+					Sesame server.
+				</p><p>
+					To add the JDBC driver to the Sesame Console, just put the JDBC
+					jar-file in the SDK's <code class="filename">lib</code> directory with
+					all the other jar-files. To add it to a Sesame server, add the
+					jar-file to the web application's <code class="filename">WEB-INF/lib</code>
+					directory.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e550"></a>7.6.3.2.&nbsp;JDBC parameters</h4></div></div></div><p>
+					The database that the RDBMS should use is defined using the
+					following set of parameters:
+				</p><div class="itemizedlist"><ul type="disc"><li><em class="parameter"><code>JDBC driver</code></em> -- specifies which JDBC
+						driver an RDBMS store should use. The default value
+						specified by the configuration templates should used
+						in most cases.
+					</li><li><em class="parameter"><code>Host</code></em> -- specifies the name of the
+						machine that is running the database.
+					</li><li><em class="parameter"><code>Port</code></em> -- specifies the port to use
+						for communication with the host machine. The
+						configuration templates specify the default port
+						numbers for their RDBMS's.
+					</li><li><em class="parameter"><code>Database</code></em> -- specifies the name of
+						the database that should be used.
+					</li><li><em class="parameter"><code>Connection properties</code></em> -- can
+						optionally be used to specify additional properties for
+						the JDBC driver. Please consult the documentation of the
+						RDBMS's JDBC driver for more info.
+					</li><li><em class="parameter"><code>User name</code></em> -- the user name or role
+						that should be used to authenticate with the RDBMS.
+					</li><li><em class="parameter"><code>Password</code></em> -- the password for the
+						specified user name or role.
+					</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e584"></a>7.6.3.3.&nbsp;Table layout parameters</h4></div></div></div><p>
+					The database's table layout can be tweaked using the
+					<em class="parameter"><code>Max number of triple tables</code></em> parameter. The
+					RDBMS store supports both a "monolithic" schema with a single
+					table that stores all statements, as well as a vertical schema
+					that stores statements in a per-predicate table.
+				</p><p>
+					The vertical layout has better query evaluation performance on
+					most data sets, but potentially leads to huge amounts of tables,
+					depending on the number of unique predicates in your data. If
+					the number of tables becomes too large, the database's performance
+					can start to decrease or it can even fail completely. To prevent
+					these problem, you can specify the maximum number of triple tables
+					that should be created. Setting this parameter to 1 results in a
+					monolithic schema, setting it to 0 or a negative value disables
+					the limit.
+				</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e595"></a>7.6.4.&nbsp;HTTP repository configuration</h3></div></div></div><p>
+				An HTTP repository isn't an actual store, but serves as a proxy for
+				a store on a (remote) Sesame server. Apart from the standard
+				<em class="parameter"><code>ID</code></em> and <em class="parameter"><code>title</code></em> parameters,
+				this type of repository has a <em class="parameter"><code>Sesame server location</code></em>
+				and a <em class="parameter"><code>Remote repository ID</code></em> parameter.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e612"></a>7.6.4.1.&nbsp;Sesame server location</h4></div></div></div><p>
+					This parameter specifies the URL of the Sesame Server that the
+					repository should communicate with. Default value is
+					http://localhost:8080/openrdf-sesame, which corresponds to a Sesame
+					Server that is running on your own machine.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e617"></a>7.6.4.2.&nbsp;Remote repository ID</h4></div></div></div><p>
+					This is the ID of the <span class="emphasis"><em>remote</em></span> repository that the
+					HTTP repository should communicate with. Please note an HTTP repository
+					two repository ID parameters: one identifying the remote repository and
+					one that specifies the HTTP repository's own ID.
+				</p></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e626"></a>7.7.&nbsp;Repository configuration templates (advanced)</h2></div></div></div><p>
+			In Sesame, repository configurations with all their parameters are modeled in
+			RDF and stored in the SYSTEM repository. So, in order to create a new repository,
+			the Console needs to create such an RDF document and submit it to the SYSTEM
+			repository. The Console uses so called <span class="emphasis"><em>repository configuration
+				templates</em></span> to accomplish this.
+		</p><p>
+			Repository configuration templates are simple Turtle RDF files that describe a
+			repository configuration, where some of the parameters are replaced with
+			variables. The Console parses these templates and asks the user to supply values
+			for the variables. The variables are then substituted with the specified values,
+			which produces the required configuration data.
+		</p><p>
+			The Sesame Console comes with a number of default templates, which are listed in
+			<a href="#section-console-repository-creation" title="7.4.&nbsp;Creating a repository">Section&nbsp;7.4, &#8220;Creating a repository&#8221;</a>. The Console tries to
+			resolve the parameter specified with the 'create' command (e.g. "memory") to a
+			template file with the same name (e.g. "memory.ttl"). The default templates are
+			included in Console library, but the Console also looks in the
+			<code class="filename">templates</code> subdirectory of <code class="filename">[ADUNA_DATA]</code>.
+			You can define your own templates by placing template files in this directory.
+		</p><p>
+			To create your own templates, it's easiest to start with an existing template and
+			modify that to your needs. The default "memory.ttl" template looks like this:
+		</p><pre class="screen">
+#
+# Sesame configuration template for a main-memory repository
+#
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
+@prefix rep: &lt;http://www.openrdf.org/config/repository#&gt;.
+@prefix sr: &lt;http://www.openrdf.org/config/repository/sail#&gt;.
+@prefix sail: &lt;http://www.openrdf.org/config/sail#&gt;.
+@prefix ms: &lt;http://www.openrdf.org/config/sail/memory#&gt;.
+
+[] a rep:Repository ;
+   rep:repositoryID "{%Repository ID|memory%}" ;
+   rdfs:label "{%Repository title|Memory store%}" ;
+   rep:repositoryImpl [
+      rep:repositoryType "openrdf:SailRepository" ;
+      sr:sailImpl [
+         sail:sailType "openrdf:MemoryStore" ;
+         ms:persist {%Persist|true|false%} ;
+         ms:syncDelay {%Sync delay|0%}
+      ]
+   ].</pre><p>
+			Template variables are written down as <em class="parameter"><code>{%var name%}</code></em> and
+			can specify zero or more values, seperated by vertical bars ("|"). If one value
+			is specified then this value is interpreted as the default value for the variable.
+			The Console will use this default value when the user simply hits the Enter key.
+			If multiple variable values are specified, e.g.
+			<em class="parameter"><code>{%Persist|true|false%}</code></em>, then this is interpreted as set of
+			all possible values. If the user enters an unspecified value then that is
+			considered to be an error. The value that is specified first is used as the default
+			value.
+		</p><p>
+			The URIs that are used in the templates are the URIs that are specified by the
+			<code class="classname">RepsitoryConfig</code> and <code class="classname">SailConfig</code> classes
+			of Sesame's repository configuration mechanism. The relevant namespaces and URIs can
+			be found in these javadoc or source of these classes.
+		</p></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-repository-api"></a>Chapter&nbsp;8.&nbsp;The Repository API</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#d0e686">8.1. Creating a Repository object</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e725">8.1.1. Creating a main memory RDF Repository</a></span></dt><dt><span class="section"><a href="#d0e766">8.1.2. Creating a Native RDF Repository</a></span></dt><dt><span class="section"><a href="#d0e785">8.1.3. Creating a repository with RDF Schema inferencing</a></span></dt><dt><span class="section"><a href="#d0e812">8.1.4. Accessing a remote repository</a></span></dt></dl></dd><dt><span class="section"><a href="#d0e835">8.2. Using a repository: RepositoryConnections</a></span></dt><dd><dl><dt><span class="section"><a href="#d0e856">8.2.1. Adding RDF to a repository</a></span></dt><dt><span class="section"><a href="#d0e879">8.2.2. Querying a repository</a></span></dt><dt><span class="section"><a href="#d0e1128">8.2.3. Creating, retrieving, removing individual statements</a></span></dt><dt><span class="section"><a href="#d0e1203">8.2.4. Working with Collections and Iterations</a></span></dt><dt><span class="section"><a href="#d0e1238">8.2.5. Using context</a></span></dt><dt><span class="section"><a href="#section-transactions">8.2.6. Transactions</a></span></dt></dl></dd></dl></div><p>
+		The Repository API is the central access point for Sesame repositories.
+		Its purpose is to give a developer-friendly access point to RDF
+		repositories, offering various methods for querying and updating the
+		data, while hiding a lot of the nitty gritty details of the underlying
+		machinery.
+	</p><p>
+		In this chapter, we will try to explain the basics of how to program
+		against the Repository API. The interfaces for the Repository API
+		can be found in package
+		<code class="classname">org.openrdf.repository</code>.  Several
+		implementations for these interface exist in various sub-packages.
+		The Javadoc reference for the API is available <a href="http://www.openrdf.org/doc/sesame2/api/" target="_top">online</a> and
+		can also be found in the <code class="filename">doc</code> directory of the
+		download.
+	 </p><p>
+		If you need more information about how to set up your environment
+		for working with the Sesame APIs, take a look at <a href="#chapter-lib-install" title="Chapter&nbsp;4.&nbsp;Setting up to use the Sesame libraries">Chapter&nbsp;4, <i>Setting up to use the Sesame libraries</i></a>.
+	 </p><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e686"></a>8.1.&nbsp;Creating a Repository object</h2></div></div></div><p>
+			The first step in any action that involves Sesame repositories
+			is to create a <code class="classname">Repository</code> for it.
+		</p><p>
+			The central interface of the repository API is the
+			<code class="classname">Repository</code> interface. There are several
+			implementations available of this interface:
+		</p><div class="itemizedlist"><ul type="disc"><li><code class="classname">org.openrdf.repository.sail.SailRepository</code>
+				is a <code class="classname">Repository</code> that operates directly on
+				top of a <code class="classname">Sail</code>. This is the class most
+				commonly used when accessing a local Sesame repository.
+				<code class="classname">SailRepository</code>'s operate on (stacks of)
+				Sail object(s) for storage and retrieval of RDF data. An important
+				thing to remember is that the behaviour of a repository is
+				determined by the Sail(s) that it operates on; for example, the
+				repository will only support RDF Schema or OWL semantics if the
+				Sail stack includes an inferencer for this.
+			</li><li><code class="classname">org.openrdf.repository.http.HTTPRepository</code>
+				is, as the name implies, a <code class="classname">Repository</code>
+				implementation that acts as a proxy to a Sesame repository
+				available on a remote Sesame server, accessible through
+				HTTP.
+			</li></ul></div><p>
+			In the following section, we will first take a look at the use of
+			the <code class="classname">SailRepository</code> class in order to
+			create and use a local Sesame repository.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e725"></a>8.1.1.&nbsp;Creating a main memory RDF Repository</h3></div></div></div><p>
+				One of the simplest configurations is a repository that just
+				stores RDF data in main memory without applying any
+				inferencing or whatsoever. This is also by far the fastest
+				type of repository that can be used. The following code
+				creates and initialize a non-inferencing main-memory
+				repository:
+			</p><pre class="programlisting">
+import org.openrdf.repository.Repository;
+import org.openrdf.repository.sail.SailRepository;
+import org.openrdf.sail.memory.MemoryStore;
+
+
+...
+
+Repository myRepository = new SailRepository(new MemoryStore());
+myRepository.initialize();</pre><p>
+				The constructor of the <code class="classname">SailRepository</code>
+				class accepts any object of type <code class="classname">Sail</code>,
+				so we simply pass it a new main-memory store object (which is,
+				of course, a <code class="classname">Sail</code> implementation).
+				Following this, the repository needs to be initialized to
+				prepare the Sail(s) that it operates on, which includes
+				operations such as restoring previously stored data, setting
+				up connections to a relational database, etc.
+			</p><p>
+				The repository that is created by the above code is
+				<span class="emphasis"><em>volatile</em></span>: its contents are lost when the
+				object is garbage collected or when the program is shut down.
+				This is fine for cases where, for example, the repository is
+				used as a means for manipulating an RDF model in memory.
+			</p><p>
+				Different types of Sail objects take parameters in their
+				constructor that change their behaviour. The
+				<code class="classname">MemoryStore</code> for example takes a data
+				directory parameter that specifies a data directory for
+				persisent storage. If specified, the MemoryStore will write its
+				contents to this directory so that it can restore it when it is
+				initialized in a future session:
+			</p><pre class="programlisting">
+File dataDir = new File("c:\\temp\\myRepository\\");
+Repository myRepository = new SailRepository( new MemoryStore(dataDir) );
+myRepository.initialize();</pre><p>
+				As you can see, we can fine-tune the configuration of our
+				repository by passing parameters to the constructor of the
+				Sail object. Some Sail types may offer additional
+				configuration methods, all of which need to be called before
+				the repository is initialized. The
+				<code class="classname">MemoryStore</code> currently has one such
+				method: <code class="function">setSyncDelay(long)</code>, which can
+				be used to control the strategy that is used for writing to
+				the data file, e.g.:
+			</p><pre class="programlisting">
+File dataDir = new File("c:\\temp\\myRepository\\");
+MemoryStore memStore = new MemoryStore(dataDir);
+memStore.setSyncDelay(1000L);
+
+Repository myRepository = new SailRepository(memStore);
+myRepository.initialize();</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e766"></a>8.1.2.&nbsp;Creating a Native RDF Repository</h3></div></div></div><p>
+			  A Native RDF Repository does not keep its data in main memory,
+			  but instead stores it directly to disk (in a binary format
+			  optimized for compact storage and fast retrieval). It is an
+			  efficient, scalable and fast solution for RDF storage of
+			  datasets that are too large to keep entirely in memory.
+			</p><p>
+			  The code for creation of a Native RDF repository is almost
+			  identical to that of a main memory repository:
+			</p><pre class="programlisting">
+import org.openrdf.repository.Repository;
+import org.openrdf.repository.sail.SailRepository;
+import org.openrdf.sail.nativerdf.NativeStore;
+
+
+...
+File dataDir = new File("/path/to/datadir/");
+Repository myRepository = new SailRepository(new NativeStore(dataDir));
+myRepository.initialize();</pre><p>
+			  By default, the Native store creates a set of two indexes (see
+			  <a href="#section-native-store-config" title="7.6.2.&nbsp;Native store configuration">Section&nbsp;7.6.2, &#8220;Native store configuration&#8221;</a>). To
+			  configure which indexes it should create, we can either use the
+			  <code class="classname">NativeStore.setTripleIndexes(String)</code>
+			  method, or we can directly supply a index configuration string
+			  to the constructor:
+			</p><pre class="programlisting">
+import org.openrdf.repository.Repository;
+import org.openrdf.repository.sail.SailRepository;
+import org.openrdf.sail.nativerdf.NativeStore;
+
+
+...
+File dataDir = new File("/path/to/datadir/");
+String indexes = "spoc,posc,cosp";
+Repository myRepository = new SailRepository(new NativeStore(dataDir, indexes));
+myRepository.initialize();</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e785"></a>8.1.3.&nbsp;Creating a repository with RDF Schema inferencing</h3></div></div></div><p>
+				As we have seen, we can create <code class="classname">Repository</code>
+				objects for any kind of back-end store by passing them a
+				reference to the appropriate Sail object. We can pass any
+				stack of Sails this way, allowing all kinds of repository
+				configurations to be created quite easily. For example, to
+				stack an RDF Schema inferencer on top of a memory store,
+				we simply create a repository like so:
+			</p><pre class="programlisting">
+import org.openrdf.repository.Repository;
+import org.openrdf.repository.sail.SailRepository;
+import org.openrdf.sail.memory.MemoryStore;
+import org.openrdf.sail.inferencer.fc.ForwardChainingRDFSInferencer;
+
+...
+
+Repository myRepository = new SailRepository(
+                          new ForwardChainingRDFSInferencer(
+                          new MemoryStore()));
+myRepository.initialize();</pre><p>
+				Each layer in the Sail stack is created by a constructor
+				that takes the underlying Sail as a parameter. Finally, we
+				create the <code class="classname">SailRepository</code> object as a
+				functional wrapper around the Sail stack.
+			</p><p>
+				The <code class="classname">ForwardChainingRDFSInferencer</code> that is
+				used in this example is a generic RDF Schema inferencer; it can
+				be used on top of any Sail that supports the methods it
+				requires. Both <code class="classname">MemoryStore</code> and 
+				<code class="classname">NativeStore</code> support these methods.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e812"></a>8.1.4.&nbsp;Accessing a remote repository</h3></div></div></div><p>
+				Working with remote repositories is just as easy as working
+				with local ones. We can simply use a different
+				<code class="classname">Repository</code> object, the
+				<code class="classname">HTTPRepository</code>, instead of the
+				<code class="classname">SailRepository</code> class.
+			</p><p>
+				A requirement is of course that there is a Sesame 2 server
+				running on some remote system, which is accessible over HTTP.
+				For example, suppose that at
+				<code class="filename">http://example.org/sesame2/</code> a
+				Sesame server is running, which has a repository with the
+				identification 'example-db'. We can access this repository in
+				our code as follows:
+			</p><pre class="programlisting">
+import org.openrdf.repository.Repository;
+import org.openrdf.repository.http.HTTPRepository;
+
+...
+
+String sesameServer = "http://example.org/sesame2";
+String repositoryID = "example-db";
+
+Repository myRepository = new HTTPRepository(sesameServer, repositoryID);
+myRepository.initialize();</pre></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e835"></a>8.2.&nbsp;Using a repository: RepositoryConnections</h2></div></div></div><p>
+			Now that we have created a <code class="classname">Repository</code>, we
+			want to do something with it. In Sesame 2, this is achieved through
+			the use of <code class="classname">RepositoryConnection</code> objects, which
+			can be created by the <code class="classname">Repository</code>.
+		</p><p>
+			A <code class="classname">RepositoryConnection</code> represents - as the name
+			suggests - a connection to the actual store. We can issue operations
+			over this connection, and close it when we are done to make sure we
+			are not keeping resources unnnecessarily occupied.
+		</p><p>
+			In the following sections, we will show some examples of basic
+			operations.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e856"></a>8.2.1.&nbsp;Adding RDF to a repository</h3></div></div></div><p>
+				The Repository API offers various methods for adding data to a
+				repository. Data can be added by specifying the location of a file
+				that contains RDF data, and statements can be added individually or in
+				collections.
+			</p><p>
+				We perform operations on a repository by requesting a
+				<code class="classname">RepositoryConnection</code> from the repository. On this
+				<code class="classname">RepositoryConnection</code> object we can the various
+				operations, such as query evaluation, getting, adding, or
+				removing statements, etc.
+			</p><p>
+				The following example code adds two files, one local and one
+				available through HTTP, to a repository:
+				</p><pre class="programlisting">
+import org.openrdf.OpenRDFException;
+import org.openrdf.repository.Repository;
+import org.openrdf.repository.RepositoryConnection;
+import org.openrdf.rio.RDFFormat;
+import java.io.File;
+import java.net.URL;
+
+...
+
+File file = new File("/path/to/example.rdf");
+String baseURI = "http://example.org/example/local";
+
+try {
+   RepositoryConnection con = myRepository.getConnection();
+   try {
+      con.add(file, baseURI, RDFFormat.RDFXML);
+
+      URL url = new URL("http://example.org/example/remote");
+      con.add(url, url.toString(), RDFFormat.RDFXML);
+   }
+   finally {
+      con.close();
+   }
+}
+catch (OpenRDFException e) {
+   // handle exception
+}
+catch (java.io.IOEXception e) {
+   // handle io exception
+}</pre><p>
+				More information on other available methods can be found in the
+				javadoc reference of the <code class="classname">RepositoryConnection</code> interface.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e879"></a>8.2.2.&nbsp;Querying a repository</h3></div></div></div><p>
+				The Repository API has a number of methods for creating and
+				evaluating queries. Three types of queries are distinguished:
+				tuple queries, graph queries and boolean queries. The query
+				types differ in the type of results that they produce.
+			</p><p>
+				The result of a tuple query is a set of tuples (or variable
+				bindings), where each tuple represents a solution of a query.
+				This type of query is commonly used to get specific values (URIs,
+				blank nodes, literals) from the stored RDF data.
+			</p><p>
+				The result of graph queries is an RDF graph (or set of statements).
+				This type of query is very useful for extracting sub-graphs from
+				the stored RDF data, which can then be queried further, serialized
+				to an RDF document, etc.
+			</p><p>
+				The result of boolean queries is a simple boolean value, i.e.
+				<em class="parameter"><code>true</code></em> or <em class="parameter"><code>false</code></em>.
+				This type of query can be used to check if a repository contains
+				specific information.
+			</p><p>
+				<span class="emphasis"><em>Note:</em></span> Sesame 2 currently supports two query
+				languages: SeRQL and SPARQL. The former is explained in
+				<a href="#chapter-serql" title="Chapter&nbsp;9.&nbsp;The SeRQL query language (revision 3.1)">Chapter&nbsp;9, <i>The SeRQL query language (revision 3.1)</i></a>, the specification for the latter is
+				available
+				<a href="http://www.w3.org/TR/rdf-sparql-query/" target="_top">online</a>.
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e906"></a>8.2.2.1.&nbsp;Evaluating a tuple query</h4></div></div></div><p>
+					To evaluate a tuple query we simply do the following:
+				</p><pre class="programlisting">
+import java.util.List;
+import org.openrdf.OpenRDFException;
+import org.openrdf.repository.RepositoryConnection;
+import org.openrdf.query.TupleQuery;
+import org.openrdf.query.TupleQueryResult;
+import org.openrdf.query.BindingSet;
+import org.openrdf.query.QueryLanguage;
+
+...
+
+try {
+   RepositoryConnection con = myRepository.getConnection();
+   try {
+      String queryString = "SELECT x, y FROM {x} p {y}";
+      TupleQuery tupleQuery = con.prepareTupleQuery(QueryLanguage.SERQL, queryString);
+      TupleQueryResult result = tupleQuery.evaluate();
+      try {
+         .... // do something with the result
+      }
+      finally {
+         result.close();
+      }
+   }
+   finally {
+      con.close();
+   }
+}
+catch (OpenRDFException e) {
+   // handle exception
+}</pre><p>
+					This evaluates a SeRQL query and returns a
+					<code class="classname">TupleQueryResult</code>, which consists of a
+					sequence of <code class="classname">BindingSet</code> objects. Each
+					<code class="classname">BindingSet</code> contains a set of
+					<code class="classname">Binding</code> objects. A binding is pair
+					relating a name (as used in the query's SELECT clause) with
+					a value.
+				</p><p>
+					We can use the <code class="classname">TupleQueryResult</code> to iterate
+					over all results and get each individual result for
+					<code class="varname">x</code> and <code class="varname">y</code>:
+				</p><pre class="programlisting">
+while (result.hasNext()) {
+   BindingSet bindingSet = result.next();
+   Value valueOfX = bindingSet.getValue("x");
+   Value valueOfY = bindingSet.getValue("y");
+
+   // do something interesting with the values here...
+}</pre><p>
+					As you can see, we retrieve values by name rather than by an
+					index. The names used should be the names of variables as
+					specified in your query. The
+					<code class="classname">TupleQueryResult.getBindingNames()</code> method
+					returns a list of binding names, in the order in which they were
+					specified in the query. To process the bindings in each binding
+					set in the order specified by the projection, you can do the
+					following:
+				</p><pre class="programlisting">
+List&lt;String&gt; bindingNames = result.getBindingNames();
+while (result.hasNext()) {
+   BindingSet bindingSet = result.next();
+   Value firstValue = bindingSet.getValue(bindingNames.get(0));
+   Value secondValue = bindingSet.getValue(bindingNames.get(1));
+
+   // do something interesting with the values here...
+}</pre><p>
+					It is important to invoke the <code class="function">close()</code>
+					operation on the <code class="classname">TupleQueryResult</code>,
+					after we are done with it. A
+					<code class="classname">TupleQueryResult</code> evaluates lazily and
+					keeps resources (such as connections to the underlying
+					database) open. Closing the
+					<code class="classname">TupleQueryResult</code> frees up these
+					resources. Do not forget that iterating over a result may
+					cause exceptions! The best way to make sure no connections are
+					kept open unnecessarily is to invoke
+					<code class="function">close()</code> in the
+					<code class="classname">finally</code> clause.
+				</p><p>
+					An alternative to producing a
+					<code class="classname">TupleQueryResult</code> is to supply an object
+					that implements the
+					<code class="classname">TupleQueryResultHandler</code> interface to
+					the query's <code class="function">evaluate()</code> method. The main
+					difference is that when using a return object, the caller has
+					control over when the next answer is retrieved, whereas with
+					the use of a handler, the connection simply pushes answers to
+					the handler object as soon as it has them available.
+				</p><p>
+					As an example we will use
+					<code class="classname">SPARQLResultsXMLWriter</code>, which is a
+					<code class="classname">TupleQueryResultHandler</code> implementation that writes
+					SPARQL Results XML documents to an output stream or to a writer:
+				</p><pre class="programlisting">
+import org.openrdf.query.resultio.sparqlxml.SPARQLResultsXMLWriter;
+
+...
+
+FileOutputStream out = new FileOutputStream("/path/to/result.srx");
+try {
+   SPARQLResultsXMLWriter sparqlWriter = new SPARQLResultsXMLWriter(out);
+
+   RepositoryConnection con = myRepository.getConnection();
+   try {
+      String queryString = "SELECT * FROM {x} p {y}";
+      TupleQuery tupleQuery = con.prepareTupleQuery(QueryLanguage.SERQL, queryString);
+      tupleQuery.evaluate(sparqlWriter);
+   }
+   finally {
+      con.close();
+   }
+}
+finally {
+   out.close();
+}</pre><p>
+					You can just as easily supply your own application-specific
+					implementation of <code class="classname">TupleQueryResultHandler</code> though.
+				</p><p>
+					Lastly, an important warning: as soon as you are done with the
+					<code class="classname">RepositoryConnection</code> object, you should close it.
+					Notice that during processing of the
+					<code class="classname">TupleQueryResult</code> object (for example,
+					when iterating over its contents), the
+					<code class="classname">RepositoryConnection</code> should still be open. We can
+					invoke <code class="function">con.close()</code> after we have finished
+					with the result.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e1008"></a>8.2.2.2.&nbsp;Evaluating a graph query</h4></div></div></div><p>
+					The following code evaluates a graph query on a repository:
+				</p><pre class="programlisting">
+import org.openrdf.query.GraphQueryResult;
+
+GraphQueryResult graphResult = con.prepareGraphQuery(
+      QueryLanguage.SERQL, "CONSTRUCT * FROM {x} p {y}").evaluate();</pre><p>
+					A <code class="classname">GraphQueryResult</code> is similar to
+					<code class="classname">TupleQueryResult</code> in that is an object
+					that iterates over the query results. However, for graph queries
+					the query results are RDF statements, so a
+					<code class="classname">GraphQueryResult</code> iterates over
+					<code class="classname">Statement</code> objects:
+				</p><pre class="programlisting">
+while (graphResult.hasNext()) {
+   Statement st = graphResult.next();
+   // ... do something with the resulting statement here.
+}</pre><p>
+
+				</p><p>
+					The <code class="classname">TupleQueryResultHandler</code> equivalent
+					for graph queries is
+					<code class="classname">org.openrdf.rio.RDFHandler</code>. Again, this
+					is a generic interface, each object implementing it can
+					process the reported RDF statements in any way it wants.
+				</p><p>
+				</p><p>
+					All writers from Rio (such as the <code class="classname">RDFXMLWriter</code>,
+					<code class="classname">TurtleWriter</code>, <code class="classname">TriXWriter</code>,
+					etc.) implement the <code class="classname">RDFHandler</code> interface. This
+					allows them to be used in combination with querying quite easily. In the
+					following example, we use a <code class="classname">TurtleWriter</code>
+					to write the result of a SeRQL graph query to standard output
+					in Turtle format:
+				</p><p>
+				</p><pre class="programlisting">
+import org.openrdf.rio.turtle.TurtleWriter;
+
+...
+
+RepositoryConnection con = myRepository.getConnection();
+try {
+   TurtleWriter turtleWriter = new TurtleWriter(System.out);
+
+   con.prepareGraphQuery(QueryLanguage.SERQL,
+         "CONSTRUCT * FROM {x} p {y}").evaluate(turtleWriter);
+}
+finally {
+   con.close();
+}</pre><p>
+				</p><p>
+					Again, note that as soon as we are done with the result of the query
+					(either after iterating over the contents of the
+					<code class="classname">GraphQueryResult</code> or after invoking the
+					<code class="classname">RDFHandler</code>), we invoke
+					<code class="function">con.close()</code> to close the connection and free
+					resources.
+				</p><p>
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e1075"></a>8.2.2.3.&nbsp;Preparing and Reusing Queries</h4></div></div></div><p>
+					In the previous sections we have simply created a query from a
+					string and immediately evaluated it. However, the
+					<code class="function">prepareTupleQuery</code> and
+					<code class="function">prepareGraphQuery</code> methods return objects of
+					type <code class="classname">Query</code>, specifically
+					<code class="classname">TupleQuery</code> and
+					<code class="classname">GraphQuery</code>.
+				</p><p>
+					A <code class="classname">Query</code> object, once created, can be
+					(re)used. For example, we can evaluate a
+					<code class="classname">Query</code> object, then add some data to
+					our repository, and evaluate the same query again.
+				</p><p>
+					The <code class="classname">Query</code> object also has a
+					<code class="function">setBinding</code> method, which can be used to
+					specify specific values for query variables. As a simple
+					example, suppose we have a repository containing names and
+					e-mail addresses of people, and we want to do a query for each
+					person, retrieve his/her e-mail address, for example, but we
+					want to do a separate query for each person. This can be
+					achieved using the <code class="function">setBinding</code>
+					functionality, as follows:
+				</p><pre class="programlisting">
+RepositoryConnection con = myRepository.getConnection();
+
+try {
+   // First, prepare a query that retrieves all names of persons
+   TupleQuery nameQuery = con.prepareTupleQuery(QueryLanguage.SERQL,
+         "SELECT name FROM {person} ex:name {name}");
+
+   // Then, prepare another query that retrieves all e-mail addresses of persons:
+   TupleQuery mailQuery = con.prepareTupleQuery(QueryLanguage.SERQL,
+         "SELECT mail FROM {person} ex:mail {mail}; ex:name {name}");
+
+   // Evaluate the first query to get all names
+   TupleQueryResult nameResult = nameQuery.evaluate();
+   try {
+      // Loop over all names, and retrieve the corresponding e-mail address.
+      while (nameResult.hasNext()) {
+         BindingSet bindingSet = nameResult.next();
+         Value name = bindingSet.get("name");
+
+         // Retrieve the matching mailbox, by setting the binding for
+         // the variable 'name' to the retrieved value:
+         mailQuery.setBinding("name", name);
+
+         TupleQueryResult mailResult = mailQuery.evaluate();
+
+         // mailResult now contains the e-mail addresses for one particular person
+         try {
+            ....
+         }
+         finally {
+            // after we are done, close the result
+            mailResult.close();
+         }
+      }
+   }
+   finally {
+      nameResult.close();
+   }
+}
+finally {
+   con.close();
+}</pre><p>
+					The values with which you perform the
+					<code class="function">setBinding</code> operation of course do not
+					necessarily have to come from a previous query result (as they do
+					in the above example). Using a <code class="classname">ValueFactory</code>
+					you can create your own value objects. You can use this
+					functionality to, for example, query for a particular keyword
+					that is given by user input:
+				</p><pre class="programlisting">
+ValueFactory factory = myRepository.getValueFactory();
+
+// In this example, we specify the keyword string. Of course, this
+// could just as easily be obtained by user input, or by reading from
+// a file, or...
+String keyword = "foobar";
+
+// We prepare a query that retrieves all documents for a keyword.
+// Notice that in this query the 'keyword' variable is not bound to
+// any specific value yet.
+TupleQuery keywordQuery = con.prepareTupleQuery(QueryLanguage.SERQL,
+      "SELECT document FROM {document} ex:keyword {keyword}");
+
+// Then we set the binding to a literal representation of our keyword.
+// Evaluation of the query object will now effectively be the same as
+// if we had specified the query as follows:
+//   SELECT document FROM {document} ex:keyword {"foobar"}
+keywordQuery.setBinding("keyword", factory.createLiteral(keyword));
+
+// We then evaluate the prepared query and can process the result:
+TupleQueryResult keywordQueryResult = keywordQuery.evaluate();</pre></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e1128"></a>8.2.3.&nbsp;Creating, retrieving, removing individual statements</h3></div></div></div><p>
+				The <code class="classname">RepositoryConnection</code> can also be used
+				for adding, retrieving, removing or otherwise manipulating
+				individual statements, or sets of statements.
+			</p><p>
+				To be able to add new statements, we can use a
+				<code class="classname">ValueFactory</code> to create the
+				<code class="classname">Value</code>s out of which the statements consist.
+				For example, we want to add a few statements about two resources,
+				Alice and Bob:
+			</p><pre class="programlisting">
+import org.openrdf.model.vocabulary.RDF;
+import org.openrdf.model.vocabulary.RDFS;
+...
+
+ValueFactory f = myRepository.getValueFactory();
+
+// create some resources and literals to make statements out of
+URI alice = f.createURI("http://example.org/people/alice");
+URI bob = f.createURI("http://example.org/people/bob");
+URI name = f.createURI("http://example.org/ontology/name");
+URI person = f.createURI("http://example.org/ontology/Person");
+Literal bobsName = f.createLiteral("Bob");
+Literal alicesName = f.createLiteral("Alice");
+
+try {
+   RepositoryConnection con = myRepository.getConnection();
+
+   try {
+      // alice is a person
+      con.add(alice, RDF.TYPE, person);
+      // alice's name is "Alice"
+      con.add(alice, name, alicesName);
+
+      // bob is a person
+      con.add(bob, RDF.TYPE, person);
+      // bob's name is "Bob"
+      con.add(bob, name, bobsName);
+   }
+   finally {
+      con.close();
+   }
+}
+catch (OpenRDFException e) {
+   // handle exception
+}</pre><p>
+				Of course, it will not always be necessary to use a
+				<code class="classname">ValueFactory</code> to create URIs. In practice,
+				you will find that you quite often retrieve existing URIs from the
+				repository (for example, by evaluating a query) and then use those
+				values to add new statements.
+			</p><p>
+				As you can see in the above code, for the default RDF and RDF Schema
+				properties (such as 'rdf:type' and 'rdfs:subClassOf') it is not
+				necessary to create new <code class="classname">URI</code> objects. Instead,
+				you can import the vocabulary classes
+				<code class="classname">org.openrdf.model.vocabulary.RDF</code> and
+				<code class="classname">RDFS</code> which provide you static references to
+				the vocabulary primitives.
+			</p><p>
+				Retrieving statements works in a very similar way. One way of
+				retrieving statements we have already seen actually: we can get a
+				<code class="classname">GraphQueryResult</code> containing statements by
+				evaluating a graph query.
+				However, we can also use direct method calls to retrieve (sets of)
+				statements. For example, to retrieve all statements about
+				Alice, we could do:
+			</p><pre class="programlisting">
+RepositoryResult&lt;Statement&gt; statements = con.getStatements(alice, null, null, true);</pre><p>
+				The additional boolean parameter at the end (set to 'true' in this
+				example) indicates whether inferred triples should be included in the
+				result. Of course, this parameter only makes a difference if your
+				repository uses an inferencer.
+			</p><p>
+				The <code class="classname">RepositoryResult</code> is an iterator-like
+				object that lazily retrieves each matching statement from the
+				repository when its <code class="function">next()</code> method is called.
+				Note that, like is the case with
+				<code class="classname">QueryResult</code> objects, iterating over a
+				<code class="classname">RepositoryResult</code> may result in exceptions
+				which you should catch to make sure that the
+				<code class="classname">RepositoryResult</code> is always properly closed
+				after use:
+			</p><pre class="programlisting">
+RepositoryResult&lt;Statement&gt; statements = con.getStatements(alice, null, null, true);
+
+try {
+   while (statements.hasNext()) {
+      Statement st = statements.next();
+
+      ... // do something with the statement
+   }
+}
+finally {
+   statements.close(); // make sure the result object is closed properly
+}</pre><p>
+				In the above method invocation, we see four parameters being
+				passed. The first three represent the subject, predicate and object
+				of the RDF statements which should be retrieved. A
+				<code class="classname">null</code> value indicates a wildcard, so the
+				above method call retrieves all statements which have as their
+				subject Alice, and have any kind of predicate and object. The
+				fourth parameter indicates whether or not inferred statements
+				should be included or not.
+			</p><p>
+				Removing statements again works in a very similar fashion. Suppose
+				we want to retract the statement that the name of Alice is
+				"Alice"):
+			</p><pre class="programlisting">
+con.remove(alice, name, alicesName);</pre><p>
+				Or, if we want to erase all statements about Alice completely, we
+				can do:
+			</p><pre class="programlisting">
+con.remove(alice, null, null);</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e1203"></a>8.2.4.&nbsp;Working with Collections and Iterations</h3></div></div></div><p>
+				Most of these examples have been on the level of individual
+				statements. However, the Repository API offers several methods
+				that work with <code class="classname">Collection</code>s of statements,
+				allowing more batch-like update operations.
+			</p><p>
+				For example, in the following bit of code, we first retrieve all
+				statements about Alice, put them in a
+				<code class="classname">Collection</code> and then remove them:
+			</p><pre class="programlisting">
+import info.aduna.iteration.Iterations;
+
+// Retrieve all statements about Alice and put them in a list
+RepositoryResult&lt;Statement&gt; statements = con.getStatements(alice, null, null, true));
+List&lt;Statement&gt; aboutAlice = Iterations.addAll(statements, new ArrayList&lt;Statement&gt;());
+
+// Then, remove them from the repository
+con.remove(aboutAlice);</pre><p>
+				As you can see, the
+				<code class="classname">info.aduna.iteration.Iterations</code>
+				class provides a convenient method that takes an
+				<code class="classname">Iteration</code> (of which
+				<code class="classname">RepositoryResult</code> is a subclass) and a
+				Collection as input, and returns the Collection with the contents
+				of the iterator added to it. It also automatically closes the
+				Iteration for you.
+			</p><p>
+				In the above code, you first retrieve all statements, put them in
+				a list, and then remove them. Although this works fine, it can be
+				done in an easier fashion, by simply supplying the resulting
+				object directly:
+			</p><pre class="programlisting">
+con.remove(con.getStatements(alice, null, null, true));</pre><p>
+				The <code class="classname">RepositoryConnection</code> interface has several variations of
+				add, retrieve and remove operations. See the Javadoc API
+				documentation for a full overview of the options.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e1238"></a>8.2.5.&nbsp;Using context</h3></div></div></div><p>
+				Sesame 2 supports the notion of <span class="emphasis"><em>context</em></span>, which
+				you can think of as a way to group sets of statements together
+				through a single group identifier (this identifier can be a blank
+				node or a URI).
+			</p><p>
+				A very typical way to use context is tracking
+				<span class="emphasis"><em>provenance</em></span> of the statements in a repository,
+				that is, which file these statements originate from. For example,
+				consider an application where you add RDF data from different files
+				to a repository, and then one of those files is updated. You would
+				then like to replace the data from that single file in the
+				repository, and to be able to do this you need a way to figure out
+				which statements need to be removed. The context mechanism gives you
+				a way to do that.
+			</p><p>
+				In the following example, we add an RDF document from the Web to our
+				repository, in a context. In the example, we make the context
+				identifier equal to the Web location of the file being uploaded.
+			</p><pre class="programlisting">
+String location = "http://example.org/example/example.rdf";
+String baseURI = location;
+URL url = new URL(location);
+URI context = f.createURI(location);
+
+con.add(url, baseURI, RDFFormat.RDFXML, context);</pre><p>
+				We can now use the context mechanism to specifically address these
+				statements in the repository for retrieve and remove operations:
+			</p><pre class="programlisting">
+// Get all statements in the context
+RepositoryResult&lt;Statement&gt; result = con.getStatements(null, null, null, true, context);
+
+try {
+   while (result.hasNext()) {
+      Statement st = result.next();
+      ... // do something interesting with the result
+   }
+}
+finally {
+   result.close();
+}
+
+// Export all statements in the context to System.out, in RDF/XML format
+RDFHandler rdfxmlWriter = new RDFXMLWriter(System.out);
+con.export(context, rdfxmlWriter);
+
+// Remove all statements in the context from the repository
+con.clear(context);</pre><p>
+				In most methods in the Repository API, the context parameter is a
+				<span class="emphasis"><em>vararg</em></span>, meaning that you can specify an
+				arbitrary number (zero, one, or more) of context identifiers. This
+				way, you can combine different contexts together. For example, we
+				can very easily retrieve statements that appear in either 'context1'
+				or 'context2'.
+			</p><p>
+				In the following example we add information about Bob and Alice
+				again, but this time each has their own context. We also create a
+				new property called 'creator' that has as its value the name of the
+				person who is the creator a particular context. The knowledge about
+				creators of contexts we do not add to any particular context,
+				however:
+			</p><pre class="programlisting">
+URI context1 = f.createURI("http://example.org/context1");
+URI context2 = f.createURI("http://example.org/context2");
+URI creator = f.createURI("http://example.org/ontology/creator");
+
+// Add stuff about Alice to context1
+con.add(alice, RDF.TYPE, person, context1);
+con.add(alice, name, alicesName, context1);
+
+// Alice is the creator of context1
+con.add(context1, creator, alicesName);
+
+// Add stuff about Bob to context2
+con.add(bob, RDF.TYPE, person, context2);
+con.add(bob, name, bobsName, context2);
+
+// Bob is the creator of context2
+con.add(context2, creator, bobsName);</pre><p>
+				Once we have this information in our repository, we can retrieve all
+				statements about either Alice or Bob by using the context vararg:
+			</p><pre class="programlisting">
+// Get all statements in either context1 or context2
+RepositoryResult&lt;Statement&gt; result =
+      con.getStatements(null, null, null, true, context1, context2);</pre><p>
+				You should observe that the above RepositoryResult will not contain the
+				information that context1 was created by Alice and context2 by Bob. This
+				is because those statements were added without any context, thus they do
+				not appear in context1 or context2, themselves.
+			</p><p>
+				To explicitly retrieve statements that do not have an associated
+				context, we do the following:
+			</p><pre class="programlisting">
+// Get all statements that do not have an associated context
+RepositoryResult&lt;Statement&gt; result =
+      con.getStatements(null, null, null, true, (Resource)null);</pre><p>
+				This will give us <span class="emphasis"><em>only</em></span> the statements about the
+				creators of the contexts, because those are the only statements that do
+				not have an associated context. Note that we have to explicitly cast the
+				null argument to <code class="classname">Resource</code>, because otherwise it
+				is ambiguous whether we are specifying a single value or an entire array
+				that is null (a vararg is internally treated as an array). Simply
+				invoking <code class="function">getStatements(s, p, o, true, null)</code> without
+				an explicit cast will result in an <code class="classname">IllegalArgumentException</code>.
+			</p><p>
+				We can also get everything that either has no context or is in context1:
+			</p><pre class="programlisting">
+// Get all statements that do not have an associated context, or that are in context1
+RepositoryResult&lt;Statement&gt; result =
+      con.getStatements(null, null, null, true, (Resource)null, context1);</pre><p>
+				So as you can see, you can freely combine contexts in this fashion.
+			</p><p>
+				<span class="emphasis"><em>Important:</em></span>
+			</p><pre class="programlisting">getStatements(null, null, null, true);</pre><p>
+				is not the same as:
+			</p><pre class="programlisting">getStatements(null, null, null, true, (Resource)null);</pre><p>
+				The former (without any context id parameter) retrieves all statements
+				in the repository, ignoring any context information. The latter,
+				however, only retrieves statements that explicitly do not have
+				any associated context.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-transactions"></a>8.2.6.&nbsp;Transactions</h3></div></div></div><p>
+				So far, we have shown individual operations on repositories:
+				adding statements, removing them, etc. By default, a
+				<code class="classname">RepositoryConnection</code>
+				runs in <span class="emphasis"><em>autoCommit</em></span> mode, meaning that each
+				operation on a <code class="classname">RepositoryConnection</code> is immediately sent
+				to the store and committed.
+			</p><p>
+				The <code class="classname">RepositoryConnection</code> interface supports a full
+				transactional mechanism that allows one to group modification
+				operations together and treat them as a single update: before the
+				transaction is committed, none of the operations in the transaction
+				has taken effect, and after, they all take effect. If something goes
+				wrong at any point during a transaction, it can be
+				<span class="emphasis"><em>rolled back</em></span> so that the state of the repository
+				is the same as before the transaction started. Bundling update
+				operations in a single transaction often also improves update
+				performance compared to multiple smaller transactions.
+			</p><p>
+				We can achieve this behaviour by switching off the
+				<code class="classname">RepositoryConnection</code>'s autoCommit mode. In
+				the following example, we use a non-autocommit connection to
+				bundle two file addition operations in a single transaction:
+			</p><pre class="programlisting">
+File inputFile1 = new File("/path/to/example1.rdf");
+String baseURI1 = "http://example.org/example1/";
+
+File inputFile2 = new File("/path/to/example2.rdf");
+String baseURI2 = "http://example.org/example2/";
+
+RepositoryConnection con = myRepository.getConnection();
+try {
+   con.setAutoCommit(false);
+
+   // Add the first file
+   con.add(inputFile1, baseURI1, RDFFormat.RDFXML);
+
+   // Add the second file
+   con.add(inputFile2, baseURI2, RDFFormat.RDFXML);
+
+   // If everything went as planned, we can commit the result
+   con.commit();
+}
+catch (RepositoryException e) {
+   // Something went wrong during the transaction, so we roll it back
+   con.rollback();
+}
+finally {
+   // Whatever happens, we want to close the connection when we are done.
+   con.close();
+}</pre><p>
+				In the above example, we use a transaction to add two files to the
+				repository. Only if both files can be successfully added will the
+				repository change. If one of the files can not be added (for example
+				because it can not be read), then the entire transaction is
+				cancelled and none of the files is added to the repository.
+			</p></div></div></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="chapter-serql"></a>Chapter&nbsp;9.&nbsp;The SeRQL query language (revision 3.1)</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#section-revisions">9.1. Revisions</a></span></dt><dd><dl><dt><span class="section"><a href="#section-revision-1.1">9.1.1. revision 1.1</a></span></dt><dt><span class="section"><a href="#section-revision-1.2">9.1.2. revision 1.2</a></span></dt><dt><span class="section"><a href="#section-revision-2.0">9.1.3. revision 2.0</a></span></dt><dt><span class="section"><a href="#section-revision-3.0">9.1.4. revision 3.0</a></span></dt><dt><span class="section"><a href="#section-revision-3.1">9.1.5. revision 3.1</a></span></dt></dl></dd><dt><span class="section"><a href="#section-introduction">9.2. Introduction</a></span></dt><dt><span class="section"><a href="#section-uris-literals-variables">9.3. URIs, literals and variables</a></span></dt><dd><dl><dt><span class="section"><a href="#section-variables">9.3.1. Variables</a></span></dt><dt><span class="section"><a href="#section-uris">9.3.2. URIs</a></span></dt><dt><span class="section"><a href="#section-literals">9.3.3. Literals</a></span></dt><dt><span class="section"><a href="#section-blanknodes">9.3.4. Blank Nodes (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-path-expressions">9.4. Path expressions</a></span></dt><dd><dl><dt><span class="section"><a href="#section-basic-path-expressions">9.4.1. Basic path expressions</a></span></dt><dt><span class="section"><a href="#section-path-expression-short-cuts">9.4.2. Path expression short cuts</a></span></dt><dt><span class="section"><a href="#section-optional">9.4.3. Optional path expressions</a></span></dt></dl></dd><dt><span class="section"><a href="#section-select-construct-queries">9.5. Select- and construct queries</a></span></dt><dt><span class="section"><a href="#section-select-queries">9.6. Select queries</a></span></dt><dt><span class="section"><a href="#section-construct-queries">9.7. Construct queries</a></span></dt><dt><span class="section"><a href="#section-where">9.8. The WHERE clause</a></span></dt><dd><dl><dt><span class="section"><a href="#section-boolean-constants">9.8.1. Boolean constants</a></span></dt><dt><span class="section"><a href="#section-value-equality">9.8.2. Value (in)equality</a></span></dt><dt><span class="section"><a href="#section-same-term">9.8.3. SameTerm (R3.1)</a></span></dt><dt><span class="section"><a href="#section-numerical-comparisons">9.8.4. Numerical comparisons</a></span></dt><dt><span class="section"><a href="#section-bound">9.8.5. Bound() (R3.0)</a></span></dt><dt><span class="section"><a href="#section-isuri">9.8.6. isUri() and isBnode() (R1.2)</a></span></dt><dt><span class="section"><a href="#section-like">9.8.7. Like (R1.2)</a></span></dt><dt><span class="section"><a href="#section-regex">9.8.8. Regex (R3.1)</a></span></dt><dt><span class="section"><a href="#section-langmatches">9.8.9. LangMatches (R3.1)</a></span></dt><dt><span class="section"><a href="#section-boolean-operators">9.8.10. And, or, not</a></span></dt><dt><span class="section"><a href="#section-in-list">9.8.11. In (R3.1)</a></span></dt><dt><span class="section"><a href="#section-nested-where">9.8.12. Nested WHERE clauses (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-other-functions">9.9. Other functions</a></span></dt><dd><dl><dt><span class="section"><a href="#section-label-lang-datatype">9.9.1. label(), lang() and datatype()</a></span></dt><dt><span class="section"><a href="#section-namespace">9.9.2. namespace() and localName() (R1.2)</a></span></dt><dt><span class="section"><a href="#section-str">9.9.3. str() (R3.1)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-order-by">9.10. The ORDER BY clause</a></span></dt><dt><span class="section"><a href="#section-limit-offset">9.11. The LIMIT and OFFSET clauses</a></span></dt><dt><span class="section"><a href="#section-using-namespace">9.12. The USING NAMESPACE clause</a></span></dt><dt><span class="section"><a href="#section-built-in-predicates">9.13. Built-in predicates (REVISED in R2.0)</a></span></dt><dt><span class="section"><a href="#section-setoper">9.14. Set combinatory operations</a></span></dt><dd><dl><dt><span class="section"><a href="#section-union">9.14.1. UNION (REVISED in R3.0, extended in R3.1)</a></span></dt><dt><span class="section"><a href="#section-intersect">9.14.2. INTERSECT (R1.2)</a></span></dt><dt><span class="section"><a href="#section-minus">9.14.3. MINUS (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-nesting">9.15. Query Nesting</a></span></dt><dd><dl><dt><span class="section"><a href="#section-in">9.15.1. IN (R1.2)</a></span></dt><dt><span class="section"><a href="#section-any">9.15.2. ANY and ALL (R1.2)</a></span></dt><dt><span class="section"><a href="#section-exists">9.15.3. EXISTS (R1.2)</a></span></dt></dl></dd><dt><span class="section"><a href="#section-context">9.16. Querying context (R2.0)</a></span></dt><dt><span class="section"><a href="#section-example-queries">9.17. Example SeRQL queries</a></span></dt><dd><dl><dt><span class="section"><a href="#section-example-query-1">9.17.1. Query 1</a></span></dt><dt><span class="section"><a href="#section-example-query-2">9.17.2. Query 2</a></span></dt><dt><span class="section"><a href="#section-example-query-3">9.17.3. Query 3</a></span></dt></dl></dd><dt><span class="section"><a href="#section-serql-references">9.18. References</a></span></dt><dt><span class="section"><a href="#section-serql-grammar">9.19. SeRQL grammar</a></span></dt></dl></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-revisions"></a>9.1.&nbsp;Revisions</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-revision-1.1"></a>9.1.1.&nbsp;revision 1.1</h3></div></div></div><p>
+				SeRQL revision 1.1 is a syntax revision (see issue tracker item
+				<a href="http://www.openrdf.org/issues/secure/ViewIssue.jspa?key=SES-75" target="_top">SES-75</a>).
+				This document describes the revised syntax. From Sesame release
+				1.2-RC1 onwards, the old syntax is no longer supported.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-revision-1.2"></a>9.1.2.&nbsp;revision 1.2</h3></div></div></div><p>
+				SeRQL revision 1.2 covers a set of new functions and operators:
+			</p><div class="itemizedlist"><ul type="disc"><li>
+					Specification of blank node identifiers
+					(<a href="#section-blanknodes" title="9.3.4.&nbsp;Blank Nodes (R1.2)">Section&nbsp;9.3.4, &#8220;Blank Nodes (R1.2)&#8221;</a>).
+				</li><li>
+					Case sensitive string matching
+					(<a href="#section-like" title="9.8.7.&nbsp;Like (R1.2)">Section&nbsp;9.8.7, &#8220;Like (R1.2)&#8221;</a>).
+				</li><li>
+					New functions isBNode(), isURI()
+					(<a href="#section-isuri" title="9.8.6.&nbsp;isUri() and isBnode() (R1.2)">Section&nbsp;9.8.6, &#8220;isUri() and isBnode() (R1.2)&#8221;</a>).
+				</li><li>
+					Nested WHERE clause for optional path expressions
+					(<a href="#section-nested-where" title="9.8.12.&nbsp;Nested WHERE clauses (R1.2)">Section&nbsp;9.8.12, &#8220;Nested WHERE clauses (R1.2)&#8221;</a>).
+				</li><li>
+					New functions namespace(), localName()
+					(<a href="#section-namespace" title="9.9.2.&nbsp;namespace() and localName() (R1.2)">Section&nbsp;9.9.2, &#8220;namespace() and localName() (R1.2)&#8221;</a>).
+				</li><li>
+					OWL default namespace
+					(<a href="#section-using-namespace" title="9.12.&nbsp;The USING NAMESPACE clause">Section&nbsp;9.12, &#8220;The USING NAMESPACE clause&#8221;</a>).
+				</li><li>
+					Set operations
+					(<a href="#section-setoper" title="9.14.&nbsp;Set combinatory operations">Section&nbsp;9.14, &#8220;Set combinatory operations&#8221;</a>).
+				</li><li>
+					Nested queries
+					(<a href="#section-nesting" title="9.15.&nbsp;Query Nesting">Section&nbsp;9.15, &#8220;Query Nesting&#8221;</a>).
+				</li><li>
+					Set membership operator
+					(<a href="#section-in" title="9.15.1.&nbsp;IN (R1.2)">Section&nbsp;9.15.1, &#8220;IN (R1.2)&#8221;</a>).
+				</li><li>
+					ANY and ALL keywords
+					(<a href="#section-any" title="9.15.2.&nbsp;ANY and ALL (R1.2)">Section&nbsp;9.15.2, &#8220;ANY and ALL (R1.2)&#8221;</a>).
+				</li><li>
+					Existential quantification
+					(<a href="#section-exists" title="9.15.3.&nbsp;EXISTS (R1.2)">Section&nbsp;9.15.3, &#8220;EXISTS (R1.2)&#8221;</a>).
+				</li></ul></div><p>
+				New operations have been marked with (R1.2) where appropriate in
+				this document.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-revision-2.0"></a>9.1.3.&nbsp;revision 2.0</h3></div></div></div><p>
+				SeRQL revision 2.0 is an extension of SeRQL that offers
+				functionality for querying contexts. See
+				<a href="#section-context" title="9.16.&nbsp;Querying context (R2.0)">Section&nbsp;9.16, &#8220;Querying context (R2.0)&#8221;</a> for details.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-revision-3.0"></a>9.1.4.&nbsp;revision 3.0</h3></div></div></div><p>
+				SeRQL revision 3.0 modifies SeRQL to be more like SPARQL,
+				adopting its semantics and operators. Main backwards
+				compatiblity issues with revision 2.0 are:
+			</p><div class="itemizedlist"><ul type="disc"><li>
+					The NULL value has been deprecated; the BOUND-operator should
+					now be used instead. For now, the SeRQL parser will
+					automatically translate NULL values to BOUND-operators as much
+					as possible.
+				</li><li>
+					The semantics of optional joins have been changed from the
+					existing iterative semantics to the better defined
+					compositional semantics that is used in SPARQL. This change
+					will only affect some corner cases that are unlikely to
+					appear in actual queries.
+				</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-revision-3.1"></a>9.1.5.&nbsp;revision 3.1</h3></div></div></div><p>
+				SeRQL revision 3.1 adds the possibility to apply the IN-operator on a
+				list of values. It also adds support for some SPARQL functionality that
+				wasn't available in SeRQL (in whatever form). This includes the SAMETERM,
+				STR, LANGMATCHES and REGEX operators, result ordering using ORDER BY,
+				UNION of path expressions and the REDUCED modifier for both select and
+				construct queries. SeRQL revision 3.1 was implemented in Sesame 2.3.0.
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-introduction"></a>9.2.&nbsp;Introduction</h2></div></div></div><p>
+			SeRQL ("Sesame RDF Query Language", pronounced "circle") is an RDF
+			query language that is very similar to SPARQL, but with other syntax.
+			SeRQL was originally developed as a better alternative for the query
+			languages RQL and RDQL. A lot of SeRQL's features can now be found in
+			<a href="http://www.w3.org/TR/rdf-sparql-query/" target="_top">SPARQL</a>
+			and SeRQL has adopted some of SPARQL's features in return. 
+		</p><p>
+			This document briefly shows all of these features. After reading
+			through this document one should be able to write SeRQL queries.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-uris-literals-variables"></a>9.3.&nbsp;URIs, literals and variables</h2></div></div></div><p>
+			URIs and literals are the basic building blocks of RDF. For a query
+			language like SeRQL, variables are added to this list. The following
+			sections will show how to write these down in SeRQL.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-variables"></a>9.3.1.&nbsp;Variables</h3></div></div></div><p>
+				Variables are identified by names. These names must start with a
+				letter or an underscore ('_') and can be followed by zero or
+				more letters, numbers, underscores, dashes ('-') or dots ('.').
+				Examples variable names are:
+			</p><div class="itemizedlist"><ul type="disc"><li>Var1</li><li>_var2</li><li>unwise.var-name_isnt-it</li></ul></div><p>
+				SeRQL keywords are not allowed to be used as variable names.
+				Currently, the following keywords are used in SeRQL:
+				select, construct, distinct, reduced, as, from, context,
+				where, order, by, asc, desc, limit, offset, using, namespace,
+				true, false, not, and, or, sameterm, like, ignore, case,
+				regex, label, lang, langmatches, datatype, localname, str,
+				bound, null, isresource, isbnode, isuri, isliteral, in,
+				union, intersect, minus, exists, any, all.
+			</p><p>
+				Keywords in SeRQL are all case-insensitive but variable names
+				are case-sensitive.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-uris"></a>9.3.2.&nbsp;URIs</h3></div></div></div><p>
+				There are two ways to write down URIs in SeRQL: either as full
+				URIs or as abbreviated URIs. Full URIs must be surrounded with
+				"&lt;" and "&gt;". Examples of this are:
+			</p><div class="itemizedlist"><ul type="disc"><li>&lt;http://www.openrdf.org/index.html&gt;</li><li>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</li><li>&lt;mailto:sesame@openrdf.org&gt;</li><li>&lt;file:///C:\rdffiles\test.rdf&gt;</li></ul></div><p>
+				As URIs tend to be long strings with the first part being shared
+				by several of them (i.e. the namespace), SeRQL allows one to use
+				abbreviated URIs (or QNames) by defining (short) names for these
+				namespaces which are called "prefixes". A QName always starts
+				with one of the defined prefixes and a colon (":"). After this
+				colon, the part of the URI that is not part of the namespace
+				follows. The first part, consisting of the prefix and the colon,
+				is replaced by the full namespace by the query engine. Some
+				example QNames are:
+			</p><div class="itemizedlist"><ul type="disc"><li>sesame:index.html</li><li>rdf:type</li><li>foaf:Person</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-literals"></a>9.3.3.&nbsp;Literals</h3></div></div></div><p>
+				RDF literals consist of three parts: a label, a language tag,
+				and a datatype. The language tag and the datatype are optional
+				and at most one of these two can accompany a label (a literal
+				can not have both a language tag and a datatype). The notation
+				of literals in SeRQL has been modelled after their notation in
+				N-Triples; literals start with the label, which is surrounded by
+				double quotes, optionally followed by a language tag with a "@"
+				prefix or by a datatype URI with a "^^" prefix. Example literals
+				are:
+			</p><div class="itemizedlist"><ul type="disc"><li>"foo"</li><li>"foo"@en</li><li>"&lt;foo/&gt;"^^&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral&gt;</li></ul></div><p>
+				The SeRQL notation for abbreviated URIs can also be used. When the
+				prefix rdf is mapped to the namespace
+				http://www.w3.org/1999/02/22-rdf-syntax-ns#, the last example
+				literal could also have been written down like:
+			</p><div class="itemizedlist"><ul type="disc"><li>"&lt;foo/&gt;"^^rdf:XMLLiteral</li></ul></div><p>
+				SeRQL has also adopted the character escapes from N-Triples;
+				special characters can be escaped by prefixing them with a
+				backslash. One of the special characters is the double quote.
+				Normally, a double quote would signal the end of a literal's
+				label. If the double quote is part of the label, it needs to be
+				escaped. For example, the sentence John said: "Hi!" can be
+				encoded in a SeRQL literals as: "John said: \"Hi!\"".
+			</p><p>
+				As the backslash is a special character itself, it also needs
+				to be escaped. To encode a single backslash in a literal's
+				label, two backslashes need to be written in the label. For
+				example, a Windows directory would be encoded as:
+				"C:\\Program Files\\Apache Tomcat\\".
+			</p><p>
+				SeRQL has functions for extracting each of the three parts of a
+				literal. These functions are label, lang, and datatype.
+				label("foo"@en) extracts the label "foo", lang("foo"@en) extracts
+				the language tag "en", and datatype("foo"^^rdf:XMLLiteral)
+				extracts the datatype rdf:XMLLiteral. The use of these functions
+				is explained later.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-blanknodes"></a>9.3.4.&nbsp;Blank Nodes (R1.2)</h3></div></div></div><p>
+				RDF has a notion of blank nodes. These are nodes in the RDF graph
+				that are not labeled with a URI or a literal. The interpretation
+				of such blank nodes is as a form of existential quantification:
+				it allows one to assert that "there exists a node such that..."
+				without specifying what that particular node is. Blank nodes do in
+				fact often have identifiers, but these identifiers are assigned
+				internally by whatever processor is processing the graph and they
+				are only valid in the local context, not as global identifiers
+				(unlike URIs). 
+			</p><p>
+				Strictly speaking blank nodes are only addressable indirectly, by
+				querying for one or more properties of the node. However, SeRQL,
+				as a practical shortcut, allows blank node identifiers to be used
+				in queries. The syntax for blank nodes is adopted from N-Triples,
+				using a QName-like syntax with "_" as the namespace prefix, and
+				the internal blank node identifier as the local name. For example:
+			</p><div class="itemizedlist"><ul type="disc"><li>_:bnode1</li></ul></div><p>
+				This identifies the blank node with internal identifier "bnode1".
+				These blank node identifiers can be used in the same way that
+				normal URIs or QNames can be used.
+			</p><p> 
+				<span class="strong"><strong>Caution:</strong></span> It is important to
+				realize that addressing blank nodes in this way makes SeRQL
+				queries non-portable across repositories. There is no guarantee
+				that in two repositories, even if they contain identical datasets,
+				the blank node identifiers will be identical. It may well be that
+				"bnode1" in repository A is a completely different blank node than
+				"bnode1" in repository B. Even in the same repository, it is not
+				guaranteed that blank node identifiers are stable over updates: if
+				certain statements are added to or removed from a repository, it
+				is not guaranteed "bnode1" still identifies the same blank node
+				that it did before the update operation.
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-path-expressions"></a>9.4.&nbsp;Path expressions</h2></div></div></div><p>
+			One of the most prominent parts of SeRQL are path expressions. Path
+			expressions are expressions that match specific paths through an RDF
+			graph. 
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-basic-path-expressions"></a>9.4.1.&nbsp;Basic path expressions</h3></div></div></div><p>
+				Imagine that we want to query an RDF graph for persons who work
+				for companies that are IT companies. Querying for this
+				information comes down to finding the following pattern in the
+				RDF graph (gray nodes denote variables):
+			</p><div class="figure-float"><div class="figure"><a name="figure-serql-basic-pe"></a><p class="title"><b>Figure&nbsp;9.1.&nbsp;A basic path expression</b></p><div class="mediaobject"><img src="figures/serql-basic-pe.png" alt="A basic path expression"></div></div></div><p>
+				The SeRQL notation for path expressions resembles the picture
+				above; it is written down as:
+			</p><pre class="screen">
+{Person} foo:worksFor {Company} rdf:type {foo:ITCompany}</pre><p>
+				The parts surrounded by curly brackets represent the nodes in
+				the RDF graph, the parts between these nodes represent the
+				edges in the graph. The direction of the arcs (properties) in
+				SeRQL path expressions is always from left to right.
+			</p><p>
+				In SeRQL queries, multiple path expressions can be specified by
+				seperating them with commas. For example, the path expression
+				show before can also be written down as two smaller path
+				expressions:
+			</p><pre class="screen">
+{Person} foo:worksFor {Company},
+{Company} rdf:type {foo:ITCompany}</pre><p>
+				The nodes and edges in the path expressions can be variables,
+				URIs and literals. Also, a node can be left empty in case one is
+				not interested in the value of that node. Here are some more
+				example path expressions to illustrate this:
+			</p><div class="itemizedlist"><ul type="disc"><li>
+{Person} foo:worksFor {} rdf:type {foo:ITCompany}
+				</li><li>
+{Painting} ex:painted_by {} ex:name {"Picasso"}
+				</li><li>
+{comic:RoadRunner} SomeRelation {foo:WillyECoyote}
+				</li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-path-expression-short-cuts"></a>9.4.2.&nbsp;Path expression short cuts</h3></div></div></div><p>
+				Each and every path can be constructed using a set of basic path
+				expressions. Sometimes, however, it is nicer to use one of the
+				available short cuts. There are three types of short cuts:
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="section-multi-value-nodes"></a>9.4.2.1.&nbsp;Multi-value nodes</h4></div></div></div><p>
+					In situations where one wants to query for two or more
+					statements with identical subject and predicate, the subject
+					and predicate do not have to be repeated over and over
+					again. Instead, a multi-value node can be used:
+				</p><pre class="screen">
+{subj1} pred1 {obj1, obj2, obj3}</pre><p>
+					A built-in constraint on this construction is that each value
+					for the variables in the multi-value node is unique (i.e. they
+					are pairwise disjoint). Therefore, this path expression is
+					equivalent to the following combination of path expressions and
+					boolean constraints:
+				</p><pre class="screen">
+FROM
+  {subj1} pred1 {obj1},
+  {subj1} pred1 {obj2},
+  {subj1} pred1 {obj3}
+WHERE obj1 != obj2 AND obj1 != obj3 AND obj2 != obj3</pre><p>
+					Or graphically:
+				</p><div class="figure-float"><div class="figure"><a name="figure-serql-multival-nodes"></a><p class="title"><b>Figure&nbsp;9.2.&nbsp;Multi-value nodes</b></p><div class="mediaobject"><img src="figures/serql-multival-nodes.png" alt="Multi-value nodes"></div></div></div><p>
+					Multi-value nodes can also be used when statements share the
+					predicate and object, e.g.:
+				</p><pre class="screen">
+{subj1, subj2, subj3} pred1 {obj1}</pre><p>
+					When used in a longer path expression, multi-value nodes
+					apply to both the part left of the node and the part right
+					of the node. The following path expression:
+				</p><pre class="screen">
+{first} pred1 {middle1, middle2} pred2 {last}</pre><p>
+					matches the following graph:
+				</p><div class="figure-float"><div class="figure"><a name="figure-serql-multival-nodes2"></a><p class="title"><b>Figure&nbsp;9.3.&nbsp;Multi-value nodes in a longer path expression</b></p><div class="mediaobject"><img src="figures/serql-multival-nodes2.png" alt="Multi-value nodes in a longer path expression"></div></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="section-branches"></a>9.4.2.2.&nbsp;Branches</h4></div></div></div><p>
+					One of the shorts cuts that is probably used most, is the
+					notation for branches in path expressions. There are lots of
+					situations where one wants to query multiple properties of a
+					single subject. Instead of repeating the subject over and
+					over again, one can use a semi-colon to attach a
+					predicate-object combination to the subject of the last part
+					of a path expression, e.g.:
+				</p><pre class="screen">
+{subj1} pred1 {obj1};
+        pred2 {obj2}</pre><p>
+					Which is equivalent to:
+				</p><pre class="screen">
+{subj1} pred1 {obj1},
+{subj1} pred2 {obj2}</pre><p>
+					Or graphically:
+				</p><div class="figure-float"><div class="figure"><a name="figure-serql-branch"></a><p class="title"><b>Figure&nbsp;9.4.&nbsp;Branches in a path expression</b></p><div class="mediaobject"><img src="figures/serql-branch.png" alt="Branches in a path expression"></div></div></div><p>
+					A more advanced example is:
+				</p><pre class="screen">
+{first} pred {} pred1 {obj1};
+                pred2 {obj2} pred3 {obj3}</pre><p>
+					Which matches the following graph:
+				</p><div class="figure-float"><div class="figure"><a name="figure-serql-branch2"></a><p class="title"><b>Figure&nbsp;9.5.&nbsp;Branches in a longer path expression</b></p><div class="mediaobject"><img src="figures/serql-branch2.png" alt="Branches in a longer path expression"></div></div></div><p>
+					Note that an anonymous variable is used in the middle of
+					the path expressions.
+				</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="section-reified-statements"></a>9.4.2.3.&nbsp;Reified statements</h4></div></div></div><p>
+					The last short cut is a short cut for reified statements. A
+					path expression representing a single statement
+					(i.e. {node} edge {node}) can be written between the curly
+					brackets of a node, e.g.:
+				</p><pre class="screen">
+{ {reifSubj} reifPred {reifObj} } pred {obj}</pre><p>
+					This would be equivalent to querying (using "rdf:" as a
+					prefix for the RDF namespace, and "Statement" as a
+					variable for storing the statement's URI):
+				</p><pre class="screen">
+{Statement} rdf:type {rdf:Statement},
+{Statement} rdf:subject {reifSubj},
+{Statement} rdf:predicate {reifPred},
+{Statement} rdf:object {reifObj},
+{Statement} pred {obj}</pre><p>
+					Again, graphically:
+				</p><div class="figure-float"><div class="figure"><a name="figure-serql-reif"></a><p class="title"><b>Figure&nbsp;9.6.&nbsp;A reification path expression</b></p><div class="mediaobject"><img src="figures/serql-reif.png" alt="A reification path expression"></div></div></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-optional"></a>9.4.3.&nbsp;Optional path expressions</h3></div></div></div><p>
+				Optional path expressions differ from 'normal' path expressions
+				in that they do not <span class="emphasis"><em>have</em></span> to be matched to
+				find query results. The SeRQL query engine will try to find
+				paths in the RDF graph matching the path expression, but when
+				it cannot find any paths it will skip the expression and leave
+				any variables in it unbound.
+			</p><p>
+				Consider an RDF graph that contains information about people
+				that have names, ages, and <span class="emphasis"><em>optionally</em></span>
+				e-mail addresses. This is a situation that is very common in RDF
+				data. A logical query on this data is a query that yields all
+				names, ages and, when available, e-mail addresses of people,
+				e.g.:
+			</p><pre class="screen">
+{Person} ex:name {Name};
+         ex:age  {Age};
+         ex:email {EmailAddress}</pre><p>
+				However, using normal path expressions like in the query above,
+				people without e-mail address will not be included in the query
+				result. With optional path expressions, one can indicate that a
+				specific (part of a) path expression is optional. This is done
+				using square brackets, i.e.:
+			</p><pre class="screen">
+{Person} ex:name {Name};
+         ex:age  {Age};
+        [ex:email {EmailAddress}]</pre><p>
+				Or alternatively:
+			</p><pre class="screen">
+ {Person} ex:name {Name};
+          ex:age  {Age},
+[{Person} ex:email {EmailAddress}]</pre><p>
+				In contrast to the first path expressions, this expression will
+				also match people without an e-mail address. For these people,
+				the variable EmailAddress will be unbound.
+			</p><p>
+				Optional path expressions can also be nested. This is useful in
+				situations where the existence of a specific path is dependent
+				on the existence of another path. For example, the following
+				path expression queries for the titles of all known documents
+				and, if the author of the document is known, the name of the
+				author (if it is known) and his e-mail address (if it is known):
+			</p><pre class="screen">
+{Document} ex:title {Title};
+          [ex:author {Author} [ex:name {Name}];
+                              [ex:email {Email}]]</pre><p>
+				With this path expression, the SeRQL query engine will not try
+				to find the name and e-mail address of an author when it cannot
+				even find the resource representing the author.
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-select-construct-queries"></a>9.5.&nbsp;Select- and construct queries</h2></div></div></div><p>
+			The SeRQL query language supports two querying concepts. The first
+			one can be characterized as returning a table of values, or a set of
+			variable-value bindings. The second one returns an RDF graph, which
+			can be a subgraph of the graph being queried, or a graph containing
+			information that is derived from it. The first type of queries are
+			called "select queries", the second type of queries are called
+			"construct queries".
+		</p><p>
+			A SeRQL query is typically built up from one to seven clauses. For
+			select queries these clauses are: SELECT, FROM, FROM CONTEXT, WHERE,
+			LIMIT, OFFSET and USING NAMESPACE. One might recognize some of these
+			clauses from SQL, but their usage is slightly different. For construct
+			queries the clauses are the same with the exception of the first;
+			construct queries start with a CONSTRUCT clause instead of a SELECT
+			clause. Except for the first clause (SELECT or CONSTRUCT), all
+			clauses are optional.
+		</p><p>
+			The first clause (i.e. SELECT or CONSTRUCT) determines what is done
+			with the results that are found. In a SELECT clause, one can specify
+			which variable values should be returned. In a CONSTRUCT clause, one
+			can specify which statements should be returned.
+		</p><p>
+			The FROM clause specifies path expressions, which were explained in
+			the previous section. It defines the paths in an RDF graph that are
+			relevant to the query. Note that, when the FROM clause is not specified,
+			the query will simply return the constants specified in the SELECT or
+			CONSTRUCT clause.
+		</p><p>
+			The FROM CONTEXT clause is new in SeRQL revision 2.0. It is a
+			variant of the FROM clause that allows one to constrain the path
+			expressions in the clause to one or more contexts. Using context in
+			querying will be explained in more detail in
+			<a href="#section-context" title="9.16.&nbsp;Querying context (R2.0)">Section&nbsp;9.16, &#8220;Querying context (R2.0)&#8221;</a>.
+		</p><p>
+			The WHERE clause specifies additional (Boolean) constraints on the
+			values in the path expressions. These are constraints on the nodes
+			and edges of the paths that cannot be expressed in the path expressions
+			themselves.
+		</p><p>
+			The LIMIT and OFFSET clauses can be used separately or combined in
+			order to get a subset of all query answers. Their usage is very
+			similar to the LIMIT and OFFSET clauses in SQL queries. The LIMIT
+			clause determines the (maximum) number of query answers that will be
+			returned. The OFFSET clause determines which query answer will be
+			returned as the first result, skipping as many query results as
+			specified in this clause.
+		</p><p>
+			Finally, the USING NAMESPACE clause can be used to declare namespace
+			prefixes. These are the mappings from prefixes to namespaces that
+			were referred to in one of previous sections about (abbreviated)
+			URIs.
+		</p><p>
+			The WHERE, LIMIT, OFFSET and USING NAMESPACE clauses will be
+			explained in one of the next sections. The following section will
+			explain the SELECT and FROM clause.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-select-queries"></a>9.6.&nbsp;Select queries</h2></div></div></div><p>
+			As said before, select queries return tables of values, or sets of
+			variable-value bindings. Which values are returned can be specified
+			in the select clause. One can specify variables and/or values in
+			the select clause, seperated by commas. The following example query
+			returns all URIs of classes:
+		</p><pre class="screen">
+SELECT C
+FROM {C} rdf:type {rdfs:Class}</pre><p>
+			It is also possible to use a '*' in the SELECT clause. In that case,
+			all variable values will be returned, e.g.:
+		</p><pre class="screen">
+SELECT *
+FROM {S} rdfs:label {O}</pre><p>
+			This query will return the values of the variables S and O.
+		</p><pre class="screen">
+SELECT O, S
+FROM {S} rdfs:label {O}</pre><p>
+			By default, the results of a select query are not filtered for
+			duplicate rows. Because of the nature of the above queries, these
+			queries will never return duplicates. However, more complex queries
+			might result in duplicate result rows. These duplicates can be
+			filtered out by the SeRQL query engine. To enable this functionality,
+			one needs to specify the DISTINCT keyword after the select keyword.
+			For example:
+		</p><pre class="screen">
+SELECT DISTINCT *
+FROM {Country1} ex:borders {} ex:borders {Country2}
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+			An alternative to DISTINCT is the REDUCED keyword (Since R3.1).
+			Specifying the REDUCED keyword allows the query engine to filter
+			duplicates from the results, but does not require or guarantee that
+			all duplicates are eliminated. In some cases specifying this keyword
+			allows the query engine to apply more extensive query optimizations,
+			resulting in better query performance. Specifying this option is
+			recommended if there are no strong requirements to retrieve all
+			duplicates.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-construct-queries"></a>9.7.&nbsp;Construct queries</h2></div></div></div><p>
+			Construct queries return RDF graphs as set of statements. The statements
+			that a query should return can be specified in the construct clause
+			using the previously explained path expressions. The following is an
+			example construct query:
+		</p><pre class="screen">
+CONSTRUCT {Parent} ex:hasChild {Child}
+FROM {Child} ex:hasParent {Parent}
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+			This query defines the inverse of the property ex:hasParent to be
+			ex:hasChild. This is just one example of a query that produces
+			information that is derived from the original information. Here is
+			one more example:
+		</p><pre class="screen">
+CONSTRUCT
+    {Artist} rdf:type {ex:Painter};
+             ex:hasPainted {Painting}
+FROM
+    {Artist} rdf:type {ex:Artist};
+             ex:hasCreated {Painting} rdf:type {ex:Painting}
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+			This query derives that an artist who has created a painting, is a
+			painter. The relation between the painter and the painting is
+			modelled to be art:hasPainted.
+		</p><p>
+			Instead of specifying a path expression in the CONSTRUCT clause, one
+			can also use a '*'. In that case, the CONSTRUCT clause is identical
+			to the FROM clause. This allows one to extract a subgraph from a
+			larger graph, e.g.:
+		</p><pre class="screen">
+CONSTRUCT *
+FROM {SUB} rdfs:subClassOf {SUPER}</pre><p>
+			This query extracts all rdfs:subClassOf relations from an RDF graph.
+		</p><p>
+			Just like with select queries, the results of a construct query are
+			not filtered for duplicate statements by default. Again, these
+			duplicates are filtered out by the SeRQL query engine if the
+			DISTINCT keyword is specified after the construct keyword, for example:
+		</p><pre class="screen">
+CONSTRUCT DISTINCT
+    {Artist} rdf:type {ex:Painter}
+FROM
+    {Artist} rdf:type {ex:Artist};
+             ex:hasCreated {} rdf:type {ex:Painting}
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+			Again, the REDUCED keyword can also be used as an alternative to
+			DISTINCT. See <a href="#section-select-queries" title="9.6.&nbsp;Select queries">Section&nbsp;9.6, &#8220;Select queries&#8221;</a> for a description
+			of this keyword.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-where"></a>9.8.&nbsp;The WHERE clause</h2></div></div></div><p>
+			The third clause in a query is the WHERE clause. This is an optional
+			clause in which one can specify Boolean constraints on variables. 
+		</p><p>
+			The following sections will explain the available Boolean
+			expressions for use in the WHERE clause.
+			<a href="#section-nested-where" title="9.8.12.&nbsp;Nested WHERE clauses (R1.2)">Section&nbsp;9.8.12, &#8220;Nested WHERE clauses (R1.2)&#8221;</a> will explain how WHERE clauses can be
+			nested inside optional path expressions.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-boolean-constants"></a>9.8.1.&nbsp;Boolean constants</h3></div></div></div><p>
+				There are two Boolean constants, TRUE and FALSE. The first one
+				is simply always true, the last one is always false. The
+				following query will never produce any results because the
+				constraint in the where clause will never evaluate to true:
+			</p><pre class="screen">
+SELECT *
+FROM {X} Y {Z}
+WHERE FALSE</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-value-equality"></a>9.8.2.&nbsp;Value (in)equality</h3></div></div></div><p>
+				The most common boolean constraint is equality or inequality of
+				values. Values can be compared using the operators "="
+				(equality) and "!=" (inequality). The expression
+			</p><pre class="screen">Var = &lt;foo:bar&gt;</pre><p>
+				is true if the variable Var has been bound to the URI &lt;foo:bar&gt;,
+				and the expression
+			</p><pre class="screen">Var1 != Var2</pre><p>
+				checks whether two variables are bound to unequal values.
+			</p><p>
+				Equality of literals is influenced by the literal's datatype. This
+				means that two values that represent the same value but are written
+				differently still compare equal. For example, the following comparison
+				evaluates to true:
+			</p><pre class="screen">"123"^^xsd:positiveInteger = "123.0"^^xsd:float</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-same-term"></a>9.8.3.&nbsp;SameTerm (R3.1)</h3></div></div></div><p>
+				Where the equality operators described in the previous section
+				compares values taking datatypes into account, the SameTerm operator
+				requires an exact lexical match of values. Using a SameTerm operator
+				on a variable and a value is equivalent to replacing the variable with
+				the value in all path expressions. For exampe, the following query:
+			</p><pre class="screen">
+SELECT X, Y
+FROM {X} Y {Z}
+WHERE SameTerm(Z, "123.0"^^xsd:float)</pre><p>
+				...is equivalent to:
+			</p><pre class="screen">
+SELECT X, Y
+FROM {X} Y {"123.0"^^xsd:float}</pre><p>
+				...but is semantically different from:
+			</p><pre class="screen">
+SELECT X, Y
+FROM {X} Y {Z}
+WHERE Z = "123.0"^^xsd:float</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-numerical-comparisons"></a>9.8.4.&nbsp;Numerical comparisons</h3></div></div></div><p>
+				Numbers can be compared to each other using the operators "&lt;"
+				(lower than), "&lt;=" (lower than or equal to), "&gt;" (greater
+				than) and "&gt;=" (greater than or equal to). SeRQL uses a
+				literal's datatype to determine whether its value is numerical.
+				All XML Schema built-in numerical datatypes are supported, i.e.:
+				xsd:float, xsd:double, xsd:decimal and all subtypes of
+				xsd:decimal (xsd:long, xsd:nonPositiveInteger, xsd:byte, etc.),
+				where the prefix xsd is used to reference the XML Schema
+				namespace.
+			</p><p>
+				In the following query, a comparison between values of type
+				xsd:positiveInteger is used to retrieve all countries that have
+				a population of less than 1 million:
+			</p><pre class="screen">
+SELECT Country
+FROM {Country} ex:population {Population}
+WHERE Population &lt; "1000000"^^xsd:positiveInteger
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+				If one want to compare values of incompatible types, one can
+				try to cast one or both of the values to another type. For
+				example in the above query, if the values that Population is
+				bound to generally do not have a datatype, one can cast these
+				values to xsd:integer to make the comparison work, e.g.:
+			</p><pre class="screen">
+SELECT Country
+FROM {Country} ex:population {Population}
+WHERE xsd:integer(Population) &lt; "1000000"^^xsd:positiveInteger
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+				SeRQL supports all value casting methods from SPARQL, see SPARQL's
+				<a href="http://www.w3.org/TR/rdf-sparql-query/#FunctionMapping" target="_top">
+						Constructor Functions</a> for more details.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-bound"></a>9.8.5.&nbsp;Bound() (R3.0)</h3></div></div></div><p>
+				The bound() boolean function checks whether a specific variable has been
+				bound to a value. For example, the following query returns the names of
+				all people without a (known) e-mail address.
+			</p><pre class="screen">
+SELECT Name
+FROM {Person} foaf:name {Name};
+             [ex:email {EmailAddress}]
+WHERE NOT BOUND(EmailAddress)
+</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-isuri"></a>9.8.6.&nbsp;isUri() and isBnode() (R1.2)</h3></div></div></div><p>
+				The isURI() and isBNode() boolean functions are more specific
+				versions of isResource(). They check whether a variable is bound to
+				a URI value or a BNode value, respectively. For example, the
+				following query returns only URIs (and filters out all bNodes and
+				literals):
+			</p><pre class="screen">
+SELECT V
+FROM {R} prop {V}
+WHERE isURI(V)</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-like"></a>9.8.7.&nbsp;Like (R1.2)</h3></div></div></div><p>
+				The LIKE operator can check whether a value matches a specified
+				pattern of characters. '*' characters can be used as wildcards,
+				matching with zero or more characters. The rest of the
+				characters are compared lexically. The pattern is
+				surrounded with double quotes, just like a literal's label.
+			</p><pre class="screen">
+SELECT Country
+FROM {Country} ex:name {Name}
+WHERE Name LIKE "Belgium"
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+				By default, the LIKE operator does a case-sensitive comparison:
+				in the above query, the operator fails is the variable Name is
+				bound to the value "belgium" instead of "Belgium". Optionally,
+				one can specify that the operator should perform a
+				case-insensitive comparison:
+			</p><pre class="screen">
+SELECT Country
+FROM {Country} ex:name {Name}
+WHERE Name LIKE "belgium" IGNORE CASE
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+				In this query, the operator will succeed for "Belgium",
+				"belgium", "BELGIUM", etc.
+			</p><p>
+				The '*' character can be used as a wildcard to indicate
+				substring matches, for example:
+			</p><pre class="screen">
+SELECT Country
+FROM {Country} ex:name {Name}
+WHERE Name LIKE "*Netherlands"
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+				This query will match any country names that end with the string
+				"Netherlands", for example "The Netherlands".
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-regex"></a>9.8.8.&nbsp;Regex (R3.1)</h3></div></div></div><p>
+				The regex() function in SeRQL has been adopted from SPARQL. See the
+				<a href="http://www.w3.org/TR/rdf-sparql-query/#funcex-regex" target="_top">SPARQL
+					regex description</a> for more information.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-langmatches"></a>9.8.9.&nbsp;LangMatches (R3.1)</h3></div></div></div><p>
+				The langMatches() function in SeRQL has been adopted from SPARQL. See the
+				<a href="http://www.w3.org/TR/rdf-sparql-query/#func-langMatches" target="_top">SPARQL
+					langMatches description</a> for more information.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-boolean-operators"></a>9.8.10.&nbsp;And, or, not</h3></div></div></div><p>
+				Boolean constraints and functions can be combined using the AND and OR
+				operators, and negated using the NOT operator. The NOT operator
+				has the highest presedence, then the AND operator, and finally
+				the OR operator. Parentheses can be used to override the default
+				presedence of these operators. The following query is a (kind of
+				artifical) example of this:
+			</p><pre class="screen">
+SELECT *
+FROM {X} Prop {Y} rdfs:label {L}
+WHERE NOT L LIKE "*FooBar*" AND
+      (Y = &lt;foo:bar&gt; OR Y = &lt;bar:foo&gt;) AND
+      isLiteral(L)</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-in-list"></a>9.8.11.&nbsp;In (R3.1)</h3></div></div></div><p>
+				The IN operator can check whether a value is contained in a list of
+				one or more other values. For example:
+			</p><pre class="screen">
+SELECT *
+FROM {X} Prop {Y}
+WHERE Y IN (&lt;foo:bar&gt;, &lt;bar:foo&gt;)</pre><p>
+				When there are multiple alternatives, this syntax is more convenient
+				than the semantic equivalent with a combination of OR and SameTerm
+				operators:
+			</p><pre class="screen">
+SELECT *
+FROM {X} Prop {Y}
+WHERE SameTerm(Y, &lt;foo:bar&gt;) OR SameTerm(Y, &lt;bar:foo&gt;)</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-nested-where"></a>9.8.12.&nbsp;Nested WHERE clauses (R1.2)</h3></div></div></div><p>
+				In order to be able to express boolean constraints on variables in
+				optional path expressions, it is possible to use a <span class="emphasis"><em>nested
+					WHERE clause</em></span>. The constraints in such a nested
+				WHERE clause restrict the potential matches of the optional path
+				expressions, without causing the entire query to fail if the boolean
+				constraint fails. 
+			</p><p>
+				To illustrate the difference between a nested WHERE clause and a
+				'normal' WHERE clause, consider the following two queries on the
+				same data:
+			</p><p>
+				Data (using Turtle format):
+			</p><pre class="screen">
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix ex:   &lt;http://example.org/&gt; .
+
+_:a  foaf:name   "Michael" .
+
+_:b  foaf:name   "Rubens" .
+_:b  ex:email    "rubinho@example.work".
+
+_:b  foaf:name   "Giancarlo" .
+_:b  ex:email    "giancarlo@example.work".</pre><p>
+				Query 1 (normal WHERE-clause):
+			</p><pre class="screen">
+SELECT 
+   Name, EmailAddress
+FROM
+  {Person} foaf:name {Name};
+          [ex:email {EmailAddress}]
+WHERE EmailAddress LIKE "g*"</pre><p>
+				Query 2 (nested WHERE-clause):
+			</p><pre class="screen">
+SELECT 
+   Name, EmailAddress
+FROM
+  {Person} foaf:name {Name};
+          [ex:email {EmailAddress} WHERE EmailAddress LIKE "g*"]</pre><p>
+				In query 1, a normal WHERE clause specifies that the EmailAddress found
+				by the optional expression must begin with the letter "g". The result of
+				this query will be:
+			</p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="center">Name</th><th align="center">EmailAddress</th></tr></thead><tbody><tr><td align="left">Giancarlo</td><td align="left">"giancarlo@example.work"</td></tr></tbody></table></div><p>
+				Despite the fact that the match on EmailAddress is defined as
+				optional, the persons named "Michael" and "Rubens" are
+				not returned. The reason is that the WHERE clause explicitly
+				says that the value bound to the optional variable must start
+				with the letter "g". For Michael, no value is found, hence the
+				variable is unbound, and the comparison operator fails on this.
+				For Rubens, a value is found, but it does not start with
+				the letter "g".
+			</p><p>
+				In query 2, however, a nested WHERE-clause is used. This
+				specifies that any binding the optional expression matches
+				must begin with the letter "g". The result of this query is:
+			</p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="center">Name</th><th align="center">EmailAddress</th></tr></thead><tbody><tr><td align="left">Michael</td><td align="left">&nbsp;</td></tr><tr><td align="left">Rubens</td><td align="left">&nbsp;</td></tr><tr><td align="left">Giancarlo</td><td align="left">"giancarlo@example.work"</td></tr></tbody></table></div><p>
+				The person "Michael" is returned without a result for his email
+				address because there is no email address known for him at all.
+				The person "Rubens" is returned without a result for his email
+				address because, although he does have an email address, it does
+				not start with the letter "g".
+			</p><p>
+				A query can contain at most one nested WHERE-clause per
+				optional path expression, and at most one 'normal' WHERE-clause. 
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-other-functions"></a>9.9.&nbsp;Other functions</h2></div></div></div><p>
+			Apart from the boolean functions and operators introduced in the
+			previous section, SeRQL supports several other functions that return
+			RDF terms rather than non-boolean values. These functions can be
+			used in both the SELECT and the WHERE clause.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-label-lang-datatype"></a>9.9.1.&nbsp;label(), lang() and datatype()</h3></div></div></div><p>
+				The three functions label(), lang() and datatype() all operate on
+				literals. The result of the label() function is the lexical form
+				of the supplied literal. The lang() function returns the
+				language attribute. Both functions return their result as an
+				untyped literal, which can again be compared with other literals
+				using (in)equality-, comparison-, and like operators. The
+				result of the datatype() function is a URI, which can be
+				compared to other URIs. These functions can also be used in
+				SELECT clauses, but not in path expressions.
+			</p><p>
+				An example query:
+			</p><pre class="screen">
+SELECT label(L)
+FROM {R} rdfs:label {L}
+WHERE isLiteral(L) AND lang(L) LIKE "en*"</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-namespace"></a>9.9.2.&nbsp;namespace() and localName() (R1.2)</h3></div></div></div><p>
+				The functions namespace() and localName() operate on URIs. The
+				namespace() function returns the namespace of the supplied URI,
+				as a URI object. The localName() function returns the local name
+				part of the supplied URI, as a literal. These functions can also be used
+				in SELECT clauses, but not in path expressions.
+			</p><p>
+				The following query retrieves all properties of foaf:Person
+				instances that are in the FOAF namespace. Notice that as a
+				shorthand for the full URI, we can use a namespace prefix
+				(followed by a colon) as an argument.
+			</p><p>
+				Data:
+			</p><pre class="screen">
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix ex:   &lt;http://example.org/&gt; .
+
+_:a  rdf:type         foaf:Person .
+_:a  my:nick          "Schumi" .
+_:a  foaf:firstName   "Michael" .
+_:a  foaf:knows       _:b .
+
+_:b  rdf:type         foaf:Person .
+_:b  foaf:firstName   "Rubens" .
+_:b  foaf:nick        "Rubinho" .</pre><p>
+				Query:
+			</p><pre class="screen">
+SELECT foafProp, Value
+FROM {} foafProp {Value}
+WHERE namespace(foafProp) = foaf:
+USING NAMESPACE
+    foaf = &lt;http://xmlns.com/foaf/0.1/&gt;</pre><p>
+				Result:
+			</p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="center">foafProp</th><th align="center">Value</th></tr></thead><tbody><tr><td align="left">&lt;http://xmlns.com/foaf/0.1/firstName</td><td align="left">"Michael"</td></tr><tr><td align="left">&lt;http://xmlns.com/foaf/0.1/knows</td><td align="left">_:b</td></tr><tr><td align="left">&lt;http://xmlns.com/foaf/0.1/firstName</td><td align="left">"Rubens"</td></tr><tr><td align="left">&lt;http://xmlns.com/foaf/0.1/nick</td><td align="left">"Rubinho"</td></tr></tbody></table></div><p>
+				In the following example, the localName() function is used to
+				match two equivalent properties from different namespaces (using
+				the above data).
+			</p><p>
+				Query:
+			</p><pre class="screen">
+SELECT nick
+FROM {} rdf:type {foaf:Person};
+        nickProp {nick}
+WHERE localName(nickProp) LIKE "nick"
+USING NAMESPACE
+    foaf = &lt;http://xmlns.com/foaf/0.1/&gt;</pre><p>
+				Result:
+			</p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><thead><tr><th align="center">nick</th></tr></thead><tbody><tr><td align="left">"Schumi"</td></tr><tr><td align="left">"Rubinho"</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-str"></a>9.9.3.&nbsp;str() (R3.1)</h3></div></div></div><p>
+				The str() function in SeRQL has been adopted from SPARQL. It is
+				similar to the label() function, except that it can also be
+				applied to URIs to convert it to a literal. See the SPARQL
+				specification for more extensive information.
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-order-by"></a>9.10.&nbsp;The ORDER BY clause</h2></div></div></div><p>
+			The ORDER BY clause can be used to order query results in particular
+			ways. This functionality has been adopted from SPARQL, but the syntax
+			is slightly different. The following example retrieves all known
+			countries, ordered from largest to smallest population:
+		</p><pre class="screen">
+SELECT Countr, Population
+FROM {Country} ex:population {Population}
+ORDER BY Population DESC
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>
+			The DESC keyword in this example tells the query engine to sort in the
+			results in descending order. The ASC keyword can be used to sort the
+			results in ascending order, which is also the default when order is
+			specified.
+		</p><p>
+			Multiple ordering expressions can be specified. If the first expression
+			doesn't define an order between two results, the query engine will use
+			the second expression. This process continues until an order between the
+			results has been established, or until all ordering expressions have
+			been processed. In the latter case, the order of these results is
+			unspecified.
+		</p><p>
+			Please see the SPARQL specification for more information on the
+			(partial) ordering of URIs, literals, etc.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-limit-offset"></a>9.11.&nbsp;The LIMIT and OFFSET clauses</h2></div></div></div><p>
+			LIMIT and OFFSET allow you to retrieve just a portion of the results
+			that are generated by the query. If a limit count is given, no more
+			than that many results will be returned (but possibly less, if the
+			query itself yields less results).
+		</p><p>
+			OFFSET says to skip that many results before beginning to return
+			results. OFFSET 0 is the same as omitting the OFFSET clause. If both
+			OFFSET and LIMIT appear, then OFFSET rows are skipped before
+			starting to count the LIMIT results that are returned.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-using-namespace"></a>9.12.&nbsp;The USING NAMESPACE clause</h2></div></div></div><p>
+			The USING NAMESPACE clause can be used to define short prefixes for
+			namespaces, which can then be used in abbreviated URIs. Multiple
+			prefixes can be defined, but each declaration must have a unique
+			prefix. The following query shows the use of namespace prefixes:
+		</p><pre class="screen">
+CONSTRUCT
+    {Artist} rdf:type {art:Painter};
+             art:hasPainted {Painting}
+FROM
+    {Artist} rdf:type {art:Artist};
+             art:hasCreated {Painting} rdf:type {art:Painting}
+USING NAMESPACE
+    rdf = &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;,
+    art = &lt;http://example.org/arts/&gt;</pre><p>
+			The query engine will replace every occurence of rdf: in an
+			abbreviated URI with http://www.w3.org/1999/02/22-rdf-syntax-ns#,
+			and art: with http://example.org/arts/. So art:hasPainted
+			will be resolved to the URI
+			http://example.org/arts/hasPainted.
+		</p><p>
+			Four namespaces that are used very frequently have been assigned
+			prefixes by default:
+		</p><div class="table"><a name="d0e2084"></a><p class="title"><b>Table&nbsp;9.1.&nbsp;Default namespaces</b></p><table summary="Default namespaces" border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="left">Prefix</th><th align="left">Namespace</th></tr></thead><tbody><tr><td align="left">rdf</td><td align="left">http://www.w3.org/1999/02/22-rdf-syntax-ns#</td></tr><tr><td align="left">rdfs</td><td align="left">http://www.w3.org/2000/01/rdf-schema#</td></tr><tr><td align="left">xsd</td><td align="left">http://www.w3.org/2001/XMLSchema#</td></tr><tr><td align="left">owl</td><td align="left">http://www.w3.org/2002/07/owl#</td></tr><tr><td align="left">sesame</td><td align="left">http://www.openrdf.org/schema/sesame#</td></tr></tbody></table></div><p>
+			These prefixes can be used without declaring them. If either of
+			these prefixes is declared explicitly in a query, this declaration
+			will override the default mapping.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-built-in-predicates"></a>9.13.&nbsp;Built-in predicates (REVISED in R2.0)</h2></div></div></div><p>
+			SeRQL contains a number of built-in predicates. These built-ins can
+			be used like any other predicate, as part of a path expression.  The
+			difference with normal predicates is that the built-ins act as
+			operators on the underlying rdf graph: they can be used to query for
+			relations between RDF resources that are not explicitly modeled, nor
+			immediately apparant from the RDF Semantics, but which are
+			nevertheless very useful.
+		</p><p>
+		  <span class="emphasis"><em>Note:</em></span> in Sesame 2.0 built-in predicates are
+		  only supported on repositories that have a
+		  <code class="classname">DirectTypeHierarchyInferencer</code> Sail in the Sail
+		  stack. This inferencer is a stacked Sail that can be deployed on
+		  top of a normal
+		  <code class="classname">ForwardChainingRDFSInferencer</code>.
+		</p><p>
+			Currently, the following built-in predicates are supported:
+		</p><div class="itemizedlist"><ul type="disc"><li><pre class="screen">{X} sesame:directSubClassOf {Y}</pre><p>
+					This relation holds for every X and Y where:
+				</p><div class="orderedlist"><ol type="1"><li>X rdfs:subClassOf Y.</li><li>X != Y.</li><li>
+						There is no class Z (Z != Y and Z != X) such that
+						X rdfs:subClassOf Z and
+						Z rdfs:subClassOf Y.
+					</li></ol></div></li><li><pre class="screen">{X} sesame:directSubPropertyOf {Y}</pre><p>
+					This relation holds for every X and Y where:
+				</p><div class="orderedlist"><ol type="1"><li>X rdfs:subPropertyOf Y.</li><li>X != Y.</li><li>
+						There is no property Z (Z != X and Z != Y) such that
+						X rdfs:subPropertyOf Z and
+						Z rdfs:subPropertyOf Y.
+					</li></ol></div></li><li><pre class="screen">{X} sesame:directType {Y}</pre><p>
+					This relation holds for every X and Y where:
+				</p><div class="orderedlist"><ol type="1"><li>X rdf:type Y.</li><li>
+						There is no class Z (Z != Y) such that
+						X rdf:type Z and Z rdfs:subClassOf Y.
+					</li></ol></div></li></ul></div><p>
+			<span class="emphasis"><em>Note:</em></span> the above definition takes class/property
+			equivalence through cyclic subClassOf/subPropertyOf relations into account.
+			This means that if A rdfs:subClassOf B, and B rdfs:subClassOf A, it holds
+			that A = B.
+		</p><p>
+			The namespace prefix 'sesame' is built-in and does not have to be
+			defined in the query.
+		</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-setoper"></a>9.14.&nbsp;Set combinatory operations</h2></div></div></div><p>
+			SeRQL offers three combinatory operations that can be used to
+			combine sets of query results.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-union"></a>9.14.1.&nbsp;UNION (REVISED in R3.0, extended in R3.1)</h3></div></div></div><p>
+				UNION is a combinatory operation the result of which is the set of
+				query answers of both its operands. This allows one to specify
+				alternatives in a query solution.
+			</p><p>
+				By default, UNION filters out duplicate answers from its operands.
+				Specifying the ALL keyword ("UNION ALL") disables this filter.
+			</p><p>
+				The following example query retrieves the titles of books in the
+				data, where the property used to describe the title can be either
+				from the DC 1.0 or DC 1.1 specification.
+			</p><p>Data:</p><pre class="screen">
+@prefix dc10:  &lt;http://purl.org/dc/elements/1.0/&gt; .
+@prefix dc11:  &lt;http://purl.org/dc/elements/1.1/&gt; .
+
+_:a  dc10:title     "The SeRQL Query Language" .
+_:b  dc11:title     "The SeRQL Query Language (revision 1.2)" .
+
+_:c  dc10:title     "SeRQL" .
+_:c  dc11:title     "SeRQL (updated)" .</pre><p>Query:</p><pre class="screen">
+SELECT title
+FROM {book} dc10:title {title}
+
+UNION
+
+SELECT title
+FROM {book} dc11:title {title}
+
+USING NAMESPACE
+    dc10 = &lt;http://purl.org/dc/elements/1.0/&gt;,
+    dc11 = &lt;http://purl.org/dc/elements/1.1/&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><thead><tr><th align="center">title</th></tr></thead><tbody><tr><td align="left">"The SeRQL Query Language"</td></tr><tr><td align="left">"The SeRQL Query Language (revision 1.2)"</td></tr><tr><td align="left">"SeRQL"</td></tr><tr><td align="left">"SeRQL (updated)"</td></tr></tbody></table></div><p>
+				The union operator simply combines the results from both subqueries,
+				matching bindings by their name:
+			</p><pre class="screen">
+SELECT title, "1.0" AS "version"
+FROM {book} dc10:title {title}
+
+UNION
+
+SELECT title
+FROM {x} dc11:title {title}
+
+USING NAMESPACE
+    dc10 = &lt;http://purl.org/dc/elements/1.0/&gt;,
+    dc11 = &lt;http://purl.org/dc/elements/1.1/&gt;</pre><p>
+				Result:
+			</p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="center">title</th><th align="center">version</th></tr></thead><tbody><tr><td align="left">"The SeRQL Query Language"</td><td align="left">"1.0"</td></tr><tr><td align="left">"The SeRQL Query Language (revision 1.2)"</td><td align="left">&nbsp;</td></tr><tr><td align="left">"SeRQL"</td><td align="left">"1.0"</td></tr><tr><td align="left">"SeRQL (updated)"</td><td align="left">&nbsp;</td></tr></tbody></table></div><p>
+				Since R3.1, the UNION operation can also be applied to path
+				expressions. With this syntax, the first example can be rewritten
+				to a more compact:
+			</p><pre class="screen">
+SELECT title
+FROM
+    {book} dc10:title {title}
+    UNION
+    {book} dc11:title {title}
+USING NAMESPACE
+    dc10 = &lt;http://purl.org/dc/elements/1.0/&gt;,
+    dc11 = &lt;http://purl.org/dc/elements/1.1/&gt;</pre></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-intersect"></a>9.14.2.&nbsp;INTERSECT (R1.2)</h3></div></div></div><p>
+				The INTERSECT operation retrieves query results that occur in both
+				its operands.
+			</p><p>
+				The following query only retrieves those album creators for
+				which the name is specified identically in both DC 1.0 and DC 1.1.
+			</p><p>
+				Data:
+			</p><pre class="screen">
+@prefix dc10:  &lt;http://purl.org/dc/elements/1.0/&gt; .
+@prefix dc11:  &lt;http://purl.org/dc/elements/1.1/&gt; .
+
+_:a  dc10:creator     "George" .
+_:a  dc10:creator     "Ringo" .
+
+_:b  dc11:creator     "George" .
+_:b  dc11:creator     "Ringo" .
+
+_:c  dc10:creator     "Paul" .
+_:c  dc11:creator     "Paul C." .</pre><p>
+				Query:
+			</p><pre class="screen">
+SELECT creator
+FROM {album} dc10:creator {creator}
+
+INTERSECT
+
+SELECT creator
+FROM {album} dc11:creator {creator}
+
+USING NAMESPACE
+    dc10 = &lt;http://purl.org/dc/elements/1.0/&gt;,
+    dc11 = &lt;http://purl.org/dc/elements/1.1/&gt;</pre><p>
+				Result:
+			</p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><thead><tr><th align="center">creator</th></tr></thead><tbody><tr><td align="left">"George"</td></tr><tr><td align="left">"Ringo"</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-minus"></a>9.14.3.&nbsp;MINUS (R1.2)</h3></div></div></div><p>
+				The Minus operation returns query results from its first operand
+				which do not occur in the results from its second operand.
+			</p><p>
+				The following query returns the titles of all albums of which
+				"Paul" is not a creator.
+			</p><p>
+				Data:
+			</p><pre class="screen">
+@prefix dc10:  &lt;http://purl.org/dc/elements/1.0/&gt; .
+
+_:a  dc10:creator     "George" .
+_:a  dc10:title       "Sergeant Pepper" .
+
+_:b  dc10:creator     "Paul" .
+_:b  dc10:title       "Yellow Submarine" .
+
+_:c  dc10:creator     "Paul" .
+_:c  dc10:creator     "Ringo" .
+_:c  dc10:title       "Let it Be" .</pre><p>
+				Query:
+			</p><pre class="screen">
+SELECT title
+FROM {album} dc10:title {title}
+
+MINUS
+
+SELECT title
+FROM {album} dc10:title {title};
+             dc10:creator {creator}
+WHERE creator like "Paul"
+
+USING NAMESPACE
+    dc10 = &lt;http://purl.org/dc/elements/1.0/&gt;,
+    dc11 = &lt;http://purl.org/dc/elements/1.1/&gt;</pre><p>
+				Result:
+			</p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><thead><tr><th align="center">title</th></tr></thead><tbody><tr><td align="left">"Sergeant Pepper"</td></tr></tbody></table></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-nesting"></a>9.15.&nbsp;Query Nesting</h2></div></div></div><p>
+			SeRQL has several constructs for nested queries. Nested queries can
+			occur as operands for several boolean operators, which are explained
+			in more detail in the following sections.
+		</p><p>
+			
+			SeRQL applies variable scoping for nested queries. This means that
+			when a variable is assigned in the outer query, its value will be
+			carried over to the inner query when that variable is reused there.
+		</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-in"></a>9.15.1.&nbsp;IN (R1.2)</h3></div></div></div><p>
+				The IN operator allows set membership checking where the set is
+				defined by a nested SELECT-query.
+			</p><p>
+				The following example query uses the IN operator to retrieve all
+				names of Persons, but only those names that also appear as
+				names of Authors.
+			</p><pre class="screen">
+@prefix ex: &lt;http://example.org/things#&gt; .
+
+_:a  rdf:type         ex:Person .
+_:a  ex:name          "John" .
+
+_:b  rdf:type         ex:Person .
+_:b  ex:name          "Ringo" .
+
+_:c  rdf:type         ex:Author .
+_:c  ex:name          "John" .
+
+_:d  rdf:type         ex:Author .
+_:d  ex:name          "George" .</pre><p>Query:</p><pre class="screen">
+SELECT name
+FROM {} rdf:type {ex:Person};
+        ex:name {name}
+WHERE name IN ( SELECT n
+                FROM {} rdf:type {ex:Author};
+                        ex:name {n}
+              )
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><thead><tr><th align="center">name</th></tr></thead><tbody><tr><td align="left">"John"</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-any"></a>9.15.2.&nbsp;ANY and ALL (R1.2)</h3></div></div></div><p>
+				The ANY and ALL keywords can be used for existential and universal
+				quantification on the right operand of a boolean operator, if this
+				operand is a set, defined by a nested query. The ALL keyword
+				indicates that for every value of the nested query the boolean
+				condition must hold. The ANY keyword indicates that the boolean
+				condition must hold for at least one value of the nested query.
+			</p><p>
+				The following query selects the highest value from a set of values
+				using the ALL keyword and a nested query.
+			</p><p>Data:</p><pre class="screen">
+@prefix ex:  &lt;http://example.org/things#&gt; .
+
+_:a  ex:value     "10"^^xsd:int .
+_:b  ex:value     "11"^^xsd:int .
+_:c  ex:value     "12"^^xsd:int .
+_:d  ex:value     "13"^^xsd:int .
+_:e  ex:value     "14"^^xsd:int .</pre><p>Query:</p><pre class="screen">
+SELECT highestValue
+FROM {node} ex:value {highestValue}
+WHERE highestValue &gt;= ALL ( SELECT value
+                            FROM {} ex:value {value}
+                          )
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="100%"></colgroup><thead><tr><th align="center">highestValue</th></tr></thead><tbody><tr><td align="left">"14"^^xsd:int</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-exists"></a>9.15.3.&nbsp;EXISTS (R1.2)</h3></div></div></div><p>
+				EXISTS is a unary operator that has a nested SELECT-query as its
+				operand. The operator is an existential quantifier that succeeds
+				when the nested query has at least one result.
+			</p><p>
+				In the following example, we use EXIST to determine whether any
+				authors are known that share a name with a person, and if so, to
+				retrieve that person's names and hobbies.
+			</p><p>Data:</p><pre class="screen">
+@prefix ex: &lt;http://example.org/things#&gt; .
+
+_:a  rdf:type         ex:Person .
+_:a  ex:name          "John" .
+_:a  ex:hobby         "Stamp collecting" .
+
+_:b  rdf:type         ex:Person .
+_:b  ex:name          "Ringo" .
+_:b  ex:hobby         "Crossword puzzles" .
+
+_:c  rdf:type         ex:Author .
+_:c  ex:name          "John" .
+_:c  ex:authorOf      "Let it be".</pre><p>Query:</p><pre class="screen">
+SELECT name, hobby
+FROM {} rdf:type {ex:Person};
+        ex:name {name};
+        ex:hobby {hobby}
+WHERE EXISTS ( SELECT n
+               FROM {} rdf:type {ex:Author};
+                       ex:name {n};
+                       ex:authorOf {}
+               WHERE n = name
+             )
+USING NAMESPACE
+    ex = &lt;http://example.org/things#&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="center">name</th><th align="center">hobby</th></tr></thead><tbody><tr><td align="left">"John"</td><td align="left">"Stamp collecting"</td></tr></tbody></table></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-context"></a>9.16.&nbsp;Querying context (R2.0)</h2></div></div></div><p>
+			A new clause, FROM CONTEXT, is introduced in SeRQL 2.0 to allow
+			querying of <span class="emphasis"><em>context</em></span>. Context can be seen as a
+			grouping mechanism of statements inside a repository, where the
+			group is identified with a <span class="emphasis"><em>context identifier</em></span>
+			(a URI or a blank node).
+		</p><p>
+			A very typical way to use context is tracking
+			<span class="emphasis"><em>provenance</em></span> of the statements in a repository,
+			that is, which location (on the Web, or on the file system) these
+			statements originate from. For example, consider an application
+			where you add RDF data from different files to a repository, and
+			then one of those files is updated. You would then like to replace
+			the data from that one file in the repository, and to be able to do
+			this you need a way to figure out which statements need to be
+			removed. The context mechanism gives you a way to do that.
+		</p><p>
+			By default, a SeRQL query ranges over the total repository. This is
+			known as the <span class="emphasis"><em>default context</em></span>: we do not specify a
+			context, therefore, the default context is queried. In practice this
+			means that all statements in all contexts in the repository are
+			queried.
+		</p><p>
+			In the following example, we have a repository that contains three
+			sets of data. The first set is added without context, the other two
+			each have their own, specific, named context.
+		</p><p>Data set 1 (no context):</p><pre class="screen">
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+@prefix g:  &lt;http://example.org/contexts/&gt;
+
+g:graph1 dc:publisher "Bob" .
+g:graph1 dc:date "2004-12-06T00:00:00Z"^^xsd:dateTime .
+
+g:graph2 dc:publisher "Bob" .
+g:graph2 dc:date "2005-01-10T00:00:00Z"^^xsd:dateTime .
+</pre><p>Data set 2 (context http://example.org/contexts/graph1):</p><pre class="screen">
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+
+_:a1 foaf:name "Alice" .
+_:a1 foaf:mbox &lt;mailto:alice@work.example&gt; .
+
+_:b1 foaf:name "Bob" .
+_:b1 foaf:mbox &lt;mailto:bob@oldcorp.example.org&gt; .</pre><p>Data set 3 (context http://example.org/contexts/graph2):</p><pre class="screen">
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+
+_:a2 foaf:name "Alice" .
+_:a2 foaf:mbox &lt;mailto:alice@work.example&gt; .
+
+_:b2 foaf:name "Bob" .
+_:b2 foaf:mbox &lt;mailto:bob@newcorp.example.org&gt; .
+	</pre><p>
+	As you can see, the data in each of the named contexts contains
+	different information about the e-mail address of Bob. Using a 'normal'
+	SeRQL query (that is, without using context information), we can
+	retrieve all e-mail addresses quite easily: 
+</p><p>Query:</p><pre class="screen">
+SELECT DISTINCT name, mbox
+FROM {x} foaf:name {name};
+         foaf:mbox {mbox}
+USING NAMESPACE
+foaf = &lt;http://xmlns.com/foaf/0.1/&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="center">name</th><th align="center">mbox</th></tr></thead><tbody><tr><td align="left">Alice</td><td align="left">mailto:alice@work.example</td></tr><tr><td align="left">Bob</td><td align="left">mailto:bob@oldcorp.example.org</td></tr><tr><td align="left">Bob</td><td align="left">mailto:bob@newcorp.example.org</td></tr></tbody></table></div><p>
+				However, we can not identify the source of each e-mail address using such
+				a query, because all the statements in the three files are just
+				merged together in a single repository. We can, however, retrieve
+				this information using a context query:
+			</p><p>Query:</p><pre class="screen">
+SELECT DISTINCT source, name, mbox
+FROM CONTEXT source
+     {x} foaf:name {name};
+         foaf:mbox {mbox}
+USING NAMESPACE
+foaf = &lt;http://xmlns.com/foaf/0.1/&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th align="center">source</th><th align="center">name</th><th align="center">mbox</th></tr></thead><tbody><tr><td align="left">http://example.org/context/graph1</td><td align="left">Alice</td><td align="left">mailto:alice@work.example</td></tr><tr><td align="left">http://example.org/context/graph2</td><td align="left">Alice</td><td align="left">mailto:alice@work.example</td></tr><tr><td align="left">http://example.org/context/graph1</td><td align="left">Bob</td><td align="left">mailto:bob@oldcorp.example.org</td></tr><tr><td align="left">http://example.org/context/graph2</td><td align="left">Bob</td><td align="left">mailto:bob@newcorp.example.org</td></tr></tbody></table></div><p>
+				As you can see, by specifying a variable <code class="varname">source</code>
+				in the FROM CONTEXT clause we can retrieve the named context from
+				which the information comes.
+			</p><p>
+				We can also specify a named context explicitly by using a URI
+				directly, for example if we only want to query source graph2:
+			</p><p>Query:</p><pre class="screen">
+SELECT name, mbox
+FROM CONTEXT &lt;http://example.org/context/graph2&gt;
+     {x} foaf:name {name};
+         foaf:mbox {mbox}
+USING NAMESPACE
+foaf = &lt;http://xmlns.com/foaf/0.1/&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th align="center">name</th><th align="center">mbox</th></tr></thead><tbody><tr><td align="left">Alice</td><td align="left">mailto:alice@work.example</td></tr><tr><td align="left">Bob</td><td align="left">mailto:bob@newcorp.example.org</td></tr></tbody></table></div><p>
+				A SeRQL query may contain any number of FROM CONTEXT clauses and may
+				additionally contain a 'normal' FROM clause as well.
+			</p><p>
+				For example, in the following query we combine information from
+				the default context and from the different named contexts to
+				retrieve the most recently published e-mail information:
+			</p><p>Query:</p><pre class="screen">
+SELECT date, source, name, mbox
+FROM {source} dc:date {date}	
+FROM CONTEXT source
+     {x} foaf:name {name};
+         foaf:mbox {mbox}
+WHERE date &gt;= ALL (SELECT d FROM {} dc:date {d})
+USING NAMESPACE
+   foaf = &lt;http://xmlns.com/foaf/0.1/&gt;,
+   dc = &lt;http://purl.org/dc/elements/1.1/&gt;</pre><p>Result:</p><div class="informaltable"><table border="1"><colgroup><col width="25%"><col width="25%"><col width="25%"><col width="25%"></colgroup><thead><tr><th align="center">date</th><th align="center">source</th><th align="center">name</th><th align="center">mbox</th></tr></thead><tbody><tr><td align="left">"2005-01-10T00:00:00Z"^^xsd:dateTime</td><td align="left">http://example.org/context/graph2</td><td align="left">Alice</td><td align="left">mailto:alice@work.example</td></tr><tr><td align="left">"2005-01-10T00:00:00Z"^^xsd:dateTime</td><td align="left">http://example.org/context/graph2</td><td align="left">Bob</td><td align="left">mailto:bob@newcorp.example.org</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-example-queries"></a>9.17.&nbsp;Example SeRQL queries</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-example-query-1"></a>9.17.1.&nbsp;Query 1</h3></div></div></div><p>
+				Description: Find all papers that are about "RDF" and about
+				"Querying", and their authors.
+			</p><pre class="screen">
+SELECT
+   Author, Paper
+FROM
+   {Paper} rdf:type {foo:Paper};
+           ex:keyword {"RDF", "Querying"};
+           dc:author {Author}
+USING NAMESPACE
+   dc = &lt;http://purl.org/dc/elements/1.0/&gt;,
+   ex = &lt;http://example.org/things#&gt;</pre><p>
+				Depicted as a graph, this query searches through the RDF graph
+				for all subgraphs matching the following template:
+			</p><div class="figure-float"><div class="figure"><a name="figure-query1"></a><p class="title"><b>Figure&nbsp;9.7.&nbsp;Path expression for query 1</b></p><div class="mediaobject"><img src="figures/serql-query1.png" alt="Path expression for query 1"></div></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-example-query-2"></a>9.17.2.&nbsp;Query 2</h3></div></div></div><p>
+				Description: Find all artefacts whose English title contains
+				the string "night" and the museum where they are exhibited. The
+				artefact must have been created by someone with first name
+				"Rembrandt". The artefact and museum should both be represented
+				by their titles.
+			</p><pre class="screen">
+SELECT DISTINCT
+   label(ArtefactTitle), MuseumName
+FROM
+   {Artefact} arts:created_by {} arts:first_name {"Rembrandt"},
+   {Artefact} arts:exhibited {} dc:title {MuseumName},
+   {Artefact} dc:title {ArtefactTitle}
+WHERE
+   isLiteral(ArtefactTitle) AND
+   lang(ArtefactTitle) = "en" AND
+   label(ArtefactTitle) LIKE "*night*"
+USING NAMESPACE
+   dc   = &lt;http://purl.org/dc/elements/1.0/&gt;,
+   arts = &lt;http://example.org/arts/&gt;</pre><p>
+				Again, depicted as a subgraph template:
+			</p><div class="figure-float"><div class="figure"><a name="figure-query2"></a><p class="title"><b>Figure&nbsp;9.8.&nbsp;Path expression for query 2</b></p><div class="mediaobject"><img src="figures/serql-query2.png" alt="Path expression for query 2"></div></div></div><p>
+				Note that this figure only shows the path expressions from the
+				from clause. The where clause poses additional constraints on
+				the values of the variables which can't be as easily depicted
+				graphically.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="section-example-query-3"></a>9.17.3.&nbsp;Query 3</h3></div></div></div><p>
+				Description: Find all siblings of class foo:bar.
+			</p><pre class="screen">
+SELECT DISTINCT
+   Sibling
+FROM
+   {Sibling, &lt;foo:bar&gt;} rdfs:subClassOf {ParentClass}</pre><p>
+				Or graphically:
+			</p><div class="figure-float"><div class="figure"><a name="figure-query3"></a><p class="title"><b>Figure&nbsp;9.9.&nbsp;Path expression for query 3</b></p><div class="mediaobject"><img src="figures/serql-query3.png" alt="Path expression for query 3"></div></div></div><p>
+				Note that the URI foo:bar is not returned as a result (there is
+				an implicit constraint that doesn't allow Sibling to be equal to
+				values that occur in the same multi-value node).
+			</p></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-serql-references"></a>9.18.&nbsp;References</h2></div></div></div><div class="itemizedlist"><ul type="disc"><li><a href="http://www.w3.org/TR/rdf-sparql-query/" target="_top">SPARQL</a></li><li><a href="http://139.91.183.30:9090/RDF/RQL/" target="_top">RQL</a></li><li><a href="http://www.openrdf.org/doc/rql-tutorial.html" target="_top">RQL tutorial</a></li><li><a href="http://www.hpl.hp.com/semweb/rdql.html" target="_top">RDQL</a></li><li><a href="http://www.w3.org/TR/1999/REC-rdf-syntax-19990222/" target="_top">RDF/XML syntax (W3C Recommandation)</a></li><li><a href="http://www.w3.org/TR/rdf-syntax-grammar/" target="_top">Revised RDF/XML syntax (W3C Technical Report)</a></li><li><a href="http://www.w3.org/tr/rdf-mt/" target="_top">RDF Semantics (W3C Recommandation)</a></li><li><a href="http://www.w3.org/TR/rdf-testcases/#ntriples" target="_top">N-Triples</a></li><li><a href="http://www.ilrt.bris.ac.uk/discovery/2004/01/turtle/" target="_top">Turtle</a></li><li><a href="http://www.w3.org/DesignIssues/Notation3.html" target="_top">N3</a></li><li><a href="http://www.ietf.org/rfc/rfc2396.txt" target="_top">URI (RFC 2396)</a></li><li><a href="http://www.w3.org/TR/REC-xml-names/" target="_top">Namespace in XML (W3C Recommandation)</a></li></ul></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="section-serql-grammar"></a>9.19.&nbsp;SeRQL grammar</h2></div></div></div><p>
+			The following is the BNF grammar of SeRQL, revision 3.0:
+		</p><pre class="screen">
+ParseUnit        ::= Query [NamespaceDeclList]
+
+NamespaceDeclList::= "using" "namespace" NamespaceDecl ("," NamespaceDecl)*
+NamespaceDecl    ::= &lt;PREFIX_NAME&gt; "=" &lt;URI&gt;
+
+Query            ::= TupleQuerySet
+                   | GraphQuerySet
+
+TupleQuerySet    ::= TupleQuery [SetOperator TupleQuerySet]
+TupleQuery       ::= "(" TupleQuerySet ")"
+                   | SelectQuery
+
+GraphQuerySet    ::= GraphQuery [SetOperator GraphQuerySet]
+GraphQuery       ::= "(" GraphQuerySet ")"
+                   | ConstructQuery
+
+SetOperator      ::= "union" ["all"]
+                   | "minus"
+                   | "intersect"
+
+SelectQuery      ::= "select" ["distinct"|"reduced"] Projection [QueryBody]
+Projection       ::= "*"
+                   | [ ProjectionElem ("," ProjectionElem)* ]
+ProjectionElem   ::= ValueExpr ["as" Var]
+
+ConstructQuery   ::= "construct" ["distinct"|"reduced"] ConstructClause [QueryBody]
+ConstructClause  ::= "*"
+                   | PathExprList
+
+QueryBody        ::= ("from" ["context" ContextID] PathExprList)+
+                     ["where" BooleanExpr]
+                     ["order" "by" OrderExprList]
+                     ["limit" &lt;POS_INTEGER&gt;]
+                     ["offset" &lt;POS_INTEGER&gt;]
+
+ContextID        ::= Var
+                   | Uri
+                   | BNode
+
+PathExprList     ::= UnionPathExpr ("," UnionPathExpr)*
+UnionPathExpr    ::= PathExpr ("union" PathExpr)*
+PathExpr         ::= BasicPathExpr
+                   | OptGraphPattern
+                   | "(" PathExprList ")"
+BasicPathExpr    ::= Node Edge Node [[";"] PathExprTail]
+OptGraphPattern  ::= "[" PathExprList ["where" BooleanExpr] "]"
+
+PathExprTail     ::= Edge Node [[";"] PathExprTail]
+                   | OptPathExprTail [";" PathExprTail]
+OptPathExprTail  ::= "[" Edge Node [[";"] PathExprTail] ["where" BooleanExpr] "]"
+
+PathExprCont     ::= PathExprBranch
+                   | PathExprTail
+
+PathExprBranch   ::= ";" PathExprTail
+
+PathExprTail     ::= Edge Node
+                   | "[" Edge Node [PathExprCont] ["where" BooleanExpr] "]"
+
+Edge             ::= Var
+                   | Uri
+Node             ::= "{" [ NodeElem ("," NodeElem)* ] "}"
+NodeElem         ::= Var
+                   | Value
+                   | ReifiedStat
+ReifiedStat      ::= "{" [NodeElem] "}" Edge "{" [NodeElem] "}"
+
+OrderExprList    ::= OrderExpr ("," OrderExpr)*
+OrderExpr        ::= ValueExpr ["asc"|"desc"]
+
+BooleanExpr      ::= OrExpr
+OrExpr           ::= AndExpr ["or" BooleanExpr]
+AndExpr          ::= BooleanElem ["and" AndExpr]
+BooleanElem      ::= "(" BooleanExpr ")"
+                   | "true"
+                   | "false"
+                   | "not" BooleanElem
+                   | "bound" "(" Var ")"
+                   | "sameTerm" "(" ValueExpr "," ValueExpr ")"
+                   | ValueExpr CompOp ValueExpr
+                   | ValueExpr CompOp ("any"|"all") "(" TupleQuerySet ")"
+                   | ValueExpr "like" &lt;STRING&gt;
+                   | ValueExpr "in" "(" TupleQuerySet ")"
+                   | ValueExpr "in" "(" ArgList ")"
+                   | "exists" "(" TupleQuerySet ")"
+                   | "isResource" "(" Var ")"
+                   | "isURI" "(" Var ")"
+                   | "isBNode" "(" Var ")"
+                   | "isLiteral" "(" Var ")"
+                   | "langMatches" "(" ValueExpr "," ValueExpr ")"
+                   | "regex" "(" ValueExpr "," ValueExpr [ "," ValueExpr ] ")"
+
+CompOp           ::= "=" | "!=" | "&lt;" | "&lt;=" | "&gt;" | "&gt;="
+
+ValueExpr        ::= Var
+                   | Value
+                   | "datatype" "(" Var ")"
+                   | "lang" "(" Var ")"
+                   | "label" "(" Var ")"
+                   | "namespace" "(" Var ")"
+                   | "localname" "(" Var ")"
+                   | "str" "(" ValueExpr ")"
+                   | FunctionCall
+
+FunctionCall     ::= Uri "(" [ArgList] ")"
+
+ArgList          ::= ValueExpr ("," ValueExpr)*
+
+Var              ::= &lt;NC_NAME&gt;
+
+Value            ::= Uri
+                   | BNode
+                   | Literal
+
+Uri              ::= &lt;URI&gt;
+                   | &lt;QNAME&gt;
+
+BNode            ::= &lt;BNODE&gt;
+
+Literal          ::= &lt;STRING&gt;
+                   | &lt;LANG_LITERAL&gt;
+                   | &lt;DT_LITERAL&gt;
+                   | &lt;POS_INTEGER&gt;
+                   | &lt;NEG_INTEGER&gt;
+                   | &lt;DECIMAL&gt;
+
+&lt;URI&gt;            ::= "&lt;" (* a legal URI, see http://www.ietf.org/rfc/rfc2396.txt *) "&gt;"
+&lt;QNAME&gt;          ::= &lt;PREFIX_NAME&gt; ":" &lt;NC_NAME_CHAR&gt;*
+&lt;BNODE&gt;          ::= "_:" &lt;NC_NAME&gt;
+
+&lt;STRING&gt;         ::= (* A quoted character string with escapes *)
+&lt;LANG_LITERAL&gt;   ::= &lt;STRING&gt; "@" &lt;LIT_LANG&gt;
+&lt;DT_LITERAL&gt;     ::= &lt;STRING&gt; "^^" (&lt;URI&gt;|&lt;QNAME&gt;)
+
+&lt;POS_INTEGER&gt;    ::= "+"? [0-9]+
+&lt;NEG_INTEGER&gt;    ::= "-" [0-9]+
+&lt;DECIMAL&gt;        ::= ("+"|"-")? [0-9]* "." [0-9]+
+
+&lt;PREFIX_NAME&gt;    ::= &lt;LETTER&gt; &lt;NC_NAME_CHAR&gt;*
+                   | "_" &lt;NC_NAME_CHAR&gt;+
+
+&lt;NC_NAME&gt;        ::= (&lt;LETTER&gt;|"_") &lt;NC_NAME_CHAR&gt;*
+&lt;NC_NAME_CHAR&gt;   ::= (* see http://www.w3.org/TR/REC-xml-names/#NT-NCNameChar *)
+&lt;LETTER&gt;         ::= (* see http://www.w3.org/TR/REC-xml/#NT-Letter *)</pre><p>
+			Note: all keywords are assumed to be case-insensitive. Whitespace
+			characters between tokens are not significant other than for
+			separating the tokens. Production rules with a head that is
+			surrounded by angular brackets define tokens (aka "terminals").
+		</p></div></div></div></body></html>

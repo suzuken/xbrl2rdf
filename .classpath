@@ -9,7 +9,6 @@
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/junit-4.5.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/lucene-core-2.3.1.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/slf4j-api-1.5.8.jar"/>
-	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/slf4j-log4j12-1.5.8.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/wstx-asl-3.2.9.jar"/>
 	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/xercesImpl-2.7.1.jar"/>
@@ -32,14 +31,55 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/args4j/args4j/target/args4j-2.0.19-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/trove4j-2.0.2.jar"/>
-	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/slf4j-jdk14-1.5.0.jar"/>
-	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/slf4j-api-1.5.0.jar"/>
 	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/sil-0.44.2b.jar"/>
-	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/openrdf-sesame-2.5.0-onejar.jar"/>
 	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/onto-crypto-0.1.jar"/>
 	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/lucene-core-3.0.0.jar"/>
 	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/lubm.jar"/>
-	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/log4j-1.2.6.jar"/>
 	<classpathentry kind="lib" path="/home/suzuken/workspace/xbrl2rdf/lib/jsi-1.0b6.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.1.2/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.1.2/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.1.2/lib/httpclient-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.1.2/lib/httpclient-cache-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.1.2/lib/httpcore-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.1.2/lib/httpmime-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-console-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-http-client-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-http-protocol-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-http-server-spring-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-model-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-query-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryalgebra-evaluation-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryalgebra-model-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryparser-api-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryparser-serql-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryparser-sparql-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryresultio-api-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryresultio-binary-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryresultio-sparqljson-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryresultio-sparqlxml-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-queryresultio-text-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-api-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-contextaware-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-dataset-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-event-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-http-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-manager-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-sail-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-repository-sparql-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-api-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-binary-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-n3-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-ntriples-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-rdfxml-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-trig-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-trix-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-rio-turtle-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-runtime-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-sail-api-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-sail-inferencer-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-sail-memory-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-sail-nativerdf-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/openrdf-sesame-2.6.0/lib/sesame-sail-rdbms-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/Jena-2.6.4/lib/slf4j-log4j12-1.5.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
