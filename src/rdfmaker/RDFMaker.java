@@ -14,6 +14,8 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathExpressionException;
 
+import namespace.XBRLOWL;
+
 import org.kohsuke.args4j.Argument;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
@@ -205,7 +207,7 @@ public class RDFMaker implements Maker {
 	 */
 	public void createModel() throws XPathExpressionException{
 		this.model = TDBFactory.createModel();
-
+		
 		Resource company = this.model.createResource(this.getNsIns() + this.x.getDocumentInfo("EntityNameJaEntityInformation").getValue());
 		Resource foafOrg = this.model.createResource(this.getNsFoaf()
 				+ "Organization");

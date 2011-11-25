@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import javax.xml.XMLConstants;
-import javax.xml.namespace.NamespaceContext;
 
 /**
  * @author suzuken
@@ -38,6 +37,10 @@ public class SimpleNamespaceContext implements NamespaceContext {
     if (namespaceURI==null) throw new IllegalArgumentException();
     String result=UriToPrefix.get(namespaceURI);
     return result!=null? result : null;
+  }
+
+  public HashMap<String,String> getPrefixToUri(){
+	  return this.prefixToUri;
   }
 
   @SuppressWarnings("unchecked")

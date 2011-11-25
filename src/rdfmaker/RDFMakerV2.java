@@ -7,8 +7,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
+import java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
@@ -26,6 +29,7 @@ import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.sparql.vocabulary.FOAF;
 import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.vocabulary.RDF;
@@ -34,9 +38,13 @@ import com.hp.hpl.jena.vocabulary.XSD;
 import util.FileSearch;
 import xbrlreader.Account;
 import xbrlreader.Context;
+import xbrlreader.SimpleNamespaceContext;
 import xbrlreader.Unit;
 import xbrlreader.XbrlReader;
 import namespace.XBRLOWL;
+
+import javax.xml.namespace.NamespaceContext;
+
 
 /**
  * RDFを出力するためのクラス
@@ -207,51 +215,58 @@ public class RDFMakerV2 implements Maker {
 		try {
 
 			this.model = TDBFactory.createModel();
-
+			this.model.setNsPrefix("xbrlowl", XBRLOWL.getURI());
+			this.model.setNsPrefix("foaf", "http://xmlns.com/foaf/0.1/");
+			
+			SimpleNamespaceContext snc = (SimpleNamespaceContext) this.x.nsc;
+			HashMap<String, String> map = snc.getPrefixToUri();
+			Set<String> keySet = map.keySet();
+			Iterator<String> keyIte = keySet.iterator();
+			while(keyIte.hasNext()){
+				String key = keyIte.next();
+				String value = map.get(key);
+				if(key != "xml" && key != "xmlns"){
+					String vend = value.substring(value.length());
+					if(vend != "/" && vend != "#"){
+						value = value + "#";
+					}
+					this.model.setNsPrefix(key, value);
+				}
+			}
+			
 			String companyName = 
 					this.x.getDocumentInfo("EntityNameJaEntityInformation").getValue();
 			companyName = companyName.replaceAll("\\[", "［");
 			companyName = companyName.replaceAll("\\]", "］");
 
-			Resource company = this.model.createResource(this.getNsOwl()
+			Resource company = this.model.createResource(XBRLOWL.getURI()
 					+ companyName);
-//			Resource foafOrg = this.model.createResource(this.getNsFoaf()
-//					+ "Organization");
 			company.addProperty(RDF.type, FOAF.Organization);
 
-//			Resource companyType = this.model.createResource(this.getNsOwl() + "Company");
 			Resource companyType = this.model.createResource(XBRLOWL.company);
 			company.addProperty(RDF.type, companyType);
 
 			// 次に、company hasEdicode [EDINETCODE] (ex. E01777-000)をつける。
-//			Resource edicode = this.model.createResource(this.getNsOwl()
-//					+ this.x.getContext("DocumentInfo").getIdentifier());
 			Resource edicode = this.model.createResource(XBRLOWL.getURI()
 					+ this.x.getContext("DocumentInfo").getIdentifier());
-//			Property hasEdicode = this.model.createProperty(this.getNsOwl(),
-//					"hasEDINETCode");
 			company.addProperty(XBRLOWL.hasEDINETCode, edicode);
 
 			//report要素をつける
 			//例: xbrl-owl: jpfr-asr-E01777-000-2009-03-31-01-2009-06-19
-			Resource report = this.model.createResource(this.getNsOwl()
+			Resource report = this.model.createResource(XBRLOWL.getURI()
 					+ getFileName(path));
-//			Property hasReport = this.model.createProperty(this.getNsOwl(), "hasReport");
 			company.addProperty(XBRLOWL.hasReport, report);
 
 			//inversePropertyであるhasCompanyをつける
-//			Property hasCompany = this.model.createProperty(this.getNsOwl(), "hasCompany");
 			report.addProperty(XBRLOWL.hasCompany, report);
 
 			//reportをxbrl-owl:Reportにtypeづけする。
-//			Resource typeReport = this.model.createResource(this.getNsOwl() + "Report");
 			report.addProperty(RDF.type, XBRLOWL.report);
 
 			//publishDateを付与する
 			Literal pDate = this.model.createTypedLiteral(
 					this.x.getContext("DocumentInfo").getPeriodInstant(),
 					XSDDateType.XSDdate);
-//			Property publishDate = this.model.createProperty(this.getNsOwl() + "publishDate");
 			report.addProperty(XBRLOWL.publishDate, pDate);
 
 			// jpfr-t-<?> hasAccountをつくる
@@ -269,16 +284,12 @@ public class RDFMakerV2 implements Maker {
 							this.getNsOwl() + getFileName(this.path)
 							.substring(1, getFileName(this.path).length())
 							+ "-" + contextRef);
-//					Property hasContext = this.model.createProperty(this.getNsOwl()
-//							+ "hasContext");
 					report.addProperty(XBRLOWL.hasContext, contextElement);
 
 					//scenario情報の付与
 					if(c.getScenario() != null){
 						Resource scenario = this.model.createResource(
 								c.getScenarioNamespaceURI() + "#" + c.getScenarioLocalName());
-//						Property owlscenario = this.model.createProperty(this.getNsOwl(),
-//								"scenario");
 						contextElement.addProperty(XBRLOWL.scenario, scenario);
 					}
 
@@ -286,8 +297,6 @@ public class RDFMakerV2 implements Maker {
 					if(c.getPeriodInstant() != null && c.getPeriodInstant() != ""){
 						Literal Instant = this.model.createTypedLiteral(c.getPeriodInstant(), 
 								XSDDateType.XSDdate);
-//						Property hasInstant = this.model.createProperty(this.getNsOwl(),
-//								"hasInstant");
 						contextElement.addLiteral(XBRLOWL.hasInstant, Instant);
 					}
 					else if(c.getPeriodStartDate() != null){
@@ -295,10 +304,6 @@ public class RDFMakerV2 implements Maker {
 								XSDDateType.XSDdate);
 						Literal endDate = this.model.createTypedLiteral(c.getPeriodEndDate(),
 								XSDDateType.XSDdate);
-//						Property hasStartDate = this.model.createProperty(this.getNsOwl(),
-//								"startDate");
-//						Property hasEndDate = this.model.createProperty(this.getNsOwl(),
-//								"endDate");
 						contextElement.addLiteral(XBRLOWL.startDate, startDate);
 						contextElement.addLiteral(XBRLOWL.endDate, endDate);
 					}
@@ -313,17 +318,12 @@ public class RDFMakerV2 implements Maker {
 							//reportリソースに勘定科目情報を対応付ける
 							itemElement = this.model.createResource(item.getNamespaceURI()
 									+ "#"+ item.getLocalName() + "-" + contextRef);
-//							Property hasItem = this.model.createProperty(this.getNsOwl(), "hasItem");
 							company.addProperty(XBRLOWL.hasItem, itemElement);
 
 							//itemをxbrl-owl:itemにタイプづけ
-//							Resource itemtype = this.model.createResource(this.getNsOwl()
-//									+ "item");
 							itemElement.addProperty(RDF.type, XBRLOWL.item);
 
 							//contextをitemに関連付ける
-//							Property owlcontext = this.model.createProperty(this.getNsOwl()
-//									+ "context");
 							itemElement.addProperty(XBRLOWL.context, contextElement);
 
 							//itemに値を付与
@@ -336,14 +336,12 @@ public class RDFMakerV2 implements Maker {
 							Literal decimal = this.model.createTypedLiteral(
 									(item.getDecimals() != null) ? item.getDecimals() : 0,
 											XSD.integer.getURI());
-//							Property owldecimal = this.model.createProperty(this.getNsOwl(), "decimal");
 							itemElement.addProperty(XBRLOWL.decimal, decimal);
 
 							// 金額情報の通貨単位をつける iso4217:JPYとか。
 							Unit unit = this.x.getUnit(item.getUnitRef());
 							Resource unitOfAccount = this.model.createResource(
 									unit.getMeasureNamespaceURI() + "#" + unit.getMeasureLocalName());
-//							Property hasUnit = this.model.createProperty(this.getNsOwl(), "unit");
 							itemElement.addProperty(XBRLOWL.unit, unitOfAccount);
 
 							//itemを勘定科目オントロジーと対応付ける
