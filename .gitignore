@@ -3,5 +3,7 @@ tags
 .svn
 *.class
 output/*
+output2/*
+data/test*
 *test
 input
