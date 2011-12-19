@@ -299,7 +299,8 @@ public class RDFMakerV2 implements Maker {
 								XSDDateType.XSDdate);
 						contextElement.addLiteral(XBRLOWL.hasInstant, Instant);
 					}
-					else if(c.getPeriodStartDate() != null){
+					else if(c.getPeriodStartDate() != null && c.getPeriodStartDate() != ""
+							&& c.getPeriodEndDate() != null && c.getPeriodEndDate() != ""){
 						Literal startDate = this.model.createTypedLiteral(c.getPeriodStartDate(),
 								XSDDateType.XSDdate);
 						Literal endDate = this.model.createTypedLiteral(c.getPeriodEndDate(),
@@ -327,16 +328,20 @@ public class RDFMakerV2 implements Maker {
 							itemElement.addProperty(XBRLOWL.context, contextElement);
 
 							//itemに値を付与
-							Literal valueOfAccount = this.model.createTypedLiteral(
-									(item.getValue() != null) ? item.getValue() : 0,
-											XSD.integer.getURI());
-							itemElement.addProperty(RDF.value, valueOfAccount);
+							if(item.getValue() != null){
+								Literal valueOfAccount = this.model.createTypedLiteral(
+										(item.getValue() != null) ? item.getValue() : 0,
+												XSD.integer.getURI());
+								itemElement.addProperty(RDF.value, valueOfAccount);
+							}
 
 							//itemに表示のための単位を付与
-							Literal decimal = this.model.createTypedLiteral(
-									(item.getDecimals() != null) ? item.getDecimals() : 0,
-											XSD.integer.getURI());
-							itemElement.addProperty(XBRLOWL.decimal, decimal);
+							if(item.getDecimals() != null && item.getDecimals() != ""){
+								Literal decimal = this.model.createTypedLiteral(
+										(item.getDecimals() != null) ? item.getDecimals() : 0,
+												XSD.integer.getURI());
+								itemElement.addProperty(XBRLOWL.decimal, decimal);
+							}
 
 							// 金額情報の通貨単位をつける iso4217:JPYとか。
 							Unit unit = this.x.getUnit(item.getUnitRef());
@@ -348,6 +353,11 @@ public class RDFMakerV2 implements Maker {
 							Resource accountHeading = this.model.createResource(
 									item.getNamespaceURI() + "#" + item.getLocalName());
 							itemElement.addProperty(RDF.type, accountHeading);
+							
+							//itemに簡易的な勘定科目の名前空間に対応させる
+							Resource accountHeadingType = this.model.createResource(
+									XBRLOWL.getURI() + item.getLocalName());
+							itemElement.addProperty(RDF.type, accountHeadingType);
 						}
 					}
 				}
