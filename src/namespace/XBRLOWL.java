@@ -49,5 +49,23 @@ public class XBRLOWL {
 			m_model.createProperty(NS + "unit");
 	public static final Property locatedIn = 
 			m_model.createProperty(NS + "locatedIn");
+	public static final Property abstractBoolean = 
+			m_model.createProperty(NS + "abstractBoolean");
+	public static final Property type = 
+			m_model.createProperty(NS + "type");
+	public static final Property nillable = 
+			m_model.createProperty(NS + "nillable");
+	public static final Property labelJa = 
+			m_model.createProperty(NS + "labelJa");
+	public static final Property labelEn = 
+			m_model.createProperty(NS + "labelEn");
+	public static final Property balance = 
+			m_model.createProperty(NS + "balance");
+	public static final Property prefix = 
+			m_model.createProperty(NS + "prefix");
+	public static final Property depth = 
+			m_model.createProperty(NS + "depth");
+	public static final Property periodType = 
+			m_model.createProperty(NS + "periodType");
 
 }
