@@ -1,0 +1,1656 @@
+<?xml version="1.0"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">投資業財務諸表語彙</documentation>
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssetsAbstract" xlink:to="reference_CurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndDeposits" xlink:label="CashAndDeposits"/>
+    <reference xlink:type="resource" xlink:label="reference_CashAndDeposits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>イ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashAndDeposits" xlink:to="reference_CashAndDeposits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesReceivableTrade" xlink:label="NotesReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ロ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesReceivableTrade" xlink:to="reference_NotesReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsNotesReceivableTrade" xlink:label="AllowanceForDoubtfulAccountsNotesReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsNotesReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>40</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsNotesReceivableTrade" xlink:to="reference_AllowanceForDoubtfulAccountsNotesReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermInvestmentSecurities" xlink:label="ShortTermInvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermInvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>二</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermInvestmentSecurities" xlink:to="reference_ShortTermInvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancePaymentsTrade" xlink:label="AdvancePaymentsTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ホ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsTrade" xlink:to="reference_AdvancePaymentsTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PrepaidExpenses" xlink:label="PrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_PrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ヘ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PrepaidExpenses" xlink:to="reference_PrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsCA" xlink:label="DeferredTaxAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>チ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsCA" xlink:to="reference_DeferredTaxAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedIncome" xlink:label="AccruedIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ト</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedIncome" xlink:to="reference_AccruedIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>40</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Appendix>但書</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="reference_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAbstract" xlink:to="reference_NoncurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="reference_PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <reference xlink:type="resource" xlink:label="reference_Buildings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>イ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Buildings" xlink:to="reference_Buildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationBuildings" xlink:label="AccumulatedDepreciationBuildings"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationBuildings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>41</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationBuildings" xlink:to="reference_AccumulatedDepreciationBuildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Structures" xlink:label="Structures"/>
+    <reference xlink:type="resource" xlink:label="reference_Structures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ロ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Structures" xlink:to="reference_Structures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationStructures" xlink:label="AccumulatedDepreciationStructures"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationStructures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>41</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationStructures" xlink:to="reference_AccumulatedDepreciationStructures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MachineryAndEquipment" xlink:label="MachineryAndEquipment"/>
+    <reference xlink:type="resource" xlink:label="reference_MachineryAndEquipment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ハ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MachineryAndEquipment" xlink:to="reference_MachineryAndEquipment"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationMachineryAndEquipment" xlink:label="AccumulatedDepreciationMachineryAndEquipment"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationMachineryAndEquipment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>41</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationMachineryAndEquipment" xlink:to="reference_AccumulatedDepreciationMachineryAndEquipment"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ToolsFurnitureAndFixtures" xlink:label="ToolsFurnitureAndFixtures"/>
+    <reference xlink:type="resource" xlink:label="reference_ToolsFurnitureAndFixtures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>二</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ToolsFurnitureAndFixtures" xlink:to="reference_ToolsFurnitureAndFixtures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationToolsFurnitureAndFixtures" xlink:label="AccumulatedDepreciationToolsFurnitureAndFixtures"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationToolsFurnitureAndFixtures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>41</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationToolsFurnitureAndFixtures" xlink:to="reference_AccumulatedDepreciationToolsFurnitureAndFixtures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Land" xlink:label="Land"/>
+    <reference xlink:type="resource" xlink:label="reference_Land" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ホ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Land" xlink:to="reference_Land"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationPPEByGroup" xlink:label="AccumulatedDepreciationPPEByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationPPEByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>41</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Appendix>但書</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationPPEByGroup" xlink:to="reference_AccumulatedDepreciationPPEByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssetsAbstract" xlink:label="IntangibleAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsAbstract" xlink:to="reference_IntangibleAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseholdRight" xlink:label="LeaseholdRight"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseholdRight" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+      <ref:Appendix>イ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseholdRight" xlink:to="reference_LeaseholdRight"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssetsAbstract" xlink:label="InvestmentsAndOtherAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="reference_InvestmentsAndOtherAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentSecurities" xlink:label="InvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+      <ref:Appendix>イ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentSecurities" xlink:to="reference_InvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsInCapital" xlink:label="InvestmentsInCapital"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsInCapital" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+      <ref:Appendix>ロ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsInCapital" xlink:to="reference_InvestmentsInCapital"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsIOA" xlink:label="DeferredTaxAssetsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+      <ref:Appendix>二</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsIOA" xlink:to="reference_DeferredTaxAssetsIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>40</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Appendix>但書</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="reference_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssetsAbstract" xlink:label="DeferredAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssetsAbstract" xlink:to="reference_DeferredAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>チ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCL" xlink:to="reference_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ヘ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNCL" xlink:to="reference_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecurities" xlink:label="ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationDifferenceOnAvailableForSaleSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationDifferenceOnAvailableForSaleSecurities" xlink:to="reference_ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationDifferenceOnAvailableForSaleSecurities_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationDifferenceOnAvailableForSaleSecurities" xlink:to="reference_ValuationDifferenceOnAvailableForSaleSecurities_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>49</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncome" xlink:to="reference_OperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OrdinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>50</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OrdinaryIncome" xlink:to="reference_OrdinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ImpairmentLossEL" xlink:label="ImpairmentLossEL"/>
+    <reference xlink:type="resource" xlink:label="reference_ImpairmentLossEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ImpairmentLossEL" xlink:to="reference_ImpairmentLossEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesCurrent" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>52</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesCurrent" xlink:to="reference_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesDeferred" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>52</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesDeferred" xlink:to="reference_IncomeTaxesDeferred"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>53</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncome" xlink:to="reference_NetIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetsAbstract" xlink:label="AssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>36</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetsAbstract" xlink:to="reference_AssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsNet" xlink:label="BuildingsNet"/>
+    <reference xlink:type="resource" xlink:label="reference_BuildingsNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>イ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BuildingsNet" xlink:to="reference_BuildingsNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StructuresNet" xlink:label="StructuresNet"/>
+    <reference xlink:type="resource" xlink:label="reference_StructuresNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ロ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StructuresNet" xlink:to="reference_StructuresNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MachineryAndEquipmentNet" xlink:label="MachineryAndEquipmentNet"/>
+    <reference xlink:type="resource" xlink:label="reference_MachineryAndEquipmentNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ハ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MachineryAndEquipmentNet" xlink:to="reference_MachineryAndEquipmentNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ToolsFurnitureAndFixturesNet" xlink:label="ToolsFurnitureAndFixturesNet"/>
+    <reference xlink:type="resource" xlink:label="reference_ToolsFurnitureAndFixturesNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>二</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ToolsFurnitureAndFixturesNet" xlink:to="reference_ToolsFurnitureAndFixturesNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ConstructionInProgress" xlink:label="ConstructionInProgress"/>
+    <reference xlink:type="resource" xlink:label="reference_ConstructionInProgress" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ヘ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ConstructionInProgress" xlink:to="reference_ConstructionInProgress"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAbstract" xlink:label="LiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>36</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAbstract" xlink:to="reference_LiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="CurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilitiesAbstract" xlink:to="reference_CurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>二</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableOther" xlink:to="reference_AccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedExpenses" xlink:label="AccruedExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ホ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedExpenses" xlink:to="reference_AccruedExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesCL" xlink:label="DeferredTaxLiabilitiesCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ト</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesCL" xlink:to="reference_DeferredTaxLiabilitiesCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancesReceived" xlink:label="AdvancesReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ロ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesReceived" xlink:to="reference_AdvancesReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositsReceived" xlink:label="DepositsReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>二</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceived" xlink:to="reference_DepositsReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_UnearnedRevenue" xlink:label="UnearnedRevenue"/>
+    <reference xlink:type="resource" xlink:label="reference_UnearnedRevenue" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>へ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnearnedRevenue" xlink:to="reference_UnearnedRevenue"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetRetirementObligationsCL" xlink:label="AssetRetirementObligationsCL"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetRetirementObligationsCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>チ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetRetirementObligationsCL" xlink:to="reference_AssetRetirementObligationsCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilitiesAbstract" xlink:label="NoncurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilitiesAbstract" xlink:to="reference_NoncurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayable" xlink:label="LongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ロ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayable" xlink:to="reference_LongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesNCL" xlink:label="DeferredTaxLiabilitiesNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>二</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesNCL" xlink:to="reference_DeferredTaxLiabilitiesNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetRetirementObligationsNCL" xlink:label="AssetRetirementObligationsNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetRetirementObligationsNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ヘ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetRetirementObligationsNCL" xlink:to="reference_AssetRetirementObligationsNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssetsAbstract" xlink:label="NetAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>36</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetAssetsAbstract" xlink:to="reference_NetAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustmentsAbstract" xlink:label="ValuationAndTranslationAdjustmentsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustmentsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustmentsAbstract" xlink:to="reference_ValuationAndTranslationAdjustmentsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredGainsOrLossesOnHedges" xlink:label="DeferredGainsOrLossesOnHedges"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredGainsOrLossesOnHedges" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredGainsOrLossesOnHedges" xlink:to="reference_DeferredGainsOrLossesOnHedges"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredGainsOrLossesOnHedges_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredGainsOrLossesOnHedges" xlink:to="reference_DeferredGainsOrLossesOnHedges_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustments" xlink:label="ValuationAndTranslationAdjustments"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustments" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustments" xlink:to="reference_ValuationAndTranslationAdjustments"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Goodwill" xlink:label="Goodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_Goodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+      <ref:Appendix>ロ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Goodwill" xlink:to="reference_Goodwill"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncomeAbstract" xlink:label="ExtraordinaryIncomeAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncomeAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>5</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncomeAbstract" xlink:to="reference_ExtraordinaryIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLossAbstract" xlink:label="ExtraordinaryLossAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLossAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>6</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLossAbstract" xlink:to="reference_ExtraordinaryLossAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnDisasterEL" xlink:label="LossOnDisasterEL"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnDisasterEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnDisasterEL" xlink:to="reference_LossOnDisasterEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeBeforeIncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>51</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="reference_IncomeBeforeIncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustmentsSSAbstract" xlink:label="ValuationAndTranslationAdjustmentsSSAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustmentsSSAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustmentsSSAbstract" xlink:to="reference_ValuationAndTranslationAdjustmentsSSAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecuritiesSSAbstract" xlink:label="ValuationDifferenceOnAvailableForSaleSecuritiesSSAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationDifferenceOnAvailableForSaleSecuritiesSSAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationDifferenceOnAvailableForSaleSecuritiesSSAbstract" xlink:to="reference_ValuationDifferenceOnAvailableForSaleSecuritiesSSAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ChangesOfItemsDuringThePeriodAFSAbstract" xlink:label="ChangesOfItemsDuringThePeriodAFSAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodAFSAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodAFSAbstract" xlink:to="reference_ChangesOfItemsDuringThePeriodAFSAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityAFS"/>
+    <reference xlink:type="resource" xlink:label="reference_NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:to="reference_NetChangesOfItemsOtherThanShareholdersEquityAFS"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodAFS" xlink:label="TotalChangesOfItemsDuringThePeriodAFS"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodAFS" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodAFS" xlink:to="reference_TotalChangesOfItemsDuringThePeriodAFS"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredGainsOrLossesOnHedgesSSAbstract" xlink:label="DeferredGainsOrLossesOnHedgesSSAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredGainsOrLossesOnHedgesSSAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredGainsOrLossesOnHedgesSSAbstract" xlink:to="reference_DeferredGainsOrLossesOnHedgesSSAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedgesAbstract" xlink:label="ChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedgesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedgesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedgesAbstract" xlink:to="reference_ChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedgesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges"/>
+    <reference xlink:type="resource" xlink:label="reference_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:to="reference_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges" xlink:label="TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges" xlink:to="reference_TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalValuationAndTranslationAdjustmentsSSAbstract" xlink:label="TotalValuationAndTranslationAdjustmentsSSAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalValuationAndTranslationAdjustmentsSSAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalValuationAndTranslationAdjustmentsSSAbstract" xlink:to="reference_TotalValuationAndTranslationAdjustmentsSSAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ChangesOfItemsDuringThePeriodVTAAbstract" xlink:label="ChangesOfItemsDuringThePeriodVTAAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodVTAAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodVTAAbstract" xlink:to="reference_ChangesOfItemsDuringThePeriodVTAAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityVTA"/>
+    <reference xlink:type="resource" xlink:label="reference_NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:to="reference_NetChangesOfItemsOtherThanShareholdersEquityVTA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodVTA" xlink:label="TotalChangesOfItemsDuringThePeriodVTA"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodVTA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodVTA" xlink:to="reference_TotalChangesOfItemsDuringThePeriodVTA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnNegativeGoodwillEI" xlink:label="GainOnNegativeGoodwillEI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnNegativeGoodwillEI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>ヘ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnNegativeGoodwillEI" xlink:to="reference_GainOnNegativeGoodwillEI"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_AccountsReceivableTradeCAINV" xlink:label="AccountsReceivableTradeCAINV"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableTradeCAINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ハ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableTradeCAINV" xlink:to="reference_AccountsReceivableTradeCAINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_AllowanceForDoubtfulAccountsOperatingAccountsReceivableINV" xlink:label="AllowanceForDoubtfulAccountsOperatingAccountsReceivableINV"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsOperatingAccountsReceivableINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>40</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsOperatingAccountsReceivableINV" xlink:to="reference_AllowanceForDoubtfulAccountsOperatingAccountsReceivableINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitParentCAINV" xlink:label="InvestmentUnitParentCAINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentUnitParentCAINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>44</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentUnitParentCAINV" xlink:to="reference_InvestmentUnitParentCAINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitSubsidiaryCAINV" xlink:label="InvestmentUnitSubsidiaryCAINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentUnitSubsidiaryCAINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>44</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentUnitSubsidiaryCAINV" xlink:to="reference_InvestmentUnitSubsidiaryCAINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitParentIOAINV" xlink:label="InvestmentUnitParentIOAINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentUnitParentIOAINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>44</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentUnitParentIOAINV" xlink:to="reference_InvestmentUnitParentIOAINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitSubsidiaryIOAINV" xlink:label="InvestmentUnitSubsidiaryIOAINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentUnitSubsidiaryIOAINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>44</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentUnitSubsidiaryIOAINV" xlink:to="reference_InvestmentUnitSubsidiaryIOAINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_AccountsPayableCLINV" xlink:label="AccountsPayableCLINV"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableCLINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>イ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableCLINV" xlink:to="reference_AccountsPayableCLINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquityAbstractINV" xlink:label="UnitholdersEquityAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersEquityAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersEquityAbstractINV" xlink:to="reference_UnitholdersEquityAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersCapitalINV" xlink:label="UnitholdersCapitalINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersCapitalINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersCapitalINV" xlink:to="reference_UnitholdersCapitalINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersCapitalINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersCapitalINV" xlink:to="reference_UnitholdersCapitalINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_DepositsForNewInvestmentUnitsINV" xlink:label="DepositsForNewInvestmentUnitsINV"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForNewInvestmentUnitsINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForNewInvestmentUnitsINV" xlink:to="reference_DepositsForNewInvestmentUnitsINV"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForNewInvestmentUnitsINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForNewInvestmentUnitsINV" xlink:to="reference_DepositsForNewInvestmentUnitsINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusAbstractINV" xlink:label="SurplusAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_SurplusAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SurplusAbstractINV" xlink:to="reference_SurplusAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CapitalSurplusINV" xlink:label="CapitalSurplusINV"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplusINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplusINV" xlink:to="reference_CapitalSurplusINV"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplusINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplusINV" xlink:to="reference_CapitalSurplusINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:label="UnappropriatedRetainedEarningsUndisposedLossINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnappropriatedRetainedEarningsUndisposedLossINV" xlink:to="reference_UnappropriatedRetainedEarningsUndisposedLossINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnappropriatedRetainedEarningsUndisposedLossINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnappropriatedRetainedEarningsUndisposedLossINV" xlink:to="reference_UnappropriatedRetainedEarningsUndisposedLossINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitOwnINV" xlink:label="InvestmentUnitOwnINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentUnitOwnINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentUnitOwnINV" xlink:to="reference_InvestmentUnitOwnINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentUnitOwnINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentUnitOwnINV" xlink:to="reference_InvestmentUnitOwnINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersCapitalAbstractINV" xlink:label="UnitholdersCapitalAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersCapitalAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersCapitalAbstractINV" xlink:to="reference_UnitholdersCapitalAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersCapitalAbstractINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersCapitalAbstractINV" xlink:to="reference_UnitholdersCapitalAbstractINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_OperatingRevenueAbstractINV" xlink:label="OperatingRevenueAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueAbstractINV" xlink:to="reference_OperatingRevenueAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_RentalRevenueINV" xlink:label="RentalRevenueINV"/>
+    <reference xlink:type="resource" xlink:label="reference_RentalRevenueINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RentalRevenueINV" xlink:to="reference_RentalRevenueINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_OperatingExpensesAbstractINV" xlink:label="OperatingExpensesAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesAbstractINV" xlink:to="reference_OperatingExpensesAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_AssetManagementFeeOEINV" xlink:label="AssetManagementFeeOEINV"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetManagementFeeOEINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetManagementFeeOEINV" xlink:to="reference_AssetManagementFeeOEINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_AssetCustodyFeeOEINV" xlink:label="AssetCustodyFeeOEINV"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetCustodyFeeOEINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetCustodyFeeOEINV" xlink:to="reference_AssetCustodyFeeOEINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_RetainedEarningsBroughtForwardPriorINV" xlink:label="RetainedEarningsBroughtForwardPriorINV"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsBroughtForwardPriorINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>54</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsBroughtForwardPriorINV" xlink:to="reference_RetainedEarningsBroughtForwardPriorINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_StatementsOfUnitholdersEquityAbstractINV" xlink:label="StatementsOfUnitholdersEquityAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_StatementsOfUnitholdersEquityAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StatementsOfUnitholdersEquityAbstractINV" xlink:to="reference_StatementsOfUnitholdersEquityAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquityINV" xlink:label="UnitholdersEquityINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersEquityINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersEquityINV" xlink:to="reference_UnitholdersEquityINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersEquityINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersEquityINV" xlink:to="reference_UnitholdersEquityINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_DepositsForSubscriptionsToNewInvestmentUnitAbstractINV" xlink:label="DepositsForSubscriptionsToNewInvestmentUnitAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForSubscriptionsToNewInvestmentUnitAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForSubscriptionsToNewInvestmentUnitAbstractINV" xlink:to="reference_DepositsForSubscriptionsToNewInvestmentUnitAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusINV" xlink:label="SurplusINV"/>
+    <reference xlink:type="resource" xlink:label="reference_SurplusINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SurplusINV" xlink:to="reference_SurplusINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentSurplusAbstractINV" xlink:label="InvestmentSurplusAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentSurplusAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentSurplusAbstractINV" xlink:to="reference_InvestmentSurplusAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_VoluntaryRetainedEarningsAbstractINV" xlink:label="VoluntaryRetainedEarningsAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_VoluntaryRetainedEarningsAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VoluntaryRetainedEarningsAbstractINV" xlink:to="reference_VoluntaryRetainedEarningsAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnappropriatedRetainedEarningsUndisposedLossAbstractINV" xlink:label="UnappropriatedRetainedEarningsUndisposedLossAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnappropriatedRetainedEarningsUndisposedLossAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnappropriatedRetainedEarningsUndisposedLossAbstractINV" xlink:to="reference_UnappropriatedRetainedEarningsUndisposedLossAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitOwnAbstractINV" xlink:label="InvestmentUnitOwnAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentUnitOwnAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentUnitOwnAbstractINV" xlink:to="reference_InvestmentUnitOwnAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentCorporationBondINV" xlink:label="InvestmentCorporationBondINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentCorporationBondINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>38</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+      <ref:Appendix>イ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentCorporationBondINV" xlink:to="reference_InvestmentCorporationBondINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InterestIncomeORINV" xlink:label="InterestIncomeORINV"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestIncomeORINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestIncomeORINV" xlink:to="reference_InterestIncomeORINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_DeductionFromUnitholdersCapitalINV" xlink:label="DeductionFromUnitholdersCapitalINV"/>
+    <reference xlink:type="resource" xlink:label="reference_DeductionFromUnitholdersCapitalINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeductionFromUnitholdersCapitalINV" xlink:to="reference_DeductionFromUnitholdersCapitalINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersCapitalGrossINV" xlink:label="UnitholdersCapitalGrossINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersCapitalGrossINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersCapitalGrossINV" xlink:to="reference_UnitholdersCapitalGrossINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_RentalReceivablesNetCAINV" xlink:label="RentalReceivablesNetCAINV"/>
+    <reference xlink:type="resource" xlink:label="reference_RentalReceivablesNetCAINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+      <ref:Appendix>ハ</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RentalReceivablesNetCAINV" xlink:to="reference_RentalReceivablesNetCAINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_VoluntaryRetainedEarningsINV" xlink:label="VoluntaryRetainedEarningsINV"/>
+    <reference xlink:type="resource" xlink:label="reference_VoluntaryRetainedEarningsINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>2</ref:Chapter>
+      <ref:Article>39</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VoluntaryRetainedEarningsINV" xlink:to="reference_VoluntaryRetainedEarningsINV"/>
+    <reference xlink:type="resource" xlink:label="reference_VoluntaryRetainedEarningsINV_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VoluntaryRetainedEarningsINV" xlink:to="reference_VoluntaryRetainedEarningsINV_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_OperatingRevenueINV" xlink:label="OperatingRevenueINV"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueINV" xlink:to="reference_OperatingRevenueINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_OperatingExpensesINV" xlink:label="OperatingExpensesINV"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>3</ref:Chapter>
+      <ref:Article>48</ref:Article>
+      <ref:Paragraph>1</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesINV" xlink:to="reference_OperatingExpensesINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_ChangesOfItemsDuringThePeriodUnitsIssuedAbstractINV" xlink:label="ChangesOfItemsDuringThePeriodUnitsIssuedAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodUnitsIssuedAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodUnitsIssuedAbstractINV" xlink:to="reference_ChangesOfItemsDuringThePeriodUnitsIssuedAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalChangesOfItemsDuringThePeriodUnitsIssuedINV" xlink:label="TotalChangesOfItemsDuringThePeriodUnitsIssuedINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodUnitsIssuedINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodUnitsIssuedINV" xlink:to="reference_TotalChangesOfItemsDuringThePeriodUnitsIssuedINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_ChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitAbstractINV" xlink:label="ChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitAbstractINV" xlink:to="reference_ChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitINV" xlink:label="TotalChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitINV" xlink:to="reference_TotalChangesOfItemsDuringThePeriodDepositsForSubscriptionsToNewInvestmentUnitINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_ChangesOfItemsDuringThePeriodInvestmentSurplusAbstractINV" xlink:label="ChangesOfItemsDuringThePeriodInvestmentSurplusAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodInvestmentSurplusAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodInvestmentSurplusAbstractINV" xlink:to="reference_ChangesOfItemsDuringThePeriodInvestmentSurplusAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalChangesOfItemsDuringThePeriodInvestmentSurplusINV" xlink:label="TotalChangesOfItemsDuringThePeriodInvestmentSurplusINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodInvestmentSurplusINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodInvestmentSurplusINV" xlink:to="reference_TotalChangesOfItemsDuringThePeriodInvestmentSurplusINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_ChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsAbstractINV" xlink:label="ChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsAbstractINV" xlink:to="reference_ChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsINV" xlink:label="TotalChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsINV" xlink:to="reference_TotalChangesOfItemsDuringThePeriodVoluntaryRetainedEarningsINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_ChangesOfItemsDuringThePeriodUREAbstractINV" xlink:label="ChangesOfItemsDuringThePeriodUREAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodUREAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodUREAbstractINV" xlink:to="reference_ChangesOfItemsDuringThePeriodUREAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalChangesOfItemsDuringThePeriodUREINV" xlink:label="TotalChangesOfItemsDuringThePeriodUREINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodUREINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>4</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodUREINV" xlink:to="reference_TotalChangesOfItemsDuringThePeriodUREINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_ChangesOfItemsDuringThePeriodInvestmentUnitOwnAbstractINV" xlink:label="ChangesOfItemsDuringThePeriodInvestmentUnitOwnAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodInvestmentUnitOwnAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodInvestmentUnitOwnAbstractINV" xlink:to="reference_ChangesOfItemsDuringThePeriodInvestmentUnitOwnAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalChangesOfItemsDuringThePeriodInvestmentUnitOwnINV" xlink:label="TotalChangesOfItemsDuringThePeriodInvestmentUnitOwnINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodInvestmentUnitOwnINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>4</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodInvestmentUnitOwnINV" xlink:to="reference_TotalChangesOfItemsDuringThePeriodInvestmentUnitOwnINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalUnitholdersEquityAbstractINV" xlink:label="TotalUnitholdersEquityAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalUnitholdersEquityAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalUnitholdersEquityAbstractINV" xlink:to="reference_TotalUnitholdersEquityAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_ChangesOfItemsDuringThePeriodUnitholdersEquityAbstractINV" xlink:label="ChangesOfItemsDuringThePeriodUnitholdersEquityAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_ChangesOfItemsDuringThePeriodUnitholdersEquityAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ChangesOfItemsDuringThePeriodUnitholdersEquityAbstractINV" xlink:to="reference_ChangesOfItemsDuringThePeriodUnitholdersEquityAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_TotalChangesOfItemsDuringThePeriodUnitholdersEquityINV" xlink:label="TotalChangesOfItemsDuringThePeriodUnitholdersEquityINV"/>
+    <reference xlink:type="resource" xlink:label="reference_TotalChangesOfItemsDuringThePeriodUnitholdersEquityINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>2</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalChangesOfItemsDuringThePeriodUnitholdersEquityINV" xlink:to="reference_TotalChangesOfItemsDuringThePeriodUnitholdersEquityINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquitySSAbstractINV" xlink:label="UnitholdersEquitySSAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersEquitySSAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>2</ref:Paragraph>
+      <ref:Subparagraph>1</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersEquitySSAbstractINV" xlink:to="reference_UnitholdersEquitySSAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusSSAbstractINV" xlink:label="SurplusSSAbstractINV"/>
+    <reference xlink:type="resource" xlink:label="reference_SurplusSSAbstractINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>投資法人の計算に関する規則</ref:Name>
+      <ref:IssueDate>2009-06-24</ref:IssueDate>
+      <ref:Chapter>4</ref:Chapter>
+      <ref:Article>56</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>3</ref:Subparagraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SurplusSSAbstractINV" xlink:to="reference_SurplusSSAbstractINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CumulativeEffectOfChangesInAccountingPoliciesUREINV" xlink:label="CumulativeEffectOfChangesInAccountingPoliciesUREINV"/>
+    <reference xlink:type="resource" xlink:label="reference_CumulativeEffectOfChangesInAccountingPoliciesUREINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>企業会計基準委員会</ref:Publisher>
+      <ref:Name>株主資本等変動計算書に関する会計基準</ref:Name>
+      <ref:Number>企業会計基準第6号</ref:Number>
+      <ref:IssueDate>2010-06-30</ref:IssueDate>
+      <ref:Article>5</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CumulativeEffectOfChangesInAccountingPoliciesUREINV" xlink:to="reference_CumulativeEffectOfChangesInAccountingPoliciesUREINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnappropriatedRetainedEarningsUndisposedLossAsRestatedINV" xlink:label="UnappropriatedRetainedEarningsUndisposedLossAsRestatedINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnappropriatedRetainedEarningsUndisposedLossAsRestatedINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>企業会計基準委員会</ref:Publisher>
+      <ref:Name>株主資本等変動計算書に関する会計基準</ref:Name>
+      <ref:Number>企業会計基準第6号</ref:Number>
+      <ref:IssueDate>2010-06-30</ref:IssueDate>
+      <ref:Article>5</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnappropriatedRetainedEarningsUndisposedLossAsRestatedINV" xlink:to="reference_UnappropriatedRetainedEarningsUndisposedLossAsRestatedINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CumulativeEffectOfChangesInAccountingPoliciesSurplusINV" xlink:label="CumulativeEffectOfChangesInAccountingPoliciesSurplusINV"/>
+    <reference xlink:type="resource" xlink:label="reference_CumulativeEffectOfChangesInAccountingPoliciesSurplusINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>企業会計基準委員会</ref:Publisher>
+      <ref:Name>株主資本等変動計算書に関する会計基準</ref:Name>
+      <ref:Number>企業会計基準第6号</ref:Number>
+      <ref:IssueDate>2010-06-30</ref:IssueDate>
+      <ref:Article>5</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CumulativeEffectOfChangesInAccountingPoliciesSurplusINV" xlink:to="reference_CumulativeEffectOfChangesInAccountingPoliciesSurplusINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusAsRestatedINV" xlink:label="SurplusAsRestatedINV"/>
+    <reference xlink:type="resource" xlink:label="reference_SurplusAsRestatedINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>企業会計基準委員会</ref:Publisher>
+      <ref:Name>株主資本等変動計算書に関する会計基準</ref:Name>
+      <ref:Number>企業会計基準第6号</ref:Number>
+      <ref:IssueDate>2010-06-30</ref:IssueDate>
+      <ref:Article>5</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SurplusAsRestatedINV" xlink:to="reference_SurplusAsRestatedINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CumulativeEffectOfChangesInAccountingPoliciesUnitholdersEquityINV" xlink:label="CumulativeEffectOfChangesInAccountingPoliciesUnitholdersEquityINV"/>
+    <reference xlink:type="resource" xlink:label="reference_CumulativeEffectOfChangesInAccountingPoliciesUnitholdersEquityINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>企業会計基準委員会</ref:Publisher>
+      <ref:Name>株主資本等変動計算書に関する会計基準</ref:Name>
+      <ref:Number>企業会計基準第6号</ref:Number>
+      <ref:IssueDate>2010-06-30</ref:IssueDate>
+      <ref:Article>5</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CumulativeEffectOfChangesInAccountingPoliciesUnitholdersEquityINV" xlink:to="reference_CumulativeEffectOfChangesInAccountingPoliciesUnitholdersEquityINV"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquityAsRestatedINV" xlink:label="UnitholdersEquityAsRestatedINV"/>
+    <reference xlink:type="resource" xlink:label="reference_UnitholdersEquityAsRestatedINV" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>企業会計基準委員会</ref:Publisher>
+      <ref:Name>株主資本等変動計算書に関する会計基準</ref:Name>
+      <ref:Number>企業会計基準第6号</ref:Number>
+      <ref:IssueDate>2010-06-30</ref:IssueDate>
+      <ref:Article>5</ref:Article>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnitholdersEquityAsRestatedINV" xlink:to="reference_UnitholdersEquityAsRestatedINV"/>
+  </referenceLink>
+</linkbase>

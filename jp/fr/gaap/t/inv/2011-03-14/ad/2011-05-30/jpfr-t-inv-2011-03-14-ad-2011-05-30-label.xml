@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterim" xlink:type="simple" xlink:href="../../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterim"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersCapitalINV" xlink:label="UnitholdersCapitalINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_UnitholdersCapitalINV_4" xlink:label="label_UnitholdersCapitalINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersCapitalINV" xlink:to="label_UnitholdersCapitalINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersCapitalINV" xlink:label="UnitholdersCapitalINV_2"/>
+    <label xlink:type="resource" xlink:label="label_UnitholdersCapitalINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_UnitholdersCapitalINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersCapitalINV_2" xlink:to="label_UnitholdersCapitalINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CapitalSurplusINV" xlink:label="CapitalSurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_CapitalSurplusINV_4" xlink:label="label_CapitalSurplusINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CapitalSurplusINV" xlink:to="label_CapitalSurplusINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CapitalSurplusINV" xlink:label="CapitalSurplusINV_2"/>
+    <label xlink:type="resource" xlink:label="label_CapitalSurplusINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_CapitalSurplusINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CapitalSurplusINV_2" xlink:to="label_CapitalSurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusINV" xlink:label="SurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_SurplusINV_4" xlink:label="label_SurplusINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SurplusINV" xlink:to="label_SurplusINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusINV" xlink:label="SurplusINV_2"/>
+    <label xlink:type="resource" xlink:label="label_SurplusINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_SurplusINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SurplusINV_2" xlink:to="label_SurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_DepositsForNewInvestmentUnitsINV" xlink:label="DepositsForNewInvestmentUnitsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_DepositsForNewInvestmentUnitsINV_4" xlink:label="label_DepositsForNewInvestmentUnitsINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DepositsForNewInvestmentUnitsINV" xlink:to="label_DepositsForNewInvestmentUnitsINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_DepositsForNewInvestmentUnitsINV" xlink:label="DepositsForNewInvestmentUnitsINV_2"/>
+    <label xlink:type="resource" xlink:label="label_DepositsForNewInvestmentUnitsINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_DepositsForNewInvestmentUnitsINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DepositsForNewInvestmentUnitsINV_2" xlink:to="label_DepositsForNewInvestmentUnitsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitOwnINV" xlink:label="InvestmentUnitOwnINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_InvestmentUnitOwnINV_4" xlink:label="label_InvestmentUnitOwnINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="InvestmentUnitOwnINV" xlink:to="label_InvestmentUnitOwnINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitOwnINV" xlink:label="InvestmentUnitOwnINV_2"/>
+    <label xlink:type="resource" xlink:label="label_InvestmentUnitOwnINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_InvestmentUnitOwnINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="InvestmentUnitOwnINV_2" xlink:to="label_InvestmentUnitOwnINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquityINV" xlink:label="UnitholdersEquityINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_UnitholdersEquityINV_4" xlink:label="label_UnitholdersEquityINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersEquityINV" xlink:to="label_UnitholdersEquityINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquityINV" xlink:label="UnitholdersEquityINV_2"/>
+    <label xlink:type="resource" xlink:label="label_UnitholdersEquityINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_UnitholdersEquityINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersEquityINV_2" xlink:to="label_UnitholdersEquityINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_VoluntaryRetainedEarningsINV" xlink:label="VoluntaryRetainedEarningsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_VoluntaryRetainedEarningsINV_4" xlink:label="label_VoluntaryRetainedEarningsINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="VoluntaryRetainedEarningsINV" xlink:to="label_VoluntaryRetainedEarningsINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_VoluntaryRetainedEarningsINV" xlink:label="VoluntaryRetainedEarningsINV_2"/>
+    <label xlink:type="resource" xlink:label="label_VoluntaryRetainedEarningsINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_VoluntaryRetainedEarningsINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="VoluntaryRetainedEarningsINV_2" xlink:to="label_VoluntaryRetainedEarningsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:label="UnappropriatedRetainedEarningsUndisposedLossINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_UnappropriatedRetainedEarningsUndisposedLossINV_4" xlink:label="label_UnappropriatedRetainedEarningsUndisposedLossINV_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnappropriatedRetainedEarningsUndisposedLossINV" xlink:to="label_UnappropriatedRetainedEarningsUndisposedLossINV_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:label="UnappropriatedRetainedEarningsUndisposedLossINV_2"/>
+    <label xlink:type="resource" xlink:label="label_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_UnappropriatedRetainedEarningsUndisposedLossINV">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnappropriatedRetainedEarningsUndisposedLossINV_2" xlink:to="label_UnappropriatedRetainedEarningsUndisposedLossINV"/>
+  </labelLink>
+  <labelLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterim">
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersCapitalINV" xlink:label="UnitholdersCapitalINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_UnitholdersCapitalINV_2_2" xlink:label="label_UnitholdersCapitalINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersCapitalINV" xlink:to="label_UnitholdersCapitalINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersCapitalINV" xlink:label="UnitholdersCapitalINV_2"/>
+    <label xlink:type="resource" xlink:label="label_UnitholdersCapitalINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_UnitholdersCapitalINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersCapitalINV_2" xlink:to="label_UnitholdersCapitalINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CapitalSurplusINV" xlink:label="CapitalSurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_CapitalSurplusINV_2_2" xlink:label="label_CapitalSurplusINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CapitalSurplusINV" xlink:to="label_CapitalSurplusINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_CapitalSurplusINV" xlink:label="CapitalSurplusINV_2"/>
+    <label xlink:type="resource" xlink:label="label_CapitalSurplusINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_CapitalSurplusINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CapitalSurplusINV_2" xlink:to="label_CapitalSurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusINV" xlink:label="SurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_SurplusINV_2_2" xlink:label="label_SurplusINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SurplusINV" xlink:to="label_SurplusINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_SurplusINV" xlink:label="SurplusINV_2"/>
+    <label xlink:type="resource" xlink:label="label_SurplusINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_SurplusINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SurplusINV_2" xlink:to="label_SurplusINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_DepositsForNewInvestmentUnitsINV" xlink:label="DepositsForNewInvestmentUnitsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_DepositsForNewInvestmentUnitsINV_2_2" xlink:label="label_DepositsForNewInvestmentUnitsINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DepositsForNewInvestmentUnitsINV" xlink:to="label_DepositsForNewInvestmentUnitsINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_DepositsForNewInvestmentUnitsINV" xlink:label="DepositsForNewInvestmentUnitsINV_2"/>
+    <label xlink:type="resource" xlink:label="label_DepositsForNewInvestmentUnitsINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_DepositsForNewInvestmentUnitsINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DepositsForNewInvestmentUnitsINV_2" xlink:to="label_DepositsForNewInvestmentUnitsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitOwnINV" xlink:label="InvestmentUnitOwnINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_InvestmentUnitOwnINV_2_2" xlink:label="label_InvestmentUnitOwnINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="InvestmentUnitOwnINV" xlink:to="label_InvestmentUnitOwnINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_InvestmentUnitOwnINV" xlink:label="InvestmentUnitOwnINV_2"/>
+    <label xlink:type="resource" xlink:label="label_InvestmentUnitOwnINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_InvestmentUnitOwnINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="InvestmentUnitOwnINV_2" xlink:to="label_InvestmentUnitOwnINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquityINV" xlink:label="UnitholdersEquityINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_UnitholdersEquityINV_2_2" xlink:label="label_UnitholdersEquityINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersEquityINV" xlink:to="label_UnitholdersEquityINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnitholdersEquityINV" xlink:label="UnitholdersEquityINV_2"/>
+    <label xlink:type="resource" xlink:label="label_UnitholdersEquityINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_UnitholdersEquityINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnitholdersEquityINV_2" xlink:to="label_UnitholdersEquityINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_VoluntaryRetainedEarningsINV" xlink:label="VoluntaryRetainedEarningsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_VoluntaryRetainedEarningsINV_2_2" xlink:label="label_VoluntaryRetainedEarningsINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="VoluntaryRetainedEarningsINV" xlink:to="label_VoluntaryRetainedEarningsINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_VoluntaryRetainedEarningsINV" xlink:label="VoluntaryRetainedEarningsINV_2"/>
+    <label xlink:type="resource" xlink:label="label_VoluntaryRetainedEarningsINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_VoluntaryRetainedEarningsINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="VoluntaryRetainedEarningsINV_2" xlink:to="label_VoluntaryRetainedEarningsINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:label="UnappropriatedRetainedEarningsUndisposedLossINV"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14-label.xml#label_UnappropriatedRetainedEarningsUndisposedLossINV_2_2" xlink:label="label_UnappropriatedRetainedEarningsUndisposedLossINV_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnappropriatedRetainedEarningsUndisposedLossINV" xlink:to="label_UnappropriatedRetainedEarningsUndisposedLossINV_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-inv-2011-03-14.xsd#jpfr-t-inv_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:label="UnappropriatedRetainedEarningsUndisposedLossINV_2"/>
+    <label xlink:type="resource" xlink:label="label_UnappropriatedRetainedEarningsUndisposedLossINV" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="ja" id="label_UnappropriatedRetainedEarningsUndisposedLossINV_2">当期首残高</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="UnappropriatedRetainedEarningsUndisposedLossINV_2" xlink:to="label_UnappropriatedRetainedEarningsUndisposedLossINV"/>
+  </labelLink>
+</linkbase>

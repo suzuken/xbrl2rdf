@@ -1,0 +1,1646 @@
+<?xml version="1.0"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">特定金融業財務諸表語彙</documentation>
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssetsAbstract" xlink:to="reference_CurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndDeposits" xlink:label="CashAndDeposits"/>
+    <reference xlink:type="resource" xlink:label="reference_CashAndDeposits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashAndDeposits" xlink:to="reference_CashAndDeposits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesAndAccountsReceivableTrade" xlink:label="NotesAndAccountsReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesAndAccountsReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesAndAccountsReceivableTrade" xlink:to="reference_NotesAndAccountsReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesReceivableTrade" xlink:label="NotesReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesReceivableTrade" xlink:to="reference_NotesReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermInvestmentSecurities" xlink:label="ShortTermInvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermInvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermInvestmentSecurities" xlink:to="reference_ShortTermInvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Inventories" xlink:label="Inventories"/>
+    <reference xlink:type="resource" xlink:label="reference_Inventories" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Inventories" xlink:to="reference_Inventories"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancePaymentsTrade" xlink:label="AdvancePaymentsTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsTrade" xlink:to="reference_AdvancePaymentsTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PrepaidExpenses" xlink:label="PrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_PrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PrepaidExpenses" xlink:to="reference_PrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsCA" xlink:label="DeferredTaxAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsCA" xlink:to="reference_DeferredTaxAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedIncome" xlink:label="AccruedIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedIncome" xlink:to="reference_AccruedIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansReceivable" xlink:label="ShortTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansReceivable" xlink:to="reference_ShortTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCA" xlink:to="reference_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="reference_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssets" xlink:to="reference_CurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAbstract" xlink:to="reference_NoncurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="reference_PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsAndStructures" xlink:label="BuildingsAndStructures"/>
+    <reference xlink:type="resource" xlink:label="reference_BuildingsAndStructures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BuildingsAndStructures" xlink:to="reference_BuildingsAndStructures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationBuildingsAndStructures" xlink:label="AccumulatedDepreciationBuildingsAndStructures"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationBuildingsAndStructures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationBuildingsAndStructures" xlink:to="reference_AccumulatedDepreciationBuildingsAndStructures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <reference xlink:type="resource" xlink:label="reference_Buildings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Buildings" xlink:to="reference_Buildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationBuildings" xlink:label="AccumulatedDepreciationBuildings"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationBuildings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationBuildings" xlink:to="reference_AccumulatedDepreciationBuildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Structures" xlink:label="Structures"/>
+    <reference xlink:type="resource" xlink:label="reference_Structures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Structures" xlink:to="reference_Structures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationStructures" xlink:label="AccumulatedDepreciationStructures"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationStructures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationStructures" xlink:to="reference_AccumulatedDepreciationStructures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Vehicles" xlink:label="Vehicles"/>
+    <reference xlink:type="resource" xlink:label="reference_Vehicles" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Vehicles" xlink:to="reference_Vehicles"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationVehicles" xlink:label="AccumulatedDepreciationVehicles"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationVehicles" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationVehicles" xlink:to="reference_AccumulatedDepreciationVehicles"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Land" xlink:label="Land"/>
+    <reference xlink:type="resource" xlink:label="reference_Land" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Land" xlink:to="reference_Land"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipment" xlink:label="PropertyPlantAndEquipment"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipment" xlink:to="reference_PropertyPlantAndEquipment"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssetsAbstract" xlink:label="IntangibleAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsAbstract" xlink:to="reference_IntangibleAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Software" xlink:label="Software"/>
+    <reference xlink:type="resource" xlink:label="reference_Software" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Software" xlink:to="reference_Software"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIA" xlink:label="OtherIA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIA" xlink:to="reference_OtherIA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssets" xlink:label="IntangibleAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssets" xlink:to="reference_IntangibleAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssetsAbstract" xlink:label="InvestmentsAndOtherAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="reference_InvestmentsAndOtherAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentSecurities" xlink:label="InvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentSecurities" xlink:to="reference_InvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StocksOfSubsidiariesAndAffiliates" xlink:label="StocksOfSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_StocksOfSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StocksOfSubsidiariesAndAffiliates" xlink:to="reference_StocksOfSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsInCapital" xlink:label="InvestmentsInCapital"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsInCapital" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsInCapital" xlink:to="reference_InvestmentsInCapital"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivable" xlink:label="LongTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivable" xlink:to="reference_LongTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther" xlink:label="ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther"/>
+    <reference xlink:type="resource" xlink:label="reference_ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther" xlink:to="reference_ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermPrepaidExpenses" xlink:label="LongTermPrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermPrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermPrepaidExpenses" xlink:to="reference_LongTermPrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsIOA" xlink:label="DeferredTaxAssetsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsIOA" xlink:to="reference_DeferredTaxAssetsIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIOA" xlink:label="OtherIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIOA" xlink:to="reference_OtherIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="reference_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssets" xlink:label="InvestmentsAndOtherAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssets" xlink:to="reference_InvestmentsAndOtherAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssets" xlink:to="reference_NoncurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssetsAbstract" xlink:label="DeferredAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssetsAbstract" xlink:to="reference_DeferredAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssets" xlink:label="DeferredAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssets" xlink:to="reference_DeferredAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <reference xlink:type="resource" xlink:label="reference_Assets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Assets" xlink:to="reference_Assets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCL" xlink:to="reference_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNCL" xlink:to="reference_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MinorityInterests" xlink:label="MinorityInterests"/>
+    <reference xlink:type="resource" xlink:label="reference_MinorityInterests" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MinorityInterests" xlink:to="reference_MinorityInterests"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalStock" xlink:label="CapitalStock"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalStock" xlink:to="reference_CapitalStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalCapitalSurplus" xlink:label="LegalCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalCapitalSurplus" xlink:to="reference_LegalCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalRetainedEarnings" xlink:label="LegalRetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalRetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalRetainedEarnings" xlink:to="reference_LegalRetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecurities" xlink:label="ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationDifferenceOnAvailableForSaleSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationDifferenceOnAvailableForSaleSecurities" xlink:to="reference_ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ForeignCurrencyTranslationAdjustment" xlink:label="ForeignCurrencyTranslationAdjustment"/>
+    <reference xlink:type="resource" xlink:label="reference_ForeignCurrencyTranslationAdjustment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignCurrencyTranslationAdjustment" xlink:to="reference_ForeignCurrencyTranslationAdjustment"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TreasuryStock" xlink:label="TreasuryStock"/>
+    <reference xlink:type="resource" xlink:label="reference_TreasuryStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TreasuryStock" xlink:to="reference_TreasuryStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncome" xlink:to="reference_OperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnSalesOfSecuritiesNOI" xlink:label="GainOnSalesOfSecuritiesNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnSalesOfSecuritiesNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnSalesOfSecuritiesNOI" xlink:to="reference_GainOnSalesOfSecuritiesNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnSalesOfSecuritiesNOE" xlink:label="LossOnSalesOfSecuritiesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnSalesOfSecuritiesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnSalesOfSecuritiesNOE" xlink:to="reference_LossOnSalesOfSecuritiesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnValuationOfSecuritiesNOE" xlink:label="LossOnValuationOfSecuritiesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnValuationOfSecuritiesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnValuationOfSecuritiesNOE" xlink:to="reference_LossOnValuationOfSecuritiesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OrdinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OrdinaryIncome" xlink:to="reference_OrdinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesCurrent" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesCurrent" xlink:to="reference_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesDeferred" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesDeferred" xlink:to="reference_IncomeTaxesDeferred"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MinorityInterestsInIncome" xlink:label="MinorityInterestsInIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_MinorityInterestsInIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MinorityInterestsInIncome" xlink:to="reference_MinorityInterestsInIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncome" xlink:to="reference_NetIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetsAbstract" xlink:label="AssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetsAbstract" xlink:to="reference_AssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsAndStructuresNet" xlink:label="BuildingsAndStructuresNet"/>
+    <reference xlink:type="resource" xlink:label="reference_BuildingsAndStructuresNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BuildingsAndStructuresNet" xlink:to="reference_BuildingsAndStructuresNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsNet" xlink:label="BuildingsNet"/>
+    <reference xlink:type="resource" xlink:label="reference_BuildingsNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BuildingsNet" xlink:to="reference_BuildingsNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StructuresNet" xlink:label="StructuresNet"/>
+    <reference xlink:type="resource" xlink:label="reference_StructuresNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StructuresNet" xlink:to="reference_StructuresNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_VehiclesNet" xlink:label="VehiclesNet"/>
+    <reference xlink:type="resource" xlink:label="reference_VehiclesNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VehiclesNet" xlink:to="reference_VehiclesNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ConstructionInProgress" xlink:label="ConstructionInProgress"/>
+    <reference xlink:type="resource" xlink:label="reference_ConstructionInProgress" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ConstructionInProgress" xlink:to="reference_ConstructionInProgress"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAbstract" xlink:label="LiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAbstract" xlink:to="reference_LiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="CurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilitiesAbstract" xlink:to="reference_CurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesAndAccountsPayableTrade" xlink:label="NotesAndAccountsPayableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesAndAccountsPayableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesAndAccountsPayableTrade" xlink:to="reference_NotesAndAccountsPayableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesPayableTrade" xlink:label="NotesPayableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesPayableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesPayableTrade" xlink:to="reference_NotesPayableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableTrade" xlink:label="AccountsPayableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableTrade" xlink:to="reference_AccountsPayableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayable" xlink:label="ShortTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansPayable" xlink:to="reference_ShortTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableOther" xlink:to="reference_AccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedExpenses" xlink:label="AccruedExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedExpenses" xlink:to="reference_AccruedExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesPayable" xlink:label="IncomeTaxesPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesPayable" xlink:to="reference_IncomeTaxesPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesCL" xlink:label="DeferredTaxLiabilitiesCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesCL" xlink:to="reference_DeferredTaxLiabilitiesCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositsReceived" xlink:label="DepositsReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceived" xlink:to="reference_DepositsReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_UnearnedRevenue" xlink:label="UnearnedRevenue"/>
+    <reference xlink:type="resource" xlink:label="reference_UnearnedRevenue" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnearnedRevenue" xlink:to="reference_UnearnedRevenue"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForBonuses" xlink:label="ProvisionForBonuses"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForBonuses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForBonuses" xlink:to="reference_ProvisionForBonuses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilities" xlink:label="CurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilities" xlink:to="reference_CurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilitiesAbstract" xlink:label="NoncurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilitiesAbstract" xlink:to="reference_NoncurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondsPayable" xlink:label="BondsPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_BondsPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BondsPayable" xlink:to="reference_BondsPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayable" xlink:label="LongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayable" xlink:to="reference_LongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesNCL" xlink:label="DeferredTaxLiabilitiesNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesNCL" xlink:to="reference_DeferredTaxLiabilitiesNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForRetirementBenefits" xlink:label="ProvisionForRetirementBenefits"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForRetirementBenefits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForRetirementBenefits" xlink:to="reference_ProvisionForRetirementBenefits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForDirectorsRetirementBenefits" xlink:label="ProvisionForDirectorsRetirementBenefits"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForDirectorsRetirementBenefits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForDirectorsRetirementBenefits" xlink:to="reference_ProvisionForDirectorsRetirementBenefits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilities" xlink:label="NoncurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilities" xlink:to="reference_NoncurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_Liabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Liabilities" xlink:to="reference_Liabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:label="ProvisionOfAllowanceForDoubtfulAccountsSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:to="reference_ProvisionOfAllowanceForDoubtfulAccountsSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BadDebtsExpensesSGA" xlink:label="BadDebtsExpensesSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_BadDebtsExpensesSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BadDebtsExpensesSGA" xlink:to="reference_BadDebtsExpensesSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncomeAbstract" xlink:label="NonOperatingIncomeAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncomeAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncomeAbstract" xlink:to="reference_NonOperatingIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncome" xlink:label="NonOperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncome" xlink:to="reference_NonOperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpensesAbstract" xlink:label="NonOperatingExpensesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpensesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpensesAbstract" xlink:to="reference_NonOperatingExpensesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpenses" xlink:label="NonOperatingExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpenses" xlink:to="reference_NonOperatingExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncome" xlink:to="reference_ExtraordinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLoss" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLoss" xlink:to="reference_ExtraordinaryLoss"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeBeforeIncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="reference_IncomeBeforeIncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxes" xlink:label="IncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxes" xlink:to="reference_IncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:label="NetCashProvidedByUsedInOperatingActivitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:to="reference_NetCashProvidedByUsedInOperatingActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepreciationAndAmortizationOpeCF" xlink:label="DepreciationAndAmortizationOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_DepreciationAndAmortizationOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepreciationAndAmortizationOpeCF" xlink:to="reference_DepreciationAndAmortizationOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF" xlink:label="IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF" xlink:to="reference_IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestAndDividendsIncomeOpeCF" xlink:label="InterestAndDividendsIncomeOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestAndDividendsIncomeOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestAndDividendsIncomeOpeCF" xlink:to="reference_InterestAndDividendsIncomeOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestExpensesOpeCF" xlink:label="InterestExpensesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestExpensesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestExpensesOpeCF" xlink:to="reference_InterestExpensesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ForeignExchangeLossesGainsOpeCF" xlink:label="ForeignExchangeLossesGainsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ForeignExchangeLossesGainsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignExchangeLossesGainsOpeCF" xlink:to="reference_ForeignExchangeLossesGainsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_EquityInEarningsLossesOfAffiliatesOpeCF" xlink:label="EquityInEarningsLossesOfAffiliatesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_EquityInEarningsLossesOfAffiliatesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EquityInEarningsLossesOfAffiliatesOpeCF" xlink:to="reference_EquityInEarningsLossesOfAffiliatesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF" xlink:label="LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF" xlink:to="reference_LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF" xlink:label="DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF" xlink:to="reference_DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DecreaseIncreaseInInventoriesOpeCF" xlink:label="DecreaseIncreaseInInventoriesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInInventoriesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInInventoriesOpeCF" xlink:to="reference_DecreaseIncreaseInInventoriesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF" xlink:label="IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF" xlink:to="reference_IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF" xlink:label="IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF" xlink:to="reference_IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SubtotalOpeCF" xlink:label="SubtotalOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_SubtotalOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SubtotalOpeCF" xlink:to="reference_SubtotalOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestAndDividendsIncomeReceivedOpeCFInvCF" xlink:label="InterestAndDividendsIncomeReceivedOpeCFInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestAndDividendsIncomeReceivedOpeCFInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestAndDividendsIncomeReceivedOpeCFInvCF" xlink:to="reference_InterestAndDividendsIncomeReceivedOpeCFInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestExpensesPaidOpeCFFinCF" xlink:label="InterestExpensesPaidOpeCFFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestExpensesPaidOpeCFFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestExpensesPaidOpeCFFinCF" xlink:to="reference_InterestExpensesPaidOpeCFFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesPaidOpeCF" xlink:label="IncomeTaxesPaidOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesPaidOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesPaidOpeCF" xlink:to="reference_IncomeTaxesPaidOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetCashProvidedByUsedInOperatingActivities" xlink:label="NetCashProvidedByUsedInOperatingActivities"/>
+    <reference xlink:type="resource" xlink:label="reference_NetCashProvidedByUsedInOperatingActivities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetCashProvidedByUsedInOperatingActivities" xlink:to="reference_NetCashProvidedByUsedInOperatingActivities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetCashProvidedByUsedInInvestmentActivitiesAbstract" xlink:label="NetCashProvidedByUsedInInvestmentActivitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetCashProvidedByUsedInInvestmentActivitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetCashProvidedByUsedInInvestmentActivitiesAbstract" xlink:to="reference_NetCashProvidedByUsedInInvestmentActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PurchaseOfShortTermInvestmentSecuritiesInvCF" xlink:label="PurchaseOfShortTermInvestmentSecuritiesInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_PurchaseOfShortTermInvestmentSecuritiesInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PurchaseOfShortTermInvestmentSecuritiesInvCF" xlink:to="reference_PurchaseOfShortTermInvestmentSecuritiesInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromSalesOfShortTermInvestmentSecuritiesInvCF" xlink:label="ProceedsFromSalesOfShortTermInvestmentSecuritiesInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProceedsFromSalesOfShortTermInvestmentSecuritiesInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProceedsFromSalesOfShortTermInvestmentSecuritiesInvCF" xlink:to="reference_ProceedsFromSalesOfShortTermInvestmentSecuritiesInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PurchaseOfPropertyPlantAndEquipmentInvCF" xlink:label="PurchaseOfPropertyPlantAndEquipmentInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_PurchaseOfPropertyPlantAndEquipmentInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PurchaseOfPropertyPlantAndEquipmentInvCF" xlink:to="reference_PurchaseOfPropertyPlantAndEquipmentInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF" xlink:label="ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF" xlink:to="reference_ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PurchaseOfInvestmentSecuritiesInvCF" xlink:label="PurchaseOfInvestmentSecuritiesInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_PurchaseOfInvestmentSecuritiesInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PurchaseOfInvestmentSecuritiesInvCF" xlink:to="reference_PurchaseOfInvestmentSecuritiesInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromSalesOfInvestmentSecuritiesInvCF" xlink:label="ProceedsFromSalesOfInvestmentSecuritiesInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProceedsFromSalesOfInvestmentSecuritiesInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProceedsFromSalesOfInvestmentSecuritiesInvCF" xlink:to="reference_ProceedsFromSalesOfInvestmentSecuritiesInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PaymentsIntoTimeDepositsInvCF" xlink:label="PaymentsIntoTimeDepositsInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_PaymentsIntoTimeDepositsInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PaymentsIntoTimeDepositsInvCF" xlink:to="reference_PaymentsIntoTimeDepositsInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromWithdrawalOfTimeDepositsInvCF" xlink:label="ProceedsFromWithdrawalOfTimeDepositsInvCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProceedsFromWithdrawalOfTimeDepositsInvCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProceedsFromWithdrawalOfTimeDepositsInvCF" xlink:to="reference_ProceedsFromWithdrawalOfTimeDepositsInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetCashProvidedByUsedInInvestmentActivities" xlink:label="NetCashProvidedByUsedInInvestmentActivities"/>
+    <reference xlink:type="resource" xlink:label="reference_NetCashProvidedByUsedInInvestmentActivities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetCashProvidedByUsedInInvestmentActivities" xlink:to="reference_NetCashProvidedByUsedInInvestmentActivities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:label="NetCashProvidedByUsedInFinancingActivitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:to="reference_NetCashProvidedByUsedInFinancingActivitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseInShortTermLoansPayableFinCF" xlink:label="IncreaseInShortTermLoansPayableFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseInShortTermLoansPayableFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseInShortTermLoansPayableFinCF" xlink:to="reference_IncreaseInShortTermLoansPayableFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DecreaseInShortTermLoansPayableFinCF" xlink:label="DecreaseInShortTermLoansPayableFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseInShortTermLoansPayableFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseInShortTermLoansPayableFinCF" xlink:to="reference_DecreaseInShortTermLoansPayableFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromLongTermLoansPayableFinCF" xlink:label="ProceedsFromLongTermLoansPayableFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProceedsFromLongTermLoansPayableFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProceedsFromLongTermLoansPayableFinCF" xlink:to="reference_ProceedsFromLongTermLoansPayableFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RepaymentOfLongTermLoansPayableFinCF" xlink:label="RepaymentOfLongTermLoansPayableFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_RepaymentOfLongTermLoansPayableFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RepaymentOfLongTermLoansPayableFinCF" xlink:to="reference_RepaymentOfLongTermLoansPayableFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromIssuanceOfBondsFinCF" xlink:label="ProceedsFromIssuanceOfBondsFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProceedsFromIssuanceOfBondsFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProceedsFromIssuanceOfBondsFinCF" xlink:to="reference_ProceedsFromIssuanceOfBondsFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RedemptionOfBondsFinCF" xlink:label="RedemptionOfBondsFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_RedemptionOfBondsFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RedemptionOfBondsFinCF" xlink:to="reference_RedemptionOfBondsFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashDividendsPaidFinCF" xlink:label="CashDividendsPaidFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_CashDividendsPaidFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashDividendsPaidFinCF" xlink:to="reference_CashDividendsPaidFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetCashProvidedByUsedInFinancingActivities" xlink:label="NetCashProvidedByUsedInFinancingActivities"/>
+    <reference xlink:type="resource" xlink:label="reference_NetCashProvidedByUsedInFinancingActivities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetCashProvidedByUsedInFinancingActivities" xlink:to="reference_NetCashProvidedByUsedInFinancingActivities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_EffectOfExchangeRateChangeOnCashAndCashEquivalents" xlink:label="EffectOfExchangeRateChangeOnCashAndCashEquivalents"/>
+    <reference xlink:type="resource" xlink:label="reference_EffectOfExchangeRateChangeOnCashAndCashEquivalents" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EffectOfExchangeRateChangeOnCashAndCashEquivalents" xlink:to="reference_EffectOfExchangeRateChangeOnCashAndCashEquivalents"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncreaseDecreaseInCashAndCashEquivalents" xlink:label="NetIncreaseDecreaseInCashAndCashEquivalents"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncreaseDecreaseInCashAndCashEquivalents" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncreaseDecreaseInCashAndCashEquivalents" xlink:to="reference_NetIncreaseDecreaseInCashAndCashEquivalents"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndCashEquivalents" xlink:label="CashAndCashEquivalents"/>
+    <reference xlink:type="resource" xlink:label="reference_CashAndCashEquivalents" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashAndCashEquivalents" xlink:to="reference_CashAndCashEquivalents"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForDirectorsRetirementBenefitsSGA" xlink:label="ProvisionForDirectorsRetirementBenefitsSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForDirectorsRetirementBenefitsSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForDirectorsRetirementBenefitsSGA" xlink:to="reference_ProvisionForDirectorsRetirementBenefitsSGA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_AccountsReceivableOperatingLoansCASPF" xlink:label="AccountsReceivableOperatingLoansCASPF"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableOperatingLoansCASPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableOperatingLoansCASPF" xlink:to="reference_AccountsReceivableOperatingLoansCASPF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsReceivableInstallment" xlink:label="AccountsReceivableInstallment"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableInstallment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableInstallment" xlink:to="reference_AccountsReceivableInstallment"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_EquipmentPPESPF" xlink:label="EquipmentPPESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_EquipmentPPESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EquipmentPPESPF" xlink:to="reference_EquipmentPPESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_AccumulatedDepreciationEquipmentSPF" xlink:label="AccumulatedDepreciationEquipmentSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationEquipmentSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationEquipmentSPF" xlink:to="reference_AccumulatedDepreciationEquipmentSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_EquipmentNetPPESPF" xlink:label="EquipmentNetPPESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_EquipmentNetPPESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EquipmentNetPPESPF" xlink:to="reference_EquipmentNetPPESPF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TelephoneSubscriptionRight" xlink:label="TelephoneSubscriptionRight"/>
+    <reference xlink:type="resource" xlink:label="reference_TelephoneSubscriptionRight" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TelephoneSubscriptionRight" xlink:to="reference_TelephoneSubscriptionRight"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GuaranteeDepositsIOA" xlink:label="GuaranteeDepositsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsIOA" xlink:to="reference_GuaranteeDepositsIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentPortionOfLongTermLoansPayable" xlink:label="CurrentPortionOfLongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentPortionOfLongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentPortionOfLongTermLoansPayable" xlink:to="reference_CurrentPortionOfLongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentPortionOfBonds" xlink:label="CurrentPortionOfBonds"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentPortionOfBonds" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentPortionOfBonds" xlink:to="reference_CurrentPortionOfBonds"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ProvisionForLossOnInterestRepaymentCLSPF" xlink:label="ProvisionForLossOnInterestRepaymentCLSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForLossOnInterestRepaymentCLSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本公認会計士協会</ref:Publisher>
+      <ref:Name>消費者金融会社等の利息返還請求による損失に係る引当金の計上に関する監査上の取扱い</ref:Name>
+      <ref:Number>業種別委員会報告第37号</ref:Number>
+      <ref:IssueDate>2006-10-13</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForLossOnInterestRepaymentCLSPF" xlink:to="reference_ProvisionForLossOnInterestRepaymentCLSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ProvisionForLossOnInterestRepaymentNCLSPF" xlink:label="ProvisionForLossOnInterestRepaymentNCLSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForLossOnInterestRepaymentNCLSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本公認会計士協会</ref:Publisher>
+      <ref:Name>消費者金融会社等の利息返還請求による損失に係る引当金の計上に関する監査上の取扱い</ref:Name>
+      <ref:Number>業種別委員会報告第37号</ref:Number>
+      <ref:IssueDate>2006-10-13</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForLossOnInterestRepaymentNCLSPF" xlink:to="reference_ProvisionForLossOnInterestRepaymentNCLSPF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermGuaranteeDeposited" xlink:label="LongTermGuaranteeDeposited"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermGuaranteeDeposited" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermGuaranteeDeposited" xlink:to="reference_LongTermGuaranteeDeposited"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OperatingRevenueAbstractSPF" xlink:label="OperatingRevenueAbstractSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueAbstractSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueAbstractSPF" xlink:to="reference_OperatingRevenueAbstractSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnOperatingLoansSPF" xlink:label="InterestOnOperatingLoansSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnOperatingLoansSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnOperatingLoansSPF" xlink:to="reference_InterestOnOperatingLoansSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherFinancialRevenueAbstractSPF" xlink:label="OtherFinancialRevenueAbstractSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherFinancialRevenueAbstractSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="reference_OtherFinancialRevenueAbstractSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnDepositsORSPF" xlink:label="InterestOnDepositsORSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnDepositsORSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnDepositsORSPF" xlink:to="reference_InterestOnDepositsORSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnSecuritiesORSPF" xlink:label="InterestOnSecuritiesORSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnSecuritiesORSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnSecuritiesORSPF" xlink:to="reference_InterestOnSecuritiesORSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnLoansORSPF" xlink:label="InterestOnLoansORSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnLoansORSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnLoansORSPF" xlink:to="reference_InterestOnLoansORSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_DividendsIncomeORSPF" xlink:label="DividendsIncomeORSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_DividendsIncomeORSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DividendsIncomeORSPF" xlink:to="reference_DividendsIncomeORSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ForeignExchangeGainsORSPF" xlink:label="ForeignExchangeGainsORSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_ForeignExchangeGainsORSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>消費者金融業における標準財務諸表様式の制定について</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignExchangeGainsORSPF" xlink:to="reference_ForeignExchangeGainsORSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherOtherFinancialRevenueSPF" xlink:label="OtherOtherFinancialRevenueSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherOtherFinancialRevenueSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherOtherFinancialRevenueSPF" xlink:to="reference_OtherOtherFinancialRevenueSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherFinancialRevenueSPF" xlink:label="OtherFinancialRevenueSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherFinancialRevenueSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherFinancialRevenueSPF" xlink:to="reference_OtherFinancialRevenueSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_GainOnBadDebtsRecoveredORSPF" xlink:label="GainOnBadDebtsRecoveredORSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnBadDebtsRecoveredORSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>消費者金融業における標準財務諸表様式の制定について</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnBadDebtsRecoveredORSPF" xlink:to="reference_GainOnBadDebtsRecoveredORSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherOperatingRevenueSPF" xlink:label="OtherOperatingRevenueSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherOperatingRevenueSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherOperatingRevenueSPF" xlink:to="reference_OtherOperatingRevenueSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OperatingRevenueSPF" xlink:label="OperatingRevenueSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueSPF" xlink:to="reference_OperatingRevenueSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OperatingExpensesAbstractSPF" xlink:label="OperatingExpensesAbstractSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesAbstractSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesAbstractSPF" xlink:to="reference_OperatingExpensesAbstractSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_FinancialExpensesAbstractSPF" xlink:label="FinancialExpensesAbstractSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_FinancialExpensesAbstractSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FinancialExpensesAbstractSPF" xlink:to="reference_FinancialExpensesAbstractSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestExpensesOESPF" xlink:label="InterestExpensesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestExpensesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestExpensesOESPF" xlink:to="reference_InterestExpensesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnBondsOESPF" xlink:label="InterestOnBondsOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnBondsOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnBondsOESPF" xlink:to="reference_InterestOnBondsOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ForeignExchangeLossesOESPF" xlink:label="ForeignExchangeLossesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_ForeignExchangeLossesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>消費者金融業における標準財務諸表様式の制定について</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignExchangeLossesOESPF" xlink:to="reference_ForeignExchangeLossesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_LossFromSalesOfNotesPayableOESPF" xlink:label="LossFromSalesOfNotesPayableOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_LossFromSalesOfNotesPayableOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>消費者金融業における標準財務諸表様式の制定について</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossFromSalesOfNotesPayableOESPF" xlink:to="reference_LossFromSalesOfNotesPayableOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnCommercialPapersOESPF" xlink:label="InterestOnCommercialPapersOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnCommercialPapersOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>消費者金融業における標準財務諸表様式の制定について</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnCommercialPapersOESPF" xlink:to="reference_InterestOnCommercialPapersOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_GuaranteeCommissionOESPF" xlink:label="GuaranteeCommissionOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeCommissionOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>消費者金融業における標準財務諸表様式の制定について</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeCommissionOESPF" xlink:to="reference_GuaranteeCommissionOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_PledgedExpensesOESPF" xlink:label="PledgedExpensesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_PledgedExpensesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>消費者金融業における標準財務諸表様式の制定について</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PledgedExpensesOESPF" xlink:to="reference_PledgedExpensesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherFinancialExpensesSPF" xlink:label="OtherFinancialExpensesSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherFinancialExpensesSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherFinancialExpensesSPF" xlink:to="reference_OtherFinancialExpensesSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_FinancialExpensesSPF" xlink:label="FinancialExpensesSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_FinancialExpensesSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FinancialExpensesSPF" xlink:to="reference_FinancialExpensesSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherOperatingExpensesAbstractSPF" xlink:label="OtherOperatingExpensesAbstractSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherOperatingExpensesAbstractSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherOperatingExpensesAbstractSPF" xlink:to="reference_OtherOperatingExpensesAbstractSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_AdvertisingExpensesSGASPF" xlink:label="AdvertisingExpensesSGASPF"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvertisingExpensesSGASPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvertisingExpensesSGASPF" xlink:to="reference_AdvertisingExpensesSGASPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ProvisionForLossOnInterestRepaymentOESPF" xlink:label="ProvisionForLossOnInterestRepaymentOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForLossOnInterestRepaymentOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本公認会計士協会</ref:Publisher>
+      <ref:Name>消費者金融会社等の利息返還請求による損失に係る引当金の計上に関する監査上の取扱い</ref:Name>
+      <ref:Number>業種別委員会報告第37号</ref:Number>
+      <ref:IssueDate>2006-10-13</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForLossOnInterestRepaymentOESPF" xlink:to="reference_ProvisionForLossOnInterestRepaymentOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_EmployeesSalariesAndBonusesOESPF" xlink:label="EmployeesSalariesAndBonusesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_EmployeesSalariesAndBonusesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EmployeesSalariesAndBonusesOESPF" xlink:to="reference_EmployeesSalariesAndBonusesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ProvisionForBonusesOESPF" xlink:label="ProvisionForBonusesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForBonusesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForBonusesOESPF" xlink:to="reference_ProvisionForBonusesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ProvisionForRetirementBenefitsOESPF" xlink:label="ProvisionForRetirementBenefitsOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForRetirementBenefitsOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForRetirementBenefitsOESPF" xlink:to="reference_ProvisionForRetirementBenefitsOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_WelfareExpensesOESPF" xlink:label="WelfareExpensesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_WelfareExpensesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WelfareExpensesOESPF" xlink:to="reference_WelfareExpensesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_RentExpensesOESPF" xlink:label="RentExpensesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_RentExpensesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RentExpensesOESPF" xlink:to="reference_RentExpensesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_DepreciationOESPF" xlink:label="DepreciationOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_DepreciationOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepreciationOESPF" xlink:to="reference_DepreciationOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_CommissionFeeOESPF" xlink:label="CommissionFeeOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_CommissionFeeOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CommissionFeeOESPF" xlink:to="reference_CommissionFeeOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_CommunicationExpensesOESPF" xlink:label="CommunicationExpensesOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_CommunicationExpensesOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CommunicationExpensesOESPF" xlink:to="reference_CommunicationExpensesOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherOESPF" xlink:label="OtherOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherOESPF" xlink:to="reference_OtherOESPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherOperatingExpensesSPF" xlink:label="OtherOperatingExpensesSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherOperatingExpensesSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherOperatingExpensesSPF" xlink:to="reference_OtherOperatingExpensesSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OperatingExpensesSPF" xlink:label="OperatingExpensesSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesSPF" xlink:to="reference_OperatingExpensesSPF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNOI" xlink:label="OtherNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNOI" xlink:to="reference_OtherNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNOE" xlink:label="OtherNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNOE" xlink:to="reference_OtherNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInProvisionForBonusesOpeCF" xlink:label="IncreaseDecreaseInProvisionForBonusesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInProvisionForBonusesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInProvisionForBonusesOpeCF" xlink:to="reference_IncreaseDecreaseInProvisionForBonusesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF" xlink:label="IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF" xlink:to="reference_IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnSalesOfSecuritiesOpeCF" xlink:label="LossGainOnSalesOfSecuritiesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_LossGainOnSalesOfSecuritiesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossGainOnSalesOfSecuritiesOpeCF" xlink:to="reference_LossGainOnSalesOfSecuritiesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfBondIssuanceCostOpeCF" xlink:label="AmortizationOfBondIssuanceCostOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfBondIssuanceCostOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfBondIssuanceCostOpeCF" xlink:to="reference_AmortizationOfBondIssuanceCostOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnValuationOfSecuritiesOpeCF" xlink:label="LossGainOnValuationOfSecuritiesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_LossGainOnValuationOfSecuritiesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossGainOnValuationOfSecuritiesOpeCF" xlink:to="reference_LossGainOnValuationOfSecuritiesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_DecreaseIncreaseInOperatingLoansOpeCFSPF" xlink:label="DecreaseIncreaseInOperatingLoansOpeCFSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInOperatingLoansOpeCFSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInOperatingLoansOpeCFSPF" xlink:to="reference_DecreaseIncreaseInOperatingLoansOpeCFSPF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DecreaseIncreaseInOtherCurrentAssetsOpeCF" xlink:label="DecreaseIncreaseInOtherCurrentAssetsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInOtherCurrentAssetsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInOtherCurrentAssetsOpeCF" xlink:to="reference_DecreaseIncreaseInOtherCurrentAssetsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInOtherCurrentLiabilitiesOpeCF" xlink:label="IncreaseDecreaseInOtherCurrentLiabilitiesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInOtherCurrentLiabilitiesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInOtherCurrentLiabilitiesOpeCF" xlink:to="reference_IncreaseDecreaseInOtherCurrentLiabilitiesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_IncreaseDecreaseByOtherOperatingActivitiesOpeCFSPF" xlink:label="IncreaseDecreaseByOtherOperatingActivitiesOpeCFSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseByOtherOperatingActivitiesOpeCFSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseByOtherOperatingActivitiesOpeCFSPF" xlink:to="reference_IncreaseDecreaseByOtherOperatingActivitiesOpeCFSPF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_IncreaseDecreaseByOtherInvestmentActivitiesInvCFSPF" xlink:label="IncreaseDecreaseByOtherInvestmentActivitiesInvCFSPF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseByOtherInvestmentActivitiesInvCFSPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseByOtherInvestmentActivitiesInvCFSPF" xlink:to="reference_IncreaseDecreaseByOtherInvestmentActivitiesInvCFSPF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromSalesOfTreasuryStockFinCF" xlink:label="ProceedsFromSalesOfTreasuryStockFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_ProceedsFromSalesOfTreasuryStockFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProceedsFromSalesOfTreasuryStockFinCF" xlink:to="reference_ProceedsFromSalesOfTreasuryStockFinCF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_AmortizationOfBondIssuanceCostOESPF" xlink:label="AmortizationOfBondIssuanceCostOESPF"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfBondIssuanceCostOESPF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>社団法人全国貸金業協会連合会</ref:Publisher>
+      <ref:Name>消費者金融業における標準財務諸表様式</ref:Name>
+      <ref:IssueDate>2001-05-10</ref:IssueDate>
+      <ref:Appendix>証券取引法に基づく標準財務諸表（例示）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfBondIssuanceCostOESPF" xlink:to="reference_AmortizationOfBondIssuanceCostOESPF"/>
+  </referenceLink>
+</linkbase>

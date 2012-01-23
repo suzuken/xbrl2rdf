@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">売上高を科目別に掲記する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimStatementsOfIncome"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome">
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OperatingRevenueAbstractSPF" xlink:label="OperatingRevenueAbstractSPF"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherFinancialRevenueAbstractSPF" xlink:label="OtherFinancialRevenueAbstractSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractSPF" xlink:to="OtherFinancialRevenueAbstractSPF" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnDepositsORSPF" xlink:label="InterestOnDepositsORSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="InterestOnDepositsORSPF" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnSecuritiesORSPF" xlink:label="InterestOnSecuritiesORSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="InterestOnSecuritiesORSPF" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_InterestOnLoansORSPF" xlink:label="InterestOnLoansORSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="InterestOnLoansORSPF" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_DividendsIncomeORSPF" xlink:label="DividendsIncomeORSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="DividendsIncomeORSPF" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_ForeignExchangeGainsORSPF" xlink:label="ForeignExchangeGainsORSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="ForeignExchangeGainsORSPF" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherOtherFinancialRevenueSPF" xlink:label="OtherOtherFinancialRevenueSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="OtherOtherFinancialRevenueSPF" order="6.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_OtherFinancialRevenueSPF" xlink:label="OtherFinancialRevenueSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherFinancialRevenueAbstractSPF" xlink:to="OtherFinancialRevenueSPF" order="7.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+  </presentationLink>
+</linkbase>

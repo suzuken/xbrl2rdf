@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">投資信託受益証券財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleFNDLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleFNDTotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsReceivableOther" xlink:label="AccountsReceivableOther"/>
+    <label xlink:type="resource" xlink:label="label_AccountsReceivableOther" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label" xml:lang="en" id="label_AccountsReceivableOther">Accounts receivable</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AccountsReceivableOther" xlink:to="label_AccountsReceivableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayable" xlink:label="ShortTermLoansPayable"/>
+    <label xlink:type="resource" xlink:label="label_ShortTermLoansPayable" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label" xml:lang="en" id="label_ShortTermLoansPayable">Short-term loans repayable</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ShortTermLoansPayable" xlink:to="label_ShortTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <label xlink:type="resource" xlink:label="label_AccountsPayableOther" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label" xml:lang="en" id="label_AccountsPayableOther">Accounts payable</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AccountsPayableOther" xlink:to="label_AccountsPayableOther"/>
+    <label xlink:type="resource" xlink:label="label_AccountsPayableOther_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/totalLabel" xml:lang="en" id="label_AccountsPayableOther_2">Total accounts payable</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AccountsPayableOther" xlink:to="label_AccountsPayableOther_2"/>
+  </labelLink>
+</linkbase>

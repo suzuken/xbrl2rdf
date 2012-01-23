@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">減価償却累計額（有形固定資産）を科目別に控除する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleConsolidatedBalanceSheets"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="Buildings" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationBuildings" xlink:label="AccumulatedDepreciationBuildings"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Buildings" xlink:to="AccumulatedDepreciationBuildings" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsNet" xlink:label="BuildingsNet"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Buildings" xlink:to="BuildingsNet" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Structures" xlink:label="Structures"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="Structures" order="7.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationStructures" xlink:label="AccumulatedDepreciationStructures"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Structures" xlink:to="AccumulatedDepreciationStructures" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StructuresNet" xlink:label="StructuresNet"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Structures" xlink:to="StructuresNet" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_EducationalResearchInstrumentAndEquipmentEDU" xlink:label="EducationalResearchInstrumentAndEquipmentEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="EducationalResearchInstrumentAndEquipmentEDU" order="12.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_AccumulatedDepreciationEducationalResearchInstrumentAndEquipmentEDU" xlink:label="AccumulatedDepreciationEducationalResearchInstrumentAndEquipmentEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="EducationalResearchInstrumentAndEquipmentEDU" xlink:to="AccumulatedDepreciationEducationalResearchInstrumentAndEquipmentEDU" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_EducationalResearchInstrumentAndEquipmentNetEDU" xlink:label="EducationalResearchInstrumentAndEquipmentNetEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="EducationalResearchInstrumentAndEquipmentEDU" xlink:to="EducationalResearchInstrumentAndEquipmentNetEDU" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_OtherInstrumentAndEquipmentEDU" xlink:label="OtherInstrumentAndEquipmentEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="OtherInstrumentAndEquipmentEDU" order="17.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_AccumulatedDepreciationOtherInstrumentAndEquipmentEDU" xlink:label="AccumulatedDepreciationOtherInstrumentAndEquipmentEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherInstrumentAndEquipmentEDU" xlink:to="AccumulatedDepreciationOtherInstrumentAndEquipmentEDU" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_OtherInstrumentAndEquipmentNetEDU" xlink:label="OtherInstrumentAndEquipmentNetEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherInstrumentAndEquipmentEDU" xlink:to="OtherInstrumentAndEquipmentNetEDU" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_VesselsAndVehiclesEDU" xlink:label="VesselsAndVehiclesEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="VesselsAndVehiclesEDU" order="22.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_AccumulatedDepreciationVesselsAndVehiclesEDU" xlink:label="AccumulatedDepreciationVesselsAndVehiclesEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="VesselsAndVehiclesEDU" xlink:to="AccumulatedDepreciationVesselsAndVehiclesEDU" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_VesselsAndVehiclesNetEDU" xlink:label="VesselsAndVehiclesNetEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="VesselsAndVehiclesEDU" xlink:to="VesselsAndVehiclesNetEDU" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsPPE" xlink:label="LeaseAssetsPPE"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="LeaseAssetsPPE" order="27.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationLeaseAssetsPPE" xlink:label="AccumulatedDepreciationLeaseAssetsPPE"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="LeaseAssetsPPE" xlink:to="AccumulatedDepreciationLeaseAssetsPPE" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsNetPPE" xlink:label="LeaseAssetsNetPPE"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="LeaseAssetsPPE" xlink:to="LeaseAssetsNetPPE" order="3.0"/>
+  </presentationLink>
+</linkbase>

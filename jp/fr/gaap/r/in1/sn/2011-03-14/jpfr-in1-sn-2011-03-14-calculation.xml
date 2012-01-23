@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">生命保険業中間財務諸表</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimBalanceSheets"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfChangesInNetAssets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimStatementsOfChangesInNetAssets"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfChangesInNetAssets2" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimStatementsOfChangesInNetAssets2"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimStatementsOfIncome"/>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfChangesInNetAssets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodCAP" xlink:label="TotalChangesOfItemsDuringThePeriodCAP"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesCAP" xlink:label="IssuanceOfNewSharesCAP"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodCAP" xlink:to="IssuanceOfNewSharesCAP" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodLCS" xlink:label="TotalChangesOfItemsDuringThePeriodLCS"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesLCS" xlink:label="IssuanceOfNewSharesLCS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodLCS" xlink:to="IssuanceOfNewSharesLCS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodCS" xlink:label="TotalChangesOfItemsDuringThePeriodCS"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesCS" xlink:label="IssuanceOfNewSharesCS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodCS" xlink:to="IssuanceOfNewSharesCS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodLRE" xlink:label="TotalChangesOfItemsDuringThePeriodLRE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusLRE" xlink:label="DividendsFromSurplusLRE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodLRE" xlink:to="DividendsFromSurplusLRE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodREBF" xlink:label="TotalChangesOfItemsDuringThePeriodREBF"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusREBF" xlink:label="DividendsFromSurplusREBF"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodREBF" xlink:to="DividendsFromSurplusREBF" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodREBF" xlink:to="NetIncome" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodRE" xlink:label="TotalChangesOfItemsDuringThePeriodRE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusRE" xlink:label="DividendsFromSurplusRE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodRE" xlink:to="DividendsFromSurplusRE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncomeRENonconsolidated" xlink:label="NetIncomeRENonconsolidated"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodRE" xlink:to="NetIncomeRENonconsolidated" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodTS" xlink:label="TotalChangesOfItemsDuringThePeriodTS"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DisposalOfTreasuryStockTS" xlink:label="DisposalOfTreasuryStockTS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodTS" xlink:to="DisposalOfTreasuryStockTS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodSE" xlink:label="TotalChangesOfItemsDuringThePeriodSE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesSE" xlink:label="IssuanceOfNewSharesSE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="IssuanceOfNewSharesSE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusSE" xlink:label="DividendsFromSurplusSE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="DividendsFromSurplusSE" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncomeSE" xlink:label="NetIncomeSE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="NetIncomeSE" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DisposalOfTreasuryStockSE" xlink:label="DisposalOfTreasuryStockSE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="DisposalOfTreasuryStockSE" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodAFS" xlink:label="TotalChangesOfItemsDuringThePeriodAFS"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityAFS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodAFS" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityAFS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges" xlink:label="TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodRevaluationReserveForLand" xlink:label="TotalChangesOfItemsDuringThePeriodRevaluationReserveForLand"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityRevaluationReserveForLand" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityRevaluationReserveForLand"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodRevaluationReserveForLand" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityRevaluationReserveForLand" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodVTA" xlink:label="TotalChangesOfItemsDuringThePeriodVTA"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityVTA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodVTA" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityVTA" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodSRS" xlink:label="TotalChangesOfItemsDuringThePeriodSRS"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquitySRS" xlink:label="NetChangesOfItemsOtherThanShareholdersEquitySRS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSRS" xlink:to="NetChangesOfItemsOtherThanShareholdersEquitySRS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodNA" xlink:label="TotalChangesOfItemsDuringThePeriodNA"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesNA" xlink:label="IssuanceOfNewSharesNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="IssuanceOfNewSharesNA" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusNA" xlink:label="DividendsFromSurplusNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="DividendsFromSurplusNA" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncomeNA" xlink:label="NetIncomeNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="NetIncomeNA" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DisposalOfTreasuryStockNA" xlink:label="DisposalOfTreasuryStockNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="DisposalOfTreasuryStockNA" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityNA" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityNA" order="5.0" weight="1"/>
+  </calculationLink>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfChangesInNetAssets2">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesCS" xlink:label="IssuanceOfNewSharesCS"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesLCS" xlink:label="IssuanceOfNewSharesLCS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IssuanceOfNewSharesCS" xlink:to="IssuanceOfNewSharesLCS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodCS" xlink:label="TotalChangesOfItemsDuringThePeriodCS"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodLCS" xlink:label="TotalChangesOfItemsDuringThePeriodLCS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodCS" xlink:to="TotalChangesOfItemsDuringThePeriodLCS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodOCS" xlink:label="TotalChangesOfItemsDuringThePeriodOCS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodCS" xlink:to="TotalChangesOfItemsDuringThePeriodOCS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusRE" xlink:label="DividendsFromSurplusRE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusLRE" xlink:label="DividendsFromSurplusLRE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="DividendsFromSurplusRE" xlink:to="DividendsFromSurplusLRE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusREBF" xlink:label="DividendsFromSurplusREBF"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="DividendsFromSurplusRE" xlink:to="DividendsFromSurplusREBF" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncomeRENonconsolidated" xlink:label="NetIncomeRENonconsolidated"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetIncomeRENonconsolidated" xlink:to="NetIncome" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodRE" xlink:label="TotalChangesOfItemsDuringThePeriodRE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodLRE" xlink:label="TotalChangesOfItemsDuringThePeriodLRE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodRE" xlink:to="TotalChangesOfItemsDuringThePeriodLRE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodREBF" xlink:label="TotalChangesOfItemsDuringThePeriodREBF"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodRE" xlink:to="TotalChangesOfItemsDuringThePeriodREBF" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesSE" xlink:label="IssuanceOfNewSharesSE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesCAP" xlink:label="IssuanceOfNewSharesCAP"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IssuanceOfNewSharesSE" xlink:to="IssuanceOfNewSharesCAP" order="1.0" weight="1"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IssuanceOfNewSharesSE" xlink:to="IssuanceOfNewSharesCS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusSE" xlink:label="DividendsFromSurplusSE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="DividendsFromSurplusSE" xlink:to="DividendsFromSurplusRE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncomeSE" xlink:label="NetIncomeSE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetIncomeSE" xlink:to="NetIncomeRENonconsolidated" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DisposalOfTreasuryStockSE" xlink:label="DisposalOfTreasuryStockSE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DisposalOfTreasuryStockTS" xlink:label="DisposalOfTreasuryStockTS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="DisposalOfTreasuryStockSE" xlink:to="DisposalOfTreasuryStockTS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodSE" xlink:label="TotalChangesOfItemsDuringThePeriodSE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodCAP" xlink:label="TotalChangesOfItemsDuringThePeriodCAP"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="TotalChangesOfItemsDuringThePeriodCAP" order="1.0" weight="1"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="TotalChangesOfItemsDuringThePeriodCS" order="2.0" weight="1"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="TotalChangesOfItemsDuringThePeriodRE" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodTS" xlink:label="TotalChangesOfItemsDuringThePeriodTS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodSE" xlink:to="TotalChangesOfItemsDuringThePeriodTS" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityVTA"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityAFS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityAFS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityRevaluationReserveForLand" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityRevaluationReserveForLand"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityRevaluationReserveForLand" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodVTA" xlink:label="TotalChangesOfItemsDuringThePeriodVTA"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodAFS" xlink:label="TotalChangesOfItemsDuringThePeriodAFS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodVTA" xlink:to="TotalChangesOfItemsDuringThePeriodAFS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges" xlink:label="TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodVTA" xlink:to="TotalChangesOfItemsDuringThePeriodDeferredGainOrLossOnHedges" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodRevaluationReserveForLand" xlink:label="TotalChangesOfItemsDuringThePeriodRevaluationReserveForLand"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodVTA" xlink:to="TotalChangesOfItemsDuringThePeriodRevaluationReserveForLand" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IssuanceOfNewSharesNA" xlink:label="IssuanceOfNewSharesNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IssuanceOfNewSharesNA" xlink:to="IssuanceOfNewSharesSE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsFromSurplusNA" xlink:label="DividendsFromSurplusNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="DividendsFromSurplusNA" xlink:to="DividendsFromSurplusSE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncomeNA" xlink:label="NetIncomeNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetIncomeNA" xlink:to="NetIncomeSE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DisposalOfTreasuryStockNA" xlink:label="DisposalOfTreasuryStockNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="DisposalOfTreasuryStockNA" xlink:to="DisposalOfTreasuryStockSE" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityNA" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityNA" xlink:to="NetChangesOfItemsOtherThanShareholdersEquityVTA" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquitySRS" xlink:label="NetChangesOfItemsOtherThanShareholdersEquitySRS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityNA" xlink:to="NetChangesOfItemsOtherThanShareholdersEquitySRS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodNA" xlink:label="TotalChangesOfItemsDuringThePeriodNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="TotalChangesOfItemsDuringThePeriodSE" order="1.0" weight="1"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="TotalChangesOfItemsDuringThePeriodVTA" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TotalChangesOfItemsDuringThePeriodSRS" xlink:label="TotalChangesOfItemsDuringThePeriodSRS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="TotalChangesOfItemsDuringThePeriodNA" xlink:to="TotalChangesOfItemsDuringThePeriodSRS" order="3.0" weight="1"/>
+  </calculationLink>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_CashAndDepositsAssetsINS" xlink:label="CashAndDepositsAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="CashAndDepositsAssetsINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_CallLoansAssetsINS" xlink:label="CallLoansAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="CallLoansAssetsINS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReceivablesUnderResaleAgreementsAssetsINS" xlink:label="ReceivablesUnderResaleAgreementsAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="ReceivablesUnderResaleAgreementsAssetsINS" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReceivablesUnderSecuritiesBorrowingTransactionsAssetsINS" xlink:label="ReceivablesUnderSecuritiesBorrowingTransactionsAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="ReceivablesUnderSecuritiesBorrowingTransactionsAssetsINS" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_MonetaryReceivablesPurchasedAssetsINS" xlink:label="MonetaryReceivablesPurchasedAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="MonetaryReceivablesPurchasedAssetsINS" order="5.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_MoneyHeldInTrustAssetsINS" xlink:label="MoneyHeldInTrustAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="MoneyHeldInTrustAssetsINS" order="6.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_SecuritiesAssetsINS" xlink:label="SecuritiesAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="SecuritiesAssetsINS" order="7.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_LoansReceivablesAssetsINS" xlink:label="LoansReceivablesAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="LoansReceivablesAssetsINS" order="8.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipment" xlink:label="PropertyPlantAndEquipment"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="PropertyPlantAndEquipment" order="9.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssets" xlink:label="IntangibleAssets"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="IntangibleAssets" order="10.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_AgencyAccountsReceivableAssetsINS" xlink:label="AgencyAccountsReceivableAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="AgencyAccountsReceivableAssetsINS" order="11.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReinsuranceAccountsReceivableAssetsINS" xlink:label="ReinsuranceAccountsReceivableAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="ReinsuranceAccountsReceivableAssetsINS" order="12.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_OtherAssetsAssetsINS" xlink:label="OtherAssetsAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="OtherAssetsAssetsINS" order="13.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_DeferredTaxAssetsAssetsINS" xlink:label="DeferredTaxAssetsAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="DeferredTaxAssetsAssetsINS" order="14.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsForLandRevaluation" xlink:label="DeferredTaxAssetsForLandRevaluation"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="DeferredTaxAssetsForLandRevaluation" order="15.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_CustomersLiabilitiesForAcceptancesAndGuaranteesAssetsINS" xlink:label="CustomersLiabilitiesForAcceptancesAndGuaranteesAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="CustomersLiabilitiesForAcceptancesAndGuaranteesAssetsINS" order="16.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_AllowanceForDoubtfulAccountsAssetsINS" xlink:label="AllowanceForDoubtfulAccountsAssetsINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Assets" xlink:to="AllowanceForDoubtfulAccountsAssetsINS" order="17.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="LiabilitiesAndNetAssets" xlink:to="Liabilities" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReserveForInsurancePolicyLiabilitiesLiabilitiesINS" xlink:label="ReserveForInsurancePolicyLiabilitiesLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="ReserveForInsurancePolicyLiabilitiesLiabilitiesINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_OutstandingClaimsLiabilitiesINS" xlink:label="OutstandingClaimsLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ReserveForInsurancePolicyLiabilitiesLiabilitiesINS" xlink:to="OutstandingClaimsLiabilitiesINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_PolicyReserveLiabilitiesINS" xlink:label="PolicyReserveLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ReserveForInsurancePolicyLiabilitiesLiabilitiesINS" xlink:to="PolicyReserveLiabilitiesINS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReserveForDividendsToPolicyholdersLiabilitiesINS" xlink:label="ReserveForDividendsToPolicyholdersLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ReserveForInsurancePolicyLiabilitiesLiabilitiesINS" xlink:to="ReserveForDividendsToPolicyholdersLiabilitiesINS" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_AgencyAccountsPayableLiabilitiesINS" xlink:label="AgencyAccountsPayableLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="AgencyAccountsPayableLiabilitiesINS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReinsuranceAccountsPayableLiabilitiesINS" xlink:label="ReinsuranceAccountsPayableLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="ReinsuranceAccountsPayableLiabilitiesINS" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermBondsPayable" xlink:label="ShortTermBondsPayable"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="ShortTermBondsPayable" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondsPayable" xlink:label="BondsPayable"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="BondsPayable" order="5.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondsWithSubscriptionRightsToSharesNCL" xlink:label="BondsWithSubscriptionRightsToSharesNCL"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="BondsWithSubscriptionRightsToSharesNCL" order="6.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_OtherLiabilitiesLiabilitiesINS" xlink:label="OtherLiabilitiesLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="OtherLiabilitiesLiabilitiesINS" order="7.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesPayable" xlink:label="IncomeTaxesPayable"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherLiabilitiesLiabilitiesINS" xlink:to="IncomeTaxesPayable" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseObligationsNCL" xlink:label="LeaseObligationsNCL"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherLiabilitiesLiabilitiesINS" xlink:to="LeaseObligationsNCL" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetRetirementObligationsNCL" xlink:label="AssetRetirementObligationsNCL"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherLiabilitiesLiabilitiesINS" xlink:to="AssetRetirementObligationsNCL" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_RestOfTheOtherLiabilitiesLiabilitiesINS" xlink:label="RestOfTheOtherLiabilitiesLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherLiabilitiesLiabilitiesINS" xlink:to="RestOfTheOtherLiabilitiesLiabilitiesINS" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForRetirementBenefits" xlink:label="ProvisionForRetirementBenefits"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="ProvisionForRetirementBenefits" order="8.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForDirectorsRetirementBenefits" xlink:label="ProvisionForDirectorsRetirementBenefits"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="ProvisionForDirectorsRetirementBenefits" order="9.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ReservesUnderTheSpecialLaws1" xlink:label="ReservesUnderTheSpecialLaws1"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="ReservesUnderTheSpecialLaws1" order="10.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReserveForPriceFluctuationLiabilitiesINS" xlink:label="ReserveForPriceFluctuationLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ReservesUnderTheSpecialLaws1" xlink:to="ReserveForPriceFluctuationLiabilitiesINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ReserveForFinancialProductsTransactionLiabilitiesLiabilitiesINS" xlink:label="ReserveForFinancialProductsTransactionLiabilitiesLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ReservesUnderTheSpecialLaws1" xlink:to="ReserveForFinancialProductsTransactionLiabilitiesLiabilitiesINS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_DeferredTaxLiabilitiesLiabilitiesINS" xlink:label="DeferredTaxLiabilitiesLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="DeferredTaxLiabilitiesLiabilitiesINS" order="11.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesForLandRevaluation" xlink:label="DeferredTaxLiabilitiesForLandRevaluation"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="DeferredTaxLiabilitiesForLandRevaluation" order="12.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_AcceptancesAndGuaranteesLiabilitiesINS" xlink:label="AcceptancesAndGuaranteesLiabilitiesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="Liabilities" xlink:to="AcceptancesAndGuaranteesLiabilitiesINS" order="13.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssets" xlink:label="NetAssets"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="LiabilitiesAndNetAssets" xlink:to="NetAssets" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShareholdersEquity" xlink:label="ShareholdersEquity"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetAssets" xlink:to="ShareholdersEquity" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalStock" xlink:label="CapitalStock"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ShareholdersEquity" xlink:to="CapitalStock" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToShares" xlink:label="DepositForSubscriptionsToShares"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ShareholdersEquity" xlink:to="DepositForSubscriptionsToShares" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplus" xlink:label="CapitalSurplus"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ShareholdersEquity" xlink:to="CapitalSurplus" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalCapitalSurplus" xlink:label="LegalCapitalSurplus"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="CapitalSurplus" xlink:to="LegalCapitalSurplus" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCapitalSurplus" xlink:label="OtherCapitalSurplus"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="CapitalSurplus" xlink:to="OtherCapitalSurplus" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarnings" xlink:label="RetainedEarnings"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ShareholdersEquity" xlink:to="RetainedEarnings" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalRetainedEarnings" xlink:label="LegalRetainedEarnings"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="RetainedEarnings" xlink:to="LegalRetainedEarnings" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherRetainedEarnings" xlink:label="OtherRetainedEarnings"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="RetainedEarnings" xlink:to="OtherRetainedEarnings" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsBroughtForward" xlink:label="RetainedEarningsBroughtForward"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherRetainedEarnings" xlink:to="RetainedEarningsBroughtForward" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TreasuryStock" xlink:label="TreasuryStock"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ShareholdersEquity" xlink:to="TreasuryStock" order="5.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToTreasuryStock" xlink:label="DepositForSubscriptionsToTreasuryStock"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ShareholdersEquity" xlink:to="DepositForSubscriptionsToTreasuryStock" order="6.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustments" xlink:label="ValuationAndTranslationAdjustments"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetAssets" xlink:to="ValuationAndTranslationAdjustments" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecurities" xlink:label="ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ValuationAndTranslationAdjustments" xlink:to="ValuationDifferenceOnAvailableForSaleSecurities" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredGainsOrLossesOnHedges" xlink:label="DeferredGainsOrLossesOnHedges"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ValuationAndTranslationAdjustments" xlink:to="DeferredGainsOrLossesOnHedges" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RevaluationReserveForLand" xlink:label="RevaluationReserveForLand"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ValuationAndTranslationAdjustments" xlink:to="RevaluationReserveForLand" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SubscriptionRightsToShares" xlink:label="SubscriptionRightsToShares"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetAssets" xlink:to="SubscriptionRightsToShares" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TreasurySubscriptionRightsToShares" xlink:label="TreasurySubscriptionRightsToShares"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetAssets" xlink:to="TreasurySubscriptionRightsToShares" order="4.0" weight="1"/>
+  </calculationLink>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="OrdinaryIncome" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_OperatingIncomeINS" xlink:label="OperatingIncomeINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OrdinaryIncome" xlink:to="OperatingIncomeINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_InsurancePremiumsAndOtherOIINS" xlink:label="InsurancePremiumsAndOtherOIINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingIncomeINS" xlink:to="InsurancePremiumsAndOtherOIINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_InvestmentIncomeOIINS" xlink:label="InvestmentIncomeOIINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingIncomeINS" xlink:to="InvestmentIncomeOIINS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_OtherOperatingIncomeOIINS" xlink:label="OtherOperatingIncomeOIINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingIncomeINS" xlink:to="OtherOperatingIncomeOIINS" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_OperatingExpensesINS" xlink:label="OperatingExpensesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OrdinaryIncome" xlink:to="OperatingExpensesINS" order="2.0" weight="-1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_InsuranceClaimsAndOtherOEINS" xlink:label="InsuranceClaimsAndOtherOEINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingExpensesINS" xlink:to="InsuranceClaimsAndOtherOEINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ProvisionOfPolicyReserveAndOtherOEINS" xlink:label="ProvisionOfPolicyReserveAndOtherOEINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingExpensesINS" xlink:to="ProvisionOfPolicyReserveAndOtherOEINS" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_InvestmentExpensesOEINS" xlink:label="InvestmentExpensesOEINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingExpensesINS" xlink:to="InvestmentExpensesOEINS" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ProjectExpensesINS" xlink:label="ProjectExpensesINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingExpensesINS" xlink:to="ProjectExpensesINS" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_OtherOperatingExpensesOEINS" xlink:label="OtherOperatingExpensesOEINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingExpensesINS" xlink:to="OtherOperatingExpensesOEINS" order="5.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="ExtraordinaryIncome" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="ExtraordinaryLoss" order="3.0" weight="-1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_ProvisionOfReserveForDividendsToPolicyholdersINSLife" xlink:label="ProvisionOfReserveForDividendsToPolicyholdersINSLife"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="ProvisionOfReserveForDividendsToPolicyholdersINSLife" order="4.0" weight="-1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxes" xlink:label="IncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/ins/2011-03-14/jpfr-t-ins-2011-03-14.xsd#jpfr-t-ins_IncomeTaxesCurrentNonconsolidatedINS" xlink:label="IncomeTaxesCurrentNonconsolidatedINS"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IncomeTaxes" xlink:to="IncomeTaxesCurrentNonconsolidatedINS" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="IncomeTaxes" xlink:to="IncomeTaxesDeferred" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetIncome" xlink:to="IncomeBeforeIncomeTaxes" order="1.0" weight="1"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetIncome" xlink:to="IncomeTaxes" order="2.0" weight="-1"/>
+  </calculationLink>
+</linkbase>

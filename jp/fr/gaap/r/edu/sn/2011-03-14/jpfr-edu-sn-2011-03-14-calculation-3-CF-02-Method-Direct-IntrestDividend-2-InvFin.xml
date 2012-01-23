@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">利息及び配当金の受取額は投資活動、支払額は財務活動の区分に記載する方法　直接法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfCashFlowsDirect" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimStatementsOfCashFlowsDirect"/>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfCashFlowsDirect">
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_NetCashProvidedByUsedInFacilitiesMaintenanceAndInvestmentActivitiesEDU" xlink:label="NetCashProvidedByUsedInFacilitiesMaintenanceAndInvestmentActivitiesEDU"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestAndDividendsIncomeReceivedOpeCFInvCF" xlink:label="InterestAndDividendsIncomeReceivedOpeCFInvCF"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetCashProvidedByUsedInFacilitiesMaintenanceAndInvestmentActivitiesEDU" xlink:to="InterestAndDividendsIncomeReceivedOpeCFInvCF" order="13.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetCashProvidedByUsedInFinancingActivities" xlink:label="NetCashProvidedByUsedInFinancingActivities"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestExpensesPaidOpeCFFinCF" xlink:label="InterestExpensesPaidOpeCFFinCF"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetCashProvidedByUsedInFinancingActivities" xlink:to="InterestExpensesPaidOpeCFFinCF" order="7.0" weight="1"/>
+  </calculationLink>
+</linkbase>

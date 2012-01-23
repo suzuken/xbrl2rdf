@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">貸倒引当金（流動資産）を科目別に控除する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedBalanceSheets"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesReceivableTrade" xlink:label="NotesReceivableTrade"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="NotesReceivableTrade" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsNotesReceivableTrade" xlink:label="AllowanceForDoubtfulAccountsNotesReceivableTrade"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NotesReceivableTrade" xlink:to="AllowanceForDoubtfulAccountsNotesReceivableTrade" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesReceivableTradeNet" xlink:label="NotesReceivableTradeNet"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NotesReceivableTrade" xlink:to="NotesReceivableTradeNet" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/wat/2011-03-14/jpfr-t-wat-2011-03-14.xsd#jpfr-t-wat_AccountsReceivableShippingCAWAT" xlink:label="AccountsReceivableShippingCAWAT"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="AccountsReceivableShippingCAWAT" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/wat/2011-03-14/jpfr-t-wat-2011-03-14.xsd#jpfr-t-wat_AllowanceForDoubtfulAccountsAccountsReceivableShippingWAT" xlink:label="AllowanceForDoubtfulAccountsAccountsReceivableShippingWAT"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AccountsReceivableShippingCAWAT" xlink:to="AllowanceForDoubtfulAccountsAccountsReceivableShippingWAT" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/wat/2011-03-14/jpfr-t-wat-2011-03-14.xsd#jpfr-t-wat_AccountsReceivableShippingNetCAWAT" xlink:label="AccountsReceivableShippingNetCAWAT"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AccountsReceivableShippingCAWAT" xlink:to="AccountsReceivableShippingNetCAWAT" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/wat/2011-03-14/jpfr-t-wat-2011-03-14.xsd#jpfr-t-wat_AccountsReceivableOtherBusinessCAWAT" xlink:label="AccountsReceivableOtherBusinessCAWAT"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="AccountsReceivableOtherBusinessCAWAT" order="8.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/wat/2011-03-14/jpfr-t-wat-2011-03-14.xsd#jpfr-t-wat_AllowanceForDoubtfulAccountsAccountsReceivableOtherBusinessWAT" xlink:label="AllowanceForDoubtfulAccountsAccountsReceivableOtherBusinessWAT"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AccountsReceivableOtherBusinessCAWAT" xlink:to="AllowanceForDoubtfulAccountsAccountsReceivableOtherBusinessWAT" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/wat/2011-03-14/jpfr-t-wat-2011-03-14.xsd#jpfr-t-wat_AccountsReceivableOtherBusinessNetCAWAT" xlink:label="AccountsReceivableOtherBusinessNetCAWAT"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AccountsReceivableOtherBusinessCAWAT" xlink:to="AccountsReceivableOtherBusinessNetCAWAT" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansReceivable" xlink:label="ShortTermLoansReceivable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="ShortTermLoansReceivable" order="11.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsShortTermLoans" xlink:label="AllowanceForDoubtfulAccountsShortTermLoans"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ShortTermLoansReceivable" xlink:to="AllowanceForDoubtfulAccountsShortTermLoans" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansReceivableNet" xlink:label="ShortTermLoansReceivableNet"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ShortTermLoansReceivable" xlink:to="ShortTermLoansReceivableNet" order="2.0"/>
+  </presentationLink>
+</linkbase>

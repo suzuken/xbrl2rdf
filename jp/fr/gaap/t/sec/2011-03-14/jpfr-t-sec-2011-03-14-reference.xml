@@ -1,0 +1,1604 @@
+<?xml version="1.0"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">第一種金融商品取引業財務諸表語彙</documentation>
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssetsAbstract" xlink:to="reference_CurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndDeposits" xlink:label="CashAndDeposits"/>
+    <reference xlink:type="resource" xlink:label="reference_CashAndDeposits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashAndDeposits" xlink:to="reference_CashAndDeposits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PrepaidExpenses" xlink:label="PrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_PrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PrepaidExpenses" xlink:to="reference_PrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsCA" xlink:label="DeferredTaxAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsCA" xlink:to="reference_DeferredTaxAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedIncome" xlink:label="AccruedIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedIncome" xlink:to="reference_AccruedIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansReceivable" xlink:label="ShortTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansReceivable" xlink:to="reference_ShortTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsReceivableOther" xlink:label="AccountsReceivableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableOther" xlink:to="reference_AccountsReceivableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCA" xlink:to="reference_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="reference_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssets" xlink:to="reference_CurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAbstract" xlink:to="reference_NoncurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="reference_PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <reference xlink:type="resource" xlink:label="reference_Buildings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Buildings" xlink:to="reference_Buildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Land" xlink:label="Land"/>
+    <reference xlink:type="resource" xlink:label="reference_Land" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Land" xlink:to="reference_Land"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssetsAbstract" xlink:label="IntangibleAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsAbstract" xlink:to="reference_IntangibleAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssetsAbstract" xlink:label="InvestmentsAndOtherAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="reference_InvestmentsAndOtherAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentSecurities" xlink:label="InvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentSecurities" xlink:to="reference_InvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsInCapital" xlink:label="InvestmentsInCapital"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsInCapital" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsInCapital" xlink:to="reference_InvestmentsInCapital"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivable" xlink:label="LongTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivable" xlink:to="reference_LongTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermPrepaidExpenses" xlink:label="LongTermPrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermPrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermPrepaidExpenses" xlink:to="reference_LongTermPrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsIOA" xlink:label="DeferredTaxAssetsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsIOA" xlink:to="reference_DeferredTaxAssetsIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIOA" xlink:label="OtherIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIOA" xlink:to="reference_OtherIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="reference_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssets" xlink:to="reference_NoncurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssetsAbstract" xlink:label="DeferredAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssetsAbstract" xlink:to="reference_DeferredAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredOrganizationExpensesDA" xlink:label="DeferredOrganizationExpensesDA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredOrganizationExpensesDA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredOrganizationExpensesDA" xlink:to="reference_DeferredOrganizationExpensesDA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssets" xlink:label="DeferredAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssets" xlink:to="reference_DeferredAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <reference xlink:type="resource" xlink:label="reference_Assets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Assets" xlink:to="reference_Assets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCL" xlink:to="reference_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNCL" xlink:to="reference_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalStock" xlink:label="CapitalStock"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalStock" xlink:to="reference_CapitalStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToShares" xlink:label="DepositForSubscriptionsToShares"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForSubscriptionsToShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForSubscriptionsToShares" xlink:to="reference_DepositForSubscriptionsToShares"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplusAbstract" xlink:label="CapitalSurplusAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplusAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplusAbstract" xlink:to="reference_CapitalSurplusAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalCapitalSurplus" xlink:label="LegalCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalCapitalSurplus" xlink:to="reference_LegalCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplus" xlink:label="CapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplus" xlink:to="reference_CapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsAbstract" xlink:label="RetainedEarningsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsAbstract" xlink:to="reference_RetainedEarningsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalRetainedEarnings" xlink:label="LegalRetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalRetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalRetainedEarnings" xlink:to="reference_LegalRetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarnings" xlink:label="RetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarnings" xlink:to="reference_RetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RevaluationReserveForLand" xlink:label="RevaluationReserveForLand"/>
+    <reference xlink:type="resource" xlink:label="reference_RevaluationReserveForLand" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RevaluationReserveForLand" xlink:to="reference_RevaluationReserveForLand"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecurities" xlink:label="ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationDifferenceOnAvailableForSaleSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationDifferenceOnAvailableForSaleSecurities" xlink:to="reference_ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TreasuryStock" xlink:label="TreasuryStock"/>
+    <reference xlink:type="resource" xlink:label="reference_TreasuryStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TreasuryStock" xlink:to="reference_TreasuryStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncome" xlink:to="reference_OperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesCurrent" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesCurrent" xlink:to="reference_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesDeferred" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesDeferred" xlink:to="reference_IncomeTaxesDeferred"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncome" xlink:to="reference_NetIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetsAbstract" xlink:label="AssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetsAbstract" xlink:to="reference_AssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAbstract" xlink:label="LiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAbstract" xlink:to="reference_LiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="CurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilitiesAbstract" xlink:to="reference_CurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayable" xlink:label="ShortTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansPayable" xlink:to="reference_ShortTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableOther" xlink:to="reference_AccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedExpenses" xlink:label="AccruedExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedExpenses" xlink:to="reference_AccruedExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesPayable" xlink:label="IncomeTaxesPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesPayable" xlink:to="reference_IncomeTaxesPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesCL" xlink:label="DeferredTaxLiabilitiesCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesCL" xlink:to="reference_DeferredTaxLiabilitiesCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancesReceived" xlink:label="AdvancesReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesReceived" xlink:to="reference_AdvancesReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_UnearnedRevenue" xlink:label="UnearnedRevenue"/>
+    <reference xlink:type="resource" xlink:label="reference_UnearnedRevenue" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnearnedRevenue" xlink:to="reference_UnearnedRevenue"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForBonuses" xlink:label="ProvisionForBonuses"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForBonuses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForBonuses" xlink:to="reference_ProvisionForBonuses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilities" xlink:label="CurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilities" xlink:to="reference_CurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilitiesAbstract" xlink:label="NoncurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilitiesAbstract" xlink:to="reference_NoncurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayable" xlink:label="LongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayable" xlink:to="reference_LongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesNCL" xlink:label="DeferredTaxLiabilitiesNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesNCL" xlink:to="reference_DeferredTaxLiabilitiesNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForRetirementBenefits" xlink:label="ProvisionForRetirementBenefits"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForRetirementBenefits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForRetirementBenefits" xlink:to="reference_ProvisionForRetirementBenefits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilities" xlink:label="NoncurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilities" xlink:to="reference_NoncurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ReservesUnderTheSpecialLawsAbstract1" xlink:label="ReservesUnderTheSpecialLawsAbstract1"/>
+    <reference xlink:type="resource" xlink:label="reference_ReservesUnderTheSpecialLawsAbstract1" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReservesUnderTheSpecialLawsAbstract1" xlink:to="reference_ReservesUnderTheSpecialLawsAbstract1"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ReservesUnderTheSpecialLaws1" xlink:label="ReservesUnderTheSpecialLaws1"/>
+    <reference xlink:type="resource" xlink:label="reference_ReservesUnderTheSpecialLaws1" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReservesUnderTheSpecialLaws1" xlink:to="reference_ReservesUnderTheSpecialLaws1"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_Liabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Liabilities" xlink:to="reference_Liabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCapitalSurplus" xlink:label="OtherCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCapitalSurplus" xlink:to="reference_OtherCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAndNetAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAndNetAssets" xlink:to="reference_LiabilitiesAndNetAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssetsAbstract" xlink:label="NetAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetAssetsAbstract" xlink:to="reference_NetAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShareholdersEquityAbstract" xlink:label="ShareholdersEquityAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ShareholdersEquityAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdersEquityAbstract" xlink:to="reference_ShareholdersEquityAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsBroughtForward" xlink:label="RetainedEarningsBroughtForward"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsBroughtForward" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsBroughtForward" xlink:to="reference_RetainedEarningsBroughtForward"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShareholdersEquity" xlink:label="ShareholdersEquity"/>
+    <reference xlink:type="resource" xlink:label="reference_ShareholdersEquity" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdersEquity" xlink:to="reference_ShareholdersEquity"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustmentsAbstract" xlink:label="ValuationAndTranslationAdjustmentsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustmentsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustmentsAbstract" xlink:to="reference_ValuationAndTranslationAdjustmentsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredGainsOrLossesOnHedges" xlink:label="DeferredGainsOrLossesOnHedges"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredGainsOrLossesOnHedges" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredGainsOrLossesOnHedges" xlink:to="reference_DeferredGainsOrLossesOnHedges"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustments" xlink:label="ValuationAndTranslationAdjustments"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustments" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustments" xlink:to="reference_ValuationAndTranslationAdjustments"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SubscriptionRightsToShares" xlink:label="SubscriptionRightsToShares"/>
+    <reference xlink:type="resource" xlink:label="reference_SubscriptionRightsToShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SubscriptionRightsToShares" xlink:to="reference_SubscriptionRightsToShares"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssets" xlink:label="NetAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NetAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetAssets" xlink:to="reference_NetAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Goodwill" xlink:label="Goodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_Goodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Goodwill" xlink:to="reference_Goodwill"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:label="ProvisionOfAllowanceForDoubtfulAccountsSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:to="reference_ProvisionOfAllowanceForDoubtfulAccountsSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncome" xlink:to="reference_ExtraordinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLossAbstract" xlink:label="ExtraordinaryLossAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLossAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLossAbstract" xlink:to="reference_ExtraordinaryLossAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLoss" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLoss" xlink:to="reference_ExtraordinaryLoss"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeBeforeIncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="reference_IncomeBeforeIncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxes" xlink:label="IncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxes" xlink:to="reference_IncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToTreasuryStock" xlink:label="DepositForSubscriptionsToTreasuryStock"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForSubscriptionsToTreasuryStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForSubscriptionsToTreasuryStock" xlink:to="reference_DepositForSubscriptionsToTreasuryStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonrecurringLossEL" xlink:label="NonrecurringLossEL"/>
+    <reference xlink:type="resource" xlink:label="reference_NonrecurringLossEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonrecurringLossEL" xlink:to="reference_NonrecurringLossEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherRetainedEarningsAbstract" xlink:label="OtherRetainedEarningsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherRetainedEarningsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherRetainedEarningsAbstract" xlink:to="reference_OtherRetainedEarningsAbstract"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashSegregatedAsDepositsCASEC" xlink:label="CashSegregatedAsDepositsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashSegregatedAsDepositsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashSegregatedAsDepositsCASEC" xlink:to="reference_CashSegregatedAsDepositsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashSegregatedAsDepositsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashSegregatedAsDepositsCASEC" xlink:to="reference_CashSegregatedAsDepositsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashSegregatedAsDepositsForCustomersCASEC" xlink:label="CashSegregatedAsDepositsForCustomersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashSegregatedAsDepositsForCustomersCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashSegregatedAsDepositsForCustomersCASEC" xlink:to="reference_CashSegregatedAsDepositsForCustomersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashSegregatedAsDepositsForCustomersCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashSegregatedAsDepositsForCustomersCASEC" xlink:to="reference_CashSegregatedAsDepositsForCustomersCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashSegregatedAsDepositsForFinancialProductsTransactionLiabilitiesCASEC" xlink:label="CashSegregatedAsDepositsForFinancialProductsTransactionLiabilitiesCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashSegregatedAsDepositsForFinancialProductsTransactionLiabilitiesCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashSegregatedAsDepositsForFinancialProductsTransactionLiabilitiesCASEC" xlink:to="reference_CashSegregatedAsDepositsForFinancialProductsTransactionLiabilitiesCASEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashSegregatedAsDepositsForOthersCASEC" xlink:label="CashSegregatedAsDepositsForOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashSegregatedAsDepositsForOthersCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashSegregatedAsDepositsForOthersCASEC" xlink:to="reference_CashSegregatedAsDepositsForOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashSegregatedAsDepositsForOthersCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashSegregatedAsDepositsForOthersCASEC" xlink:to="reference_CashSegregatedAsDepositsForOthersCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_TradingProductsCASEC" xlink:label="TradingProductsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingProductsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingProductsCASEC" xlink:to="reference_TradingProductsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingProductsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingProductsCASEC" xlink:to="reference_TradingProductsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_TradingSecuritiesAndOtherCASEC" xlink:label="TradingSecuritiesAndOtherCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingSecuritiesAndOtherCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingSecuritiesAndOtherCASEC" xlink:to="reference_TradingSecuritiesAndOtherCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingSecuritiesAndOtherCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingSecuritiesAndOtherCASEC" xlink:to="reference_TradingSecuritiesAndOtherCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DerivativesCASEC" xlink:label="DerivativesCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DerivativesCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DerivativesCASEC" xlink:to="reference_DerivativesCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DerivativesCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DerivativesCASEC" xlink:to="reference_DerivativesCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_TradeDateAccrualCASEC" xlink:label="TradeDateAccrualCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradeDateAccrualCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradeDateAccrualCASEC" xlink:to="reference_TradeDateAccrualCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradeDateAccrualCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradeDateAccrualCASEC" xlink:to="reference_TradeDateAccrualCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_MarginTransactionAssetsCASEC" xlink:label="MarginTransactionAssetsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_MarginTransactionAssetsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarginTransactionAssetsCASEC" xlink:to="reference_MarginTransactionAssetsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_MarginTransactionAssetsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarginTransactionAssetsCASEC" xlink:to="reference_MarginTransactionAssetsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_LoansOnMarginTransactionsCASEC" xlink:label="LoansOnMarginTransactionsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansOnMarginTransactionsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansOnMarginTransactionsCASEC" xlink:to="reference_LoansOnMarginTransactionsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansOnMarginTransactionsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansOnMarginTransactionsCASEC" xlink:to="reference_LoansOnMarginTransactionsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC" xlink:label="CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC" xlink:to="reference_CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC" xlink:to="reference_CashCollateralPledgedForSecuritiesBorrowingOnMarginTransactionsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_LoansSecuredBySecuritiesCASEC" xlink:label="LoansSecuredBySecuritiesCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansSecuredBySecuritiesCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansSecuredBySecuritiesCASEC" xlink:to="reference_LoansSecuredBySecuritiesCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansSecuredBySecuritiesCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansSecuredBySecuritiesCASEC" xlink:to="reference_LoansSecuredBySecuritiesCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashCollateralPledgedForSecuritiesBorrowedCASEC" xlink:label="CashCollateralPledgedForSecuritiesBorrowedCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashCollateralPledgedForSecuritiesBorrowedCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashCollateralPledgedForSecuritiesBorrowedCASEC" xlink:to="reference_CashCollateralPledgedForSecuritiesBorrowedCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashCollateralPledgedForSecuritiesBorrowedCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashCollateralPledgedForSecuritiesBorrowedCASEC" xlink:to="reference_CashCollateralPledgedForSecuritiesBorrowedCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_LoansOnGensakiTransactionsCASEC" xlink:label="LoansOnGensakiTransactionsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansOnGensakiTransactionsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansOnGensakiTransactionsCASEC" xlink:to="reference_LoansOnGensakiTransactionsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansOnGensakiTransactionsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansOnGensakiTransactionsCASEC" xlink:to="reference_LoansOnGensakiTransactionsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_AdvancesPaidCASEC" xlink:label="AdvancesPaidCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesPaidCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesPaidCASEC" xlink:to="reference_AdvancesPaidCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesPaidCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesPaidCASEC" xlink:to="reference_AdvancesPaidCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_AdvancePaymentsForCustomersOnTradesCASEC" xlink:label="AdvancePaymentsForCustomersOnTradesCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsForCustomersOnTradesCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsForCustomersOnTradesCASEC" xlink:to="reference_AdvancePaymentsForCustomersOnTradesCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsForCustomersOnTradesCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsForCustomersOnTradesCASEC" xlink:to="reference_AdvancePaymentsForCustomersOnTradesCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_AdvancePaymentsForOthersCASEC" xlink:label="AdvancePaymentsForOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsForOthersCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsForOthersCASEC" xlink:to="reference_AdvancePaymentsForOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsForOthersCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsForOthersCASEC" xlink:to="reference_AdvancePaymentsForOthersCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashPaidForOfferingCASEC" xlink:label="CashPaidForOfferingCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashPaidForOfferingCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashPaidForOfferingCASEC" xlink:to="reference_CashPaidForOfferingCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashPaidForOfferingCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashPaidForOfferingCASEC" xlink:to="reference_CashPaidForOfferingCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_ShortTermGuaranteeDepositsCASEC" xlink:label="ShortTermGuaranteeDepositsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermGuaranteeDepositsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermGuaranteeDepositsCASEC" xlink:to="reference_ShortTermGuaranteeDepositsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermGuaranteeDepositsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermGuaranteeDepositsCASEC" xlink:to="reference_ShortTermGuaranteeDepositsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_GuaranteeDepositsForWhenIssuedTransactionCASEC" xlink:label="GuaranteeDepositsForWhenIssuedTransactionCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsForWhenIssuedTransactionCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsForWhenIssuedTransactionCASEC" xlink:to="reference_GuaranteeDepositsForWhenIssuedTransactionCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsForWhenIssuedTransactionCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsForWhenIssuedTransactionCASEC" xlink:to="reference_GuaranteeDepositsForWhenIssuedTransactionCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_GuaranteeDepositsForTransactionCASEC" xlink:label="GuaranteeDepositsForTransactionCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsForTransactionCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsForTransactionCASEC" xlink:to="reference_GuaranteeDepositsForTransactionCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsForTransactionCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsForTransactionCASEC" xlink:to="reference_GuaranteeDepositsForTransactionCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_InitialMarginsOfFuturesMarketsCASEC" xlink:label="InitialMarginsOfFuturesMarketsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_InitialMarginsOfFuturesMarketsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InitialMarginsOfFuturesMarketsCASEC" xlink:to="reference_InitialMarginsOfFuturesMarketsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_InitialMarginsOfFuturesMarketsCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InitialMarginsOfFuturesMarketsCASEC" xlink:to="reference_InitialMarginsOfFuturesMarketsCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DepositForDueBillCASEC" xlink:label="DepositForDueBillCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForDueBillCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForDueBillCASEC" xlink:to="reference_DepositForDueBillCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForDueBillCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForDueBillCASEC" xlink:to="reference_DepositForDueBillCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_GuaranteeDepositsForOthersCASEC" xlink:label="GuaranteeDepositsForOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsForOthersCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsForOthersCASEC" xlink:to="reference_GuaranteeDepositsForOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsForOthersCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsForOthersCASEC" xlink:to="reference_GuaranteeDepositsForOthersCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_AccountsForNonDeliveredSecuritiesAndOthersCASEC" xlink:label="AccountsForNonDeliveredSecuritiesAndOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsForNonDeliveredSecuritiesAndOthersCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsForNonDeliveredSecuritiesAndOthersCASEC" xlink:to="reference_AccountsForNonDeliveredSecuritiesAndOthersCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsForNonDeliveredSecuritiesAndOthersCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsForNonDeliveredSecuritiesAndOthersCASEC" xlink:to="reference_AccountsForNonDeliveredSecuritiesAndOthersCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_VariationMarginPaidCASEC" xlink:label="VariationMarginPaidCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_VariationMarginPaidCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VariationMarginPaidCASEC" xlink:to="reference_VariationMarginPaidCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_VariationMarginPaidCASEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VariationMarginPaidCASEC" xlink:to="reference_VariationMarginPaidCASEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_AdvancePaymentsCASEC" xlink:label="AdvancePaymentsCASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsCASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsCASEC" xlink:to="reference_AdvancePaymentsCASEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_EquipmentPPESEC" xlink:label="EquipmentPPESEC"/>
+    <reference xlink:type="resource" xlink:label="reference_EquipmentPPESEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EquipmentPPESEC" xlink:to="reference_EquipmentPPESEC"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GuaranteeDepositsIOA" xlink:label="GuaranteeDepositsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsIOA" xlink:to="reference_GuaranteeDepositsIOA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_TradingProductsCLSEC" xlink:label="TradingProductsCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingProductsCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingProductsCLSEC" xlink:to="reference_TradingProductsCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingProductsCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingProductsCLSEC" xlink:to="reference_TradingProductsCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_TradingSecuritiesAndOtherCLSEC" xlink:label="TradingSecuritiesAndOtherCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingSecuritiesAndOtherCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingSecuritiesAndOtherCLSEC" xlink:to="reference_TradingSecuritiesAndOtherCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingSecuritiesAndOtherCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingSecuritiesAndOtherCLSEC" xlink:to="reference_TradingSecuritiesAndOtherCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DerivativesCLSEC" xlink:label="DerivativesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DerivativesCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DerivativesCLSEC" xlink:to="reference_DerivativesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DerivativesCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DerivativesCLSEC" xlink:to="reference_DerivativesCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_TradeDateAccrualCLSEC" xlink:label="TradeDateAccrualCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradeDateAccrualCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradeDateAccrualCLSEC" xlink:to="reference_TradeDateAccrualCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradeDateAccrualCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradeDateAccrualCLSEC" xlink:to="reference_TradeDateAccrualCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_MarginTransactionLiabilitiesCLSEC" xlink:label="MarginTransactionLiabilitiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_MarginTransactionLiabilitiesCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarginTransactionLiabilitiesCLSEC" xlink:to="reference_MarginTransactionLiabilitiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_MarginTransactionLiabilitiesCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MarginTransactionLiabilitiesCLSEC" xlink:to="reference_MarginTransactionLiabilitiesCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_BorrowingsOnMarginTransactionsCLSEC" xlink:label="BorrowingsOnMarginTransactionsCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_BorrowingsOnMarginTransactionsCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BorrowingsOnMarginTransactionsCLSEC" xlink:to="reference_BorrowingsOnMarginTransactionsCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_BorrowingsOnMarginTransactionsCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BorrowingsOnMarginTransactionsCLSEC" xlink:to="reference_BorrowingsOnMarginTransactionsCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC" xlink:label="CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC" xlink:to="reference_CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC" xlink:to="reference_CashReceivedForSecuritiesLendingOnMarginTransactionsCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_LoansPayableSecuredBySecuritiesCLSEC" xlink:label="LoansPayableSecuredBySecuritiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansPayableSecuredBySecuritiesCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansPayableSecuredBySecuritiesCLSEC" xlink:to="reference_LoansPayableSecuredBySecuritiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LoansPayableSecuredBySecuritiesCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LoansPayableSecuredBySecuritiesCLSEC" xlink:to="reference_LoansPayableSecuredBySecuritiesCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC" xlink:label="CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC" xlink:to="reference_CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC" xlink:to="reference_CashReceivedOnDebtCreditTransactionOfSecuritiesCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_BorrowingsOnGensakiTransactionCLSEC" xlink:label="BorrowingsOnGensakiTransactionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_BorrowingsOnGensakiTransactionCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BorrowingsOnGensakiTransactionCLSEC" xlink:to="reference_BorrowingsOnGensakiTransactionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_BorrowingsOnGensakiTransactionCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BorrowingsOnGensakiTransactionCLSEC" xlink:to="reference_BorrowingsOnGensakiTransactionCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DepositsReceivedCLSEC" xlink:label="DepositsReceivedCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceivedCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceivedCLSEC" xlink:to="reference_DepositsReceivedCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceivedCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceivedCLSEC" xlink:to="reference_DepositsReceivedCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DepositsFromCustomersCLSEC" xlink:label="DepositsFromCustomersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsFromCustomersCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsFromCustomersCLSEC" xlink:to="reference_DepositsFromCustomersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsFromCustomersCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsFromCustomersCLSEC" xlink:to="reference_DepositsFromCustomersCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DepositsForSubscriptionCLSEC" xlink:label="DepositsForSubscriptionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForSubscriptionCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForSubscriptionCLSEC" xlink:to="reference_DepositsForSubscriptionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForSubscriptionCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForSubscriptionCLSEC" xlink:to="reference_DepositsForSubscriptionCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DepositsForOthersCLSEC" xlink:label="DepositsForOthersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForOthersCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForOthersCLSEC" xlink:to="reference_DepositsForOthersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForOthersCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForOthersCLSEC" xlink:to="reference_DepositsForOthersCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_GuaranteeDepositsReceivedCLSEC" xlink:label="GuaranteeDepositsReceivedCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsReceivedCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsReceivedCLSEC" xlink:to="reference_GuaranteeDepositsReceivedCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsReceivedCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsReceivedCLSEC" xlink:to="reference_GuaranteeDepositsReceivedCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC" xlink:label="GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC" xlink:to="reference_GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC" xlink:to="reference_GuaranteedDepositsReceivedForWhenIssuedTransactionCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_GuaranteeDepositsReceivedForMarginTransactionCLSEC" xlink:label="GuaranteeDepositsReceivedForMarginTransactionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsReceivedForMarginTransactionCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsReceivedForMarginTransactionCLSEC" xlink:to="reference_GuaranteeDepositsReceivedForMarginTransactionCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsReceivedForMarginTransactionCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsReceivedForMarginTransactionCLSEC" xlink:to="reference_GuaranteeDepositsReceivedForMarginTransactionCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_InitialMarginsOfFuturesMarketsLiabilitiesCLSEC" xlink:label="InitialMarginsOfFuturesMarketsLiabilitiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_InitialMarginsOfFuturesMarketsLiabilitiesCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InitialMarginsOfFuturesMarketsLiabilitiesCLSEC" xlink:to="reference_InitialMarginsOfFuturesMarketsLiabilitiesCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_InitialMarginsOfFuturesMarketsLiabilitiesCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InitialMarginsOfFuturesMarketsLiabilitiesCLSEC" xlink:to="reference_InitialMarginsOfFuturesMarketsLiabilitiesCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_DepositReceivedForDueBillCLSEC" xlink:label="DepositReceivedForDueBillCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositReceivedForDueBillCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositReceivedForDueBillCLSEC" xlink:to="reference_DepositReceivedForDueBillCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositReceivedForDueBillCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositReceivedForDueBillCLSEC" xlink:to="reference_DepositReceivedForDueBillCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_GuaranteeDepositsReceivedForOthersCLSEC" xlink:label="GuaranteeDepositsReceivedForOthersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsReceivedForOthersCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsReceivedForOthersCLSEC" xlink:to="reference_GuaranteeDepositsReceivedForOthersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeDepositsReceivedForOthersCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeDepositsReceivedForOthersCLSEC" xlink:to="reference_GuaranteeDepositsReceivedForOthersCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_AccountsForNonReceivedSecuritiesAndOthersCLSEC" xlink:label="AccountsForNonReceivedSecuritiesAndOthersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsForNonReceivedSecuritiesAndOthersCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsForNonReceivedSecuritiesAndOthersCLSEC" xlink:to="reference_AccountsForNonReceivedSecuritiesAndOthersCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsForNonReceivedSecuritiesAndOthersCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsForNonReceivedSecuritiesAndOthersCLSEC" xlink:to="reference_AccountsForNonReceivedSecuritiesAndOthersCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_VariationMarginReceivedCLSEC" xlink:label="VariationMarginReceivedCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_VariationMarginReceivedCLSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VariationMarginReceivedCLSEC" xlink:to="reference_VariationMarginReceivedCLSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_VariationMarginReceivedCLSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VariationMarginReceivedCLSEC" xlink:to="reference_VariationMarginReceivedCLSEC_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NegativeGoodwill" xlink:label="NegativeGoodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_NegativeGoodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NegativeGoodwill" xlink:to="reference_NegativeGoodwill"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC" xlink:label="ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC" xlink:to="reference_ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC" xlink:to="reference_ReserveForFinancialProductsTransactionLiabilitiesReservesUnderTheSpecialLawsSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_ReserveORESEC" xlink:label="ReserveORESEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ReserveORESEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReserveORESEC" xlink:to="reference_ReserveORESEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CommissionReceivedORSEC" xlink:label="CommissionReceivedORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CommissionReceivedORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CommissionReceivedORSEC" xlink:to="reference_CommissionReceivedORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CommissionToConsigneesORSEC" xlink:label="CommissionToConsigneesORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CommissionToConsigneesORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CommissionToConsigneesORSEC" xlink:to="reference_CommissionToConsigneesORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_CommissionForUnderwritingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC" xlink:label="CommissionForUnderwritingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_CommissionForUnderwritingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CommissionForUnderwritingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC" xlink:to="reference_CommissionForUnderwritingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_FeeForOfferingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC" xlink:label="FeeForOfferingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_FeeForOfferingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FeeForOfferingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC" xlink:to="reference_FeeForOfferingSecondaryDistributionAndSolicitationForSellingAndOthersForProfessionalInvestorsORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_OtherFeesReceivedORSEC" xlink:label="OtherFeesReceivedORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherFeesReceivedORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherFeesReceivedORSEC" xlink:to="reference_OtherFeesReceivedORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_NetTradingIncomeORSEC" xlink:label="NetTradingIncomeORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_NetTradingIncomeORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetTradingIncomeORSEC" xlink:to="reference_NetTradingIncomeORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_FinancialRevenueORSEC" xlink:label="FinancialRevenueORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_FinancialRevenueORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FinancialRevenueORSEC" xlink:to="reference_FinancialRevenueORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_FinancialExpensesSEC" xlink:label="FinancialExpensesSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_FinancialExpensesSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FinancialExpensesSEC" xlink:to="reference_FinancialExpensesSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC" xlink:label="ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC" xlink:to="reference_ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC" xlink:to="reference_ReversalOfReserveForFinancialProductsTransactionLiabilitiesEISEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC" xlink:label="ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>日本証券業協会</ref:Publisher>
+      <ref:Name>有価証券関連業経理の統一に関する規則</ref:Name>
+      <ref:IssueDate>2008-12-09</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC" xlink:to="reference_ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC_2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC" xlink:to="reference_ProvisionOfReserveForFinancialProductsTransactionLiabilitiesELSEC_2"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_ExtraordinaryProfitEISEC" xlink:label="ExtraordinaryProfitEISEC"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryProfitEISEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryProfitEISEC" xlink:to="reference_ExtraordinaryProfitEISEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_LossOnValuationOfSecuritiesELSEC" xlink:label="LossOnValuationOfSecuritiesELSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnValuationOfSecuritiesELSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnValuationOfSecuritiesELSEC" xlink:to="reference_LossOnValuationOfSecuritiesELSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_NetTradingIncomeFromSecuritiesORSEC" xlink:label="NetTradingIncomeFromSecuritiesORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_NetTradingIncomeFromSecuritiesORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetTradingIncomeFromSecuritiesORSEC" xlink:to="reference_NetTradingIncomeFromSecuritiesORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_NetTradingIncomeFromBondsORSEC" xlink:label="NetTradingIncomeFromBondsORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_NetTradingIncomeFromBondsORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetTradingIncomeFromBondsORSEC" xlink:to="reference_NetTradingIncomeFromBondsORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_OtherNetTradingIncomeORSEC" xlink:label="OtherNetTradingIncomeORSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNetTradingIncomeORSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNetTradingIncomeORSEC" xlink:to="reference_OtherNetTradingIncomeORSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_OperatingRevenueSEC" xlink:label="OperatingRevenueSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueSEC" xlink:to="reference_OperatingRevenueSEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_NetOperatingRevenueSEC" xlink:label="NetOperatingRevenueSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_NetOperatingRevenueSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetOperatingRevenueSEC" xlink:to="reference_NetOperatingRevenueSEC"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PersonalExpensesSGA" xlink:label="PersonalExpensesSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_PersonalExpensesSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PersonalExpensesSGA" xlink:to="reference_PersonalExpensesSGA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_RealEstateExpensesSGASEC" xlink:label="RealEstateExpensesSGASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_RealEstateExpensesSGASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RealEstateExpensesSGASEC" xlink:to="reference_RealEstateExpensesSGASEC"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OfficeCostSGA" xlink:label="OfficeCostSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_OfficeCostSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OfficeCostSGA" xlink:to="reference_OfficeCostSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherSGA" xlink:label="OtherSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherSGA" xlink:to="reference_OtherSGA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_TradingRelatedExpensesSGASEC" xlink:label="TradingRelatedExpensesSGASEC"/>
+    <reference xlink:type="resource" xlink:label="reference_TradingRelatedExpensesSGASEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TradingRelatedExpensesSGASEC" xlink:to="reference_TradingRelatedExpensesSGASEC"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-sec-2011-03-14.xsd#jpfr-t-sec_OperatingRevenueAbstractSEC" xlink:label="OperatingRevenueAbstractSEC"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueAbstractSEC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>内閣府</ref:Publisher>
+      <ref:Name>金融商品取引業等に関する内閣府令</ref:Name>
+      <ref:IssueDate>2010-03-01</ref:IssueDate>
+      <ref:Appendix>2 経理の状況　様式A</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueAbstractSEC" xlink:to="reference_OperatingRevenueAbstractSEC"/>
+  </referenceLink>
+</linkbase>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">販売費及び一般管理費を費目別に掲記する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimStatementsOfIncome"/>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SellingGeneralAndAdministrativeExpenses" xlink:label="SellingGeneralAndAdministrativeExpenses"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OperatingIncome" xlink:to="SellingGeneralAndAdministrativeExpenses" order="3.0" weight="-1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SalesCommissionSGA" xlink:label="SalesCommissionSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="SalesCommissionSGA" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PackingExpensesSGA" xlink:label="PackingExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="PackingExpensesSGA" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_HaulageExpensesSGA" xlink:label="HaulageExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="HaulageExpensesSGA" order="3.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvertisingExpensesSGA" xlink:label="AdvertisingExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="AdvertisingExpensesSGA" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SampleExpensesSGA" xlink:label="SampleExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="SampleExpensesSGA" order="5.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_WarehousingExpensesSGA" xlink:label="WarehousingExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="WarehousingExpensesSGA" order="6.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeliveryExaminationExpensesSGA" xlink:label="DeliveryExaminationExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="DeliveryExaminationExpensesSGA" order="7.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DirectorsCompensationsSGA" xlink:label="DirectorsCompensationsSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="DirectorsCompensationsSGA" order="8.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SalariesSGA" xlink:label="SalariesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="SalariesSGA" order="9.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_WagesSGA" xlink:label="WagesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="WagesSGA" order="10.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceSGA" xlink:label="AllowanceSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="AllowanceSGA" order="11.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BonusesSGA" xlink:label="BonusesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="BonusesSGA" order="12.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_WelfareExpensesSGA" xlink:label="WelfareExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="WelfareExpensesSGA" order="13.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_EntertainmentExpensesSGA" xlink:label="EntertainmentExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="EntertainmentExpensesSGA" order="14.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TravelingExpensesSGA" xlink:label="TravelingExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="TravelingExpensesSGA" order="15.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TransportationExpensesSGA" xlink:label="TransportationExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="TransportationExpensesSGA" order="16.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CommunicationExpensesSGA" xlink:label="CommunicationExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="CommunicationExpensesSGA" order="17.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_HeatingAndLightingExpensesSGA" xlink:label="HeatingAndLightingExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="HeatingAndLightingExpensesSGA" order="18.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SuppliesExpensesSGA" xlink:label="SuppliesExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="SuppliesExpensesSGA" order="19.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TaxesAndDuesSGA" xlink:label="TaxesAndDuesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="TaxesAndDuesSGA" order="20.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepreciationSGA" xlink:label="DepreciationSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="DepreciationSGA" order="21.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RepairExpensesSGA" xlink:label="RepairExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="RepairExpensesSGA" order="22.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InsuranceExpensesSGA" xlink:label="InsuranceExpensesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="InsuranceExpensesSGA" order="23.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RentExpensesOnRealEstatesSGA" xlink:label="RentExpensesOnRealEstatesSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="RentExpensesOnRealEstatesSGA" order="24.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfGoodwillSGA" xlink:label="AmortizationOfGoodwillSGA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="AmortizationOfGoodwillSGA" order="25.0" weight="1"/>
+  </calculationLink>
+</linkbase>

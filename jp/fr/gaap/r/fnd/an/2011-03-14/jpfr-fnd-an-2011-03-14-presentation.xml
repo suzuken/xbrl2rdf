@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">投資信託受益証券個別財務諸表</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleFNDLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedBalanceSheets"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedStatementsOfIncome" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedStatementsOfIncome"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BalanceSheetsAbstract" xlink:label="BalanceSheetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetsAbstract" xlink:label="AssetsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BalanceSheetsAbstract" xlink:to="AssetsAbstract" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AssetsAbstract" xlink:to="CurrentAssetsAbstract" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DepositsCAFND" xlink:label="DepositsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="DepositsCAFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_MoneyHeldInTrustCAFND" xlink:label="MoneyHeldInTrustCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="MoneyHeldInTrustCAFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CallLoansCAFND" xlink:label="CallLoansCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="CallLoansCAFND" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_MortgageSecuritiesCAFND" xlink:label="MortgageSecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="MortgageSecuritiesCAFND" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_MonetaryClaimCAFND" xlink:label="MonetaryClaimCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="MonetaryClaimCAFND" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_PromissoryNoteCAFND" xlink:label="PromissoryNoteCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="PromissoryNoteCAFND" order="6.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_TrustBeneficiaryRightCAFND" xlink:label="TrustBeneficiaryRightCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="TrustBeneficiaryRightCAFND" order="7.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_MoneyTrustBeneficiaryRightCAFND" xlink:label="MoneyTrustBeneficiaryRightCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="MoneyTrustBeneficiaryRightCAFND" order="8.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_StocksCAFND" xlink:label="StocksCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="StocksCAFND" order="9.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_WarrantCAFND" xlink:label="WarrantCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="WarrantCAFND" order="10.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_GovernmentBondsCAFND" xlink:label="GovernmentBondsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="GovernmentBondsCAFND" order="11.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_MunicipalBondsCAFND" xlink:label="MunicipalBondsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="MunicipalBondsCAFND" order="12.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SpecialBondsCAFND" xlink:label="SpecialBondsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="SpecialBondsCAFND" order="13.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CorporateBondsCAFND" xlink:label="CorporateBondsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="CorporateBondsCAFND" order="14.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SecurityInvestmentTrustBeneficiarySecuritiesCAFND" xlink:label="SecurityInvestmentTrustBeneficiarySecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="SecurityInvestmentTrustBeneficiarySecuritiesCAFND" order="15.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_InvestmentSecuritiesCAFND" xlink:label="InvestmentSecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="InvestmentSecuritiesCAFND" order="16.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OtherSecuritiesCAFND" xlink:label="OtherSecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="OtherSecuritiesCAFND" order="17.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_ParentsTrustBeneficiarySecuritiesCAFND" xlink:label="ParentsTrustBeneficiarySecuritiesCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="ParentsTrustBeneficiarySecuritiesCAFND" order="18.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CommodityCAFND" xlink:label="CommodityCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="CommodityCAFND" order="19.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CallOptionCAFND" xlink:label="CallOptionCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="CallOptionCAFND" order="20.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_PutOptionCAFND" xlink:label="PutOptionCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="PutOptionCAFND" order="21.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DerivativeEvaluationAccountCAFND" xlink:label="DerivativeEvaluationAccountCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="DerivativeEvaluationAccountCAFND" order="22.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_GensakiTransactionAccountCAFND" xlink:label="GensakiTransactionAccountCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="GensakiTransactionAccountCAFND" order="23.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsReceivableOther" xlink:label="AccountsReceivableOther"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="AccountsReceivableOther" order="24.0" preferredLabel="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DepositsForMarginTransactionCAFND" xlink:label="DepositsForMarginTransactionCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="DepositsForMarginTransactionCAFND" order="25.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_AccruedDividendReceivableCAFND" xlink:label="AccruedDividendReceivableCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="AccruedDividendReceivableCAFND" order="26.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedInterest" xlink:label="AccruedInterest"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="AccruedInterest" order="27.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_AdvancePaymentsCAFND" xlink:label="AdvancePaymentsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="AdvancePaymentsCAFND" order="28.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PrepaidExpenses" xlink:label="PrepaidExpenses"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="PrepaidExpenses" order="29.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OtherAccruedRevenueCAFND" xlink:label="OtherAccruedRevenueCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="OtherAccruedRevenueCAFND" order="30.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_GuaranteeDepositsCAFND" xlink:label="GuaranteeDepositsCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="GuaranteeDepositsCAFND" order="31.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CustomersMarginCAFND" xlink:label="CustomersMarginCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="CustomersMarginCAFND" order="32.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssetsAbstract" xlink:to="CurrentAssets" order="33.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AssetsAbstract" xlink:to="NoncurrentAssetsAbstract" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="PropertyPlantAndEquipmentAbstract" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipment" xlink:label="PropertyPlantAndEquipment"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="PropertyPlantAndEquipment" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssetsAbstract" xlink:label="IntangibleAssetsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="IntangibleAssetsAbstract" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssets" xlink:label="IntangibleAssets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="IntangibleAssetsAbstract" xlink:to="IntangibleAssets" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssetsAbstract" xlink:label="InvestmentsAndOtherAssetsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="InvestmentsAndOtherAssetsAbstract" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_GovernmentBondsNCAFND" xlink:label="GovernmentBondsNCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="GovernmentBondsNCAFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_MunicipalBondsNCAFND" xlink:label="MunicipalBondsNCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="MunicipalBondsNCAFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SpecialBondsNCAFND" xlink:label="SpecialBondsNCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="SpecialBondsNCAFND" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CorporateBondsNCAFND" xlink:label="CorporateBondsNCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="CorporateBondsNCAFND" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_InvestmentsInCapitalSilentPartnershipAndOtherNCAFND" xlink:label="InvestmentsInCapitalSilentPartnershipAndOtherNCAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="InvestmentsInCapitalSilentPartnershipAndOtherNCAFND" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssets" xlink:label="InvestmentsAndOtherAssets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="InvestmentsAndOtherAssets" order="6.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="NoncurrentAssets" order="4.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssetsAbstract" xlink:label="DeferredAssetsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AssetsAbstract" xlink:to="DeferredAssetsAbstract" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssets" xlink:label="DeferredAssets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeferredAssetsAbstract" xlink:to="DeferredAssets" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="AssetsAbstract" xlink:to="Assets" order="4.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAbstract" xlink:label="LiabilitiesAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BalanceSheetsAbstract" xlink:to="LiabilitiesAbstract" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="CurrentLiabilitiesAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="LiabilitiesAbstract" xlink:to="CurrentLiabilitiesAbstract" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SalesSecuritiesForMarginTradingCLFND" xlink:label="SalesSecuritiesForMarginTradingCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="SalesSecuritiesForMarginTradingCLFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SalesOfSecuritiesBorrowedCLFND" xlink:label="SalesOfSecuritiesBorrowedCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="SalesOfSecuritiesBorrowedCLFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_BondsSoldCLFND" xlink:label="BondsSoldCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="BondsSoldCLFND" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CallOptionCLFND" xlink:label="CallOptionCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="CallOptionCLFND" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_PutOptionCLFND" xlink:label="PutOptionCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="PutOptionCLFND" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DerivativeEvaluationAccountCLFND" xlink:label="DerivativeEvaluationAccountCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="DerivativeEvaluationAccountCLFND" order="6.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_GensakiTransactionAccountCLFND" xlink:label="GensakiTransactionAccountCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="GensakiTransactionAccountCLFND" order="7.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayable" xlink:label="ShortTermLoansPayable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="ShortTermLoansPayable" order="8.0" preferredLabel="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancesReceived" xlink:label="AdvancesReceived"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="AdvancesReceived" order="9.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_UnearnedRevenue" xlink:label="UnearnedRevenue"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="UnearnedRevenue" order="10.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="AccountsPayableOther" order="11.0" preferredLabel="http://info.edinet-fsa.go.jp/jp/fr/gaap/fnd/role/label"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_UnpaidStockSubscriptionCLFND" xlink:label="UnpaidStockSubscriptionCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="UnpaidStockSubscriptionCLFND" order="12.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_UnpaidDividendsCLFND" xlink:label="UnpaidDividendsCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="UnpaidDividendsCLFND" order="13.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_RedemptionPayableCLFND" xlink:label="RedemptionPayableCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="RedemptionPayableCLFND" order="14.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_TrusteeFeePayableCLFND" xlink:label="TrusteeFeePayableCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="TrusteeFeePayableCLFND" order="15.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_InvestmentTrustManagementFeePayableCLFND" xlink:label="InvestmentTrustManagementFeePayableCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="InvestmentTrustManagementFeePayableCLFND" order="16.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_AccruedInterestExpensesCLFND" xlink:label="AccruedInterestExpensesCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="AccruedInterestExpensesCLFND" order="17.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_CashCollateralReceivedCLFND" xlink:label="CashCollateralReceivedCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="CashCollateralReceivedCLFND" order="18.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OtherAccruedExpensesCLFND" xlink:label="OtherAccruedExpensesCLFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="OtherAccruedExpensesCLFND" order="19.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilities" xlink:label="CurrentLiabilities"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentLiabilitiesAbstract" xlink:to="CurrentLiabilities" order="20.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilitiesAbstract" xlink:label="NoncurrentLiabilitiesAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="LiabilitiesAbstract" xlink:to="NoncurrentLiabilitiesAbstract" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilities" xlink:label="NoncurrentLiabilities"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentLiabilitiesAbstract" xlink:to="NoncurrentLiabilities" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="LiabilitiesAbstract" xlink:to="Liabilities" order="3.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssetsAbstract" xlink:label="NetAssetsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BalanceSheetsAbstract" xlink:to="NetAssetsAbstract" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_PrincipalAndOtherAbstractFND" xlink:label="PrincipalAndOtherAbstractFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NetAssetsAbstract" xlink:to="PrincipalAndOtherAbstractFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_PrincipalFND" xlink:label="PrincipalFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PrincipalAndOtherAbstractFND" xlink:to="PrincipalFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_ReserveForPrincipalFND" xlink:label="ReserveForPrincipalFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PrincipalAndOtherAbstractFND" xlink:to="ReserveForPrincipalFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SurplusAbstractFND" xlink:label="SurplusAbstractFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PrincipalAndOtherAbstractFND" xlink:to="SurplusAbstractFND" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SurplusDeficitFND" xlink:label="SurplusDeficitFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="SurplusAbstractFND" xlink:to="SurplusDeficitFND" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_ReserveForDistributionFND" xlink:label="ReserveForDistributionFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="SurplusAbstractFND" xlink:to="ReserveForDistributionFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_ReserveForStockPriceFluctuationFND" xlink:label="ReserveForStockPriceFluctuationFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="SurplusAbstractFND" xlink:to="ReserveForStockPriceFluctuationFND" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_AcquiredBeneficiaryRightNAFND" xlink:label="AcquiredBeneficiaryRightNAFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PrincipalAndOtherAbstractFND" xlink:to="AcquiredBeneficiaryRightNAFND" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_PrincipalAndOtherFND" xlink:label="PrincipalAndOtherFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PrincipalAndOtherAbstractFND" xlink:to="PrincipalAndOtherFND" order="5.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustmentsAbstract" xlink:label="ValuationAndTranslationAdjustmentsAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NetAssetsAbstract" xlink:to="ValuationAndTranslationAdjustmentsAbstract" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecurities" xlink:label="ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ValuationAndTranslationAdjustmentsAbstract" xlink:to="ValuationDifferenceOnAvailableForSaleSecurities" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredGainsOrLossesOnHedges" xlink:label="DeferredGainsOrLossesOnHedges"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ValuationAndTranslationAdjustmentsAbstract" xlink:to="DeferredGainsOrLossesOnHedges" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustments" xlink:label="ValuationAndTranslationAdjustments"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ValuationAndTranslationAdjustmentsAbstract" xlink:to="ValuationAndTranslationAdjustments" order="3.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssets" xlink:label="NetAssets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NetAssetsAbstract" xlink:to="NetAssets" order="3.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BalanceSheetsAbstract" xlink:to="LiabilitiesAndNetAssets" order="4.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+  </presentationLink>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedStatementsOfIncome">
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:label="StatementsOfIncomeAndRetainedEarningsAbstractFND"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OperatingRevenueAbstractFND" xlink:label="OperatingRevenueAbstractFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="OperatingRevenueAbstractFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DividendsIncomeOIFND" xlink:label="DividendsIncomeOIFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="DividendsIncomeOIFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DividendsStockOIFND" xlink:label="DividendsStockOIFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="DividendsStockOIFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_InterestIncomeOIFND" xlink:label="InterestIncomeOIFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="InterestIncomeOIFND" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_ProfitAndLossOnBuyingAndSellingOfSecuritiesAndOtherOIFND" xlink:label="ProfitAndLossOnBuyingAndSellingOfSecuritiesAndOtherOIFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="ProfitAndLossOnBuyingAndSellingOfSecuritiesAndOtherOIFND" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_ProfitAndLossOnDealingOfDerivativesOIFND" xlink:label="ProfitAndLossOnDealingOfDerivativesOIFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="ProfitAndLossOnDealingOfDerivativesOIFND" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_ForeignExchangeGainsOrLossesOIFND" xlink:label="ForeignExchangeGainsOrLossesOIFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="ForeignExchangeGainsOrLossesOIFND" order="6.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OtherRevenueOIFND" xlink:label="OtherRevenueOIFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="OtherRevenueOIFND" order="7.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OperatingRevenueFND" xlink:label="OperatingRevenueFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueAbstractFND" xlink:to="OperatingRevenueFND" order="8.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OperatingExpensesAbstractFND" xlink:label="OperatingExpensesAbstractFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="OperatingExpensesAbstractFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SubscriptionFeeOEFND" xlink:label="SubscriptionFeeOEFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesAbstractFND" xlink:to="SubscriptionFeeOEFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_InterestExpensesOEFND" xlink:label="InterestExpensesOEFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesAbstractFND" xlink:to="InterestExpensesOEFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_TrusteeFeeOEFND" xlink:label="TrusteeFeeOEFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesAbstractFND" xlink:to="TrusteeFeeOEFND" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_InvestmentTrustManagementFeeOEFND" xlink:label="InvestmentTrustManagementFeeOEFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesAbstractFND" xlink:to="InvestmentTrustManagementFeeOEFND" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OtherExpensesOEFND" xlink:label="OtherExpensesOEFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesAbstractFND" xlink:to="OtherExpensesOEFND" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_OperatingExpensesFND" xlink:label="OperatingExpensesFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesAbstractFND" xlink:to="OperatingExpensesFND" order="6.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="OperatingIncome" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncomeAbstract" xlink:label="NonOperatingIncomeAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="NonOperatingIncomeAbstract" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncome" xlink:label="NonOperatingIncome"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NonOperatingIncomeAbstract" xlink:to="NonOperatingIncome" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpensesAbstract" xlink:label="NonOperatingExpensesAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="NonOperatingExpensesAbstract" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpenses" xlink:label="NonOperatingExpenses"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NonOperatingExpensesAbstract" xlink:to="NonOperatingExpenses" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="OrdinaryIncome" order="6.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncomeAbstract" xlink:label="ExtraordinaryIncomeAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="ExtraordinaryIncomeAbstract" order="7.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ExtraordinaryIncomeAbstract" xlink:to="ExtraordinaryIncome" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLossAbstract" xlink:label="ExtraordinaryLossAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="ExtraordinaryLossAbstract" order="8.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ExtraordinaryLossAbstract" xlink:to="ExtraordinaryLoss" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="IncomeBeforeIncomeTaxes" order="9.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="IncomeTaxesCurrent" order="10.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="IncomeTaxesDeferred" order="11.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="NetIncome" order="12.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DistributionOfNetIncomeFromPartialRedemptionsFND" xlink:label="DistributionOfNetIncomeFromPartialRedemptionsFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="DistributionOfNetIncomeFromPartialRedemptionsFND" order="13.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFND" xlink:label="IncreaseInSurplusOrDecreaseInDeficitFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="IncreaseInSurplusOrDecreaseInDeficitFND" order="15.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFromPartialRedemptionsFND" xlink:label="IncreaseInSurplusOrDecreaseInDeficitFromPartialRedemptionsFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="IncreaseInSurplusOrDecreaseInDeficitFND" xlink:to="IncreaseInSurplusOrDecreaseInDeficitFromPartialRedemptionsFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_IncreaseInSurplusOrDecreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND" xlink:label="IncreaseInSurplusOrDecreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="IncreaseInSurplusOrDecreaseInDeficitFND" xlink:to="IncreaseInSurplusOrDecreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFND" xlink:label="DecreaseInSurplusOrIncreaseInDeficitFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="DecreaseInSurplusOrIncreaseInDeficitFND" order="16.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFromPartialRedemptionsFND" xlink:label="DecreaseInSurplusOrIncreaseInDeficitFromPartialRedemptionsFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DecreaseInSurplusOrIncreaseInDeficitFND" xlink:to="DecreaseInSurplusOrIncreaseInDeficitFromPartialRedemptionsFND" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DecreaseInSurplusOrIncreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND" xlink:label="DecreaseInSurplusOrIncreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DecreaseInSurplusOrIncreaseInDeficitFND" xlink:to="DecreaseInSurplusOrIncreaseInDeficitFromAdditionalSubscriptionsForThePeriodFND" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_DividendsFND" xlink:label="DividendsFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="DividendsFND" order="17.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SurplusDeficitFND" xlink:label="SurplusDeficitFND"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="SurplusDeficitFND" order="14.0" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/fnd/2011-03-14/jpfr-t-fnd-2011-03-14.xsd#jpfr-t-fnd_SurplusDeficitFND" xlink:label="SurplusDeficitFND_2"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAndRetainedEarningsAbstractFND" xlink:to="SurplusDeficitFND_2" order="18.0" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"/>
+  </presentationLink>
+</linkbase>

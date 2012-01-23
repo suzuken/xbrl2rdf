@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">売上高を科目別に掲記する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedStatementsOfIncome" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleConsolidatedStatementsOfIncome"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedStatementsOfIncome">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StatementsOfIncomeAbstract" xlink:label="StatementsOfIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetSalesAbstract" xlink:label="NetSalesAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAbstract" xlink:to="NetSalesAbstract" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cns/2011-03-14/jpfr-t-cns-2011-03-14.xsd#jpfr-t-cns_NetSalesOfCompletedConstructionContractsCNS" xlink:label="NetSalesOfCompletedConstructionContractsCNS"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NetSalesAbstract" xlink:to="NetSalesOfCompletedConstructionContractsCNS" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cns/2011-03-14/jpfr-t-cns-2011-03-14.xsd#jpfr-t-cns_NetSalesOfSideLineBusinessCNS" xlink:label="NetSalesOfSideLineBusinessCNS"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NetSalesAbstract" xlink:to="NetSalesOfSideLineBusinessCNS" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetSales" xlink:label="NetSales"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NetSalesAbstract" xlink:to="NetSales" order="3.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CostOfSalesAbstract" xlink:label="CostOfSalesAbstract"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAbstract" xlink:to="CostOfSalesAbstract" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cns/2011-03-14/jpfr-t-cns-2011-03-14.xsd#jpfr-t-cns_CostOfSalesOfCompletedConstructionContractsCNS" xlink:label="CostOfSalesOfCompletedConstructionContractsCNS"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CostOfSalesAbstract" xlink:to="CostOfSalesOfCompletedConstructionContractsCNS" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cns/2011-03-14/jpfr-t-cns-2011-03-14.xsd#jpfr-t-cns_CostOfSalesOnSideLineBusinessCNS" xlink:label="CostOfSalesOnSideLineBusinessCNS"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CostOfSalesAbstract" xlink:to="CostOfSalesOnSideLineBusinessCNS" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CostOfSales" xlink:label="CostOfSales"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CostOfSalesAbstract" xlink:to="CostOfSales" order="3.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cns/2011-03-14/jpfr-t-cns-2011-03-14.xsd#jpfr-t-cns_GrossProfitAbstractCNS" xlink:label="GrossProfitAbstractCNS"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="StatementsOfIncomeAbstract" xlink:to="GrossProfitAbstractCNS" order="6.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cns/2011-03-14/jpfr-t-cns-2011-03-14.xsd#jpfr-t-cns_GrossProfitOnCompletedConstructionContractsCNS" xlink:label="GrossProfitOnCompletedConstructionContractsCNS"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GrossProfitAbstractCNS" xlink:to="GrossProfitOnCompletedConstructionContractsCNS" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cns/2011-03-14/jpfr-t-cns-2011-03-14.xsd#jpfr-t-cns_GrossProfitOnSideLineBusinessCNS" xlink:label="GrossProfitOnSideLineBusinessCNS"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GrossProfitAbstractCNS" xlink:to="GrossProfitOnSideLineBusinessCNS" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GrossProfit" xlink:label="GrossProfit"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="GrossProfitAbstractCNS" xlink:to="GrossProfit" order="3.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+  </presentationLink>
+</linkbase>

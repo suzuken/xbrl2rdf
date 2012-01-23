@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">貸倒引当金（流動資産）を科目別に控除する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedInterimBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleConsolidatedInterimBalanceSheets"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedInterimBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/med/2011-03-14/jpfr-t-med-2011-03-14.xsd#jpfr-t-med_OperatingAccountsReceivableMED" xlink:label="OperatingAccountsReceivableMED"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="CurrentAssets" xlink:to="OperatingAccountsReceivableMED" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/med/2011-03-14/jpfr-t-med-2011-03-14.xsd#jpfr-t-med_AllowanceForDoubtfulAccountsOperatingAccountsReceivableMED" xlink:label="AllowanceForDoubtfulAccountsOperatingAccountsReceivableMED"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingAccountsReceivableMED" xlink:to="AllowanceForDoubtfulAccountsOperatingAccountsReceivableMED" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/med/2011-03-14/jpfr-t-med-2011-03-14.xsd#jpfr-t-med_OperatingAccountsReceivableNetMED" xlink:label="OperatingAccountsReceivableNetMED"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingAccountsReceivableMED" xlink:to="OperatingAccountsReceivableNetMED" order="2.0"/>
+  </presentationLink>
+</linkbase>

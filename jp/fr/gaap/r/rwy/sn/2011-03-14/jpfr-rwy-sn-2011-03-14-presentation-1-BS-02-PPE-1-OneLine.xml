@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">有形固定資産を一括して掲記する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimBalanceSheets"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRailwayRWY" xlink:label="NoncurrentAssetsRailwayRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="NoncurrentAssetsRailwayRWY" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRelatedRWY" xlink:label="NoncurrentAssetsRelatedRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="NoncurrentAssetsRelatedRWY" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsAffiliatedRWY" xlink:label="NoncurrentAssetsAffiliatedRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="NoncurrentAssetsAffiliatedRWY" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ConstructionInProgressRWY" xlink:label="ConstructionInProgressRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="NoncurrentAssetsAbstract" xlink:to="ConstructionInProgressRWY" order="8.0"/>
+  </presentationLink>
+</linkbase>

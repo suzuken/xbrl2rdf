@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">電気事業財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleELELabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/negativeLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleELENegativeLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/positiveOrNegativeLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleELEPositiveOrNegativeLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleELETotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <label xlink:type="resource" xlink:label="label_AllowanceForDoubtfulAccountsCA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_AllowanceForDoubtfulAccountsCA">貸倒引当金（貸方）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="label_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <label xlink:type="resource" xlink:label="label_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_AllowanceForDoubtfulAccountsIOAByGroup">貸倒引当金（貸方）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="label_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <label xlink:type="resource" xlink:label="label_Assets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_Assets">資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Assets" xlink:to="label_Assets"/>
+    <label xlink:type="resource" xlink:label="label_Assets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/totalLabel" xml:lang="ja" id="label_Assets_2">合計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Assets" xlink:to="label_Assets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_LiabilitiesAndNetAssets">負債純資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/totalLabel" xml:lang="ja" id="label_LiabilitiesAndNetAssets_2">合計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <label xlink:type="resource" xlink:label="label_OrdinaryIncome" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_OrdinaryIncome">当期経常利益</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OrdinaryIncome" xlink:to="label_OrdinaryIncome"/>
+    <label xlink:type="resource" xlink:label="label_OrdinaryIncome_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/negativeLabel" xml:lang="ja" id="label_OrdinaryIncome_2">当期経常損失（△）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OrdinaryIncome" xlink:to="label_OrdinaryIncome_2"/>
+    <label xlink:type="resource" xlink:label="label_OrdinaryIncome_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/positiveOrNegativeLabel" xml:lang="ja" id="label_OrdinaryIncome_3">当期経常利益又は当期経常損失（△）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OrdinaryIncome" xlink:to="label_OrdinaryIncome_3"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <label xlink:type="resource" xlink:label="label_IncomeTaxesCurrent" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_IncomeTaxesCurrent">法人税等</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeTaxesCurrent" xlink:to="label_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MinorityInterestsInIncome" xlink:label="MinorityInterestsInIncome"/>
+    <label xlink:type="resource" xlink:label="label_MinorityInterestsInIncome" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_MinorityInterestsInIncome">少数株主持分利益</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="MinorityInterestsInIncome" xlink:to="label_MinorityInterestsInIncome"/>
+    <label xlink:type="resource" xlink:label="label_MinorityInterestsInIncome_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/negativeLabel" xml:lang="ja" id="label_MinorityInterestsInIncome_2">少数株主持分損失（△）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="MinorityInterestsInIncome" xlink:to="label_MinorityInterestsInIncome_2"/>
+    <label xlink:type="resource" xlink:label="label_MinorityInterestsInIncome_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/positiveOrNegativeLabel" xml:lang="ja" id="label_MinorityInterestsInIncome_3">少数株主持分利益又は少数株主持分損失（△）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="MinorityInterestsInIncome" xlink:to="label_MinorityInterestsInIncome_3"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeMinorityInterests" xlink:label="IncomeBeforeMinorityInterests"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeMinorityInterests" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/label" xml:lang="ja" id="label_IncomeBeforeMinorityInterests">少数株主持分損益調整前当期純利益</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeMinorityInterests" xlink:to="label_IncomeBeforeMinorityInterests"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeMinorityInterests_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/negativeLabel" xml:lang="ja" id="label_IncomeBeforeMinorityInterests_2">少数株主持分損益調整前当期純損失（△）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeMinorityInterests" xlink:to="label_IncomeBeforeMinorityInterests_2"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeMinorityInterests_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/ele/role/positiveOrNegativeLabel" xml:lang="ja" id="label_IncomeBeforeMinorityInterests_3">少数株主持分損益調整前当期純利益又は少数株主持分損益調整前当期純損失（△）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeMinorityInterests" xlink:to="label_IncomeBeforeMinorityInterests_3"/>
+  </labelLink>
+</linkbase>

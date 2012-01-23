@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">リース事業財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleLEALabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <label xlink:type="resource" xlink:label="label_OtherCA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_OtherCA">Other current assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCA" xlink:to="label_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIOA" xlink:label="OtherIOA"/>
+    <label xlink:type="resource" xlink:label="label_OtherIOA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_OtherIOA">Other investment and other assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherIOA" xlink:to="label_OtherIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_OtherCL">Other current liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCL" xlink:to="label_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherNCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_OtherNCL">Other noncurrent liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherNCL" xlink:to="label_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNOI" xlink:label="OtherNOI"/>
+    <label xlink:type="resource" xlink:label="label_OtherNOI" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_OtherNOI">Other</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherNOI" xlink:to="label_OtherNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNOE" xlink:label="OtherNOE"/>
+    <label xlink:type="resource" xlink:label="label_OtherNOE" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_OtherNOE">Other</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherNOE" xlink:to="label_OtherNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsPPE" xlink:label="LeaseAssetsPPE"/>
+    <label xlink:type="resource" xlink:label="label_LeaseAssetsPPE" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_LeaseAssetsPPE">Lease assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LeaseAssetsPPE" xlink:to="label_LeaseAssetsPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsNetPPE" xlink:label="LeaseAssetsNetPPE"/>
+    <label xlink:type="resource" xlink:label="label_LeaseAssetsNetPPE" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_LeaseAssetsNetPPE">Lease assets, net</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LeaseAssetsNetPPE" xlink:to="label_LeaseAssetsNetPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsIA" xlink:label="LeaseAssetsIA"/>
+    <label xlink:type="resource" xlink:label="label_LeaseAssetsIA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/lea/role/label" xml:lang="en" id="label_LeaseAssetsIA">Lease assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LeaseAssetsIA" xlink:to="label_LeaseAssetsIA"/>
+  </labelLink>
+</linkbase>

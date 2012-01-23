@@ -1,0 +1,1270 @@
+<?xml version="1.0"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">建設保証業財務諸表語彙</documentation>
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssetsAbstract" xlink:to="reference_CurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndDeposits" xlink:label="CashAndDeposits"/>
+    <reference xlink:type="resource" xlink:label="reference_CashAndDeposits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashAndDeposits" xlink:to="reference_CashAndDeposits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesReceivableTrade" xlink:label="NotesReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesReceivableTrade" xlink:to="reference_NotesReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermInvestmentSecurities" xlink:label="ShortTermInvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermInvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermInvestmentSecurities" xlink:to="reference_ShortTermInvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PrepaidExpenses" xlink:label="PrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_PrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PrepaidExpenses" xlink:to="reference_PrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsCA" xlink:label="DeferredTaxAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsCA" xlink:to="reference_DeferredTaxAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedIncome" xlink:label="AccruedIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedIncome" xlink:to="reference_AccruedIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansReceivable" xlink:label="ShortTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansReceivable" xlink:to="reference_ShortTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsReceivableOther" xlink:label="AccountsReceivableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableOther" xlink:to="reference_AccountsReceivableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCA" xlink:to="reference_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="reference_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssets" xlink:to="reference_CurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAbstract" xlink:to="reference_NoncurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="reference_PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <reference xlink:type="resource" xlink:label="reference_Buildings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Buildings" xlink:to="reference_Buildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Structures" xlink:label="Structures"/>
+    <reference xlink:type="resource" xlink:label="reference_Structures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Structures" xlink:to="reference_Structures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Vehicles" xlink:label="Vehicles"/>
+    <reference xlink:type="resource" xlink:label="reference_Vehicles" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Vehicles" xlink:to="reference_Vehicles"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Land" xlink:label="Land"/>
+    <reference xlink:type="resource" xlink:label="reference_Land" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Land" xlink:to="reference_Land"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherPPE" xlink:label="OtherPPE"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherPPE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherPPE" xlink:to="reference_OtherPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationPPEByGroup" xlink:label="AccumulatedDepreciationPPEByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationPPEByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationPPEByGroup" xlink:to="reference_AccumulatedDepreciationPPEByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipment" xlink:label="PropertyPlantAndEquipment"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipment" xlink:to="reference_PropertyPlantAndEquipment"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssetsAbstract" xlink:label="IntangibleAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsAbstract" xlink:to="reference_IntangibleAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseholdRight" xlink:label="LeaseholdRight"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseholdRight" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseholdRight" xlink:to="reference_LeaseholdRight"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIA" xlink:label="OtherIA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIA" xlink:to="reference_OtherIA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssets" xlink:label="IntangibleAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssets" xlink:to="reference_IntangibleAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssetsAbstract" xlink:label="InvestmentsAndOtherAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="reference_InvestmentsAndOtherAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentSecurities" xlink:label="InvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentSecurities" xlink:to="reference_InvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StocksOfSubsidiariesAndAffiliates" xlink:label="StocksOfSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_StocksOfSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StocksOfSubsidiariesAndAffiliates" xlink:to="reference_StocksOfSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivable" xlink:label="LongTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivable" xlink:to="reference_LongTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsIOA" xlink:label="DeferredTaxAssetsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsIOA" xlink:to="reference_DeferredTaxAssetsIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIOA" xlink:label="OtherIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIOA" xlink:to="reference_OtherIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="reference_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssets" xlink:label="InvestmentsAndOtherAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssets" xlink:to="reference_InvestmentsAndOtherAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssets" xlink:to="reference_NoncurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssetsAbstract" xlink:label="DeferredAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssetsAbstract" xlink:to="reference_DeferredAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredOrganizationExpensesDA" xlink:label="DeferredOrganizationExpensesDA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredOrganizationExpensesDA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredOrganizationExpensesDA" xlink:to="reference_DeferredOrganizationExpensesDA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BusinessCommencementExpensesDA" xlink:label="BusinessCommencementExpensesDA"/>
+    <reference xlink:type="resource" xlink:label="reference_BusinessCommencementExpensesDA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BusinessCommencementExpensesDA" xlink:to="reference_BusinessCommencementExpensesDA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondIssuanceCostDA" xlink:label="BondIssuanceCostDA"/>
+    <reference xlink:type="resource" xlink:label="reference_BondIssuanceCostDA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BondIssuanceCostDA" xlink:to="reference_BondIssuanceCostDA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DevelopmentExpensesDA" xlink:label="DevelopmentExpensesDA"/>
+    <reference xlink:type="resource" xlink:label="reference_DevelopmentExpensesDA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DevelopmentExpensesDA" xlink:to="reference_DevelopmentExpensesDA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssets" xlink:label="DeferredAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssets" xlink:to="reference_DeferredAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <reference xlink:type="resource" xlink:label="reference_Assets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Assets" xlink:to="reference_Assets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCL" xlink:to="reference_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNCL" xlink:to="reference_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalStock" xlink:label="CapitalStock"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalStock" xlink:to="reference_CapitalStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToShares" xlink:label="DepositForSubscriptionsToShares"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForSubscriptionsToShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForSubscriptionsToShares" xlink:to="reference_DepositForSubscriptionsToShares"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplusAbstract" xlink:label="CapitalSurplusAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplusAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplusAbstract" xlink:to="reference_CapitalSurplusAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalCapitalSurplus" xlink:label="LegalCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalCapitalSurplus" xlink:to="reference_LegalCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplus" xlink:label="CapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplus" xlink:to="reference_CapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsAbstract" xlink:label="RetainedEarningsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsAbstract" xlink:to="reference_RetainedEarningsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalRetainedEarnings" xlink:label="LegalRetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalRetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalRetainedEarnings" xlink:to="reference_LegalRetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarnings" xlink:label="RetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarnings" xlink:to="reference_RetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RevaluationReserveForLand" xlink:label="RevaluationReserveForLand"/>
+    <reference xlink:type="resource" xlink:label="reference_RevaluationReserveForLand" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RevaluationReserveForLand" xlink:to="reference_RevaluationReserveForLand"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecurities" xlink:label="ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationDifferenceOnAvailableForSaleSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationDifferenceOnAvailableForSaleSecurities" xlink:to="reference_ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TreasuryStock" xlink:label="TreasuryStock"/>
+    <reference xlink:type="resource" xlink:label="reference_TreasuryStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TreasuryStock" xlink:to="reference_TreasuryStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncome" xlink:to="reference_OperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestOnSecuritiesNOI" xlink:label="InterestOnSecuritiesNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnSecuritiesNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnSecuritiesNOI" xlink:to="reference_InterestOnSecuritiesNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnSalesOfSecuritiesNOI" xlink:label="GainOnSalesOfSecuritiesNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnSalesOfSecuritiesNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnSalesOfSecuritiesNOI" xlink:to="reference_GainOnSalesOfSecuritiesNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestOnBondsNOE" xlink:label="InterestOnBondsNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnBondsNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnBondsNOE" xlink:to="reference_InterestOnBondsNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfBondIssuanceCostNOE" xlink:label="AmortizationOfBondIssuanceCostNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfBondIssuanceCostNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfBondIssuanceCostNOE" xlink:to="reference_AmortizationOfBondIssuanceCostNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnSalesOfSecuritiesNOE" xlink:label="LossOnSalesOfSecuritiesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnSalesOfSecuritiesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnSalesOfSecuritiesNOE" xlink:to="reference_LossOnSalesOfSecuritiesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfDeferredOrganizationExpensesNOE" xlink:label="AmortizationOfDeferredOrganizationExpensesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfDeferredOrganizationExpensesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfDeferredOrganizationExpensesNOE" xlink:to="reference_AmortizationOfDeferredOrganizationExpensesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OrdinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OrdinaryIncome" xlink:to="reference_OrdinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnSalesOfNoncurrentAssetsEI" xlink:label="GainOnSalesOfNoncurrentAssetsEI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnSalesOfNoncurrentAssetsEI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnSalesOfNoncurrentAssetsEI" xlink:to="reference_GainOnSalesOfNoncurrentAssetsEI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnSalesOfNoncurrentAssetsEL" xlink:label="LossOnSalesOfNoncurrentAssetsEL"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnSalesOfNoncurrentAssetsEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnSalesOfNoncurrentAssetsEL" xlink:to="reference_LossOnSalesOfNoncurrentAssetsEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesCurrent" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesCurrent" xlink:to="reference_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesDeferred" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesDeferred" xlink:to="reference_IncomeTaxesDeferred"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncome" xlink:to="reference_NetIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetsAbstract" xlink:label="AssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetsAbstract" xlink:to="reference_AssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ConstructionInProgress" xlink:label="ConstructionInProgress"/>
+    <reference xlink:type="resource" xlink:label="reference_ConstructionInProgress" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ConstructionInProgress" xlink:to="reference_ConstructionInProgress"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivableFromSubsidiariesAndAffiliates" xlink:label="LongTermLoansReceivableFromSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivableFromSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivableFromSubsidiariesAndAffiliates" xlink:to="reference_LongTermLoansReceivableFromSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAbstract" xlink:label="LiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAbstract" xlink:to="reference_LiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="CurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilitiesAbstract" xlink:to="reference_CurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesPayableTrade" xlink:label="NotesPayableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesPayableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesPayableTrade" xlink:to="reference_NotesPayableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayable" xlink:label="ShortTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansPayable" xlink:to="reference_ShortTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableOther" xlink:to="reference_AccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedExpenses" xlink:label="AccruedExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedExpenses" xlink:to="reference_AccruedExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesPayable" xlink:label="IncomeTaxesPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesPayable" xlink:to="reference_IncomeTaxesPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesCL" xlink:label="DeferredTaxLiabilitiesCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesCL" xlink:to="reference_DeferredTaxLiabilitiesCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancesReceived" xlink:label="AdvancesReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesReceived" xlink:to="reference_AdvancesReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositsReceived" xlink:label="DepositsReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceived" xlink:to="reference_DepositsReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_UnearnedRevenue" xlink:label="UnearnedRevenue"/>
+    <reference xlink:type="resource" xlink:label="reference_UnearnedRevenue" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnearnedRevenue" xlink:to="reference_UnearnedRevenue"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForBonuses" xlink:label="ProvisionForBonuses"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForBonuses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForBonuses" xlink:to="reference_ProvisionForBonuses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilities" xlink:label="CurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilities" xlink:to="reference_CurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilitiesAbstract" xlink:label="NoncurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilitiesAbstract" xlink:to="reference_NoncurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondsPayable" xlink:label="BondsPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_BondsPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BondsPayable" xlink:to="reference_BondsPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayable" xlink:label="LongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayable" xlink:to="reference_LongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermAccountsPayableOther" xlink:label="LongTermAccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermAccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermAccountsPayableOther" xlink:to="reference_LongTermAccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesNCL" xlink:label="DeferredTaxLiabilitiesNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesNCL" xlink:to="reference_DeferredTaxLiabilitiesNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForRetirementBenefits" xlink:label="ProvisionForRetirementBenefits"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForRetirementBenefits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForRetirementBenefits" xlink:to="reference_ProvisionForRetirementBenefits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilities" xlink:label="NoncurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilities" xlink:to="reference_NoncurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_Liabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Liabilities" xlink:to="reference_Liabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCapitalSurplus" xlink:label="OtherCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCapitalSurplus" xlink:to="reference_OtherCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAndNetAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAndNetAssets" xlink:to="reference_LiabilitiesAndNetAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssetsAbstract" xlink:label="NetAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetAssetsAbstract" xlink:to="reference_NetAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShareholdersEquityAbstract" xlink:label="ShareholdersEquityAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ShareholdersEquityAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdersEquityAbstract" xlink:to="reference_ShareholdersEquityAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsBroughtForward" xlink:label="RetainedEarningsBroughtForward"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsBroughtForward" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsBroughtForward" xlink:to="reference_RetainedEarningsBroughtForward"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShareholdersEquity" xlink:label="ShareholdersEquity"/>
+    <reference xlink:type="resource" xlink:label="reference_ShareholdersEquity" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdersEquity" xlink:to="reference_ShareholdersEquity"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustmentsAbstract" xlink:label="ValuationAndTranslationAdjustmentsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustmentsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustmentsAbstract" xlink:to="reference_ValuationAndTranslationAdjustmentsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredGainsOrLossesOnHedges" xlink:label="DeferredGainsOrLossesOnHedges"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredGainsOrLossesOnHedges" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredGainsOrLossesOnHedges" xlink:to="reference_DeferredGainsOrLossesOnHedges"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustments" xlink:label="ValuationAndTranslationAdjustments"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustments" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustments" xlink:to="reference_ValuationAndTranslationAdjustments"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SubscriptionRightsToShares" xlink:label="SubscriptionRightsToShares"/>
+    <reference xlink:type="resource" xlink:label="reference_SubscriptionRightsToShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SubscriptionRightsToShares" xlink:to="reference_SubscriptionRightsToShares"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssets" xlink:label="NetAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NetAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetAssets" xlink:to="reference_NetAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Goodwill" xlink:label="Goodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_Goodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Goodwill" xlink:to="reference_Goodwill"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DirectorsCompensationsSGA" xlink:label="DirectorsCompensationsSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_DirectorsCompensationsSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DirectorsCompensationsSGA" xlink:to="reference_DirectorsCompensationsSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_WelfareExpensesSGA" xlink:label="WelfareExpensesSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_WelfareExpensesSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WelfareExpensesSGA" xlink:to="reference_WelfareExpensesSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TaxesAndDuesSGA" xlink:label="TaxesAndDuesSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_TaxesAndDuesSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TaxesAndDuesSGA" xlink:to="reference_TaxesAndDuesSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepreciationSGA" xlink:label="DepreciationSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_DepreciationSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepreciationSGA" xlink:to="reference_DepreciationSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncomeAbstract" xlink:label="NonOperatingIncomeAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncomeAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncomeAbstract" xlink:to="reference_NonOperatingIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestIncomeNOI" xlink:label="InterestIncomeNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestIncomeNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestIncomeNOI" xlink:to="reference_InterestIncomeNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsIncomeNOI" xlink:label="DividendsIncomeNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_DividendsIncomeNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DividendsIncomeNOI" xlink:to="reference_DividendsIncomeNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncome" xlink:label="NonOperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncome" xlink:to="reference_NonOperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpensesAbstract" xlink:label="NonOperatingExpensesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpensesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpensesAbstract" xlink:to="reference_NonOperatingExpensesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfBusinessCommencementExpensesNOE" xlink:label="AmortizationOfBusinessCommencementExpensesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfBusinessCommencementExpensesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfBusinessCommencementExpensesNOE" xlink:to="reference_AmortizationOfBusinessCommencementExpensesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpenses" xlink:label="NonOperatingExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpenses" xlink:to="reference_NonOperatingExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncomeAbstract" xlink:label="ExtraordinaryIncomeAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncomeAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncomeAbstract" xlink:to="reference_ExtraordinaryIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncome" xlink:to="reference_ExtraordinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLossAbstract" xlink:label="ExtraordinaryLossAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLossAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLossAbstract" xlink:to="reference_ExtraordinaryLossAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnDisasterEL" xlink:label="LossOnDisasterEL"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnDisasterEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnDisasterEL" xlink:to="reference_LossOnDisasterEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLoss" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLoss" xlink:to="reference_ExtraordinaryLoss"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeBeforeIncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="reference_IncomeBeforeIncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxes" xlink:label="IncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxes" xlink:to="reference_IncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToTreasuryStock" xlink:label="DepositForSubscriptionsToTreasuryStock"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForSubscriptionsToTreasuryStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForSubscriptionsToTreasuryStock" xlink:to="reference_DepositForSubscriptionsToTreasuryStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StockIssuanceCostDA" xlink:label="StockIssuanceCostDA"/>
+    <reference xlink:type="resource" xlink:label="reference_StockIssuanceCostDA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockIssuanceCostDA" xlink:to="reference_StockIssuanceCostDA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfStockIssuanceCostNOE" xlink:label="AmortizationOfStockIssuanceCostNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfStockIssuanceCostNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfStockIssuanceCostNOE" xlink:to="reference_AmortizationOfStockIssuanceCostNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherRetainedEarningsAbstract" xlink:label="OtherRetainedEarningsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherRetainedEarningsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherRetainedEarningsAbstract" xlink:to="reference_OtherRetainedEarningsAbstract"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_AccruedGuaranteeCACNA" xlink:label="AccruedGuaranteeCACNA"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedGuaranteeCACNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedGuaranteeCACNA" xlink:to="reference_AccruedGuaranteeCACNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_FurnitureAndEquipmentPPECNA" xlink:label="FurnitureAndEquipmentPPECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_FurnitureAndEquipmentPPECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FurnitureAndEquipmentPPECNA" xlink:to="reference_FurnitureAndEquipmentPPECNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_DepositsForLeasedRoomsIOACNA" xlink:label="DepositsForLeasedRoomsIOACNA"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsForLeasedRoomsIOACNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsForLeasedRoomsIOACNA" xlink:to="reference_DepositsForLeasedRoomsIOACNA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivableFromEmployees" xlink:label="LongTermLoansReceivableFromEmployees"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivableFromEmployees" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivableFromEmployees" xlink:to="reference_LongTermLoansReceivableFromEmployees"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ReserveForOutstandingClaimsCLCNA" xlink:label="ReserveForOutstandingClaimsCLCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_ReserveForOutstandingClaimsCLCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReserveForOutstandingClaimsCLCNA" xlink:to="reference_ReserveForOutstandingClaimsCLCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_LiabilityReservesCLCNA" xlink:label="LiabilityReservesCLCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilityReservesCLCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilityReservesCLCNA" xlink:to="reference_LiabilityReservesCLCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_GuaranteeIncomeORCNA" xlink:label="GuaranteeIncomeORCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeIncomeORCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeIncomeORCNA" xlink:to="reference_GuaranteeIncomeORCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_PerformanceOfGuaranteeObligationOECNA" xlink:label="PerformanceOfGuaranteeObligationOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_PerformanceOfGuaranteeObligationOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PerformanceOfGuaranteeObligationOECNA" xlink:to="reference_PerformanceOfGuaranteeObligationOECNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ProvisionOfReserveForOutstandingClaimsOECNA" xlink:label="ProvisionOfReserveForOutstandingClaimsOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionOfReserveForOutstandingClaimsOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionOfReserveForOutstandingClaimsOECNA" xlink:to="reference_ProvisionOfReserveForOutstandingClaimsOECNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ReversalOfReserveForOutstandingClaimsORCNA" xlink:label="ReversalOfReserveForOutstandingClaimsORCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_ReversalOfReserveForOutstandingClaimsORCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReversalOfReserveForOutstandingClaimsORCNA" xlink:to="reference_ReversalOfReserveForOutstandingClaimsORCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ProvisionOfLiabilityReservesOECNA" xlink:label="ProvisionOfLiabilityReservesOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionOfLiabilityReservesOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionOfLiabilityReservesOECNA" xlink:to="reference_ProvisionOfLiabilityReservesOECNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ReversalOfLiabilityReservesORCNA" xlink:label="ReversalOfLiabilityReservesORCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_ReversalOfLiabilityReservesORCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReversalOfLiabilityReservesORCNA" xlink:to="reference_ReversalOfLiabilityReservesORCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OperatingRevenueCNA" xlink:label="OperatingRevenueCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueCNA" xlink:to="reference_OperatingRevenueCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OperatingExpensesGeneralAbstractCNA" xlink:label="OperatingExpensesGeneralAbstractCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesGeneralAbstractCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesGeneralAbstractCNA" xlink:to="reference_OperatingExpensesGeneralAbstractCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_SalariesAndAllowancesOECNA" xlink:label="SalariesAndAllowancesOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_SalariesAndAllowancesOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SalariesAndAllowancesOECNA" xlink:to="reference_SalariesAndAllowancesOECNA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetirementPaymentsSGA" xlink:label="RetirementPaymentsSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_RetirementPaymentsSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetirementPaymentsSGA" xlink:to="reference_RetirementPaymentsSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OfficeCostSGA" xlink:label="OfficeCostSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_OfficeCostSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OfficeCostSGA" xlink:to="reference_OfficeCostSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TravelingAndCommunicationExpensesSGA" xlink:label="TravelingAndCommunicationExpensesSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_TravelingAndCommunicationExpensesSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TravelingAndCommunicationExpensesSGA" xlink:to="reference_TravelingAndCommunicationExpensesSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RentsSGA" xlink:label="RentsSGA"/>
+    <reference xlink:type="resource" xlink:label="reference_RentsSGA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RentsSGA" xlink:to="reference_RentsSGA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_AssociationAndOtherMembershipFeeSGACNA" xlink:label="AssociationAndOtherMembershipFeeSGACNA"/>
+    <reference xlink:type="resource" xlink:label="reference_AssociationAndOtherMembershipFeeSGACNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssociationAndOtherMembershipFeeSGACNA" xlink:to="reference_AssociationAndOtherMembershipFeeSGACNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OtherOECNA" xlink:label="OtherOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherOECNA" xlink:to="reference_OtherOECNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OperatingExpensesGeneralCNA" xlink:label="OperatingExpensesGeneralCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesGeneralCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesGeneralCNA" xlink:to="reference_OperatingExpensesGeneralCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_MiscellaneousIncomeNOICNA" xlink:label="MiscellaneousIncomeNOICNA"/>
+    <reference xlink:type="resource" xlink:label="reference_MiscellaneousIncomeNOICNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MiscellaneousIncomeNOICNA" xlink:to="reference_MiscellaneousIncomeNOICNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_AmortizationOfDevelopmentExpensesNOECNA" xlink:label="AmortizationOfDevelopmentExpensesNOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfDevelopmentExpensesNOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfDevelopmentExpensesNOECNA" xlink:to="reference_AmortizationOfDevelopmentExpensesNOECNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_MiscellaneousExpensesNOECNA" xlink:label="MiscellaneousExpensesNOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_MiscellaneousExpensesNOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MiscellaneousExpensesNOECNA" xlink:to="reference_MiscellaneousExpensesNOECNA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherEI" xlink:label="OtherEI"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherEI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherEI" xlink:to="reference_OtherEI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherEL" xlink:label="OtherEL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（6）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherEL" xlink:to="reference_OtherEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NegativeGoodwill" xlink:label="NegativeGoodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_NegativeGoodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NegativeGoodwill" xlink:to="reference_NegativeGoodwill"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OperatingRevenueAbstractCNA" xlink:label="OperatingRevenueAbstractCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueAbstractCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueAbstractCNA" xlink:to="reference_OperatingRevenueAbstractCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OperatingExpensesAbstractCNA" xlink:label="OperatingExpensesAbstractCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesAbstractCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesAbstractCNA" xlink:to="reference_OperatingExpensesAbstractCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OperatingExpensesCNA" xlink:label="OperatingExpensesCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesCNA" xlink:to="reference_OperatingExpensesCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_OtherORCNA" xlink:label="OtherORCNA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherORCNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherORCNA" xlink:to="reference_OtherORCNA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_InterestAndDiscountsExpensesNOECNA" xlink:label="InterestAndDiscountsExpensesNOECNA"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestAndDiscountsExpensesNOECNA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>公共工事の前払金保証事業に関する法律施行規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>様式第2号　別表（5）</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestAndDiscountsExpensesNOECNA" xlink:to="reference_InterestAndDiscountsExpensesNOECNA"/>
+  </referenceLink>
+</linkbase>

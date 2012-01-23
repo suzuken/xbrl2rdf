@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">資産流動化業財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleLIQLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleLIQTotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <label xlink:type="resource" xlink:label="label_Buildings" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_Buildings">Buildings</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Buildings" xlink:to="label_Buildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsNet" xlink:label="BuildingsNet"/>
+    <label xlink:type="resource" xlink:label="label_BuildingsNet" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_BuildingsNet">Buildings, net</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="BuildingsNet" xlink:to="label_BuildingsNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <label xlink:type="resource" xlink:label="label_Assets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_Assets">Assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Assets" xlink:to="label_Assets"/>
+    <label xlink:type="resource" xlink:label="label_Assets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/totalLabel" xml:lang="en" id="label_Assets_2">Total assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Assets" xlink:to="label_Assets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <label xlink:type="resource" xlink:label="label_Liabilities" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_Liabilities">Liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Liabilities" xlink:to="label_Liabilities"/>
+    <label xlink:type="resource" xlink:label="label_Liabilities_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/totalLabel" xml:lang="en" id="label_Liabilities_2">Total liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Liabilities" xlink:to="label_Liabilities_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssets" xlink:label="NetAssets"/>
+    <label xlink:type="resource" xlink:label="label_NetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_NetAssets">Net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetAssets" xlink:to="label_NetAssets"/>
+    <label xlink:type="resource" xlink:label="label_NetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/totalLabel" xml:lang="en" id="label_NetAssets_2">Total net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetAssets" xlink:to="label_NetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_LiabilitiesAndNetAssets">Liabilities and net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/totalLabel" xml:lang="en" id="label_LiabilitiesAndNetAssets_2">Total liabilities and net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityAFS"/>
+    <label xlink:type="resource" xlink:label="label_NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_NetChangesOfItemsOtherThanShareholdersEquityAFS">Net changes of items other than members' equity</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityAFS" xlink:to="label_NetChangesOfItemsOtherThanShareholdersEquityAFS"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges"/>
+    <label xlink:type="resource" xlink:label="label_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges">Net changes of items other than members' equity</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges" xlink:to="label_NetChangesOfItemsOtherThanShareholdersEquityDeferredGainOrLossOnHedges"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityVTA"/>
+    <label xlink:type="resource" xlink:label="label_NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_NetChangesOfItemsOtherThanShareholdersEquityVTA">Net changes of items other than members' equity</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityVTA" xlink:to="label_NetChangesOfItemsOtherThanShareholdersEquityVTA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetChangesOfItemsOtherThanShareholdersEquityNA" xlink:label="NetChangesOfItemsOtherThanShareholdersEquityNA"/>
+    <label xlink:type="resource" xlink:label="label_NetChangesOfItemsOtherThanShareholdersEquityNA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_NetChangesOfItemsOtherThanShareholdersEquityNA">Net changes of items other than members' equity</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetChangesOfItemsOtherThanShareholdersEquityNA" xlink:to="label_NetChangesOfItemsOtherThanShareholdersEquityNA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherOperatingRevenue1RevOA" xlink:label="OtherOperatingRevenue1RevOA"/>
+    <label xlink:type="resource" xlink:label="label_OtherOperatingRevenue1RevOA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/liq/role/label" xml:lang="en" id="label_OtherOperatingRevenue1RevOA">Other operating revenue</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherOperatingRevenue1RevOA" xlink:to="label_OtherOperatingRevenue1RevOA"/>
+  </labelLink>
+</linkbase>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">電気通信事業財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleELCLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleELCTotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <label xlink:type="resource" xlink:label="label_OtherCA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_OtherCA">Other current assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCA" xlink:to="label_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <label xlink:type="resource" xlink:label="label_AllowanceForDoubtfulAccountsCA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_AllowanceForDoubtfulAccountsCA">Allowance for doubtful accounts</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="label_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIOA" xlink:label="OtherIOA"/>
+    <label xlink:type="resource" xlink:label="label_OtherIOA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_OtherIOA">Other investment and other assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherIOA" xlink:to="label_OtherIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <label xlink:type="resource" xlink:label="label_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_AllowanceForDoubtfulAccountsIOAByGroup">Allowance for doubtful accounts</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="label_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_OtherCL">Other current liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCL" xlink:to="label_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherNCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_OtherNCL">Other noncurrent liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherNCL" xlink:to="label_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_LiabilitiesAndNetAssets">Liabilities and net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/totalLabel" xml:lang="en" id="label_LiabilitiesAndNetAssets_2">Total liabilities and net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondIssuanceCostOpeCF" xlink:label="BondIssuanceCostOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_BondIssuanceCostOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_BondIssuanceCostOpeCF">Bond issuance cost</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="BondIssuanceCostOpeCF" xlink:to="label_BondIssuanceCostOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfBondIssuanceCostOpeCF" xlink:label="AmortizationOfBondIssuanceCostOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_AmortizationOfBondIssuanceCostOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_AmortizationOfBondIssuanceCostOpeCF">Amortization of bond issuance cost</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AmortizationOfBondIssuanceCostOpeCF" xlink:to="label_AmortizationOfBondIssuanceCostOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondIssuanceCostDA" xlink:label="BondIssuanceCostDA"/>
+    <label xlink:type="resource" xlink:label="label_BondIssuanceCostDA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_BondIssuanceCostDA">Bond issuance cost</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="BondIssuanceCostDA" xlink:to="label_BondIssuanceCostDA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AmortizationOfBondIssuanceCostNOE" xlink:label="AmortizationOfBondIssuanceCostNOE"/>
+    <label xlink:type="resource" xlink:label="label_AmortizationOfBondIssuanceCostNOE" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/elc/role/label" xml:lang="en" id="label_AmortizationOfBondIssuanceCostNOE">Amortization of bond issuance cost</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AmortizationOfBondIssuanceCostNOE" xlink:to="label_AmortizationOfBondIssuanceCostNOE"/>
+  </labelLink>
+</linkbase>

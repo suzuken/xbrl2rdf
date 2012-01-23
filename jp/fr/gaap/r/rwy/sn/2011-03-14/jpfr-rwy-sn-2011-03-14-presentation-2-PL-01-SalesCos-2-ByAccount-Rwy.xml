@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">営業収益及び営業費を科目別に掲記する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimStatementsOfIncome"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimStatementsOfIncome">
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingIncomeRailwayAbstractRWY" xlink:label="OperatingIncomeRailwayAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRailwayAbstractRWY" xlink:label="OperatingRevenueRailwayAbstractRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingIncomeRailwayAbstractRWY" xlink:to="OperatingRevenueRailwayAbstractRWY" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PassengerTransportationORRWY" xlink:label="PassengerTransportationORRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueRailwayAbstractRWY" xlink:to="PassengerTransportationORRWY" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_FreightTransportationORRWY" xlink:label="FreightTransportationORRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueRailwayAbstractRWY" xlink:to="FreightTransportationORRWY" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TrackageRevenueORRWY" xlink:label="TrackageRevenueORRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueRailwayAbstractRWY" xlink:to="TrackageRevenueORRWY" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TransferOfRailroadLineORRWY" xlink:label="TransferOfRailroadLineORRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueRailwayAbstractRWY" xlink:to="TransferOfRailroadLineORRWY" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_MiscellaneousIncomeOfTransportationORRWY" xlink:label="MiscellaneousIncomeOfTransportationORRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueRailwayAbstractRWY" xlink:to="MiscellaneousIncomeOfTransportationORRWY" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRailwayRWY" xlink:label="OperatingRevenueRailwayRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueRailwayAbstractRWY" xlink:to="OperatingRevenueRailwayRWY" order="6.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRailwayAbstractRWY" xlink:label="OperatingExpensesRailwayAbstractRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingIncomeRailwayAbstractRWY" xlink:to="OperatingExpensesRailwayAbstractRWY" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TransportationExpensesOERWY" xlink:label="TransportationExpensesOERWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="TransportationExpensesOERWY" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AdvertisingExpensesOERWY" xlink:label="AdvertisingExpensesOERWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="AdvertisingExpensesOERWY" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_WelfareFacilitiesExpensesOERWY" xlink:label="WelfareFacilitiesExpensesOERWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="WelfareFacilitiesExpensesOERWY" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_GeneralAndAdministrativeExpensesOERWY" xlink:label="GeneralAndAdministrativeExpensesOERWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="GeneralAndAdministrativeExpensesOERWY" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TaxesOERWY" xlink:label="TaxesOERWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="TaxesOERWY" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_DepreciationOERWY" xlink:label="DepreciationOERWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="DepreciationOERWY" order="6.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRailwayRWY" xlink:label="OperatingExpensesRailwayRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="OperatingExpensesRailwayRWY" order="7.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingIncomeRelatedAbstractRWY" xlink:label="OperatingIncomeRelatedAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRelatedAbstractRWY" xlink:label="OperatingRevenueRelatedAbstractRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingIncomeRelatedAbstractRWY" xlink:to="OperatingRevenueRelatedAbstractRWY" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRelatedRWY" xlink:label="OperatingRevenueRelatedRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingRevenueRelatedAbstractRWY" xlink:to="OperatingRevenueRelatedRWY" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRelatedAbstractRWY" xlink:label="OperatingExpensesRelatedAbstractRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingIncomeRelatedAbstractRWY" xlink:to="OperatingExpensesRelatedAbstractRWY" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRelatedRWY" xlink:label="OperatingExpensesRelatedRWY"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OperatingExpensesRelatedAbstractRWY" xlink:to="OperatingExpensesRelatedRWY" order="1.0" preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+  </presentationLink>
+</linkbase>

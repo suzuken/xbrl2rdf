@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">減価償却累計額（有形固定資産）を一括して控除する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimBalanceSheets"/>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_PropertyPlantAndEquipmentHighwayBusinessNCAHWY" xlink:label="PropertyPlantAndEquipmentHighwayBusinessNCAHWY"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_BuildingsHighwayBusinessNCAHWY" xlink:label="BuildingsHighwayBusinessNCAHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentHighwayBusinessNCAHWY" xlink:to="BuildingsHighwayBusinessNCAHWY" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_StructuresHighwayBusinessNCAHWY" xlink:label="StructuresHighwayBusinessNCAHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentHighwayBusinessNCAHWY" xlink:to="StructuresHighwayBusinessNCAHWY" order="9.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_MachineryAndEquipmentHighwayBusinessNCAHWY" xlink:label="MachineryAndEquipmentHighwayBusinessNCAHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentHighwayBusinessNCAHWY" xlink:to="MachineryAndEquipmentHighwayBusinessNCAHWY" order="14.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_VehiclesHighwayBusinessNCAHWY" xlink:label="VehiclesHighwayBusinessNCAHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentHighwayBusinessNCAHWY" xlink:to="VehiclesHighwayBusinessNCAHWY" order="19.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_ToolsFurnitureAndFixturesHighwayBusinessNCAHWY" xlink:label="ToolsFurnitureAndFixturesHighwayBusinessNCAHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentHighwayBusinessNCAHWY" xlink:to="ToolsFurnitureAndFixturesHighwayBusinessNCAHWY" order="24.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_AccumulatedDepreciationPPEByGroupHighwayBusinessNCAHWY" xlink:label="AccumulatedDepreciationPPEByGroupHighwayBusinessNCAHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentHighwayBusinessNCAHWY" xlink:to="AccumulatedDepreciationPPEByGroupHighwayBusinessNCAHWY" order="28.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_PropertyPlantAndEquipmentNCARelatedHWY" xlink:label="PropertyPlantAndEquipmentNCARelatedHWY"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_BuildingsNCARelatedHWY" xlink:label="BuildingsNCARelatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCARelatedHWY" xlink:to="BuildingsNCARelatedHWY" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_StructuresNCARelatedHWY" xlink:label="StructuresNCARelatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCARelatedHWY" xlink:to="StructuresNCARelatedHWY" order="9.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_MachineryAndEquipmentNCARelatedHWY" xlink:label="MachineryAndEquipmentNCARelatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCARelatedHWY" xlink:to="MachineryAndEquipmentNCARelatedHWY" order="14.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_VehiclesNCARelatedHWY" xlink:label="VehiclesNCARelatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCARelatedHWY" xlink:to="VehiclesNCARelatedHWY" order="19.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_ToolsFurnitureAndFixturesNCARelatedHWY" xlink:label="ToolsFurnitureAndFixturesNCARelatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCARelatedHWY" xlink:to="ToolsFurnitureAndFixturesNCARelatedHWY" order="24.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_AccumulatedDepreciationPPEByGroupNCARelatedHWY" xlink:label="AccumulatedDepreciationPPEByGroupNCARelatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCARelatedHWY" xlink:to="AccumulatedDepreciationPPEByGroupNCARelatedHWY" order="28.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_PropertyPlantAndEquipmentNCAAffiliatedHWY" xlink:label="PropertyPlantAndEquipmentNCAAffiliatedHWY"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_BuildingsNCAAffiliatedHWY" xlink:label="BuildingsNCAAffiliatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCAAffiliatedHWY" xlink:to="BuildingsNCAAffiliatedHWY" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_StructuresNCAAffiliatedHWY" xlink:label="StructuresNCAAffiliatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCAAffiliatedHWY" xlink:to="StructuresNCAAffiliatedHWY" order="9.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_MachineryAndEquipmentNCAAffiliatedHWY" xlink:label="MachineryAndEquipmentNCAAffiliatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCAAffiliatedHWY" xlink:to="MachineryAndEquipmentNCAAffiliatedHWY" order="14.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_VehiclesNCAAffiliatedHWY" xlink:label="VehiclesNCAAffiliatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCAAffiliatedHWY" xlink:to="VehiclesNCAAffiliatedHWY" order="19.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_ToolsFurnitureAndFixturesNCAAffiliatedHWY" xlink:label="ToolsFurnitureAndFixturesNCAAffiliatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCAAffiliatedHWY" xlink:to="ToolsFurnitureAndFixturesNCAAffiliatedHWY" order="24.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/hwy/2011-03-14/jpfr-t-hwy-2011-03-14.xsd#jpfr-t-hwy_AccumulatedDepreciationPPEByGroupNCAAffiliatedHWY" xlink:label="AccumulatedDepreciationPPEByGroupNCAAffiliatedHWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNCAAffiliatedHWY" xlink:to="AccumulatedDepreciationPPEByGroupNCAAffiliatedHWY" order="28.0" weight="1"/>
+  </calculationLink>
+</linkbase>

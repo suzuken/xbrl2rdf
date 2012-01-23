@@ -1,0 +1,1245 @@
+<?xml version="1.0"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">リース事業財務諸表語彙</documentation>
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssetsAbstract" xlink:to="reference_CurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndDeposits" xlink:label="CashAndDeposits"/>
+    <reference xlink:type="resource" xlink:label="reference_CashAndDeposits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashAndDeposits" xlink:to="reference_CashAndDeposits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesReceivableTrade" xlink:label="NotesReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesReceivableTrade" xlink:to="reference_NotesReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermInvestmentSecurities" xlink:label="ShortTermInvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermInvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermInvestmentSecurities" xlink:to="reference_ShortTermInvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancePaymentsTrade" xlink:label="AdvancePaymentsTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsTrade" xlink:to="reference_AdvancePaymentsTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PrepaidExpenses" xlink:label="PrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_PrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PrepaidExpenses" xlink:to="reference_PrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsCA" xlink:label="DeferredTaxAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsCA" xlink:to="reference_DeferredTaxAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedIncome" xlink:label="AccruedIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedIncome" xlink:to="reference_AccruedIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermClaimsOnShareholdersDirectorsOrEmployees" xlink:label="ShortTermClaimsOnShareholdersDirectorsOrEmployees"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermClaimsOnShareholdersDirectorsOrEmployees" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermClaimsOnShareholdersDirectorsOrEmployees" xlink:to="reference_ShortTermClaimsOnShareholdersDirectorsOrEmployees"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansReceivable" xlink:label="ShortTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansReceivable" xlink:to="reference_ShortTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCA" xlink:to="reference_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="reference_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssets" xlink:to="reference_CurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAbstract" xlink:to="reference_NoncurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="reference_PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MachineryEquipmentAndVehicles" xlink:label="MachineryEquipmentAndVehicles"/>
+    <reference xlink:type="resource" xlink:label="reference_MachineryEquipmentAndVehicles" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MachineryEquipmentAndVehicles" xlink:to="reference_MachineryEquipmentAndVehicles"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <reference xlink:type="resource" xlink:label="reference_Buildings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Buildings" xlink:to="reference_Buildings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Structures" xlink:label="Structures"/>
+    <reference xlink:type="resource" xlink:label="reference_Structures" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Structures" xlink:to="reference_Structures"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MachineryAndEquipment" xlink:label="MachineryAndEquipment"/>
+    <reference xlink:type="resource" xlink:label="reference_MachineryAndEquipment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MachineryAndEquipment" xlink:to="reference_MachineryAndEquipment"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Land" xlink:label="Land"/>
+    <reference xlink:type="resource" xlink:label="reference_Land" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Land" xlink:to="reference_Land"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherPPE" xlink:label="OtherPPE"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherPPE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherPPE" xlink:to="reference_OtherPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipment" xlink:label="PropertyPlantAndEquipment"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipment" xlink:to="reference_PropertyPlantAndEquipment"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssetsAbstract" xlink:label="IntangibleAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsAbstract" xlink:to="reference_IntangibleAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseholdRight" xlink:label="LeaseholdRight"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseholdRight" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseholdRight" xlink:to="reference_LeaseholdRight"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MiningRight" xlink:label="MiningRight"/>
+    <reference xlink:type="resource" xlink:label="reference_MiningRight" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MiningRight" xlink:to="reference_MiningRight"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIA" xlink:label="OtherIA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIA" xlink:to="reference_OtherIA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssets" xlink:label="IntangibleAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssets" xlink:to="reference_IntangibleAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssetsAbstract" xlink:label="InvestmentsAndOtherAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="reference_InvestmentsAndOtherAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentSecurities" xlink:label="InvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentSecurities" xlink:to="reference_InvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StocksOfSubsidiariesAndAffiliates" xlink:label="StocksOfSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_StocksOfSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StocksOfSubsidiariesAndAffiliates" xlink:to="reference_StocksOfSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondsOfSubsidiariesAndAffiliates" xlink:label="BondsOfSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_BondsOfSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BondsOfSubsidiariesAndAffiliates" xlink:to="reference_BondsOfSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsInCapital" xlink:label="InvestmentsInCapital"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsInCapital" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsInCapital" xlink:to="reference_InvestmentsInCapital"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsInCapitalOfSubsidiariesAndAffiliates" xlink:label="InvestmentsInCapitalOfSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsInCapitalOfSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsInCapitalOfSubsidiariesAndAffiliates" xlink:to="reference_InvestmentsInCapitalOfSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivable" xlink:label="LongTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivable" xlink:to="reference_LongTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivableFromShareholdersDirectorsOrEmployees" xlink:label="LongTermLoansReceivableFromShareholdersDirectorsOrEmployees"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivableFromShareholdersDirectorsOrEmployees" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivableFromShareholdersDirectorsOrEmployees" xlink:to="reference_LongTermLoansReceivableFromShareholdersDirectorsOrEmployees"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther" xlink:label="ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther"/>
+    <reference xlink:type="resource" xlink:label="reference_ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther" xlink:to="reference_ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermPrepaidExpenses" xlink:label="LongTermPrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermPrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermPrepaidExpenses" xlink:to="reference_LongTermPrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsIOA" xlink:label="DeferredTaxAssetsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsIOA" xlink:to="reference_DeferredTaxAssetsIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="reference_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssets" xlink:label="InvestmentsAndOtherAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssets" xlink:to="reference_InvestmentsAndOtherAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssets" xlink:to="reference_NoncurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <reference xlink:type="resource" xlink:label="reference_Assets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Assets" xlink:to="reference_Assets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCL" xlink:to="reference_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNCL" xlink:to="reference_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalStock" xlink:label="CapitalStock"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalStock" xlink:to="reference_CapitalStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplusAbstract" xlink:label="CapitalSurplusAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplusAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplusAbstract" xlink:to="reference_CapitalSurplusAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalCapitalSurplus" xlink:label="LegalCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalCapitalSurplus" xlink:to="reference_LegalCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplus" xlink:label="CapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplus" xlink:to="reference_CapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsAbstract" xlink:label="RetainedEarningsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsAbstract" xlink:to="reference_RetainedEarningsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalRetainedEarnings" xlink:label="LegalRetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalRetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalRetainedEarnings" xlink:to="reference_LegalRetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarnings" xlink:label="RetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarnings" xlink:to="reference_RetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetSalesAbstract" xlink:label="NetSalesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetSalesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetSalesAbstract" xlink:to="reference_NetSalesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetSales" xlink:label="NetSales"/>
+    <reference xlink:type="resource" xlink:label="reference_NetSales" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetSales" xlink:to="reference_NetSales"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CostOfSalesAbstract" xlink:label="CostOfSalesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CostOfSalesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CostOfSalesAbstract" xlink:to="reference_CostOfSalesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GrossProfit" xlink:label="GrossProfit"/>
+    <reference xlink:type="resource" xlink:label="reference_GrossProfit" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GrossProfit" xlink:to="reference_GrossProfit"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncome" xlink:to="reference_OperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestOnSecuritiesNOI" xlink:label="InterestOnSecuritiesNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnSecuritiesNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnSecuritiesNOI" xlink:to="reference_InterestOnSecuritiesNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OrdinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OrdinaryIncome" xlink:to="reference_OrdinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesCurrent" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesCurrent" xlink:to="reference_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesDeferred" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesDeferred" xlink:to="reference_IncomeTaxesDeferred"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncome" xlink:to="reference_NetIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetsAbstract" xlink:label="AssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetsAbstract" xlink:to="reference_AssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsReceivableTrade" xlink:label="AccountsReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableTrade" xlink:to="reference_AccountsReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ConstructionInProgress" xlink:label="ConstructionInProgress"/>
+    <reference xlink:type="resource" xlink:label="reference_ConstructionInProgress" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ConstructionInProgress" xlink:to="reference_ConstructionInProgress"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNetPPE" xlink:label="OtherNetPPE"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNetPPE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNetPPE" xlink:to="reference_OtherNetPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivableFromSubsidiariesAndAffiliates" xlink:label="LongTermLoansReceivableFromSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivableFromSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivableFromSubsidiariesAndAffiliates" xlink:to="reference_LongTermLoansReceivableFromSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RealEstateForInvestmentNet" xlink:label="RealEstateForInvestmentNet"/>
+    <reference xlink:type="resource" xlink:label="reference_RealEstateForInvestmentNet" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RealEstateForInvestmentNet" xlink:to="reference_RealEstateForInvestmentNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAbstract" xlink:label="LiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAbstract" xlink:to="reference_LiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="CurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilitiesAbstract" xlink:to="reference_CurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesPayableTrade" xlink:label="NotesPayableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesPayableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesPayableTrade" xlink:to="reference_NotesPayableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableTrade" xlink:label="AccountsPayableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableTrade" xlink:to="reference_AccountsPayableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CommercialPapersLiabilities" xlink:label="CommercialPapersLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_CommercialPapersLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CommercialPapersLiabilities" xlink:to="reference_CommercialPapersLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayable" xlink:label="ShortTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansPayable" xlink:to="reference_ShortTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableOther" xlink:to="reference_AccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedExpenses" xlink:label="AccruedExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedExpenses" xlink:to="reference_AccruedExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesPayable" xlink:label="IncomeTaxesPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesPayable" xlink:to="reference_IncomeTaxesPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesCL" xlink:label="DeferredTaxLiabilitiesCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesCL" xlink:to="reference_DeferredTaxLiabilitiesCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancesReceived" xlink:label="AdvancesReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesReceived" xlink:to="reference_AdvancesReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositsReceived" xlink:label="DepositsReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceived" xlink:to="reference_DepositsReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_UnearnedRevenue" xlink:label="UnearnedRevenue"/>
+    <reference xlink:type="resource" xlink:label="reference_UnearnedRevenue" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnearnedRevenue" xlink:to="reference_UnearnedRevenue"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForRepairs" xlink:label="ProvisionForRepairs"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForRepairs" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForRepairs" xlink:to="reference_ProvisionForRepairs"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionCL" xlink:label="ProvisionCL"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionCL" xlink:to="reference_ProvisionCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayableToShareholdersDirectorsOrEmployees" xlink:label="ShortTermLoansPayableToShareholdersDirectorsOrEmployees"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansPayableToShareholdersDirectorsOrEmployees" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansPayableToShareholdersDirectorsOrEmployees" xlink:to="reference_ShortTermLoansPayableToShareholdersDirectorsOrEmployees"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositsReceivedFromEmployees" xlink:label="DepositsReceivedFromEmployees"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceivedFromEmployees" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceivedFromEmployees" xlink:to="reference_DepositsReceivedFromEmployees"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilities" xlink:label="CurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilities" xlink:to="reference_CurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilitiesAbstract" xlink:label="NoncurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilitiesAbstract" xlink:to="reference_NoncurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayable" xlink:label="LongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayable" xlink:to="reference_LongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayableToSubsidiariesAndAffiliates" xlink:label="LongTermLoansPayableToSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayableToSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayableToSubsidiariesAndAffiliates" xlink:to="reference_LongTermLoansPayableToSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayableToShareholdersDirectorsOrEmployees" xlink:label="LongTermLoansPayableToShareholdersDirectorsOrEmployees"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayableToShareholdersDirectorsOrEmployees" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayableToShareholdersDirectorsOrEmployees" xlink:to="reference_LongTermLoansPayableToShareholdersDirectorsOrEmployees"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermAccountsPayableOther" xlink:label="LongTermAccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermAccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermAccountsPayableOther" xlink:to="reference_LongTermAccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesNCL" xlink:label="DeferredTaxLiabilitiesNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesNCL" xlink:to="reference_DeferredTaxLiabilitiesNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionForRetirementBenefits" xlink:label="ProvisionForRetirementBenefits"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForRetirementBenefits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForRetirementBenefits" xlink:to="reference_ProvisionForRetirementBenefits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionNCL" xlink:label="ProvisionNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionNCL" xlink:to="reference_ProvisionNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilities" xlink:label="NoncurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilities" xlink:to="reference_NoncurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_Liabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Liabilities" xlink:to="reference_Liabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Goodwill" xlink:label="Goodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_Goodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Goodwill" xlink:to="reference_Goodwill"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CostOfSales" xlink:label="CostOfSales"/>
+    <reference xlink:type="resource" xlink:label="reference_CostOfSales" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CostOfSales" xlink:to="reference_CostOfSales"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SellingGeneralAndAdministrativeExpenses" xlink:label="SellingGeneralAndAdministrativeExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_SellingGeneralAndAdministrativeExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="reference_SellingGeneralAndAdministrativeExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncomeAbstract" xlink:label="NonOperatingIncomeAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncomeAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncomeAbstract" xlink:to="reference_NonOperatingIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestIncomeNOI" xlink:label="InterestIncomeNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestIncomeNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestIncomeNOI" xlink:to="reference_InterestIncomeNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsIncomeNOI" xlink:label="DividendsIncomeNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_DividendsIncomeNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DividendsIncomeNOI" xlink:to="reference_DividendsIncomeNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncome" xlink:label="NonOperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncome" xlink:to="reference_NonOperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpensesAbstract" xlink:label="NonOperatingExpensesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpensesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpensesAbstract" xlink:to="reference_NonOperatingExpensesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestExpensesNOE" xlink:label="InterestExpensesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestExpensesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestExpensesNOE" xlink:to="reference_InterestExpensesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpenses" xlink:label="NonOperatingExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpenses" xlink:to="reference_NonOperatingExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncome" xlink:to="reference_ExtraordinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLoss" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLoss" xlink:to="reference_ExtraordinaryLoss"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeBeforeIncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="reference_IncomeBeforeIncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxes" xlink:label="IncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxes" xlink:to="reference_IncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF" xlink:label="IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF" xlink:to="reference_IncreaseDecreaseInProvisionForRetirementBenefitsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncreaseDecreaseInShortTermLoansPayableFinCF" xlink:label="NetIncreaseDecreaseInShortTermLoansPayableFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncreaseDecreaseInShortTermLoansPayableFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncreaseDecreaseInShortTermLoansPayableFinCF" xlink:to="reference_NetIncreaseDecreaseInShortTermLoansPayableFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseInvestmentAssetsCA" xlink:label="LeaseInvestmentAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseInvestmentAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseInvestmentAssetsCA" xlink:to="reference_LeaseInvestmentAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsPPE" xlink:label="LeaseAssetsPPE"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseAssetsPPE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseAssetsPPE" xlink:to="reference_LeaseAssetsPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsNetPPE" xlink:label="LeaseAssetsNetPPE"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseAssetsNetPPE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseAssetsNetPPE" xlink:to="reference_LeaseAssetsNetPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsIA" xlink:label="LeaseAssetsIA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseAssetsIA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseAssetsIA" xlink:to="reference_LeaseAssetsIA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseObligationsNCL" xlink:label="LeaseObligationsNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseObligationsNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseObligationsNCL" xlink:to="reference_LeaseObligationsNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseReceivablesCA" xlink:label="LeaseReceivablesCA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseReceivablesCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseReceivablesCA" xlink:to="reference_LeaseReceivablesCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseObligationsCL" xlink:label="LeaseObligationsCL"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseObligationsCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseObligationsCL" xlink:to="reference_LeaseObligationsCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseReceivablesAndInvestmentAssetsCA" xlink:label="LeaseReceivablesAndInvestmentAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseReceivablesAndInvestmentAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseReceivablesAndInvestmentAssetsCA" xlink:to="reference_LeaseReceivablesAndInvestmentAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_AccountsReceivableInstallmentSalesCALEA" xlink:label="AccountsReceivableInstallmentSalesCALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableInstallmentSalesCALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableInstallmentSalesCALEA" xlink:to="reference_AccountsReceivableInstallmentSalesCALEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_AccountsReceivableOperatingLoansCALEA" xlink:label="AccountsReceivableOperatingLoansCALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableOperatingLoansCALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableOperatingLoansCALEA" xlink:to="reference_AccountsReceivableOperatingLoansCALEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_AccountsReceivableOtherLoansToCustomersCALEA" xlink:label="AccountsReceivableOtherLoansToCustomersCALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableOtherLoansToCustomersCALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableOtherLoansToCustomersCALEA" xlink:to="reference_AccountsReceivableOtherLoansToCustomersCALEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperationalInvestmentSecuritiesCA" xlink:label="OperationalInvestmentSecuritiesCA"/>
+    <reference xlink:type="resource" xlink:label="reference_OperationalInvestmentSecuritiesCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperationalInvestmentSecuritiesCA" xlink:to="reference_OperationalInvestmentSecuritiesCA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_OtherOperatingAssetsCALEA" xlink:label="OtherOperatingAssetsCALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherOperatingAssetsCALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherOperatingAssetsCALEA" xlink:to="reference_OtherOperatingAssetsCALEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_AccountsReceivableLeaseCALEA" xlink:label="AccountsReceivableLeaseCALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableLeaseCALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableLeaseCALEA" xlink:to="reference_AccountsReceivableLeaseCALEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Supplies" xlink:label="Supplies"/>
+    <reference xlink:type="resource" xlink:label="reference_Supplies" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Supplies" xlink:to="reference_Supplies"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LeasedAssetsPPEAbstractLEA" xlink:label="LeasedAssetsPPEAbstractLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeasedAssetsPPEAbstractLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeasedAssetsPPEAbstractLEA" xlink:to="reference_LeasedAssetsPPEAbstractLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_PropertyForLeasePPELEA" xlink:label="PropertyForLeasePPELEA"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyForLeasePPELEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyForLeasePPELEA" xlink:to="reference_PropertyForLeasePPELEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_AdvancesForPurchasesAtLeasedAssetsPPELEA" xlink:label="AdvancesForPurchasesAtLeasedAssetsPPELEA"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesForPurchasesAtLeasedAssetsPPELEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesForPurchasesAtLeasedAssetsPPELEA" xlink:to="reference_AdvancesForPurchasesAtLeasedAssetsPPELEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LeasedAssetsPPELEA" xlink:label="LeasedAssetsPPELEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeasedAssetsPPELEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeasedAssetsPPELEA" xlink:to="reference_LeasedAssetsPPELEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_OwnUsedAssetsPPEAbstractLEA" xlink:label="OwnUsedAssetsPPEAbstractLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_OwnUsedAssetsPPEAbstractLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OwnUsedAssetsPPEAbstractLEA" xlink:to="reference_OwnUsedAssetsPPEAbstractLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_OwnUsedAssetsPPELEA" xlink:label="OwnUsedAssetsPPELEA"/>
+    <reference xlink:type="resource" xlink:label="reference_OwnUsedAssetsPPELEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OwnUsedAssetsPPELEA" xlink:to="reference_OwnUsedAssetsPPELEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LeasedAssetsIAAbstractLEA" xlink:label="LeasedAssetsIAAbstractLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeasedAssetsIAAbstractLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeasedAssetsIAAbstractLEA" xlink:to="reference_LeasedAssetsIAAbstractLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LeasePropertyIALEA" xlink:label="LeasePropertyIALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeasePropertyIALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeasePropertyIALEA" xlink:to="reference_LeasePropertyIALEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LeasedAssetsIALEA" xlink:label="LeasedAssetsIALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeasedAssetsIALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeasedAssetsIALEA" xlink:to="reference_LeasedAssetsIALEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_OtherIntangibleAssetsAbstractLEA" xlink:label="OtherIntangibleAssetsAbstractLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIntangibleAssetsAbstractLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIntangibleAssetsAbstractLEA" xlink:to="reference_OtherIntangibleAssetsAbstractLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_OtherIntangibleAssetsLEA" xlink:label="OtherIntangibleAssetsLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIntangibleAssetsLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIntangibleAssetsLEA" xlink:to="reference_OtherIntangibleAssetsLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentPortionOfLongTermLoansPayable" xlink:label="CurrentPortionOfLongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentPortionOfLongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentPortionOfLongTermLoansPayable" xlink:to="reference_CurrentPortionOfLongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_AdvancesReceivedLeaseCLLEA" xlink:label="AdvancesReceivedLeaseCLLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesReceivedLeaseCLLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesReceivedLeaseCLLEA" xlink:to="reference_AdvancesReceivedLeaseCLLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_DeferredProfitOnInstallmentSalesCLLEA" xlink:label="DeferredProfitOnInstallmentSalesCLLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredProfitOnInstallmentSalesCLLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredProfitOnInstallmentSalesCLLEA" xlink:to="reference_DeferredProfitOnInstallmentSalesCLLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_GuaranteeReceivedNCLLEA" xlink:label="GuaranteeReceivedNCLLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_GuaranteeReceivedNCLLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GuaranteeReceivedNCLLEA" xlink:to="reference_GuaranteeReceivedNCLLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_VoluntaryRetainedEarnings" xlink:label="VoluntaryRetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_VoluntaryRetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VoluntaryRetainedEarnings" xlink:to="reference_VoluntaryRetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GeneralReserve" xlink:label="GeneralReserve"/>
+    <reference xlink:type="resource" xlink:label="reference_GeneralReserve" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GeneralReserve" xlink:to="reference_GeneralReserve"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_InstallmentSalesSalesLEA" xlink:label="InstallmentSalesSalesLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_InstallmentSalesSalesLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InstallmentSalesSalesLEA" xlink:to="reference_InstallmentSalesSalesLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_OtherNetSalesSalesLEA" xlink:label="OtherNetSalesSalesLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNetSalesSalesLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNetSalesSalesLEA" xlink:to="reference_OtherNetSalesSalesLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_InstallmentCostCOSLEA" xlink:label="InstallmentCostCOSLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_InstallmentCostCOSLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InstallmentCostCOSLEA" xlink:to="reference_InstallmentCostCOSLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_CapitalCostCOSLEA" xlink:label="CapitalCostCOSLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalCostCOSLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalCostCOSLEA" xlink:to="reference_CapitalCostCOSLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_OtherCostOfSalesCOSLEA" xlink:label="OtherCostOfSalesCOSLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCostOfSalesCOSLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCostOfSalesCOSLEA" xlink:to="reference_OtherCostOfSalesCOSLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_AdvancesForPurchasesAtPropertyForLeaseIALEA" xlink:label="AdvancesForPurchasesAtPropertyForLeaseIALEA"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesForPurchasesAtPropertyForLeaseIALEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesForPurchasesAtPropertyForLeaseIALEA" xlink:to="reference_AdvancesForPurchasesAtPropertyForLeaseIALEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentPortionOfBonds" xlink:label="CurrentPortionOfBonds"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentPortionOfBonds" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentPortionOfBonds" xlink:to="reference_CurrentPortionOfBonds"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_PayablesUnderFluidityLeaseReceivablesCLLEA" xlink:label="PayablesUnderFluidityLeaseReceivablesCLLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_PayablesUnderFluidityLeaseReceivablesCLLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PayablesUnderFluidityLeaseReceivablesCLLEA" xlink:to="reference_PayablesUnderFluidityLeaseReceivablesCLLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_CurrentPortionOfLongTermPayablesUnderFluidityLeaseReceivablesCLLEA" xlink:label="CurrentPortionOfLongTermPayablesUnderFluidityLeaseReceivablesCLLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentPortionOfLongTermPayablesUnderFluidityLeaseReceivablesCLLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentPortionOfLongTermPayablesUnderFluidityLeaseReceivablesCLLEA" xlink:to="reference_CurrentPortionOfLongTermPayablesUnderFluidityLeaseReceivablesCLLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_InstallmentPayablesCLLEA" xlink:label="InstallmentPayablesCLLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_InstallmentPayablesCLLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InstallmentPayablesCLLEA" xlink:to="reference_InstallmentPayablesCLLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LongTermPayablesUnderFluidityLeaseReceivablesNCLLEA" xlink:label="LongTermPayablesUnderFluidityLeaseReceivablesNCLLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermPayablesUnderFluidityLeaseReceivablesNCLLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermPayablesUnderFluidityLeaseReceivablesNCLLEA" xlink:to="reference_LongTermPayablesUnderFluidityLeaseReceivablesNCLLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NegativeGoodwill" xlink:label="NegativeGoodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_NegativeGoodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NegativeGoodwill" xlink:to="reference_NegativeGoodwill"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LeaseSalesSalesLEA" xlink:label="LeaseSalesSalesLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseSalesSalesLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseSalesSalesLEA" xlink:to="reference_LeaseSalesSalesLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_LeaseCostCOSLEA" xlink:label="LeaseCostCOSLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_LeaseCostCOSLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LeaseCostCOSLEA" xlink:to="reference_LeaseCostCOSLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_FinanceRevenueSalesLEA" xlink:label="FinanceRevenueSalesLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_FinanceRevenueSalesLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FinanceRevenueSalesLEA" xlink:to="reference_FinanceRevenueSalesLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_FinanceCostCOSLEA" xlink:label="FinanceCostCOSLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_FinanceCostCOSLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FinanceCostCOSLEA" xlink:to="reference_FinanceCostCOSLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnAdjustmentForChangesOfAccountingStandardForLeaseTransactionsEI" xlink:label="GainOnAdjustmentForChangesOfAccountingStandardForLeaseTransactionsEI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnAdjustmentForChangesOfAccountingStandardForLeaseTransactionsEI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnAdjustmentForChangesOfAccountingStandardForLeaseTransactionsEI" xlink:to="reference_GainOnAdjustmentForChangesOfAccountingStandardForLeaseTransactionsEI"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_DepreciationOfLeasedAssetsOpeCFLEA" xlink:label="DepreciationOfLeasedAssetsOpeCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_DepreciationOfLeasedAssetsOpeCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepreciationOfLeasedAssetsOpeCFLEA" xlink:to="reference_DepreciationOfLeasedAssetsOpeCFLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_DepreciationOfOwnUsedAssetsOpeCFLEA" xlink:label="DepreciationOfOwnUsedAssetsOpeCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_DepreciationOfOwnUsedAssetsOpeCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepreciationOfOwnUsedAssetsOpeCFLEA" xlink:to="reference_DepreciationOfOwnUsedAssetsOpeCFLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncreaseDecreaseInProvisionForBonusesOpeCF" xlink:label="IncreaseDecreaseInProvisionForBonusesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInProvisionForBonusesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInProvisionForBonusesOpeCF" xlink:to="reference_IncreaseDecreaseInProvisionForBonusesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnValuationOfShortTermAndLongTermInvestmentSecuritiesOpeCF" xlink:label="LossGainOnValuationOfShortTermAndLongTermInvestmentSecuritiesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_LossGainOnValuationOfShortTermAndLongTermInvestmentSecuritiesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossGainOnValuationOfShortTermAndLongTermInvestmentSecuritiesOpeCF" xlink:to="reference_LossGainOnValuationOfShortTermAndLongTermInvestmentSecuritiesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_CapitalCostAndInterestExpensesOpeCFLEA" xlink:label="CapitalCostAndInterestExpensesOpeCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalCostAndInterestExpensesOpeCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalCostAndInterestExpensesOpeCFLEA" xlink:to="reference_CapitalCostAndInterestExpensesOpeCFLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnSalesOfShortTermAndLongTermInvestmentSecuritiesOpeCF" xlink:label="LossGainOnSalesOfShortTermAndLongTermInvestmentSecuritiesOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_LossGainOnSalesOfShortTermAndLongTermInvestmentSecuritiesOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossGainOnSalesOfShortTermAndLongTermInvestmentSecuritiesOpeCF" xlink:to="reference_LossGainOnSalesOfShortTermAndLongTermInvestmentSecuritiesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnSalesOfNoncurrentAssetsOpeCF" xlink:label="LossGainOnSalesOfNoncurrentAssetsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_LossGainOnSalesOfNoncurrentAssetsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossGainOnSalesOfNoncurrentAssetsOpeCF" xlink:to="reference_LossGainOnSalesOfNoncurrentAssetsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_DecreaseIncreaseInReceivablesInstallmentOpeCFLEA" xlink:label="DecreaseIncreaseInReceivablesInstallmentOpeCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInReceivablesInstallmentOpeCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInReceivablesInstallmentOpeCFLEA" xlink:to="reference_DecreaseIncreaseInReceivablesInstallmentOpeCFLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_DecreaseIncreaseInAccountsReceivableOperatingLoansOpeCFLEA" xlink:label="DecreaseIncreaseInAccountsReceivableOperatingLoansOpeCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInAccountsReceivableOperatingLoansOpeCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInAccountsReceivableOperatingLoansOpeCFLEA" xlink:to="reference_DecreaseIncreaseInAccountsReceivableOperatingLoansOpeCFLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DecreaseIncreaseInInvestmentSecuritiesForSaleOpeCF" xlink:label="DecreaseIncreaseInInvestmentSecuritiesForSaleOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInInvestmentSecuritiesForSaleOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInInvestmentSecuritiesForSaleOpeCF" xlink:to="reference_DecreaseIncreaseInInvestmentSecuritiesForSaleOpeCF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_DecreaseIncreaseInOtherOperatingAssetsOpeCFLEA" xlink:label="DecreaseIncreaseInOtherOperatingAssetsOpeCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInOtherOperatingAssetsOpeCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInOtherOperatingAssetsOpeCFLEA" xlink:to="reference_DecreaseIncreaseInOtherOperatingAssetsOpeCFLEA"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_PurchaseOfLeasedAssetsOpeCFLEA" xlink:label="PurchaseOfLeasedAssetsOpeCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_PurchaseOfLeasedAssetsOpeCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PurchaseOfLeasedAssetsOpeCFLEA" xlink:to="reference_PurchaseOfLeasedAssetsOpeCFLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DecreaseIncreaseInClaimsProvableInBankruptcyClaimsProvableInRehabilitationOpeCF" xlink:label="DecreaseIncreaseInClaimsProvableInBankruptcyClaimsProvableInRehabilitationOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_DecreaseIncreaseInClaimsProvableInBankruptcyClaimsProvableInRehabilitationOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DecreaseIncreaseInClaimsProvableInBankruptcyClaimsProvableInRehabilitationOpeCF" xlink:to="reference_DecreaseIncreaseInClaimsProvableInBankruptcyClaimsProvableInRehabilitationOpeCF"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-lea-2011-03-14.xsd#jpfr-t-lea_PurchaseOfOwnUsedAssetsInvCFLEA" xlink:label="PurchaseOfOwnUsedAssetsInvCFLEA"/>
+    <reference xlink:type="resource" xlink:label="reference_PurchaseOfOwnUsedAssetsInvCFLEA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PurchaseOfOwnUsedAssetsInvCFLEA" xlink:to="reference_PurchaseOfOwnUsedAssetsInvCFLEA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RepaymentsOfLeaseObligationsFinCF" xlink:label="RepaymentsOfLeaseObligationsFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_RepaymentsOfLeaseObligationsFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RepaymentsOfLeaseObligationsFinCF" xlink:to="reference_RepaymentsOfLeaseObligationsFinCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetDecreaseIncreaseInLeaseReceivablesAndInvestmentAssetsOpeCF" xlink:label="NetDecreaseIncreaseInLeaseReceivablesAndInvestmentAssetsOpeCF"/>
+    <reference xlink:type="resource" xlink:label="reference_NetDecreaseIncreaseInLeaseReceivablesAndInvestmentAssetsOpeCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetDecreaseIncreaseInLeaseReceivablesAndInvestmentAssetsOpeCF" xlink:to="reference_NetDecreaseIncreaseInLeaseReceivablesAndInvestmentAssetsOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncreaseDecreaseInCommercialPapersFinCF" xlink:label="NetIncreaseDecreaseInCommercialPapersFinCF"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncreaseDecreaseInCommercialPapersFinCF" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>リース事業協会</ref:Publisher>
+      <ref:Name>リース会社における金融商品取引法に基づく開示モデル</ref:Name>
+      <ref:IssueDate>2008-06-30</ref:IssueDate>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncreaseDecreaseInCommercialPapersFinCF" xlink:to="reference_NetIncreaseDecreaseInCommercialPapersFinCF"/>
+  </referenceLink>
+</linkbase>

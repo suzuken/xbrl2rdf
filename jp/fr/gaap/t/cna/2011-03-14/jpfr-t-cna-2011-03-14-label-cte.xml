@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">建設保証業財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/cna/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleCNALabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivableFromEmployees" xlink:label="LongTermLoansReceivableFromEmployees"/>
+    <label xlink:type="resource" xlink:label="label_LongTermLoansReceivableFromEmployees" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/cna/role/label" xml:lang="ja" id="label_LongTermLoansReceivableFromEmployees">従業員長期貸付金</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LongTermLoansReceivableFromEmployees" xlink:to="label_LongTermLoansReceivableFromEmployees"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TravelingAndCommunicationExpensesSGA" xlink:label="TravelingAndCommunicationExpensesSGA"/>
+    <label xlink:type="resource" xlink:label="label_TravelingAndCommunicationExpensesSGA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/cna/role/label" xml:lang="ja" id="label_TravelingAndCommunicationExpensesSGA">旅費通信費</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="TravelingAndCommunicationExpensesSGA" xlink:to="label_TravelingAndCommunicationExpensesSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsLongTermLoansReceivableFromEmployees" xlink:label="AllowanceForDoubtfulAccountsLongTermLoansReceivableFromEmployees"/>
+    <label xlink:type="resource" xlink:label="label_AllowanceForDoubtfulAccountsLongTermLoansReceivableFromEmployees" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/cna/role/label" xml:lang="ja" id="label_AllowanceForDoubtfulAccountsLongTermLoansReceivableFromEmployees">貸倒引当金</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="AllowanceForDoubtfulAccountsLongTermLoansReceivableFromEmployees" xlink:to="label_AllowanceForDoubtfulAccountsLongTermLoansReceivableFromEmployees"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivableFromEmployeesNet" xlink:label="LongTermLoansReceivableFromEmployeesNet"/>
+    <label xlink:type="resource" xlink:label="label_LongTermLoansReceivableFromEmployeesNet" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/cna/role/label" xml:lang="ja" id="label_LongTermLoansReceivableFromEmployeesNet">従業員長期貸付金（純額）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LongTermLoansReceivableFromEmployeesNet" xlink:to="label_LongTermLoansReceivableFromEmployeesNet"/>
+  </labelLink>
+</linkbase>

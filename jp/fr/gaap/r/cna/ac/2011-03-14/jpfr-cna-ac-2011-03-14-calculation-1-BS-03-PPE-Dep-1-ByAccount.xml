@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">減価償却累計額（有形固定資産）を科目別に控除する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleConsolidatedBalanceSheets"/>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipment" xlink:label="PropertyPlantAndEquipment"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsAndStructuresNet" xlink:label="BuildingsAndStructuresNet"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipment" xlink:to="BuildingsAndStructuresNet" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationBuildingsAndStructures" xlink:label="AccumulatedDepreciationBuildingsAndStructures"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="BuildingsAndStructuresNet" xlink:to="AccumulatedDepreciationBuildingsAndStructures" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsAndStructures" xlink:label="BuildingsAndStructures"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="BuildingsAndStructuresNet" xlink:to="BuildingsAndStructures" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MachineryEquipmentAndVehiclesNet" xlink:label="MachineryEquipmentAndVehiclesNet"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipment" xlink:to="MachineryEquipmentAndVehiclesNet" order="6.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationMachineryEquipmentAndVehicles" xlink:label="AccumulatedDepreciationMachineryEquipmentAndVehicles"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="MachineryEquipmentAndVehiclesNet" xlink:to="AccumulatedDepreciationMachineryEquipmentAndVehicles" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_MachineryEquipmentAndVehicles" xlink:label="MachineryEquipmentAndVehicles"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="MachineryEquipmentAndVehiclesNet" xlink:to="MachineryEquipmentAndVehicles" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cna/2011-03-14/jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_FurnitureAndEquipmentNetPPECNA" xlink:label="FurnitureAndEquipmentNetPPECNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipment" xlink:to="FurnitureAndEquipmentNetPPECNA" order="11.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cna/2011-03-14/jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_AccumulatedDepreciationFurnitureAndEquipmentCNA" xlink:label="AccumulatedDepreciationFurnitureAndEquipmentCNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="FurnitureAndEquipmentNetPPECNA" xlink:to="AccumulatedDepreciationFurnitureAndEquipmentCNA" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cna/2011-03-14/jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_FurnitureAndEquipmentPPECNA" xlink:label="FurnitureAndEquipmentPPECNA"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="FurnitureAndEquipmentNetPPECNA" xlink:to="FurnitureAndEquipmentPPECNA" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNetPPE" xlink:label="OtherNetPPE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipment" xlink:to="OtherNetPPE" order="18.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationOtherPPE" xlink:label="AccumulatedDepreciationOtherPPE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherNetPPE" xlink:to="AccumulatedDepreciationOtherPPE" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherPPE" xlink:label="OtherPPE"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherNetPPE" xlink:to="OtherPPE" order="1.0" weight="1"/>
+  </calculationLink>
+</linkbase>

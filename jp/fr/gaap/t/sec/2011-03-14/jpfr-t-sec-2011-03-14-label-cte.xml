@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">第一種金融商品取引業財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleSECLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleSECTotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndDeposits" xlink:label="CashAndDeposits"/>
+    <label xlink:type="resource" xlink:label="label_CashAndDeposits" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_CashAndDeposits">現金・預金</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CashAndDeposits" xlink:to="label_CashAndDeposits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <label xlink:type="resource" xlink:label="label_OtherCA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_OtherCA">その他の流動資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCA" xlink:to="label_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <label xlink:type="resource" xlink:label="label_CurrentAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_CurrentAssets">流動資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CurrentAssets" xlink:to="label_CurrentAssets"/>
+    <label xlink:type="resource" xlink:label="label_CurrentAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_CurrentAssets_2">流動資産計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CurrentAssets" xlink:to="label_CurrentAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsNet" xlink:label="BuildingsNet"/>
+    <label xlink:type="resource" xlink:label="label_BuildingsNet" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_BuildingsNet">建物</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="BuildingsNet" xlink:to="label_BuildingsNet"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <label xlink:type="resource" xlink:label="label_NoncurrentAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_NoncurrentAssets">固定資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NoncurrentAssets" xlink:to="label_NoncurrentAssets"/>
+    <label xlink:type="resource" xlink:label="label_NoncurrentAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_NoncurrentAssets_2">固定資産計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NoncurrentAssets" xlink:to="label_NoncurrentAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssets" xlink:label="DeferredAssets"/>
+    <label xlink:type="resource" xlink:label="label_DeferredAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_DeferredAssets">繰延資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DeferredAssets" xlink:to="label_DeferredAssets"/>
+    <label xlink:type="resource" xlink:label="label_DeferredAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_DeferredAssets_2">繰延資産計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DeferredAssets" xlink:to="label_DeferredAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_OtherCL">その他の流動負債</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCL" xlink:to="label_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilities" xlink:label="CurrentLiabilities"/>
+    <label xlink:type="resource" xlink:label="label_CurrentLiabilities" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_CurrentLiabilities">流動負債</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CurrentLiabilities" xlink:to="label_CurrentLiabilities"/>
+    <label xlink:type="resource" xlink:label="label_CurrentLiabilities_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_CurrentLiabilities_2">流動負債計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="CurrentLiabilities" xlink:to="label_CurrentLiabilities_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherNCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_OtherNCL">その他の固定負債</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherNCL" xlink:to="label_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilities" xlink:label="NoncurrentLiabilities"/>
+    <label xlink:type="resource" xlink:label="label_NoncurrentLiabilities" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_NoncurrentLiabilities">固定負債</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NoncurrentLiabilities" xlink:to="label_NoncurrentLiabilities"/>
+    <label xlink:type="resource" xlink:label="label_NoncurrentLiabilities_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_NoncurrentLiabilities_2">固定負債計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NoncurrentLiabilities" xlink:to="label_NoncurrentLiabilities_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ReservesUnderTheSpecialLaws1" xlink:label="ReservesUnderTheSpecialLaws1"/>
+    <label xlink:type="resource" xlink:label="label_ReservesUnderTheSpecialLaws1" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_ReservesUnderTheSpecialLaws1">特別法上の準備金</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ReservesUnderTheSpecialLaws1" xlink:to="label_ReservesUnderTheSpecialLaws1"/>
+    <label xlink:type="resource" xlink:label="label_ReservesUnderTheSpecialLaws1_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_ReservesUnderTheSpecialLaws1_2">特別法上の準備金計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ReservesUnderTheSpecialLaws1" xlink:to="label_ReservesUnderTheSpecialLaws1_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_LiabilitiesAndNetAssets">負債・純資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_LiabilitiesAndNetAssets_2">負債・純資産合計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SellingGeneralAndAdministrativeExpensesAbstract" xlink:label="SellingGeneralAndAdministrativeExpensesAbstract"/>
+    <label xlink:type="resource" xlink:label="label_SellingGeneralAndAdministrativeExpensesAbstract" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_SellingGeneralAndAdministrativeExpensesAbstract">販売費・一般管理費</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SellingGeneralAndAdministrativeExpensesAbstract" xlink:to="label_SellingGeneralAndAdministrativeExpensesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:label="ProvisionOfAllowanceForDoubtfulAccountsSGA"/>
+    <label xlink:type="resource" xlink:label="label_ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_ProvisionOfAllowanceForDoubtfulAccountsSGA">貸倒引当金繰入れ</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ProvisionOfAllowanceForDoubtfulAccountsSGA" xlink:to="label_ProvisionOfAllowanceForDoubtfulAccountsSGA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SellingGeneralAndAdministrativeExpenses" xlink:label="SellingGeneralAndAdministrativeExpenses"/>
+    <label xlink:type="resource" xlink:label="label_SellingGeneralAndAdministrativeExpenses" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_SellingGeneralAndAdministrativeExpenses">販売費・一般管理費</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="label_SellingGeneralAndAdministrativeExpenses"/>
+    <label xlink:type="resource" xlink:label="label_SellingGeneralAndAdministrativeExpenses_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_SellingGeneralAndAdministrativeExpenses_2">販売費・一般管理費計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SellingGeneralAndAdministrativeExpenses" xlink:to="label_SellingGeneralAndAdministrativeExpenses_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncome" xlink:label="NonOperatingIncome"/>
+    <label xlink:type="resource" xlink:label="label_NonOperatingIncome" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_NonOperatingIncome">営業外収益</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NonOperatingIncome" xlink:to="label_NonOperatingIncome"/>
+    <label xlink:type="resource" xlink:label="label_NonOperatingIncome_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_NonOperatingIncome_2">営業外収益計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NonOperatingIncome" xlink:to="label_NonOperatingIncome_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpenses" xlink:label="NonOperatingExpenses"/>
+    <label xlink:type="resource" xlink:label="label_NonOperatingExpenses" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_NonOperatingExpenses">営業外費用</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NonOperatingExpenses" xlink:to="label_NonOperatingExpenses"/>
+    <label xlink:type="resource" xlink:label="label_NonOperatingExpenses_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_NonOperatingExpenses_2">営業外費用計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NonOperatingExpenses" xlink:to="label_NonOperatingExpenses_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <label xlink:type="resource" xlink:label="label_ExtraordinaryIncome" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_ExtraordinaryIncome">特別利益</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ExtraordinaryIncome" xlink:to="label_ExtraordinaryIncome"/>
+    <label xlink:type="resource" xlink:label="label_ExtraordinaryIncome_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_ExtraordinaryIncome_2">特別利益計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ExtraordinaryIncome" xlink:to="label_ExtraordinaryIncome_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <label xlink:type="resource" xlink:label="label_ExtraordinaryLoss" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_ExtraordinaryLoss">特別損失</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ExtraordinaryLoss" xlink:to="label_ExtraordinaryLoss"/>
+    <label xlink:type="resource" xlink:label="label_ExtraordinaryLoss_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/totalLabel" xml:lang="ja" id="label_ExtraordinaryLoss_2">特別損失計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ExtraordinaryLoss" xlink:to="label_ExtraordinaryLoss_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GuaranteeDepositsIOA" xlink:label="GuaranteeDepositsIOA"/>
+    <label xlink:type="resource" xlink:label="label_GuaranteeDepositsIOA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/sec/role/label" xml:lang="ja" id="label_GuaranteeDepositsIOA">長期差入保証金</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GuaranteeDepositsIOA" xlink:to="label_GuaranteeDepositsIOA"/>
+  </labelLink>
+</linkbase>

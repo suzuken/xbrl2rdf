@@ -33,6 +33,7 @@ import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.sparql.vocabulary.FOAF;
 import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.vocabulary.RDF;
+import com.hp.hpl.jena.vocabulary.RDFS;
 import com.hp.hpl.jena.vocabulary.XSD;
 
 import util.FileSearch;
@@ -99,6 +100,7 @@ public class RDFMakerV2 implements Maker {
 	 */
 	public static void main(String[] args) throws TransformerException, SAXException, IOException, ParserConfigurationException, XPathExpressionException{
 		long start = System.currentTimeMillis();
+		System.out.println("処理開始しました。");
 		FileSearch search = new FileSearch();
 		//		Integer last_slash = args[0].lastIndexOf('/');
 		//		String directoryPath = args[0].substring(0, last_slash);
@@ -135,7 +137,11 @@ public class RDFMakerV2 implements Maker {
 			return;
 		}
 
-		this.createModel();
+		//全部作成
+//		this.createModel();
+		
+		//labelだけアップデート
+		this.createCompanyJaNameModel();
 		this.outputRDF(this.model);
 	}
 
@@ -184,7 +190,7 @@ public class RDFMakerV2 implements Maker {
 		Properties prop = new Properties();
 		try {
 			prop.load(new FileInputStream(configFile));
-			prop.list(System.out);
+			//prop.list(System.out);
 		} catch (IOException e) {
 			e.printStackTrace();
 			return;
@@ -204,6 +210,43 @@ public class RDFMakerV2 implements Maker {
 		this.setOutputRDFPath(prop.getProperty("outputRDFDir") + getFileName(path) + ".rdf");
 	}
 
+	public void createCompanyJaNameModel(){
+		try{
+			this.model = TDBFactory.createModel();
+			this.model.setNsPrefix("xbrlowl", XBRLOWL.getURI());
+			this.model.setNsPrefix("foaf", "http://xmlns.com/foaf/0.1/");
+
+			SimpleNamespaceContext snc = (SimpleNamespaceContext) this.x.nsc;
+			HashMap<String, String> map = snc.getPrefixToUri();
+			Set<String> keySet = map.keySet();
+			Iterator<String> keyIte = keySet.iterator();
+			while(keyIte.hasNext()){
+				String key = keyIte.next();
+				String value = map.get(key);
+				if(key != "xml" && key != "xmlns"){
+					String vend = value.substring(value.length());
+					if(vend != "/" && vend != "#"){
+						value = value + "#";
+					}
+					this.model.setNsPrefix(key, value);
+				}
+			}
+
+			String companyName = 
+					this.x.getDocumentInfo("EntityNameJaEntityInformation").getValue();
+			companyName = companyName.replaceAll("\\[", "［");
+			companyName = companyName.replaceAll("\\]", "］");
+
+			Resource company = this.model.createResource(XBRLOWL.getURI()
+					+ companyName);
+			company.addProperty(RDFS.label, companyName);
+		} catch (Exception e){
+			System.out.println("modelの出力でエラー");
+			e.printStackTrace();
+		}
+
+
+	}
 
 	/**
 	 *　modelを作成するメソッド 
@@ -212,6 +255,7 @@ public class RDFMakerV2 implements Maker {
 	 * @throws XPathExpressionException 
 	 */
 	public void createModel(){
+		System.out.println();
 		try {
 
 			this.model = TDBFactory.createModel();
@@ -242,6 +286,7 @@ public class RDFMakerV2 implements Maker {
 			Resource company = this.model.createResource(XBRLOWL.getURI()
 					+ companyName);
 			company.addProperty(RDF.type, FOAF.Organization);
+			company.addProperty(RDFS.label, companyName);
 
 			Resource companyType = this.model.createResource(XBRLOWL.company);
 			company.addProperty(RDF.type, companyType);
@@ -307,9 +352,6 @@ public class RDFMakerV2 implements Maker {
 								XSDDateType.XSDdate);
 						contextElement.addLiteral(XBRLOWL.startDate, startDate);
 						contextElement.addLiteral(XBRLOWL.endDate, endDate);
-					}
-					else{
-						System.out.println("periodの指定が不正です。");
 					}
 
 					ArrayList<Account> a = this.x.getAccountsByContext(contextRef);

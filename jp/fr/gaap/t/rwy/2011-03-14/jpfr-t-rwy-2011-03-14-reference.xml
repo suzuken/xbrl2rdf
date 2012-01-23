@@ -1,0 +1,1374 @@
+<?xml version="1.0"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">鉄道事業財務諸表語彙</documentation>
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssetsAbstract" xlink:label="CurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssetsAbstract" xlink:to="reference_CurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CashAndDeposits" xlink:label="CashAndDeposits"/>
+    <reference xlink:type="resource" xlink:label="reference_CashAndDeposits" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CashAndDeposits" xlink:to="reference_CashAndDeposits"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesReceivableTrade" xlink:label="NotesReceivableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesReceivableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesReceivableTrade" xlink:to="reference_NotesReceivableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermInvestmentSecurities" xlink:label="ShortTermInvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermInvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermInvestmentSecurities" xlink:to="reference_ShortTermInvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PrepaidExpenses" xlink:label="PrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_PrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PrepaidExpenses" xlink:to="reference_PrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsCA" xlink:label="DeferredTaxAssetsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsCA" xlink:to="reference_DeferredTaxAssetsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedIncome" xlink:label="AccruedIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedIncome" xlink:to="reference_AccruedIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansReceivable" xlink:label="ShortTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansReceivable" xlink:to="reference_ShortTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCA" xlink:to="reference_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsCA" xlink:label="AllowanceForDoubtfulAccountsCA"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsCA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsCA" xlink:to="reference_AllowanceForDoubtfulAccountsCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentAssets" xlink:label="CurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentAssets" xlink:to="reference_CurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssetsAbstract" xlink:label="NoncurrentAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAbstract" xlink:to="reference_NoncurrentAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssetsAbstract" xlink:label="InvestmentsAndOtherAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssetsAbstract" xlink:to="reference_InvestmentsAndOtherAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentSecurities" xlink:label="InvestmentSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentSecurities" xlink:to="reference_InvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_StocksOfSubsidiariesAndAffiliates" xlink:label="StocksOfSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_StocksOfSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StocksOfSubsidiariesAndAffiliates" xlink:to="reference_StocksOfSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsInCapital" xlink:label="InvestmentsInCapital"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsInCapital" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsInCapital" xlink:to="reference_InvestmentsInCapital"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsInCapitalOfSubsidiariesAndAffiliates" xlink:label="InvestmentsInCapitalOfSubsidiariesAndAffiliates"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsInCapitalOfSubsidiariesAndAffiliates" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsInCapitalOfSubsidiariesAndAffiliates" xlink:to="reference_InvestmentsInCapitalOfSubsidiariesAndAffiliates"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansReceivable" xlink:label="LongTermLoansReceivable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansReceivable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansReceivable" xlink:to="reference_LongTermLoansReceivable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermPrepaidExpenses" xlink:label="LongTermPrepaidExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermPrepaidExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermPrepaidExpenses" xlink:to="reference_LongTermPrepaidExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxAssetsIOA" xlink:label="DeferredTaxAssetsIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxAssetsIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxAssetsIOA" xlink:to="reference_DeferredTaxAssetsIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIOA" xlink:label="OtherIOA"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherIOA" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIOA" xlink:to="reference_OtherIOA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AllowanceForDoubtfulAccountsIOAByGroup" xlink:label="AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <reference xlink:type="resource" xlink:label="reference_AllowanceForDoubtfulAccountsIOAByGroup" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AllowanceForDoubtfulAccountsIOAByGroup" xlink:to="reference_AllowanceForDoubtfulAccountsIOAByGroup"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentsAndOtherAssets" xlink:label="InvestmentsAndOtherAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_InvestmentsAndOtherAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InvestmentsAndOtherAssets" xlink:to="reference_InvestmentsAndOtherAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssets" xlink:to="reference_NoncurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssetsAbstract" xlink:label="DeferredAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssetsAbstract" xlink:to="reference_DeferredAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredAssets" xlink:label="DeferredAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredAssets" xlink:to="reference_DeferredAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <reference xlink:type="resource" xlink:label="reference_Assets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Assets" xlink:to="reference_Assets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCL" xlink:to="reference_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNCL" xlink:to="reference_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalStock" xlink:label="CapitalStock"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalStock" xlink:to="reference_CapitalStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToShares" xlink:label="DepositForSubscriptionsToShares"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForSubscriptionsToShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForSubscriptionsToShares" xlink:to="reference_DepositForSubscriptionsToShares"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplusAbstract" xlink:label="CapitalSurplusAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplusAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplusAbstract" xlink:to="reference_CapitalSurplusAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalCapitalSurplus" xlink:label="LegalCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalCapitalSurplus" xlink:to="reference_LegalCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CapitalSurplus" xlink:label="CapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_CapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CapitalSurplus" xlink:to="reference_CapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsAbstract" xlink:label="RetainedEarningsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsAbstract" xlink:to="reference_RetainedEarningsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LegalRetainedEarnings" xlink:label="LegalRetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_LegalRetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LegalRetainedEarnings" xlink:to="reference_LegalRetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarnings" xlink:label="RetainedEarnings"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarnings" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarnings" xlink:to="reference_RetainedEarnings"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RevaluationReserveForLand" xlink:label="RevaluationReserveForLand"/>
+    <reference xlink:type="resource" xlink:label="reference_RevaluationReserveForLand" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RevaluationReserveForLand" xlink:to="reference_RevaluationReserveForLand"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationDifferenceOnAvailableForSaleSecurities" xlink:label="ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationDifferenceOnAvailableForSaleSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationDifferenceOnAvailableForSaleSecurities" xlink:to="reference_ValuationDifferenceOnAvailableForSaleSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_TreasuryStock" xlink:label="TreasuryStock"/>
+    <reference xlink:type="resource" xlink:label="reference_TreasuryStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TreasuryStock" xlink:to="reference_TreasuryStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OperatingIncome" xlink:label="OperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncome" xlink:to="reference_OperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestOnSecuritiesNOI" xlink:label="InterestOnSecuritiesNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnSecuritiesNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnSecuritiesNOI" xlink:to="reference_InterestOnSecuritiesNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnSalesOfSecuritiesNOI" xlink:label="GainOnSalesOfSecuritiesNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnSalesOfSecuritiesNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnSalesOfSecuritiesNOI" xlink:to="reference_GainOnSalesOfSecuritiesNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnValuationOfSecuritiesNOI" xlink:label="GainOnValuationOfSecuritiesNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnValuationOfSecuritiesNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnValuationOfSecuritiesNOI" xlink:to="reference_GainOnValuationOfSecuritiesNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestOnBondsNOE" xlink:label="InterestOnBondsNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestOnBondsNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestOnBondsNOE" xlink:to="reference_InterestOnBondsNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnSalesOfSecuritiesNOE" xlink:label="LossOnSalesOfSecuritiesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnSalesOfSecuritiesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnSalesOfSecuritiesNOE" xlink:to="reference_LossOnSalesOfSecuritiesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnValuationOfSecuritiesNOE" xlink:label="LossOnValuationOfSecuritiesNOE"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnValuationOfSecuritiesNOE" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnValuationOfSecuritiesNOE" xlink:to="reference_LossOnValuationOfSecuritiesNOE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_OrdinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OrdinaryIncome" xlink:to="reference_OrdinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnSalesOfNoncurrentAssetsEI" xlink:label="GainOnSalesOfNoncurrentAssetsEI"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnSalesOfNoncurrentAssetsEI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnSalesOfNoncurrentAssetsEI" xlink:to="reference_GainOnSalesOfNoncurrentAssetsEI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnSalesOfNoncurrentAssetsEL" xlink:label="LossOnSalesOfNoncurrentAssetsEL"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnSalesOfNoncurrentAssetsEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnSalesOfNoncurrentAssetsEL" xlink:to="reference_LossOnSalesOfNoncurrentAssetsEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ImpairmentLossEL" xlink:label="ImpairmentLossEL"/>
+    <reference xlink:type="resource" xlink:label="reference_ImpairmentLossEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ImpairmentLossEL" xlink:to="reference_ImpairmentLossEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesCurrent" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesCurrent" xlink:to="reference_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesDeferred" xlink:label="IncomeTaxesDeferred"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesDeferred" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesDeferred" xlink:to="reference_IncomeTaxesDeferred"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NetIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetIncome" xlink:to="reference_NetIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AssetsAbstract" xlink:label="AssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_AssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AssetsAbstract" xlink:to="reference_AssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAbstract" xlink:label="LiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAbstract" xlink:to="reference_LiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilitiesAbstract" xlink:label="CurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilitiesAbstract" xlink:to="reference_CurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NotesPayableTrade" xlink:label="NotesPayableTrade"/>
+    <reference xlink:type="resource" xlink:label="reference_NotesPayableTrade" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NotesPayableTrade" xlink:to="reference_NotesPayableTrade"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShortTermLoansPayable" xlink:label="ShortTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_ShortTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShortTermLoansPayable" xlink:to="reference_ShortTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccountsPayableOther" xlink:label="AccountsPayableOther"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsPayableOther" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsPayableOther" xlink:to="reference_AccountsPayableOther"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccruedExpenses" xlink:label="AccruedExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_AccruedExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccruedExpenses" xlink:to="reference_AccruedExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesPayable" xlink:label="IncomeTaxesPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxesPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxesPayable" xlink:to="reference_IncomeTaxesPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesCL" xlink:label="DeferredTaxLiabilitiesCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesCL" xlink:to="reference_DeferredTaxLiabilitiesCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AdvancesReceived" xlink:label="AdvancesReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancesReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancesReceived" xlink:to="reference_AdvancesReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositsReceived" xlink:label="DepositsReceived"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositsReceived" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositsReceived" xlink:to="reference_DepositsReceived"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_UnearnedRevenue" xlink:label="UnearnedRevenue"/>
+    <reference xlink:type="resource" xlink:label="reference_UnearnedRevenue" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UnearnedRevenue" xlink:to="reference_UnearnedRevenue"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentLiabilities" xlink:label="CurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentLiabilities" xlink:to="reference_CurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilitiesAbstract" xlink:label="NoncurrentLiabilitiesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilitiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilitiesAbstract" xlink:to="reference_NoncurrentLiabilitiesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BondsPayable" xlink:label="BondsPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_BondsPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="BondsPayable" xlink:to="reference_BondsPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LongTermLoansPayable" xlink:label="LongTermLoansPayable"/>
+    <reference xlink:type="resource" xlink:label="reference_LongTermLoansPayable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LongTermLoansPayable" xlink:to="reference_LongTermLoansPayable"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredTaxLiabilitiesNCL" xlink:label="DeferredTaxLiabilitiesNCL"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredTaxLiabilitiesNCL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredTaxLiabilitiesNCL" xlink:to="reference_DeferredTaxLiabilitiesNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentLiabilities" xlink:label="NoncurrentLiabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentLiabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentLiabilities" xlink:to="reference_NoncurrentLiabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ReservesUnderTheSpecialLawsAbstract1" xlink:label="ReservesUnderTheSpecialLawsAbstract1"/>
+    <reference xlink:type="resource" xlink:label="reference_ReservesUnderTheSpecialLawsAbstract1" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReservesUnderTheSpecialLawsAbstract1" xlink:to="reference_ReservesUnderTheSpecialLawsAbstract1"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ReservesUnderTheSpecialLaws1" xlink:label="ReservesUnderTheSpecialLaws1"/>
+    <reference xlink:type="resource" xlink:label="reference_ReservesUnderTheSpecialLaws1" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReservesUnderTheSpecialLaws1" xlink:to="reference_ReservesUnderTheSpecialLaws1"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <reference xlink:type="resource" xlink:label="reference_Liabilities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Liabilities" xlink:to="reference_Liabilities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCapitalSurplus" xlink:label="OtherCapitalSurplus"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherCapitalSurplus" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherCapitalSurplus" xlink:to="reference_OtherCapitalSurplus"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_LiabilitiesAndNetAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LiabilitiesAndNetAssets" xlink:to="reference_LiabilitiesAndNetAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssetsAbstract" xlink:label="NetAssetsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NetAssetsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetAssetsAbstract" xlink:to="reference_NetAssetsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShareholdersEquityAbstract" xlink:label="ShareholdersEquityAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ShareholdersEquityAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdersEquityAbstract" xlink:to="reference_ShareholdersEquityAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_RetainedEarningsBroughtForward" xlink:label="RetainedEarningsBroughtForward"/>
+    <reference xlink:type="resource" xlink:label="reference_RetainedEarningsBroughtForward" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetainedEarningsBroughtForward" xlink:to="reference_RetainedEarningsBroughtForward"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ShareholdersEquity" xlink:label="ShareholdersEquity"/>
+    <reference xlink:type="resource" xlink:label="reference_ShareholdersEquity" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdersEquity" xlink:to="reference_ShareholdersEquity"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustmentsAbstract" xlink:label="ValuationAndTranslationAdjustmentsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustmentsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustmentsAbstract" xlink:to="reference_ValuationAndTranslationAdjustmentsAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DeferredGainsOrLossesOnHedges" xlink:label="DeferredGainsOrLossesOnHedges"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredGainsOrLossesOnHedges" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredGainsOrLossesOnHedges" xlink:to="reference_DeferredGainsOrLossesOnHedges"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ValuationAndTranslationAdjustments" xlink:label="ValuationAndTranslationAdjustments"/>
+    <reference xlink:type="resource" xlink:label="reference_ValuationAndTranslationAdjustments" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ValuationAndTranslationAdjustments" xlink:to="reference_ValuationAndTranslationAdjustments"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_SubscriptionRightsToShares" xlink:label="SubscriptionRightsToShares"/>
+    <reference xlink:type="resource" xlink:label="reference_SubscriptionRightsToShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SubscriptionRightsToShares" xlink:to="reference_SubscriptionRightsToShares"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssets" xlink:label="NetAssets"/>
+    <reference xlink:type="resource" xlink:label="reference_NetAssets" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NetAssets" xlink:to="reference_NetAssets"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncomeAbstract" xlink:label="NonOperatingIncomeAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncomeAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncomeAbstract" xlink:to="reference_NonOperatingIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DividendsIncomeNOI" xlink:label="DividendsIncomeNOI"/>
+    <reference xlink:type="resource" xlink:label="reference_DividendsIncomeNOI" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DividendsIncomeNOI" xlink:to="reference_DividendsIncomeNOI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingIncome" xlink:label="NonOperatingIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingIncome" xlink:to="reference_NonOperatingIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpensesAbstract" xlink:label="NonOperatingExpensesAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpensesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpensesAbstract" xlink:to="reference_NonOperatingExpensesAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonOperatingExpenses" xlink:label="NonOperatingExpenses"/>
+    <reference xlink:type="resource" xlink:label="reference_NonOperatingExpenses" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonOperatingExpenses" xlink:to="reference_NonOperatingExpenses"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncomeAbstract" xlink:label="ExtraordinaryIncomeAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncomeAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncomeAbstract" xlink:to="reference_ExtraordinaryIncomeAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryIncome" xlink:label="ExtraordinaryIncome"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryIncome" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryIncome" xlink:to="reference_ExtraordinaryIncome"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLossAbstract" xlink:label="ExtraordinaryLossAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLossAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLossAbstract" xlink:to="reference_ExtraordinaryLossAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ExtraordinaryLoss" xlink:label="ExtraordinaryLoss"/>
+    <reference xlink:type="resource" xlink:label="reference_ExtraordinaryLoss" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ExtraordinaryLoss" xlink:to="reference_ExtraordinaryLoss"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeBeforeIncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="reference_IncomeBeforeIncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxes" xlink:label="IncomeTaxes"/>
+    <reference xlink:type="resource" xlink:label="reference_IncomeTaxes" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncomeTaxes" xlink:to="reference_IncomeTaxes"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositForSubscriptionsToTreasuryStock" xlink:label="DepositForSubscriptionsToTreasuryStock"/>
+    <reference xlink:type="resource" xlink:label="reference_DepositForSubscriptionsToTreasuryStock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepositForSubscriptionsToTreasuryStock" xlink:to="reference_DepositForSubscriptionsToTreasuryStock"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NonrecurringLossEL" xlink:label="NonrecurringLossEL"/>
+    <reference xlink:type="resource" xlink:label="reference_NonrecurringLossEL" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonrecurringLossEL" xlink:to="reference_NonrecurringLossEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherRetainedEarningsAbstract" xlink:label="OtherRetainedEarningsAbstract"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherRetainedEarningsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherRetainedEarningsAbstract" xlink:to="reference_OtherRetainedEarningsAbstract"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_RailwayFaresReceivablesCARWY" xlink:label="RailwayFaresReceivablesCARWY"/>
+    <reference xlink:type="resource" xlink:label="reference_RailwayFaresReceivablesCARWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RailwayFaresReceivablesCARWY" xlink:to="reference_RailwayFaresReceivablesCARWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AccountsReceivableCARWY" xlink:label="AccountsReceivableCARWY"/>
+    <reference xlink:type="resource" xlink:label="reference_AccountsReceivableCARWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccountsReceivableCARWY" xlink:to="reference_AccountsReceivableCARWY"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Supplies" xlink:label="Supplies"/>
+    <reference xlink:type="resource" xlink:label="reference_Supplies" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Supplies" xlink:to="reference_Supplies"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AdvancePaymentsCARWY" xlink:label="AdvancePaymentsCARWY"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvancePaymentsCARWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvancePaymentsCARWY" xlink:to="reference_AdvancePaymentsCARWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_SpecialReserveForExpansionOfRailwayTransportCapacityCARWY" xlink:label="SpecialReserveForExpansionOfRailwayTransportCapacityCARWY"/>
+    <reference xlink:type="resource" xlink:label="reference_SpecialReserveForExpansionOfRailwayTransportCapacityCARWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SpecialReserveForExpansionOfRailwayTransportCapacityCARWY" xlink:to="reference_SpecialReserveForExpansionOfRailwayTransportCapacityCARWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRailwayBusinessAbstractRWY" xlink:label="NoncurrentAssetsRailwayBusinessAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsRailwayBusinessAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsRailwayBusinessAbstractRWY" xlink:to="reference_NoncurrentAssetsRailwayBusinessAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNCARailway" xlink:label="PropertyPlantAndEquipmentNCARailway"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentNCARailway" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentNCARailway" xlink:to="reference_PropertyPlantAndEquipmentNCARailway"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AccumulatedDepreciationPPERailway" xlink:label="AccumulatedDepreciationPPERailway"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationPPERailway" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationPPERailway" xlink:to="reference_AccumulatedDepreciationPPERailway"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNetNCARailway" xlink:label="PropertyPlantAndEquipmentNetNCARailway"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentNetNCARailway" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentNetNCARailway" xlink:to="reference_PropertyPlantAndEquipmentNetNCARailway"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_IntangibleAssetsNCARWY" xlink:label="IntangibleAssetsNCARWY"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsNCARWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsNCARWY" xlink:to="reference_IntangibleAssetsNCARWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRailwayRWY" xlink:label="NoncurrentAssetsRailwayRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsRailwayRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsRailwayRWY" xlink:to="reference_NoncurrentAssetsRailwayRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRelatedAbstractRWY" xlink:label="NoncurrentAssetsRelatedAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsRelatedAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsRelatedAbstractRWY" xlink:to="reference_NoncurrentAssetsRelatedAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNCARelatedRWY" xlink:label="PropertyPlantAndEquipmentNCARelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentNCARelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentNCARelatedRWY" xlink:to="reference_PropertyPlantAndEquipmentNCARelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AccumulatedDepreciationPPERelatedRWY" xlink:label="AccumulatedDepreciationPPERelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationPPERelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationPPERelatedRWY" xlink:to="reference_AccumulatedDepreciationPPERelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNetNCARelatedRWY" xlink:label="PropertyPlantAndEquipmentNetNCARelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentNetNCARelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentNetNCARelatedRWY" xlink:to="reference_PropertyPlantAndEquipmentNetNCARelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_IntangibleAssetsRelatedRWY" xlink:label="IntangibleAssetsRelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsRelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsRelatedRWY" xlink:to="reference_IntangibleAssetsRelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRelatedRWY" xlink:label="NoncurrentAssetsRelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsRelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsRelatedRWY" xlink:to="reference_NoncurrentAssetsRelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsAffiliatedAbstractRWY" xlink:label="NoncurrentAssetsAffiliatedAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAffiliatedAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAffiliatedAbstractRWY" xlink:to="reference_NoncurrentAssetsAffiliatedAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNCAAffiliatedRWY" xlink:label="PropertyPlantAndEquipmentNCAAffiliatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentNCAAffiliatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentNCAAffiliatedRWY" xlink:to="reference_PropertyPlantAndEquipmentNCAAffiliatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AccumulatedDepreciationNCAAffiliatedRWY" xlink:label="AccumulatedDepreciationNCAAffiliatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_AccumulatedDepreciationNCAAffiliatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AccumulatedDepreciationNCAAffiliatedRWY" xlink:to="reference_AccumulatedDepreciationNCAAffiliatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNetNCAAffiliatedRWY" xlink:label="PropertyPlantAndEquipmentNetNCAAffiliatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_PropertyPlantAndEquipmentNetNCAAffiliatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PropertyPlantAndEquipmentNetNCAAffiliatedRWY" xlink:to="reference_PropertyPlantAndEquipmentNetNCAAffiliatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_IntangibleAssetsAffiliatedRWY" xlink:label="IntangibleAssetsAffiliatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_IntangibleAssetsAffiliatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IntangibleAssetsAffiliatedRWY" xlink:to="reference_IntangibleAssetsAffiliatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsAffiliatedRWY" xlink:label="NoncurrentAssetsAffiliatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_NoncurrentAssetsAffiliatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NoncurrentAssetsAffiliatedRWY" xlink:to="reference_NoncurrentAssetsAffiliatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OtherNoncurrentAssetsAffiliatedRWY" xlink:label="OtherNoncurrentAssetsAffiliatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OtherNoncurrentAssetsAffiliatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNoncurrentAssetsAffiliatedRWY" xlink:to="reference_OtherNoncurrentAssetsAffiliatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ConstructionInProgressAbstractRWY" xlink:label="ConstructionInProgressAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_ConstructionInProgressAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ConstructionInProgressAbstractRWY" xlink:to="reference_ConstructionInProgressAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ConstructionInProgressRailwayRWY" xlink:label="ConstructionInProgressRailwayRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_ConstructionInProgressRailwayRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ConstructionInProgressRailwayRWY" xlink:to="reference_ConstructionInProgressRailwayRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ConstructionInProgressRWY" xlink:label="ConstructionInProgressRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_ConstructionInProgressRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ConstructionInProgressRWY" xlink:to="reference_ConstructionInProgressRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_DeferredDisasterLossDARWY" xlink:label="DeferredDisasterLossDARWY"/>
+    <reference xlink:type="resource" xlink:label="reference_DeferredDisasterLossDARWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DeferredDisasterLossDARWY" xlink:to="reference_DeferredDisasterLossDARWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_InterLineFaresReceivedCLRWY" xlink:label="InterLineFaresReceivedCLRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_InterLineFaresReceivedCLRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterLineFaresReceivedCLRWY" xlink:to="reference_InterLineFaresReceivedCLRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PrepaidFaresReceivedCLRWY" xlink:label="PrepaidFaresReceivedCLRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_PrepaidFaresReceivedCLRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PrepaidFaresReceivedCLRWY" xlink:to="reference_PrepaidFaresReceivedCLRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ProvisionForLargeScaleRenovationOfTheShinkansenInfrastructureNCLRWY" xlink:label="ProvisionForLargeScaleRenovationOfTheShinkansenInfrastructureNCLRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionForLargeScaleRenovationOfTheShinkansenInfrastructureNCLRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionForLargeScaleRenovationOfTheShinkansenInfrastructureNCLRWY" xlink:to="reference_ProvisionForLargeScaleRenovationOfTheShinkansenInfrastructureNCLRWY"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NegativeGoodwill" xlink:label="NegativeGoodwill"/>
+    <reference xlink:type="resource" xlink:label="reference_NegativeGoodwill" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NegativeGoodwill" xlink:to="reference_NegativeGoodwill"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_SpecialReserveForExpansionOfRailwayTransportCapacityRWY" xlink:label="SpecialReserveForExpansionOfRailwayTransportCapacityRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_SpecialReserveForExpansionOfRailwayTransportCapacityRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SpecialReserveForExpansionOfRailwayTransportCapacityRWY" xlink:to="reference_SpecialReserveForExpansionOfRailwayTransportCapacityRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingIncomeRailwayAbstractRWY" xlink:label="OperatingIncomeRailwayAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncomeRailwayAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncomeRailwayAbstractRWY" xlink:to="reference_OperatingIncomeRailwayAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRailwayAbstractRWY" xlink:label="OperatingRevenueRailwayAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueRailwayAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueRailwayAbstractRWY" xlink:to="reference_OperatingRevenueRailwayAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PassengerTransportationORRWY" xlink:label="PassengerTransportationORRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_PassengerTransportationORRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PassengerTransportationORRWY" xlink:to="reference_PassengerTransportationORRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_FreightTransportationORRWY" xlink:label="FreightTransportationORRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_FreightTransportationORRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FreightTransportationORRWY" xlink:to="reference_FreightTransportationORRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TrackageRevenueORRWY" xlink:label="TrackageRevenueORRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_TrackageRevenueORRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TrackageRevenueORRWY" xlink:to="reference_TrackageRevenueORRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TransferOfRailroadLineORRWY" xlink:label="TransferOfRailroadLineORRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_TransferOfRailroadLineORRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TransferOfRailroadLineORRWY" xlink:to="reference_TransferOfRailroadLineORRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_MiscellaneousIncomeOfTransportationORRWY" xlink:label="MiscellaneousIncomeOfTransportationORRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_MiscellaneousIncomeOfTransportationORRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MiscellaneousIncomeOfTransportationORRWY" xlink:to="reference_MiscellaneousIncomeOfTransportationORRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRailwayRWY" xlink:label="OperatingRevenueRailwayRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueRailwayRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueRailwayRWY" xlink:to="reference_OperatingRevenueRailwayRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRailwayAbstractRWY" xlink:label="OperatingExpensesRailwayAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesRailwayAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesRailwayAbstractRWY" xlink:to="reference_OperatingExpensesRailwayAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TransportationExpensesOERWY" xlink:label="TransportationExpensesOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_TransportationExpensesOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TransportationExpensesOERWY" xlink:to="reference_TransportationExpensesOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AdvertisingExpensesOERWY" xlink:label="AdvertisingExpensesOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_AdvertisingExpensesOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AdvertisingExpensesOERWY" xlink:to="reference_AdvertisingExpensesOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_WelfareFacilitiesExpensesOERWY" xlink:label="WelfareFacilitiesExpensesOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_WelfareFacilitiesExpensesOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WelfareFacilitiesExpensesOERWY" xlink:to="reference_WelfareFacilitiesExpensesOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_GeneralAndAdministrativeExpensesOERWY" xlink:label="GeneralAndAdministrativeExpensesOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_GeneralAndAdministrativeExpensesOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GeneralAndAdministrativeExpensesOERWY" xlink:to="reference_GeneralAndAdministrativeExpensesOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_TaxesOERWY" xlink:label="TaxesOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_TaxesOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TaxesOERWY" xlink:to="reference_TaxesOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_DepreciationOERWY" xlink:label="DepreciationOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_DepreciationOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DepreciationOERWY" xlink:to="reference_DepreciationOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRailwayRWY" xlink:label="OperatingExpensesRailwayRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesRailwayRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesRailwayRWY" xlink:to="reference_OperatingExpensesRailwayRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingIncomeRailwayRWY" xlink:label="OperatingIncomeRailwayRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncomeRailwayRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncomeRailwayRWY" xlink:to="reference_OperatingIncomeRailwayRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingIncomeRelatedAbstractRWY" xlink:label="OperatingIncomeRelatedAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncomeRelatedAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncomeRelatedAbstractRWY" xlink:to="reference_OperatingIncomeRelatedAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRelatedAbstractRWY" xlink:label="OperatingRevenueRelatedAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueRelatedAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueRelatedAbstractRWY" xlink:to="reference_OperatingRevenueRelatedAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingRevenueRelatedRWY" xlink:label="OperatingRevenueRelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingRevenueRelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingRevenueRelatedRWY" xlink:to="reference_OperatingRevenueRelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRelatedAbstractRWY" xlink:label="OperatingExpensesRelatedAbstractRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesRelatedAbstractRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesRelatedAbstractRWY" xlink:to="reference_OperatingExpensesRelatedAbstractRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingExpensesRelatedRWY" xlink:label="OperatingExpensesRelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingExpensesRelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingExpensesRelatedRWY" xlink:to="reference_OperatingExpensesRelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_OperatingIncomeRelatedRWY" xlink:label="OperatingIncomeRelatedRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_OperatingIncomeRelatedRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OperatingIncomeRelatedRWY" xlink:to="reference_OperatingIncomeRelatedRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_InterestAndDiscountsEarnedNOIRWY" xlink:label="InterestAndDiscountsEarnedNOIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestAndDiscountsEarnedNOIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestAndDiscountsEarnedNOIRWY" xlink:to="reference_InterestAndDiscountsEarnedNOIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_GainOnSalesOfGoodsNOIRWY" xlink:label="GainOnSalesOfGoodsNOIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_GainOnSalesOfGoodsNOIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GainOnSalesOfGoodsNOIRWY" xlink:to="reference_GainOnSalesOfGoodsNOIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_RevenueLandRentNOIRWY" xlink:label="RevenueLandRentNOIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_RevenueLandRentNOIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RevenueLandRentNOIRWY" xlink:to="reference_RevenueLandRentNOIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_MiscellaneousIncomeNOIRWY" xlink:label="MiscellaneousIncomeNOIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_MiscellaneousIncomeNOIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MiscellaneousIncomeNOIRWY" xlink:to="reference_MiscellaneousIncomeNOIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_InterestAndDiscountsExpensesNOERWY" xlink:label="InterestAndDiscountsExpensesNOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_InterestAndDiscountsExpensesNOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InterestAndDiscountsExpensesNOERWY" xlink:to="reference_InterestAndDiscountsExpensesNOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_LossOnSalesOfGoodsNOERWY" xlink:label="LossOnSalesOfGoodsNOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_LossOnSalesOfGoodsNOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LossOnSalesOfGoodsNOERWY" xlink:to="reference_LossOnSalesOfGoodsNOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_MiscellaneousExpensesNOERWY" xlink:label="MiscellaneousExpensesNOERWY"/>
+    <reference xlink:type="resource" xlink:label="reference_MiscellaneousExpensesNOERWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MiscellaneousExpensesNOERWY" xlink:to="reference_MiscellaneousExpensesNOERWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_SubsidyEIRWY" xlink:label="SubsidyEIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_SubsidyEIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SubsidyEIRWY" xlink:to="reference_SubsidyEIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_EvaluationOnRailwayFacilitiesAsReceivedPropertyEIRWY" xlink:label="EvaluationOnRailwayFacilitiesAsReceivedPropertyEIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_EvaluationOnRailwayFacilitiesAsReceivedPropertyEIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EvaluationOnRailwayFacilitiesAsReceivedPropertyEIRWY" xlink:to="reference_EvaluationOnRailwayFacilitiesAsReceivedPropertyEIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_DonationForRailwayFacilitiesConstructionEIRWY" xlink:label="DonationForRailwayFacilitiesConstructionEIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_DonationForRailwayFacilitiesConstructionEIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DonationForRailwayFacilitiesConstructionEIRWY" xlink:to="reference_DonationForRailwayFacilitiesConstructionEIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ReversalOfSpecialReserveForExpansionOfRailwayTransportCapacityEIRWY" xlink:label="ReversalOfSpecialReserveForExpansionOfRailwayTransportCapacityEIRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_ReversalOfSpecialReserveForExpansionOfRailwayTransportCapacityEIRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReversalOfSpecialReserveForExpansionOfRailwayTransportCapacityEIRWY" xlink:to="reference_ReversalOfSpecialReserveForExpansionOfRailwayTransportCapacityEIRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_RetirementExpensesELRWY" xlink:label="RetirementExpensesELRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_RetirementExpensesELRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RetirementExpensesELRWY" xlink:to="reference_RetirementExpensesELRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AmortizationOfDeferredDisasterLossRWY" xlink:label="AmortizationOfDeferredDisasterLossRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_AmortizationOfDeferredDisasterLossRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AmortizationOfDeferredDisasterLossRWY" xlink:to="reference_AmortizationOfDeferredDisasterLossRWY"/>
+    <loc xlink:type="locator" xlink:href="jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ProvisionOfSpecialReserveForExpansionOfRailwayTransportCapacityELRWY" xlink:label="ProvisionOfSpecialReserveForExpansionOfRailwayTransportCapacityELRWY"/>
+    <reference xlink:type="resource" xlink:label="reference_ProvisionOfSpecialReserveForExpansionOfRailwayTransportCapacityELRWY" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第2号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvisionOfSpecialReserveForExpansionOfRailwayTransportCapacityELRWY" xlink:to="reference_ProvisionOfSpecialReserveForExpansionOfRailwayTransportCapacityELRWY"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_CurrentPortionOfBonds" xlink:label="CurrentPortionOfBonds"/>
+    <reference xlink:type="resource" xlink:label="reference_CurrentPortionOfBonds" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>国土交通省</ref:Publisher>
+      <ref:Name>鉄道事業会計規則</ref:Name>
+      <ref:IssueDate>2009-04-01</ref:IssueDate>
+      <ref:Appendix>別表第2第1号表</ref:Appendix>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CurrentPortionOfBonds" xlink:to="reference_CurrentPortionOfBonds"/>
+  </referenceLink>
+</linkbase>

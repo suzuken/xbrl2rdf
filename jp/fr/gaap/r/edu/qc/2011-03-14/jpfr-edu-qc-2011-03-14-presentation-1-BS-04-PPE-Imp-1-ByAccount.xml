@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">減損損失累計額（有形固定資産）を科目別に控除する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedQuarterlyBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleConsolidatedQuarterlyBalanceSheets"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedQuarterlyBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Buildings" xlink:label="Buildings"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedImpairmentLossBuildings" xlink:label="AccumulatedImpairmentLossBuildings"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Buildings" xlink:to="AccumulatedImpairmentLossBuildings" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Structures" xlink:label="Structures"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedImpairmentLossStructures" xlink:label="AccumulatedImpairmentLossStructures"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Structures" xlink:to="AccumulatedImpairmentLossStructures" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_EducationalResearchInstrumentAndEquipmentEDU" xlink:label="EducationalResearchInstrumentAndEquipmentEDU"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_AccumulatedImpairmentLossEducationalResearchInstrumentAndEquipmentEDU" xlink:label="AccumulatedImpairmentLossEducationalResearchInstrumentAndEquipmentEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="EducationalResearchInstrumentAndEquipmentEDU" xlink:to="AccumulatedImpairmentLossEducationalResearchInstrumentAndEquipmentEDU" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_OtherInstrumentAndEquipmentEDU" xlink:label="OtherInstrumentAndEquipmentEDU"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_AccumulatedImpairmentLossOtherInstrumentAndEquipmentEDU" xlink:label="AccumulatedImpairmentLossOtherInstrumentAndEquipmentEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="OtherInstrumentAndEquipmentEDU" xlink:to="AccumulatedImpairmentLossOtherInstrumentAndEquipmentEDU" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_VesselsAndVehiclesEDU" xlink:label="VesselsAndVehiclesEDU"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/edu/2011-03-14/jpfr-t-edu-2011-03-14.xsd#jpfr-t-edu_AccumulatedImpairmentLossVesselsAndVehiclesEDU" xlink:label="AccumulatedImpairmentLossVesselsAndVehiclesEDU"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="VesselsAndVehiclesEDU" xlink:to="AccumulatedImpairmentLossVesselsAndVehiclesEDU" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LeaseAssetsPPE" xlink:label="LeaseAssetsPPE"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedImpairmentLossLeaseAssetsPPE" xlink:label="AccumulatedImpairmentLossLeaseAssetsPPE"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="LeaseAssetsPPE" xlink:to="AccumulatedImpairmentLossLeaseAssetsPPE" order="2.0"/>
+  </presentationLink>
+</linkbase>

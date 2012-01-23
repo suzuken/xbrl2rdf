@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">銀行・信託業財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleBNKLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/negativeLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleBNKNegativeLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/positiveOrNegativeLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleBNKPositiveOrNegativeLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleBNKTotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <label xlink:type="resource" xlink:label="label_PropertyPlantAndEquipmentAbstract" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_PropertyPlantAndEquipmentAbstract">Tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="label_PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipment" xlink:label="PropertyPlantAndEquipment"/>
+    <label xlink:type="resource" xlink:label="label_PropertyPlantAndEquipment" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_PropertyPlantAndEquipment">Tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="PropertyPlantAndEquipment" xlink:to="label_PropertyPlantAndEquipment"/>
+    <label xlink:type="resource" xlink:label="label_PropertyPlantAndEquipment_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/totalLabel" xml:lang="en" id="label_PropertyPlantAndEquipment_2">Total tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="PropertyPlantAndEquipment" xlink:to="label_PropertyPlantAndEquipment_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIA" xlink:label="OtherIA"/>
+    <label xlink:type="resource" xlink:label="label_OtherIA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_OtherIA">Other intangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherIA" xlink:to="label_OtherIA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IntangibleAssets" xlink:label="IntangibleAssets"/>
+    <label xlink:type="resource" xlink:label="label_IntangibleAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_IntangibleAssets">Intangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IntangibleAssets" xlink:to="label_IntangibleAssets"/>
+    <label xlink:type="resource" xlink:label="label_IntangibleAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/totalLabel" xml:lang="en" id="label_IntangibleAssets_2">Total intangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IntangibleAssets" xlink:to="label_IntangibleAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Assets" xlink:label="Assets"/>
+    <label xlink:type="resource" xlink:label="label_Assets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_Assets">Assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Assets" xlink:to="label_Assets"/>
+    <label xlink:type="resource" xlink:label="label_Assets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/totalLabel" xml:lang="en" id="label_Assets_2">Total assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Assets" xlink:to="label_Assets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Liabilities" xlink:label="Liabilities"/>
+    <label xlink:type="resource" xlink:label="label_Liabilities" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_Liabilities">Liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Liabilities" xlink:to="label_Liabilities"/>
+    <label xlink:type="resource" xlink:label="label_Liabilities_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/totalLabel" xml:lang="en" id="label_Liabilities_2">Total liabilities</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="Liabilities" xlink:to="label_Liabilities_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetAssets" xlink:label="NetAssets"/>
+    <label xlink:type="resource" xlink:label="label_NetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_NetAssets">Net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetAssets" xlink:to="label_NetAssets"/>
+    <label xlink:type="resource" xlink:label="label_NetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/totalLabel" xml:lang="en" id="label_NetAssets_2">Total net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetAssets" xlink:to="label_NetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LiabilitiesAndNetAssets">Liabilities and net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/totalLabel" xml:lang="en" id="label_LiabilitiesAndNetAssets_2">Total liabilities and net assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OrdinaryIncome" xlink:label="OrdinaryIncome"/>
+    <label xlink:type="resource" xlink:label="label_OrdinaryIncome" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_OrdinaryIncome">Ordinary profit</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OrdinaryIncome" xlink:to="label_OrdinaryIncome"/>
+    <label xlink:type="resource" xlink:label="label_OrdinaryIncome_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/negativeLabel" xml:lang="en" id="label_OrdinaryIncome_2">Ordinary loss</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OrdinaryIncome" xlink:to="label_OrdinaryIncome_2"/>
+    <label xlink:type="resource" xlink:label="label_OrdinaryIncome_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/positiveOrNegativeLabel" xml:lang="en" id="label_OrdinaryIncome_3">Ordinary profit (loss)</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OrdinaryIncome" xlink:to="label_OrdinaryIncome_3"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF" xlink:label="LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF">Loss (gain) on sales of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF" xlink:to="label_LossGainOnSalesOfPropertyPlantAndEquipmentOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnRetirementOfPropertyPlantAndEquipmentOpeCF" xlink:label="LossOnRetirementOfPropertyPlantAndEquipmentOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_LossOnRetirementOfPropertyPlantAndEquipmentOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossOnRetirementOfPropertyPlantAndEquipmentOpeCF">Loss on retirement of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossOnRetirementOfPropertyPlantAndEquipmentOpeCF" xlink:to="label_LossOnRetirementOfPropertyPlantAndEquipmentOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PurchaseOfPropertyPlantAndEquipmentInvCF" xlink:label="PurchaseOfPropertyPlantAndEquipmentInvCF"/>
+    <label xlink:type="resource" xlink:label="label_PurchaseOfPropertyPlantAndEquipmentInvCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_PurchaseOfPropertyPlantAndEquipmentInvCF">Purchase of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="PurchaseOfPropertyPlantAndEquipmentInvCF" xlink:to="label_PurchaseOfPropertyPlantAndEquipmentInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF" xlink:label="ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF"/>
+    <label xlink:type="resource" xlink:label="label_ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF">Proceeds from sales of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF" xlink:to="label_ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherEI" xlink:label="OtherEI"/>
+    <label xlink:type="resource" xlink:label="label_OtherEI" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_OtherEI">Other</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherEI" xlink:to="label_OtherEI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnSalesOfPropertyPlantAndEquipmentEI" xlink:label="GainOnSalesOfPropertyPlantAndEquipmentEI"/>
+    <label xlink:type="resource" xlink:label="label_GainOnSalesOfPropertyPlantAndEquipmentEI" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_GainOnSalesOfPropertyPlantAndEquipmentEI">Gain on sales of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GainOnSalesOfPropertyPlantAndEquipmentEI" xlink:to="label_GainOnSalesOfPropertyPlantAndEquipmentEI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherEL" xlink:label="OtherEL"/>
+    <label xlink:type="resource" xlink:label="label_OtherEL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_OtherEL">Other</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherEL" xlink:to="label_OtherEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnRetirementOfPropertyPlantAndEquipmentEL" xlink:label="LossOnRetirementOfPropertyPlantAndEquipmentEL"/>
+    <label xlink:type="resource" xlink:label="label_LossOnRetirementOfPropertyPlantAndEquipmentEL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossOnRetirementOfPropertyPlantAndEquipmentEL">Loss on retirement of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossOnRetirementOfPropertyPlantAndEquipmentEL" xlink:to="label_LossOnRetirementOfPropertyPlantAndEquipmentEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnDisposalOfPropertyPlantAndEquipmentOpeCF" xlink:label="LossGainOnDisposalOfPropertyPlantAndEquipmentOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_LossGainOnDisposalOfPropertyPlantAndEquipmentOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossGainOnDisposalOfPropertyPlantAndEquipmentOpeCF">Loss (gain) on disposal of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossGainOnDisposalOfPropertyPlantAndEquipmentOpeCF" xlink:to="label_LossGainOnDisposalOfPropertyPlantAndEquipmentOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PaymentsForRetirementOfPropertyPlantAndEquipmentInvCF" xlink:label="PaymentsForRetirementOfPropertyPlantAndEquipmentInvCF"/>
+    <label xlink:type="resource" xlink:label="label_PaymentsForRetirementOfPropertyPlantAndEquipmentInvCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_PaymentsForRetirementOfPropertyPlantAndEquipmentInvCF">Payments for retirement of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="PaymentsForRetirementOfPropertyPlantAndEquipmentInvCF" xlink:to="label_PaymentsForRetirementOfPropertyPlantAndEquipmentInvCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnSalesOfPropertyPlantAndEquipmentEL" xlink:label="LossOnSalesOfPropertyPlantAndEquipmentEL"/>
+    <label xlink:type="resource" xlink:label="label_LossOnSalesOfPropertyPlantAndEquipmentEL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossOnSalesOfPropertyPlantAndEquipmentEL">Loss on sales of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossOnSalesOfPropertyPlantAndEquipmentEL" xlink:to="label_LossOnSalesOfPropertyPlantAndEquipmentEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnDisposalOfPropertyPlantAndEquipmentEL" xlink:label="LossOnDisposalOfPropertyPlantAndEquipmentEL"/>
+    <label xlink:type="resource" xlink:label="label_LossOnDisposalOfPropertyPlantAndEquipmentEL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossOnDisposalOfPropertyPlantAndEquipmentEL">Loss on disposal of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossOnDisposalOfPropertyPlantAndEquipmentEL" xlink:to="label_LossOnDisposalOfPropertyPlantAndEquipmentEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnAbandonmentOfPropertyPlantAndEquipmentOpeCF" xlink:label="LossOnAbandonmentOfPropertyPlantAndEquipmentOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_LossOnAbandonmentOfPropertyPlantAndEquipmentOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossOnAbandonmentOfPropertyPlantAndEquipmentOpeCF">Loss on abandonment of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossOnAbandonmentOfPropertyPlantAndEquipmentOpeCF" xlink:to="label_LossOnAbandonmentOfPropertyPlantAndEquipmentOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnSalesAndRetirementOfPropertyPlantAndEquipmentOpeCF" xlink:label="LossGainOnSalesAndRetirementOfPropertyPlantAndEquipmentOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_LossGainOnSalesAndRetirementOfPropertyPlantAndEquipmentOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/bnk/role/label" xml:lang="en" id="label_LossGainOnSalesAndRetirementOfPropertyPlantAndEquipmentOpeCF">Loss (gain) on sales and retirement of tangible fixed assets</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossGainOnSalesAndRetirementOfPropertyPlantAndEquipmentOpeCF" xlink:to="label_LossGainOnSalesAndRetirementOfPropertyPlantAndEquipmentOpeCF"/>
+  </labelLink>
+</linkbase>

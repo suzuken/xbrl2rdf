@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterim" xlink:type="simple" xlink:href="../../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterim"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ReserveForGuaranteeObligationCNA" xlink:label="ReserveForGuaranteeObligationCNA"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-cna-2011-03-14-label-en.xml#label_ReserveForGuaranteeObligationCNA_4" xlink:label="label_ReserveForGuaranteeObligationCNA_4" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ReserveForGuaranteeObligationCNA" xlink:to="label_ReserveForGuaranteeObligationCNA_4" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ReserveForGuaranteeObligationCNA" xlink:label="ReserveForGuaranteeObligationCNA_2"/>
+    <label xlink:type="resource" xlink:label="label_ReserveForGuaranteeObligationCNA" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="en" id="label_ReserveForGuaranteeObligationCNA">Balance at the start of current period</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ReserveForGuaranteeObligationCNA_2" xlink:to="label_ReserveForGuaranteeObligationCNA"/>
+  </labelLink>
+  <labelLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterim">
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ReserveForGuaranteeObligationCNA" xlink:label="ReserveForGuaranteeObligationCNA"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-cna-2011-03-14-label-en.xml#label_ReserveForGuaranteeObligationCNA_2_2" xlink:label="label_ReserveForGuaranteeObligationCNA_2" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel"/>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ReserveForGuaranteeObligationCNA" xlink:to="label_ReserveForGuaranteeObligationCNA_2" use="prohibited" priority="1" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="../../jpfr-t-cna-2011-03-14.xsd#jpfr-t-cna_ReserveForGuaranteeObligationCNA" xlink:label="ReserveForGuaranteeObligationCNA_2"/>
+    <label xlink:type="resource" xlink:label="label_ReserveForGuaranteeObligationCNA" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel" xml:lang="en" id="label_ReserveForGuaranteeObligationCNA_2">Balance at the start of current period</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ReserveForGuaranteeObligationCNA_2" xlink:to="label_ReserveForGuaranteeObligationCNA"/>
+  </labelLink>
+</linkbase>

@@ -47,4 +47,7 @@ public class XBRLOWL {
 			m_model.createProperty(NS + "decimal");
 	public static final Property unit = 
 			m_model.createProperty(NS + "unit");
+	public static final Property locatedIn = 
+			m_model.createProperty(NS + "locatedIn");
+
 }

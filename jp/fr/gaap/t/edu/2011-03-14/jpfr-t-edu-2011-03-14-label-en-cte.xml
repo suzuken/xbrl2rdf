@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">学校法人財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleEDULabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/negativeLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleEDUNegativeLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/positiveOrNegativeLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleEDUPositiveOrNegativeLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleEDUTotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepositsReceived" xlink:label="DepositsReceived"/>
+    <label xlink:type="resource" xlink:label="label_DepositsReceived" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_DepositsReceived">Deposits received</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DepositsReceived" xlink:to="label_DepositsReceived"/>
+    <label xlink:type="resource" xlink:label="label_DepositsReceived_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/totalLabel" xml:lang="en" id="label_DepositsReceived_2">Total deposits received</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DepositsReceived" xlink:to="label_DepositsReceived_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_GainOnPriorPeriodAdjustmentEI" xlink:label="GainOnPriorPeriodAdjustmentEI"/>
+    <label xlink:type="resource" xlink:label="label_GainOnPriorPeriodAdjustmentEI" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_GainOnPriorPeriodAdjustmentEI">Gain on prior period adjustment</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="GainOnPriorPeriodAdjustmentEI" xlink:to="label_GainOnPriorPeriodAdjustmentEI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossOnPriorPeriodAdjustmentEL" xlink:label="LossOnPriorPeriodAdjustmentEL"/>
+    <label xlink:type="resource" xlink:label="label_LossOnPriorPeriodAdjustmentEL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_LossOnPriorPeriodAdjustmentEL">Loss on prior period adjustment</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossOnPriorPeriodAdjustmentEL" xlink:to="label_LossOnPriorPeriodAdjustmentEL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeIncomeTaxes" xlink:label="IncomeBeforeIncomeTaxes"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeIncomeTaxes" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_IncomeBeforeIncomeTaxes">Income before income taxes</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="label_IncomeBeforeIncomeTaxes"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeIncomeTaxes_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/negativeLabel" xml:lang="en" id="label_IncomeBeforeIncomeTaxes_2">Loss before income taxes</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="label_IncomeBeforeIncomeTaxes_2"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeIncomeTaxes_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/positiveOrNegativeLabel" xml:lang="en" id="label_IncomeBeforeIncomeTaxes_3">Income (loss) before income taxes</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeIncomeTaxes" xlink:to="label_IncomeBeforeIncomeTaxes_3"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <label xlink:type="resource" xlink:label="label_IncomeTaxesCurrent" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_IncomeTaxesCurrent">Income taxes-current</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeTaxesCurrent" xlink:to="label_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncome" xlink:label="NetIncome"/>
+    <label xlink:type="resource" xlink:label="label_NetIncome" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_NetIncome">Net income</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetIncome" xlink:to="label_NetIncome"/>
+    <label xlink:type="resource" xlink:label="label_NetIncome_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/negativeLabel" xml:lang="en" id="label_NetIncome_2">Net loss</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetIncome" xlink:to="label_NetIncome_2"/>
+    <label xlink:type="resource" xlink:label="label_NetIncome_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/positiveOrNegativeLabel" xml:lang="en" id="label_NetIncome_3">Net income (loss)</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetIncome" xlink:to="label_NetIncome_3"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_DepreciationAndAmortizationOpeCF" xlink:label="DepreciationAndAmortizationOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_DepreciationAndAmortizationOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_DepreciationAndAmortizationOpeCF">Depreciation and amortization</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="DepreciationAndAmortizationOpeCF" xlink:to="label_DepreciationAndAmortizationOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InterestAndDividendsIncomeOpeCF" xlink:label="InterestAndDividendsIncomeOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_InterestAndDividendsIncomeOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_InterestAndDividendsIncomeOpeCF">Interest and dividends income</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="InterestAndDividendsIncomeOpeCF" xlink:to="label_InterestAndDividendsIncomeOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NetIncomeNA" xlink:label="NetIncomeNA"/>
+    <label xlink:type="resource" xlink:label="label_NetIncomeNA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_NetIncomeNA">Net income</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetIncomeNA" xlink:to="label_NetIncomeNA"/>
+    <label xlink:type="resource" xlink:label="label_NetIncomeNA_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/negativeLabel" xml:lang="en" id="label_NetIncomeNA_2">Net loss</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetIncomeNA" xlink:to="label_NetIncomeNA_2"/>
+    <label xlink:type="resource" xlink:label="label_NetIncomeNA_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/positiveOrNegativeLabel" xml:lang="en" id="label_NetIncomeNA_3">Net income (loss)</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="NetIncomeNA" xlink:to="label_NetIncomeNA_3"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeBeforeMinorityInterests" xlink:label="IncomeBeforeMinorityInterests"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeMinorityInterests" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/label" xml:lang="en" id="label_IncomeBeforeMinorityInterests">Income before minority interests</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeMinorityInterests" xlink:to="label_IncomeBeforeMinorityInterests"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeMinorityInterests_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/negativeLabel" xml:lang="en" id="label_IncomeBeforeMinorityInterests_2">Loss before minority interests</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeMinorityInterests" xlink:to="label_IncomeBeforeMinorityInterests_2"/>
+    <label xlink:type="resource" xlink:label="label_IncomeBeforeMinorityInterests_3" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/edu/role/positiveOrNegativeLabel" xml:lang="en" id="label_IncomeBeforeMinorityInterests_3">Income (loss) before minority interests</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeBeforeMinorityInterests" xlink:to="label_IncomeBeforeMinorityInterests_3"/>
+  </labelLink>
+</linkbase>

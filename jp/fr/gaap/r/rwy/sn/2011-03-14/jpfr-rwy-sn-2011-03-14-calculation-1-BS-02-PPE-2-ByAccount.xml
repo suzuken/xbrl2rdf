@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">有形固定資産を科目別に掲記する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleNonConsolidatedInterimBalanceSheets"/>
+  <calculationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/NonConsolidatedInterimBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_NoncurrentAssets" xlink:label="NoncurrentAssets"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRailwayRWY" xlink:label="NoncurrentAssetsRailwayRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssets" xlink:to="NoncurrentAssetsRailwayRWY" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNetNCARailway" xlink:label="PropertyPlantAndEquipmentNetNCARailway"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssetsRailwayRWY" xlink:to="PropertyPlantAndEquipmentNetNCARailway" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNCARailway" xlink:label="PropertyPlantAndEquipmentNCARailway"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNetNCARailway" xlink:to="PropertyPlantAndEquipmentNCARailway" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AccumulatedDepreciationPPERailway" xlink:label="AccumulatedDepreciationPPERailway"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNetNCARailway" xlink:to="AccumulatedDepreciationPPERailway" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_IntangibleAssetsNCARWY" xlink:label="IntangibleAssetsNCARWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssetsRailwayRWY" xlink:to="IntangibleAssetsNCARWY" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsRelatedRWY" xlink:label="NoncurrentAssetsRelatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssets" xlink:to="NoncurrentAssetsRelatedRWY" order="4.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNetNCARelatedRWY" xlink:label="PropertyPlantAndEquipmentNetNCARelatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssetsRelatedRWY" xlink:to="PropertyPlantAndEquipmentNetNCARelatedRWY" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNCARelatedRWY" xlink:label="PropertyPlantAndEquipmentNCARelatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNetNCARelatedRWY" xlink:to="PropertyPlantAndEquipmentNCARelatedRWY" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AccumulatedDepreciationPPERelatedRWY" xlink:label="AccumulatedDepreciationPPERelatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNetNCARelatedRWY" xlink:to="AccumulatedDepreciationPPERelatedRWY" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_IntangibleAssetsRelatedRWY" xlink:label="IntangibleAssetsRelatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssetsRelatedRWY" xlink:to="IntangibleAssetsRelatedRWY" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_NoncurrentAssetsAffiliatedRWY" xlink:label="NoncurrentAssetsAffiliatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssets" xlink:to="NoncurrentAssetsAffiliatedRWY" order="6.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNetNCAAffiliatedRWY" xlink:label="PropertyPlantAndEquipmentNetNCAAffiliatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssetsAffiliatedRWY" xlink:to="PropertyPlantAndEquipmentNetNCAAffiliatedRWY" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_PropertyPlantAndEquipmentNCAAffiliatedRWY" xlink:label="PropertyPlantAndEquipmentNCAAffiliatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNetNCAAffiliatedRWY" xlink:to="PropertyPlantAndEquipmentNCAAffiliatedRWY" order="1.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_AccumulatedDepreciationNCAAffiliatedRWY" xlink:label="AccumulatedDepreciationNCAAffiliatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="PropertyPlantAndEquipmentNetNCAAffiliatedRWY" xlink:to="AccumulatedDepreciationNCAAffiliatedRWY" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_IntangibleAssetsAffiliatedRWY" xlink:label="IntangibleAssetsAffiliatedRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssetsAffiliatedRWY" xlink:to="IntangibleAssetsAffiliatedRWY" order="2.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ConstructionInProgressRWY" xlink:label="ConstructionInProgressRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NoncurrentAssets" xlink:to="ConstructionInProgressRWY" order="9.0" weight="1"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/rwy/2011-03-14/jpfr-t-rwy-2011-03-14.xsd#jpfr-t-rwy_ConstructionInProgressRailwayRWY" xlink:label="ConstructionInProgressRailwayRWY"/>
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ConstructionInProgressRWY" xlink:to="ConstructionInProgressRailwayRWY" order="1.0" weight="1"/>
+  </calculationLink>
+</linkbase>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">社会医療法人財務諸表語彙</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleMEDLabel"/>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/totalLabel" xlink:type="simple" xlink:href="../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleMEDTotalLabel"/>
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCA" xlink:label="OtherCA"/>
+    <label xlink:type="resource" xlink:label="label_OtherCA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherCA">その他の流動資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCA" xlink:to="label_OtherCA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherPPE" xlink:label="OtherPPE"/>
+    <label xlink:type="resource" xlink:label="label_OtherPPE" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherPPE">その他の有形固定資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherPPE" xlink:to="label_OtherPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNetPPE" xlink:label="OtherNetPPE"/>
+    <label xlink:type="resource" xlink:label="label_OtherNetPPE" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherNetPPE">その他の有形固定資産（純額）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherNetPPE" xlink:to="label_OtherNetPPE"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherIA" xlink:label="OtherIA"/>
+    <label xlink:type="resource" xlink:label="label_OtherIA" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherIA">その他の無形固定資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherIA" xlink:to="label_OtherIA"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_InvestmentSecurities" xlink:label="InvestmentSecurities"/>
+    <label xlink:type="resource" xlink:label="label_InvestmentSecurities" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_InvestmentSecurities">有価証券</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="InvestmentSecurities" xlink:to="label_InvestmentSecurities"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherCL" xlink:label="OtherCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherCL">その他の流動負債</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherCL" xlink:to="label_OtherCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherNCL" xlink:label="OtherNCL"/>
+    <label xlink:type="resource" xlink:label="label_OtherNCL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherNCL">その他の固定負債</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherNCL" xlink:to="label_OtherNCL"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LiabilitiesAndNetAssets" xlink:label="LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_LiabilitiesAndNetAssets">負債・純資産</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets"/>
+    <label xlink:type="resource" xlink:label="label_LiabilitiesAndNetAssets_2" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/totalLabel" xml:lang="ja" id="label_LiabilitiesAndNetAssets_2">負債・純資産合計</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LiabilitiesAndNetAssets" xlink:to="label_LiabilitiesAndNetAssets_2"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_IncomeTaxesCurrent" xlink:label="IncomeTaxesCurrent"/>
+    <label xlink:type="resource" xlink:label="label_IncomeTaxesCurrent" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_IncomeTaxesCurrent">法人税・住民税及び事業税</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="IncomeTaxesCurrent" xlink:to="label_IncomeTaxesCurrent"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_LossGainOnSalesOfInvestmentSecuritiesOpeCF" xlink:label="LossGainOnSalesOfInvestmentSecuritiesOpeCF"/>
+    <label xlink:type="resource" xlink:label="label_LossGainOnSalesOfInvestmentSecuritiesOpeCF" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_LossGainOnSalesOfInvestmentSecuritiesOpeCF">有価証券売却損益（△は益）</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="LossGainOnSalesOfInvestmentSecuritiesOpeCF" xlink:to="label_LossGainOnSalesOfInvestmentSecuritiesOpeCF"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherEI" xlink:label="OtherEI"/>
+    <label xlink:type="resource" xlink:label="label_OtherEI" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherEI">その他の特別利益</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherEI" xlink:to="label_OtherEI"/>
+    <loc xlink:type="locator" xlink:href="../../cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_OtherEL" xlink:label="OtherEL"/>
+    <label xlink:type="resource" xlink:label="label_OtherEL" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/med/role/label" xml:lang="ja" id="label_OtherEL">その他の特別損失</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="OtherEL" xlink:to="label_OtherEL"/>
+  </labelLink>
+</linkbase>

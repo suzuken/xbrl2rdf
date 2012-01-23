@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <documentation xml:lang="ja">減損損失累計額（有形固定資産）を減価償却累計額とあわせて科目別に控除する方法</documentation>
+  <roleRef roleURI="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedQuarterlyBalanceSheets" xlink:type="simple" xlink:href="../../../../o/rt/2011-03-14/jpfr-rt-2011-03-14.xsd#RoleConsolidatedQuarterlyBalanceSheets"/>
+  <presentationLink xlink:type="extended" xlink:role="http://info.edinet-fsa.go.jp/jp/fr/gaap/role/ConsolidatedQuarterlyBalanceSheets">
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_PropertyPlantAndEquipmentAbstract" xlink:label="PropertyPlantAndEquipmentAbstract"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsAndStructures" xlink:label="BuildingsAndStructures"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="BuildingsAndStructures" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationAndImpairmentLossBuildingsAndStructures" xlink:label="AccumulatedDepreciationAndImpairmentLossBuildingsAndStructures"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BuildingsAndStructures" xlink:to="AccumulatedDepreciationAndImpairmentLossBuildingsAndStructures" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_BuildingsAndStructuresNet" xlink:label="BuildingsAndStructuresNet"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="BuildingsAndStructures" xlink:to="BuildingsAndStructuresNet" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_Vehicles" xlink:label="Vehicles"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="Vehicles" order="7.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_AccumulatedDepreciationAndImpairmentLossVehicles" xlink:label="AccumulatedDepreciationAndImpairmentLossVehicles"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Vehicles" xlink:to="AccumulatedDepreciationAndImpairmentLossVehicles" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/cte/2011-03-14/jpfr-t-cte-2011-03-14.xsd#jpfr-t-cte_VehiclesNet" xlink:label="VehiclesNet"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="Vehicles" xlink:to="VehiclesNet" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_EquipmentPPESPF" xlink:label="EquipmentPPESPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="PropertyPlantAndEquipmentAbstract" xlink:to="EquipmentPPESPF" order="12.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_AccumulatedDepreciationAndImpairmentLossEquipmentSPF" xlink:label="AccumulatedDepreciationAndImpairmentLossEquipmentSPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="EquipmentPPESPF" xlink:to="AccumulatedDepreciationAndImpairmentLossEquipmentSPF" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="../../../../t/spf/2011-03-14/jpfr-t-spf-2011-03-14.xsd#jpfr-t-spf_EquipmentNetPPESPF" xlink:label="EquipmentNetPPESPF"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="EquipmentPPESPF" xlink:to="EquipmentNetPPESPF" order="5.0"/>
+  </presentationLink>
+</linkbase>

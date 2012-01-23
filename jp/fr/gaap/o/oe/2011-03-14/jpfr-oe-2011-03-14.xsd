@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:jpfr-oe="http://info.edinet-fsa.go.jp/jp/fr/gaap/o/oe/2011-03-14" targetNamespace="http://info.edinet-fsa.go.jp/jp/fr/gaap/o/oe/2011-03-14" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<element name="NonConsolidated">
+		<simpleType>
+			<restriction base="string">
+				<length value="0"/>
+			</restriction>
+		</simpleType>
+	</element>
+</schema>
