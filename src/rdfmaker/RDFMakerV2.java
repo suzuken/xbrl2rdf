@@ -138,10 +138,13 @@ public class RDFMakerV2 implements Maker {
 		}
 
 		//全部作成
-//		this.createModel();
+		this.createModel();
 		
 		//labelだけアップデート
-		this.createCompanyJaNameModel();
+		//this.createCompanyJaNameModel();
+		
+		//contextTypeだけアップデート
+		//this.createContextTypeModel();
 		this.outputRDF(this.model);
 	}
 
@@ -245,6 +248,57 @@ public class RDFMakerV2 implements Maker {
 			e.printStackTrace();
 		}
 
+
+	}
+	
+	//contextにタイプをつけ忘れたので、付け加える。
+	public void createContextTypeModel(){
+		try {
+
+			this.model = TDBFactory.createModel();
+			this.model.setNsPrefix("xbrlowl", XBRLOWL.getURI());
+			this.model.setNsPrefix("foaf", "http://xmlns.com/foaf/0.1/");
+			
+			SimpleNamespaceContext snc = (SimpleNamespaceContext) this.x.nsc;
+			HashMap<String, String> map = snc.getPrefixToUri();
+			Set<String> keySet = map.keySet();
+			Iterator<String> keyIte = keySet.iterator();
+			while(keyIte.hasNext()){
+				String key = keyIte.next();
+				String value = map.get(key);
+				if(key != "xml" && key != "xmlns"){
+					String vend = value.substring(value.length());
+					if(vend != "/" && vend != "#"){
+						value = value + "#";
+					}
+					this.model.setNsPrefix(key, value);
+				}
+			}
+
+			//ContextごとにRDF modelを生成
+			for(Integer j = 0; j < this.getEnableContextRef().length; j++){
+				String contextRef = this.getEnableContextRef()[j];
+				System.out.println(contextRef);
+				if(contextRef != null){
+
+					//これがContextのElement。これにtype付けする。
+					Resource contextElement = this.model.createResource(
+							this.getNsOwl() + getFileName(this.path)
+							.substring(1, getFileName(this.path).length())
+							+ "-" + contextRef);
+					
+					//xbrlowl:Prior2YearNonConsolidatedとか。
+					Resource contextType = this.model.createResource(
+							XBRLOWL.getURI() + contextRef
+							);
+					contextElement.addProperty(RDF.type, contextType);
+
+				}
+			}
+		} catch (Exception e){
+			System.out.println("modelの出力でエラー");
+			e.printStackTrace();
+		}
 
 	}
 
@@ -353,14 +407,24 @@ public class RDFMakerV2 implements Maker {
 						contextElement.addLiteral(XBRLOWL.startDate, startDate);
 						contextElement.addLiteral(XBRLOWL.endDate, endDate);
 					}
+					
+					//xbrlowl:Prior2YearNonConsolidatedとか。
+					//contextのタイプ付け(2012/01/24)
+					Resource contextType = this.model.createResource(
+							XBRLOWL.getURI() + contextRef
+							);
+					contextElement.addProperty(RDF.type, contextType);
+
 
 					ArrayList<Account> a = this.x.getAccountsByContext(contextRef);
 					if(!(a.isEmpty())){
 						//勘定科目ごとのループ
 						for (Account item : a){ 
 							//reportリソースに勘定科目情報を対応付ける
-							itemElement = this.model.createResource(item.getNamespaceURI()
-									+ "#"+ item.getLocalName() + "-" + contextRef);
+							//itemの名前が重複していたので変更 2012/01/24
+							itemElement = this.model.createResource(item.getNamespaceURI() + "#"
+							+ getFileName(this.path).substring(1, getFileName(this.path).length())
+							+ "-"+item.getLocalName() + "-" + contextRef);
 							company.addProperty(XBRLOWL.hasItem, itemElement);
 
 							//itemをxbrl-owl:itemにタイプづけ
